@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cross_validation.PredefinedSplit.rst:2
+msgid ":mod:`sklearn.cross_validation`.PredefinedSplit"
+msgstr ""
+
+#: :3
+msgid "Predefined split cross validation iterator"
+msgstr ""
+
+#: :5
+msgid ""
+"Splits the data into training/test set folds according to a predefined "
+"scheme. Each sample can be assigned to at most one test set fold, as "
+"specified by the user through the ``test_fold`` parameter."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <cross_validation>`."
+msgstr ""
+
+#: :13
+msgid "**test_fold** : \"array-like, shape (n_samples,)"
+msgstr ""
+
+#: :15
+msgid ""
+"test_fold[i] gives the test set fold of sample i. A value of -1 indicates"
+" that the corresponding sample is not part of any test set folds, but "
+"will instead always be put into the training fold."
+msgstr ""
+
+#: :20
+msgid "Examples"
+msgstr ""
+

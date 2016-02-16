@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.feature_extraction.image.reconstruct_from_patches_2d.rst:2
+msgid ":mod:`sklearn.feature_extraction.image`.reconstruct_from_patches_2d"
+msgstr ""
+
+#: :3
+msgid "Reconstruct the image from all of its patches."
+msgstr ""
+
+#: :5
+msgid ""
+"Patches are assumed to overlap and the image is constructed by filling in"
+" the patches from left to right, top to bottom, averaging the overlapping"
+" regions."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <image_feature_extraction>`."
+msgstr ""
+
+#: :13
+msgid "**patches** : array, shape = (n_patches, patch_height, patch_width) or"
+msgstr ""
+
+#: :15
+msgid ""
+"(n_patches, patch_height, patch_width, n_channels) The complete set of "
+"patches. If the patches contain colour information, channels are indexed "
+"along the last dimension: RGB patches would have `n_channels=3`."
+msgstr ""
+
+#: :20
+msgid "**image_size** : tuple of ints (image_height, image_width) or"
+msgstr ""
+
+#: :22
+msgid ""
+"(image_height, image_width, n_channels) the size of the image that will "
+"be reconstructed"
+msgstr ""
+
+#: :27
+msgid "**image** : array, shape = image_size"
+msgstr ""
+
+#: :29
+msgid "the reconstructed image"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.image.reconstruct_from_patches_2d.examples:3
+msgid ""
+"Examples using "
+"``sklearn.feature_extraction.image.reconstruct_from_patches_2d``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.image.reconstruct_from_patches_2d.examples:25
+msgid ":ref:`example_decomposition_plot_image_denoising.py`"
+msgstr ""
+

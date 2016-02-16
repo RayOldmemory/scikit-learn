@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.auc.rst:2
+msgid ":mod:`sklearn.metrics`.auc"
+msgstr ""
+
+#: :3
+msgid "Compute Area Under the Curve (AUC) using the trapezoidal rule"
+msgstr ""
+
+#: :5
+msgid ""
+"This is a general function, given points on a curve.  For computing the "
+"area under the ROC-curve, see :func:`roc_auc_score`."
+msgstr ""
+
+#: :10
+msgid "**x** : array, shape = [n]"
+msgstr ""
+
+#: :12
+msgid "x coordinates."
+msgstr ""
+
+#: :14
+msgid "**y** : array, shape = [n]"
+msgstr ""
+
+#: :16
+msgid "y coordinates."
+msgstr ""
+
+#: :18
+msgid "**reorder** : boolean, optional (default=False)"
+msgstr ""
+
+#: :20
+msgid ""
+"If True, assume that the curve is ascending in the case of ties, as for "
+"an ROC curve. If the curve is non-ascending, the result will be wrong."
+msgstr ""
+
+#: :25
+msgid "**auc** : float"
+msgstr ""
+
+#: :30
+msgid ":obj:`roc_auc_score`"
+msgstr ""
+
+#: :30
+msgid "Computes the area under the ROC curve"
+msgstr ""
+
+#: :32
+msgid ":obj:`precision_recall_curve`"
+msgstr ""
+
+#: :33
+msgid "Compute precision-recall pairs for different probability thresholds"
+msgstr ""
+
+#: :36
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.auc.examples:3
+msgid "Examples using ``sklearn.metrics.auc``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.auc.examples:25
+msgid ":ref:`example_applications_plot_species_distribution_modeling.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.auc.examples:45
+msgid ":ref:`example_linear_model_plot_sparse_recovery.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.auc.examples:65
+msgid ":ref:`example_model_selection_plot_roc_crossval.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.auc.examples:85
+msgid ":ref:`example_model_selection_plot_roc.py`"
+msgstr ""
+

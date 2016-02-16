@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.load_digits.rst:2
+msgid ":mod:`sklearn.datasets`.load_digits"
+msgstr ""
+
+#: :3
+msgid "Load and return the digits dataset (classification)."
+msgstr ""
+
+#: :5
+msgid "Each datapoint is a 8x8 image of a digit."
+msgstr ""
+
+#: :8
+msgid "Classes"
+msgstr ""
+
+#: :8
+msgid "10"
+msgstr ""
+
+#: :9
+msgid "Samples per class"
+msgstr ""
+
+#: :9
+msgid "~180"
+msgstr ""
+
+#: :10
+msgid "Samples total"
+msgstr ""
+
+#: :10
+msgid "1797"
+msgstr ""
+
+#: :11
+msgid "Dimensionality"
+msgstr ""
+
+#: :11
+msgid "64"
+msgstr ""
+
+#: :12
+msgid "Features"
+msgstr ""
+
+#: :12
+msgid "integers 0-16"
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <datasets>`."
+msgstr ""
+
+#: :19
+msgid "**n_class** : integer, between 0 and 10, optional (default=10)"
+msgstr ""
+
+#: :21
+msgid "The number of classes to return."
+msgstr ""
+
+#: :25
+msgid "**data** : Bunch"
+msgstr ""
+
+#: :27
+msgid ""
+"Dictionary-like object, the interesting attributes are: 'data', the data "
+"to learn, 'images', the images corresponding to each sample, 'target', "
+"the classification labels for each sample, 'target_names', the meaning of"
+" the labels, and 'DESCR', the full description of the dataset."
+msgstr ""
+
+#: :34
+msgid "Examples"
+msgstr ""
+
+#: :35
+msgid "To load the data and visualize the images::"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:3
+msgid "Examples using ``sklearn.datasets.load_digits``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:25
+msgid ":ref:`example_plot_digits_pipe.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:45
+msgid ":ref:`example_plot_johnson_lindenstrauss_bound.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:65
+msgid ":ref:`example_plot_kernel_approximation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:85
+msgid ":ref:`example_classification_plot_digits_classification.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:105
+msgid ":ref:`example_cluster_plot_digits_agglomeration.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:125
+msgid ":ref:`example_cluster_plot_digits_linkage.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:145
+msgid ":ref:`example_cluster_plot_kmeans_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:165
+msgid ":ref:`example_datasets_plot_digits_last_image.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:185
+msgid ":ref:`example_exercises_digits_classification_exercise.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:205
+msgid ":ref:`example_exercises_plot_cv_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:225
+msgid ":ref:`example_feature_selection_plot_rfe_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:245
+msgid ":ref:`example_linear_model_plot_sgd_comparison.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:265
+msgid ":ref:`example_linear_model_plot_logistic_l1_l2_sparsity.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:285
+msgid ":ref:`example_manifold_plot_lle_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:305
+msgid ":ref:`example_model_selection_plot_validation_curve.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:325
+msgid ":ref:`example_model_selection_grid_search_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:345
+msgid ":ref:`example_model_selection_randomized_search.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:365
+msgid ":ref:`example_model_selection_plot_learning_curve.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:385
+msgid ":ref:`example_neighbors_plot_digits_kde_sampling.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:405
+msgid ":ref:`example_neural_networks_plot_rbm_logistic_classification.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:425
+msgid ":ref:`example_semi_supervised_plot_label_propagation_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:445
+msgid ":ref:`example_semi_supervised_plot_label_propagation_digits_active_learning.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_digits.examples:465
+msgid ":ref:`example_svm_plot_svm_anova.py`"
+msgstr ""
+

@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.multiclass.OutputCodeClassifier.rst:2
+msgid ":mod:`sklearn.multiclass`.OutputCodeClassifier"
+msgstr ""
+
+#: :3
+msgid "(Error-Correcting) Output-Code multiclass strategy"
+msgstr ""
+
+#: :5
+msgid ""
+"Output-code based strategies consist in representing each class with a "
+"binary code (an array of 0s and 1s). At fitting time, one binary "
+"classifier per bit in the code book is fitted.  At prediction time, the "
+"classifiers are used to project new points in the class space and the "
+"class closest to the points is chosen. The main advantage of these "
+"strategies is that the number of classifiers used can be controlled by "
+"the user, either for compressing the model (0 < code_size < 1) or for "
+"making the model more robust to errors (code_size > 1). See the "
+"documentation for more details."
+msgstr ""
+
+#: :14
+msgid "Read more in the :ref:`User Guide <ecoc>`."
+msgstr ""
+
+#: :18
+msgid "**estimator** : estimator object"
+msgstr ""
+
+#: :20
+msgid ""
+"An estimator object implementing `fit` and one of `decision_function` or "
+"`predict_proba`."
+msgstr ""
+
+#: :23
+msgid "**code_size** : float"
+msgstr ""
+
+#: :25
+msgid ""
+"Percentage of the number of classes to be used to create the code book. A"
+" number between 0 and 1 will require fewer classifiers than one-vs-the-"
+"rest. A number greater than 1 will require more classifiers than one-vs-"
+"the-rest."
+msgstr ""
+
+#: :30
+msgid "**random_state** : numpy.RandomState, optional"
+msgstr ""
+
+#: :32
+msgid "The generator used to initialize the codebook. Defaults to numpy.random."
+msgstr ""
+
+#: :35
+msgid "**n_jobs** : int, optional, default: 1"
+msgstr ""
+
+#: :37
+msgid ""
+"The number of jobs to use for the computation. If -1 all CPUs are used. "
+"If 1 is given, no parallel computing code is used at all, which is useful"
+" for debugging. For n_jobs below -1, (n_cpus + 1 + n_jobs) are used. Thus"
+" for n_jobs = -2, all CPUs but one are used."
+msgstr ""
+
+#: :44
+msgid "**estimators_** : list of `int(n_classes * code_size)` estimators"
+msgstr ""
+
+#: :46
+msgid "Estimators used for predictions."
+msgstr ""
+
+#: :48
+msgid "**classes_** : numpy array of shape [n_classes]"
+msgstr ""
+
+#: :50
+msgid "Array containing labels."
+msgstr ""
+
+#: :52
+msgid "**code_book_** : numpy array of shape [n_classes, code_size]"
+msgstr ""
+
+#: :54
+msgid "Binary array containing the code of each class."
+msgstr ""
+
+#: :57
+msgid "References"
+msgstr ""
+
+#: :58
+msgid ""
+"\"Solving multiclass learning problems via error-correcting output "
+"codes\", Dietterich T., Bakiri G., Journal of Artificial Intelligence "
+"Research 2, 1995."
+msgstr ""
+
+#: :64
+msgid ""
+"\"The error coding method and PICTs\", James G., Hastie T., Journal of "
+"Computational and Graphical statistics 7, 1998."
+msgstr ""
+
+#: :69
+msgid ""
+"\"The Elements of Statistical Learning\", Hastie T., Tibshirani R., "
+"Friedman J., page 606 (second-edition) 2008."
+msgstr ""
+
+#: :78
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.multiclass.OutputCodeClassifier.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit underlying estimators."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.multiclass.OutputCodeClassifier.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.multiclass.OutputCodeClassifier.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict multi-class targets using underlying estimators."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.multiclass.OutputCodeClassifier.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the mean accuracy on the given test data and labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.multiclass.OutputCodeClassifier.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7
+msgid "**X** : (sparse) array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "Data."
+msgstr ""
+
+#: :11 :13
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :13
+msgid "Multi-class targets."
+msgstr ""
+
+#: :17 :12
+msgid "**self** :"
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :15
+msgid "Predicted multi-class targets."
+msgstr ""
+
+#: :5
+msgid ""
+"In multi-label classification, this is the subset accuracy which is a "
+"harsh metric since you require for each sample that each label set be "
+"correctly predicted."
+msgstr ""
+
+#: :11
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :13
+msgid "Test samples."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :17
+msgid "True labels for X."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :21
+msgid "Sample weights."
+msgstr ""
+
+#: :25
+msgid "**score** : float"
+msgstr ""
+
+#: :27
+msgid "Mean accuracy of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+

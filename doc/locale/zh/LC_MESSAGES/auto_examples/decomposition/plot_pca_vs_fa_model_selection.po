@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.rst:8
+msgid "Model selection with Probabilistic PCA and Factor Analysis (FA)"
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.rst:10
+msgid ""
+"Probabilistic PCA and Factor Analysis are probabilistic models. The "
+"consequence is that the likelihood of new data can be used for model "
+"selection and covariance estimation. Here we compare PCA and FA with "
+"cross-validation on low rank data corrupted with homoscedastic noise "
+"(noise variance is the same for each feature) or heteroscedastic noise "
+"(noise variance is the different for each feature). In a second step we "
+"compare the model likelihood to the likelihoods obtained from shrinkage "
+"covariance estimators."
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.rst:19
+msgid ""
+"One can observe that with homoscedastic noise both FA and PCA succeed in "
+"recovering the size of the low rank subspace. The likelihood with PCA is "
+"higher than FA in this case. However PCA fails and overestimates the rank"
+" when heteroscedastic noise is present. Under appropriate circumstances "
+"the low rank models are more likely than shrinkage models."
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.rst:25
+msgid ""
+"The automatic estimation from Automatic Choice of Dimensionality for PCA."
+" NIPS 2000: 598-604 by Thomas P. Minka is also compared."
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.rst:46
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.rst:57
+msgid ""
+"**Python source code:** :download:`plot_pca_vs_fa_model_selection.py "
+"<plot_pca_vs_fa_model_selection.py>`"
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.rst:62
+msgid ""
+"**Total running time of the example:**  23.46 seconds ( 0 minutes  23.46 "
+"seconds)"
+msgstr ""
+

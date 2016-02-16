@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.make_scorer.rst:2
+msgid ":mod:`sklearn.metrics`.make_scorer"
+msgstr ""
+
+#: :3
+msgid "Make a scorer from a performance metric or loss function."
+msgstr ""
+
+#: :5
+msgid ""
+"This factory function wraps scoring functions for use in GridSearchCV and"
+" cross_val_score. It takes a score function, such as ``accuracy_score``, "
+"``mean_squared_error``, ``adjusted_rand_index`` or ``average_precision`` "
+"and returns a callable that scores an estimator's output."
+msgstr ""
+
+#: :10
+msgid "Read more in the :ref:`User Guide <scoring>`."
+msgstr ""
+
+#: :14
+msgid "**score_func** : callable,"
+msgstr ""
+
+#: :16
+msgid ""
+"Score function (or loss function) with signature ``score_func(y, y_pred, "
+"**kwargs)``."
+msgstr ""
+
+#: :19
+msgid "**greater_is_better** : boolean, default=True"
+msgstr ""
+
+#: :21
+msgid ""
+"Whether score_func is a score function (default), meaning high is good, "
+"or a loss function, meaning low is good. In the latter case, the scorer "
+"object will sign-flip the outcome of the score_func."
+msgstr ""
+
+#: :25
+msgid "**needs_proba** : boolean, default=False"
+msgstr ""
+
+#: :27
+msgid ""
+"Whether score_func requires predict_proba to get probability estimates "
+"out of a classifier."
+msgstr ""
+
+#: :30
+msgid "**needs_threshold** : boolean, default=False"
+msgstr ""
+
+#: :32
+msgid ""
+"Whether score_func takes a continuous decision certainty. This only works"
+" for binary classification using estimators that have either a "
+"decision_function or predict_proba method."
+msgstr ""
+
+#: :36
+msgid ""
+"For example ``average_precision`` or the area under the roc curve can not"
+" be computed using discrete predictions alone."
+msgstr ""
+
+#: :39
+msgid "****kwargs** : additional arguments"
+msgstr ""
+
+#: :41
+msgid "Additional parameters to be passed to score_func."
+msgstr ""
+
+#: :45
+msgid "**scorer** : callable"
+msgstr ""
+
+#: :47
+msgid "Callable object that returns a scalar score; greater is better."
+msgstr ""
+
+#: :50
+msgid "Examples"
+msgstr ""
+

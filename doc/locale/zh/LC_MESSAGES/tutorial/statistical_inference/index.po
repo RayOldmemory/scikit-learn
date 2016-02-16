@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../tutorial/statistical_inference/index.rst:5
+msgid "A tutorial on statistical-learning for scientific data processing"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/index.rst
+msgid "Statistical learning"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/index.rst:9
+msgid ""
+"`Machine learning <http://en.wikipedia.org/wiki/Machine_learning>`_ is a "
+"technique with a growing importance, as the size of the datasets "
+"experimental sciences are facing is rapidly growing. Problems it tackles "
+"range from building a prediction function linking different observations,"
+" to classifying observations, or learning the structure in an unlabeled "
+"dataset."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/index.rst:16
+msgid ""
+"This tutorial will explore *statistical learning*, the use of machine "
+"learning techniques with the goal of `statistical inference "
+"<http://en.wikipedia.org/wiki/Statistical_inference>`_: drawing "
+"conclusions on the data at hand."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/index.rst:21
+msgid ""
+"Scikit-learn is a Python module integrating classic machine learning "
+"algorithms in the tightly-knit world of scientific Python packages "
+"(`NumPy <http://www.scipy.org>`_, `SciPy <http://www.scipy.org>`_, "
+"`matplotlib <http://matplotlib.sourceforge.net/>`_)."
+msgstr ""
+

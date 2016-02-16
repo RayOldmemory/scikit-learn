@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/plot_tomography_l1_reconstruction.rst:8
+msgid "Compressive sensing: tomography reconstruction with L1 prior (Lasso)"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_tomography_l1_reconstruction.rst:10
+msgid ""
+"This example shows the reconstruction of an image from a set of parallel "
+"projections, acquired along different angles. Such a dataset is acquired "
+"in **computed tomography** (CT)."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_tomography_l1_reconstruction.rst:14
+msgid ""
+"Without any prior information on the sample, the number of projections "
+"required to reconstruct the image is of the order of the linear size "
+"``l`` of the image (in pixels). For simplicity we consider here a sparse "
+"image, where only pixels on the boundary of objects have a non-zero "
+"value. Such data could correspond for example to a cellular material. "
+"Note however that most images are sparse in a different basis, such as "
+"the Haar wavelets. Only ``l/7`` projections are acquired, therefore it is"
+" necessary to use prior information available on the sample (its "
+"sparsity): this is an example of **compressive sensing**."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_tomography_l1_reconstruction.rst:24
+msgid ""
+"The tomography projection operation is a linear transformation. In "
+"addition to the data-fidelity term corresponding to a linear regression, "
+"we penalize the L1 norm of the image to account for its sparsity. The "
+"resulting optimization problem is called the :ref:`lasso`. We use the "
+"class :class:`sklearn.linear_model.Lasso`, that uses the coordinate "
+"descent algorithm. Importantly, this implementation is more "
+"computationally efficient on a sparse matrix, than the projection "
+"operator used here."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_tomography_l1_reconstruction.rst:32
+msgid ""
+"The reconstruction with L1 penalization gives a result with zero error "
+"(all pixels are successfully labeled with 0 or 1), even if noise was "
+"added to the projections. In comparison, an L2 penalization "
+"(:class:`sklearn.linear_model.Ridge`) produces a large number of labeling"
+" errors for the pixels. Important artifacts are observed on the "
+"reconstructed image, contrary to the L1 penalization. Note in particular "
+"the circular artifact separating the pixels in the corners, that have "
+"contributed to fewer projections than the central disk."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_tomography_l1_reconstruction.rst:49
+msgid ""
+"**Python source code:** :download:`plot_tomography_l1_reconstruction.py "
+"<plot_tomography_l1_reconstruction.py>`"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_tomography_l1_reconstruction.rst:54
+msgid ""
+"**Total running time of the example:**  13.77 seconds ( 0 minutes  13.77 "
+"seconds)"
+msgstr ""
+

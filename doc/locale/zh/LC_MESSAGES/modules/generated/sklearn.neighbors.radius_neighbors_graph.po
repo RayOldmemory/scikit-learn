@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.neighbors.radius_neighbors_graph.rst:2
+msgid ":mod:`sklearn.neighbors`.radius_neighbors_graph"
+msgstr ""
+
+#: :3
+msgid "Computes the (weighted) graph of Neighbors for points in X"
+msgstr ""
+
+#: :5
+msgid "Neighborhoods are restricted the points at a distance lower than radius."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <unsupervised_neighbors>`."
+msgstr ""
+
+#: :12
+msgid "**X** : array-like or BallTree, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :14
+msgid ""
+"Sample data, in the form of a numpy array or a precomputed "
+":class:`BallTree`."
+msgstr ""
+
+#: :17
+msgid "**radius** : float"
+msgstr ""
+
+#: :19
+msgid "Radius of neighborhoods."
+msgstr ""
+
+#: :21
+msgid "**mode** : {'connectivity', 'distance'}, optional"
+msgstr ""
+
+#: :23
+msgid ""
+"Type of returned matrix: 'connectivity' will return the connectivity "
+"matrix with ones and zeros, in 'distance' the edges are Euclidean "
+"distance between points."
+msgstr ""
+
+#: :27
+msgid "**metric** : string, default 'minkowski'"
+msgstr ""
+
+#: :29
+msgid ""
+"The distance metric used to calculate the neighbors within a given radius"
+" for each sample point. The DistanceMetric class gives a list of "
+"available metrics. The default distance is 'euclidean' ('minkowski' "
+"metric with the param equal to 2.)"
+msgstr ""
+
+#: :34
+msgid "**include_self: bool, default None** :"
+msgstr ""
+
+#: :36
+msgid ""
+"Whether or not to mark each sample as the first nearest neighbor to "
+"itself. If `None`, then True is used for mode='connectivity' and False "
+"for mode='distance' as this will preserve backwards compatibilty. From "
+"version 0.18, the default value will be False, irrespective of the value "
+"of `mode`."
+msgstr ""
+
+#: :42
+msgid "**p** : int, default 2"
+msgstr ""
+
+#: :44
+msgid ""
+"Power parameter for the Minkowski metric. When p = 1, this is equivalent "
+"to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. "
+"For arbitrary p, minkowski_distance (l_p) is used."
+msgstr ""
+
+#: :48
+msgid "**metric_params: dict, optional** :"
+msgstr ""
+
+#: :50
+msgid "additional keyword arguments for the metric function."
+msgstr ""
+
+#: :54
+msgid "**A** : sparse matrix in CSR format, shape = [n_samples, n_samples]"
+msgstr ""
+
+#: :56
+msgid "A[i, j] is assigned the weight of edge that connects i to j."
+msgstr ""
+
+#: :60
+msgid ":obj:`kneighbors_graph`"
+msgstr ""
+
+#: :63
+msgid "Examples"
+msgstr ""
+

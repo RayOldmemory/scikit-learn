@@ -1,0 +1,378 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.RandomizedLogisticRegression.rst:2
+msgid ":mod:`sklearn.linear_model`.RandomizedLogisticRegression"
+msgstr ""
+
+#: :3
+msgid "Randomized Logistic Regression"
+msgstr ""
+
+#: :5
+msgid ""
+"Randomized Regression works by resampling the train data and computing a "
+"LogisticRegression on each resampling. In short, the features selected "
+"more often are good features. It is also known as stability selection."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <randomized_l1>`."
+msgstr ""
+
+#: :13
+msgid "**C** : float, optional, default=1"
+msgstr ""
+
+#: :15
+msgid "The regularization parameter C in the LogisticRegression."
+msgstr ""
+
+#: :17
+msgid "**scaling** : float, optional, default=0.5"
+msgstr ""
+
+#: :19
+msgid ""
+"The alpha parameter in the stability selection article used to randomly "
+"scale the features. Should be between 0 and 1."
+msgstr ""
+
+#: :22
+msgid "**sample_fraction** : float, optional, default=0.75"
+msgstr ""
+
+#: :24
+msgid ""
+"The fraction of samples to be used in each randomized design. Should be "
+"between 0 and 1. If 1, all samples are used."
+msgstr ""
+
+#: :27
+msgid "**n_resampling** : int, optional, default=200"
+msgstr ""
+
+#: :29
+msgid "Number of randomized models."
+msgstr ""
+
+#: :31
+msgid "**selection_threshold** : float, optional, default=0.25"
+msgstr ""
+
+#: :33
+msgid "The score above which features should be selected."
+msgstr ""
+
+#: :35
+msgid "**fit_intercept** : boolean, optional, default=True"
+msgstr ""
+
+#: :37
+msgid ""
+"whether to calculate the intercept for this model. If set to false, no "
+"intercept will be used in calculations (e.g. data is expected to be "
+"already centered)."
+msgstr ""
+
+#: :41
+msgid "**verbose** : boolean or integer, optional"
+msgstr ""
+
+#: :43
+msgid "Sets the verbosity amount"
+msgstr ""
+
+#: :45
+msgid "**normalize** : boolean, optional, default=True"
+msgstr ""
+
+#: :47
+msgid "If True, the regressors X will be normalized before regression."
+msgstr ""
+
+#: :49
+msgid "**tol** : float, optional, default=1e-3"
+msgstr ""
+
+#: :51
+msgid "tolerance for stopping criteria of LogisticRegression"
+msgstr ""
+
+#: :53
+msgid "**n_jobs** : integer, optional"
+msgstr ""
+
+#: :55
+msgid "Number of CPUs to use during the resampling. If '-1', use all the CPUs"
+msgstr ""
+
+#: :58
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :60
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :65
+msgid "**pre_dispatch** : int, or string, optional"
+msgstr ""
+
+#: :67
+msgid ""
+"Controls the number of jobs that get dispatched during parallel "
+"execution. Reducing this number can be useful to avoid an explosion of "
+"memory consumption when more jobs get dispatched than CPUs can process. "
+"This parameter can be:"
+msgstr ""
+
+#: :72
+msgid ""
+"None, in which case all the jobs are immediately created and spawned. Use"
+" this for lightweight and fast-running jobs, to avoid delays due to on-"
+"demand spawning of the jobs"
+msgstr ""
+
+#: :77
+msgid "An int, giving the exact number of total jobs that are spawned"
+msgstr ""
+
+#: :80
+msgid "A string, giving an expression as a function of n_jobs, as in '2*n_jobs'"
+msgstr ""
+
+#: :83
+msgid "**memory** : Instance of joblib.Memory or string"
+msgstr ""
+
+#: :85
+msgid ""
+"Used for internal caching. By default, no caching is done. If a string is"
+" given, it is the path to the caching directory."
+msgstr ""
+
+#: :90
+msgid "**scores_** : array, shape = [n_features]"
+msgstr ""
+
+#: :92
+msgid "Feature scores between 0 and 1."
+msgstr ""
+
+#: :94
+msgid "**all_scores_** : array, shape = [n_features, n_reg_parameter]"
+msgstr ""
+
+#: :96
+msgid ""
+"Feature scores between 0 and 1 for all values of the regularization"
+"         parameter. The reference article suggests ``scores_`` is the max"
+"         of ``all_scores_``."
+msgstr ""
+
+#: :100
+msgid ":obj:`RandomizedLasso`, :obj:`Lasso`, :obj:`ElasticNet`"
+msgstr ""
+
+#: :103
+msgid "Notes"
+msgstr ""
+
+#: :104
+msgid "See examples/linear_model/plot_sparse_recovery.py for an example."
+msgstr ""
+
+#: :107
+msgid "References"
+msgstr ""
+
+#: :108
+msgid ""
+"Stability selection Nicolai Meinshausen, Peter Buhlmann Journal of the "
+"Royal Statistical Society: Series B Volume 72, Issue 4, pages 417-473, "
+"September 2010 DOI: 10.1111/j.1467-9868.2010.00740.x"
+msgstr ""
+
+#: :117
+msgid "Examples"
+msgstr ""
+
+#: :122
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.linear_model.RandomizedLogisticRegression.fit>`\\ (X, "
+"y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model using X, y as training data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.linear_model.RandomizedLogisticRegression.fit_transform>`\\ (X[,"
+" y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.linear_model.RandomizedLogisticRegression.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_support "
+"<sklearn.linear_model.RandomizedLogisticRegression.get_support>`\\ "
+"([indices])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Return a mask, or list, of the features/indices selected."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform "
+"<sklearn.linear_model.RandomizedLogisticRegression.inverse_transform>`\\ "
+"(X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform a new matrix using the selected features"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.linear_model.RandomizedLogisticRegression.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform "
+"<sklearn.linear_model.RandomizedLogisticRegression.transform>`\\ (X)"
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, sparse matrix shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "Training data."
+msgstr ""
+
+#: :11
+msgid "**y** : array-like, shape = [n_samples]"
+msgstr ""
+
+#: :13 :16
+msgid "Target values."
+msgstr ""
+
+#: :17
+msgid "**self** : object"
+msgstr ""
+
+#: :19
+msgid "Returns an instance of self."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+

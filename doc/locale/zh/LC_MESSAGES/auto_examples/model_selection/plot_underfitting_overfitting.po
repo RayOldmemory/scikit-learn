@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/model_selection/plot_underfitting_overfitting.rst:8
+msgid "Underfitting vs. Overfitting"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_underfitting_overfitting.rst:10
+msgid ""
+"This example demonstrates the problems of underfitting and overfitting "
+"and how we can use linear regression with polynomial features to "
+"approximate nonlinear functions. The plot shows the function that we want"
+" to approximate, which is a part of the cosine function. In addition, the"
+" samples from the real function and the approximations of different "
+"models are displayed. The models have polynomial features of different "
+"degrees. We can see that a linear function (polynomial with degree 1) is "
+"not sufficient to fit the training samples. This is called "
+"**underfitting**. A polynomial of degree 4 approximates the true function"
+" almost perfectly. However, for higher degrees the model will **overfit**"
+" the training data, i.e. it learns the noise of the training data. We "
+"evaluate quantitatively **overfitting** / **underfitting** by using "
+"cross-validation. We calculate the mean squared error (MSE) on the "
+"validation set, the higher, the less likely the model generalizes "
+"correctly from the training data."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_underfitting_overfitting.rst:34
+msgid ""
+"**Python source code:** :download:`plot_underfitting_overfitting.py "
+"<plot_underfitting_overfitting.py>`"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_underfitting_overfitting.rst:39
+msgid ""
+"**Total running time of the example:**  0.52 seconds ( 0 minutes  0.52 "
+"seconds)"
+msgstr ""
+

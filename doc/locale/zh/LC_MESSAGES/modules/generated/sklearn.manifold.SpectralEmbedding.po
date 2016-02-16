@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.manifold.SpectralEmbedding.rst:2
+msgid ":mod:`sklearn.manifold`.SpectralEmbedding"
+msgstr ""
+
+#: :3
+msgid "Spectral embedding for non-linear dimensionality reduction."
+msgstr ""
+
+#: :5
+msgid ""
+"Forms an affinity matrix given by the specified function and applies "
+"spectral decomposition to the corresponding graph laplacian. The "
+"resulting transformation is given by the value of the eigenvectors for "
+"each data point."
+msgstr ""
+
+#: :10
+msgid "Read more in the :ref:`User Guide <spectral_embedding>`."
+msgstr ""
+
+#: :14
+msgid "**n_components** : integer, default: 2"
+msgstr ""
+
+#: :16
+msgid "The dimension of the projected subspace."
+msgstr ""
+
+#: :18
+msgid "**eigen_solver** : {None, 'arpack', 'lobpcg', or 'amg'}"
+msgstr ""
+
+#: :20
+msgid ""
+"The eigenvalue decomposition strategy to use. AMG requires pyamg to be "
+"installed. It can be faster on very large, sparse problems, but may also "
+"lead to instabilities."
+msgstr ""
+
+#: :24
+msgid "**random_state** : int seed, RandomState instance, or None, default"
+msgstr ""
+
+#: :26
+msgid ""
+"A pseudo random number generator used for the initialization of the "
+"lobpcg eigenvectors decomposition when eigen_solver == 'amg'."
+msgstr ""
+
+#: :29
+msgid "**affinity** : string or callable, default"
+msgstr ""
+
+#: :37
+msgid "How to construct the affinity matrix."
+msgstr ""
+
+#: :32
+msgid "'nearest_neighbors' : construct affinity matrix by knn graph"
+msgstr ""
+
+#: :33
+msgid "'rbf' : construct affinity matrix by rbf kernel"
+msgstr ""
+
+#: :34
+msgid "'precomputed' : interpret X as precomputed affinity matrix"
+msgstr ""
+
+#: :35
+msgid ""
+"callable : use passed in function as affinity the function takes in data "
+"matrix (n_samples, n_features) and return affinity matrix (n_samples, "
+"n_samples)."
+msgstr ""
+
+#: :39
+msgid "**gamma** : float, optional, default"
+msgstr ""
+
+#: :41
+msgid "Kernel coefficient for rbf kernel."
+msgstr ""
+
+#: :43
+msgid "**n_neighbors** : int, default"
+msgstr ""
+
+#: :45
+msgid "Number of nearest neighbors for nearest_neighbors graph building."
+msgstr ""
+
+#: :49
+msgid "**embedding_** : array, shape = (n_samples, n_components)"
+msgstr ""
+
+#: :51
+msgid "Spectral embedding of the training matrix."
+msgstr ""
+
+#: :53
+msgid "**affinity_matrix_** : array, shape = (n_samples, n_samples)"
+msgstr ""
+
+#: :55
+msgid "Affinity_matrix constructed from samples or precomputed."
+msgstr ""
+
+#: :58
+msgid "References"
+msgstr ""
+
+#: :59
+msgid ""
+"A Tutorial on Spectral Clustering, 2007 Ulrike von Luxburg "
+"http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.165.9323"
+msgstr ""
+
+#: :63
+msgid ""
+"On Spectral Clustering: Analysis and an algorithm, 2011 Andrew Y. Ng, "
+"Michael I. Jordan, Yair Weiss "
+"http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.19.8100"
+msgstr ""
+
+#: :67
+msgid ""
+"Normalized cuts and image segmentation, 2000 Jianbo Shi, Jitendra Malik "
+"http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.160.2324"
+msgstr ""
+
+#: :74
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.manifold.SpectralEmbedding.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model from data in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.manifold.SpectralEmbedding.fit_transform>`\\"
+" (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model from data in X and transform X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.manifold.SpectralEmbedding.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.manifold.SpectralEmbedding.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid ""
+"Training vector, where n_samples is the number of samples and n_features "
+"is the number of features."
+msgstr ""
+
+#: :12
+msgid ""
+"If affinity is \"precomputed\" X : array-like, shape (n_samples, "
+"n_samples), Interpret X as precomputed adjacency graph computed from "
+"samples."
+msgstr ""
+
+#: :19
+msgid "**self** : object"
+msgstr ""
+
+#: :21
+msgid "Returns the instance itself."
+msgstr ""
+
+#: :7
+msgid "**X: array-like, shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :19
+msgid "**X_new: array-like, shape (n_samples, n_components)** :"
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.SpectralEmbedding.examples:3
+msgid "Examples using ``sklearn.manifold.SpectralEmbedding``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.SpectralEmbedding.examples:25
+msgid ":ref:`example_cluster_plot_digits_linkage.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.SpectralEmbedding.examples:45
+msgid ":ref:`example_manifold_plot_compare_methods.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.SpectralEmbedding.examples:65
+msgid ":ref:`example_manifold_plot_manifold_sphere.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.SpectralEmbedding.examples:85
+msgid ":ref:`example_manifold_plot_lle_digits.py`"
+msgstr ""
+

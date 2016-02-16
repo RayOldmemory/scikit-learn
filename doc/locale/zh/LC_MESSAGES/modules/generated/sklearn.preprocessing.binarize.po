@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.preprocessing.binarize.rst:2
+msgid ":mod:`sklearn.preprocessing`.binarize"
+msgstr ""
+
+#: :3
+msgid "Boolean thresholding of array-like or scipy.sparse matrix"
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <preprocessing_binarization>`."
+msgstr ""
+
+#: :9
+msgid "**X** : {array-like, sparse matrix}, shape [n_samples, n_features]"
+msgstr ""
+
+#: :11
+msgid ""
+"The data to binarize, element by element. scipy.sparse matrices should be"
+" in CSR or CSC format to avoid an un-necessary copy."
+msgstr ""
+
+#: :15
+msgid "**threshold** : float, optional (0.0 by default)"
+msgstr ""
+
+#: :17
+msgid ""
+"Feature values below or equal to this are replaced by 0, above it by 1. "
+"Threshold may not be less than 0 for operations on sparse matrices."
+msgstr ""
+
+#: :20
+msgid "**copy** : boolean, optional, default True"
+msgstr ""
+
+#: :22
+msgid ""
+"set to False to perform inplace binarization and avoid a copy (if the "
+"input is already a numpy array or a scipy.sparse CSR / CSC matrix and if "
+"axis is 1)."
+msgstr ""
+
+#: :28
+msgid ""
+":class:`sklearn.preprocessing.Binarizer`, :obj:`using`, "
+":class:`sklearn.pipeline.Pipeline`"
+msgstr ""
+

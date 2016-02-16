@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.fetch_mldata.rst:2
+msgid ":mod:`sklearn.datasets`.fetch_mldata"
+msgstr ""
+
+#: :3
+msgid "Fetch an mldata.org data set"
+msgstr ""
+
+#: :5
+msgid "If the file does not exist yet, it is downloaded from mldata.org ."
+msgstr ""
+
+#: :7
+msgid ""
+"mldata.org does not have an enforced convention for storing data or "
+"naming the columns in a data set. The default behavior of this function "
+"works well with the most common cases:"
+msgstr ""
+
+#: :11
+msgid ""
+"data values are stored in the column 'data', and target values in the "
+"column 'label'"
+msgstr ""
+
+#: :13
+msgid ""
+"alternatively, the first column stores target values, and the second data"
+" values"
+msgstr ""
+
+#: :15
+msgid ""
+"the data array is stored as `n_features x n_samples` , and thus needs to "
+"be transposed to match the `sklearn` standard"
+msgstr ""
+
+#: :18
+msgid ""
+"Keyword arguments allow to adapt these defaults to specific data sets "
+"(see parameters `target_name`, `data_name`, `transpose_data`, and the "
+"examples below)."
+msgstr ""
+
+#: :22
+msgid ""
+"mldata.org data sets may have multiple columns, which are stored in the "
+"Bunch object with their original name."
+msgstr ""
+
+#: :27
+msgid "**dataname:** :"
+msgstr ""
+
+#: :29
+msgid ""
+"Name of the data set on mldata.org, e.g.: \"leukemia\", \"Whistler Daily "
+"Snowfall\", etc. The raw name is automatically converted to a mldata.org "
+"URL ."
+msgstr ""
+
+#: :33
+msgid "**target_name: optional, default: 'label'** :"
+msgstr ""
+
+#: :35
+msgid "Name or index of the column containing the target values."
+msgstr ""
+
+#: :37
+msgid "**data_name: optional, default: 'data'** :"
+msgstr ""
+
+#: :39
+msgid "Name or index of the column containing the data."
+msgstr ""
+
+#: :41
+msgid "**transpose_data: optional, default: True** :"
+msgstr ""
+
+#: :43
+msgid "If True, transpose the downloaded data array."
+msgstr ""
+
+#: :45
+msgid "**data_home: optional, default: None** :"
+msgstr ""
+
+#: :47
+msgid ""
+"Specify another download and cache folder for the data sets. By default "
+"all scikit learn data is stored in '~/scikit_learn_data' subfolders."
+msgstr ""
+
+#: :52
+msgid "**data** : Bunch"
+msgstr ""
+
+#: :54
+msgid ""
+"Dictionary-like object, the interesting attributes are: 'data', the data "
+"to learn, 'target', the classification labels, 'DESCR', the full "
+"description of the dataset, and 'COL_NAMES', the original names of the "
+"dataset columns."
+msgstr ""
+
+#: :60
+msgid "Examples"
+msgstr ""
+
+#: :61
+msgid "Load the 'iris' dataset from mldata.org:"
+msgstr ""
+
+#: :73
+msgid ""
+"Load the 'leukemia' dataset from mldata.org, which needs to be transposed"
+" to respects the sklearn axes convention:"
+msgstr ""
+
+#: :81
+msgid ""
+"Load an alternative 'iris' dataset, which has different names for the "
+"columns:"
+msgstr ""
+

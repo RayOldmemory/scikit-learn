@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:8
+msgid "Sparse recovery: feature selection for sparse linear models"
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:10
+msgid ""
+"Given a small number of observations, we want to recover which features "
+"of X are relevant to explain y. For this :ref:`sparse linear models "
+"<l1_feature_selection>` can outperform standard statistical tests if the "
+"true model is sparse, i.e. if a small fraction of the features are "
+"relevant."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:16
+msgid ""
+"As detailed in :ref:`the compressive sensing notes "
+"<compressive_sensing>`, the ability of L1-based approach to identify the "
+"relevant variables depends on the sparsity of the ground truth, the "
+"number of samples, the number of features, the conditioning of the design"
+" matrix on the signal subspace, the amount of noise, and the absolute "
+"value of the smallest non-zero coefficient [Wainwright2006] "
+"(http://statistics.berkeley.edu/tech-reports/709.pdf)."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:24
+msgid ""
+"Here we keep all parameters constant and vary the conditioning of the "
+"design matrix. For a well-conditioned design matrix (small mutual "
+"incoherence) we are exactly in compressive sensing conditions (i.i.d "
+"Gaussian sensing matrix), and L1-recovery with the Lasso performs very "
+"well. For an ill-conditioned matrix (high mutual incoherence), regressors"
+" are very correlated, and the Lasso randomly selects one. However, "
+"randomized-Lasso can recover the ground truth well."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:32
+msgid ""
+"In each situation, we first vary the alpha parameter setting the sparsity"
+" of the estimated model and look at the stability scores of the "
+"randomized Lasso. This analysis, knowing the ground truth, shows an "
+"optimal regime in which relevant features stand out from the irrelevant "
+"ones. If alpha is chosen too small, non-relevant variables enter the "
+"model. On the opposite, if alpha is selected too large, the Lasso is "
+"equivalent to stepwise regression, and thus brings no advantage over a "
+"univariate F-test."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:41
+msgid ""
+"In a second time, we set alpha and compare the performance of different "
+"feature selection methods, using the area under curve (AUC) of the "
+"precision-recall."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:73
+msgid ""
+"**Python source code:** :download:`plot_sparse_recovery.py "
+"<plot_sparse_recovery.py>`"
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_sparse_recovery.rst:78
+msgid ""
+"**Total running time of the example:**  14.08 seconds ( 0 minutes  14.08 "
+"seconds)"
+msgstr ""
+

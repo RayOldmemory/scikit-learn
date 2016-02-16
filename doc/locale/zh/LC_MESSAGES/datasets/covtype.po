@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../datasets/covtype.rst:5
+msgid "Forest covertypes"
+msgstr ""
+
+#: ../../datasets/covtype.rst:7
+msgid ""
+"The samples in this dataset correspond to 30×30m patches of forest in the"
+" US, collected for the task of predicting each patch's cover type, i.e. "
+"the dominant species of tree. There are seven covertypes, making this a "
+"multiclass classification problem. Each sample has 54 features, described"
+" on the `dataset's homepage "
+"<http://archive.ics.uci.edu/ml/datasets/Covertype>`_. Some of the "
+"features are boolean indicators, while others are discrete or continuous "
+"measurements."
+msgstr ""
+
+#: ../../datasets/covtype.rst:16
+msgid ""
+":func:`sklearn.datasets.fetch_covtype` will load the covertype dataset; "
+"it returns a dictionary-like object with the feature matrix in the "
+"``data`` member and the target values in ``target``. The dataset will be "
+"downloaded from the web if necessary."
+msgstr ""
+

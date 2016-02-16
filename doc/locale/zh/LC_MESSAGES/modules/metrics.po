@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/metrics.rst:4
+msgid "Pairwise metrics, Affinities and Kernels"
+msgstr ""
+
+#: ../../modules/metrics.rst:6
+msgid ""
+"The :mod:`sklearn.metrics.pairwise` submodule implements utilities to "
+"evaluate pairwise distances or affinity of sets of samples."
+msgstr ""
+
+#: ../../modules/metrics.rst:9
+msgid ""
+"This module contains both distance metrics and kernels. A brief summary "
+"is given on the two here."
+msgstr ""
+
+#: ../../modules/metrics.rst:12
+msgid ""
+"Distance metrics are functions ``d(a, b)`` such that ``d(a, b) < d(a, "
+"c)`` if objects ``a`` and ``b`` are considered \"more similar\" than "
+"objects ``a`` and ``c``. Two objects exactly alike would have a distance "
+"of zero. One of the most popular examples is Euclidean distance. To be a "
+"'true' metric, it must obey the following four conditions::"
+msgstr ""
+
+#: ../../modules/metrics.rst:23
+msgid ""
+"Kernels are measures of similarity, i.e. ``s(a, b) > s(a, c)`` if objects"
+" ``a`` and ``b`` are considered \"more similar\" than objects ``a`` and "
+"``c``. A kernel must also be positive semi-definite."
+msgstr ""
+
+#: ../../modules/metrics.rst:27
+msgid ""
+"There are a number of ways to convert between a distance metric and a "
+"similarity measure, such as a kernel. Let ``D`` be the distance, and "
+"``S`` be the kernel:"
+msgstr ""
+
+#: ../../modules/metrics.rst:31
+msgid ""
+"``S = np.exp(-D * gamma)``, where one heuristic for choosing ``gamma`` is"
+" ``1 / num_features``"
+msgstr ""
+
+#: ../../modules/metrics.rst:33
+msgid "``S = 1. / (D / np.max(D))``"
+msgstr ""
+
+#: ../../modules/metrics.rst:41
+msgid "Cosine similarity"
+msgstr ""
+
+#: ../../modules/metrics.rst:42
+msgid ""
+":func:`cosine_similarity` computes the L2-normalized dot product of "
+"vectors. That is, if :math:`x` and :math:`y` are row vectors, their "
+"cosine similarity :math:`k` is defined as:"
+msgstr ""
+
+#: ../../modules/metrics.rst:50
+msgid ""
+"This is called cosine similarity, because Euclidean (L2) normalization "
+"projects the vectors onto the unit sphere, and their dot product is then "
+"the cosine of the angle between the points denoted by the vectors."
+msgstr ""
+
+#: ../../modules/metrics.rst:55
+msgid ""
+"This kernel is a popular choice for computing the similarity of documents"
+" represented as tf-idf vectors. :func:`cosine_similarity` accepts "
+"``scipy.sparse`` matrices. (Note that the tf-idf functionality in "
+"``sklearn.feature_extraction.text`` can produce normalized vectors, in "
+"which case :func:`cosine_similarity` is equivalent to "
+":func:`linear_kernel`, only slower.)"
+msgstr ""
+
+#: ../../modules/metrics.rst
+msgid "References:"
+msgstr ""
+
+#: ../../modules/metrics.rst:64
+msgid ""
+"C.D. Manning, P. Raghavan and H. Schütze (2008). Introduction to "
+"Information Retrieval. Cambridge University Press. "
+"http://nlp.stanford.edu/IR-book/html/htmledition/the-vector-space-model-"
+"for-scoring-1.html"
+msgstr ""
+
+#: ../../modules/metrics.rst:71
+msgid "Linear kernel"
+msgstr ""
+
+#: ../../modules/metrics.rst:72
+msgid ""
+"The function :func:`linear_kernel` computes the linear kernel, that is, a"
+" special case of :func:`polynomial_kernel` with ``degree=1`` and "
+"``coef0=0`` (homogeneous). If ``x`` and ``y`` are column vectors, their "
+"linear kernel is:"
+msgstr ""
+
+#: ../../modules/metrics.rst:83
+msgid "Polynomial kernel"
+msgstr ""
+
+#: ../../modules/metrics.rst:84
+msgid ""
+"The function :func:`polynomial_kernel` computes the degree-d polynomial "
+"kernel between two vectors. The polynomial kernel represents the "
+"similarity between two vectors. Conceptually, the polynomial kernels "
+"considers not only the similarity between vectors under the same "
+"dimension, but also across dimensions. When used in machine learning "
+"algorithms, this allows to account for feature interaction."
+msgstr ""
+
+#: ../../modules/metrics.rst:90
+msgid "The polynomial kernel is defined as:"
+msgstr ""
+
+#: ../../modules/metrics.rst:96 ../../modules/metrics.rst:116
+msgid "where:"
+msgstr ""
+
+#: ../../modules/metrics.rst:98 ../../modules/metrics.rst:118
+msgid "``x``, ``y`` are the input vectors"
+msgstr ""
+
+#: ../../modules/metrics.rst:99
+msgid "``d`` is the kernel degree"
+msgstr ""
+
+#: ../../modules/metrics.rst:101
+msgid "If :math:`c_0 = 0` the kernel is said to be homogeneous."
+msgstr ""
+
+#: ../../modules/metrics.rst:106
+msgid "Sigmoid kernel"
+msgstr ""
+
+#: ../../modules/metrics.rst:107
+msgid ""
+"The function :func:`sigmoid_kernel` computes the sigmoid kernel between "
+"two vectors. The sigmoid kernel is also known as hyperbolic tangent, or "
+"Multilayer Perceptron (because, in the neural network field, it is often "
+"used as neuron activation function). It is defined as:"
+msgstr ""
+
+#: ../../modules/metrics.rst:119
+msgid ":math:`\\gamma` is known as slope"
+msgstr ""
+
+#: ../../modules/metrics.rst:120
+msgid ":math:`c_0` is known as intercept"
+msgstr ""
+
+#: ../../modules/metrics.rst:125
+msgid "RBF kernel"
+msgstr ""
+
+#: ../../modules/metrics.rst:126
+msgid ""
+"The function :func:`rbf_kernel` computes the radial basis function (RBF) "
+"kernel between two vectors. This kernel is defined as:"
+msgstr ""
+
+#: ../../modules/metrics.rst:133
+msgid ""
+"where ``x`` and ``y`` are the input vectors. If :math:`\\gamma = "
+"\\sigma^{-2}` the kernel is known as the Gaussian kernel of variance "
+":math:`\\sigma^2`."
+msgstr ""
+
+#: ../../modules/metrics.rst:139
+msgid "Laplacian kernel"
+msgstr ""
+
+#: ../../modules/metrics.rst:140
+msgid ""
+"The function :func:`laplacian_kernel` is a variant on the radial basis "
+"function kernel defined as:"
+msgstr ""
+
+#: ../../modules/metrics.rst:147
+msgid ""
+"where ``x`` and ``y`` are the input vectors and :math:`\\|x-y\\|_1` is "
+"the Manhattan distance between the input vectors."
+msgstr ""
+
+#: ../../modules/metrics.rst:150
+msgid ""
+"It has proven useful in ML applied to noiseless data. See e.g. `Machine "
+"learning for quantum mechanics in a nutshell "
+"<http://onlinelibrary.wiley.com/doi/10.1002/qua.24954/abstract/>`_."
+msgstr ""
+
+#: ../../modules/metrics.rst:157
+msgid "Chi-squared kernel"
+msgstr ""
+
+#: ../../modules/metrics.rst:158
+msgid ""
+"The chi-squared kernel is a very popular choice for training non-linear "
+"SVMs in computer vision applications. It can be computed using "
+":func:`chi2_kernel` and then passed to an :class:`sklearn.svm.SVC` with "
+"``kernel=\"precomputed\"``::"
+msgstr ""
+
+#: ../../modules/metrics.rst:178
+msgid "It can also be directly used as the ``kernel`` argument::"
+msgstr ""
+
+#: ../../modules/metrics.rst:185
+msgid "The chi squared kernel is given by"
+msgstr ""
+
+#: ../../modules/metrics.rst:191
+msgid ""
+"The data is assumed to be non-negative, and is often normalized to have "
+"an L1-norm of one. The normalization is rationalized with the connection "
+"to the chi squared distance, which is a distance between discrete "
+"probability distributions."
+msgstr ""
+
+#: ../../modules/metrics.rst:195
+msgid ""
+"The chi squared kernel is most commonly used on histograms (bags) of "
+"visual words."
+msgstr ""
+
+#: ../../modules/metrics.rst:199
+msgid ""
+"Zhang, J. and Marszalek, M. and Lazebnik, S. and Schmid, C. Local "
+"features and kernels for classification of texture and object categories:"
+" A comprehensive study International Journal of Computer Vision 2007 "
+"http://research.microsoft.com/en-us/um/people/manik/projects/trade-"
+"off/papers/ZhangIJCV06.pdf"
+msgstr ""
+

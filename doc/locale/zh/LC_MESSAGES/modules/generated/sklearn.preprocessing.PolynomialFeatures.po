@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.preprocessing.PolynomialFeatures.rst:2
+msgid ":mod:`sklearn.preprocessing`.PolynomialFeatures"
+msgstr ""
+
+#: :3
+msgid "Generate polynomial and interaction features."
+msgstr ""
+
+#: :5
+msgid ""
+"Generate a new feature matrix consisting of all polynomial combinations "
+"of the features with degree less than or equal to the specified degree. "
+"For example, if an input sample is two dimensional and of the form [a, "
+"b], the degree-2 polynomial features are [1, a, b, a^2, ab, b^2]."
+msgstr ""
+
+#: :12
+msgid "**degree** : integer"
+msgstr ""
+
+#: :14
+msgid "The degree of the polynomial features. Default = 2."
+msgstr ""
+
+#: :16
+msgid "**interaction_only** : boolean, default = False"
+msgstr ""
+
+#: :18
+msgid ""
+"If true, only interaction features are produced: features that are "
+"products of at most ``degree`` *distinct* input features (so not ``x[1] "
+"** 2``, ``x[0] * x[2] ** 3``, etc.)."
+msgstr ""
+
+#: :22
+msgid "**include_bias** : boolean"
+msgstr ""
+
+#: :24
+msgid ""
+"If True (default), then include a bias column, the feature in which all "
+"polynomial powers are zero (i.e. a column of ones - acts as an intercept "
+"term in a linear model)."
+msgstr ""
+
+#: :30
+msgid "**powers_** : array, shape (n_input_features, n_output_features)"
+msgstr ""
+
+#: :32
+msgid "powers_[i, j] is the exponent of the jth input in the ith output."
+msgstr ""
+
+#: :34
+msgid "**n_input_features_** : int"
+msgstr ""
+
+#: :36
+msgid "The total number of input features."
+msgstr ""
+
+#: :38
+msgid "**n_output_features_** : int"
+msgstr ""
+
+#: :40
+msgid ""
+"The total number of polynomial output features. The number of output "
+"features is computed by iterating over all suitably sized combinations of"
+" input features."
+msgstr ""
+
+#: :45
+msgid "Notes"
+msgstr ""
+
+#: :46
+msgid ""
+"Be aware that the number of features in the output array scales "
+"polynomially in the number of features of the input array, and "
+"exponentially in the degree. High degrees can cause overfitting."
+msgstr ""
+
+#: :50
+msgid ""
+"See :ref:`examples/linear_model/plot_polynomial_interpolation.py "
+"<example_linear_model_plot_polynomial_interpolation.py>`"
+msgstr ""
+
+#: :54
+msgid "Examples"
+msgstr ""
+
+#: :72
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.preprocessing.PolynomialFeatures.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute number of output features."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.preprocessing.PolynomialFeatures.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.preprocessing.PolynomialFeatures.get_params>`\\"
+" ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.preprocessing.PolynomialFeatures.set_params>`\\"
+" (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform <sklearn.preprocessing.PolynomialFeatures.transform>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform data to polynomial features"
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "The data to transform, row by row."
+msgstr ""
+
+#: :13
+msgid "**XP** : np.ndarray shape [n_samples, NP]"
+msgstr ""
+
+#: :15
+msgid ""
+"The matrix of features, where NP is the number of polynomial features "
+"generated from the combination of inputs."
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.PolynomialFeatures.examples:3
+msgid "Examples using ``sklearn.preprocessing.PolynomialFeatures``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.PolynomialFeatures.examples:25
+msgid ":ref:`example_linear_model_plot_polynomial_interpolation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.PolynomialFeatures.examples:45
+msgid ":ref:`example_linear_model_plot_robust_fit.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.PolynomialFeatures.examples:65
+msgid ":ref:`example_model_selection_plot_underfitting_overfitting.py`"
+msgstr ""
+

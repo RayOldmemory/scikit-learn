@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.manifold.spectral_embedding.rst:2
+msgid ":mod:`sklearn.manifold`.spectral_embedding"
+msgstr ""
+
+#: :3
+msgid "Project the sample on the first eigenvectors of the graph Laplacian."
+msgstr ""
+
+#: :5
+msgid ""
+"The adjacency matrix is used to compute a normalized graph Laplacian "
+"whose spectrum (especially the eigenvectors associated to the smallest "
+"eigenvalues) has an interpretation in terms of minimal number of cuts "
+"necessary to split the graph into comparably sized components."
+msgstr ""
+
+#: :11
+msgid ""
+"This embedding can also 'work' even if the ``adjacency`` variable is not "
+"strictly the adjacency matrix of a graph but more generally an affinity "
+"or similarity matrix between samples (for instance the heat kernel of a "
+"euclidean distance matrix or a k-NN matrix)."
+msgstr ""
+
+#: :16
+msgid ""
+"However care must taken to always make the affinity matrix symmetric so "
+"that the eigenvector decomposition works as expected."
+msgstr ""
+
+#: :19
+msgid "Read more in the :ref:`User Guide <spectral_embedding>`."
+msgstr ""
+
+#: :23
+msgid "**adjacency** : array-like or sparse matrix, shape: (n_samples, n_samples)"
+msgstr ""
+
+#: :25
+msgid "The adjacency matrix of the graph to embed."
+msgstr ""
+
+#: :27
+msgid "**n_components** : integer, optional, default 8"
+msgstr ""
+
+#: :29
+msgid "The dimension of the projection subspace."
+msgstr ""
+
+#: :31
+msgid "**eigen_solver** : {None, 'arpack', 'lobpcg', or 'amg'}, default None"
+msgstr ""
+
+#: :33
+msgid ""
+"The eigenvalue decomposition strategy to use. AMG requires pyamg to be "
+"installed. It can be faster on very large, sparse problems, but may also "
+"lead to instabilities."
+msgstr ""
+
+#: :37
+msgid "**random_state** : int seed, RandomState instance, or None (default)"
+msgstr ""
+
+#: :39
+msgid ""
+"A pseudo random number generator used for the initialization of the "
+"lobpcg eigenvectors decomposition when eigen_solver == 'amg'. By default,"
+" arpack is used."
+msgstr ""
+
+#: :43
+msgid "**eigen_tol** : float, optional, default=0.0"
+msgstr ""
+
+#: :45
+msgid ""
+"Stopping criterion for eigendecomposition of the Laplacian matrix when "
+"using arpack eigen_solver."
+msgstr ""
+
+#: :48
+msgid "**drop_first** : bool, optional, default=True"
+msgstr ""
+
+#: :50
+msgid ""
+"Whether to drop the first eigenvector. For spectral embedding, this "
+"should be True as the first eigenvector should be constant vector for "
+"connected graph, but for spectral clustering, this should be kept as "
+"False to retain the first eigenvector."
+msgstr ""
+
+#: :55
+msgid "**norm_laplacian** : bool, optional, default=True"
+msgstr ""
+
+#: :57
+msgid "If True, then compute normalized Laplacian."
+msgstr ""
+
+#: :61
+msgid "**embedding** : array, shape=(n_samples, n_components)"
+msgstr ""
+
+#: :63
+msgid "The reduced samples."
+msgstr ""
+
+#: :66
+msgid "Notes"
+msgstr ""
+
+#: :67
+msgid ""
+"Spectral embedding is most useful when the graph has one connected "
+"component. If there graph has many components, the first few eigenvectors"
+" will simply uncover the connected components of the graph."
+msgstr ""
+
+#: :72
+msgid "References"
+msgstr ""
+
+#: :73
+msgid "http://en.wikipedia.org/wiki/LOBPCG"
+msgstr ""
+
+#: :75
+#, python-format
+msgid ""
+"Toward the Optimal Preconditioned Eigensolver: Locally Optimal Block "
+"Preconditioned Conjugate Gradient Method Andrew V. Knyazev "
+"http://dx.doi.org/10.1137%2FS1064827500366124"
+msgstr ""
+

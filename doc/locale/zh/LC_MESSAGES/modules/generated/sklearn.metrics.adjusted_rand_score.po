@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.adjusted_rand_score.rst:2
+msgid ":mod:`sklearn.metrics`.adjusted_rand_score"
+msgstr ""
+
+#: :3
+msgid "Rand index adjusted for chance"
+msgstr ""
+
+#: :5
+msgid ""
+"The Rand Index computes a similarity measure between two clusterings by "
+"considering all pairs of samples and counting pairs that are assigned in "
+"the same or different clusters in the predicted and true clusterings."
+msgstr ""
+
+#: :10
+msgid ""
+"The raw RI score is then \"adjusted for chance\" into the ARI score using"
+" the following scheme::"
+msgstr ""
+
+#: :15
+msgid ""
+"The adjusted Rand index is thus ensured to have a value close to 0.0 for "
+"random labeling independently of the number of clusters and samples and "
+"exactly 1.0 when the clusterings are identical (up to a permutation)."
+msgstr ""
+
+#: :20
+msgid "ARI is a symmetric measure::"
+msgstr ""
+
+#: :24
+msgid "Read more in the :ref:`User Guide <adjusted_rand_score>`."
+msgstr ""
+
+#: :28
+msgid "**labels_true** : int array, shape = [n_samples]"
+msgstr ""
+
+#: :30
+msgid "Ground truth class labels to be used as a reference"
+msgstr ""
+
+#: :32
+msgid "**labels_pred** : array, shape = [n_samples]"
+msgstr ""
+
+#: :34
+msgid "Cluster labels to evaluate"
+msgstr ""
+
+#: :38
+msgid "**ari** : float"
+msgstr ""
+
+#: :40
+msgid ""
+"Similarity score between -1.0 and 1.0. Random labelings have an ARI close"
+" to 0.0. 1.0 stands for perfect match."
+msgstr ""
+
+#: :45
+msgid ":obj:`adjusted_mutual_info_score`"
+msgstr ""
+
+#: :46
+msgid "Adjusted Mutual Information"
+msgstr ""
+
+#: :49
+msgid "References"
+msgstr ""
+
+#: :50
+msgid ""
+"`L. Hubert and P. Arabie, Comparing Partitions, Journal of Classification"
+" 1985` http://www.springerlink.com/content/x64124718341j1j0/"
+msgstr ""
+
+#: :54
+msgid "http://en.wikipedia.org/wiki/Rand_index#Adjusted_Rand_index"
+msgstr ""
+
+#: :61
+msgid "Examples"
+msgstr ""
+
+#: :62
+msgid "Perfectly maching labelings have a score of 1 even"
+msgstr ""
+
+#: :70
+msgid ""
+"Labelings that assign all classes members to the same clusters are "
+"complete be not always pure, hence penalized::"
+msgstr ""
+
+#: :76
+msgid ""
+"ARI is symmetric, so labelings that have pure clusters with members "
+"coming from the same classes but unnecessary splits are penalized::"
+msgstr ""
+
+#: :82
+msgid ""
+"If classes members are completely split across different clusters, the "
+"assignment is totally incomplete, hence the ARI is very low::"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.adjusted_rand_score.examples:3
+msgid "Examples using ``sklearn.metrics.adjusted_rand_score``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.adjusted_rand_score.examples:25
+msgid ":ref:`example_cluster_plot_affinity_propagation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.adjusted_rand_score.examples:45
+msgid ":ref:`example_cluster_plot_dbscan.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.adjusted_rand_score.examples:65
+msgid ":ref:`example_cluster_plot_kmeans_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.adjusted_rand_score.examples:85
+msgid ":ref:`example_cluster_plot_adjusted_for_chance_measures.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.adjusted_rand_score.examples:105
+msgid ":ref:`example_text_document_clustering.py`"
+msgstr ""
+

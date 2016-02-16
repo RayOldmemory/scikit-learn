@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/hetero_feature_union.rst:8
+msgid "Feature Union with Heterogeneous Data Sources"
+msgstr ""
+
+#: ../../auto_examples/hetero_feature_union.rst:10
+msgid ""
+"Datasets can often contain components of that require different feature "
+"extraction and processing pipelines.  This scenario might occur when:"
+msgstr ""
+
+#: ../../auto_examples/hetero_feature_union.rst:13
+msgid ""
+"Your dataset consists of heterogeneous data types (e.g. raster images and"
+" text captions)"
+msgstr ""
+
+#: ../../auto_examples/hetero_feature_union.rst:15
+msgid ""
+"Your dataset is stored in a Pandas DataFrame and different columns "
+"require different processing pipelines."
+msgstr ""
+
+#: ../../auto_examples/hetero_feature_union.rst:18
+msgid ""
+"This example demonstrates how to use "
+":class:`sklearn.feature_extraction.FeatureUnion` on a dataset containing "
+"different types of features.  We use the 20-newsgroups dataset and "
+"compute standard bag-of-words features for the subject line and body in "
+"separate pipelines as well as ad hoc features on the body. We combine "
+"them (with weights) using a FeatureUnion and finally train a classifier "
+"on the combined set of features."
+msgstr ""
+
+#: ../../auto_examples/hetero_feature_union.rst:26
+msgid ""
+"The choice of features is not particularly helpful, but serves to "
+"illustrate the technique."
+msgstr ""
+
+#: ../../auto_examples/hetero_feature_union.rst:30
+msgid ""
+"**Python source code:** :download:`hetero_feature_union.py "
+"<hetero_feature_union.py>`"
+msgstr ""
+

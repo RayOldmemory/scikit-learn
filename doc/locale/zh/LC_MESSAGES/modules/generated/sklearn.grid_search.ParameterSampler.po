@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.grid_search.ParameterSampler.rst:2
+msgid ":mod:`sklearn.grid_search`.ParameterSampler"
+msgstr ""
+
+#: :3
+msgid "Generator on parameters sampled from given distributions."
+msgstr ""
+
+#: :5
+msgid ""
+"Non-deterministic iterable over random candidate combinations for hyper- "
+"parameter search. If all parameters are presented as a list, sampling "
+"without replacement is performed. If at least one parameter is given as a"
+" distribution, sampling with replacement is used. It is highly "
+"recommended to use continuous distributions for continuous parameters."
+msgstr ""
+
+#: :12
+msgid ""
+"Note that as of SciPy 0.12, the ``scipy.stats.distributions`` do not "
+"accept a custom RNG instance and always use the singleton RNG from "
+"``numpy.random``. Hence setting ``random_state`` will not guarantee a "
+"deterministic iteration whenever ``scipy.stats`` distributions are used "
+"to define the parameter search space."
+msgstr ""
+
+#: :18
+msgid "Read more in the :ref:`User Guide <grid_search>`."
+msgstr ""
+
+#: :22
+msgid "**param_distributions** : dict"
+msgstr ""
+
+#: :24
+msgid ""
+"Dictionary where the keys are parameters and values are distributions "
+"from which a parameter is to be sampled. Distributions either have to "
+"provide a ``rvs`` function to sample from them, or can be given as a list"
+" of values, where a uniform distribution is assumed."
+msgstr ""
+
+#: :30
+msgid "**n_iter** : integer"
+msgstr ""
+
+#: :32
+msgid "Number of parameter settings that are produced."
+msgstr ""
+
+#: :34
+msgid "**random_state** : int or RandomState"
+msgstr ""
+
+#: :36
+msgid ""
+"Pseudo random number generator state used for random uniform sampling "
+"from lists of possible values instead of scipy.stats distributions."
+msgstr ""
+
+#: :41
+msgid "**params** : dict of string to any"
+msgstr ""
+
+#: :43
+msgid ""
+"**Yields** dictionaries mapping each estimator parameter to as sampled "
+"value."
+msgstr ""
+
+#: :47
+msgid "Examples"
+msgstr ""
+

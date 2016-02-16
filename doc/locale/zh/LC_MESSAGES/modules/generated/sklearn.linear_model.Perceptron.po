@@ -1,0 +1,589 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.Perceptron.rst:2
+msgid ":mod:`sklearn.linear_model`.Perceptron"
+msgstr ""
+
+#: :3
+msgid "Read more in the :ref:`User Guide <perceptron>`."
+msgstr ""
+
+#: :7
+msgid "**penalty** : None, 'l2' or 'l1' or 'elasticnet'"
+msgstr ""
+
+#: :9
+msgid "The penalty (aka regularization term) to be used. Defaults to None."
+msgstr ""
+
+#: :11
+msgid "**alpha** : float"
+msgstr ""
+
+#: :13
+msgid ""
+"Constant that multiplies the regularization term if regularization is "
+"used. Defaults to 0.0001"
+msgstr ""
+
+#: :16
+msgid "**fit_intercept** : bool"
+msgstr ""
+
+#: :18
+msgid ""
+"Whether the intercept should be estimated or not. If False, the data is "
+"assumed to be already centered. Defaults to True."
+msgstr ""
+
+#: :21
+msgid "**n_iter** : int, optional"
+msgstr ""
+
+#: :23
+msgid "The number of passes over the training data (aka epochs). Defaults to 5."
+msgstr ""
+
+#: :26
+msgid "**shuffle** : bool, optional, default True"
+msgstr ""
+
+#: :28
+msgid "Whether or not the training data should be shuffled after each epoch."
+msgstr ""
+
+#: :30
+msgid "**random_state** : int seed, RandomState instance, or None (default)"
+msgstr ""
+
+#: :32
+msgid ""
+"The seed of the pseudo random number generator to use when shuffling the "
+"data."
+msgstr ""
+
+#: :35
+msgid "**verbose** : integer, optional"
+msgstr ""
+
+#: :37
+msgid "The verbosity level"
+msgstr ""
+
+#: :39
+msgid "**n_jobs** : integer, optional"
+msgstr ""
+
+#: :41
+msgid ""
+"The number of CPUs to use to do the OVA (One Versus All, for multi-class "
+"problems) computation. -1 means 'all CPUs'. Defaults to 1."
+msgstr ""
+
+#: :45
+msgid "**eta0** : double"
+msgstr ""
+
+#: :47
+msgid "Constant by which the updates are multiplied. Defaults to 1."
+msgstr ""
+
+#: :49
+msgid ""
+"**class_weight** : dict, {class_label: weight} or \"balanced\" or None, "
+"optional"
+msgstr ""
+
+#: :51
+msgid "Preset for the class_weight fit parameter."
+msgstr ""
+
+#: :53
+msgid ""
+"Weights associated with classes. If not given, all classes are supposed "
+"to have weight one."
+msgstr ""
+
+#: :56
+msgid ""
+"The \"balanced\" mode uses the values of y to automatically adjust "
+"weights inversely proportional to class frequencies in the input data as "
+"``n_samples / (n_classes * np.bincount(y))``"
+msgstr ""
+
+#: :60
+msgid "**warm_start** : bool, optional"
+msgstr ""
+
+#: :62
+msgid ""
+"When set to True, reuse the solution of the previous call to fit as "
+"initialization, otherwise, just erase the previous solution."
+msgstr ""
+
+#: :67
+msgid ""
+"**coef_** : array, shape = [1, n_features] if n_classes == 2 else "
+"[n_classes,            n_features]"
+msgstr ""
+
+#: :69
+msgid "Weights assigned to the features."
+msgstr ""
+
+#: :71
+msgid "**intercept_** : array, shape = [1] if n_classes == 2 else [n_classes]"
+msgstr ""
+
+#: :73
+msgid "Constants in decision function."
+msgstr ""
+
+#: :77
+msgid ":obj:`SGDClassifier`"
+msgstr ""
+
+#: :80 :16
+msgid "Notes"
+msgstr ""
+
+#: :81
+msgid ""
+"`Perceptron` and `SGDClassifier` share the same underlying "
+"implementation. In fact, `Perceptron()` is equivalent to "
+"`SGDClassifier(loss=\"perceptron\", eta0=1, learning_rate=\"constant\", "
+"penalty=None)`."
+msgstr ""
+
+#: :86
+msgid "References"
+msgstr ""
+
+#: :87
+msgid "http://en.wikipedia.org/wiki/Perceptron and references therein."
+msgstr ""
+
+#: :92
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.linear_model.Perceptron.decision_function>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict confidence scores for samples."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`densify <sklearn.linear_model.Perceptron.densify>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Convert coefficient matrix to dense array format."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.linear_model.Perceptron.fit>`\\ (X, y[, coef_init, "
+"intercept_init, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit linear model with Stochastic Gradient Descent."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.linear_model.Perceptron.fit_transform>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.linear_model.Perceptron.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`partial_fit <sklearn.linear_model.Perceptron.partial_fit>`\\ (X, "
+"y[, classes, sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.linear_model.Perceptron.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict class labels for samples in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.linear_model.Perceptron.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the mean accuracy on the given test data and labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.linear_model.Perceptron.set_params>`\\ "
+"(\\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`sparsify <sklearn.linear_model.Perceptron.sparsify>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Convert coefficient matrix to sparse format."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform <sklearn.linear_model.Perceptron.transform>`\\ (\\*args, "
+"\\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19."
+msgstr ""
+
+#: :5
+msgid ""
+"The confidence score for a sample is the signed distance of that sample "
+"to the hyperplane."
+msgstr ""
+
+#: :10
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :12 :9
+msgid "Samples."
+msgstr ""
+
+#: :16
+msgid ""
+"**array, shape=(n_samples,) if n_classes == 2 else (n_samples, "
+"n_classes)** :"
+msgstr ""
+
+#: :18
+msgid ""
+"Confidence scores per (sample, class) combination. In the binary case, "
+"confidence score for self.classes_[1] where >0 means this class would be "
+"predicted."
+msgstr ""
+
+#: :5
+msgid ""
+"Converts the ``coef_`` member (back) to a numpy.ndarray. This is the "
+"default format of ``coef_`` and is required for fitting, so calling this "
+"method is only required on models that have previously been sparsified; "
+"otherwise, it is a no-op."
+msgstr ""
+
+#: :12 :13
+msgid "**self: estimator** :"
+msgstr ""
+
+#: :7
+msgid "**X** : {array-like, sparse matrix}, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid "Training data"
+msgstr ""
+
+#: :11
+msgid "**y** : numpy array, shape (n_samples,)"
+msgstr ""
+
+#: :13
+msgid "Target values"
+msgstr ""
+
+#: :15
+msgid "**coef_init** : array, shape (n_classes, n_features)"
+msgstr ""
+
+#: :17
+msgid "The initial coefficients to warm-start the optimization."
+msgstr ""
+
+#: :19
+msgid "**intercept_init** : array, shape (n_classes,)"
+msgstr ""
+
+#: :21
+msgid "The initial intercept to warm-start the optimization."
+msgstr ""
+
+#: :23 :24
+msgid "**sample_weight** : array-like, shape (n_samples,), optional"
+msgstr ""
+
+#: :25
+msgid ""
+"Weights applied to individual samples. If not provided, uniform weights "
+"are assumed. These weights will be multiplied with class_weight (passed "
+"through the contructor) if class_weight is specified"
+msgstr ""
+
+#: :32 :31
+msgid "**self** : returns an instance of self."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :9
+msgid "Subset of the training data"
+msgstr ""
+
+#: :13
+msgid "Subset of the target values"
+msgstr ""
+
+#: :15
+msgid "**classes** : array, shape (n_classes,)"
+msgstr ""
+
+#: :17
+msgid ""
+"Classes across all calls to partial_fit. Can be obtained by via "
+"`np.unique(y_all)`, where y_all is the target vector of the entire "
+"dataset. This argument is required for the first call to partial_fit and "
+"can be omitted in the subsequent calls. Note that y doesn't need to "
+"contain all labels in `classes`."
+msgstr ""
+
+#: :26
+msgid ""
+"Weights applied to individual samples. If not provided, uniform weights "
+"are assumed."
+msgstr ""
+
+#: :7
+msgid "**X** : {array-like, sparse matrix}, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :13
+msgid "**C** : array, shape = [n_samples]"
+msgstr ""
+
+#: :15
+msgid "Predicted class label per sample."
+msgstr ""
+
+#: :5
+msgid ""
+"In multi-label classification, this is the subset accuracy which is a "
+"harsh metric since you require for each sample that each label set be "
+"correctly predicted."
+msgstr ""
+
+#: :11
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :13
+msgid "Test samples."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :17
+msgid "True labels for X."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :21
+msgid "Sample weights."
+msgstr ""
+
+#: :25
+msgid "**score** : float"
+msgstr ""
+
+#: :27
+msgid "Mean accuracy of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"Converts the ``coef_`` member to a scipy.sparse matrix, which for "
+"L1-regularized models can be much more memory- and storage-efficient than"
+" the usual numpy.ndarray representation."
+msgstr ""
+
+#: :9
+msgid "The ``intercept_`` member is not converted."
+msgstr ""
+
+#: :17
+#, python-format
+msgid ""
+"For non-sparse models, i.e. when there are not many zeros in ``coef_``, "
+"this may actually *increase* memory usage, so use this method with care. "
+"A rule of thumb is that the number of zero elements, which can be "
+"computed with ``(coef_ == 0).sum()``, must be more than 50% for this to "
+"provide significant benefits."
+msgstr ""
+
+#: :23
+msgid ""
+"After calling this method, further fitting with the partial_fit method "
+"(if any) will not work until you call densify."
+msgstr ""
+
+#: :3
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19. Use SelectFromModel instead."
+msgstr ""
+
+#: :5
+msgid "Reduce X to its most important features."
+msgstr ""
+
+#: :7
+msgid ""
+"Uses ``coef_`` or ``feature_importances_`` to determine the most "
+"important features.  For models with a ``coef_`` for each class, the "
+"absolute sum over the classes is used."
+msgstr ""
+
+#: :13
+msgid "**X** : array or scipy sparse matrix of shape [n_samples, n_features]"
+msgstr ""
+
+#: :15
+msgid "The input samples."
+msgstr ""
+
+#: :24
+msgid "threshold"
+msgstr ""
+
+#: :23
+msgid "string, float or None, optional (default=None)"
+msgstr ""
+
+#: :18
+msgid ""
+"The threshold value to use for feature selection. Features whose "
+"importance is greater or equal are kept while the others are discarded. "
+"If \"median\" (resp. \"mean\"), then the threshold value is the median "
+"(resp. the mean) of the feature importances. A scaling factor (e.g., "
+"\"1.25*mean\") may also be used. If None and if available, the object "
+"attribute ``threshold`` is used. Otherwise, \"mean\" is used by default."
+msgstr ""
+
+#: :28
+msgid "**X_r** : array of shape [n_samples, n_selected_features]"
+msgstr ""
+
+#: :30
+msgid "The input samples with only the selected features."
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.Perceptron.examples:3
+msgid "Examples using ``sklearn.linear_model.Perceptron``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.Perceptron.examples:25
+msgid ":ref:`example_applications_plot_out_of_core_classification.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.Perceptron.examples:45
+msgid ":ref:`example_linear_model_plot_sgd_comparison.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.Perceptron.examples:65
+msgid ":ref:`example_text_document_classification_20newsgroups.py`"
+msgstr ""
+

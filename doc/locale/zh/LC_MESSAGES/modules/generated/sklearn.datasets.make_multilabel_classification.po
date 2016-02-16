@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.make_multilabel_classification.rst:2
+msgid ":mod:`sklearn.datasets`.make_multilabel_classification"
+msgstr ""
+
+#: :3
+msgid "Generate a random multilabel classification problem."
+msgstr ""
+
+#: :9
+msgid "For each sample, the generative process is:"
+msgstr ""
+
+#: :6
+msgid "pick the number of labels: n ~ Poisson(n_labels)"
+msgstr ""
+
+#: :7
+msgid "n times, choose a class c: c ~ Multinomial(theta)"
+msgstr ""
+
+#: :8
+msgid "pick the document length: k ~ Poisson(length)"
+msgstr ""
+
+#: :9
+msgid "k times, choose a word: w ~ Multinomial(theta_c)"
+msgstr ""
+
+#: :11
+msgid ""
+"In the above process, rejection sampling is used to make sure that n is "
+"never zero or more than `n_classes`, and that the document length is "
+"never zero. Likewise, we reject classes which have already been chosen."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <sample_generators>`."
+msgstr ""
+
+#: :19
+msgid "**n_samples** : int, optional (default=100)"
+msgstr ""
+
+#: :21
+msgid "The number of samples."
+msgstr ""
+
+#: :23
+msgid "**n_features** : int, optional (default=20)"
+msgstr ""
+
+#: :25
+msgid "The total number of features."
+msgstr ""
+
+#: :27
+msgid "**n_classes** : int, optional (default=5)"
+msgstr ""
+
+#: :29
+msgid "The number of classes of the classification problem."
+msgstr ""
+
+#: :31
+msgid "**n_labels** : int, optional (default=2)"
+msgstr ""
+
+#: :33
+msgid ""
+"The average number of labels per instance. More precisely, the number of "
+"labels per sample is drawn from a Poisson distribution with ``n_labels`` "
+"as its expected value, but samples are bounded (using rejection sampling)"
+" by ``n_classes``, and must be nonzero if ``allow_unlabeled`` is False."
+msgstr ""
+
+#: :39
+msgid "**length** : int, optional (default=50)"
+msgstr ""
+
+#: :41
+msgid ""
+"The sum of the features (number of words if documents) is drawn from a "
+"Poisson distribution with this expected value."
+msgstr ""
+
+#: :44
+msgid "**allow_unlabeled** : bool, optional (default=True)"
+msgstr ""
+
+#: :46
+msgid "If ``True``, some instances might not belong to any class."
+msgstr ""
+
+#: :48
+msgid "**sparse** : bool, optional (default=False)"
+msgstr ""
+
+#: :50
+msgid "If ``True``, return a sparse feature matrix"
+msgstr ""
+
+#: :52
+msgid "parameter to allow *sparse* output."
+msgstr ""
+
+#: :55
+msgid "**return_indicator** : 'dense' (default) | 'sparse' | False"
+msgstr ""
+
+#: :57
+msgid ""
+"If ``dense`` return ``Y`` in the dense binary indicator format. If "
+"``'sparse'`` return ``Y`` in the sparse binary indicator format. "
+"``False`` returns a list of lists of labels."
+msgstr ""
+
+#: :61
+msgid "**return_distributions** : bool, optional (default=False)"
+msgstr ""
+
+#: :63
+msgid ""
+"If ``True``, return the prior class probability and conditional "
+"probabilities of features given classes, from which the data was drawn."
+msgstr ""
+
+#: :67
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :69
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :76
+msgid "**X** : array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :78
+msgid "The generated samples."
+msgstr ""
+
+#: :80
+msgid "**Y** : array or sparse CSR matrix of shape [n_samples, n_classes]"
+msgstr ""
+
+#: :82
+msgid "The label sets."
+msgstr ""
+
+#: :84
+msgid "**p_c** : array, shape [n_classes]"
+msgstr ""
+
+#: :86
+msgid ""
+"The probability of each class being drawn. Only returned if "
+"``return_distributions=True``."
+msgstr ""
+
+#: :89
+msgid "**p_w_c** : array, shape [n_features, n_classes]"
+msgstr ""
+
+#: :91
+msgid ""
+"The probability of each feature being drawn given each class. Only "
+"returned if ``return_distributions=True``."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_multilabel_classification.examples:3
+msgid "Examples using ``sklearn.datasets.make_multilabel_classification``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_multilabel_classification.examples:25
+msgid ":ref:`example_plot_multilabel.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_multilabel_classification.examples:45
+msgid ":ref:`example_datasets_plot_random_multilabel_dataset.py`"
+msgstr ""
+

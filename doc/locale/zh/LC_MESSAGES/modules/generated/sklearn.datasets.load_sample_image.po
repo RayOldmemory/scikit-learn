@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.load_sample_image.rst:2
+msgid ":mod:`sklearn.datasets`.load_sample_image"
+msgstr ""
+
+#: :3
+msgid "Load the numpy array of a single sample image"
+msgstr ""
+
+#: :7
+msgid "**image_name: {`china.jpg`, `flower.jpg`}** :"
+msgstr ""
+
+#: :9
+msgid "The name of the sample image loaded"
+msgstr ""
+
+#: :13
+msgid "**img: 3D array** :"
+msgstr ""
+
+#: :15
+msgid "The image as a numpy array: height x width x color"
+msgstr ""
+
+#: :18
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_sample_image.examples:3
+msgid "Examples using ``sklearn.datasets.load_sample_image``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_sample_image.examples:25
+msgid ":ref:`example_cluster_plot_color_quantization.py`"
+msgstr ""
+

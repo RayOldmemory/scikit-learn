@@ -1,0 +1,631 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/cross_validation.rst:5
+msgid "Cross-validation: evaluating estimator performance"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:9
+msgid ""
+"Learning the parameters of a prediction function and testing it on the "
+"same data is a methodological mistake: a model that would just repeat the"
+" labels of the samples that it has just seen would have a perfect score "
+"but would fail to predict anything useful on yet-unseen data. This "
+"situation is called **overfitting**. To avoid it, it is common practice "
+"when performing a (supervised) machine learning experiment to hold out "
+"part of the available data as a **test set** ``X_test, y_test``. Note "
+"that the word \"experiment\" is not intended to denote academic use only,"
+" because even in commercial settings machine learning usually starts out "
+"experimentally."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:22
+msgid ""
+"In scikit-learn a random split into training and test sets can be quickly"
+" computed with the :func:`train_test_split` helper function. Let's load "
+"the iris data set to fit a linear support vector machine on it::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:35
+#, python-format
+msgid ""
+"We can now quickly sample a training set while holding out 40% of the "
+"data for testing (evaluating) our classifier::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:50
+msgid ""
+"When evaluating different settings (\"hyperparameters\") for estimators, "
+"such as the ``C`` setting that must be manually set for an SVM, there is "
+"still a risk of overfitting *on the test set* because the parameters can "
+"be tweaked until the estimator performs optimally. This way, knowledge "
+"about the test set can \"leak\" into the model and evaluation metrics no "
+"longer report on generalization performance. To solve this problem, yet "
+"another part of the dataset can be held out as a so-called \"validation "
+"set\": training proceeds on the training set, after which evaluation is "
+"done on the validation set, and when the experiment seems to be "
+"successful, final evaluation can be done on the test set."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:62
+msgid ""
+"However, by partitioning the available data into three sets, we "
+"drastically reduce the number of samples which can be used for learning "
+"the model, and the results can depend on a particular random choice for "
+"the pair of (train, validation) sets."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:68
+msgid ""
+"A solution to this problem is a procedure called `cross-validation "
+"<http://en.wikipedia.org/wiki/Cross-validation_(statistics)>`_ (CV for "
+"short). A test set should still be held out for final evaluation, but the"
+" validation set is no longer needed when doing CV. In the basic approach,"
+" called *k*-fold CV, the training set is split into *k* smaller sets "
+"(other approaches are described below, but generally follow the same "
+"principles). The following procedure is followed for each of the *k* "
+"\"folds\":"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:79
+msgid "A model is trained using :math:`k-1` of the folds as training data;"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:80
+msgid ""
+"the resulting model is validated on the remaining part of the data (i.e.,"
+" it is used as a test set to compute a performance measure such as "
+"accuracy)."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:84
+msgid ""
+"The performance measure reported by *k*-fold cross-validation is then the"
+" average of the values computed in the loop. This approach can be "
+"computationally expensive, but does not waste too much data (as it is the"
+" case when fixing an arbitrary test set), which is a major advantage in "
+"problem such as inverse inference where the number of samples is very "
+"small."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:94
+msgid "Computing cross-validated metrics"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:96
+msgid ""
+"The simplest way to use cross-validation is to call the "
+":func:`cross_val_score` helper function on the estimator and the dataset."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:99
+msgid ""
+"The following example demonstrates how to estimate the accuracy of a "
+"linear kernel support vector machine on the iris dataset by splitting the"
+" data, fitting a model and computing the score 5 consecutive times (with "
+"different splits each time)::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:111
+#, python-format
+msgid ""
+"The mean score and the 95\\% confidence interval of the score estimate "
+"are hence given by::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:117
+msgid ""
+"By default, the score computed at each CV iteration is the ``score`` "
+"method of the estimator. It is possible to change this by using the "
+"scoring parameter::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:127
+msgid ""
+"See :ref:`scoring_parameter` for details. In the case of the Iris "
+"dataset, the samples are balanced across target classes hence the "
+"accuracy and the F1-score are almost equal."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:131
+msgid ""
+"When the ``cv`` argument is an integer, :func:`cross_val_score` uses the "
+":class:`KFold` or :class:`StratifiedKFold` strategies by default, the "
+"latter being used if the estimator derives from :class:`ClassifierMixin "
+"<sklearn.base.ClassifierMixin>`."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:136
+msgid ""
+"It is also possible to use other cross validation strategies by passing a"
+" cross validation iterator instead, for instance::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst
+msgid "Data transformation with held out data"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:150
+msgid ""
+"Just as it is important to test a predictor on data held-out from "
+"training, preprocessing (such as standardization, feature selection, "
+"etc.) and similar :ref:`data transformations <data-transforms>` similarly"
+" should be learnt from a training set and applied to held-out data for "
+"prediction::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:165
+msgid ""
+"A :class:`Pipeline <sklearn.pipeline.Pipeline>` makes it easier to "
+"compose estimators, providing this behavior under cross-validation::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:174
+msgid "See :ref:`combining_estimators`."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:177
+msgid "Obtaining predictions by cross-validation"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:179
+msgid ""
+"The function :func:`cross_val_predict` has a similar interface to "
+":func:`cross_val_score`, but returns, for each element in the input, the "
+"prediction that was obtained for that element when it was in the test "
+"set. Only cross-validation strategies that assign all elements to a test "
+"set exactly once can be used (otherwise, an exception is raised)."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:185
+msgid "These prediction can then be used to evaluate the classifier::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:192
+msgid ""
+"Note that the result of this computation may be slightly different from "
+"those obtained using :func:`cross_val_score` as the elements are grouped "
+"in different ways."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:196
+msgid ""
+"The available cross validation iterators are introduced in the following "
+"section."
+msgstr ""
+
+#: ../../modules/cross_validation.rst
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:201
+msgid ":ref:`example_model_selection_plot_roc_crossval.py`,"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:202
+msgid ":ref:`example_feature_selection_plot_rfe_with_cross_validation.py`,"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:203
+msgid ":ref:`example_model_selection_grid_search_digits.py`,"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:204
+msgid ":ref:`example_model_selection_grid_search_text_feature_extraction.py`,"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:205
+msgid ":ref:`example_plot_cv_predict.py`,"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:208
+msgid "Cross validation iterators"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:210
+msgid ""
+"The following sections list utilities to generate indices that can be "
+"used to generate dataset splits according to different cross validation "
+"strategies."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:216
+msgid "K-fold"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:218
+msgid ""
+":class:`KFold` divides all the samples in :math:`k` groups of samples, "
+"called folds (if :math:`k = n`, this is equivalent to the *Leave One Out*"
+" strategy), of equal sizes (if possible). The prediction function is "
+"learned using :math:`k - 1` folds, and the fold left out is used for "
+"test."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:223
+msgid "Example of 2-fold cross-validation on a dataset with 4 samples::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:234
+msgid ""
+"Each fold is constituted by two arrays: the first one is related to the "
+"*training set*, and the second one to the *test set*. Thus, one can "
+"create the training/test sets using numpy indexing::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:244
+msgid "Stratified k-fold"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:246
+msgid ""
+":class:`StratifiedKFold` is a variation of *k-fold* which returns "
+"*stratified* folds: each set contains approximately the same percentage "
+"of samples of each target class as the complete set."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:250
+msgid ""
+"Example of stratified 3-fold cross-validation on a dataset with 10 "
+"samples from two slightly unbalanced classes::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:265
+msgid "Label k-fold"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:267
+msgid ""
+":class:`LabelKFold` is a variation of *k-fold* which ensures that the "
+"same label is not in both testing and training sets. This is necessary "
+"for example if you obtained data from different subjects and you want to "
+"avoid over-fitting (i.e., learning person specific features) by testing "
+"and training on different subjects."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:273
+msgid ""
+"Imagine you have three subjects, each with an associated number from 1 to"
+" 3::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:286
+msgid ""
+"Each subject is in a different testing fold, and the same subject is "
+"never in both testing and training. Notice that the folds do not have "
+"exactly the same size due to the imbalance in the data."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:292
+msgid "Leave-One-Out - LOO"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:294
+msgid ""
+":class:`LeaveOneOut` (or LOO) is a simple cross-validation. Each learning"
+" set is created by taking all the samples except one, the test set being "
+"the sample left out. Thus, for :math:`n` samples, we have :math:`n` "
+"different training sets and :math:`n` different tests set. This cross-"
+"validation procedure does not waste much data as only one sample is "
+"removed from the training set::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:312
+msgid ""
+"Potential users of LOO for model selection should weigh a few known "
+"caveats. When compared with :math:`k`-fold cross validation, one builds "
+":math:`n` models from :math:`n` samples instead of :math:`k` models, "
+"where :math:`n > k`. Moreover, each is trained on :math:`n - 1` samples "
+"rather than :math:`(k-1)n / k`. In both ways, assuming :math:`k` is not "
+"too large and :math:`k < n`, LOO is more computationally expensive than "
+":math:`k`-fold cross validation."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:320
+msgid ""
+"In terms of accuracy, LOO often results in high variance as an estimator "
+"for the test error. Intuitively, since :math:`n - 1` of the :math:`n` "
+"samples are used to build each model, models constructed from folds are "
+"virtually identical to each other and to the model built from the entire "
+"training set."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:326
+msgid ""
+"However, if the learning curve is steep for the training size in "
+"question, then 5- or 10- fold cross validation can overestimate the "
+"generalization error."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:329
+msgid ""
+"As a general rule, most authors, and empirical evidence, suggest that 5- "
+"or 10- fold cross validation should be preferred to LOO."
+msgstr ""
+
+#: ../../modules/cross_validation.rst
+msgid "References:"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:335
+msgid "http://www.faqs.org/faqs/ai-faq/neural-nets/part3/section-12.html"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:336
+msgid ""
+"T. Hastie, R. Tibshirani, J. Friedman,  `The Elements of Statistical "
+"Learning <http://www-stat.stanford.edu/~tibs/ElemStatLearn>`_, Springer "
+"2009"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:338
+msgid ""
+"L. Breiman, P. Spector `Submodel selection and evaluation in regression: "
+"The X-random case "
+"<http://digitalassets.lib.berkeley.edu/sdtr/ucb/text/197.pdf>`_, "
+"International Statistical Review 1992"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:340
+msgid ""
+"R. Kohavi, `A Study of Cross-Validation and Bootstrap for Accuracy "
+"Estimation and Model Selection "
+"<http://www.cs.iastate.edu/~jtian/cs573/Papers/Kohavi-IJCAI-95.pdf>`_, "
+"Intl. Jnt. Conf. AI"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:342
+msgid ""
+"R. Bharat Rao, G. Fung, R. Rosales, `On the Dangers of Cross-Validation. "
+"An Experimental Evaluation "
+"<http://www.siam.org/proceedings/datamining/2008/dm08_54_Rao.pdf>`_, SIAM"
+" 2008"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:344
+msgid ""
+"G. James, D. Witten, T. Hastie, R Tibshirani, `An Introduction to "
+"Statistical Learning <http://www-bcf.usc.edu/~gareth/ISL>`_, Springer "
+"2013"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:349
+msgid "Leave-P-Out - LPO"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:351
+msgid ""
+":class:`LeavePOut` is very similar to :class:`LeaveOneOut` as it creates "
+"all the possible training/test sets by removing :math:`p` samples from "
+"the complete set. For :math:`n` samples, this produces :math:`{n \\choose"
+" p}` train-test pairs. Unlike :class:`LeaveOneOut` and :class:`KFold`, "
+"the test sets will overlap for :math:`p > 1`."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:357
+msgid "Example of Leave-2-Out on a dataset with 4 samples::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:373
+msgid "Leave-One-Label-Out - LOLO"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:375
+msgid ""
+":class:`LeaveOneLabelOut` (LOLO) is a cross-validation scheme which holds"
+" out the samples according to a third-party provided array of integer "
+"labels. This label information can be used to encode arbitrary domain "
+"specific pre-defined cross-validation folds."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:380
+msgid ""
+"Each training set is thus constituted by all the samples except the ones "
+"related to a specific label."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:383
+msgid ""
+"For example, in the cases of multiple experiments, *LOLO* can be used to "
+"create a cross-validation based on the different experiments: we create a"
+" training set using the samples of all the experiments except one::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:396
+msgid ""
+"Another common application is to use time information: for instance the "
+"labels could be the year of collection of the samples and thus allow for "
+"cross-validation against time-based splits."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:402
+msgid ""
+"Contrary to :class:`StratifiedKFold`, **the ``labels`` of "
+":class:`LeaveOneLabelOut` should not encode the target class to "
+"predict**: the goal of :class:`StratifiedKFold` is to rebalance dataset "
+"classes across the train / test split to ensure that the train and test "
+"folds have approximately the same percentage of samples of each class "
+"while :class:`LeaveOneLabelOut` will do the opposite by ensuring that the"
+" samples of the train and test fold will not share the same label value."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:412
+msgid "Leave-P-Label-Out"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:414
+msgid ""
+":class:`LeavePLabelOut` is similar as *Leave-One-Label-Out*, but removes "
+"samples related to :math:`P` labels for each training/test set."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:417
+msgid "Example of Leave-2-Label Out::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:432
+msgid "Random permutations cross-validation a.k.a. Shuffle & Split"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:434
+msgid ":class:`ShuffleSplit`"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:436
+msgid ""
+"The :class:`ShuffleSplit` iterator will generate a user defined number of"
+" independent train / test dataset splits. Samples are first shuffled and "
+"then split into a pair of train and test sets."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:440
+msgid ""
+"It is possible to control the randomness for reproducibility of the "
+"results by explicitly seeding the ``random_state`` pseudo random number "
+"generator."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:444
+#: ../../modules/cross_validation.rst:470
+msgid "Here is a usage example::"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:455
+msgid ""
+":class:`ShuffleSplit` is thus a good alternative to :class:`KFold` cross "
+"validation that allows a finer control on the number of iterations and "
+"the proportion of samples in on each side of the train / test split."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:461
+msgid "Label-Shuffle-Split"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:463
+msgid ":class:`LabelShuffleSplit`"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:465
+msgid ""
+"The :class:`LabelShuffleSplit` iterator behaves as a combination of "
+":class:`ShuffleSplit` and :class:`LeavePLabelsOut`, and generates a "
+"sequence of randomized partitions in which a subset of labels are held "
+"out for each split."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:485
+msgid ""
+"This class is useful when the behavior of :class:`LeavePLabelsOut` is "
+"desired, but the number of labels is large enough that generating all "
+"possible partitions with :math:`P` labels withheld would be prohibitively"
+" expensive.  In such a scenario, :class:`LabelShuffleSplit` provides a "
+"random sample (with replacement) of the train / test splits generated by "
+":class:`LeavePLabelsOut`."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:495
+msgid "Predefined Fold-Splits / Validation-Sets"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:497
+msgid ""
+"For some datasets, a pre-defined split of the data into training- and "
+"validation fold or into several cross-validation folds already exists. "
+"Using :class:`PredefinedSplit` it is possible to use these folds e.g. "
+"when searching for hyperparameters."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:502
+msgid ""
+"For example, when using a validation set, set the ``test_fold`` to 0 for "
+"all samples that are part of the validation set, and to -1 for all other "
+"samples."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:507
+msgid "See also"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:508
+msgid ""
+":class:`StratifiedShuffleSplit` is a variation of *ShuffleSplit*, which "
+"returns stratified splits, *i.e* which creates splits by preserving the "
+"same percentage for each target class as in the complete set."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:513
+msgid "A note on shuffling"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:515
+msgid ""
+"If the data ordering is not arbitrary (e.g. samples with the same label "
+"are contiguous), shuffling it first may be essential to get a meaningful "
+"cross- validation result. However, the opposite may be true if the "
+"samples are not independently and identically distributed. For example, "
+"if samples correspond to news articles, and are ordered by their time of "
+"publication, then shuffling the data will likely lead to a model that is "
+"overfit and an inflated validation score: it will be tested on samples "
+"that are artificially similar (close in time) to training samples."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:524
+msgid ""
+"Some cross validation iterators, such as :class:`KFold`, have an inbuilt "
+"option to shuffle the data indices before splitting them. Note that:"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:527
+msgid "This consumes less memory than shuffling the data directly."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:528
+msgid ""
+"By default no shuffling occurs, including for the (stratified) K fold "
+"cross- validation performed by specifying ``cv=some_integer`` to "
+":func:`cross_val_score`, grid search, etc. Keep in mind that "
+":func:`train_test_split` still returns a random split."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:532
+msgid ""
+"The ``random_state`` parameter defaults to ``None``, meaning that the "
+"shuffling will be different every time ``KFold(..., shuffle=True)`` is "
+"iterated. However, ``GridSearchCV`` will use the same shuffling for each "
+"set of parameters validated by a single call to its ``fit`` method."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:536
+msgid ""
+"To ensure results are repeatable (*on the same platform*), use a fixed "
+"value for ``random_state``."
+msgstr ""
+
+#: ../../modules/cross_validation.rst:540
+msgid "Cross validation and model selection"
+msgstr ""
+
+#: ../../modules/cross_validation.rst:542
+msgid ""
+"Cross validation iterators can also be used to directly perform model "
+"selection using Grid Search for the optimal hyperparameters of the model."
+" This is the topic if the next section: :ref:`grid_search`."
+msgstr ""
+

@@ -1,0 +1,333 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.decomposition.KernelPCA.rst:2
+msgid ":mod:`sklearn.decomposition`.KernelPCA"
+msgstr ""
+
+#: :3
+msgid "Kernel Principal component analysis (KPCA)"
+msgstr ""
+
+#: :5
+msgid ""
+"Non-linear dimensionality reduction through the use of kernels (see "
+":ref:`metrics`)."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <kernel_PCA>`."
+msgstr ""
+
+#: :12
+msgid "**n_components: int or None** :"
+msgstr ""
+
+#: :14
+msgid "Number of components. If None, all non-zero components are kept."
+msgstr ""
+
+#: :16
+msgid ""
+"**kernel: \"linear\" | \"poly\" | \"rbf\" | \"sigmoid\" | \"cosine\" | "
+"\"precomputed\"** :"
+msgstr ""
+
+#: :18
+msgid "Kernel. Default: \"linear\""
+msgstr ""
+
+#: :21
+msgid "**degree** : int, default=3"
+msgstr ""
+
+#: :23
+msgid "Degree for poly kernels. Ignored by other kernels."
+msgstr ""
+
+#: :25
+msgid "**gamma** : float, optional"
+msgstr ""
+
+#: :27
+msgid ""
+"Kernel coefficient for rbf and poly kernels. Default: 1/n_features. "
+"Ignored by other kernels."
+msgstr ""
+
+#: :30
+msgid "**coef0** : float, optional"
+msgstr ""
+
+#: :32
+msgid "Independent term in poly and sigmoid kernels. Ignored by other kernels."
+msgstr ""
+
+#: :35
+msgid "**kernel_params** : mapping of string to any, optional"
+msgstr ""
+
+#: :37
+msgid ""
+"Parameters (keyword arguments) and values for kernel passed as callable "
+"object. Ignored by other kernels."
+msgstr ""
+
+#: :40
+msgid "**alpha: int** :"
+msgstr ""
+
+#: :42
+msgid ""
+"Hyperparameter of the ridge regression that learns the inverse transform "
+"(when fit_inverse_transform=True). Default: 1.0"
+msgstr ""
+
+#: :46
+msgid "**fit_inverse_transform: bool** :"
+msgstr ""
+
+#: :48
+msgid ""
+"Learn the inverse transform for non-precomputed kernels. (i.e. learn to "
+"find the pre-image of a point) Default: False"
+msgstr ""
+
+#: :52
+msgid "**eigen_solver: string ['auto'|'dense'|'arpack']** :"
+msgstr ""
+
+#: :54
+msgid ""
+"Select eigensolver to use.  If n_components is much less than the number "
+"of training samples, arpack may be more efficient than the dense "
+"eigensolver."
+msgstr ""
+
+#: :58
+msgid "**tol: float** :"
+msgstr ""
+
+#: :60
+msgid ""
+"convergence tolerance for arpack. Default: 0 (optimal value will be "
+"chosen by arpack)"
+msgstr ""
+
+#: :63
+msgid "**max_iter** : int"
+msgstr ""
+
+#: :65
+msgid ""
+"maximum number of iterations for arpack Default: None (optimal value will"
+" be chosen by arpack)"
+msgstr ""
+
+#: :68
+msgid "**remove_zero_eig** : boolean, default=True"
+msgstr ""
+
+#: :70
+msgid ""
+"If True, then all components with zero eigenvalues are removed, so that "
+"the number of components in the output may be < n_components (and "
+"sometimes even zero due to numerical instability). When n_components is "
+"None, this parameter is ignored and components with zero eigenvalues are "
+"removed regardless."
+msgstr ""
+
+#: :78
+msgid "**lambdas_ :** :"
+msgstr ""
+
+#: :80
+msgid "Eigenvalues of the centered kernel matrix"
+msgstr ""
+
+#: :82
+msgid "**alphas_ :** :"
+msgstr ""
+
+#: :84
+msgid "Eigenvectors of the centered kernel matrix"
+msgstr ""
+
+#: :86
+msgid "**dual_coef_ :** :"
+msgstr ""
+
+#: :88
+msgid "Inverse transform matrix"
+msgstr ""
+
+#: :90
+msgid "**X_transformed_fit_ :** :"
+msgstr ""
+
+#: :92
+msgid "Projection of the fitted data on the kernel principal components"
+msgstr ""
+
+#: :95 :14
+msgid "References"
+msgstr ""
+
+#: :100
+msgid "Kernel PCA was introduced in:"
+msgstr ""
+
+#: :97
+msgid ""
+"Bernhard Schoelkopf, Alexander J. Smola, and Klaus-Robert Mueller. 1999. "
+"Kernel principal component analysis. In Advances in kernel methods, MIT "
+"Press, Cambridge, MA, USA 327-352."
+msgstr ""
+
+#: :105
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.decomposition.KernelPCA.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model from data in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.decomposition.KernelPCA.fit_transform>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model from data in X and transform X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.decomposition.KernelPCA.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform "
+"<sklearn.decomposition.KernelPCA.inverse_transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform X back to original space."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.decomposition.KernelPCA.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.decomposition.KernelPCA.transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform X."
+msgstr ""
+
+#: :7
+msgid "**X: array-like, shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :9
+msgid ""
+"Training vector, where n_samples in the number of samples and n_features "
+"is the number of features."
+msgstr ""
+
+#: :14
+msgid "**self** : object"
+msgstr ""
+
+#: :16
+msgid "Returns the instance itself."
+msgstr ""
+
+#: :14 :11
+msgid "**X_new: array-like, shape (n_samples, n_components)** :"
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**X: array-like, shape (n_samples, n_components)** :"
+msgstr ""
+
+#: :11
+msgid "**X_new: array-like, shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :15
+msgid "\"Learning to Find Pre-Images\", G BakIr et al, 2004."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.KernelPCA.examples:3
+msgid "Examples using ``sklearn.decomposition.KernelPCA``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.KernelPCA.examples:25
+msgid ":ref:`example_decomposition_plot_kernel_pca.py`"
+msgstr ""
+

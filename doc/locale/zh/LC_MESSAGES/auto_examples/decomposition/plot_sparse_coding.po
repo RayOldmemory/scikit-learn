@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/decomposition/plot_sparse_coding.rst:8
+msgid "Sparse coding with a precomputed dictionary"
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_sparse_coding.rst:10
+msgid ""
+"Transform a signal as a sparse combination of Ricker wavelets. This "
+"example visually compares different sparse coding methods using the "
+":class:`sklearn.decomposition.SparseCoder` estimator. The Ricker (also "
+"known as Mexican hat or the second derivative of a Gaussian) is not a "
+"particularly good kernel to represent piecewise constant signals like "
+"this one. It can therefore be seen how much adding different widths of "
+"atoms matters and it therefore motivates learning the dictionary to best "
+"fit your type of signals."
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_sparse_coding.rst:18
+msgid ""
+"The richer dictionary on the right is not larger in size, heavier "
+"subsampling is performed in order to stay on the same order of magnitude."
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_sparse_coding.rst:29
+msgid ""
+"**Python source code:** :download:`plot_sparse_coding.py "
+"<plot_sparse_coding.py>`"
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_sparse_coding.rst:34
+msgid ""
+"**Total running time of the example:**  1.14 seconds ( 0 minutes  1.14 "
+"seconds)"
+msgstr ""
+

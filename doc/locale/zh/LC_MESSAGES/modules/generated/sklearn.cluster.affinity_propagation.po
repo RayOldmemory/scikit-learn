@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cluster.affinity_propagation.rst:2
+msgid ":mod:`sklearn.cluster`.affinity_propagation"
+msgstr ""
+
+#: :3
+msgid "Perform Affinity Propagation Clustering of data"
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <affinity_propagation>`."
+msgstr ""
+
+#: :9
+msgid "**S** : array-like, shape (n_samples, n_samples)"
+msgstr ""
+
+#: :11
+msgid "Matrix of similarities between points"
+msgstr ""
+
+#: :13
+msgid "**preference** : array-like, shape (n_samples,) or float, optional"
+msgstr ""
+
+#: :15
+msgid ""
+"Preferences for each point - points with larger values of preferences are"
+" more likely to be chosen as exemplars. The number of exemplars, i.e. of "
+"clusters, is influenced by the input preferences value. If the "
+"preferences are not passed as arguments, they will be set to the median "
+"of the input similarities (resulting in a moderate number of clusters). "
+"For a smaller amount of clusters, this can be set to the minimum value of"
+" the similarities."
+msgstr ""
+
+#: :23
+msgid "**convergence_iter** : int, optional, default: 15"
+msgstr ""
+
+#: :25
+msgid ""
+"Number of iterations with no change in the number of estimated clusters "
+"that stops the convergence."
+msgstr ""
+
+#: :28
+msgid "**max_iter** : int, optional, default: 200"
+msgstr ""
+
+#: :30
+msgid "Maximum number of iterations"
+msgstr ""
+
+#: :32
+msgid "**damping** : float, optional, default: 0.5"
+msgstr ""
+
+#: :34
+msgid "Damping factor between 0.5 and 1."
+msgstr ""
+
+#: :36
+msgid "**copy** : boolean, optional, default: True"
+msgstr ""
+
+#: :38
+msgid ""
+"If copy is False, the affinity matrix is modified inplace by the "
+"algorithm, for memory efficiency"
+msgstr ""
+
+#: :41
+msgid "**verbose** : boolean, optional, default: False"
+msgstr ""
+
+#: :43
+msgid "The verbosity level"
+msgstr ""
+
+#: :45
+msgid "**return_n_iter** : bool, default False"
+msgstr ""
+
+#: :47
+msgid "Whether or not to return the number of iterations."
+msgstr ""
+
+#: :51
+msgid "**cluster_centers_indices** : array, shape (n_clusters,)"
+msgstr ""
+
+#: :53
+msgid "index of clusters centers"
+msgstr ""
+
+#: :55
+msgid "**labels** : array, shape (n_samples,)"
+msgstr ""
+
+#: :57
+msgid "cluster labels for each point"
+msgstr ""
+
+#: :59
+msgid "**n_iter** : int"
+msgstr ""
+
+#: :61
+msgid "number of iterations run. Returned only if `return_n_iter` is set to True."
+msgstr ""
+
+#: :65
+msgid "Notes"
+msgstr ""
+
+#: :66
+msgid "See examples/cluster/plot_affinity_propagation.py for an example."
+msgstr ""
+
+#: :69
+msgid "References"
+msgstr ""
+
+#: :70
+msgid ""
+"Brendan J. Frey and Delbert Dueck, \"Clustering by Passing Messages "
+"Between Data Points\", Science Feb. 2007"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.affinity_propagation.examples:3
+msgid "Examples using ``sklearn.cluster.affinity_propagation``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.affinity_propagation.examples:25
+msgid ":ref:`example_applications_plot_stock_market.py`"
+msgstr ""
+

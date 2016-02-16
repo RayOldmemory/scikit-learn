@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:8
+msgid "Gaussian Processes regression: basic introductory example"
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:10
+msgid ""
+"A simple one-dimensional regression exercise computed in two different "
+"ways:"
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:12
+msgid "A noise-free case with a cubic correlation model"
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:13
+msgid "A noisy case with a squared Euclidean correlation model"
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:15
+msgid ""
+"In both cases, the model parameters are estimated using the maximum "
+"likelihood principle."
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:18
+#, python-format
+msgid ""
+"The figures illustrate the interpolating property of the Gaussian Process"
+" model as well as its probabilistic nature in the form of a pointwise 95%"
+" confidence interval."
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:22
+msgid ""
+"Note that the parameter ``nugget`` is applied as a Tikhonov "
+"regularization of the assumed covariance between the training points.  In"
+" the special case of the squared euclidean correlation model, nugget is "
+"mathematically equivalent to a normalized variance:  That is"
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:49
+msgid ""
+"**Python source code:** :download:`plot_gp_regression.py "
+"<plot_gp_regression.py>`"
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/plot_gp_regression.rst:54
+msgid ""
+"**Total running time of the example:**  2.64 seconds ( 0 minutes  2.64 "
+"seconds)"
+msgstr ""
+

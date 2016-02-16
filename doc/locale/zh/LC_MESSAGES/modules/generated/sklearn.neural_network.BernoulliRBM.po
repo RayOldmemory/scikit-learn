@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.neural_network.BernoulliRBM.rst:2
+msgid ":mod:`sklearn.neural_network`.BernoulliRBM"
+msgstr ""
+
+#: :3
+msgid "Bernoulli Restricted Boltzmann Machine (RBM)."
+msgstr ""
+
+#: :5
+msgid ""
+"A Restricted Boltzmann Machine with binary visible units and binary "
+"hiddens. Parameters are estimated using Stochastic Maximum Likelihood "
+"(SML), also known as Persistent Contrastive Divergence (PCD) [2]."
+msgstr ""
+
+#: :10
+msgid ""
+"The time complexity of this implementation is ``O(d ** 2)`` assuming d ~ "
+"n_features ~ n_components."
+msgstr ""
+
+#: :13
+msgid "Read more in the :ref:`User Guide <rbm>`."
+msgstr ""
+
+#: :17
+msgid "**n_components** : int, optional"
+msgstr ""
+
+#: :19
+msgid "Number of binary hidden units."
+msgstr ""
+
+#: :21
+msgid "**learning_rate** : float, optional"
+msgstr ""
+
+#: :23
+msgid ""
+"The learning rate for weight updates. It is *highly* recommended to tune "
+"this hyper-parameter. Reasonable values are in the 10**[0., -3.] range."
+msgstr ""
+
+#: :27
+msgid "**batch_size** : int, optional"
+msgstr ""
+
+#: :29
+msgid "Number of examples per minibatch."
+msgstr ""
+
+#: :31
+msgid "**n_iter** : int, optional"
+msgstr ""
+
+#: :33
+msgid ""
+"Number of iterations/sweeps over the training dataset to perform during "
+"training."
+msgstr ""
+
+#: :36
+msgid "**verbose** : int, optional"
+msgstr ""
+
+#: :38
+msgid "The verbosity level. The default, zero, means silent mode."
+msgstr ""
+
+#: :40
+msgid "**random_state** : integer or numpy.RandomState, optional"
+msgstr ""
+
+#: :42
+msgid ""
+"A random number generator instance to define the state of the random "
+"permutations generator. If an integer is given, it fixes the seed. "
+"Defaults to the global numpy random number generator."
+msgstr ""
+
+#: :48
+msgid "**intercept_hidden_** : array-like, shape (n_components,)"
+msgstr ""
+
+#: :50
+msgid "Biases of the hidden units."
+msgstr ""
+
+#: :52
+msgid "**intercept_visible_** : array-like, shape (n_features,)"
+msgstr ""
+
+#: :54
+msgid "Biases of the visible units."
+msgstr ""
+
+#: :56
+msgid "**components_** : array-like, shape (n_components, n_features)"
+msgstr ""
+
+#: :58
+msgid ""
+"Weight matrix, where n_features in the number of visible units and "
+"n_components is the number of hidden units."
+msgstr ""
+
+#: :62
+msgid "References"
+msgstr ""
+
+#: :65
+msgid "[1] Hinton, G. E., Osindero, S. and Teh, Y. A fast learning algorithm for"
+msgstr ""
+
+#: :64
+msgid ""
+"deep belief nets. Neural Computation 18, pp 1527-1554. "
+"http://www.cs.toronto.edu/~hinton/absps/fastnc.pdf"
+msgstr ""
+
+#: :69
+msgid "[2] Tieleman, T. Training Restricted Boltzmann Machines using"
+msgstr ""
+
+#: :68
+msgid ""
+"Approximations to the Likelihood Gradient. International Conference on "
+"Machine Learning (ICML) 2008"
+msgstr ""
+
+#: :74
+msgid "Examples"
+msgstr ""
+
+#: :84
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.neural_network.BernoulliRBM.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model to the data X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.neural_network.BernoulliRBM.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.neural_network.BernoulliRBM.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`gibbs <sklearn.neural_network.BernoulliRBM.gibbs>`\\ (v)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Perform one Gibbs sampling step."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`partial_fit <sklearn.neural_network.BernoulliRBM.partial_fit>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid ""
+"Fit the model to the data X which should contain a partial segment of the"
+" data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score_samples "
+"<sklearn.neural_network.BernoulliRBM.score_samples>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute the pseudo-likelihood of X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.neural_network.BernoulliRBM.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.neural_network.BernoulliRBM.transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute the hidden layer activation probabilities, P(h=1|v=X)."
+msgstr ""
+
+#: :7
+msgid "**X** : {array-like, sparse matrix} shape (n_samples, n_features)"
+msgstr ""
+
+#: :9 :10
+msgid "Training data."
+msgstr ""
+
+#: :13 :14
+msgid "**self** : BernoulliRBM"
+msgstr ""
+
+#: :15 :16
+msgid "The fitted model."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**v** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid "Values of the visible layer to start from."
+msgstr ""
+
+#: :13
+msgid "**v_new** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :15
+msgid "Values of the visible layer after one Gibbs step."
+msgstr ""
+
+#: :8
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid "Values of the visible layer. Must be all-boolean (not checked)."
+msgstr ""
+
+#: :13
+msgid "**pseudo_likelihood** : array-like, shape (n_samples,)"
+msgstr ""
+
+#: :15
+msgid "Value of the pseudo-likelihood (proxy for likelihood)."
+msgstr ""
+
+#: :18
+msgid "Notes"
+msgstr ""
+
+#: :19
+msgid ""
+"This method is not deterministic: it computes a quantity called the free "
+"energy on X, then on a randomly corrupted version of X, and returns the "
+"log of the logistic function of the difference."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :9
+msgid "The data to be transformed."
+msgstr ""
+
+#: :13
+msgid "**h** : array, shape (n_samples, n_components)"
+msgstr ""
+
+#: :15
+msgid "Latent representations of the data."
+msgstr ""
+
+#: ../../modules/generated/sklearn.neural_network.BernoulliRBM.examples:3
+msgid "Examples using ``sklearn.neural_network.BernoulliRBM``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neural_network.BernoulliRBM.examples:25
+msgid ":ref:`example_neural_networks_plot_rbm_logistic_classification.py`"
+msgstr ""
+

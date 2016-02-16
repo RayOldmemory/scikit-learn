@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../support.rst:3
+msgid "Support"
+msgstr ""
+
+#: ../../support.rst:5
+msgid "There are several ways to get in touch with the developers."
+msgstr ""
+
+#: ../../support.rst:11
+msgid "Mailing List"
+msgstr ""
+
+#: ../../support.rst:13
+msgid ""
+"The main mailing list is `scikit-learn-general "
+"<https://lists.sourceforge.net/lists/listinfo/scikit-learn-general>`_."
+msgstr ""
+
+#: ../../support.rst:16
+msgid ""
+"There is also a commit list `scikit-learn-commits "
+"<https://lists.sourceforge.net/lists/listinfo/scikit-learn-commits>`_, "
+"where updates to the main repository and test failures get notified."
+msgstr ""
+
+#: ../../support.rst:24
+msgid "User questions"
+msgstr ""
+
+#: ../../support.rst:26
+msgid ""
+"Some scikit-learn developers support users on StackOverflow using the "
+"`[scikit-learn] <http://stackoverflow.com/questions/tagged/scikit-"
+"learn>`_ tag."
+msgstr ""
+
+#: ../../support.rst:30
+msgid ""
+"For general theoretical or methodological Machine Learning questions "
+"`metaoptimize.com/qa <http://metaoptimize.com/qa>`_ is probably a more "
+"suitable venue."
+msgstr ""
+
+#: ../../support.rst:34
+msgid ""
+"In both cases please use a descriptive question in the title field (e.g. "
+"no \"Please help with scikit-learn!\" as this is not a question) and put "
+"details on what you tried to achieve, what were the expected results and "
+"what you observed instead in the details field."
+msgstr ""
+
+#: ../../support.rst:39
+msgid ""
+"Code and data snippets are welcome. Minimalistic (up to ~20 lines long) "
+"reproduction script very helpful."
+msgstr ""
+
+#: ../../support.rst:42
+msgid ""
+"Please describe the nature of your data and the how you preprocessed it: "
+"what is the number of samples, what is the number and type of features "
+"(i.d. categorical or numerical) and for supervised learning tasks, what "
+"target are your trying to predict: binary, multiclass (1 out of "
+"``n_classes``) or multilabel (``k`` out of ``n_classes``) classification "
+"or continuous variable regression."
+msgstr ""
+
+#: ../../support.rst:53
+msgid "Bug tracker"
+msgstr ""
+
+#: ../../support.rst:55
+msgid ""
+"If you think you've encountered a bug, please report it to the issue "
+"tracker:"
+msgstr ""
+
+#: ../../support.rst:57
+msgid "https://github.com/scikit-learn/scikit-learn/issues"
+msgstr ""
+
+#: ../../support.rst:59
+msgid "Don't forget to include:"
+msgstr ""
+
+#: ../../support.rst:61
+msgid "steps (or better script) to reproduce,"
+msgstr ""
+
+#: ../../support.rst:63
+msgid "expected outcome,"
+msgstr ""
+
+#: ../../support.rst:65
+msgid "observed outcome or python (or gdb) tracebacks"
+msgstr ""
+
+#: ../../support.rst:67
+msgid ""
+"To help developers fix your bug faster, please link to a "
+"https://gist.github.com holding a standalone minimalistic python script "
+"that reproduces your bug and optionally a minimalistic subsample of your "
+"dataset (for instance exported as CSV files using ``numpy.savetxt``)."
+msgstr ""
+
+#: ../../support.rst:72
+msgid ""
+"Note: gists are git cloneable repositories and thus you can use git to "
+"push datafiles to them."
+msgstr ""
+
+#: ../../support.rst:79
+msgid "IRC"
+msgstr ""
+
+#: ../../support.rst:81
+msgid ""
+"Some developers like to hang out on channel ``#scikit-learn`` on "
+"``irc.freenode.net``."
+msgstr ""
+
+#: ../../support.rst:84
+msgid ""
+"If you do not have an IRC client or are behind a firewall this web client"
+" works fine: http://webchat.freenode.net"
+msgstr ""
+
+#: ../../support.rst:91
+msgid "Documentation resources"
+msgstr ""
+
+#: ../../support.rst:93
+msgid ""
+"This documentation is relative to |release|. Documentation for other "
+"versions can be found here:"
+msgstr ""
+
+#: ../../support.rst:96
+msgid "`0.16 <http://scikit-learn.org/0.16/>`_"
+msgstr ""
+
+#: ../../support.rst:97
+msgid "`0.15 <http://scikit-learn.org/0.15/>`_"
+msgstr ""
+
+#: ../../support.rst:99
+msgid ""
+"Printable pdf documentation for all versions can be found `here "
+"<http://sourceforge.net/projects/scikit-learn/files/documentation/>`_."
+msgstr ""
+

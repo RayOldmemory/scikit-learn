@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/missing_values.rst:8
+msgid "Imputing missing values before building an estimator"
+msgstr ""
+
+#: ../../auto_examples/missing_values.rst:10
+msgid ""
+"This example shows that imputing the missing values can give better "
+"results than discarding the samples containing any missing value. "
+"Imputing does not always improve the predictions, so please check via "
+"cross-validation. Sometimes dropping rows or using marker values is more "
+"effective."
+msgstr ""
+
+#: ../../auto_examples/missing_values.rst:15
+msgid ""
+"Missing values can be replaced by the mean, the median or the most "
+"frequent value using the ``strategy`` hyper-parameter. The median is a "
+"more robust estimator for data with high magnitude variables which could "
+"dominate results (otherwise known as a 'long tail')."
+msgstr ""
+
+#: ../../auto_examples/missing_values.rst:20
+msgid "Script output::"
+msgstr ""
+
+#: ../../auto_examples/missing_values.rst:26
+msgid ""
+"In this case, imputing helps the classifier get close to the original "
+"score."
+msgstr ""
+
+#: ../../auto_examples/missing_values.rst:30
+msgid "**Python source code:** :download:`missing_values.py <missing_values.py>`"
+msgstr ""
+

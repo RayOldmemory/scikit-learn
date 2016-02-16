@@ -1,0 +1,4293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/classes.rst:3
+msgid "API Reference"
+msgstr ""
+
+#: ../../modules/classes.rst:5
+msgid ""
+"This is the class and function reference of scikit-learn. Please refer to"
+" the :ref:`full user guide <user_guide>` for further details, as the "
+"class and function raw specifications may not be enough to give full "
+"guidelines on their uses."
+msgstr ""
+
+#: ../../modules/classes.rst:14
+msgid ":mod:`sklearn.base`: Base classes and utility functions"
+msgstr ""
+
+#: of sklearn.base:1
+msgid "Base classes for all estimators."
+msgstr ""
+
+#: ../../modules/classes.rst:21
+msgid "Base classes"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`base.BaseEstimator <sklearn.base.BaseEstimator>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Base class for all estimators in scikit-learn"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`base.ClassifierMixin <sklearn.base.ClassifierMixin>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mixin class for all classifiers in scikit-learn."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`base.ClusterMixin <sklearn.base.ClusterMixin>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mixin class for all cluster estimators in scikit-learn."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`base.RegressorMixin <sklearn.base.RegressorMixin>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mixin class for all regression estimators in scikit-learn."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`base.TransformerMixin <sklearn.base.TransformerMixin>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mixin class for all transformers in scikit-learn."
+msgstr ""
+
+#: ../../modules/classes.rst:35 ../../modules/classes.rst:75
+msgid "Functions"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`base.clone <sklearn.base.clone>`\\ (estimator[, safe])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Constructs a new estimator with the same parameters."
+msgstr ""
+
+#: ../../modules/classes.rst:48
+msgid ":mod:`sklearn.cluster`: Clustering"
+msgstr ""
+
+#: of sklearn.cluster:1
+msgid ""
+"The :mod:`sklearn.cluster` module gathers popular unsupervised clustering"
+" algorithms."
+msgstr ""
+
+#: ../../modules/classes.rst:54
+msgid "**User guide:** See the :ref:`clustering` section for further details."
+msgstr ""
+
+#: ../../modules/classes.rst:57 ../../modules/classes.rst:100
+msgid "Classes"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.AffinityPropagation "
+"<sklearn.cluster.AffinityPropagation>`\\ ([damping, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Perform Affinity Propagation Clustering of data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.AgglomerativeClustering "
+"<sklearn.cluster.AgglomerativeClustering>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Agglomerative Clustering"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.Birch <sklearn.cluster.Birch>`\\ ([threshold, "
+"branching_factor, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Implements the Birch clustering algorithm."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.DBSCAN <sklearn.cluster.DBSCAN>`\\ ([eps, min_samples, "
+"metric, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Perform DBSCAN clustering from vector array or distance matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.FeatureAgglomeration "
+"<sklearn.cluster.FeatureAgglomeration>`\\ ([n_clusters, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Agglomerate features."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.KMeans <sklearn.cluster.KMeans>`\\ ([n_clusters, init, "
+"n_init, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "K-Means clustering"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.MiniBatchKMeans <sklearn.cluster.MiniBatchKMeans>`\\ "
+"([n_clusters, init, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mini-Batch K-Means clustering"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.MeanShift <sklearn.cluster.MeanShift>`\\ ([bandwidth, "
+"seeds, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mean shift clustering using a flat kernel."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.SpectralClustering <sklearn.cluster.SpectralClustering>`\\ "
+"([n_clusters, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Apply clustering to a projection to the normalized laplacian."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.estimate_bandwidth <sklearn.cluster.estimate_bandwidth>`\\ "
+"(X[, quantile, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Estimate the bandwidth to use with the mean-shift algorithm."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.k_means <sklearn.cluster.k_means>`\\ (X, n_clusters[, init,"
+" ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "K-means clustering algorithm."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.ward_tree <sklearn.cluster.ward_tree>`\\ (X[, connectivity,"
+" ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Ward clustering based on a Feature matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.affinity_propagation "
+"<sklearn.cluster.affinity_propagation>`\\ (S[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Perform Affinity Propagation Clustering of data"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.dbscan <sklearn.cluster.dbscan>`\\ (X[, eps, min_samples, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.mean_shift <sklearn.cluster.mean_shift>`\\ (X[, bandwidth, "
+"seeds, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Perform mean shift clustering of data using a flat kernel."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cluster.spectral_clustering "
+"<sklearn.cluster.spectral_clustering>`\\ (affinity[, ...])"
+msgstr ""
+
+#: ../../modules/classes.rst:91
+msgid ":mod:`sklearn.cluster.bicluster`: Biclustering"
+msgstr ""
+
+#: of sklearn.cluster.bicluster:1
+msgid "Spectral biclustering algorithms."
+msgstr ""
+
+#: of sklearn.cluster.bicluster:3
+msgid "Authors : Kemal Eren License: BSD 3 clause"
+msgstr ""
+
+#: ../../modules/classes.rst:97
+msgid "**User guide:** See the :ref:`biclustering` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`SpectralBiclustering "
+"<sklearn.cluster.bicluster.SpectralBiclustering>`\\ ([n_clusters, method,"
+" ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Spectral biclustering (Kluger, 2003)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`SpectralCoclustering "
+"<sklearn.cluster.bicluster.SpectralCoclustering>`\\ ([n_clusters, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Spectral Co-Clustering algorithm (Dhillon, 2001)."
+msgstr ""
+
+#: ../../modules/classes.rst:113
+msgid ":mod:`sklearn.covariance`: Covariance Estimators"
+msgstr ""
+
+#: of sklearn.covariance:1
+msgid ""
+"The :mod:`sklearn.covariance` module includes methods and algorithms to "
+"robustly estimate the covariance of features given a set of points. The "
+"precision matrix defined as the inverse of the covariance is also "
+"estimated. Covariance estimation is closely related to the theory of "
+"Gaussian Graphical Models."
+msgstr ""
+
+#: ../../modules/classes.rst:119
+msgid "**User guide:** See the :ref:`covariance` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.EmpiricalCovariance "
+"<sklearn.covariance.EmpiricalCovariance>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Maximum likelihood covariance estimator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.EllipticEnvelope "
+"<sklearn.covariance.EllipticEnvelope>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An object for detecting outliers in a Gaussian distributed dataset."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.GraphLasso <sklearn.covariance.GraphLasso>`\\ ([alpha, "
+"mode, tol, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Sparse inverse covariance estimation with an l1-penalized estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.GraphLassoCV <sklearn.covariance.GraphLassoCV>`\\ "
+"([alphas, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Sparse inverse covariance w/ cross-validated choice of the l1 penalty"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.LedoitWolf <sklearn.covariance.LedoitWolf>`\\ "
+"([store_precision, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "LedoitWolf Estimator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.MinCovDet <sklearn.covariance.MinCovDet>`\\ "
+"([store_precision, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Minimum Covariance Determinant (MCD): robust estimator of covariance."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`covariance.OAS <sklearn.covariance.OAS>`\\ ([store_precision, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Oracle Approximating Shrinkage Estimator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.ShrunkCovariance "
+"<sklearn.covariance.ShrunkCovariance>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Covariance estimator with shrinkage"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.empirical_covariance "
+"<sklearn.covariance.empirical_covariance>`\\ (X[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Computes the Maximum likelihood covariance estimator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.ledoit_wolf <sklearn.covariance.ledoit_wolf>`\\ (X[, "
+"assume_centered, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Estimates the shrunk Ledoit-Wolf covariance matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.shrunk_covariance "
+"<sklearn.covariance.shrunk_covariance>`\\ (emp_cov[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Calculates a covariance matrix shrunk on the diagonal"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`covariance.oas <sklearn.covariance.oas>`\\ (X[, assume_centered])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Estimate covariance with the Oracle Approximating Shrinkage algorithm."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`covariance.graph_lasso <sklearn.covariance.graph_lasso>`\\ "
+"(emp_cov, alpha[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "l1-penalized covariance estimator"
+msgstr ""
+
+#: ../../modules/classes.rst:150
+msgid ":mod:`sklearn.cross_validation`: Cross Validation"
+msgstr ""
+
+#: of sklearn.cross_validation:1
+msgid ""
+"The :mod:`sklearn.cross_validation` module includes utilities for cross- "
+"validation and performance evaluation."
+msgstr ""
+
+#: ../../modules/classes.rst:156
+msgid ""
+"**User guide:** See the :ref:`cross_validation` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.KFold <sklearn.cross_validation.KFold>`\\ (n[, "
+"n_folds, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "K-Folds cross validation iterator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.LabelKFold "
+"<sklearn.cross_validation.LabelKFold>`\\ (labels[, n_folds])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "K-fold iterator variant with non-overlapping labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.LabelShuffleSplit "
+"<sklearn.cross_validation.LabelShuffleSplit>`\\ (labels[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Shuffle-Labels-Out cross-validation iterator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.LeaveOneLabelOut "
+"<sklearn.cross_validation.LeaveOneLabelOut>`\\ (labels)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Leave-One-Label_Out cross-validation iterator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.LeaveOneOut "
+"<sklearn.cross_validation.LeaveOneOut>`\\ (n)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Leave-One-Out cross validation iterator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.LeavePLabelOut "
+"<sklearn.cross_validation.LeavePLabelOut>`\\ (labels, p)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Leave-P-Label_Out cross-validation iterator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.LeavePOut <sklearn.cross_validation.LeavePOut>`\\ "
+"(n, p)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Leave-P-Out cross validation iterator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.PredefinedSplit "
+"<sklearn.cross_validation.PredefinedSplit>`\\ (test_fold)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Predefined split cross validation iterator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.ShuffleSplit "
+"<sklearn.cross_validation.ShuffleSplit>`\\ (n[, n_iter, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Random permutation cross-validation iterator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.StratifiedKFold "
+"<sklearn.cross_validation.StratifiedKFold>`\\ (y[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Stratified K-Folds cross validation iterator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.StratifiedShuffleSplit "
+"<sklearn.cross_validation.StratifiedShuffleSplit>`\\ (y[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Stratified ShuffleSplit cross validation iterator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.train_test_split "
+"<sklearn.cross_validation.train_test_split>`\\ (\\*arrays, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Split arrays or matrices into random train and test subsets"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.cross_val_score "
+"<sklearn.cross_validation.cross_val_score>`\\ (estimator, X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Evaluate a score by cross-validation"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.cross_val_predict "
+"<sklearn.cross_validation.cross_val_predict>`\\ (estimator, X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate cross-validated estimates for each input data point"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.permutation_test_score "
+"<sklearn.cross_validation.permutation_test_score>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Evaluate the significance of a cross-validated score with permutations"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_validation.check_cv <sklearn.cross_validation.check_cv>`\\ "
+"(cv[, X, y, classifier])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Input checker utility for building a CV in a user friendly way."
+msgstr ""
+
+#: ../../modules/classes.rst:190
+msgid ":mod:`sklearn.datasets`: Datasets"
+msgstr ""
+
+#: of sklearn.datasets:1
+msgid ""
+"The :mod:`sklearn.datasets` module includes utilities to load datasets, "
+"including methods to load and fetch popular reference datasets. It also "
+"features some artificial data generators."
+msgstr ""
+
+#: ../../modules/classes.rst:196
+msgid "**User guide:** See the :ref:`datasets` section for further details."
+msgstr ""
+
+#: ../../modules/classes.rst:199
+msgid "Loaders"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.clear_data_home <sklearn.datasets.clear_data_home>`\\ "
+"([data_home])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Delete all the content of the data home cache."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.get_data_home <sklearn.datasets.get_data_home>`\\ "
+"([data_home])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Return the path of the scikit-learn data dir."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_20newsgroups "
+"<sklearn.datasets.fetch_20newsgroups>`\\ ([data_home, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load the filenames and data from the 20 newsgroups dataset."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_20newsgroups_vectorized "
+"<sklearn.datasets.fetch_20newsgroups_vectorized>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load the 20 newsgroups dataset and transform it into tf-idf vectors."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`datasets.load_boston <sklearn.datasets.load_boston>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load and return the boston house-prices dataset (regression)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`datasets.load_diabetes <sklearn.datasets.load_diabetes>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load and return the diabetes dataset (regression)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`datasets.load_digits <sklearn.datasets.load_digits>`\\ ([n_class])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load and return the digits dataset (classification)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.load_files <sklearn.datasets.load_files>`\\ "
+"(container_path[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load text files with categories as subfolder names."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`datasets.load_iris <sklearn.datasets.load_iris>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load and return the iris dataset (classification)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_lfw_pairs <sklearn.datasets.fetch_lfw_pairs>`\\ "
+"([subset, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Loader for the Labeled Faces in the Wild (LFW) pairs dataset"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_lfw_people <sklearn.datasets.fetch_lfw_people>`\\ "
+"([data_home, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Loader for the Labeled Faces in the Wild (LFW) people dataset"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`datasets.load_linnerud <sklearn.datasets.load_linnerud>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load and return the linnerud dataset (multivariate regression)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.mldata_filename <sklearn.datasets.mldata_filename>`\\ "
+"(dataname)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Convert a raw name for a data set in a mldata.org filename."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_mldata <sklearn.datasets.fetch_mldata>`\\ "
+"(dataname[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Fetch an mldata.org data set"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_olivetti_faces "
+"<sklearn.datasets.fetch_olivetti_faces>`\\ ([data_home, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Loader for the Olivetti faces data-set from AT&T."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_california_housing "
+"<sklearn.datasets.fetch_california_housing>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Loader for the California housing dataset from StatLib."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_covtype <sklearn.datasets.fetch_covtype>`\\ "
+"([data_home, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load the covertype dataset, downloading it if necessary."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.fetch_rcv1 <sklearn.datasets.fetch_rcv1>`\\ ([data_home, "
+"subset, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load the RCV1 multilabel dataset, downloading it if necessary."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.load_mlcomp <sklearn.datasets.load_mlcomp>`\\ "
+"(name_or_id[, set_, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load a datasets as downloaded from http://mlcomp.org"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.load_sample_image <sklearn.datasets.load_sample_image>`\\ "
+"(image_name)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load the numpy array of a single sample image"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.load_sample_images "
+"<sklearn.datasets.load_sample_images>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load sample images for image manipulation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.load_svmlight_file "
+"<sklearn.datasets.load_svmlight_file>`\\ (f[, n_features, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load datasets in the svmlight / libsvm format into sparse CSR matrix"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.load_svmlight_files "
+"<sklearn.datasets.load_svmlight_files>`\\ (files[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Load dataset from multiple files in SVMlight format"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.dump_svmlight_file "
+"<sklearn.datasets.dump_svmlight_file>`\\ (X, y, f[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Dump the dataset in svmlight / libsvm file format."
+msgstr ""
+
+#: ../../modules/classes.rst:233
+msgid "Samples generator"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_blobs <sklearn.datasets.make_blobs>`\\ ([n_samples, "
+"n_features, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate isotropic Gaussian blobs for clustering."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_classification "
+"<sklearn.datasets.make_classification>`\\ ([n_samples, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a random n-class classification problem."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_circles <sklearn.datasets.make_circles>`\\ "
+"([n_samples, shuffle, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Make a large circle containing a smaller circle in 2d."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_friedman1 <sklearn.datasets.make_friedman1>`\\ "
+"([n_samples, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate the \"Friedman \\#1\" regression problem"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_friedman2 <sklearn.datasets.make_friedman2>`\\ "
+"([n_samples, noise, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate the \"Friedman \\#2\" regression problem"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_friedman3 <sklearn.datasets.make_friedman3>`\\ "
+"([n_samples, noise, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate the \"Friedman \\#3\" regression problem"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_gaussian_quantiles "
+"<sklearn.datasets.make_gaussian_quantiles>`\\ ([mean, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate isotropic Gaussian and label samples by quantile"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_hastie_10_2 <sklearn.datasets.make_hastie_10_2>`\\ "
+"([n_samples, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generates data for binary classification used in Hastie et al."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_low_rank_matrix "
+"<sklearn.datasets.make_low_rank_matrix>`\\ ([n_samples, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a mostly low rank matrix with bell-shaped singular values"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_moons <sklearn.datasets.make_moons>`\\ ([n_samples, "
+"shuffle, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Make two interleaving half circles"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_multilabel_classification "
+"<sklearn.datasets.make_multilabel_classification>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a random multilabel classification problem."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_regression <sklearn.datasets.make_regression>`\\ "
+"([n_samples, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a random regression problem."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_s_curve <sklearn.datasets.make_s_curve>`\\ "
+"([n_samples, noise, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate an S curve dataset."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_sparse_coded_signal "
+"<sklearn.datasets.make_sparse_coded_signal>`\\ (n_samples, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a signal as a sparse combination of dictionary elements."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_sparse_spd_matrix "
+"<sklearn.datasets.make_sparse_spd_matrix>`\\ ([dim, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a sparse symmetric definite positive matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_sparse_uncorrelated "
+"<sklearn.datasets.make_sparse_uncorrelated>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a random regression problem with sparse uncorrelated design"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_spd_matrix <sklearn.datasets.make_spd_matrix>`\\ "
+"(n_dim[, random_state])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a random symmetric, positive-definite matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_swiss_roll <sklearn.datasets.make_swiss_roll>`\\ "
+"([n_samples, noise, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate a swiss roll dataset."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_biclusters <sklearn.datasets.make_biclusters>`\\ "
+"(shape, n_clusters)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate an array with constant block diagonal structure for biclustering."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`datasets.make_checkerboard <sklearn.datasets.make_checkerboard>`\\ "
+"(shape, n_clusters)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate an array with block checkerboard structure for biclustering."
+msgstr ""
+
+#: ../../modules/classes.rst:266
+msgid ":mod:`sklearn.decomposition`: Matrix Decomposition"
+msgstr ""
+
+#: of sklearn.decomposition:1
+msgid ""
+"The :mod:`sklearn.decomposition` module includes matrix decomposition "
+"algorithms, including among others PCA, NMF or ICA. Most of the "
+"algorithms of this module can be regarded as dimensionality reduction "
+"techniques."
+msgstr ""
+
+#: ../../modules/classes.rst:272
+msgid "**User guide:** See the :ref:`decompositions` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.PCA <sklearn.decomposition.PCA>`\\ ([n_components, "
+"copy, whiten])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Principal component analysis (PCA)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.IncrementalPCA "
+"<sklearn.decomposition.IncrementalPCA>`\\ ([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Incremental principal components analysis (IPCA)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.ProjectedGradientNMF "
+"<sklearn.decomposition.ProjectedGradientNMF>`\\ (\\*args, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Non-Negative Matrix Factorization (NMF)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.RandomizedPCA "
+"<sklearn.decomposition.RandomizedPCA>`\\ ([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Principal component analysis (PCA) using randomized SVD"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.KernelPCA <sklearn.decomposition.KernelPCA>`\\ "
+"([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Kernel Principal component analysis (KPCA)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.FactorAnalysis "
+"<sklearn.decomposition.FactorAnalysis>`\\ ([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Factor Analysis (FA)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.FastICA <sklearn.decomposition.FastICA>`\\ "
+"([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "FastICA: a fast algorithm for Independent Component Analysis."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.TruncatedSVD <sklearn.decomposition.TruncatedSVD>`\\ "
+"([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Dimensionality reduction using truncated SVD (aka LSA)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.NMF <sklearn.decomposition.NMF>`\\ ([n_components, "
+"init, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.SparsePCA <sklearn.decomposition.SparsePCA>`\\ "
+"([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Sparse Principal Components Analysis (SparsePCA)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.MiniBatchSparsePCA "
+"<sklearn.decomposition.MiniBatchSparsePCA>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mini-batch Sparse Principal Components Analysis"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.SparseCoder <sklearn.decomposition.SparseCoder>`\\ "
+"(dictionary[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Sparse coding"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.DictionaryLearning "
+"<sklearn.decomposition.DictionaryLearning>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Dictionary learning"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.MiniBatchDictionaryLearning "
+"<sklearn.decomposition.MiniBatchDictionaryLearning>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mini-batch dictionary learning"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.LatentDirichletAllocation "
+"<sklearn.decomposition.LatentDirichletAllocation>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Latent Dirichlet Allocation with online variational Bayes algorithm"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.fastica <sklearn.decomposition.fastica>`\\ (X[, "
+"n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Perform Fast Independent Component Analysis."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.dict_learning "
+"<sklearn.decomposition.dict_learning>`\\ (X, n_components, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Solves a dictionary learning matrix factorization problem."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.dict_learning_online "
+"<sklearn.decomposition.dict_learning_online>`\\ (X[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Solves a dictionary learning matrix factorization problem online."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decomposition.sparse_encode "
+"<sklearn.decomposition.sparse_encode>`\\ (X, dictionary[, ...])"
+msgstr ""
+
+#: ../../modules/classes.rst:308
+msgid ":mod:`sklearn.dummy`: Dummy estimators"
+msgstr ""
+
+#: ../../modules/classes.rst:314
+msgid ""
+"**User guide:** See the :ref:`model_evaluation` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`dummy.DummyClassifier <sklearn.dummy.DummyClassifier>`\\ "
+"([strategy, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "DummyClassifier is a classifier that makes predictions using simple rules."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`dummy.DummyRegressor <sklearn.dummy.DummyRegressor>`\\ ([strategy, "
+"constant, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "DummyRegressor is a regressor that makes predictions using simple rules."
+msgstr ""
+
+#: ../../modules/classes.rst:332
+msgid ":mod:`sklearn.ensemble`: Ensemble Methods"
+msgstr ""
+
+#: of sklearn.ensemble:1
+msgid ""
+"The :mod:`sklearn.ensemble` module includes ensemble-based methods for "
+"classification and regression."
+msgstr ""
+
+#: ../../modules/classes.rst:338
+msgid "**User guide:** See the :ref:`ensemble` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.AdaBoostClassifier "
+"<sklearn.ensemble.AdaBoostClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An AdaBoost classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.AdaBoostRegressor <sklearn.ensemble.AdaBoostRegressor>`\\ "
+"([base_estimator, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An AdaBoost regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.BaggingClassifier <sklearn.ensemble.BaggingClassifier>`\\ "
+"([base_estimator, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A Bagging classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.BaggingRegressor <sklearn.ensemble.BaggingRegressor>`\\ "
+"([base_estimator, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A Bagging regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.ExtraTreesClassifier "
+"<sklearn.ensemble.ExtraTreesClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An extra-trees classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.ExtraTreesRegressor "
+"<sklearn.ensemble.ExtraTreesRegressor>`\\ ([n_estimators, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An extra-trees regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.GradientBoostingClassifier "
+"<sklearn.ensemble.GradientBoostingClassifier>`\\ ([loss, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Gradient Boosting for classification."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.GradientBoostingRegressor "
+"<sklearn.ensemble.GradientBoostingRegressor>`\\ ([loss, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Gradient Boosting for regression."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.RandomForestClassifier "
+"<sklearn.ensemble.RandomForestClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A random forest classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.RandomTreesEmbedding "
+"<sklearn.ensemble.RandomTreesEmbedding>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An ensemble of totally random trees."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.RandomForestRegressor "
+"<sklearn.ensemble.RandomForestRegressor>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A random forest regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.VotingClassifier <sklearn.ensemble.VotingClassifier>`\\ "
+"(estimators[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Soft Voting/Majority Rule classifier for unfitted estimators."
+msgstr ""
+
+#: ../../modules/classes.rst:365
+msgid "partial dependence"
+msgstr ""
+
+#: of sklearn.ensemble.partial_dependence:1
+msgid "Partial dependence plots for tree ensembles."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.partial_dependence.partial_dependence "
+"<sklearn.ensemble.partial_dependence.partial_dependence>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Partial dependence of ``target_variables``."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.partial_dependence.plot_partial_dependence "
+"<sklearn.ensemble.partial_dependence.plot_partial_dependence>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Partial dependence plots for ``features``."
+msgstr ""
+
+#: ../../modules/classes.rst:384
+msgid ":mod:`sklearn.feature_extraction`: Feature Extraction"
+msgstr ""
+
+#: of sklearn.feature_extraction:1
+msgid ""
+"The :mod:`sklearn.feature_extraction` module deals with feature "
+"extraction from raw data. It currently includes methods to extract "
+"features from text and images."
+msgstr ""
+
+#: ../../modules/classes.rst:390
+msgid ""
+"**User guide:** See the :ref:`feature_extraction` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.DictVectorizer "
+"<sklearn.feature_extraction.DictVectorizer>`\\ ([dtype, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Transforms lists of feature-value mappings to vectors."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.FeatureHasher "
+"<sklearn.feature_extraction.FeatureHasher>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Implements feature hashing, aka the hashing trick."
+msgstr ""
+
+#: ../../modules/classes.rst:402
+msgid "From images"
+msgstr ""
+
+#: of sklearn.feature_extraction.image:1
+msgid ""
+"The :mod:`sklearn.feature_extraction.image` submodule gathers utilities "
+"to extract features from images."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.image.img_to_graph "
+"<sklearn.feature_extraction.image.img_to_graph>`\\ (img[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Graph of the pixel-to-pixel gradient connections"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.image.grid_to_graph "
+"<sklearn.feature_extraction.image.grid_to_graph>`\\ (n_x, n_y)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Graph of the pixel-to-pixel connections"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.image.extract_patches_2d "
+"<sklearn.feature_extraction.image.extract_patches_2d>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Reshape a 2D image into a collection of patches"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.image.reconstruct_from_patches_2d "
+"<sklearn.feature_extraction.image.reconstruct_from_patches_2d>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Reconstruct the image from all of its patches."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.image.PatchExtractor "
+"<sklearn.feature_extraction.image.PatchExtractor>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Extracts patches from a collection of images"
+msgstr ""
+
+#: ../../modules/classes.rst:426
+msgid "From text"
+msgstr ""
+
+#: of sklearn.feature_extraction.text:1
+msgid ""
+"The :mod:`sklearn.feature_extraction.text` submodule gathers utilities to"
+" build feature vectors from text documents."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.text.CountVectorizer "
+"<sklearn.feature_extraction.text.CountVectorizer>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Convert a collection of text documents to a matrix of token counts"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.text.HashingVectorizer "
+"<sklearn.feature_extraction.text.HashingVectorizer>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Convert a collection of text documents to a matrix of token occurrences"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.text.TfidfTransformer "
+"<sklearn.feature_extraction.text.TfidfTransformer>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Transform a count matrix to a normalized tf or tf-idf representation"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_extraction.text.TfidfVectorizer "
+"<sklearn.feature_extraction.text.TfidfVectorizer>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Convert a collection of raw documents to a matrix of TF-IDF features."
+msgstr ""
+
+#: ../../modules/classes.rst:447
+msgid ":mod:`sklearn.feature_selection`: Feature Selection"
+msgstr ""
+
+#: of sklearn.feature_selection:1
+msgid ""
+"The :mod:`sklearn.feature_selection` module implements feature selection "
+"algorithms. It currently includes univariate filter selection methods and"
+" the recursive feature elimination algorithm."
+msgstr ""
+
+#: ../../modules/classes.rst:453
+msgid ""
+"**User guide:** See the :ref:`feature_selection` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.GenericUnivariateSelect "
+"<sklearn.feature_selection.GenericUnivariateSelect>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Univariate feature selector with configurable strategy."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.SelectPercentile "
+"<sklearn.feature_selection.SelectPercentile>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Select features according to a percentile of the highest scores."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.SelectKBest "
+"<sklearn.feature_selection.SelectKBest>`\\ ([score_func, k])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Select features according to the k highest scores."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.SelectFpr "
+"<sklearn.feature_selection.SelectFpr>`\\ ([score_func, alpha])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Filter: Select the pvalues below alpha based on a FPR test."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.SelectFdr "
+"<sklearn.feature_selection.SelectFdr>`\\ ([score_func, alpha])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Filter: Select the p-values for an estimated false discovery rate"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.SelectFromModel "
+"<sklearn.feature_selection.SelectFromModel>`\\ (estimator)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Meta-transformer for selecting features based on importance weights."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.SelectFwe "
+"<sklearn.feature_selection.SelectFwe>`\\ ([score_func, alpha])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Filter: Select the p-values corresponding to Family-wise error rate"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.RFE <sklearn.feature_selection.RFE>`\\ "
+"(estimator[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Feature ranking with recursive feature elimination."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.RFECV <sklearn.feature_selection.RFECV>`\\ "
+"(estimator[, step, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Feature ranking with recursive feature elimination and cross-validated "
+"selection of the best number of features."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.VarianceThreshold "
+"<sklearn.feature_selection.VarianceThreshold>`\\ ([threshold])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Feature selector that removes all low-variance features."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`feature_selection.chi2 <sklearn.feature_selection.chi2>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute chi-squared stats between each non-negative feature and class."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.f_classif "
+"<sklearn.feature_selection.f_classif>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the ANOVA F-value for the provided sample."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`feature_selection.f_regression "
+"<sklearn.feature_selection.f_regression>`\\ (X, y[, center])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Univariate linear regression tests."
+msgstr ""
+
+#: ../../modules/classes.rst:484
+msgid ":mod:`sklearn.gaussian_process`: Gaussian Processes"
+msgstr ""
+
+#: of sklearn.gaussian_process:1
+msgid ""
+"The :mod:`sklearn.gaussian_process` module implements scalar Gaussian "
+"Process based predictions."
+msgstr ""
+
+#: ../../modules/classes.rst:490
+msgid ""
+"**User guide:** See the :ref:`gaussian_process` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.GaussianProcess "
+"<sklearn.gaussian_process.GaussianProcess>`\\ ([regr, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "The Gaussian Process model class."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.correlation_models.absolute_exponential "
+"<sklearn.gaussian_process.correlation_models.absolute_exponential>`\\ "
+"(...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Absolute exponential autocorrelation model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.correlation_models.squared_exponential "
+"<sklearn.gaussian_process.correlation_models.squared_exponential>`\\ "
+"(...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Squared exponential correlation model (Radial Basis Function)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.correlation_models.generalized_exponential "
+"<sklearn.gaussian_process.correlation_models.generalized_exponential>`\\ "
+"(...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generalized exponential correlation model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.correlation_models.pure_nugget "
+"<sklearn.gaussian_process.correlation_models.pure_nugget>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Spatial independence correlation model (pure nugget)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.correlation_models.cubic "
+"<sklearn.gaussian_process.correlation_models.cubic>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Cubic correlation model::"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.correlation_models.linear "
+"<sklearn.gaussian_process.correlation_models.linear>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear correlation model::"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.regression_models.constant "
+"<sklearn.gaussian_process.regression_models.constant>`\\ (x)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Zero order polynomial (constant, p = 1) regression model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.regression_models.linear "
+"<sklearn.gaussian_process.regression_models.linear>`\\ (x)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "First order polynomial (linear, p = n+1) regression model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`gaussian_process.regression_models.quadratic "
+"<sklearn.gaussian_process.regression_models.quadratic>`\\ (x)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Second order polynomial (quadratic, p = n*(n-1)/2+n+1) regression model."
+msgstr ""
+
+#: ../../modules/classes.rst:518
+msgid ":mod:`sklearn.grid_search`: Grid Search"
+msgstr ""
+
+#: of sklearn.grid_search:1
+msgid ""
+"The :mod:`sklearn.grid_search` includes utilities to fine-tune the "
+"parameters of an estimator."
+msgstr ""
+
+#: ../../modules/classes.rst:524
+msgid "**User guide:** See the :ref:`grid_search` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`grid_search.GridSearchCV <sklearn.grid_search.GridSearchCV>`\\ "
+"(estimator, param_grid)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Exhaustive search over specified parameter values for an estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`grid_search.ParameterGrid <sklearn.grid_search.ParameterGrid>`\\ "
+"(param_grid)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Grid of parameters with a discrete number of values for each."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`grid_search.ParameterSampler "
+"<sklearn.grid_search.ParameterSampler>`\\ (...[, random_state])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generator on parameters sampled from given distributions."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`grid_search.RandomizedSearchCV "
+"<sklearn.grid_search.RandomizedSearchCV>`\\ (estimator, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Randomized search on hyper parameters."
+msgstr ""
+
+#: ../../modules/classes.rst:541
+msgid ":mod:`sklearn.isotonic`: Isotonic regression"
+msgstr ""
+
+#: ../../modules/classes.rst:547
+msgid "**User guide:** See the :ref:`isotonic` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`isotonic.IsotonicRegression "
+"<sklearn.isotonic.IsotonicRegression>`\\ ([y_min, y_max, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Isotonic regression model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`isotonic.isotonic_regression "
+"<sklearn.isotonic.isotonic_regression>`\\ (y[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Solve the isotonic regression model::"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`isotonic.check_increasing <sklearn.isotonic.check_increasing>`\\ "
+"(x, y)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Determine whether y is monotonically correlated with x."
+msgstr ""
+
+#: ../../modules/classes.rst:567
+msgid ":mod:`sklearn.kernel_approximation` Kernel Approximation"
+msgstr ""
+
+#: of sklearn.kernel_approximation:1
+msgid ""
+"The :mod:`sklearn.kernel_approximation` module implements several "
+"approximate kernel feature maps base on Fourier transforms."
+msgstr ""
+
+#: ../../modules/classes.rst:573
+msgid ""
+"**User guide:** See the :ref:`kernel_approximation` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kernel_approximation.AdditiveChi2Sampler "
+"<sklearn.kernel_approximation.AdditiveChi2Sampler>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Approximate feature map for additive chi2 kernel."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kernel_approximation.Nystroem "
+"<sklearn.kernel_approximation.Nystroem>`\\ ([kernel, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Approximate a kernel map using a subset of the training data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kernel_approximation.RBFSampler "
+"<sklearn.kernel_approximation.RBFSampler>`\\ ([gamma, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Approximates feature map of an RBF kernel by Monte Carlo approximation of"
+" its Fourier transform."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kernel_approximation.SkewedChi2Sampler "
+"<sklearn.kernel_approximation.SkewedChi2Sampler>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Approximates feature map of the \"skewed chi-squared\" kernel by Monte "
+"Carlo approximation of its Fourier transform."
+msgstr ""
+
+#: ../../modules/classes.rst:589
+msgid ":mod:`sklearn.kernel_ridge` Kernel Ridge Regression"
+msgstr ""
+
+#: of sklearn.kernel_ridge:1
+msgid "Module :mod:`sklearn.kernel_ridge` implements kernel ridge regression."
+msgstr ""
+
+#: ../../modules/classes.rst:595
+msgid "**User guide:** See the :ref:`kernel_ridge` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kernel_ridge.KernelRidge <sklearn.kernel_ridge.KernelRidge>`\\ "
+"([alpha, kernel, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Kernel ridge regression."
+msgstr ""
+
+#: ../../modules/classes.rst:608
+msgid ":mod:`sklearn.discriminant_analysis`: Discriminant Analysis"
+msgstr ""
+
+#: of sklearn.discriminant_analysis:1
+msgid "Linear Discriminant Analysis and Quadratic Discriminant Analysis"
+msgstr ""
+
+#: ../../modules/classes.rst:614
+msgid "**User guide:** See the :ref:`lda_qda` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`discriminant_analysis.LinearDiscriminantAnalysis "
+"<sklearn.discriminant_analysis.LinearDiscriminantAnalysis>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear Discriminant Analysis"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`discriminant_analysis.QuadraticDiscriminantAnalysis "
+"<sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Quadratic Discriminant Analysis"
+msgstr ""
+
+#: ../../modules/classes.rst:629
+msgid ":mod:`sklearn.learning_curve` Learning curve evaluation"
+msgstr ""
+
+#: of sklearn.learning_curve:1
+msgid "Utilities to evaluate models with respect to a variable"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`learning_curve.learning_curve "
+"<sklearn.learning_curve.learning_curve>`\\ (estimator, X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Learning curve."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`learning_curve.validation_curve "
+"<sklearn.learning_curve.validation_curve>`\\ (estimator, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Validation curve."
+msgstr ""
+
+#: ../../modules/classes.rst:647
+msgid ":mod:`sklearn.linear_model`: Generalized Linear Models"
+msgstr ""
+
+#: of sklearn.linear_model:1
+msgid ""
+"The :mod:`sklearn.linear_model` module implements generalized linear "
+"models. It includes Ridge regression, Bayesian Regression, Lasso and "
+"Elastic Net estimators computed with Least Angle Regression and "
+"coordinate descent. It also implements Stochastic Gradient Descent "
+"related algorithms."
+msgstr ""
+
+#: ../../modules/classes.rst:653
+msgid "**User guide:** See the :ref:`linear_model` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.ARDRegression <sklearn.linear_model.ARDRegression>`\\ "
+"([n_iter, tol, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Bayesian ARD regression."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.BayesianRidge <sklearn.linear_model.BayesianRidge>`\\ "
+"([n_iter, tol, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Bayesian ridge regression"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.ElasticNet <sklearn.linear_model.ElasticNet>`\\ "
+"([alpha, l1_ratio, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear regression with combined L1 and L2 priors as regularizer."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.ElasticNetCV <sklearn.linear_model.ElasticNetCV>`\\ "
+"([l1_ratio, eps, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Elastic Net model with iterative fitting along a regularization path"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.Lars <sklearn.linear_model.Lars>`\\ ([fit_intercept, "
+"verbose, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Least Angle Regression model a.k.a."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LarsCV <sklearn.linear_model.LarsCV>`\\ "
+"([fit_intercept, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Cross-validated Least Angle Regression model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.Lasso <sklearn.linear_model.Lasso>`\\ ([alpha, "
+"fit_intercept, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear Model trained with L1 prior as regularizer (aka the Lasso)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LassoCV <sklearn.linear_model.LassoCV>`\\ ([eps, "
+"n_alphas, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Lasso linear model with iterative fitting along a regularization path"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LassoLars <sklearn.linear_model.LassoLars>`\\ ([alpha,"
+" ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Lasso model fit with Least Angle Regression a.k.a."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LassoLarsCV <sklearn.linear_model.LassoLarsCV>`\\ "
+"([fit_intercept, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Cross-validated Lasso, using the LARS algorithm"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LassoLarsIC <sklearn.linear_model.LassoLarsIC>`\\ "
+"([criterion, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Lasso model fit with Lars using BIC or AIC for model selection"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LinearRegression "
+"<sklearn.linear_model.LinearRegression>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Ordinary least squares Linear Regression."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LogisticRegression "
+"<sklearn.linear_model.LogisticRegression>`\\ ([penalty, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Logistic Regression (aka logit, MaxEnt) classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LogisticRegressionCV "
+"<sklearn.linear_model.LogisticRegressionCV>`\\ ([Cs, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Logistic Regression CV (aka logit, MaxEnt) classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.MultiTaskLasso "
+"<sklearn.linear_model.MultiTaskLasso>`\\ ([alpha, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Multi-task Lasso model trained with L1/L2 mixed-norm as regularizer"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.MultiTaskElasticNet "
+"<sklearn.linear_model.MultiTaskElasticNet>`\\ ([alpha, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Multi-task ElasticNet model trained with L1/L2 mixed-norm as regularizer"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.MultiTaskLassoCV "
+"<sklearn.linear_model.MultiTaskLassoCV>`\\ ([eps, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Multi-task L1/L2 Lasso with built-in cross-validation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.MultiTaskElasticNetCV "
+"<sklearn.linear_model.MultiTaskElasticNetCV>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Multi-task L1/L2 ElasticNet with built-in cross-validation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.OrthogonalMatchingPursuit "
+"<sklearn.linear_model.OrthogonalMatchingPursuit>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Orthogonal Matching Pursuit model (OMP)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.OrthogonalMatchingPursuitCV "
+"<sklearn.linear_model.OrthogonalMatchingPursuitCV>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Cross-validated Orthogonal Matching Pursuit model (OMP)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.PassiveAggressiveClassifier "
+"<sklearn.linear_model.PassiveAggressiveClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Passive Aggressive Classifier"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.PassiveAggressiveRegressor "
+"<sklearn.linear_model.PassiveAggressiveRegressor>`\\ ([C, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Passive Aggressive Regressor"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.Perceptron <sklearn.linear_model.Perceptron>`\\ "
+"([penalty, alpha, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Read more in the :ref:`User Guide <perceptron>`."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RandomizedLasso "
+"<sklearn.linear_model.RandomizedLasso>`\\ ([alpha, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Randomized Lasso."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RandomizedLogisticRegression "
+"<sklearn.linear_model.RandomizedLogisticRegression>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Randomized Logistic Regression"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RANSACRegressor "
+"<sklearn.linear_model.RANSACRegressor>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "RANSAC (RANdom SAmple Consensus) algorithm."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.Ridge <sklearn.linear_model.Ridge>`\\ ([alpha, "
+"fit_intercept, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear least squares with l2 regularization."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RidgeClassifier "
+"<sklearn.linear_model.RidgeClassifier>`\\ ([alpha, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Classifier using Ridge regression."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RidgeClassifierCV "
+"<sklearn.linear_model.RidgeClassifierCV>`\\ ([alphas, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Ridge classifier with built-in cross-validation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RidgeCV <sklearn.linear_model.RidgeCV>`\\ ([alphas, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Ridge regression with built-in cross-validation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.SGDClassifier <sklearn.linear_model.SGDClassifier>`\\ "
+"([loss, penalty, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear classifiers (SVM, logistic regression, a.o.) with SGD training."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.SGDRegressor <sklearn.linear_model.SGDRegressor>`\\ "
+"([loss, penalty, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear model fitted by minimizing a regularized empirical loss with SGD"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.TheilSenRegressor "
+"<sklearn.linear_model.TheilSenRegressor>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Theil-Sen Estimator: robust multivariate regression model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.lars_path <sklearn.linear_model.lars_path>`\\ (X, y[, "
+"Xy, Gram, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute Least Angle Regression or Lasso path using LARS algorithm [1]"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.lasso_path <sklearn.linear_model.lasso_path>`\\ (X, "
+"y[, eps, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute Lasso path with coordinate descent"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.lasso_stability_path "
+"<sklearn.linear_model.lasso_stability_path>`\\ (X, y[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Stabiliy path based on randomized Lasso estimates"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.orthogonal_mp <sklearn.linear_model.orthogonal_mp>`\\ "
+"(X, y[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Orthogonal Matching Pursuit (OMP)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.orthogonal_mp_gram "
+"<sklearn.linear_model.orthogonal_mp_gram>`\\ (Gram, Xy[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Gram Orthogonal Matching Pursuit (OMP)"
+msgstr ""
+
+#: ../../modules/classes.rst:709
+msgid ":mod:`sklearn.manifold`: Manifold Learning"
+msgstr ""
+
+#: of sklearn.manifold:1
+msgid "The :mod:`sklearn.manifold` module implements data embedding techniques."
+msgstr ""
+
+#: ../../modules/classes.rst:715
+msgid "**User guide:** See the :ref:`manifold` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`manifold.LocallyLinearEmbedding "
+"<sklearn.manifold.LocallyLinearEmbedding>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Locally Linear Embedding"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`manifold.Isomap <sklearn.manifold.Isomap>`\\ ([n_neighbors, "
+"n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Isomap Embedding"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`manifold.MDS <sklearn.manifold.MDS>`\\ ([n_components, metric, "
+"n_init, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Multidimensional scaling"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`manifold.SpectralEmbedding <sklearn.manifold.SpectralEmbedding>`\\ "
+"([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Spectral embedding for non-linear dimensionality reduction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`manifold.TSNE <sklearn.manifold.TSNE>`\\ ([n_components, "
+"perplexity, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "t-distributed Stochastic Neighbor Embedding."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`manifold.locally_linear_embedding "
+"<sklearn.manifold.locally_linear_embedding>`\\ (X, ...[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Perform a Locally Linear Embedding analysis on the data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`manifold.spectral_embedding "
+"<sklearn.manifold.spectral_embedding>`\\ (adjacency[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Project the sample on the first eigenvectors of the graph Laplacian."
+msgstr ""
+
+#: ../../modules/classes.rst:740
+msgid ":mod:`sklearn.metrics`: Metrics"
+msgstr ""
+
+#: ../../modules/classes.rst:742
+msgid ""
+"See the :ref:`model_evaluation` section and the :ref:`metrics` section of"
+" the user guide for further details."
+msgstr ""
+
+#: of sklearn.metrics:1
+msgid ""
+"The :mod:`sklearn.metrics` module includes score functions, performance "
+"metrics and pairwise metrics and distance computations."
+msgstr ""
+
+#: ../../modules/classes.rst:752
+msgid "Model Selection Interface"
+msgstr ""
+
+#: ../../modules/classes.rst:753
+msgid ""
+"See the :ref:`scoring_parameter` section of the user guide for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.make_scorer <sklearn.metrics.make_scorer>`\\ (score_func[, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Make a scorer from a performance metric or loss function."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`metrics.get_scorer <sklearn.metrics.get_scorer>`\\ (scoring)"
+msgstr ""
+
+#: ../../modules/classes.rst:764
+msgid "Classification metrics"
+msgstr ""
+
+#: ../../modules/classes.rst:766
+msgid ""
+"See the :ref:`classification_metrics` section of the user guide for "
+"further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.accuracy_score <sklearn.metrics.accuracy_score>`\\ (y_true,"
+" y_pred[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Accuracy classification score."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`metrics.auc <sklearn.metrics.auc>`\\ (x, y[, reorder])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute Area Under the Curve (AUC) using the trapezoidal rule"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.average_precision_score "
+"<sklearn.metrics.average_precision_score>`\\ (y_true, y_score)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute average precision (AP) from prediction scores"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.brier_score_loss <sklearn.metrics.brier_score_loss>`\\ "
+"(y_true, y_prob[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the Brier score."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.classification_report "
+"<sklearn.metrics.classification_report>`\\ (y_true, y_pred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Build a text report showing the main classification metrics"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.confusion_matrix <sklearn.metrics.confusion_matrix>`\\ "
+"(y_true, y_pred[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute confusion matrix to evaluate the accuracy of a classification"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.f1_score <sklearn.metrics.f1_score>`\\ (y_true, y_pred[, "
+"labels, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the F1 score, also known as balanced F-score or F-measure"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.fbeta_score <sklearn.metrics.fbeta_score>`\\ (y_true, "
+"y_pred, beta[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the F-beta score"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.hamming_loss <sklearn.metrics.hamming_loss>`\\ (y_true, "
+"y_pred[, classes])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the average Hamming loss."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.hinge_loss <sklearn.metrics.hinge_loss>`\\ (y_true, "
+"pred_decision[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Average hinge loss (non-regularized)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.jaccard_similarity_score "
+"<sklearn.metrics.jaccard_similarity_score>`\\ (y_true, y_pred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Jaccard similarity coefficient score"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.log_loss <sklearn.metrics.log_loss>`\\ (y_true, y_pred[, "
+"eps, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Log loss, aka logistic loss or cross-entropy loss."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.matthews_corrcoef <sklearn.metrics.matthews_corrcoef>`\\ "
+"(y_true, y_pred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the Matthews correlation coefficient (MCC) for binary classes"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.precision_recall_curve "
+"<sklearn.metrics.precision_recall_curve>`\\ (y_true, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute precision-recall pairs for different probability thresholds"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.precision_recall_fscore_support "
+"<sklearn.metrics.precision_recall_fscore_support>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute precision, recall, F-measure and support for each class"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.precision_score <sklearn.metrics.precision_score>`\\ "
+"(y_true, y_pred[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the precision"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.recall_score <sklearn.metrics.recall_score>`\\ (y_true, "
+"y_pred[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the recall"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.roc_auc_score <sklearn.metrics.roc_auc_score>`\\ (y_true, "
+"y_score[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute Area Under the Curve (AUC) from prediction scores"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.roc_curve <sklearn.metrics.roc_curve>`\\ (y_true, y_score[,"
+" ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute Receiver operating characteristic (ROC)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.zero_one_loss <sklearn.metrics.zero_one_loss>`\\ (y_true, "
+"y_pred[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Zero-one classification loss."
+msgstr ""
+
+#: ../../modules/classes.rst:796
+msgid "Regression metrics"
+msgstr ""
+
+#: ../../modules/classes.rst:798
+msgid ""
+"See the :ref:`regression_metrics` section of the user guide for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.explained_variance_score "
+"<sklearn.metrics.explained_variance_score>`\\ (y_true, y_pred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Explained variance regression score function"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.mean_absolute_error "
+"<sklearn.metrics.mean_absolute_error>`\\ (y_true, y_pred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mean absolute error regression loss"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.mean_squared_error <sklearn.metrics.mean_squared_error>`\\ "
+"(y_true, y_pred[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mean squared error regression loss"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.median_absolute_error "
+"<sklearn.metrics.median_absolute_error>`\\ (y_true, y_pred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Median absolute error regression loss"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.r2_score <sklearn.metrics.r2_score>`\\ (y_true, y_pred[, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "R^2 (coefficient of determination) regression score function."
+msgstr ""
+
+#: ../../modules/classes.rst:812
+msgid "Multilabel ranking metrics"
+msgstr ""
+
+#: ../../modules/classes.rst:813
+msgid ""
+"See the :ref:`multilabel_ranking_metrics` section of the user guide for "
+"further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.coverage_error <sklearn.metrics.coverage_error>`\\ (y_true,"
+" y_score[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Coverage error measure"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.label_ranking_average_precision_score "
+"<sklearn.metrics.label_ranking_average_precision_score>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute ranking-based average precision"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.label_ranking_loss <sklearn.metrics.label_ranking_loss>`\\ "
+"(y_true, y_score)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute Ranking loss measure"
+msgstr ""
+
+#: ../../modules/classes.rst:826
+msgid "Clustering metrics"
+msgstr ""
+
+#: ../../modules/classes.rst:828
+msgid ""
+"See the :ref:`clustering_evaluation` section of the user guide for "
+"further details."
+msgstr ""
+
+#: of sklearn.metrics.cluster:1
+msgid ""
+"The :mod:`sklearn.metrics.cluster` submodule contains evaluation metrics "
+"for cluster analysis results. There are two forms of evaluation:"
+msgstr ""
+
+#: of sklearn.metrics.cluster:4
+msgid "supervised, which uses a ground truth class values for each sample."
+msgstr ""
+
+#: of sklearn.metrics.cluster:5
+msgid ""
+"unsupervised, which does not and measures the 'quality' of the model "
+"itself."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.adjusted_mutual_info_score "
+"<sklearn.metrics.adjusted_mutual_info_score>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Adjusted Mutual Information between two clusterings"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.adjusted_rand_score "
+"<sklearn.metrics.adjusted_rand_score>`\\ (labels_true, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Rand index adjusted for chance"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.completeness_score <sklearn.metrics.completeness_score>`\\ "
+"(labels_true, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Completeness metric of a cluster labeling given a ground truth"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.homogeneity_completeness_v_measure "
+"<sklearn.metrics.homogeneity_completeness_v_measure>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the homogeneity and completeness and V-Measure scores at once"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.homogeneity_score <sklearn.metrics.homogeneity_score>`\\ "
+"(labels_true, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Homogeneity metric of a cluster labeling given a ground truth"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.mutual_info_score <sklearn.metrics.mutual_info_score>`\\ "
+"(labels_true, ...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Mutual Information between two clusterings"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.normalized_mutual_info_score "
+"<sklearn.metrics.normalized_mutual_info_score>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Normalized Mutual Information between two clusterings"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.silhouette_score <sklearn.metrics.silhouette_score>`\\ (X, "
+"labels[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the mean Silhouette Coefficient of all samples."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.silhouette_samples <sklearn.metrics.silhouette_samples>`\\ "
+"(X, labels[, metric])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the Silhouette Coefficient for each sample."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.v_measure_score <sklearn.metrics.v_measure_score>`\\ "
+"(labels_true, labels_pred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "V-measure cluster labeling given a ground truth."
+msgstr ""
+
+#: ../../modules/classes.rst:853
+msgid "Biclustering metrics"
+msgstr ""
+
+#: ../../modules/classes.rst:855
+msgid ""
+"See the :ref:`biclustering_evaluation` section of the user guide for "
+"further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.consensus_score <sklearn.metrics.consensus_score>`\\ (a, "
+"b[, similarity])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "The similarity of two sets of biclusters."
+msgstr ""
+
+#: ../../modules/classes.rst:868
+msgid "Pairwise metrics"
+msgstr ""
+
+#: ../../modules/classes.rst:870
+msgid "See the :ref:`metrics` section of the user guide for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.additive_chi2_kernel "
+"<sklearn.metrics.pairwise.additive_chi2_kernel>`\\ (X[, Y])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Computes the additive chi-squared kernel between observations in X and Y"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.chi2_kernel "
+"<sklearn.metrics.pairwise.chi2_kernel>`\\ (X[, Y, gamma])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Computes the exponential chi-squared kernel X and Y."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.distance_metrics "
+"<sklearn.metrics.pairwise.distance_metrics>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Valid metrics for pairwise_distances."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.euclidean_distances "
+"<sklearn.metrics.pairwise.euclidean_distances>`\\ (X[, Y, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Considering the rows of X (and Y=X) as vectors, compute the distance "
+"matrix between each pair of vectors."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.kernel_metrics "
+"<sklearn.metrics.pairwise.kernel_metrics>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Valid metrics for pairwise_kernels"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.linear_kernel "
+"<sklearn.metrics.pairwise.linear_kernel>`\\ (X[, Y])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the linear kernel between X and Y."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.manhattan_distances "
+"<sklearn.metrics.pairwise.manhattan_distances>`\\ (X[, Y, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the L1 distances between the vectors in X and Y."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.pairwise_distances "
+"<sklearn.metrics.pairwise.pairwise_distances>`\\ (X[, Y, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the distance matrix from a vector array X and optional Y."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.pairwise_kernels "
+"<sklearn.metrics.pairwise.pairwise_kernels>`\\ (X[, Y, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the kernel between arrays X and optional array Y."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.polynomial_kernel "
+"<sklearn.metrics.pairwise.polynomial_kernel>`\\ (X[, Y, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the polynomial kernel between X and Y::"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.rbf_kernel "
+"<sklearn.metrics.pairwise.rbf_kernel>`\\ (X[, Y, gamma])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the rbf (gaussian) kernel between X and Y::"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise.laplacian_kernel "
+"<sklearn.metrics.pairwise.laplacian_kernel>`\\ (X[, Y, gamma])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute the laplacian kernel between X and Y."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise_distances <sklearn.metrics.pairwise_distances>`\\ "
+"(X[, Y, metric, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise_distances_argmin "
+"<sklearn.metrics.pairwise_distances_argmin>`\\ (X, Y[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute minimum distances between one point and a set of points."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`metrics.pairwise_distances_argmin_min "
+"<sklearn.metrics.pairwise_distances_argmin_min>`\\ (X, Y)"
+msgstr ""
+
+#: ../../modules/classes.rst:902
+msgid ":mod:`sklearn.mixture`: Gaussian Mixture Models"
+msgstr ""
+
+#: of sklearn.mixture:1
+msgid "The :mod:`sklearn.mixture` module implements mixture modeling algorithms."
+msgstr ""
+
+#: ../../modules/classes.rst:908
+msgid "**User guide:** See the :ref:`mixture` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`mixture.GMM <sklearn.mixture.GMM>`\\ ([n_components, "
+"covariance_type, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Gaussian Mixture Model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`mixture.DPGMM <sklearn.mixture.DPGMM>`\\ ([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Variational Inference for the Infinite Gaussian Mixture Model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`mixture.VBGMM <sklearn.mixture.VBGMM>`\\ ([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Variational Inference for the Gaussian Mixture Model"
+msgstr ""
+
+#: ../../modules/classes.rst:924
+msgid ":mod:`sklearn.multiclass`: Multiclass and multilabel classification"
+msgstr ""
+
+#: of sklearn.multiclass:2
+msgid "Multiclass and multilabel classification strategies"
+msgstr ""
+
+#: of sklearn.multiclass:7
+msgid "This module implements multiclass learning algorithms:"
+msgstr ""
+
+#: of sklearn.multiclass:5
+msgid "one-vs-the-rest / one-vs-all"
+msgstr ""
+
+#: of sklearn.multiclass:6
+msgid "one-vs-one"
+msgstr ""
+
+#: of sklearn.multiclass:7
+msgid "error correcting output codes"
+msgstr ""
+
+#: of sklearn.multiclass:9
+msgid ""
+"The estimators provided in this module are meta-estimators: they require "
+"a base estimator to be provided in their constructor. For example, it is "
+"possible to use these estimators to turn a binary classifier or a "
+"regressor into a multiclass classifier. It is also possible to use these "
+"estimators with multiclass estimators in the hope that their accuracy or "
+"runtime performance improves."
+msgstr ""
+
+#: of sklearn.multiclass:16
+msgid ""
+"All classifiers in scikit-learn implement multiclass classification; you "
+"only need to use this module if you want to experiment with custom "
+"multiclass strategies."
+msgstr ""
+
+#: of sklearn.multiclass:20
+msgid ""
+"The one-vs-the-rest meta-classifier also implements a `predict_proba` "
+"method, so long as such a method is implemented by the base classifier. "
+"This method returns probabilities of class membership in both the single "
+"label and multilabel case.  Note that in the multilabel case, "
+"probabilities are the marginal probability that a given sample falls in "
+"the given class. As such, in the multilabel case the sum of these "
+"probabilities over all possible labels for a given sample *will not* sum "
+"to unity, as they do in the single label case."
+msgstr ""
+
+#: ../../modules/classes.rst:930
+msgid "**User guide:** See the :ref:`multiclass` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`multiclass.OneVsRestClassifier "
+"<sklearn.multiclass.OneVsRestClassifier>`\\ (estimator[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "One-vs-the-rest (OvR) multiclass/multilabel strategy"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`multiclass.OneVsOneClassifier "
+"<sklearn.multiclass.OneVsOneClassifier>`\\ (estimator[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "One-vs-one multiclass strategy"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`multiclass.OutputCodeClassifier "
+"<sklearn.multiclass.OutputCodeClassifier>`\\ (estimator[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "(Error-Correcting) Output-Code multiclass strategy"
+msgstr ""
+
+#: ../../modules/classes.rst:945
+msgid ":mod:`sklearn.naive_bayes`: Naive Bayes"
+msgstr ""
+
+#: of sklearn.naive_bayes:1
+msgid ""
+"The :mod:`sklearn.naive_bayes` module implements Naive Bayes algorithms. "
+"These are supervised learning methods based on applying Bayes' theorem "
+"with strong (naive) feature independence assumptions."
+msgstr ""
+
+#: ../../modules/classes.rst:951
+msgid "**User guide:** See the :ref:`naive_bayes` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`naive_bayes.GaussianNB <sklearn.naive_bayes.GaussianNB>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Gaussian Naive Bayes (GaussianNB)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`naive_bayes.MultinomialNB <sklearn.naive_bayes.MultinomialNB>`\\ "
+"([alpha, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Naive Bayes classifier for multinomial models"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`naive_bayes.BernoulliNB <sklearn.naive_bayes.BernoulliNB>`\\ "
+"([alpha, binarize, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Naive Bayes classifier for multivariate Bernoulli models."
+msgstr ""
+
+#: ../../modules/classes.rst:967
+msgid ":mod:`sklearn.neighbors`: Nearest Neighbors"
+msgstr ""
+
+#: of sklearn.neighbors:1
+msgid ""
+"The :mod:`sklearn.neighbors` module implements the k-nearest neighbors "
+"algorithm."
+msgstr ""
+
+#: ../../modules/classes.rst:973
+msgid "**User guide:** See the :ref:`neighbors` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.NearestNeighbors <sklearn.neighbors.NearestNeighbors>`\\ "
+"([n_neighbors, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Unsupervised learner for implementing neighbor searches."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.KNeighborsClassifier "
+"<sklearn.neighbors.KNeighborsClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Classifier implementing the k-nearest neighbors vote."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.RadiusNeighborsClassifier "
+"<sklearn.neighbors.RadiusNeighborsClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Classifier implementing a vote among neighbors within a given radius"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.KNeighborsRegressor "
+"<sklearn.neighbors.KNeighborsRegressor>`\\ ([n_neighbors, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Regression based on k-nearest neighbors."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.RadiusNeighborsRegressor "
+"<sklearn.neighbors.RadiusNeighborsRegressor>`\\ ([radius, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Regression based on neighbors within a fixed radius."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.NearestCentroid <sklearn.neighbors.NearestCentroid>`\\ "
+"([metric, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Nearest centroid classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`neighbors.BallTree <sklearn.neighbors.BallTree>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "BallTree for fast generalized N-point problems"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`neighbors.KDTree <sklearn.neighbors.KDTree>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "KDTree for fast generalized N-point problems"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.LSHForest <sklearn.neighbors.LSHForest>`\\ "
+"([n_estimators, radius, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Performs approximate nearest neighbor search using LSH forest."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`neighbors.DistanceMetric <sklearn.neighbors.DistanceMetric>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "DistanceMetric class"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.KernelDensity <sklearn.neighbors.KernelDensity>`\\ "
+"([bandwidth, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Kernel Density Estimation"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.kneighbors_graph <sklearn.neighbors.kneighbors_graph>`\\ "
+"(X, n_neighbors[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Computes the (weighted) graph of k-Neighbors for points in X"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neighbors.radius_neighbors_graph "
+"<sklearn.neighbors.radius_neighbors_graph>`\\ (X, radius)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Computes the (weighted) graph of Neighbors for points in X"
+msgstr ""
+
+#: ../../modules/classes.rst:1003
+msgid ":mod:`sklearn.neural_network`: Neural network models"
+msgstr ""
+
+#: of sklearn.neural_network:1
+msgid ""
+"The :mod:`sklearn.neural_network` module includes models based on neural "
+"networks."
+msgstr ""
+
+#: ../../modules/classes.rst:1009
+msgid "**User guide:** See the :ref:`neural_network` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`neural_network.BernoulliRBM "
+"<sklearn.neural_network.BernoulliRBM>`\\ ([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Bernoulli Restricted Boltzmann Machine (RBM)."
+msgstr ""
+
+#: ../../modules/classes.rst:1023
+msgid ":mod:`sklearn.calibration`: Probability Calibration"
+msgstr ""
+
+#: of sklearn.calibration:1
+msgid "Calibration of predicted probabilities."
+msgstr ""
+
+#: ../../modules/classes.rst:1029
+msgid "**User guide:** See the :ref:`calibration` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`calibration.CalibratedClassifierCV "
+"<sklearn.calibration.CalibratedClassifierCV>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Probability calibration with isotonic regression or sigmoid."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`calibration.calibration_curve "
+"<sklearn.calibration.calibration_curve>`\\ (y_true, y_prob)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Compute true and predicted probabilities for a calibration curve."
+msgstr ""
+
+#: ../../modules/classes.rst:1050
+msgid ":mod:`sklearn.cross_decomposition`: Cross decomposition"
+msgstr ""
+
+#: ../../modules/classes.rst:1056
+msgid ""
+"**User guide:** See the :ref:`cross_decomposition` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_decomposition.PLSRegression "
+"<sklearn.cross_decomposition.PLSRegression>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "PLS regression"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_decomposition.PLSCanonical "
+"<sklearn.cross_decomposition.PLSCanonical>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"PLSCanonical implements the 2 blocks canonical PLS of the original Wold "
+"algorithm [Tenenhaus 1998] p.204, referred as PLS-C2A in [Wegelin 2000]."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_decomposition.CCA <sklearn.cross_decomposition.CCA>`\\ "
+"([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "CCA Canonical Correlation Analysis."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`cross_decomposition.PLSSVD <sklearn.cross_decomposition.PLSSVD>`\\ "
+"([n_components, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Partial Least Square SVD"
+msgstr ""
+
+#: ../../modules/classes.rst:1073
+msgid ":mod:`sklearn.pipeline`: Pipeline"
+msgstr ""
+
+#: of sklearn.pipeline:1
+msgid ""
+"The :mod:`sklearn.pipeline` module implements utilities to build a "
+"composite estimator, as a chain of transforms and estimators."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`pipeline.Pipeline <sklearn.pipeline.Pipeline>`\\ (steps)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Pipeline of transforms with a final estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`pipeline.FeatureUnion <sklearn.pipeline.FeatureUnion>`\\ "
+"(transformer_list[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Concatenates results of multiple transformer objects."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`pipeline.make_pipeline <sklearn.pipeline.make_pipeline>`\\ "
+"(\\*steps)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Construct a Pipeline from the given estimators."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`pipeline.make_union <sklearn.pipeline.make_union>`\\ "
+"(\\*transformers)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Construct a FeatureUnion from the given transformers."
+msgstr ""
+
+#: ../../modules/classes.rst:1099
+msgid ":mod:`sklearn.preprocessing`: Preprocessing and Normalization"
+msgstr ""
+
+#: of sklearn.preprocessing:1
+msgid ""
+"The :mod:`sklearn.preprocessing` module includes scaling, centering, "
+"normalization, binarization and imputation methods."
+msgstr ""
+
+#: ../../modules/classes.rst:1105
+msgid "**User guide:** See the :ref:`preprocessing` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.Binarizer <sklearn.preprocessing.Binarizer>`\\ "
+"([threshold, copy])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Binarize data (set feature values to 0 or 1) according to a threshold"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.FunctionTransformer "
+"<sklearn.preprocessing.FunctionTransformer>`\\ ([func, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Constructs a transformer from an arbitrary callable."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.Imputer <sklearn.preprocessing.Imputer>`\\ "
+"([missing_values, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Imputation transformer for completing missing values."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.KernelCenterer "
+"<sklearn.preprocessing.KernelCenterer>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Center a kernel matrix"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.LabelBinarizer "
+"<sklearn.preprocessing.LabelBinarizer>`\\ ([neg_label, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Binarize labels in a one-vs-all fashion"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`preprocessing.LabelEncoder <sklearn.preprocessing.LabelEncoder>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Encode labels with value between 0 and n_classes-1."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.MultiLabelBinarizer "
+"<sklearn.preprocessing.MultiLabelBinarizer>`\\ ([classes, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Transform between iterable of iterables and a multilabel format"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.MaxAbsScaler <sklearn.preprocessing.MaxAbsScaler>`\\ "
+"([copy])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Scale each feature by its maximum absolute value."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.MinMaxScaler <sklearn.preprocessing.MinMaxScaler>`\\ "
+"([feature_range, copy])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Transforms features by scaling each feature to a given range."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.Normalizer <sklearn.preprocessing.Normalizer>`\\ "
+"([norm, copy])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Normalize samples individually to unit norm."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.OneHotEncoder "
+"<sklearn.preprocessing.OneHotEncoder>`\\ ([n_values, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Encode categorical integer features using a one-hot aka one-of-K scheme."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.PolynomialFeatures "
+"<sklearn.preprocessing.PolynomialFeatures>`\\ ([degree, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Generate polynomial and interaction features."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.RobustScaler <sklearn.preprocessing.RobustScaler>`\\ "
+"([with_centering, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Scale features using statistics that are robust to outliers."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.StandardScaler "
+"<sklearn.preprocessing.StandardScaler>`\\ ([copy, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Standardize features by removing the mean and scaling to unit variance"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.add_dummy_feature "
+"<sklearn.preprocessing.add_dummy_feature>`\\ (X[, value])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Augment dataset with an additional dummy feature."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.binarize <sklearn.preprocessing.binarize>`\\ (X[, "
+"threshold, copy])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Boolean thresholding of array-like or scipy.sparse matrix"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.label_binarize "
+"<sklearn.preprocessing.label_binarize>`\\ (y, classes[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.maxabs_scale <sklearn.preprocessing.maxabs_scale>`\\ "
+"(X[, axis, copy])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Scale each feature to the [-1, 1] range without breaking the sparsity."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.minmax_scale <sklearn.preprocessing.minmax_scale>`\\ "
+"(X[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.normalize <sklearn.preprocessing.normalize>`\\ (X[, "
+"norm, axis, copy])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Scale input vectors individually to unit norm (vector length)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.robust_scale <sklearn.preprocessing.robust_scale>`\\ "
+"(X[, axis, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Standardize a dataset along any axis"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`preprocessing.scale <sklearn.preprocessing.scale>`\\ (X[, axis, "
+"with_mean, ...])"
+msgstr ""
+
+#: ../../modules/classes.rst:1145
+msgid ":mod:`sklearn.random_projection`: Random projection"
+msgstr ""
+
+#: of sklearn.random_projection:1
+msgid "Random Projection transformers"
+msgstr ""
+
+#: of sklearn.random_projection:3
+msgid ""
+"Random Projections are a simple and computationally efficient way to "
+"reduce the dimensionality of the data by trading a controlled amount of "
+"accuracy (as additional variance) for faster processing times and smaller"
+" model sizes."
+msgstr ""
+
+#: of sklearn.random_projection:8
+msgid ""
+"The dimensions and distribution of Random Projections matrices are "
+"controlled so as to preserve the pairwise distances between any two "
+"samples of the dataset."
+msgstr ""
+
+#: of sklearn.random_projection:12
+#, python-format
+msgid ""
+"The main theoretical result behind the efficiency of random projection is"
+" the `Johnson-Lindenstrauss lemma (quoting Wikipedia) "
+"<http://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma>`_:"
+msgstr ""
+
+#: of sklearn.random_projection:16
+msgid ""
+"In mathematics, the Johnson-Lindenstrauss lemma is a result concerning "
+"low-distortion embeddings of points from high-dimensional into low-"
+"dimensional Euclidean space. The lemma states that a small set of points "
+"in a high-dimensional space can be embedded into a space of much lower "
+"dimension in such a way that distances between the points are nearly "
+"preserved. The map used for the embedding is at least Lipschitz, and can "
+"even be taken to be an orthogonal projection."
+msgstr ""
+
+#: ../../modules/classes.rst:1151
+msgid ""
+"**User guide:** See the :ref:`random_projection` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`random_projection.GaussianRandomProjection "
+"<sklearn.random_projection.GaussianRandomProjection>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Reduce dimensionality through Gaussian random projection"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`random_projection.SparseRandomProjection "
+"<sklearn.random_projection.SparseRandomProjection>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Reduce dimensionality through sparse random projection"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`random_projection.johnson_lindenstrauss_min_dim "
+"<sklearn.random_projection.johnson_lindenstrauss_min_dim>`\\ (...)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Find a 'safe' number of components to randomly project to"
+msgstr ""
+
+#: ../../modules/classes.rst:1172
+msgid ":mod:`sklearn.semi_supervised` Semi-Supervised Learning"
+msgstr ""
+
+#: of sklearn.semi_supervised:1
+msgid ""
+"The :mod:`sklearn.semi_supervised` module implements semi-supervised "
+"learning algorithms. These algorithms utilized small amounts of labeled "
+"data and large amounts of unlabeled data for classification tasks. This "
+"module includes Label Propagation."
+msgstr ""
+
+#: ../../modules/classes.rst:1178
+msgid ""
+"**User guide:** See the :ref:`semi_supervised` section for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`semi_supervised.LabelPropagation "
+"<sklearn.semi_supervised.LabelPropagation>`\\ ([kernel, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Label Propagation classifier"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`semi_supervised.LabelSpreading "
+"<sklearn.semi_supervised.LabelSpreading>`\\ ([kernel, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "LabelSpreading model for semi-supervised learning"
+msgstr ""
+
+#: ../../modules/classes.rst:1193
+msgid ":mod:`sklearn.svm`: Support Vector Machines"
+msgstr ""
+
+#: of sklearn.svm:1
+msgid "The :mod:`sklearn.svm` module includes Support Vector Machine algorithms."
+msgstr ""
+
+#: ../../modules/classes.rst:1199
+msgid "**User guide:** See the :ref:`svm` section for further details."
+msgstr ""
+
+#: ../../modules/classes.rst:1202
+msgid "Estimators"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.SVC <sklearn.svm.SVC>`\\ ([C, kernel, degree, gamma, coef0, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "C-Support Vector Classification."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.LinearSVC <sklearn.svm.LinearSVC>`\\ ([penalty, loss, dual, "
+"tol, C, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear Support Vector Classification."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`svm.NuSVC <sklearn.svm.NuSVC>`\\ ([nu, kernel, degree, gamma, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Nu-Support Vector Classification."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.SVR <sklearn.svm.SVR>`\\ ([kernel, degree, gamma, coef0, tol, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Epsilon-Support Vector Regression."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.LinearSVR <sklearn.svm.LinearSVR>`\\ ([epsilon, tol, C, loss, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Linear Support Vector Regression."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.NuSVR <sklearn.svm.NuSVR>`\\ ([nu, C, kernel, degree, gamma, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Nu Support Vector Regression."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.OneClassSVM <sklearn.svm.OneClassSVM>`\\ ([kernel, degree, "
+"gamma, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Unsupervised Outlier Detection."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.l1_min_c <sklearn.svm.l1_min_c>`\\ (X, y[, loss, fit_intercept,"
+" ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Return the lowest bound for C such that for C in (l1_min_C, infinity) the"
+" model is guaranteed not to be empty."
+msgstr ""
+
+#: ../../modules/classes.rst:1225
+msgid "Low-level methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`svm.libsvm.fit <sklearn.svm.libsvm.fit>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Train the model using libsvm (low-level method)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`svm.libsvm.decision_function "
+"<sklearn.svm.libsvm.decision_function>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Predict margin (libsvm name for this is predict_values)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`svm.libsvm.predict <sklearn.svm.libsvm.predict>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Predict target values of X given a model (low-level method)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`svm.libsvm.predict_proba <sklearn.svm.libsvm.predict_proba>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Predict probabilities"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`svm.libsvm.cross_validation <sklearn.svm.libsvm.cross_validation>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Binding of the cross-validation routine (low-level routine)"
+msgstr ""
+
+#: ../../modules/classes.rst:1241
+msgid ":mod:`sklearn.tree`: Decision Trees"
+msgstr ""
+
+#: of sklearn.tree:1
+msgid ""
+"The :mod:`sklearn.tree` module includes decision tree-based models for "
+"classification and regression."
+msgstr ""
+
+#: ../../modules/classes.rst:1247
+msgid "**User guide:** See the :ref:`tree` section for further details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`tree.DecisionTreeClassifier "
+"<sklearn.tree.DecisionTreeClassifier>`\\ ([criterion, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A decision tree classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`tree.DecisionTreeRegressor <sklearn.tree.DecisionTreeRegressor>`\\ "
+"([criterion, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A decision tree regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`tree.ExtraTreeClassifier <sklearn.tree.ExtraTreeClassifier>`\\ "
+"([criterion, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An extremely randomized tree classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`tree.ExtraTreeRegressor <sklearn.tree.ExtraTreeRegressor>`\\ "
+"([criterion, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An extremely randomized tree regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`tree.export_graphviz <sklearn.tree.export_graphviz>`\\ "
+"(decision_tree[, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Export a decision tree in DOT format."
+msgstr ""
+
+#: ../../modules/classes.rst:1270
+msgid ":mod:`sklearn.utils`: Utilities"
+msgstr ""
+
+#: of sklearn.utils:1
+msgid "The :mod:`sklearn.utils` module includes various utilities."
+msgstr ""
+
+#: ../../modules/classes.rst:1276
+msgid ""
+"**Developer guide:** See the :ref:`developers-utils` page for further "
+"details."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`utils.check_random_state <sklearn.utils.check_random_state>`\\ "
+"(seed)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Turn seed into a np.random.RandomState instance"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`utils.estimator_checks.check_estimator "
+"<sklearn.utils.estimator_checks.check_estimator>`\\ (Estimator)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Check if estimator adheres to sklearn conventions."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`utils.resample <sklearn.utils.resample>`\\ (\\*arrays, "
+"\\*\\*options)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Resample arrays or sparse matrices in a consistent way"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`utils.shuffle <sklearn.utils.shuffle>`\\ (\\*arrays, \\*\\*options)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Shuffle arrays or sparse matrices in a consistent way"
+msgstr ""
+

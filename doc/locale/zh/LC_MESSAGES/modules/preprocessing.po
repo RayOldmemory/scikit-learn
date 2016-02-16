@@ -1,0 +1,559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/preprocessing.rst:5
+msgid "Preprocessing data"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:9
+msgid ""
+"The ``sklearn.preprocessing`` package provides several common utility "
+"functions and transformer classes to change raw feature vectors into a "
+"representation that is more suitable for the downstream estimators."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:16
+msgid "Standardization, or mean removal and variance scaling"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:18
+msgid ""
+"**Standardization** of datasets is a **common requirement for many "
+"machine learning estimators** implemented in the scikit; they might "
+"behave badly if the individual features do not more or less look like "
+"standard normally distributed data: Gaussian with **zero mean and unit "
+"variance**."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:23
+msgid ""
+"In practice we often ignore the shape of the distribution and just "
+"transform the data to center it by removing the mean value of each "
+"feature, then scale it by dividing non-constant features by their "
+"standard deviation."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:28
+msgid ""
+"For instance, many elements used in the objective function of a learning "
+"algorithm (such as the RBF kernel of Support Vector Machines or the l1 "
+"and l2 regularizers of linear models) assume that all features are "
+"centered around zero and have variance in the same order. If a feature "
+"has a variance that is orders of magnitude larger that others, it might "
+"dominate the objective function and make the estimator unable to learn "
+"from other features correctly as expected."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:37
+msgid ""
+"The function :func:`scale` provides a quick and easy way to perform this "
+"operation on a single array-like dataset::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:57
+msgid "Scaled data has zero mean and unit variance::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:67
+msgid ""
+"The ``preprocessing`` module further provides a utility class "
+":class:`StandardScaler` that implements the ``Transformer`` API to "
+"compute the mean and standard deviation on a training set so as to be "
+"able to later reapply the same transformation on the testing set. This "
+"class is hence suitable for use in the early steps of a "
+":class:`sklearn.pipeline.Pipeline`::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:90
+msgid ""
+"The scaler instance can then be used on new data to transform it the same"
+" way it did on the training set::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:96
+msgid ""
+"It is possible to disable either centering or scaling by either passing "
+"``with_mean=False`` or ``with_std=False`` to the constructor of "
+":class:`StandardScaler`."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:102
+msgid "Scaling features to a range"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:104
+msgid ""
+"An alternative standardization is scaling features to lie between a given"
+" minimum and maximum value, often between zero and one, or so that the "
+"maximum absolute value of each feature is scaled to unit size. This can "
+"be achieved using :class:`MinMaxScaler` or :class:`MaxAbsScaler`, "
+"respectively."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:110
+msgid ""
+"The motivation to use this scaling include robustness to very small "
+"standard deviations of features and preserving zero entries in sparse "
+"data."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:113
+msgid "Here is an example to scale a toy data matrix to the ``[0, 1]`` range::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:126
+msgid ""
+"The same instance of the transformer can then be applied to some new test"
+" data unseen during the fit call: the same scaling and shifting "
+"operations will be applied to be consistent with the transformation "
+"performed on the train data::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:135
+msgid ""
+"It is possible to introspect the scaler attributes to find about the "
+"exact nature of the transformation learned on the training data::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:144
+msgid ""
+"If :class:`MinMaxScaler` is given an explicit ``feature_range=(min, "
+"max)`` the full formula is::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:151
+msgid ""
+":class:`MaxAbsScaler` works in a very similar fashion, but scales in a "
+"way that the training data lies within the range ``[-1, 1]`` by dividing "
+"through the largest maximum value in each feature. It is meant for data "
+"that is already centered at zero or sparse data."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:156
+msgid ""
+"Here is how to use the toy data from the previous example with this "
+"scaler::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:176
+msgid ""
+"As with :func:`scale`, the module further provides convenience functions "
+":func:`minmax_scale` and :func:`maxabs_scale` if you don't want to create"
+" an object."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:182
+msgid "Scaling sparse data"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:183
+msgid ""
+"Centering sparse data would destroy the sparseness structure in the data,"
+" and thus rarely is a sensible thing to do. However, it can make sense to"
+" scale sparse inputs, especially if features are on different scales."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:187
+msgid ""
+":class:`MaxAbsScaler`  and :func:`maxabs_scale` were specifically "
+"designed for scaling sparse data, and are the recommended way to go about"
+" this. However, :func:`scale` and :class:`StandardScaler` can accept "
+"``scipy.sparse`` matrices  as input, as long as ``with_centering=False`` "
+"is explicitly passed to the constructor. Otherwise a ``ValueError`` will "
+"be raised as silently centering would break the sparsity and would often "
+"crash the execution by allocating excessive amounts of memory "
+"unintentionally. :class:`RobustScaler` cannot be fited to sparse inputs, "
+"but you can use the ``transform`` method on sparse inputs."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:197
+msgid ""
+"Note that the scalers accept both Compressed Sparse Rows and Compressed "
+"Sparse Columns format (see ``scipy.sparse.csr_matrix`` and "
+"``scipy.sparse.csc_matrix``). Any other sparse input will be **converted "
+"to the Compressed Sparse Rows representation**.  To avoid unnecessary "
+"memory copies, it is recommended to choose the CSR or CSC representation "
+"upstream."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:203
+msgid ""
+"Finally, if the centered data is expected to be small enough, explicitly "
+"converting the input to an array using the ``toarray`` method of sparse "
+"matrices is another option."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:209
+msgid "Scaling data with outliers"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:211
+msgid ""
+"If your data contains many outliers, scaling using the mean and variance "
+"of the data is likely to not work very well. In these cases, you can use "
+":func:`robust_scale` and :class:`RobustScaler` as drop-in replacements "
+"instead. They use more robust estimates for the center and range of your "
+"data."
+msgstr ""
+
+#: ../../modules/preprocessing.rst
+msgid "References:"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:220
+msgid ""
+"Further discussion on the importance of centering and scaling data is "
+"available on this FAQ: `Should I normalize/standardize/rescale the data? "
+"<http://www.faqs.org/faqs/ai-faq/neural-nets/part2/section-16.html>`_"
+msgstr ""
+
+#: ../../modules/preprocessing.rst
+msgid "Scaling vs Whitening"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:226
+msgid ""
+"It is sometimes not enough to center and scale the features "
+"independently, since a downstream model can further make some assumption "
+"on the linear independence of the features."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:230
+msgid ""
+"To address this issue you can use :class:`sklearn.decomposition.PCA` or "
+":class:`sklearn.decomposition.RandomizedPCA` with ``whiten=True`` to "
+"further remove the linear correlation across features."
+msgstr ""
+
+#: ../../modules/preprocessing.rst
+msgid "Scaling target variables in regression"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:236
+msgid ""
+":func:`scale` and :class:`StandardScaler` work out-of-the-box with 1d "
+"arrays. This is very useful for scaling the target / response variables "
+"used for regression."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:243
+msgid "Centering kernel matrices"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:245
+msgid ""
+"If you have a kernel matrix of a kernel :math:`K` that computes a dot "
+"product in a feature space defined by function :math:`phi`, a "
+":class:`KernelCenterer` can transform the kernel matrix so that it "
+"contains inner products in the feature space defined by :math:`phi` "
+"followed by removal of the mean in that space."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:254
+msgid "Normalization"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:256
+msgid ""
+"**Normalization** is the process of **scaling individual samples to have "
+"unit norm**. This process can be useful if you plan to use a quadratic "
+"form such as the dot-product or any other kernel to quantify the "
+"similarity of any pair of samples."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:261
+msgid ""
+"This assumption is the base of the `Vector Space Model "
+"<http://en.wikipedia.org/wiki/Vector_Space_Model>`_ often used in text "
+"classification and clustering contexts."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:265
+msgid ""
+"The function :func:`normalize` provides a quick and easy way to perform "
+"this operation on a single array-like dataset, either using the ``l1`` or"
+" ``l2`` norms::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:279
+msgid ""
+"The ``preprocessing`` module further provides a utility class "
+":class:`Normalizer` that implements the same operation using the "
+"``Transformer`` API (even though the ``fit`` method is useless in this "
+"case: the class is stateless as this operation treats samples "
+"independently)."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:284
+msgid ""
+"This class is hence suitable for use in the early steps of a "
+":class:`sklearn.pipeline.Pipeline`::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:292
+msgid ""
+"The normalizer instance can then be used on sample vectors as any "
+"transformer::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst
+msgid "Sparse input"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:305
+msgid ""
+":func:`normalize` and :class:`Normalizer` accept **both dense array-like "
+"and sparse matrices from scipy.sparse as input**."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:308
+msgid ""
+"For sparse input the data is **converted to the Compressed Sparse Rows "
+"representation** (see ``scipy.sparse.csr_matrix``) before being fed to "
+"efficient Cython routines. To avoid unnecessary memory copies, it is "
+"recommended to choose the CSR representation upstream."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:316
+msgid "Binarization"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:319
+msgid "Feature binarization"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:321
+msgid ""
+"**Feature binarization** is the process of **thresholding numerical "
+"features to get boolean values**. This can be useful for downstream "
+"probabilistic estimators that make assumption that the input data is "
+"distributed according to a multi-variate `Bernoulli distribution "
+"<http://en.wikipedia.org/wiki/Bernoulli_distribution>`_. For instance, "
+"this is the case for the :class:`sklearn.neural_network.BernoulliRBM`."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:328
+msgid ""
+"It is also common among the text processing community to use binary "
+"feature values (probably to simplify the probabilistic reasoning) even if"
+" normalized counts (a.k.a. term frequencies) or TF-IDF valued features "
+"often perform slightly better in practice."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:333
+msgid ""
+"As for the :class:`Normalizer`, the utility class :class:`Binarizer` is "
+"meant to be used in the early stages of "
+":class:`sklearn.pipeline.Pipeline`. The ``fit`` method does nothing as "
+"each sample is treated independently of others::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:351
+msgid "It is possible to adjust the threshold of the binarizer::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:359
+msgid ""
+"As for the :class:`StandardScaler` and :class:`Normalizer` classes, the "
+"preprocessing module provides a companion function :func:`binarize` to be"
+" used when the transformer API is not necessary."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:365
+msgid ""
+":func:`binarize` and :class:`Binarizer` accept **both dense array-like "
+"and sparse matrices from scipy.sparse as input**."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:368
+msgid ""
+"For sparse input the data is **converted to the Compressed Sparse Rows "
+"representation** (see ``scipy.sparse.csr_matrix``). To avoid unnecessary "
+"memory copies, it is recommended to choose the CSR representation "
+"upstream."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:377
+msgid "Encoding categorical features"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:378
+msgid ""
+"Often features are not given as continuous values but categorical. For "
+"example a person could have features ``[\"male\", \"female\"]``, "
+"``[\"from Europe\", \"from US\", \"from Asia\"]``, ``[\"uses Firefox\", "
+"\"uses Chrome\", \"uses Safari\", \"uses Internet Explorer\"]``. Such "
+"features can be efficiently coded as integers, for instance ``[\"male\", "
+"\"from US\", \"uses Internet Explorer\"]`` could be expressed as ``[0, 1,"
+" 3]`` while ``[\"female\", \"from Asia\", \"uses Chrome\"]`` would be "
+"``[1, 2, 1]``."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:387
+msgid ""
+"Such integer representation can not be used directly with scikit-learn "
+"estimators, as these expect continuous input, and would interpret the "
+"categories as being ordered, which is often not desired (i.e. the set of "
+"browsers was ordered arbitrarily)."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:391
+msgid ""
+"One possibility to convert categorical features to features that can be "
+"used with scikit-learn estimators is to use a one-of-K or one-hot "
+"encoding, which is implemented in :class:`OneHotEncoder`.  This estimator"
+" transforms each categorical feature with ``m`` possible values into "
+"``m`` binary features, with only one active."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:397
+msgid "Continuing the example above::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:406
+msgid ""
+"By default, how many values each feature can take is inferred "
+"automatically from the dataset. It is possible to specify this explicitly"
+" using the parameter ``n_values``. There are two genders, three possible "
+"continents and four web browsers in our dataset. Then we fit the "
+"estimator, and transform a data point. In the result, the first two "
+"numbers encode the gender, the next set of three numbers the continent "
+"and the last four the web browser."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:414
+msgid ""
+"See :ref:`dict_feature_extraction` for categorical features that are "
+"represented as a dict, not as integers."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:420
+msgid "Imputation of missing values"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:422
+msgid ""
+"For various reasons, many real world datasets contain missing values, "
+"often encoded as blanks, NaNs or other placeholders. Such datasets "
+"however are incompatible with scikit-learn estimators which assume that "
+"all values in an array are numerical, and that all have and hold meaning."
+" A basic strategy to use incomplete datasets is to discard entire rows "
+"and/or columns containing missing values. However, this comes at the "
+"price of losing data which may be valuable (even though incomplete). A "
+"better strategy is to impute the missing values, i.e., to infer them from"
+" the known part of the data."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:431
+msgid ""
+"The :class:`Imputer` class provides basic strategies for imputing missing"
+" values, either using the mean, the median or the most frequent value of "
+"the row or column in which the missing values are located. This class "
+"also allows for different missing values encodings."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:436
+msgid ""
+"The following snippet demonstrates how to replace missing values, encoded"
+" as ``np.nan``, using the mean value of the columns (axis 0) that contain"
+" the missing values::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:451
+msgid "The :class:`Imputer` class also supports sparse matrices::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:464
+msgid ""
+"Note that, here, missing values are encoded by 0 and are thus implicitly "
+"stored in the matrix. This format is thus suitable when there are many "
+"more missing values than observed values."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:468
+msgid ""
+":class:`Imputer` can be used in a Pipeline as a way to build a composite "
+"estimator that supports imputation. See :ref:`example_missing_values.py`"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:474
+msgid "Generating polynomial features"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:476
+msgid ""
+"Often it's useful to add complexity to the model by considering nonlinear"
+" features of the input data. A simple and common method to use is "
+"polynomial features, which can get features' high-order and interaction "
+"terms. It is implemented in :class:`PolynomialFeatures`::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:491
+msgid ""
+"The features of X have been transformed from :math:`(X_1, X_2)` to "
+":math:`(1, X_1, X_2, X_1^2, X_1X_2, X_2^2)`."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:493
+msgid ""
+"In some cases, only interaction terms among features are required, and it"
+" can be gotten with the setting ``interaction_only=True``::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:506
+msgid ""
+"The features of X have been transformed from :math:`(X_1, X_2, X_3)` to "
+":math:`(1, X_1, X_2, X_3, X_1X_2, X_1X_3, X_2X_3, X_1X_2X_3)`."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:508
+msgid ""
+"Note that polynomial features are used implicitily in `kernel methods "
+"<http://en.wikipedia.org/wiki/Kernel_method>`_ (e.g., "
+":class:`sklearn.svm.SVC`, :class:`sklearn.decomposition.KernelPCA`) when "
+"using polynomial :ref:`svm_kernels`."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:510
+msgid ""
+"See :ref:`example_linear_model_plot_polynomial_interpolation.py` for "
+"Ridge regression using created polynomial features."
+msgstr ""
+
+#: ../../modules/preprocessing.rst:513
+msgid "Custom transformers"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:515
+msgid ""
+"Often, you will want to convert an existing Python function into a "
+"transformer to assist in data cleaning or processing. You can implement a"
+" transformer from an arbitrary function with "
+":class:`FunctionTransformer`. For example, to build a transformer that "
+"applies a log transformation in a pipeline, do::"
+msgstr ""
+
+#: ../../modules/preprocessing.rst:528
+msgid ""
+"For a full code example that demonstrates using a "
+":class:`FunctionTransformer` to do custom feature selection, see "
+":ref:`example_preprocessing_plot_function_transformer.py`"
+msgstr ""
+

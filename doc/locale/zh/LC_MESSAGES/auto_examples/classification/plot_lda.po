@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/classification/plot_lda.rst:8
+msgid "Normal and Shrinkage Linear Discriminant Analysis for classification"
+msgstr ""
+
+#: ../../auto_examples/classification/plot_lda.rst:10
+msgid "Shows how shrinkage improves classification."
+msgstr ""
+
+#: ../../auto_examples/classification/plot_lda.rst:20
+msgid "**Python source code:** :download:`plot_lda.py <plot_lda.py>`"
+msgstr ""
+
+#: ../../auto_examples/classification/plot_lda.rst:25
+msgid ""
+"**Total running time of the example:**  10.84 seconds ( 0 minutes  10.84 "
+"seconds)"
+msgstr ""
+

@@ -1,0 +1,415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.isotonic.IsotonicRegression.rst:2
+msgid ":mod:`sklearn.isotonic`.IsotonicRegression"
+msgstr ""
+
+#: :3
+msgid "Isotonic regression model."
+msgstr ""
+
+#: :5
+msgid "The isotonic regression optimization problem is defined by::"
+msgstr ""
+
+#: :17
+msgid "where:"
+msgstr ""
+
+#: :13
+msgid "``y[i]`` are inputs (real numbers)"
+msgstr ""
+
+#: :14
+msgid "``y_[i]`` are fitted"
+msgstr ""
+
+#: :15
+msgid ""
+"``X`` specifies the order. If ``X`` is non-decreasing then ``y_`` is non-"
+"decreasing."
+msgstr ""
+
+#: :17
+msgid "``w[i]`` are optional strictly positive weights (default to 1.0)"
+msgstr ""
+
+#: :19
+msgid "Read more in the :ref:`User Guide <isotonic>`."
+msgstr ""
+
+#: :23
+msgid "**y_min** : optional, default: None"
+msgstr ""
+
+#: :25
+msgid "If not None, set the lowest value of the fit to y_min."
+msgstr ""
+
+#: :27
+msgid "**y_max** : optional, default: None"
+msgstr ""
+
+#: :29
+msgid "If not None, set the highest value of the fit to y_max."
+msgstr ""
+
+#: :31
+msgid "**increasing** : boolean or string, optional, default: True"
+msgstr ""
+
+#: :33
+msgid ""
+"If boolean, whether or not to fit the isotonic regression with y "
+"increasing or decreasing."
+msgstr ""
+
+#: :36
+msgid ""
+"The string value \"auto\" determines whether y should increase or "
+"decrease based on the Spearman correlation estimate's sign."
+msgstr ""
+
+#: :40
+msgid "**out_of_bounds** : string, optional, default: \"nan\""
+msgstr ""
+
+#: :42
+msgid ""
+"The ``out_of_bounds`` parameter handles how x-values outside of the "
+"training domain are handled.  When set to \"nan\", predicted y-values "
+"will be NaN.  When set to \"clip\", predicted y-values will be set to the"
+" value corresponding to the nearest train interval endpoint. When set to "
+"\"raise\", allow ``interp1d`` to throw ValueError."
+msgstr ""
+
+#: :50
+msgid "**X_** : ndarray (n_samples, )"
+msgstr ""
+
+#: :52
+msgid "A copy of the input X."
+msgstr ""
+
+#: :54
+msgid "**y_** : ndarray (n_samples, )"
+msgstr ""
+
+#: :56
+msgid "Isotonic fit of y."
+msgstr ""
+
+#: :58
+msgid "**X_min_** : float"
+msgstr ""
+
+#: :60
+msgid "Minimum value of input array `X_` for left bound."
+msgstr ""
+
+#: :62
+msgid "**X_max_** : float"
+msgstr ""
+
+#: :64
+msgid "Maximum value of input array `X_` for right bound."
+msgstr ""
+
+#: :66
+msgid "**f_** : function"
+msgstr ""
+
+#: :68
+msgid "The stepwise interpolating function that covers the domain `X_`."
+msgstr ""
+
+#: :71 :27
+msgid "Notes"
+msgstr ""
+
+#: :72
+msgid "Ties are broken using the secondary method from Leeuw, 1977."
+msgstr ""
+
+#: :75
+msgid "References"
+msgstr ""
+
+#: :76
+msgid ""
+"Isotonic Median Regression: A Linear Programming Approach Nilotpal "
+"Chakravarti Mathematics of Operations Research Vol. 14, No. 2 (May, "
+"1989), pp. 303-308"
+msgstr ""
+
+#: :81
+msgid ""
+"Isotone Optimization in R : Pool-Adjacent-Violators Algorithm (PAVA) and "
+"Active Set Methods Leeuw, Hornik, Mair Journal of Statistical Software "
+"2009"
+msgstr ""
+
+#: :86
+msgid ""
+"Correctness of Kruskal's algorithms for monotone regression with ties "
+"Leeuw, Psychometrica, 1977"
+msgstr ""
+
+#: :92
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.isotonic.IsotonicRegression.fit>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model using X, y as training data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.isotonic.IsotonicRegression.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.isotonic.IsotonicRegression.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.isotonic.IsotonicRegression.predict>`\\ (T)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict new data by linear interpolation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.isotonic.IsotonicRegression.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.isotonic.IsotonicRegression.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.isotonic.IsotonicRegression.transform>`\\ (T)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform new data by linear interpolation"
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape=(n_samples,)"
+msgstr ""
+
+#: :9
+msgid "Training data."
+msgstr ""
+
+#: :11
+msgid "**y** : array-like, shape=(n_samples,)"
+msgstr ""
+
+#: :13
+msgid "Training target."
+msgstr ""
+
+#: :15
+msgid ""
+"**sample_weight** : array-like, shape=(n_samples,), optional, default: "
+"None"
+msgstr ""
+
+#: :17
+msgid "Weights. If set to None, all weights will be set to 1 (equal weights)."
+msgstr ""
+
+#: :22
+msgid "**self** : object"
+msgstr ""
+
+#: :24
+msgid "Returns an instance of self."
+msgstr ""
+
+#: :28
+msgid ""
+"X is stored for future use, as `transform` needs X to interpolate new "
+"input data."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**T** : array-like, shape=(n_samples,)"
+msgstr ""
+
+#: :9
+msgid "Data to transform."
+msgstr ""
+
+#: :13
+msgid "**T_** : array, shape=(n_samples,)"
+msgstr ""
+
+#: :15
+msgid "Transformed data."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :15
+msgid "The transformed data"
+msgstr ""
+
+#: ../../modules/generated/sklearn.isotonic.IsotonicRegression.examples:3
+msgid "Examples using ``sklearn.isotonic.IsotonicRegression``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.isotonic.IsotonicRegression.examples:25
+msgid ":ref:`example_plot_isotonic_regression.py`"
+msgstr ""
+

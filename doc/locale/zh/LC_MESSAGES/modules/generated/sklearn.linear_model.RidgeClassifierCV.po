@@ -1,0 +1,411 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.RidgeClassifierCV.rst:2
+msgid ":mod:`sklearn.linear_model`.RidgeClassifierCV"
+msgstr ""
+
+#: :3
+msgid "Ridge classifier with built-in cross-validation."
+msgstr ""
+
+#: :5
+msgid ""
+"By default, it performs Generalized Cross-Validation, which is a form of "
+"efficient Leave-One-Out cross-validation. Currently, only the n_features "
+"> n_samples case is handled efficiently."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <ridge_regression>`."
+msgstr ""
+
+#: :13
+msgid "**alphas** : numpy array of shape [n_alphas]"
+msgstr ""
+
+#: :15
+msgid ""
+"Array of alpha values to try. Small positive values of alpha improve the "
+"conditioning of the problem and reduce the variance of the estimates. "
+"Alpha corresponds to ``C^-1`` in other linear models such as "
+"LogisticRegression or LinearSVC."
+msgstr ""
+
+#: :21
+msgid "**fit_intercept** : boolean"
+msgstr ""
+
+#: :23
+msgid ""
+"Whether to calculate the intercept for this model. If set to false, no "
+"intercept will be used in calculations (e.g. data is expected to be "
+"already centered)."
+msgstr ""
+
+#: :27
+msgid "**normalize** : boolean, optional, default False"
+msgstr ""
+
+#: :29
+msgid "If True, the regressors X will be normalized before regression."
+msgstr ""
+
+#: :31
+msgid "**scoring** : string, callable or None, optional, default: None"
+msgstr ""
+
+#: :33
+msgid ""
+"A string (see model evaluation documentation) or a scorer callable object"
+" / function with signature ``scorer(estimator, X, y)``."
+msgstr ""
+
+#: :37
+msgid "**cv** : int, cross-validation generator or an iterable, optional"
+msgstr ""
+
+#: :39
+msgid ""
+"Determines the cross-validation splitting strategy. Possible inputs for "
+"cv are:"
+msgstr ""
+
+#: :42
+msgid "None, to use the efficient Leave-One-Out cross-validation"
+msgstr ""
+
+#: :43
+msgid "integer, to specify the number of folds."
+msgstr ""
+
+#: :44
+msgid "An object to be used as a cross-validation generator."
+msgstr ""
+
+#: :45
+msgid "An iterable yielding train/test splits."
+msgstr ""
+
+#: :47
+msgid ""
+"Refer :ref:`User Guide <cross_validation>` for the various cross-"
+"validation strategies that can be used here."
+msgstr ""
+
+#: :50
+msgid "**class_weight** : dict or 'balanced', optional"
+msgstr ""
+
+#: :52
+msgid ""
+"Weights associated with classes in the form ``{class_label: weight}``. If"
+" not given, all classes are supposed to have weight one."
+msgstr ""
+
+#: :55
+msgid ""
+"The \"balanced\" mode uses the values of y to automatically adjust "
+"weights inversely proportional to class frequencies in the input data as "
+"``n_samples / (n_classes * np.bincount(y))``"
+msgstr ""
+
+#: :61
+msgid ""
+"**cv_values_** : array, shape = [n_samples, n_alphas] or     shape = "
+"[n_samples, n_responses, n_alphas], optional"
+msgstr ""
+
+#: :63
+msgid "Cross-validation values for each alpha (if `store_cv_values=True` and"
+msgstr ""
+
+#: :65
+msgid ""
+"**`cv=None`). After `fit()` has been called, this attribute will contain"
+"     the mean squared errors (by default) or the values of the     "
+"`{loss,score}_func` function (if provided in the constructor).** :"
+msgstr ""
+
+#: :67
+msgid "**coef_** : array, shape = [n_features] or [n_targets, n_features]"
+msgstr ""
+
+#: :69
+msgid "Weight vector(s)."
+msgstr ""
+
+#: :71
+msgid "**intercept_** : float | array, shape = (n_targets,)"
+msgstr ""
+
+#: :73
+msgid ""
+"Independent term in decision function. Set to 0.0 if ``fit_intercept = "
+"False``."
+msgstr ""
+
+#: :76
+msgid "**alpha_** : float"
+msgstr ""
+
+#: :78
+msgid "Estimated regularization parameter"
+msgstr ""
+
+#: :83
+msgid ":obj:`Ridge`"
+msgstr ""
+
+#: :83
+msgid "Ridge regression"
+msgstr ""
+
+#: :86
+msgid ":obj:`RidgeClassifier`"
+msgstr ""
+
+#: :86
+msgid "Ridge classifier"
+msgstr ""
+
+#: :88
+msgid ":obj:`RidgeCV`"
+msgstr ""
+
+#: :89
+msgid "Ridge regression with built-in cross validation"
+msgstr ""
+
+#: :92
+msgid "Notes"
+msgstr ""
+
+#: :93
+msgid ""
+"For multi-class classification, n_class classifiers are trained in a one-"
+"versus-all approach. Concretely, this is implemented by taking advantage "
+"of the multi-variate response support in Ridge."
+msgstr ""
+
+#: :98
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.linear_model.RidgeClassifierCV.decision_function>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict confidence scores for samples."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.linear_model.RidgeClassifierCV.fit>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the ridge classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.linear_model.RidgeClassifierCV.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.linear_model.RidgeClassifierCV.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict class labels for samples in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.linear_model.RidgeClassifierCV.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the mean accuracy on the given test data and labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.linear_model.RidgeClassifierCV.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid ""
+"The confidence score for a sample is the signed distance of that sample "
+"to the hyperplane."
+msgstr ""
+
+#: :10
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :12 :9
+msgid "Samples."
+msgstr ""
+
+#: :16
+msgid ""
+"**array, shape=(n_samples,) if n_classes == 2 else (n_samples, "
+"n_classes)** :"
+msgstr ""
+
+#: :18
+msgid ""
+"Confidence scores per (sample, class) combination. In the binary case, "
+"confidence score for self.classes_[1] where >0 means this class would be "
+"predicted."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid ""
+"Training vectors, where n_samples is the number of samples and n_features"
+" is the number of features."
+msgstr ""
+
+#: :12
+msgid "**y** : array-like, shape (n_samples,)"
+msgstr ""
+
+#: :14
+msgid "Target values."
+msgstr ""
+
+#: :16
+msgid "**sample_weight** : float or numpy array of shape (n_samples,)"
+msgstr ""
+
+#: :18
+msgid "Sample weight."
+msgstr ""
+
+#: :22
+msgid "**self** : object"
+msgstr ""
+
+#: :24
+msgid "Returns self."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**X** : {array-like, sparse matrix}, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :13
+msgid "**C** : array, shape = [n_samples]"
+msgstr ""
+
+#: :15
+msgid "Predicted class label per sample."
+msgstr ""
+
+#: :5
+msgid ""
+"In multi-label classification, this is the subset accuracy which is a "
+"harsh metric since you require for each sample that each label set be "
+"correctly predicted."
+msgstr ""
+
+#: :11
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :13
+msgid "Test samples."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :17
+msgid "True labels for X."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :21
+msgid "Sample weights."
+msgstr ""
+
+#: :25
+msgid "**score** : float"
+msgstr ""
+
+#: :27
+msgid "Mean accuracy of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+

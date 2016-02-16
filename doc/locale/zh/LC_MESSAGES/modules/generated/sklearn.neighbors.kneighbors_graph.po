@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.neighbors.kneighbors_graph.rst:2
+msgid ":mod:`sklearn.neighbors`.kneighbors_graph"
+msgstr ""
+
+#: :3
+msgid "Computes the (weighted) graph of k-Neighbors for points in X"
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <unsupervised_neighbors>`."
+msgstr ""
+
+#: :9
+msgid "**X** : array-like or BallTree, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :11
+msgid ""
+"Sample data, in the form of a numpy array or a precomputed "
+":class:`BallTree`."
+msgstr ""
+
+#: :14
+msgid "**n_neighbors** : int"
+msgstr ""
+
+#: :16
+msgid "Number of neighbors for each sample."
+msgstr ""
+
+#: :18
+msgid "**mode** : {'connectivity', 'distance'}, optional"
+msgstr ""
+
+#: :20
+msgid ""
+"Type of returned matrix: 'connectivity' will return the connectivity "
+"matrix with ones and zeros, in 'distance' the edges are Euclidean "
+"distance between points."
+msgstr ""
+
+#: :24
+msgid "**metric** : string, default 'minkowski'"
+msgstr ""
+
+#: :26
+msgid ""
+"The distance metric used to calculate the k-Neighbors for each sample "
+"point. The DistanceMetric class gives a list of available metrics. The "
+"default distance is 'euclidean' ('minkowski' metric with the p param "
+"equal to 2.)"
+msgstr ""
+
+#: :31
+msgid "**include_self: bool, default backward-compatible.** :"
+msgstr ""
+
+#: :33
+msgid ""
+"Whether or not to mark each sample as the first nearest neighbor to "
+"itself. If `None`, then True is used for mode='connectivity' and False "
+"for mode='distance' as this will preserve backwards compatibilty. From "
+"version 0.18, the default value will be False, irrespective of the value "
+"of `mode`."
+msgstr ""
+
+#: :39
+msgid "**p** : int, default 2"
+msgstr ""
+
+#: :41
+msgid ""
+"Power parameter for the Minkowski metric. When p = 1, this is equivalent "
+"to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. "
+"For arbitrary p, minkowski_distance (l_p) is used."
+msgstr ""
+
+#: :45
+msgid "**metric_params: dict, optional** :"
+msgstr ""
+
+#: :47
+msgid "additional keyword arguments for the metric function."
+msgstr ""
+
+#: :51
+msgid "**A** : sparse matrix in CSR format, shape = [n_samples, n_samples]"
+msgstr ""
+
+#: :53
+msgid "A[i, j] is assigned the weight of edge that connects i to j."
+msgstr ""
+
+#: :57
+msgid ":obj:`radius_neighbors_graph`"
+msgstr ""
+
+#: :60
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.kneighbors_graph.examples:3
+msgid "Examples using ``sklearn.neighbors.kneighbors_graph``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.kneighbors_graph.examples:25
+msgid ":ref:`example_cluster_plot_agglomerative_clustering.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.kneighbors_graph.examples:45
+msgid ":ref:`example_cluster_plot_ward_structured_vs_unstructured.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.kneighbors_graph.examples:65
+msgid ":ref:`example_cluster_plot_cluster_comparison.py`"
+msgstr ""
+

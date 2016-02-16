@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/model_selection/plot_confusion_matrix.rst:8
+msgid "Confusion matrix"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_confusion_matrix.rst:10
+msgid ""
+"Example of confusion matrix usage to evaluate the quality of the output "
+"of a classifier on the iris data set. The diagonal elements represent the"
+" number of points for which the predicted label is equal to the true "
+"label, while off-diagonal elements are those that are mislabeled by the "
+"classifier. The higher the diagonal values of the confusion matrix the "
+"better, indicating many correct predictions."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_confusion_matrix.rst:18
+msgid ""
+"The figures show the confusion matrix with and without normalization by "
+"class support size (number of elements in each class). This kind of "
+"normalization can be interesting in case of class imbalance to have a "
+"more visual interpretation of which class is being misclassified."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_confusion_matrix.rst:24
+msgid ""
+"Here the results are not as good as they could be as our choice for the "
+"regularization parameter C was not the best. In real life applications "
+"this parameter is usually chosen using :ref:`grid_search`."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_confusion_matrix.rst:46
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_confusion_matrix.rst:59
+msgid ""
+"**Python source code:** :download:`plot_confusion_matrix.py "
+"<plot_confusion_matrix.py>`"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_confusion_matrix.rst:64
+msgid ""
+"**Total running time of the example:**  0.58 seconds ( 0 minutes  0.58 "
+"seconds)"
+msgstr ""
+

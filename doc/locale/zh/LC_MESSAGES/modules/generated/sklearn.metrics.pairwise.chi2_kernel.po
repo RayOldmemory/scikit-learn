@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.pairwise.chi2_kernel.rst:2
+msgid ":mod:`sklearn.metrics.pairwise`.chi2_kernel"
+msgstr ""
+
+#: :3
+msgid "Computes the exponential chi-squared kernel X and Y."
+msgstr ""
+
+#: :5
+msgid ""
+"The chi-squared kernel is computed between each pair of rows in X and Y."
+"  X and Y have to be non-negative. This kernel is most commonly applied "
+"to histograms."
+msgstr ""
+
+#: :9
+msgid "The chi-squared kernel is given by::"
+msgstr ""
+
+#: :13
+msgid "It can be interpreted as a weighted difference per entry."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <chi2_kernel>`."
+msgstr ""
+
+#: :19
+msgid "**X** : array-like of shape (n_samples_X, n_features)"
+msgstr ""
+
+#: :21
+msgid "**Y** : array of shape (n_samples_Y, n_features)"
+msgstr ""
+
+#: :23
+msgid "**gamma** : float, default=1."
+msgstr ""
+
+#: :25
+msgid "Scaling parameter of the chi2 kernel."
+msgstr ""
+
+#: :29
+msgid "**kernel_matrix** : array of shape (n_samples_X, n_samples_Y)"
+msgstr ""
+
+#: :34
+msgid ":obj:`additive_chi2_kernel`"
+msgstr ""
+
+#: :34
+msgid "The additive version of this kernel"
+msgstr ""
+
+#: :36
+msgid ":obj:`sklearn.kernel_approximation.AdditiveChi2Sampler`"
+msgstr ""
+
+#: :37
+msgid "A Fourier approximation to the additive version of this kernel."
+msgstr ""
+
+#: :40
+msgid "References"
+msgstr ""
+
+#: :41
+msgid ""
+"Zhang, J. and Marszalek, M. and Lazebnik, S. and Schmid, C. Local "
+"features and kernels for classification of texture and object categories:"
+" A comprehensive study International Journal of Computer Vision 2007 "
+"http://research.microsoft.com/en-us/um/people/manik/projects/trade-"
+"off/papers/ZhangIJCV06.pdf"
+msgstr ""
+

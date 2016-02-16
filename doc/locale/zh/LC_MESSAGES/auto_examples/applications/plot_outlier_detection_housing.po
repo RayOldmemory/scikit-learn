@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:8
+msgid "Outlier detection on a real data set"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:10
+msgid ""
+"This example illustrates the need for robust covariance estimation on a "
+"real data set. It is useful both for outlier detection and for a better "
+"understanding of the data structure."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:14
+msgid ""
+"We selected two sets of two variables from the Boston housing data set as"
+" an illustration of what kind of analysis can be done with several "
+"outlier detection tools. For the purpose of visualization, we are working"
+" with two-dimensional examples, but one should be aware that things are "
+"not so trivial in high-dimension, as it will be pointed out."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:20
+msgid ""
+"In both examples below, the main result is that the empirical covariance "
+"estimate, as a non-robust one, is highly influenced by the heterogeneous "
+"structure of the observations. Although the robust covariance estimate is"
+" able to focus on the main mode of the data distribution, it sticks to "
+"the assumption that the data should be Gaussian distributed, yielding "
+"some biased estimation of the data structure, but yet accurate to some "
+"extent. The One-Class SVM algorithm"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:29
+msgid "First example"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:30
+msgid ""
+"The first example illustrates how robust covariance estimation can help "
+"concentrating on a relevant cluster when another one exists. Here, many "
+"observations are confounded into one and break down the empirical "
+"covariance estimation. Of course, some screening tools would have pointed"
+" out the presence of two clusters (Support Vector Machines, Gaussian "
+"Mixture Models, univariate outlier detection, ...). But had it been a "
+"high-dimensional example, none of these could be applied that easily."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:40
+msgid "Second example"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:41
+msgid ""
+"The second example shows the ability of the Minimum Covariance "
+"Determinant robust estimator of covariance to concentrate on the main "
+"mode of the data distribution: the location seems to be well estimated, "
+"although the covariance is hard to estimate due to the banana-shaped "
+"distribution. Anyway, we can get rid of some outlying observations. The "
+"One-Class SVM is able to capture the real data structure, but the "
+"difficulty is to adjust its kernel bandwidth parameter so as to obtain a "
+"good compromise between the shape of the data scatter matrix and the risk"
+" of over-fitting the data."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:70
+msgid ""
+"**Python source code:** :download:`plot_outlier_detection_housing.py "
+"<plot_outlier_detection_housing.py>`"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_outlier_detection_housing.rst:75
+msgid ""
+"**Total running time of the example:**  8.24 seconds ( 0 minutes  8.24 "
+"seconds)"
+msgstr ""
+

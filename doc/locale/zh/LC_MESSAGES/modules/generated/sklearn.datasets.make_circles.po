@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.make_circles.rst:2
+msgid ":mod:`sklearn.datasets`.make_circles"
+msgstr ""
+
+#: :3
+msgid "Make a large circle containing a smaller circle in 2d."
+msgstr ""
+
+#: :5
+msgid ""
+"A simple toy dataset to visualize clustering and classification "
+"algorithms."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <sample_generators>`."
+msgstr ""
+
+#: :12
+msgid "**n_samples** : int, optional (default=100)"
+msgstr ""
+
+#: :14
+msgid "The total number of points generated."
+msgstr ""
+
+#: :16
+msgid "**shuffle: bool, optional (default=True)** :"
+msgstr ""
+
+#: :18
+msgid "Whether to shuffle the samples."
+msgstr ""
+
+#: :20
+msgid "**noise** : double or None (default=None)"
+msgstr ""
+
+#: :22
+msgid "Standard deviation of Gaussian noise added to the data."
+msgstr ""
+
+#: :24
+msgid "**factor** : double < 1 (default=.8)"
+msgstr ""
+
+#: :26
+msgid "Scale factor between inner and outer circle."
+msgstr ""
+
+#: :30
+msgid "**X** : array of shape [n_samples, 2]"
+msgstr ""
+
+#: :32
+msgid "The generated samples."
+msgstr ""
+
+#: :34
+msgid "**y** : array of shape [n_samples]"
+msgstr ""
+
+#: :36
+msgid "The integer labels (0 or 1) for class membership of each sample."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_circles.examples:3
+msgid "Examples using ``sklearn.datasets.make_circles``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_circles.examples:25
+msgid ":ref:`example_classification_plot_classifier_comparison.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_circles.examples:45
+msgid ":ref:`example_cluster_plot_cluster_comparison.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_circles.examples:65
+msgid ":ref:`example_decomposition_plot_kernel_pca.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_circles.examples:85
+msgid ":ref:`example_ensemble_plot_random_forest_embedding.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_circles.examples:105
+msgid ":ref:`example_semi_supervised_plot_label_propagation_structure.py`"
+msgstr ""
+

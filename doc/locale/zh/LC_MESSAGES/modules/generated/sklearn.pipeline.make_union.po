@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.pipeline.make_union.rst:2
+msgid ":mod:`sklearn.pipeline`.make_union"
+msgstr ""
+
+#: :3
+msgid "Construct a FeatureUnion from the given transformers."
+msgstr ""
+
+#: :5
+msgid ""
+"This is a shorthand for the FeatureUnion constructor; it does not "
+"require, and does not permit, naming the transformers. Instead, they will"
+" be given names automatically based on their types. It also does not "
+"allow weighting."
+msgstr ""
+
+#: :11
+msgid "**f** : FeatureUnion"
+msgstr ""
+
+#: :14
+msgid "Examples"
+msgstr ""
+

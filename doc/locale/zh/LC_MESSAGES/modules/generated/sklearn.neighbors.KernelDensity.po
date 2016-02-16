@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.neighbors.KernelDensity.rst:2
+msgid ":mod:`sklearn.neighbors`.KernelDensity"
+msgstr ""
+
+#: :3
+msgid "Kernel Density Estimation"
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <kernel_density>`."
+msgstr ""
+
+#: :9
+msgid "**bandwidth** : float"
+msgstr ""
+
+#: :11
+msgid "The bandwidth of the kernel."
+msgstr ""
+
+#: :13
+msgid "**algorithm** : string"
+msgstr ""
+
+#: :15
+msgid ""
+"The tree algorithm to use.  Valid options are "
+"['kd_tree'|'ball_tree'|'auto'].  Default is 'auto'."
+msgstr ""
+
+#: :18
+msgid "**kernel** : string"
+msgstr ""
+
+#: :20
+msgid ""
+"The kernel to use.  Valid kernels are "
+"['gaussian'|'tophat'|'epanechnikov'|'exponential'|'linear'|'cosine'] "
+"Default is 'gaussian'."
+msgstr ""
+
+#: :24
+msgid "**metric** : string"
+msgstr ""
+
+#: :26
+msgid ""
+"The distance metric to use.  Note that not all metrics are valid with all"
+" algorithms.  Refer to the documentation of :class:`BallTree` and "
+":class:`KDTree` for a description of available algorithms.  Note that the"
+" normalization of the density output is correct only for the Euclidean "
+"distance metric. Default is 'euclidean'."
+msgstr ""
+
+#: :33
+msgid "**atol** : float"
+msgstr ""
+
+#: :35
+msgid ""
+"The desired absolute tolerance of the result.  A larger tolerance will "
+"generally lead to faster execution. Default is 0."
+msgstr ""
+
+#: :38
+msgid "**rtol** : float"
+msgstr ""
+
+#: :40
+msgid ""
+"The desired relative tolerance of the result.  A larger tolerance will "
+"generally lead to faster execution.  Default is 1E-8."
+msgstr ""
+
+#: :43
+msgid "**breadth_first** : boolean"
+msgstr ""
+
+#: :45
+msgid ""
+"If true (default), use a breadth-first approach to the problem. Otherwise"
+" use a depth-first approach."
+msgstr ""
+
+#: :48
+msgid "**leaf_size** : int"
+msgstr ""
+
+#: :50
+msgid ""
+"Specify the leaf size of the underlying tree.  See :class:`BallTree` or "
+":class:`KDTree` for details.  Default is 40."
+msgstr ""
+
+#: :53
+msgid "**metric_params** : dict"
+msgstr ""
+
+#: :55
+msgid ""
+"Additional parameters to be passed to the tree for use with the metric.  "
+"For more information, see the documentation of :class:`BallTree` or "
+":class:`KDTree`."
+msgstr ""
+
+#: :60
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.neighbors.KernelDensity.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the Kernel Density model on the data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.neighbors.KernelDensity.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`sample <sklearn.neighbors.KernelDensity.sample>`\\ ([n_samples, "
+"random_state])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Generate random samples from the model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.neighbors.KernelDensity.score>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute the total log probability under the model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score_samples <sklearn.neighbors.KernelDensity.score_samples>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Evaluate the density model on the data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.neighbors.KernelDensity.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7 :19
+msgid "**X** : array_like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid ""
+"List of n_features-dimensional data points.  Each row corresponds to a "
+"single data point."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid "Currently, this is implemented only for gaussian and tophat kernels."
+msgstr ""
+
+#: :9
+msgid "**n_samples** : int, optional"
+msgstr ""
+
+#: :11
+msgid "Number of samples to generate. Defaults to 1."
+msgstr ""
+
+#: :13
+msgid "**random_state** : RandomState or an int seed (0 by default)"
+msgstr ""
+
+#: :15
+msgid "A random number generator instance."
+msgstr ""
+
+#: :21
+msgid "List of samples."
+msgstr ""
+
+#: :14
+msgid "**logprob** : float"
+msgstr ""
+
+#: :16
+msgid "Total log-likelihood of the data in X."
+msgstr ""
+
+#: :9
+msgid ""
+"An array of points to query.  Last dimension should match dimension of "
+"training data (n_features)."
+msgstr ""
+
+#: :14
+msgid "**density** : ndarray, shape (n_samples,)"
+msgstr ""
+
+#: :16
+msgid "The array of log(density) evaluations."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.KernelDensity.examples:3
+msgid "Examples using ``sklearn.neighbors.KernelDensity``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.KernelDensity.examples:25
+msgid ":ref:`example_neighbors_plot_digits_kde_sampling.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.KernelDensity.examples:45
+msgid ":ref:`example_neighbors_plot_species_kde.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.KernelDensity.examples:65
+msgid ":ref:`example_neighbors_plot_kde_1d.py`"
+msgstr ""
+

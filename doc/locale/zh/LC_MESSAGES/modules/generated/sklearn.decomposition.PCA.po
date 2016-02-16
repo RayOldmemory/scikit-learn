@@ -1,0 +1,500 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.decomposition.PCA.rst:2
+msgid ":mod:`sklearn.decomposition`.PCA"
+msgstr ""
+
+#: :3
+msgid "Principal component analysis (PCA)"
+msgstr ""
+
+#: :5
+msgid ""
+"Linear dimensionality reduction using Singular Value Decomposition of the"
+" data and keeping only the most significant singular vectors to project "
+"the data to a lower dimensional space."
+msgstr ""
+
+#: :9
+msgid ""
+"This implementation uses the scipy.linalg implementation of the singular "
+"value decomposition. It only works for dense arrays and is not scalable "
+"to large dimensional data."
+msgstr ""
+
+#: :13
+msgid ""
+"The time complexity of this implementation is ``O(n ** 3)`` assuming n ~ "
+"n_samples ~ n_features."
+msgstr ""
+
+#: :16
+msgid "Read more in the :ref:`User Guide <PCA>`."
+msgstr ""
+
+#: :20
+msgid "**n_components** : int, None or string"
+msgstr ""
+
+#: :22
+msgid ""
+"Number of components to keep. if n_components is not set all components "
+"are kept::"
+msgstr ""
+
+#: :27
+msgid ""
+"if n_components == 'mle', Minka's MLE is used to guess the dimension if "
+"``0 < n_components < 1``, select the number of components such that the "
+"amount of variance that needs to be explained is greater than the "
+"percentage specified by n_components"
+msgstr ""
+
+#: :32
+msgid "**copy** : bool"
+msgstr ""
+
+#: :34
+msgid ""
+"If False, data passed to fit are overwritten and running "
+"fit(X).transform(X) will not yield the expected results, use "
+"fit_transform(X) instead."
+msgstr ""
+
+#: :38
+msgid "**whiten** : bool, optional"
+msgstr ""
+
+#: :40
+msgid ""
+"When True (False by default) the `components_` vectors are divided by "
+"n_samples times singular values to ensure uncorrelated outputs with unit "
+"component-wise variances."
+msgstr ""
+
+#: :44
+msgid ""
+"Whitening will remove some information from the transformed signal (the "
+"relative variance scales of the components) but can sometime improve the "
+"predictive accuracy of the downstream estimators by making there data "
+"respect some hard-wired assumptions."
+msgstr ""
+
+#: :51
+msgid "**components_** : array, [n_components, n_features]"
+msgstr ""
+
+#: :53
+msgid ""
+"Principal axes in feature space, representing the directions of maximum "
+"variance in the data."
+msgstr ""
+
+#: :56
+msgid "**explained_variance_ratio_** : array, [n_components]"
+msgstr ""
+
+#: :58
+msgid ""
+"Percentage of variance explained by each of the selected components. If "
+"``n_components`` is not set then all components are stored and the sum of"
+" explained variances is equal to 1.0"
+msgstr ""
+
+#: :62
+msgid "**mean_** : array, [n_features]"
+msgstr ""
+
+#: :64
+msgid "Per-feature empirical mean, estimated from the training set."
+msgstr ""
+
+#: :66
+msgid "**n_components_** : int"
+msgstr ""
+
+#: :68
+msgid ""
+"The estimated number of components. Relevant when n_components is set to "
+"'mle' or a number between 0 and 1 to select using explained variance."
+msgstr ""
+
+#: :72
+msgid "**noise_variance_** : float"
+msgstr ""
+
+#: :74
+msgid ""
+"The estimated noise covariance following the Probabilistic PCA model from"
+" Tipping and Bishop 1999. See \"Pattern Recognition and Machine "
+"Learning\" by C. Bishop, 12.2.1 p. 574 or "
+"http://www.miketipping.com/papers/met-mppca.pdf. It is required to "
+"computed the estimated data covariance and score samples."
+msgstr ""
+
+#: :82
+msgid ""
+":obj:`RandomizedPCA`, :obj:`KernelPCA`, :obj:`SparsePCA`, "
+":obj:`TruncatedSVD`"
+msgstr ""
+
+#: :85
+msgid "Notes"
+msgstr ""
+
+#: :86
+msgid ""
+"For n_components='mle', this class uses the method of `Thomas P. Minka: "
+"Automatic Choice of Dimensionality for PCA. NIPS 2000: 598-604`"
+msgstr ""
+
+#: :89
+msgid ""
+"Implements the probabilistic PCA model from: M. Tipping and C. Bishop, "
+"Probabilistic Principal Component Analysis, Journal of the Royal "
+"Statistical Society, Series B, 61, Part 3, pp. 611-622 via the score and "
+"score_samples methods. See http://www.miketipping.com/papers/met-"
+"mppca.pdf"
+msgstr ""
+
+#: :95
+msgid ""
+"Due to implementation subtleties of the Singular Value Decomposition "
+"(SVD), which is used in this implementation, running fit twice on the "
+"same matrix can lead to principal components with signs flipped (change "
+"in direction). For this reason, it is important to always use the same "
+"estimator object to transform data in a consistent fashion."
+msgstr ""
+
+#: :102
+msgid "Examples"
+msgstr ""
+
+#: :113
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.decomposition.PCA.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model with X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit_transform <sklearn.decomposition.PCA.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model with X and apply the dimensionality reduction on X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_covariance <sklearn.decomposition.PCA.get_covariance>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute data covariance with the generative model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.decomposition.PCA.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_precision <sklearn.decomposition.PCA.get_precision>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute data precision matrix with the generative model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform <sklearn.decomposition.PCA.inverse_transform>`\\ "
+"(X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Transform data back to its original space, i.e.,"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.decomposition.PCA.score>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Return the average log-likelihood of all samples"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score_samples <sklearn.decomposition.PCA.score_samples>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Return the log-likelihood of each sample"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`set_params <sklearn.decomposition.PCA.set_params>`\\ (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.decomposition.PCA.transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Apply the dimensionality reduction on X."
+msgstr ""
+
+#: :7
+msgid "**X: array-like, shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :9
+msgid ""
+"Training data, where n_samples in the number of samples and n_features is"
+" the number of features."
+msgstr ""
+
+#: :14
+msgid "**self** : object"
+msgstr ""
+
+#: :16
+msgid "Returns the instance itself."
+msgstr ""
+
+#: :7 :10
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid ""
+"Training data, where n_samples is the number of samples and n_features is"
+" the number of features."
+msgstr ""
+
+#: :14 :17
+msgid "**X_new** : array-like, shape (n_samples, n_components)"
+msgstr ""
+
+#: :5
+msgid ""
+"``cov = components_.T * S**2 * components_ + sigma2 * eye(n_features)`` "
+"where  S**2 contains the explained variances."
+msgstr ""
+
+#: :10
+msgid "**cov** : array, shape=(n_features, n_features)"
+msgstr ""
+
+#: :12
+msgid "Estimated covariance of data."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"Equals the inverse of the covariance but computed with the matrix "
+"inversion lemma for efficiency."
+msgstr ""
+
+#: :10
+msgid "**precision** : array, shape=(n_features, n_features)"
+msgstr ""
+
+#: :12
+msgid "Estimated precision of data."
+msgstr ""
+
+#: :3
+msgid ""
+"Transform data back to its original space, i.e., return an input "
+"X_original whose transform would be X"
+msgstr ""
+
+#: :8
+msgid "**X** : array-like, shape (n_samples, n_components)"
+msgstr ""
+
+#: :10
+msgid ""
+"New data, where n_samples is the number of samples and n_components is "
+"the number of components."
+msgstr ""
+
+#: :15
+msgid "**X_original array-like, shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :5
+msgid ""
+"See. \"Pattern Recognition and Machine Learning\" by C. Bishop, 12.2.1 p."
+" 574 or http://www.miketipping.com/papers/met-mppca.pdf"
+msgstr ""
+
+#: :11
+msgid "**X: array, shape(n_samples, n_features)** :"
+msgstr ""
+
+#: :13
+msgid "The data."
+msgstr ""
+
+#: :17
+msgid "**ll: float** :"
+msgstr ""
+
+#: :19
+msgid "Average log-likelihood of the samples under the current model"
+msgstr ""
+
+#: :17
+msgid "**ll: array, shape (n_samples,)** :"
+msgstr ""
+
+#: :19
+msgid "Log-likelihood of each sample under the current model"
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"X is projected on the first principal components previous extracted from "
+"a training set."
+msgstr ""
+
+#: :12
+msgid ""
+"New data, where n_samples is the number of samples and n_features is the "
+"number of features."
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:3
+msgid "Examples using ``sklearn.decomposition.PCA``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:25
+msgid ":ref:`example_feature_stacker.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:45
+msgid ":ref:`example_plot_digits_pipe.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:65
+msgid ":ref:`example_plot_multilabel.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:85
+msgid ":ref:`example_plot_kernel_approximation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:105
+msgid ":ref:`example_cluster_plot_kmeans_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:125
+msgid ":ref:`example_datasets_plot_iris_dataset.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:145
+msgid ":ref:`example_decomposition_plot_pca_vs_lda.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:165
+msgid ":ref:`example_decomposition_plot_incremental_pca.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:185
+msgid ":ref:`example_decomposition_plot_pca_iris.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:205
+msgid ":ref:`example_decomposition_plot_ica_blind_source_separation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:225
+msgid ":ref:`example_decomposition_plot_kernel_pca.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:245
+msgid ":ref:`example_decomposition_plot_ica_vs_pca.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:265
+msgid ":ref:`example_decomposition_plot_pca_3d.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:285
+msgid ":ref:`example_decomposition_plot_pca_vs_fa_model_selection.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:305
+msgid ":ref:`example_manifold_plot_mds.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:325
+msgid ":ref:`example_neighbors_plot_digits_kde_sampling.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.PCA.examples:345
+msgid ":ref:`example_preprocessing_plot_function_transformer.py`"
+msgstr ""
+

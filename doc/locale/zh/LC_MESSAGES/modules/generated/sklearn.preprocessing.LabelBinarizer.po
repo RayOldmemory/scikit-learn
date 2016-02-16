@@ -1,0 +1,370 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.preprocessing.LabelBinarizer.rst:2
+msgid ":mod:`sklearn.preprocessing`.LabelBinarizer"
+msgstr ""
+
+#: :3
+msgid "Binarize labels in a one-vs-all fashion"
+msgstr ""
+
+#: :5
+msgid ""
+"Several regression and binary classification algorithms are available in "
+"the scikit. A simple way to extend these algorithms to the multi-class "
+"classification case is to use the so-called one-vs-all scheme."
+msgstr ""
+
+#: :10
+msgid ""
+"At learning time, this simply consists in learning one regressor or "
+"binary classifier per class. In doing so, one needs to convert multi-"
+"class labels to binary labels (belong or does not belong to the class). "
+"LabelBinarizer makes this process easy with the transform method."
+msgstr ""
+
+#: :16
+msgid ""
+"At prediction time, one assigns the class for which the corresponding "
+"model gave the greatest confidence. LabelBinarizer makes this easy with "
+"the inverse_transform method."
+msgstr ""
+
+#: :20
+msgid "Read more in the :ref:`User Guide <preprocessing_targets>`."
+msgstr ""
+
+#: :24
+msgid "**neg_label** : int (default: 0)"
+msgstr ""
+
+#: :26
+msgid "Value with which negative labels must be encoded."
+msgstr ""
+
+#: :28
+msgid "**pos_label** : int (default: 1)"
+msgstr ""
+
+#: :30
+msgid "Value with which positive labels must be encoded."
+msgstr ""
+
+#: :32
+msgid "**sparse_output** : boolean (default: False)"
+msgstr ""
+
+#: :34
+msgid ""
+"True if the returned array from transform is desired to be in sparse CSR "
+"format."
+msgstr ""
+
+#: :39
+msgid "**classes_** : array of shape [n_class]"
+msgstr ""
+
+#: :41
+msgid "Holds the label for each class."
+msgstr ""
+
+#: :43
+msgid "**y_type_** : str,"
+msgstr ""
+
+#: :45
+msgid ""
+"Represents the type of the target data as evaluated by "
+"utils.multiclass.type_of_target. Possible type are 'continuous', "
+"'continuous-multioutput', 'binary', 'multiclass', 'mutliclass-"
+"multioutput', 'multilabel-indicator', and 'unknown'."
+msgstr ""
+
+#: :50
+msgid "**multilabel_** : boolean"
+msgstr ""
+
+#: :52
+msgid ""
+"True if the transformer was fitted on a multilabel rather than a "
+"multiclass set of labels. The ``multilabel_`` attribute is deprecated and"
+" will be removed in 0.18"
+msgstr ""
+
+#: :56
+msgid "**sparse_input_** : boolean,"
+msgstr ""
+
+#: :58
+msgid ""
+"True if the input data to transform is given as a sparse matrix, False "
+"otherwise."
+msgstr ""
+
+#: :61
+msgid "**indicator_matrix_** : str"
+msgstr ""
+
+#: :63
+msgid ""
+"'sparse' when the input data to tansform is a multilable-indicator and is"
+" sparse, None otherwise. The ``indicator_matrix_`` attribute is "
+"deprecated as of version 0.16 and will be removed in 0.18"
+msgstr ""
+
+#: :69
+msgid ":obj:`label_binarize`"
+msgstr ""
+
+#: :70
+msgid ""
+"function to perform the transform operation of LabelBinarizer with fixed "
+"classes."
+msgstr ""
+
+#: :73
+msgid "Examples"
+msgstr ""
+
+#: :84
+msgid "Binary targets transform to a column vector"
+msgstr ""
+
+#: :93
+msgid "Passing a 2D matrix for multilabel classification"
+msgstr ""
+
+#: :107
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.preprocessing.LabelBinarizer.fit>`\\ (y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit label binarizer"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.preprocessing.LabelBinarizer.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.preprocessing.LabelBinarizer.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform "
+"<sklearn.preprocessing.LabelBinarizer.inverse_transform>`\\ (Y[, "
+"threshold])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform binary labels back to multi-class labels"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.preprocessing.LabelBinarizer.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.preprocessing.LabelBinarizer.transform>`\\ (y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform multi-class labels to binary labels"
+msgstr ""
+
+#: :7
+msgid "**y** : numpy array of shape (n_samples,) or (n_samples, n_classes)"
+msgstr ""
+
+#: :9
+msgid ""
+"Target values. The 2-d matrix should only contain 0 and 1, represents "
+"multilabel classification."
+msgstr ""
+
+#: :14
+msgid "**self** : returns an instance of self."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**Y** : numpy array or sparse matrix with shape [n_samples, n_classes]"
+msgstr ""
+
+#: :9
+msgid ""
+"Target values. All sparse matrices are converted to CSR before inverse "
+"transformation."
+msgstr ""
+
+#: :12
+msgid "**threshold** : float or None"
+msgstr ""
+
+#: :14
+msgid "Threshold used in the binary and multi-label cases."
+msgstr ""
+
+#: :16
+msgid "Use 0 when:"
+msgstr ""
+
+#: :17
+msgid "Y contains the output of decision_function (classifier)"
+msgstr ""
+
+#: :19
+msgid "Use 0.5 when:"
+msgstr ""
+
+#: :19
+msgid "Y contains the output of predict_proba"
+msgstr ""
+
+#: :21
+msgid ""
+"If None, the threshold is assumed to be half way between neg_label and "
+"pos_label."
+msgstr ""
+
+#: :26
+msgid "**y** : numpy array or CSR matrix of shape [n_samples] Target values."
+msgstr ""
+
+#: :29
+msgid "Notes"
+msgstr ""
+
+#: :30
+msgid ""
+"In the case when the binary labels are fractional (probabilistic), "
+"inverse_transform chooses the class with the greatest value. Typically, "
+"this allows to use the output of a linear model's decision_function "
+"method directly as the input of inverse_transform."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"The output of transform is sometimes referred to by some authors as the "
+"1-of-K coding scheme."
+msgstr ""
+
+#: :10
+msgid "**y** : numpy array or sparse matrix of shape (n_samples,) or"
+msgstr ""
+
+#: :12
+msgid ""
+"(n_samples, n_classes) Target values. The 2-d matrix should only contain "
+"0 and 1, represents multilabel classification. Sparse matrix can be CSR, "
+"CSC, COO, DOK, or LIL."
+msgstr ""
+
+#: :18
+msgid "**Y** : numpy array or CSR matrix of shape [n_samples, n_classes]"
+msgstr ""
+
+#: :20
+msgid "Shape will be [n_samples, 1] for binary problems."
+msgstr ""
+

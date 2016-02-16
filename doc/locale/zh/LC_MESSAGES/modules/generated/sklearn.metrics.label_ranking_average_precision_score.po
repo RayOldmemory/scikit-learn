@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.label_ranking_average_precision_score.rst:2
+msgid ":mod:`sklearn.metrics`.label_ranking_average_precision_score"
+msgstr ""
+
+#: :3
+msgid "Compute ranking-based average precision"
+msgstr ""
+
+#: :5
+msgid ""
+"Label ranking average precision (LRAP) is the average over each ground "
+"truth label assigned to each sample, of the ratio of true vs. total "
+"labels with lower score."
+msgstr ""
+
+#: :9
+msgid ""
+"This metric is used in multilabel ranking problem, where the goal is to "
+"give better rank to the labels associated to each sample."
+msgstr ""
+
+#: :12
+msgid ""
+"The obtained score is always strictly greater than 0 and the best value "
+"is 1."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <label_ranking_average_precision>`."
+msgstr ""
+
+#: :19
+msgid "**y_true** : array or sparse matrix, shape = [n_samples, n_labels]"
+msgstr ""
+
+#: :21
+msgid "True binary labels in binary indicator format."
+msgstr ""
+
+#: :23
+msgid "**y_score** : array, shape = [n_samples, n_labels]"
+msgstr ""
+
+#: :25
+msgid ""
+"Target scores, can either be probability estimates of the positive class,"
+" confidence values, or binary decisions."
+msgstr ""
+
+#: :30
+msgid "**score** : float"
+msgstr ""
+
+#: :33
+msgid "Examples"
+msgstr ""
+

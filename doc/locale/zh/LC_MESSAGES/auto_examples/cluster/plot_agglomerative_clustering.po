@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering.rst:7
+msgid "Agglomerative clustering with and without structure"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering.rst:9
+msgid ""
+"This example shows the effect of imposing a connectivity graph to capture"
+" local structure in the data. The graph is simply the graph of 20 nearest"
+" neighbors."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering.rst:13
+msgid ""
+"Two consequences of imposing a connectivity can be seen. First clustering"
+" with a connectivity matrix is much faster."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering.rst:16
+msgid ""
+"Second, when using a connectivity matrix, average and complete linkage "
+"are unstable and tend to create a few clusters that grow very quickly. "
+"Indeed, average and complete linkage fight this percolation behavior by "
+"considering all the distances between two clusters when merging them. The"
+" connectivity graph breaks this mechanism. This effect is more pronounced"
+" for very sparse graphs (try decreasing the number of neighbors in "
+"kneighbors_graph) and with complete linkage. In particular, having a very"
+" small number of neighbors in the graph, imposes a geometry that is close"
+" to that of single linkage, which is well known to have this percolation "
+"instability."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering.rst:55
+msgid ""
+"**Python source code:** :download:`plot_agglomerative_clustering.py "
+"<plot_agglomerative_clustering.py>`"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering.rst:60
+msgid ""
+"**Total running time of the example:**  38.31 seconds ( 0 minutes  38.31 "
+"seconds)"
+msgstr ""
+

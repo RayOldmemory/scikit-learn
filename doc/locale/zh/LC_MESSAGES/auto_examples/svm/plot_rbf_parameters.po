@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:8
+msgid "RBF SVM parameters"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:10
+msgid ""
+"This example illustrates the effect of the parameters ``gamma`` and ``C``"
+" of the Radial Basis Function (RBF) kernel SVM."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:13
+msgid ""
+"Intuitively, the ``gamma`` parameter defines how far the influence of a "
+"single training example reaches, with low values meaning 'far' and high "
+"values meaning 'close'. The ``gamma`` parameters can be seen as the "
+"inverse of the radius of influence of samples selected by the model as "
+"support vectors."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:18
+msgid ""
+"The ``C`` parameter trades off misclassification of training examples "
+"against simplicity of the decision surface. A low ``C`` makes the "
+"decision surface smooth, while a high ``C`` aims at classifying all "
+"training examples correctly by giving the model freedom to select more "
+"samples as support vectors."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:23
+msgid ""
+"The first plot is a visualization of the decision function for a variety "
+"of parameter values on a simplified classification problem involving only"
+" 2 input features and 2 possible target classes (binary classification). "
+"Note that this kind of plot is not possible to do for problems with more "
+"features or target classes."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:29
+msgid ""
+"The second plot is a heatmap of the classifier's cross-validation "
+"accuracy as a function of ``C`` and ``gamma``. For this example we "
+"explore a relatively large grid for illustration purposes. In practice, a"
+" logarithmic grid from :math:`10^{-3}` to :math:`10^3` is usually "
+"sufficient. If the best parameters lie on the boundaries of the grid, it "
+"can be extended in that direction in a subsequent search."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:36
+msgid ""
+"Note that the heat map plot has a special colorbar with a midpoint value "
+"close to the score values of the best performing models so as to make it "
+"easy to tell them appart in the blink of an eye."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:40
+msgid ""
+"The behavior of the model is very sensitive to the ``gamma`` parameter. "
+"If ``gamma`` is too large, the radius of the area of influence of the "
+"support vectors only includes the support vector itself and no amount of "
+"regularization with ``C`` will be able to prevent overfitting."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:45
+msgid ""
+"When ``gamma`` is very small, the model is too constrained and cannot "
+"capture the complexity or \"shape\" of the data. The region of influence "
+"of any selected support vector would include the whole training set. The "
+"resulting model will behave similarly to a linear model with a set of "
+"hyperplanes that separate the centers of high density of any pair of two "
+"classes."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:51
+msgid ""
+"For intermediate values, we can see on the second plot that good models "
+"can be found on a diagonal of ``C`` and ``gamma``. Smooth models (lower "
+"``gamma`` values) can be made more complex by selecting a larger number "
+"of support vectors (larger ``C`` values) hence the diagonal of good "
+"performing models."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:56
+msgid ""
+"Finally one can also observe that for some intermediate values of "
+"``gamma`` we get equally performing models when ``C`` becomes very large:"
+" it is not necessary to regularize by limiting the number of support "
+"vectors. The radius of the RBF kernel alone acts as a good structural "
+"regularizer. In practice though it might still be interesting to limit "
+"the number of support vectors with a lower value of ``C`` so as to favor "
+"models that use less memory and that are faster to predict."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:64
+msgid ""
+"We should also note that small differences in scores results from the "
+"random splits of the cross-validation procedure. Those spurious "
+"variations can be smoothed out by increasing the number of CV iterations "
+"``n_iter`` at the expense of compute time. Increasing the value number of"
+" ``C_range`` and ``gamma_range`` steps will increase the resolution of "
+"the hyper-parameter heat map."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:88
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:94
+msgid ""
+"**Python source code:** :download:`plot_rbf_parameters.py "
+"<plot_rbf_parameters.py>`"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_rbf_parameters.rst:99
+msgid ""
+"**Total running time of the example:**  13.51 seconds ( 0 minutes  13.51 "
+"seconds)"
+msgstr ""
+

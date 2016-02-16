@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:7
+msgid "Agglomerative clustering with different metrics"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:9
+msgid ""
+"Demonstrates the effect of different metrics on the hierarchical "
+"clustering."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:11
+msgid ""
+"The example is engineered to show the effect of the choice of different "
+"metrics. It is applied to waveforms, which can be seen as high-"
+"dimensional vector. Indeed, the difference between metrics is usually "
+"more pronounced in high dimension (in particular for euclidean and "
+"cityblock)."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:17
+msgid ""
+"We generate data from three groups of waveforms. Two of the waveforms "
+"(waveform 1 and waveform 2) are proportional one to the other. The cosine"
+" distance is invariant to a scaling of the data, as a result, it cannot "
+"distinguish these two waveforms. Thus even with no noise, clustering "
+"using this distance will not separate out waveform 1 and 2."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:23
+#, python-format
+msgid ""
+"We add observation noise to these waveforms. We generate very sparse "
+"noise: only 6% of the time points contain noise. As a result, the l1 norm"
+" of this noise (ie \"cityblock\" distance) is much smaller than it's l2 "
+"norm (\"euclidean\" distance). This can be seen on the inter-class "
+"distance matrices: the values on the diagonal, that characterize the "
+"spread of the class, are much bigger for the Euclidean distance than for "
+"the cityblock distance."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:31
+msgid ""
+"When we apply clustering to the data, we find that the clustering "
+"reflects what was in the distance matrices. Indeed, for the Euclidean "
+"distance, the classes are ill-separated because of the noise, and thus "
+"the clustering does not separate the waveforms. For the cityblock "
+"distance, the separation is good and the waveform classes are recovered. "
+"Finally, the cosine distance does not separate at all waveform 1 and 2, "
+"thus the clustering puts them in the same cluster."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:82
+msgid ""
+"**Python source code:** "
+":download:`plot_agglomerative_clustering_metrics.py "
+"<plot_agglomerative_clustering_metrics.py>`"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_agglomerative_clustering_metrics.rst:87
+msgid ""
+"**Total running time of the example:**  4.29 seconds ( 0 minutes  4.29 "
+"seconds)"
+msgstr ""
+

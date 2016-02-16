@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.feature_selection.chi2.rst:2
+msgid ":mod:`sklearn.feature_selection`.chi2"
+msgstr ""
+
+#: :3
+msgid "Compute chi-squared stats between each non-negative feature and class."
+msgstr ""
+
+#: :5
+msgid ""
+"This score can be used to select the n_features features with the highest"
+" values for the test chi-squared statistic from X, which must contain "
+"only non-negative features such as booleans or frequencies (e.g., term "
+"counts in document classification), relative to the classes."
+msgstr ""
+
+#: :10
+msgid ""
+"Recall that the chi-square test measures dependence between stochastic "
+"variables, so using this function \"weeds out\" the features that are the"
+" most likely to be independent of class and therefore irrelevant for "
+"classification."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <univariate_feature_selection>`."
+msgstr ""
+
+#: :19
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features_in)"
+msgstr ""
+
+#: :21
+msgid "Sample vectors."
+msgstr ""
+
+#: :23
+msgid "**y** : array-like, shape = (n_samples,)"
+msgstr ""
+
+#: :25
+msgid "Target vector (class labels)."
+msgstr ""
+
+#: :29
+msgid "**chi2** : array, shape = (n_features,)"
+msgstr ""
+
+#: :31
+msgid "chi2 statistics of each feature."
+msgstr ""
+
+#: :33
+msgid "**pval** : array, shape = (n_features,)"
+msgstr ""
+
+#: :35
+msgid "p-values of each feature."
+msgstr ""
+
+#: :40
+msgid ":obj:`f_classif`"
+msgstr ""
+
+#: :40
+msgid "ANOVA F-value between labe/feature for classification tasks."
+msgstr ""
+
+#: :42
+msgid ":obj:`f_regression`"
+msgstr ""
+
+#: :43
+msgid "F-value between label/feature for regression tasks."
+msgstr ""
+
+#: :46
+msgid "Notes"
+msgstr ""
+
+#: :47
+msgid "Complexity of this algorithm is O(n_classes * n_features)."
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.chi2.examples:3
+msgid "Examples using ``sklearn.feature_selection.chi2``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.chi2.examples:25
+msgid ":ref:`example_text_document_classification_20newsgroups.py`"
+msgstr ""
+

@@ -1,0 +1,519 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.covariance.EllipticEnvelope.rst:2
+msgid ":mod:`sklearn.covariance`.EllipticEnvelope"
+msgstr ""
+
+#: :3
+msgid "An object for detecting outliers in a Gaussian distributed dataset."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <outlier_detection>`."
+msgstr ""
+
+#: :9
+msgid "**store_precision** : bool"
+msgstr ""
+
+#: :11
+msgid "Specify if the estimated precision is stored."
+msgstr ""
+
+#: :13
+msgid "**assume_centered** : Boolean"
+msgstr ""
+
+#: :15
+msgid ""
+"If True, the support of robust location and covariance estimates is "
+"computed, and a covariance estimate is recomputed from it, without "
+"centering the data. Useful to work with data whose mean is significantly "
+"equal to zero but is not exactly zero. If False, the robust location and "
+"covariance are directly computed with the FastMCD algorithm without "
+"additional treatment."
+msgstr ""
+
+#: :23
+msgid "**support_fraction** : float, 0 < support_fraction < 1"
+msgstr ""
+
+#: :25
+msgid ""
+"The proportion of points to be included in the support of the raw MCD "
+"estimate. Default is ``None``, which implies that the minimum value of "
+"support_fraction will be used within the algorithm: `[n_sample + "
+"n_features + 1] / 2`."
+msgstr ""
+
+#: :30
+msgid "**contamination** : float, 0. < contamination < 0.5"
+msgstr ""
+
+#: :32
+msgid ""
+"The amount of contamination of the data set, i.e. the proportion of "
+"outliers in the data set."
+msgstr ""
+
+#: :37
+msgid "**`contamination`** : float, 0. < contamination < 0.5"
+msgstr ""
+
+#: :39
+msgid ""
+"The amount of contamination of the data set, i.e. the proportion of"
+"       outliers in the data set."
+msgstr ""
+
+#: :41
+msgid "**location_** : array-like, shape (n_features,)"
+msgstr ""
+
+#: :43
+msgid "Estimated robust location"
+msgstr ""
+
+#: :45
+msgid "**covariance_** : array-like, shape (n_features, n_features)"
+msgstr ""
+
+#: :47
+msgid "Estimated robust covariance matrix"
+msgstr ""
+
+#: :49
+msgid "**precision_** : array-like, shape (n_features, n_features)"
+msgstr ""
+
+#: :51
+msgid "Estimated pseudo inverse matrix. (stored only if store_precision is True)"
+msgstr ""
+
+#: :54
+msgid "**support_** : array-like, shape (n_samples,)"
+msgstr ""
+
+#: :56
+msgid ""
+"A mask of the observations that have been used to compute the robust "
+"estimates of location and shape."
+msgstr ""
+
+#: :61
+msgid ":obj:`EmpiricalCovariance`, :obj:`MinCovDet`"
+msgstr ""
+
+#: :64
+msgid "Notes"
+msgstr ""
+
+#: :65
+msgid ""
+"Outlier detection from covariance estimation may break or not perform "
+"well in high-dimensional settings. In particular, one will always take "
+"care to work with ``n_samples > n_features ** 2``."
+msgstr ""
+
+#: :70
+msgid "References"
+msgstr ""
+
+#: :71
+msgid ""
+"Rousseeuw, P.J., Van Driessen, K. \"A fast algorithm for the minimum "
+"covariance determinant estimator\" Technometrics 41(3), 212 (1999)"
+msgstr ""
+
+#: :77
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`correct_covariance "
+"<sklearn.covariance.EllipticEnvelope.correct_covariance>`\\ (data)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Apply a correction to raw Minimum Covariance Determinant estimates."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.covariance.EllipticEnvelope.decision_function>`\\ (X[, "
+"raw_values])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute the decision function of the given observations."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`error_norm <sklearn.covariance.EllipticEnvelope.error_norm>`\\ "
+"(comp_cov[, norm, scaling, squared])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Computes the Mean Squared Error between two covariance estimators."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.covariance.EllipticEnvelope.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.covariance.EllipticEnvelope.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_precision "
+"<sklearn.covariance.EllipticEnvelope.get_precision>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Getter for the precision matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`mahalanobis <sklearn.covariance.EllipticEnvelope.mahalanobis>`\\ "
+"(observations)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Computes the squared Mahalanobis distances of given observations."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.covariance.EllipticEnvelope.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Outlyingness of observations in X according to the fitted model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`reweight_covariance "
+"<sklearn.covariance.EllipticEnvelope.reweight_covariance>`\\ (data)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Re-weight raw Minimum Covariance Determinant estimates."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.covariance.EllipticEnvelope.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the mean accuracy on the given test data and labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.covariance.EllipticEnvelope.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid ""
+"Correction using the empirical correction factor suggested by Rousseeuw "
+"and Van Driessen in [Rouseeuw1984]_."
+msgstr ""
+
+#: :10 :11
+msgid "**data** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :12 :13
+msgid ""
+"The data matrix, with p features and n samples. The data set must be the "
+"one which was used to compute the raw estimates."
+msgstr ""
+
+#: :18
+msgid "**covariance_corrected** : array-like, shape (n_features, n_features)"
+msgstr ""
+
+#: :20
+msgid "Corrected robust covariance estimate."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid "**raw_values** : bool"
+msgstr ""
+
+#: :11
+msgid ""
+"Whether or not to consider raw Mahalanobis distances as the decision "
+"function. Must be False (default) for compatibility with the others "
+"outlier detection tools."
+msgstr ""
+
+#: :17
+msgid "**decision** : array-like, shape (n_samples, )"
+msgstr ""
+
+#: :19
+msgid ""
+"The values of the decision function for each observations. It is equal to"
+" the Mahalanobis distances if `raw_values` is True. By default "
+"(``raw_values=True``), it is equal to the cubic root of the shifted "
+"Mahalanobis distances. In that case, the threshold for being an outlier "
+"is 0, which ensures a compatibility with other outlier detection tools "
+"such as the One-Class SVM."
+msgstr ""
+
+#: :3
+msgid ""
+"Computes the Mean Squared Error between two covariance estimators. (In "
+"the sense of the Frobenius norm)."
+msgstr ""
+
+#: :8
+msgid "**comp_cov** : array-like, shape = [n_features, n_features]"
+msgstr ""
+
+#: :10
+msgid "The covariance to compare with."
+msgstr ""
+
+#: :12
+msgid "**norm** : str"
+msgstr ""
+
+#: :14
+msgid ""
+"The type of norm used to compute the error. Available error types: - "
+"'frobenius' (default): sqrt(tr(A^t.A)) - 'spectral': "
+"sqrt(max(eigenvalues(A^t.A)) where A is the error ``(comp_cov - "
+"self.covariance_)``."
+msgstr ""
+
+#: :19
+msgid "**scaling** : bool"
+msgstr ""
+
+#: :21
+msgid ""
+"If True (default), the squared error norm is divided by n_features. If "
+"False, the squared error norm is not rescaled."
+msgstr ""
+
+#: :24
+msgid "**squared** : bool"
+msgstr ""
+
+#: :26
+msgid ""
+"Whether to compute the squared error norm or the error norm. If True "
+"(default), the squared error norm is returned. If False, the error norm "
+"is returned."
+msgstr ""
+
+#: :32
+msgid "**The Mean Squared Error (in the sense of the Frobenius norm) between** :"
+msgstr ""
+
+#: :34
+msgid "**`self` and `comp_cov` covariance estimators.** :"
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**precision_** : array-like,"
+msgstr ""
+
+#: :9
+msgid "The precision matrix associated to the current covariance object."
+msgstr ""
+
+#: :7
+msgid "**observations** : array-like, shape = [n_observations, n_features]"
+msgstr ""
+
+#: :9
+msgid ""
+"The observations, the Mahalanobis distances of the which we compute. "
+"Observations are assumed to be drawn from the same distribution than the "
+"data used in fit."
+msgstr ""
+
+#: :15
+msgid "**mahalanobis_distance** : array, shape = [n_observations,]"
+msgstr ""
+
+#: :17
+msgid "Squared Mahalanobis distances of the observations."
+msgstr ""
+
+#: :7 :11
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :11
+msgid "**is_outliers** : array, shape = (n_samples, ), dtype = bool"
+msgstr ""
+
+#: :13
+msgid ""
+"For each observations, tells whether or not it should be considered as an"
+" outlier according to the fitted model."
+msgstr ""
+
+#: :16
+msgid "**threshold** : float,"
+msgstr ""
+
+#: :18
+msgid "The values of the less outlying point's decision function."
+msgstr ""
+
+#: :5
+msgid ""
+"Re-weight observations using Rousseeuw's method (equivalent to deleting "
+"outlying observations from the data set before computing location and "
+"covariance estimates). [Rouseeuw1984]_"
+msgstr ""
+
+#: :19
+msgid "**location_reweighted** : array-like, shape (n_features, )"
+msgstr ""
+
+#: :21
+msgid "Re-weighted robust location estimate."
+msgstr ""
+
+#: :23
+msgid "**covariance_reweighted** : array-like, shape (n_features, n_features)"
+msgstr ""
+
+#: :25
+msgid "Re-weighted robust covariance estimate."
+msgstr ""
+
+#: :27
+msgid "**support_reweighted** : array-like, type boolean, shape (n_samples,)"
+msgstr ""
+
+#: :29
+msgid ""
+"A mask of the observations that have been used to compute the re-weighted"
+" robust location and covariance estimates."
+msgstr ""
+
+#: :5
+msgid ""
+"In multi-label classification, this is the subset accuracy which is a "
+"harsh metric since you require for each sample that each label set be "
+"correctly predicted."
+msgstr ""
+
+#: :13
+msgid "Test samples."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :17
+msgid "True labels for X."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :21
+msgid "Sample weights."
+msgstr ""
+
+#: :25
+msgid "**score** : float"
+msgstr ""
+
+#: :27
+msgid "Mean accuracy of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.EllipticEnvelope.examples:3
+msgid "Examples using ``sklearn.covariance.EllipticEnvelope``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.EllipticEnvelope.examples:25
+msgid ":ref:`example_applications_plot_outlier_detection_housing.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.EllipticEnvelope.examples:45
+msgid ":ref:`example_covariance_plot_outlier_detection.py`"
+msgstr ""
+

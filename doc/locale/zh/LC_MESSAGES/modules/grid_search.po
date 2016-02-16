@@ -1,0 +1,527 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/grid_search.rst:7
+msgid "Grid Search: Searching for estimator parameters"
+msgstr ""
+
+#: ../../modules/grid_search.rst:9
+msgid ""
+"Parameters that are not directly learnt within estimators can be set by "
+"searching a parameter space for the best :ref:`cross_validation` score. "
+"Typical examples include ``C``, ``kernel`` and ``gamma`` for Support "
+"Vector Classifier, ``alpha`` for Lasso, etc."
+msgstr ""
+
+#: ../../modules/grid_search.rst:14
+msgid ""
+"Any parameter provided when constructing an estimator may be optimized in"
+" this manner.  Specifically, to find the names and current values for all"
+" parameters for a given estimator, use::"
+msgstr ""
+
+#: ../../modules/grid_search.rst:20
+msgid ""
+"Such parameters are often referred to as *hyperparameters* (particularly "
+"in Bayesian learning), distinguishing them from the parameters optimised "
+"in a machine learning procedure."
+msgstr ""
+
+#: ../../modules/grid_search.rst:24
+msgid "A search consists of:"
+msgstr ""
+
+#: ../../modules/grid_search.rst:26
+msgid "an estimator (regressor or classifier such as ``sklearn.svm.SVC()``);"
+msgstr ""
+
+#: ../../modules/grid_search.rst:27
+msgid "a parameter space;"
+msgstr ""
+
+#: ../../modules/grid_search.rst:28
+msgid "a method for searching or sampling candidates;"
+msgstr ""
+
+#: ../../modules/grid_search.rst:29
+msgid "a cross-validation scheme; and"
+msgstr ""
+
+#: ../../modules/grid_search.rst:30
+msgid "a :ref:`score function <gridsearch_scoring>`."
+msgstr ""
+
+#: ../../modules/grid_search.rst:32
+msgid ""
+"Some models allow for specialized, efficient parameter search strategies,"
+" :ref:`outlined below <alternative_cv>`. Two generic approaches to "
+"sampling search candidates are provided in scikit-learn: for given "
+"values, :class:`GridSearchCV` exhaustively considers all parameter "
+"combinations, while :class:`RandomizedSearchCV` can sample a given number"
+" of candidates from a parameter space with a specified distribution. "
+"After describing these tools we detail :ref:`best practice "
+"<grid_search_tips>` applicable to both approaches."
+msgstr ""
+
+#: ../../modules/grid_search.rst:42
+msgid "Exhaustive Grid Search"
+msgstr ""
+
+#: ../../modules/grid_search.rst:44
+msgid ""
+"The grid search provided by :class:`GridSearchCV` exhaustively generates "
+"candidates from a grid of parameter values specified with the "
+"``param_grid`` parameter. For instance, the following ``param_grid``::"
+msgstr ""
+
+#: ../../modules/grid_search.rst:53
+msgid ""
+"specifies that two grids should be explored: one with a linear kernel and"
+" C values in [1, 10, 100, 1000], and the second one with an RBF kernel, "
+"and the cross-product of C values ranging in [1, 10, 100, 1000] and gamma"
+" values in [0.001, 0.0001]."
+msgstr ""
+
+#: ../../modules/grid_search.rst:58
+msgid ""
+"The :class:`GridSearchCV` instance implements the usual estimator API: "
+"when \"fitting\" it on a dataset all the possible combinations of "
+"parameter values are evaluated and the best combination is retained."
+msgstr ""
+
+#: ../../modules/grid_search.rst
+msgid "Examples:"
+msgstr ""
+
+#: ../../modules/grid_search.rst:66
+msgid ""
+"See :ref:`example_model_selection_grid_search_digits.py` for an example "
+"of Grid Search computation on the digits dataset."
+msgstr ""
+
+#: ../../modules/grid_search.rst:69
+msgid ""
+"See :ref:`example_model_selection_grid_search_text_feature_extraction.py`"
+" for an example of Grid Search coupling parameters from a text documents "
+"feature extractor (n-gram count vectorizer and TF-IDF transformer) with a"
+" classifier (here a linear SVM trained with SGD with either elastic net "
+"or L2 penalty) using a :class:`pipeline.Pipeline` instance."
+msgstr ""
+
+#: ../../modules/grid_search.rst:78
+msgid "Randomized Parameter Optimization"
+msgstr ""
+
+#: ../../modules/grid_search.rst:79
+msgid ""
+"While using a grid of parameter settings is currently the most widely "
+"used method for parameter optimization, other search methods have more "
+"favourable properties. :class:`RandomizedSearchCV` implements a "
+"randomized search over parameters, where each setting is sampled from a "
+"distribution over possible parameter values. This has two main benefits "
+"over an exhaustive search:"
+msgstr ""
+
+#: ../../modules/grid_search.rst:86
+msgid ""
+"A budget can be chosen independent of the number of parameters and "
+"possible values."
+msgstr ""
+
+#: ../../modules/grid_search.rst:87
+msgid ""
+"Adding parameters that do not influence the performance does not decrease"
+" efficiency."
+msgstr ""
+
+#: ../../modules/grid_search.rst:89
+msgid ""
+"Specifying how parameters should be sampled is done using a dictionary, "
+"very similar to specifying parameters for :class:`GridSearchCV`. "
+"Additionally, a computation budget, being the number of sampled "
+"candidates or sampling iterations, is specified using the ``n_iter`` "
+"parameter. For each parameter, either a distribution over possible values"
+" or a list of discrete choices (which will be sampled uniformly) can be "
+"specified::"
+msgstr ""
+
+#: ../../modules/grid_search.rst:99
+msgid ""
+"This example uses the ``scipy.stats`` module, which contains many useful "
+"distributions for sampling parameters, such as ``expon``, ``gamma``, "
+"``uniform`` or ``randint``. In principle, any function can be passed that"
+" provides a ``rvs`` (random variate sample) method to sample a value. A "
+"call to the ``rvs`` function should provide independent random samples "
+"from possible parameter values on consecutive calls."
+msgstr ""
+
+#: ../../modules/grid_search.rst:109
+msgid ""
+"The distributions in ``scipy.stats`` do not allow specifying a random "
+"state. Instead, they use the global numpy random state, that can be "
+"seeded via ``np.random.seed`` or set using ``np.random.set_state``."
+msgstr ""
+
+#: ../../modules/grid_search.rst:113
+msgid ""
+"For continuous parameters, such as ``C`` above, it is important to "
+"specify a continuous distribution to take full advantage of the "
+"randomization. This way, increasing ``n_iter`` will always lead to a "
+"finer search."
+msgstr ""
+
+#: ../../modules/grid_search.rst:119
+msgid ""
+":ref:`example_model_selection_randomized_search.py` compares the usage "
+"and efficiency of randomized search and grid search."
+msgstr ""
+
+#: ../../modules/grid_search.rst
+msgid "References:"
+msgstr ""
+
+#: ../../modules/grid_search.rst:124
+msgid ""
+"Bergstra, J. and Bengio, Y., Random search for hyper-parameter "
+"optimization, The Journal of Machine Learning Research (2012)"
+msgstr ""
+
+#: ../../modules/grid_search.rst:131
+msgid "Tips for parameter search"
+msgstr ""
+
+#: ../../modules/grid_search.rst:136
+msgid "Specifying an objective metric"
+msgstr ""
+
+#: ../../modules/grid_search.rst:138
+msgid ""
+"By default, parameter search uses the ``score`` function of the estimator"
+" to evaluate a parameter setting. These are the "
+":func:`sklearn.metrics.accuracy_score` for classification and "
+":func:`sklearn.metrics.r2_score` for regression.  For some applications, "
+"other scoring functions are better suited (for example in unbalanced "
+"classification, the accuracy score is often uninformative). An "
+"alternative scoring function can be specified via the ``scoring`` "
+"parameter to :class:`GridSearchCV`, :class:`RandomizedSearchCV` and many "
+"of the specialized cross-validation tools described below. See "
+":ref:`scoring_parameter` for more details."
+msgstr ""
+
+#: ../../modules/grid_search.rst:150
+msgid "Composite estimators and parameter spaces"
+msgstr ""
+
+#: ../../modules/grid_search.rst:152
+msgid ""
+":ref:`pipeline` describes building composite estimators whose parameter "
+"space can be searched with these tools."
+msgstr ""
+
+#: ../../modules/grid_search.rst:156
+msgid "Model selection: development and evaluation"
+msgstr ""
+
+#: ../../modules/grid_search.rst:158
+msgid ""
+"Model selection by evaluating various parameter settings can be seen as a"
+" way to use the labeled data to \"train\" the parameters of the grid."
+msgstr ""
+
+#: ../../modules/grid_search.rst:161
+msgid ""
+"When evaluating the resulting model it is important to do it on held-out "
+"samples that were not seen during the grid search process: it is "
+"recommended to split the data into a **development set** (to be fed to "
+"the ``GridSearchCV`` instance) and an **evaluation set** to compute "
+"performance metrics."
+msgstr ""
+
+#: ../../modules/grid_search.rst:167
+msgid ""
+"This can be done by using the :func:`cross_validation.train_test_split` "
+"utility function."
+msgstr ""
+
+#: ../../modules/grid_search.rst:171
+msgid "Parallelism"
+msgstr ""
+
+#: ../../modules/grid_search.rst:173
+msgid ""
+":class:`GridSearchCV` and :class:`RandomizedSearchCV` evaluate each "
+"parameter setting independently.  Computations can be run in parallel if "
+"your OS supports it, by using the keyword ``n_jobs=-1``. See function "
+"signature for more details."
+msgstr ""
+
+#: ../../modules/grid_search.rst:179
+msgid "Robustness to failure"
+msgstr ""
+
+#: ../../modules/grid_search.rst:181
+msgid ""
+"Some parameter settings may result in a failure to ``fit`` one or more "
+"folds of the data.  By default, this will cause the entire search to "
+"fail, even if some parameter settings could be fully evaluated. Setting "
+"``error_score=0`` (or `=np.NaN`) will make the procedure robust to such "
+"failure, issuing a warning and setting the score for that fold to 0 (or "
+"`NaN`), but completing the search."
+msgstr ""
+
+#: ../../modules/grid_search.rst:191
+msgid "Alternatives to brute force parameter search"
+msgstr ""
+
+#: ../../modules/grid_search.rst:194
+msgid "Model specific cross-validation"
+msgstr ""
+
+#: ../../modules/grid_search.rst:197
+msgid ""
+"Some models can fit data for a range of value of some parameter almost as"
+" efficiently as fitting the estimator for a single value of the "
+"parameter. This feature can be leveraged to perform a more efficient "
+"cross-validation used for model selection of this parameter."
+msgstr ""
+
+#: ../../modules/grid_search.rst:202
+msgid ""
+"The most common parameter amenable to this strategy is the parameter "
+"encoding the strength of the regularizer. In this case we say that we "
+"compute the **regularization path** of the estimator."
+msgstr ""
+
+#: ../../modules/grid_search.rst:206
+msgid "Here is the list of such models:"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.ElasticNetCV <sklearn.linear_model.ElasticNetCV>`\\ "
+"([l1_ratio, eps, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Elastic Net model with iterative fitting along a regularization path"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LarsCV <sklearn.linear_model.LarsCV>`\\ "
+"([fit_intercept, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Cross-validated Least Angle Regression model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LassoCV <sklearn.linear_model.LassoCV>`\\ ([eps, "
+"n_alphas, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Lasso linear model with iterative fitting along a regularization path"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LassoLarsCV <sklearn.linear_model.LassoLarsCV>`\\ "
+"([fit_intercept, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Cross-validated Lasso, using the LARS algorithm"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LogisticRegressionCV "
+"<sklearn.linear_model.LogisticRegressionCV>`\\ ([Cs, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Logistic Regression CV (aka logit, MaxEnt) classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.MultiTaskElasticNetCV "
+"<sklearn.linear_model.MultiTaskElasticNetCV>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Multi-task L1/L2 ElasticNet with built-in cross-validation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.MultiTaskLassoCV "
+"<sklearn.linear_model.MultiTaskLassoCV>`\\ ([eps, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Multi-task L1/L2 Lasso with built-in cross-validation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.OrthogonalMatchingPursuitCV "
+"<sklearn.linear_model.OrthogonalMatchingPursuitCV>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Cross-validated Orthogonal Matching Pursuit model (OMP)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RidgeCV <sklearn.linear_model.RidgeCV>`\\ ([alphas, "
+"...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Ridge regression with built-in cross-validation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.RidgeClassifierCV "
+"<sklearn.linear_model.RidgeClassifierCV>`\\ ([alphas, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Ridge classifier with built-in cross-validation."
+msgstr ""
+
+#: ../../modules/grid_search.rst:227
+msgid "Information Criterion"
+msgstr ""
+
+#: ../../modules/grid_search.rst:229
+msgid ""
+"Some models can offer an information-theoretic closed-form formula of the"
+" optimal estimate of the regularization parameter by computing a single "
+"regularization path (instead of several when using cross-validation)."
+msgstr ""
+
+#: ../../modules/grid_search.rst:233
+msgid ""
+"Here is the list of models benefitting from the Aikike Information "
+"Criterion (AIC) or the Bayesian Information Criterion (BIC) for automated"
+" model selection:"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`linear_model.LassoLarsIC <sklearn.linear_model.LassoLarsIC>`\\ "
+"([criterion, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Lasso model fit with Lars using BIC or AIC for model selection"
+msgstr ""
+
+#: ../../modules/grid_search.rst:247
+msgid "Out of Bag Estimates"
+msgstr ""
+
+#: ../../modules/grid_search.rst:249
+msgid ""
+"When using ensemble methods base upon bagging, i.e. generating new "
+"training sets using sampling with replacement, part of the training set "
+"remains unused.  For each classifier in the ensemble, a different part of"
+" the training set is left out."
+msgstr ""
+
+#: ../../modules/grid_search.rst:254
+msgid ""
+"This left out portion can be used to estimate the generalization error "
+"without having to rely on a separate validation set.  This estimate comes"
+" \"for free\" as no additional data is needed and can be used for model "
+"selection."
+msgstr ""
+
+#: ../../modules/grid_search.rst:259
+msgid "This is currently implemented in the following classes:"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.RandomForestClassifier "
+"<sklearn.ensemble.RandomForestClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A random forest classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.RandomForestRegressor "
+"<sklearn.ensemble.RandomForestRegressor>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "A random forest regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.ExtraTreesClassifier "
+"<sklearn.ensemble.ExtraTreesClassifier>`\\ ([...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An extra-trees classifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.ExtraTreesRegressor "
+"<sklearn.ensemble.ExtraTreesRegressor>`\\ ([n_estimators, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "An extra-trees regressor."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.GradientBoostingClassifier "
+"<sklearn.ensemble.GradientBoostingClassifier>`\\ ([loss, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Gradient Boosting for classification."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`ensemble.GradientBoostingRegressor "
+"<sklearn.ensemble.GradientBoostingRegressor>`\\ ([loss, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Gradient Boosting for regression."
+msgstr ""
+

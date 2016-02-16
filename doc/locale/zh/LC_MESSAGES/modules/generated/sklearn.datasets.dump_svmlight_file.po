@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.dump_svmlight_file.rst:2
+msgid ":mod:`sklearn.datasets`.dump_svmlight_file"
+msgstr ""
+
+#: :3
+msgid "Dump the dataset in svmlight / libsvm file format."
+msgstr ""
+
+#: :5
+msgid ""
+"This format is a text-based format, with one sample per line. It does not"
+" store zero valued features hence is suitable for sparse dataset."
+msgstr ""
+
+#: :8
+msgid ""
+"The first element of each line can be used to store a target variable to "
+"predict."
+msgstr ""
+
+#: :13
+msgid "**X** : {array-like, sparse matrix}, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :15
+msgid ""
+"Training vectors, where n_samples is the number of samples and n_features"
+" is the number of features."
+msgstr ""
+
+#: :18
+msgid "**y** : array-like, shape = [n_samples] or [n_samples, n_labels]"
+msgstr ""
+
+#: :20
+msgid ""
+"Target values. Class labels must be an integer or float, or array-like "
+"objects of integer or float for multilabel classifications."
+msgstr ""
+
+#: :23
+msgid "**f** : string or file-like in binary mode"
+msgstr ""
+
+#: :25
+msgid ""
+"If string, specifies the path that will contain the data. If file-like, "
+"data will be written to f. f should be opened in binary mode."
+msgstr ""
+
+#: :29
+msgid "**zero_based** : boolean, optional"
+msgstr ""
+
+#: :31
+msgid ""
+"Whether column indices should be written zero-based (True) or one-based "
+"(False)."
+msgstr ""
+
+#: :34
+msgid "**comment** : string, optional"
+msgstr ""
+
+#: :36
+msgid ""
+"Comment to insert at the top of the file. This should be either a Unicode"
+" string, which will be encoded as UTF-8, or an ASCII byte string. If a "
+"comment is given, then it will be preceded by one that identifies the "
+"file as having been dumped by scikit-learn. Note that not all tools grok "
+"comments in SVMlight files."
+msgstr ""
+
+#: :43
+msgid "**query_id** : array-like, shape = [n_samples]"
+msgstr ""
+
+#: :45
+msgid "Array containing pairwise preference constraints (qid in svmlight format)."
+msgstr ""
+
+#: :48
+msgid "**multilabel: boolean, optional** :"
+msgstr ""
+
+#: :50
+msgid ""
+"Samples may have several labels each (see "
+"http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multilabel.html)"
+msgstr ""
+
+#: :53
+msgid "parameter *multilabel* to support multilabel datasets."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.dump_svmlight_file.examples:3
+msgid "Examples using ``sklearn.datasets.dump_svmlight_file``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.dump_svmlight_file.examples:25
+msgid ":ref:`example_applications_svm_gui.py`"
+msgstr ""
+

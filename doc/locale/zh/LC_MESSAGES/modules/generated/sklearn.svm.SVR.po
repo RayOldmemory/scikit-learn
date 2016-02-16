@@ -1,0 +1,447 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.svm.SVR.rst:2
+msgid ":mod:`sklearn.svm`.SVR"
+msgstr ""
+
+#: :3
+msgid "Epsilon-Support Vector Regression."
+msgstr ""
+
+#: :5
+msgid "The free parameters in the model are C and epsilon."
+msgstr ""
+
+#: :7
+msgid "The implementation is based on libsvm."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <svm_regression>`."
+msgstr ""
+
+#: :13
+msgid "**C** : float, optional (default=1.0)"
+msgstr ""
+
+#: :15
+msgid "Penalty parameter C of the error term."
+msgstr ""
+
+#: :17
+msgid "**epsilon** : float, optional (default=0.1)"
+msgstr ""
+
+#: :19
+msgid ""
+"Epsilon in the epsilon-SVR model. It specifies the epsilon-tube within "
+"which no penalty is associated in the training loss function with points "
+"predicted within a distance epsilon from the actual value."
+msgstr ""
+
+#: :24
+msgid "**kernel** : string, optional (default='rbf')"
+msgstr ""
+
+#: :26
+msgid ""
+"Specifies the kernel type to be used in the algorithm. It must be one of "
+"'linear', 'poly', 'rbf', 'sigmoid', 'precomputed' or a callable. If none "
+"is given, 'rbf' will be used. If a callable is given it is used to "
+"precompute the kernel matrix."
+msgstr ""
+
+#: :32
+msgid "**degree** : int, optional (default=3)"
+msgstr ""
+
+#: :34
+msgid ""
+"Degree of the polynomial kernel function ('poly'). Ignored by all other "
+"kernels."
+msgstr ""
+
+#: :37
+msgid "**gamma** : float, optional (default='auto')"
+msgstr ""
+
+#: :39
+msgid ""
+"Kernel coefficient for 'rbf', 'poly' and 'sigmoid'. If gamma is 'auto' "
+"then 1/n_features will be used instead."
+msgstr ""
+
+#: :42
+msgid "**coef0** : float, optional (default=0.0)"
+msgstr ""
+
+#: :44
+msgid ""
+"Independent term in kernel function. It is only significant in 'poly' and"
+" 'sigmoid'."
+msgstr ""
+
+#: :47
+msgid "**shrinking** : boolean, optional (default=True)"
+msgstr ""
+
+#: :49
+msgid "Whether to use the shrinking heuristic."
+msgstr ""
+
+#: :51
+msgid "**tol** : float, optional (default=1e-3)"
+msgstr ""
+
+#: :53
+msgid "Tolerance for stopping criterion."
+msgstr ""
+
+#: :55
+msgid "**cache_size** : float, optional"
+msgstr ""
+
+#: :57
+msgid "Specify the size of the kernel cache (in MB)."
+msgstr ""
+
+#: :59
+msgid "**verbose** : bool, default: False"
+msgstr ""
+
+#: :61
+msgid ""
+"Enable verbose output. Note that this setting takes advantage of a per-"
+"process runtime setting in libsvm that, if enabled, may not work properly"
+" in a multithreaded context."
+msgstr ""
+
+#: :65
+msgid "**max_iter** : int, optional (default=-1)"
+msgstr ""
+
+#: :67
+msgid "Hard limit on iterations within solver, or -1 for no limit."
+msgstr ""
+
+#: :71
+msgid "**support_** : array-like, shape = [n_SV]"
+msgstr ""
+
+#: :73
+msgid "Indices of support vectors."
+msgstr ""
+
+#: :75
+msgid "**support_vectors_** : array-like, shape = [nSV, n_features]"
+msgstr ""
+
+#: :77
+msgid "Support vectors."
+msgstr ""
+
+#: :79
+msgid "**dual_coef_** : array, shape = [1, n_SV]"
+msgstr ""
+
+#: :81
+msgid "Coefficients of the support vector in the decision function."
+msgstr ""
+
+#: :83
+msgid "**coef_** : array, shape = [1, n_features]"
+msgstr ""
+
+#: :85
+msgid ""
+"Weights assigned to the features (coefficients in the primal problem). "
+"This is only available in the case of a linear kernel."
+msgstr ""
+
+#: :88
+msgid ""
+"`coef_` is readonly property derived from `dual_coef_` and "
+"`support_vectors_`."
+msgstr ""
+
+#: :91
+msgid "**intercept_** : array, shape = [1]"
+msgstr ""
+
+#: :93
+msgid "Constants in decision function."
+msgstr ""
+
+#: :98
+msgid ":obj:`NuSVR`"
+msgstr ""
+
+#: :98
+msgid ""
+"Support Vector Machine for regression implemented using libsvm using a "
+"parameter to control the number of support vectors."
+msgstr ""
+
+#: :100
+msgid ":obj:`LinearSVR`"
+msgstr ""
+
+#: :101
+msgid ""
+"Scalable Linear Support Vector Machine for regression implemented using "
+"liblinear."
+msgstr ""
+
+#: :104
+msgid "Examples"
+msgstr ""
+
+#: :117
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function <sklearn.svm.SVR.decision_function>`\\ (\\*args, "
+"\\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "DEPRECATED:  and will be removed in 0.19"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.svm.SVR.fit>`\\ (X, y[, sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the SVM model according to the given training data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.svm.SVR.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.svm.SVR.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Perform regression on samples in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.svm.SVR.score>`\\ (X, y[, sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`set_params <sklearn.svm.SVR.set_params>`\\ (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid "Distance of the samples X to the separating hyperplane."
+msgstr ""
+
+#: :9
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :11
+msgid ""
+"For kernel=\"precomputed\", the expected shape of X is [n_samples_test, "
+"n_samples_train]."
+msgstr ""
+
+#: :16
+msgid "**X** : array-like, shape (n_samples, n_class * (n_class-1) / 2)"
+msgstr ""
+
+#: :18
+msgid "Returns the decision function of the sample for each class in the model."
+msgstr ""
+
+#: :7 :9
+msgid "**X** : {array-like, sparse matrix}, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid ""
+"Training vectors, where n_samples is the number of samples and n_features"
+" is the number of features. For kernel=\"precomputed\", the expected "
+"shape of X is (n_samples, n_samples)."
+msgstr ""
+
+#: :14
+msgid "**y** : array-like, shape (n_samples,)"
+msgstr ""
+
+#: :16
+msgid "Target values (class labels in classification, real numbers in regression)"
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape (n_samples,)"
+msgstr ""
+
+#: :21
+msgid ""
+"Per-sample weights. Rescale C per sample. Higher weights force the "
+"classifier to put more emphasis on these points."
+msgstr ""
+
+#: :26
+msgid "**self** : object"
+msgstr ""
+
+#: :28
+msgid "Returns self."
+msgstr ""
+
+#: :31
+msgid "Notes"
+msgstr ""
+
+#: :32
+msgid ""
+"If X and y are not C-ordered and contiguous arrays of np.float64 and X is"
+" not a scipy.sparse.csr_matrix, X and/or y may be copied."
+msgstr ""
+
+#: :35
+msgid ""
+"If X is a dense array, then the other methods will not support sparse "
+"matrices as input."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid "For an one-class model, +1 or -1 is returned."
+msgstr ""
+
+#: :11
+msgid ""
+"For kernel=\"precomputed\", the expected shape of X is (n_samples_test, "
+"n_samples_train)."
+msgstr ""
+
+#: :16
+msgid "**y_pred** : array, shape (n_samples,)"
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.svm.SVR.examples:3
+msgid "Examples using ``sklearn.svm.SVR``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.svm.SVR.examples:25
+msgid ":ref:`example_plot_kernel_ridge_regression.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.svm.SVR.examples:45
+msgid ":ref:`example_applications_plot_prediction_latency.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.svm.SVR.examples:65
+msgid ":ref:`example_svm_plot_svm_regression.py`"
+msgstr ""
+

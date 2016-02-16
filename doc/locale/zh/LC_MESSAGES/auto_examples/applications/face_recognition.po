@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/face_recognition.rst:8
+msgid "Faces recognition example using eigenfaces and SVMs"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:10
+msgid ""
+"The dataset used in this example is a preprocessed excerpt of the "
+"\"Labeled Faces in the Wild\", aka LFW_:"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:13
+msgid "http://vis-www.cs.umass.edu/lfw/lfw-funneled.tgz (233MB)"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:17
+msgid "Expected results for the top 5 most represented people in the dataset:"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:22
+msgid "Ariel Sharon"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:22
+#: ../../auto_examples/applications/face_recognition.rst:24
+#: ../../auto_examples/applications/face_recognition.rst:27
+msgid "0.67"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:22
+msgid "0.92"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:22
+msgid "0.77"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:22
+msgid "13"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:23
+msgid "Colin Powell"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:23
+#: ../../auto_examples/applications/face_recognition.rst:28
+msgid "0.75"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:23
+#: ../../auto_examples/applications/face_recognition.rst:24
+msgid "0.78"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:23
+#: ../../auto_examples/applications/face_recognition.rst:26
+msgid "0.76"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:23
+msgid "60"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:24
+msgid "Donald Rumsfeld"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:24
+msgid "0.72"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:24
+msgid "27"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:25
+msgid "George W Bush"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:25
+msgid "0.86"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:25
+msgid "146"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:26
+msgid "Gerhard Schroeder"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:26
+msgid "25"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:27
+msgid "Hugo Chavez"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:27
+msgid "15"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:28
+msgid "Tony Blair"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:28
+msgid "0.81"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:28
+msgid "0.69"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:28
+msgid "36"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:30
+msgid "avg / total"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:30
+msgid "0.80"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:30
+msgid "322"
+msgstr ""
+
+#: ../../auto_examples/applications/face_recognition.rst:35
+msgid ""
+"**Python source code:** :download:`face_recognition.py "
+"<face_recognition.py>`"
+msgstr ""
+

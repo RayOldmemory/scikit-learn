@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:8
+msgid "Hierarchical clustering: structured vs unstructured ward"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:10
+msgid ""
+"Example builds a swiss roll dataset and runs hierarchical clustering on "
+"their position."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:13
+msgid "For more information, see :ref:`hierarchical_clustering`."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:15
+msgid ""
+"In a first step, the hierarchical clustering is performed without "
+"connectivity constraints on the structure and is solely based on "
+"distance, whereas in a second step the clustering is restricted to the "
+"k-Nearest Neighbors graph: it's a hierarchical clustering with structure "
+"prior."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:20
+msgid ""
+"Some of the clusters learned without connectivity constraints do not "
+"respect the structure of the swiss roll and extend across different folds"
+" of the manifolds. On the opposite, when opposing connectivity "
+"constraints, the clusters form a nice parcellation of the swiss roll."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:41
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:52
+msgid ""
+"**Python source code:** "
+":download:`plot_ward_structured_vs_unstructured.py "
+"<plot_ward_structured_vs_unstructured.py>`"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_ward_structured_vs_unstructured.rst:57
+msgid ""
+"**Total running time of the example:**  6.67 seconds ( 0 minutes  6.67 "
+"seconds)"
+msgstr ""
+

@@ -1,0 +1,531 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.ensemble.BaggingClassifier.rst:2
+msgid ":mod:`sklearn.ensemble`.BaggingClassifier"
+msgstr ""
+
+#: :3
+msgid "A Bagging classifier."
+msgstr ""
+
+#: :5
+msgid ""
+"A Bagging classifier is an ensemble meta-estimator that fits base "
+"classifiers each on random subsets of the original dataset and then "
+"aggregate their individual predictions (either by voting or by averaging)"
+" to form a final prediction. Such a meta-estimator can typically be used "
+"as a way to reduce the variance of a black-box estimator (e.g., a "
+"decision tree), by introducing randomization into its construction "
+"procedure and then making an ensemble out of it."
+msgstr ""
+
+#: :13
+msgid ""
+"This algorithm encompasses several works from the literature. When random"
+" subsets of the dataset are drawn as random subsets of the samples, then "
+"this algorithm is known as Pasting [R125]_. If samples are drawn with "
+"replacement, then the method is known as Bagging [R126]_. When random "
+"subsets of the dataset are drawn as random subsets of the features, then "
+"the method is known as Random Subspaces [R127]_. Finally, when base "
+"estimators are built on subsets of both samples and features, then the "
+"method is known as Random Patches [R128]_."
+msgstr ""
+
+#: :22
+msgid "Read more in the :ref:`User Guide <bagging>`."
+msgstr ""
+
+#: :26
+msgid "**base_estimator** : object or None, optional (default=None)"
+msgstr ""
+
+#: :28
+msgid ""
+"The base estimator to fit on random subsets of the dataset. If None, then"
+" the base estimator is a decision tree."
+msgstr ""
+
+#: :31
+msgid "**n_estimators** : int, optional (default=10)"
+msgstr ""
+
+#: :33
+msgid "The number of base estimators in the ensemble."
+msgstr ""
+
+#: :35
+msgid "**max_samples** : int or float, optional (default=1.0)"
+msgstr ""
+
+#: :39
+msgid "The number of samples to draw from X to train each base estimator."
+msgstr ""
+
+#: :38
+msgid "If int, then draw `max_samples` samples."
+msgstr ""
+
+#: :39
+msgid "If float, then draw `max_samples * X.shape[0]` samples."
+msgstr ""
+
+#: :41
+msgid "**max_features** : int or float, optional (default=1.0)"
+msgstr ""
+
+#: :45
+msgid "The number of features to draw from X to train each base estimator."
+msgstr ""
+
+#: :44
+msgid "If int, then draw `max_features` features."
+msgstr ""
+
+#: :45
+msgid "If float, then draw `max_features * X.shape[1]` features."
+msgstr ""
+
+#: :47
+msgid "**bootstrap** : boolean, optional (default=True)"
+msgstr ""
+
+#: :49
+msgid "Whether samples are drawn with replacement."
+msgstr ""
+
+#: :51
+msgid "**bootstrap_features** : boolean, optional (default=False)"
+msgstr ""
+
+#: :53
+msgid "Whether features are drawn with replacement."
+msgstr ""
+
+#: :55
+msgid "**oob_score** : bool"
+msgstr ""
+
+#: :57
+msgid "Whether to use out-of-bag samples to estimate the generalization error."
+msgstr ""
+
+#: :60
+msgid "**warm_start** : bool, optional (default=False)"
+msgstr ""
+
+#: :62
+msgid ""
+"When set to True, reuse the solution of the previous call to fit and add "
+"more estimators to the ensemble, otherwise, just fit a whole new "
+"ensemble."
+msgstr ""
+
+#: :66
+msgid "*warm_start* constructor parameter."
+msgstr ""
+
+#: :69
+msgid "**n_jobs** : int, optional (default=1)"
+msgstr ""
+
+#: :71
+msgid ""
+"The number of jobs to run in parallel for both `fit` and `predict`. If "
+"-1, then the number of jobs is set to the number of cores."
+msgstr ""
+
+#: :74
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :76
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :81
+msgid "**verbose** : int, optional (default=0)"
+msgstr ""
+
+#: :83
+msgid "Controls the verbosity of the building process."
+msgstr ""
+
+#: :87
+msgid "**base_estimator_** : list of estimators"
+msgstr ""
+
+#: :89
+msgid "The base estimator from which the ensemble is grown."
+msgstr ""
+
+#: :91
+msgid "**estimators_** : list of estimators"
+msgstr ""
+
+#: :93
+msgid "The collection of fitted base estimators."
+msgstr ""
+
+#: :95
+msgid "**estimators_samples_** : list of arrays"
+msgstr ""
+
+#: :97
+msgid ""
+"The subset of drawn samples (i.e., the in-bag samples) for each base "
+"estimator."
+msgstr ""
+
+#: :100
+msgid "**estimators_features_** : list of arrays"
+msgstr ""
+
+#: :102
+msgid "The subset of drawn features for each base estimator."
+msgstr ""
+
+#: :104
+msgid "**classes_** : array of shape = [n_classes]"
+msgstr ""
+
+#: :106
+msgid "The classes labels."
+msgstr ""
+
+#: :108
+msgid "**n_classes_** : int or list"
+msgstr ""
+
+#: :110
+msgid "The number of classes."
+msgstr ""
+
+#: :112
+msgid "**oob_score_** : float"
+msgstr ""
+
+#: :114
+msgid "Score of the training dataset obtained using an out-of-bag estimate."
+msgstr ""
+
+#: :116
+msgid "**oob_decision_function_** : array of shape = [n_samples, n_classes]"
+msgstr ""
+
+#: :118
+msgid ""
+"Decision function computed with out-of-bag estimate on the training set. "
+"If n_estimators is small it might be possible that a data point was never"
+" left out during the bootstrap. In this case, `oob_decision_function_` "
+"might contain NaN."
+msgstr ""
+
+#: :124
+msgid "References"
+msgstr ""
+
+#: :125
+msgid ""
+"L. Breiman, \"Pasting small votes for classification in large databases "
+"and on-line\", Machine Learning, 36(1), 85-103, 1999."
+msgstr ""
+
+#: :128
+msgid ""
+"L. Breiman, \"Bagging predictors\", Machine Learning, 24(2), 123-140, "
+"1996."
+msgstr ""
+
+#: :131
+msgid ""
+"T. Ho, \"The random subspace method for constructing decision forests\", "
+"Pattern Analysis and Machine Intelligence, 20(8), 832-844, 1998."
+msgstr ""
+
+#: :135
+msgid ""
+"G. Louppe and P. Geurts, \"Ensembles on Random Patches\", Machine "
+"Learning and Knowledge Discovery in Databases, 346-361, 2012."
+msgstr ""
+
+#: :143
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.ensemble.BaggingClassifier.decision_function>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Average of the decision functions of the base classifiers."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.ensemble.BaggingClassifier.fit>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Build a Bagging ensemble of estimators from the training    set (X, y)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.ensemble.BaggingClassifier.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.ensemble.BaggingClassifier.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict class for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict_log_proba "
+"<sklearn.ensemble.BaggingClassifier.predict_log_proba>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict class log-probabilities for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict_proba <sklearn.ensemble.BaggingClassifier.predict_proba>`\\"
+" (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict class probabilities for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.ensemble.BaggingClassifier.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the mean accuracy on the given test data and labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.ensemble.BaggingClassifier.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7 :8 :11 :14
+msgid "**X** : {array-like, sparse matrix} of shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9 :10 :13 :16
+msgid ""
+"The training input samples. Sparse matrices are accepted only if they are"
+" supported by the base estimator."
+msgstr ""
+
+#: :14
+msgid "**score** : array, shape = [n_samples, k]"
+msgstr ""
+
+#: :16
+msgid ""
+"The decision function of the input samples. The columns correspond to the"
+" classes in sorted order, as they appear in the attribute ``classes_``. "
+"Regression and binary classification are special cases with ``k == 1``, "
+"otherwise ``k==n_classes``."
+msgstr ""
+
+#: :4
+msgid "Build a Bagging ensemble of estimators from the training"
+msgstr ""
+
+#: :4
+msgid "set (X, y)."
+msgstr ""
+
+#: :13
+msgid "**y** : array-like, shape = [n_samples]"
+msgstr ""
+
+#: :15
+msgid ""
+"The target values (class labels in classification, real numbers in "
+"regression)."
+msgstr ""
+
+#: :18
+msgid "**sample_weight** : array-like, shape = [n_samples] or None"
+msgstr ""
+
+#: :20
+msgid ""
+"Sample weights. If None, then samples are equally weighted. Note that "
+"this is supported only if the base estimator supports sample weighting."
+msgstr ""
+
+#: :26
+msgid "**self** : object"
+msgstr ""
+
+#: :28
+msgid "Returns self."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The predicted class of an input sample is computed as the class with the "
+"highest mean predicted probability. If base estimators do not implement a"
+" ``predict_proba`` method, then it resorts to voting."
+msgstr ""
+
+#: :18
+msgid "**y** : array of shape = [n_samples]"
+msgstr ""
+
+#: :20
+msgid "The predicted classes."
+msgstr ""
+
+#: :5
+msgid ""
+"The predicted class log-probabilities of an input sample is computed as "
+"the log of the mean predicted class probabilities of the base estimators "
+"in the ensemble."
+msgstr ""
+
+#: :18 :21
+msgid "**p** : array of shape = [n_samples, n_classes]"
+msgstr ""
+
+#: :20
+msgid ""
+"The class log-probabilities of the input samples. The order of the "
+"classes corresponds to that in the attribute `classes_`."
+msgstr ""
+
+#: :5
+msgid ""
+"The predicted class probabilities of an input sample is computed as the "
+"mean predicted class probabilities of the base estimators in the "
+"ensemble. If base estimators do not implement a ``predict_proba`` method,"
+" then it resorts to voting and the predicted class probabilities of a an "
+"input sample represents the proportion of estimators predicting each "
+"class."
+msgstr ""
+
+#: :23
+msgid ""
+"The class probabilities of the input samples. The order of the classes "
+"corresponds to that in the attribute `classes_`."
+msgstr ""
+
+#: :5
+msgid ""
+"In multi-label classification, this is the subset accuracy which is a "
+"harsh metric since you require for each sample that each label set be "
+"correctly predicted."
+msgstr ""
+
+#: :11
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :13
+msgid "Test samples."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :17
+msgid "True labels for X."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :21
+msgid "Sample weights."
+msgstr ""
+
+#: :25
+msgid "**score** : float"
+msgstr ""
+
+#: :27
+msgid "Mean accuracy of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+

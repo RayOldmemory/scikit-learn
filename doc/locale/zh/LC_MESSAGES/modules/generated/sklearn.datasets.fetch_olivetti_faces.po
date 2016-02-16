@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.fetch_olivetti_faces.rst:2
+msgid ":mod:`sklearn.datasets`.fetch_olivetti_faces"
+msgstr ""
+
+#: :3
+msgid "Loader for the Olivetti faces data-set from AT&T."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <olivetti_faces>`."
+msgstr ""
+
+#: :9
+msgid "**data_home** : optional, default: None"
+msgstr ""
+
+#: :11
+msgid ""
+"Specify another download and cache folder for the datasets. By default "
+"all scikit learn data is stored in '~/scikit_learn_data' subfolders."
+msgstr ""
+
+#: :14
+msgid "**shuffle** : boolean, optional"
+msgstr ""
+
+#: :16
+msgid ""
+"If True the order of the dataset is shuffled to avoid having images of "
+"the same person grouped."
+msgstr ""
+
+#: :19
+msgid "**download_if_missing: optional, True by default** :"
+msgstr ""
+
+#: :21
+msgid ""
+"If False, raise a IOError if the data is not locally available instead of"
+" trying to download the data from the source site."
+msgstr ""
+
+#: :24
+msgid "**random_state** : optional, integer or RandomState object"
+msgstr ""
+
+#: :26
+msgid "The seed or the random number generator used to shuffle the data."
+msgstr ""
+
+#: :31
+msgid "**An object with the following attributes:** :"
+msgstr ""
+
+#: :33
+msgid "**data** : numpy array of shape (400, 4096)"
+msgstr ""
+
+#: :35
+msgid ""
+"Each row corresponds to a ravelled face image of original size 64 x 64 "
+"pixels."
+msgstr ""
+
+#: :37
+msgid "**images** : numpy array of shape (400, 64, 64)"
+msgstr ""
+
+#: :39
+msgid ""
+"Each row is a face image corresponding to one of the 40 subjects of the "
+"dataset."
+msgstr ""
+
+#: :41
+msgid "**target** : numpy array of shape (400, )"
+msgstr ""
+
+#: :43
+msgid ""
+"Labels associated to each face image. Those labels are ranging from 0-39 "
+"and correspond to the Subject IDs."
+msgstr ""
+
+#: :46
+msgid "**DESCR** : string"
+msgstr ""
+
+#: :48
+msgid "Description of the modified Olivetti Faces Dataset."
+msgstr ""
+
+#: :51
+msgid "Notes"
+msgstr ""
+
+#: :52
+msgid ""
+"This dataset consists of 10 pictures each of 40 individuals. The original"
+" database was available from (now defunct)"
+msgstr ""
+
+#: :55
+msgid "http://www.uk.research.att.com/facedatabase.html"
+msgstr ""
+
+#: :57
+msgid ""
+"The version retrieved here comes in MATLAB format from the personal web "
+"page of Sam Roweis:"
+msgstr ""
+
+#: :60
+msgid "http://www.cs.nyu.edu/~roweis/"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_olivetti_faces.examples:3
+msgid "Examples using ``sklearn.datasets.fetch_olivetti_faces``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_olivetti_faces.examples:25
+msgid ":ref:`example_plot_multioutput_face_completion.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_olivetti_faces.examples:45
+msgid ":ref:`example_cluster_plot_dict_face_patches.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_olivetti_faces.examples:65
+msgid ":ref:`example_decomposition_plot_faces_decomposition.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_olivetti_faces.examples:85
+msgid ":ref:`example_ensemble_plot_forest_importances_faces.py`"
+msgstr ""
+

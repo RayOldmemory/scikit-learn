@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/model_selection/grid_search_text_feature_extraction.rst:8
+msgid "Sample pipeline for text feature extraction and evaluation"
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_text_feature_extraction.rst:10
+msgid ""
+"The dataset used in this example is the 20 newsgroups dataset which will "
+"be automatically downloaded and then cached and reused for the document "
+"classification example."
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_text_feature_extraction.rst:14
+msgid ""
+"You can adjust the number of categories by giving their names to the "
+"dataset loader or setting them to None to get the 20 of them."
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_text_feature_extraction.rst:17
+msgid "Here is a sample output of a run on a quad-core machine::"
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_text_feature_extraction.rst:48
+msgid ""
+"**Python source code:** :download:`grid_search_text_feature_extraction.py"
+" <grid_search_text_feature_extraction.py>`"
+msgstr ""
+

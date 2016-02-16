@@ -1,0 +1,568 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.gaussian_process.GaussianProcess.rst:2
+msgid ":mod:`sklearn.gaussian_process`.GaussianProcess"
+msgstr ""
+
+#: :3
+msgid "The Gaussian Process model class."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <gaussian_process>`."
+msgstr ""
+
+#: :9
+msgid "**regr** : string or callable, optional"
+msgstr ""
+
+#: :11
+msgid ""
+"A regression function returning an array of outputs of the linear "
+"regression functional basis. The number of observations n_samples should "
+"be greater than the size p of this basis. Default assumes a simple "
+"constant regression trend. Available built-in regression models are::"
+msgstr ""
+
+#: :19
+msgid "**corr** : string or callable, optional"
+msgstr ""
+
+#: :21
+msgid ""
+"A stationary autocorrelation function returning the autocorrelation "
+"between two points x and x'. Default assumes a squared-exponential "
+"autocorrelation model. Built-in correlation models are::"
+msgstr ""
+
+#: :29
+msgid "**beta0** : double array_like, optional"
+msgstr ""
+
+#: :31
+msgid ""
+"The regression weight vector to perform Ordinary Kriging (OK). Default "
+"assumes Universal Kriging (UK) so that the vector beta of regression "
+"weights is estimated using the maximum likelihood principle."
+msgstr ""
+
+#: :36
+msgid "**storage_mode** : string, optional"
+msgstr ""
+
+#: :38
+msgid ""
+"A string specifying whether the Cholesky decomposition of the correlation"
+" matrix should be stored in the class (storage_mode = 'full') or not "
+"(storage_mode = 'light'). Default assumes storage_mode = 'full', so that "
+"the Cholesky decomposition of the correlation matrix is stored. This "
+"might be a useful parameter when one is not interested in the MSE and "
+"only plan to estimate the BLUP, for which the correlation matrix is not "
+"required."
+msgstr ""
+
+#: :47
+msgid "**verbose** : boolean, optional"
+msgstr ""
+
+#: :49
+msgid "A boolean specifying the verbose level. Default is verbose = False."
+msgstr ""
+
+#: :52
+msgid "**theta0** : double array_like, optional"
+msgstr ""
+
+#: :54
+msgid ""
+"An array with shape (n_features, ) or (1, ). The parameters in the "
+"autocorrelation model. If thetaL and thetaU are also specified, theta0 is"
+" considered as the starting point for the maximum likelihood estimation "
+"of the best set of parameters. Default assumes isotropic autocorrelation "
+"model with theta0 = 1e-1."
+msgstr ""
+
+#: :61
+msgid "**thetaL** : double array_like, optional"
+msgstr ""
+
+#: :63
+msgid ""
+"An array with shape matching theta0's. Lower bound on the autocorrelation"
+" parameters for maximum likelihood estimation. Default is None, so that "
+"it skips maximum likelihood estimation and it uses theta0."
+msgstr ""
+
+#: :69
+msgid "**thetaU** : double array_like, optional"
+msgstr ""
+
+#: :71
+msgid ""
+"An array with shape matching theta0's. Upper bound on the autocorrelation"
+" parameters for maximum likelihood estimation. Default is None, so that "
+"it skips maximum likelihood estimation and it uses theta0."
+msgstr ""
+
+#: :77
+msgid "**normalize** : boolean, optional"
+msgstr ""
+
+#: :79
+msgid ""
+"Input X and observations y are centered and reduced wrt means and "
+"standard deviations estimated from the n_samples observations provided. "
+"Default is normalize = True so that data is normalized to ease maximum "
+"likelihood estimation."
+msgstr ""
+
+#: :85
+msgid "**nugget** : double or ndarray, optional"
+msgstr ""
+
+#: :87
+msgid ""
+"Introduce a nugget effect to allow smooth predictions from noisy data.  "
+"If nugget is an ndarray, it must be the same length as the number of data"
+" points used for the fit. The nugget is added to the diagonal of the "
+"assumed training covariance; in this way it acts as a Tikhonov "
+"regularization in the problem.  In the special case of the squared "
+"exponential correlation function, the nugget mathematically represents "
+"the variance of the input values. Default assumes a nugget close to "
+"machine precision for the sake of robustness (nugget = 10. * "
+"MACHINE_EPSILON)."
+msgstr ""
+
+#: :97
+msgid "**optimizer** : string, optional"
+msgstr ""
+
+#: :99
+msgid ""
+"A string specifying the optimization algorithm to be used. Default uses "
+"'fmin_cobyla' algorithm from scipy.optimize. Available optimizers are::"
+msgstr ""
+
+#: :105
+msgid ""
+"'Welch' optimizer is dued to Welch et al., see reference [WBSWM1992]_. It"
+" consists in iterating over several one-dimensional optimizations instead"
+" of running one single multi-dimensional optimization."
+msgstr ""
+
+#: :109
+msgid "**random_start** : int, optional"
+msgstr ""
+
+#: :111
+msgid ""
+"The number of times the Maximum Likelihood Estimation should be performed"
+" from a random starting point. The first MLE always uses the specified "
+"starting point (theta0), the next starting points are picked at random "
+"according to an exponential distribution (log-uniform on [thetaL, "
+"thetaU]). Default does not use random starting point (random_start = 1)."
+msgstr ""
+
+#: :118
+msgid "**random_state: integer or numpy.RandomState, optional** :"
+msgstr ""
+
+#: :120
+msgid ""
+"The generator used to shuffle the sequence of coordinates of theta in the"
+" Welch optimizer. If an integer is given, it fixes the seed. Defaults to "
+"the global numpy random number generator."
+msgstr ""
+
+#: :126
+msgid "**theta_** : array"
+msgstr ""
+
+#: :128
+msgid ""
+"Specified theta OR the best set of autocorrelation parameters (the"
+"         sought maximizer of the reduced likelihood function)."
+msgstr ""
+
+#: :130
+msgid "**reduced_likelihood_function_value_** : array"
+msgstr ""
+
+#: :132
+msgid "The optimal reduced likelihood function value."
+msgstr ""
+
+#: :135
+msgid "Notes"
+msgstr ""
+
+#: :136
+msgid ""
+"The presentation implementation is based on a translation of the DACE "
+"Matlab toolbox, see reference [NLNS2002]_."
+msgstr ""
+
+#: :140
+msgid "References"
+msgstr ""
+
+#: :141
+msgid ""
+"`H.B. Nielsen, S.N. Lophaven, H. B. Nielsen and J. Sondergaard.  DACE - A"
+" MATLAB Kriging Toolbox.` (2002) "
+"http://www2.imm.dtu.dk/~hbn/dace/dace.pdf"
+msgstr ""
+
+#: :145
+msgid ""
+"`W.J. Welch, R.J. Buck, J. Sacks, H.P. Wynn, T.J. Mitchell, and M.D.  "
+"Morris (1992). Screening, predicting, and computer experiments.  "
+"Technometrics, 34(1) 15--25.` http://www.jstor.org/pss/1269548"
+msgstr ""
+
+#: :155
+msgid "Examples"
+msgstr ""
+
+#: :166
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.gaussian_process.GaussianProcess.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "The Gaussian Process model fitting method."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.gaussian_process.GaussianProcess.get_params>`\\"
+" ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict <sklearn.gaussian_process.GaussianProcess.predict>`\\ (X[, "
+"eval_MSE, batch_size])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "This function evaluates the Gaussian Process model at x."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`reduced_likelihood_function "
+"<sklearn.gaussian_process.GaussianProcess.reduced_likelihood_function>`\\"
+" ([theta])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid ""
+"This function determines the BLUP parameters and evaluates the reduced "
+"likelihood function for the given autocorrelation parameters theta."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.gaussian_process.GaussianProcess.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.gaussian_process.GaussianProcess.set_params>`\\"
+" (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7
+msgid "**X** : double array_like"
+msgstr ""
+
+#: :9
+msgid ""
+"An array with shape (n_samples, n_features) with the input at which "
+"observations were made."
+msgstr ""
+
+#: :12
+msgid "**y** : double array_like"
+msgstr ""
+
+#: :14
+msgid ""
+"An array with shape (n_samples, ) or shape (n_samples, n_targets) with "
+"the observations of the output to be predicted."
+msgstr ""
+
+#: :19
+msgid "**gp** : self"
+msgstr ""
+
+#: :21
+msgid ""
+"A fitted Gaussian Process model object awaiting data to perform "
+"predictions."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**X** : array_like"
+msgstr ""
+
+#: :9
+msgid ""
+"An array with shape (n_eval, n_features) giving the point(s) at which the"
+" prediction(s) should be made."
+msgstr ""
+
+#: :12
+msgid "**eval_MSE** : boolean, optional"
+msgstr ""
+
+#: :14
+msgid ""
+"A boolean specifying whether the Mean Squared Error should be evaluated "
+"or not. Default assumes evalMSE = False and evaluates only the BLUP (mean"
+" prediction)."
+msgstr ""
+
+#: :19
+msgid "**batch_size** : integer, optional"
+msgstr ""
+
+#: :21
+msgid ""
+"An integer giving the maximum number of points that can be evaluated "
+"simultaneously (depending on the available memory). Default is None so "
+"that all given points are evaluated at the same time."
+msgstr ""
+
+#: :28
+msgid "**y** : array_like, shape (n_samples, ) or (n_samples, n_targets)"
+msgstr ""
+
+#: :30
+msgid ""
+"An array with shape (n_eval, ) if the Gaussian Process was trained on an "
+"array of shape (n_samples, ) or an array with shape (n_eval, n_targets) "
+"if the Gaussian Process was trained on an array of shape (n_samples, "
+"n_targets) with the Best Linear Unbiased Prediction at x."
+msgstr ""
+
+#: :36
+msgid "**MSE** : array_like, optional (if eval_MSE == True)"
+msgstr ""
+
+#: :38
+msgid ""
+"An array with shape (n_eval, ) or (n_eval, n_targets) as with y, with the"
+" Mean Squared Error at x."
+msgstr ""
+
+#: :6
+msgid ""
+"Maximizing this function wrt the autocorrelation parameters theta is "
+"equivalent to maximizing the likelihood of the assumed joint Gaussian "
+"distribution of the observations y evaluated onto the design of "
+"experiments X."
+msgstr ""
+
+#: :13
+msgid "**theta** : array_like, optional"
+msgstr ""
+
+#: :15
+msgid ""
+"An array containing the autocorrelation parameters at which the Gaussian "
+"Process model parameters should be determined. Default uses the built-in "
+"autocorrelation parameters (ie ``theta = self.theta_``)."
+msgstr ""
+
+#: :22
+msgid "**reduced_likelihood_function_value** : double"
+msgstr ""
+
+#: :24
+msgid ""
+"The value of the reduced likelihood function associated to the given "
+"autocorrelation parameters theta."
+msgstr ""
+
+#: :27
+msgid "**par** : dict"
+msgstr ""
+
+#: :29
+msgid "A dictionary containing the requested Gaussian Process model parameters:"
+msgstr ""
+
+#: :32
+msgid "sigma2"
+msgstr ""
+
+#: :33
+msgid "Gaussian Process variance."
+msgstr ""
+
+#: :36
+msgid "beta"
+msgstr ""
+
+#: :35
+msgid ""
+"Generalized least-squares regression weights for Universal Kriging or "
+"given beta0 for Ordinary Kriging."
+msgstr ""
+
+#: :38
+msgid "gamma"
+msgstr ""
+
+#: :39
+msgid "Gaussian Process weights."
+msgstr ""
+
+#: :40
+msgid "C"
+msgstr ""
+
+#: :41
+msgid "Cholesky decomposition of the correlation matrix [R]."
+msgstr ""
+
+#: :42
+msgid "Ft"
+msgstr ""
+
+#: :43
+msgid "Solution of the linear equation system : [R] x Ft = F"
+msgstr ""
+
+#: :44
+msgid "G"
+msgstr ""
+
+#: :45
+msgid "QR decomposition of the matrix Ft."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.gaussian_process.GaussianProcess.examples:3
+msgid "Examples using ``sklearn.gaussian_process.GaussianProcess``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.gaussian_process.GaussianProcess.examples:25
+msgid ":ref:`example_gaussian_process_gp_diabetes_dataset.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.gaussian_process.GaussianProcess.examples:45
+msgid ":ref:`example_gaussian_process_plot_gp_probabilistic_classification_after_regression.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.gaussian_process.GaussianProcess.examples:65
+msgid ":ref:`example_gaussian_process_plot_gp_regression.py`"
+msgstr ""
+

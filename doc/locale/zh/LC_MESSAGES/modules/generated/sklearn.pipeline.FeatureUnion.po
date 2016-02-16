@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.pipeline.FeatureUnion.rst:2
+msgid ":mod:`sklearn.pipeline`.FeatureUnion"
+msgstr ""
+
+#: :3
+msgid "Concatenates results of multiple transformer objects."
+msgstr ""
+
+#: :5
+msgid ""
+"This estimator applies a list of transformer objects in parallel to the "
+"input data, then concatenates the results. This is useful to combine "
+"several feature extraction mechanisms into a single transformer."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <feature_union>`."
+msgstr ""
+
+#: :13
+msgid "**transformer_list: list of (string, transformer) tuples** :"
+msgstr ""
+
+#: :15
+msgid ""
+"List of transformer objects to be applied to the data. The first half of "
+"each tuple is the name of the transformer."
+msgstr ""
+
+#: :18
+msgid "**n_jobs: int, optional** :"
+msgstr ""
+
+#: :20
+msgid "Number of jobs to run in parallel (default 1)."
+msgstr ""
+
+#: :22
+msgid "**transformer_weights: dict, optional** :"
+msgstr ""
+
+#: :24
+msgid ""
+"Multiplicative weights for features per transformer. Keys are transformer"
+" names, values the weights."
+msgstr ""
+
+#: :28
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.pipeline.FeatureUnion.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit all transformers using X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.pipeline.FeatureUnion.fit_transform>`\\ (X[,"
+" y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit all transformers using X, transform the data and concatenate results."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_feature_names "
+"<sklearn.pipeline.FeatureUnion.get_feature_names>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get feature names from all transformers."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.pipeline.FeatureUnion.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.pipeline.FeatureUnion.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.pipeline.FeatureUnion.transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform X separately by each transformer, concatenate results."
+msgstr ""
+
+#: :7 :8
+msgid "**X** : array-like or sparse matrix, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid "Input data, used to fit transformers."
+msgstr ""
+
+#: :10 :9
+msgid "Input data to be transformed."
+msgstr ""
+
+#: :14 :13
+msgid "**X_t** : array-like or sparse matrix, shape (n_samples, sum_n_components)"
+msgstr ""
+
+#: :16 :15
+msgid ""
+"hstack of results of transformers. sum_n_components is the sum of "
+"n_components (output dimension) over transformers."
+msgstr ""
+
+#: :7
+msgid "**feature_names** : list of strings"
+msgstr ""
+
+#: :9
+msgid "Names of the features produced by transform."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.FeatureUnion.examples:3
+msgid "Examples using ``sklearn.pipeline.FeatureUnion``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.FeatureUnion.examples:25
+msgid ":ref:`example_feature_stacker.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.FeatureUnion.examples:45
+msgid ":ref:`example_hetero_feature_union.py`"
+msgstr ""
+

@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.lars_path.rst:2
+msgid ":mod:`sklearn.linear_model`.lars_path"
+msgstr ""
+
+#: :3
+msgid "Compute Least Angle Regression or Lasso path using LARS algorithm [1]"
+msgstr ""
+
+#: :5
+msgid "The optimization objective for the case method='lasso' is::"
+msgstr ""
+
+#: :9
+msgid ""
+"in the case of method='lars', the objective function is only known in the"
+" form of an implicit equation (see discussion in [1])"
+msgstr ""
+
+#: :12
+msgid "Read more in the :ref:`User Guide <least_angle_regression>`."
+msgstr ""
+
+#: :16
+msgid "**X** : array, shape: (n_samples, n_features)"
+msgstr ""
+
+#: :18
+msgid "Input data."
+msgstr ""
+
+#: :20
+msgid "**y** : array, shape: (n_samples)"
+msgstr ""
+
+#: :22
+msgid "Input targets."
+msgstr ""
+
+#: :24
+msgid "**positive** : boolean (default=False)"
+msgstr ""
+
+#: :26
+msgid ""
+"Restrict coefficients to be >= 0. When using this option together with "
+"method 'lasso' the model coefficients will not converge to the ordinary-"
+"least-squares solution for small values of alpha (neither will they when "
+"using method 'lar' ..). Only coeffiencts up to the smallest alpha value "
+"(``alphas_[alphas_ > 0.].min()`` when fit_path=True) reached by the "
+"stepwise Lars-Lasso algorithm are typically in congruence with the "
+"solution of the coordinate descent lasso_path function."
+msgstr ""
+
+#: :35
+msgid "**max_iter** : integer, optional (default=500)"
+msgstr ""
+
+#: :37
+msgid "Maximum number of iterations to perform, set to infinity for no limit."
+msgstr ""
+
+#: :39
+msgid "**Gram** : None, 'auto', array, shape: (n_features, n_features), optional"
+msgstr ""
+
+#: :41
+msgid ""
+"Precomputed Gram matrix (X' * X), if ``'auto'``, the Gram matrix is "
+"precomputed from the given X, if there are more samples than features."
+msgstr ""
+
+#: :45
+msgid "**alpha_min** : float, optional (default=0)"
+msgstr ""
+
+#: :47
+msgid ""
+"Minimum correlation along the path. It corresponds to the regularization "
+"parameter alpha parameter in the Lasso."
+msgstr ""
+
+#: :50
+msgid "**method** : {'lar', 'lasso'}, optional (default='lar')"
+msgstr ""
+
+#: :52
+msgid ""
+"Specifies the returned model. Select ``'lar'`` for Least Angle "
+"Regression, ``'lasso'`` for the Lasso."
+msgstr ""
+
+#: :55
+msgid "**eps** : float, optional (default=``np.finfo(np.float).eps``)"
+msgstr ""
+
+#: :57
+msgid ""
+"The machine-precision regularization in the computation of the Cholesky "
+"diagonal factors. Increase this for very ill-conditioned systems."
+msgstr ""
+
+#: :61
+msgid "**copy_X** : bool, optional (default=True)"
+msgstr ""
+
+#: :63
+msgid "If ``False``, ``X`` is overwritten."
+msgstr ""
+
+#: :65
+msgid "**copy_Gram** : bool, optional (default=True)"
+msgstr ""
+
+#: :67
+msgid "If ``False``, ``Gram`` is overwritten."
+msgstr ""
+
+#: :69
+msgid "**verbose** : int (default=0)"
+msgstr ""
+
+#: :71
+msgid "Controls output verbosity."
+msgstr ""
+
+#: :73
+msgid "**return_path** : bool, optional (default=True)"
+msgstr ""
+
+#: :75
+msgid ""
+"If ``return_path==True`` returns the entire path, else returns only the "
+"last point of the path."
+msgstr ""
+
+#: :78
+msgid "**return_n_iter** : bool, optional (default=False)"
+msgstr ""
+
+#: :80
+msgid "Whether to return the number of iterations."
+msgstr ""
+
+#: :84
+msgid "**alphas** : array, shape: [n_alphas + 1]"
+msgstr ""
+
+#: :86
+msgid ""
+"Maximum of covariances (in absolute value) at each iteration. "
+"``n_alphas`` is either ``max_iter``, ``n_features`` or the number of "
+"nodes in the path with ``alpha >= alpha_min``, whichever is smaller."
+msgstr ""
+
+#: :91
+msgid "**active** : array, shape [n_alphas]"
+msgstr ""
+
+#: :93
+msgid "Indices of active variables at the end of the path."
+msgstr ""
+
+#: :95
+msgid "**coefs** : array, shape (n_features, n_alphas + 1)"
+msgstr ""
+
+#: :97
+msgid "Coefficients along the path"
+msgstr ""
+
+#: :99
+msgid "**n_iter** : int"
+msgstr ""
+
+#: :101
+msgid "Number of iterations run. Returned only if return_n_iter is set to True."
+msgstr ""
+
+#: :106
+msgid ""
+":obj:`lasso_path`, :obj:`LassoLars`, :obj:`Lars`, :obj:`LassoLarsCV`, "
+":obj:`LarsCV`, :obj:`sklearn.decomposition.sparse_encode`"
+msgstr ""
+
+#: :109
+msgid "References"
+msgstr ""
+
+#: :110
+msgid ""
+"\"Least Angle Regression\", Effron et al. http://www-"
+"stat.stanford.edu/~tibs/ftp/lars.pdf"
+msgstr ""
+
+#: :113
+msgid ""
+"`Wikipedia entry on the Least-angle regression "
+"<http://en.wikipedia.org/wiki/Least-angle_regression>`_"
+msgstr ""
+
+#: :116
+msgid ""
+"`Wikipedia entry on the Lasso "
+"<http://en.wikipedia.org/wiki/Lasso_(statistics)#Lasso_method>`_"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.lars_path.examples:3
+msgid "Examples using ``sklearn.linear_model.lars_path``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.lars_path.examples:25
+msgid ":ref:`example_linear_model_plot_lasso_lars.py`"
+msgstr ""
+

@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/linear_model/plot_ols_ridge_variance.rst:8
+msgid "Ordinary Least Squares and Ridge Regression Variance"
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_ols_ridge_variance.rst:9
+msgid ""
+"Due to the few points in each dimension and the straight line that linear"
+" regression uses to follow these points as well as it can, noise on the "
+"observations will cause great variance as shown in the first plot. Every "
+"line's slope can vary quite a bit for each prediction due to the noise "
+"induced in the observations."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_ols_ridge_variance.rst:16
+msgid ""
+"Ridge regression is basically minimizing a penalised version of the "
+"least-squared function. The penalising `shrinks` the value of the "
+"regression coefficients. Despite the few data points in each dimension, "
+"the slope of the prediction is much more stable and the variance in the "
+"line itself is greatly reduced, in comparison to that of the standard "
+"linear regression"
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_ols_ridge_variance.rst:42
+msgid ""
+"**Python source code:** :download:`plot_ols_ridge_variance.py "
+"<plot_ols_ridge_variance.py>`"
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_ols_ridge_variance.rst:47
+msgid ""
+"**Total running time of the example:**  0.72 seconds ( 0 minutes  0.72 "
+"seconds)"
+msgstr ""
+

@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:3
+msgid "Unsupervised learning: seeking representations of the data"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:6
+msgid "Clustering: grouping observations together"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst
+msgid "The problem solved in clustering"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:10
+msgid ""
+"Given the iris dataset, if we knew that there were 3 types of iris, but "
+"did not have access to a taxonomist to label them: we could try a "
+"**clustering task**: split the observations into well-separated group "
+"called *clusters*."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:21
+msgid "K-means clustering"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:23
+msgid ""
+"Note that there exist a lot of different clustering criteria and "
+"associated algorithms. The simplest clustering algorithm is "
+":ref:`k_means`."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:62
+msgid ""
+"There is absolutely no guarantee of recovering a ground truth. First, "
+"choosing the right number of clusters is hard. Second, the algorithm is "
+"sensitive to initialization, and can fall into local minima, although "
+"scikit-learn employs several tricks to mitigate this issue."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:72
+msgid "|k_means_iris_bad_init|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:74
+msgid "|k_means_iris_8|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:76
+msgid "|cluster_iris_truth|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:80
+msgid "**Bad initialization**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:82
+msgid "**8 clusters**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:84
+msgid "**Ground truth**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:86
+msgid "**Don't over-interpret clustering results**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst
+msgid "**Application example: vector quantization**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:106
+msgid ""
+"Clustering in general and KMeans, in particular, can be seen as a way of "
+"choosing a small number of exemplars to compress the information. The "
+"problem is sometimes known as `vector quantization "
+"<http://en.wikipedia.org/wiki/Vector_quantization>`_. For instance, this "
+"can be used to posterize an image::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:131
+msgid "|face|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:133
+msgid "|face_compressed|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:135
+msgid "|face_regular|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:137
+msgid "|face_histogram|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:141
+msgid "Raw image"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:143
+msgid "K-means quantization"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:145
+msgid "Equal bins"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:147
+msgid "Image histogram"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:151
+msgid "Hierarchical agglomerative clustering: Ward"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:153
+msgid ""
+"A :ref:`hierarchical_clustering` method is a type of cluster analysis "
+"that aims to build a hierarchy of clusters. In general, the various "
+"approaches of this technique are either:"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:157
+msgid ""
+"**Agglomerative** - bottom-up approaches: each observation starts in its "
+"own cluster, and clusters are iterativelly merged in such a way to "
+"minimize a *linkage* criterion. This approach is particularly interesting"
+" when the clusters of interest are made of only a few observations. When "
+"the number of clusters is large, it is much more computationally "
+"efficient than k-means."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:164
+msgid ""
+"**Divisive** - top-down approaches: all observations start in one "
+"cluster, which is iteratively split as one moves down the hierarchy. For "
+"estimating large numbers of clusters, this approach is both slow (due to "
+"all observations starting as one cluster, which it splits recursively) "
+"and statistically ill-posed."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:171
+msgid "Connectivity-constrained clustering"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:173
+msgid ""
+"With agglomerative clustering, it is possible to specify which samples "
+"can be clustered together by giving a connectivity graph. Graphs in the "
+"scikit are represented by their adjacency matrix. Often, a sparse matrix "
+"is used. This can be useful, for instance, to retrieve connected regions "
+"(sometimes also referred to as connected components) when clustering an "
+"image:"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:194
+msgid "Feature agglomeration"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:196
+msgid ""
+"We have seen that sparsity could be used to mitigate the curse of "
+"dimensionality, *i.e* an insufficient amount of observations compared to "
+"the number of features. Another approach is to merge together similar "
+"features: **feature agglomeration**. This approach can be implemented by "
+"clustering in the feature direction, in other words clustering the "
+"transposed data."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst
+msgid "``transform`` and ``inverse_transform`` methods"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:226
+msgid ""
+"Some estimators expose a ``transform`` method, for instance to reduce the"
+" dimensionality of the dataset."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:230
+msgid "Decompositions: from a signal to components and loadings"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst
+msgid "**Components and loadings**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:234
+msgid ""
+"If X is our multivariate data, then the problem that we are trying to "
+"solve is to rewrite it on a different observational basis: we want to "
+"learn loadings L and a set of components C such that *X = L C*. Different"
+" criteria exist to choose the components"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:240
+msgid "Principal component analysis: PCA"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:242
+msgid ""
+":ref:`PCA` selects the successive components that explain the maximum "
+"variance in the signal."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:255
+msgid "|pca_3d_axis| |pca_3d_aligned|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:257
+msgid ""
+"The point cloud spanned by the observations above is very flat in one "
+"direction: one of the three univariate features can almost be exactly "
+"computed using the other two. PCA finds the directions in which the data "
+"is not *flat*"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:262
+msgid ""
+"When used to *transform* data, PCA can reduce the dimensionality of the "
+"data by projecting on a principal subspace."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:291
+msgid "Independent Component Analysis: ICA"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/unsupervised_learning.rst:293
+msgid ""
+":ref:`ICA` selects components so that the distribution of their loadings "
+"carries a maximum amount of independent information. It is able to "
+"recover **non-Gaussian** independent signals:"
+msgstr ""
+

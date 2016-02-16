@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/bicluster/bicluster_newsgroups.rst:8
+msgid "Biclustering documents with the Spectral Co-clustering algorithm"
+msgstr ""
+
+#: ../../auto_examples/bicluster/bicluster_newsgroups.rst:10
+msgid ""
+"This example demonstrates the Spectral Co-clustering algorithm on the "
+"twenty newsgroups dataset. The 'comp.os.ms-windows.misc' category is "
+"excluded because it contains many posts containing nothing but data."
+msgstr ""
+
+#: ../../auto_examples/bicluster/bicluster_newsgroups.rst:14
+msgid ""
+"The TF-IDF vectorized posts form a word frequency matrix, which is then "
+"biclustered using Dhillon's Spectral Co-Clustering algorithm. The "
+"resulting document-word biclusters indicate subsets words used more often"
+" in those subsets documents."
+msgstr ""
+
+#: ../../auto_examples/bicluster/bicluster_newsgroups.rst:19
+msgid ""
+"For a few of the best biclusters, its most common document categories and"
+" its ten most important words get printed. The best biclusters are "
+"determined by their normalized cut. The best words are determined by "
+"comparing their sums inside and outside the bicluster."
+msgstr ""
+
+#: ../../auto_examples/bicluster/bicluster_newsgroups.rst:24
+msgid ""
+"For comparison, the documents are also clustered using MiniBatchKMeans. "
+"The document clusters derived from the biclusters achieve a better "
+"V-measure than clusters found by MiniBatchKMeans."
+msgstr ""
+
+#: ../../auto_examples/bicluster/bicluster_newsgroups.rst:28
+msgid "Output::"
+msgstr ""
+
+#: ../../auto_examples/bicluster/bicluster_newsgroups.rst:60
+msgid ""
+"**Python source code:** :download:`bicluster_newsgroups.py "
+"<bicluster_newsgroups.py>`"
+msgstr ""
+

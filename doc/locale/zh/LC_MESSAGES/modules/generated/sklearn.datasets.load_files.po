@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.load_files.rst:2
+msgid ":mod:`sklearn.datasets`.load_files"
+msgstr ""
+
+#: :3
+msgid "Load text files with categories as subfolder names."
+msgstr ""
+
+#: :5
+msgid ""
+"Individual samples are assumed to be files stored a two levels folder "
+"structure such as the following:"
+msgstr ""
+
+#: :17
+msgid "container_folder/"
+msgstr ""
+
+#: :12
+msgid "category_1_folder/"
+msgstr ""
+
+#: :10
+msgid "file_1.txt file_2.txt ... file_42.txt"
+msgstr ""
+
+#: :17
+msgid "category_2_folder/"
+msgstr ""
+
+#: :15
+msgid "file_43.txt file_44.txt ..."
+msgstr ""
+
+#: :19
+msgid ""
+"The folder names are used as supervised signal label names. The "
+"individual file names are not important."
+msgstr ""
+
+#: :22
+msgid ""
+"This function does not try to extract features into a numpy array or "
+"scipy sparse matrix. In addition, if load_content is false it does not "
+"try to load the files in memory."
+msgstr ""
+
+#: :26
+msgid ""
+"To use text files in a scikit-learn classification or clustering "
+"algorithm, you will need to use the `sklearn.feature_extraction.text` "
+"module to build a feature extraction transformer that suits your problem."
+msgstr ""
+
+#: :31
+msgid ""
+"If you set load_content=True, you should also specify the encoding of the"
+" text using the 'encoding' parameter. For many modern text files, 'utf-8'"
+" will be the correct encoding. If you leave encoding equal to None, then "
+"the content will be made of bytes instead of Unicode, and you will not be"
+" able to use most functions in `sklearn.feature_extraction.text`."
+msgstr ""
+
+#: :37
+msgid ""
+"Similar feature extractors should be built for other kind of unstructured"
+" data input such as images, audio, video, ..."
+msgstr ""
+
+#: :40
+msgid "Read more in the :ref:`User Guide <datasets>`."
+msgstr ""
+
+#: :44
+msgid "**container_path** : string or unicode"
+msgstr ""
+
+#: :46
+msgid "Path to the main folder holding one subfolder per category"
+msgstr ""
+
+#: :48
+msgid "**description: string or unicode, optional (default=None)** :"
+msgstr ""
+
+#: :50
+msgid ""
+"A paragraph describing the characteristic of the dataset: its source, "
+"reference, etc."
+msgstr ""
+
+#: :53
+msgid "**categories** : A collection of strings or None, optional (default=None)"
+msgstr ""
+
+#: :55
+msgid ""
+"If None (default), load all the categories. If not None, list of category"
+" names to load (other categories ignored)."
+msgstr ""
+
+#: :58
+msgid "**load_content** : boolean, optional (default=True)"
+msgstr ""
+
+#: :60
+msgid ""
+"Whether to load or not the content of the different files. If true a "
+"'data' attribute containing the text information is present in the data "
+"structure returned. If not, a filenames attribute gives the path to the "
+"files."
+msgstr ""
+
+#: :65
+msgid "**encoding** : string or None (default is None)"
+msgstr ""
+
+#: :67
+msgid ""
+"If None, do not try to decode the content of the files (e.g. for images "
+"or other non-text content). If not None, encoding to use to decode text "
+"files to Unicode if load_content is True."
+msgstr ""
+
+#: :72
+msgid "**decode_error: {'strict', 'ignore', 'replace'}, optional** :"
+msgstr ""
+
+#: :74
+msgid ""
+"Instruction on what to do if a byte sequence is given to analyze that "
+"contains characters not of the given `encoding`. Passed as keyword "
+"argument 'errors' to bytes.decode."
+msgstr ""
+
+#: :78
+msgid "**shuffle** : bool, optional (default=True)"
+msgstr ""
+
+#: :80
+msgid ""
+"Whether or not to shuffle the data: might be important for models that "
+"make the assumption that the samples are independent and identically "
+"distributed (i.i.d.), such as stochastic gradient descent."
+msgstr ""
+
+#: :84
+msgid "**random_state** : int, RandomState instance or None, optional (default=0)"
+msgstr ""
+
+#: :86
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :93
+msgid "**data** : Bunch"
+msgstr ""
+
+#: :95
+msgid ""
+"Dictionary-like object, the interesting attributes are: either data, the "
+"raw text data to learn, or 'filenames', the files holding it, 'target', "
+"the classification labels (integer index), 'target_names', the meaning of"
+" the labels, and 'DESCR', the full description of the dataset."
+msgstr ""
+

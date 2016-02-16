@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/mixture/plot_gmm_sin.rst:8
+msgid "Gaussian Mixture Model Sine Curve"
+msgstr ""
+
+#: ../../auto_examples/mixture/plot_gmm_sin.rst:10
+msgid ""
+"This example highlights the advantages of the Dirichlet Process: "
+"complexity control and dealing with sparse data. The dataset is formed by"
+" 100 points loosely spaced following a noisy sine curve. The fit by the "
+"GMM class, using the expectation-maximization algorithm to fit a mixture "
+"of 10 Gaussian components, finds too-small components and very little "
+"structure. The fits by the Dirichlet process, however, show that the "
+"model can either learn a global structure for the data (small alpha) or "
+"easily interpolate to finding relevant local structure (large alpha), "
+"never falling into the problems shown by the GMM class."
+msgstr ""
+
+#: ../../auto_examples/mixture/plot_gmm_sin.rst:28
+msgid "**Python source code:** :download:`plot_gmm_sin.py <plot_gmm_sin.py>`"
+msgstr ""
+
+#: ../../auto_examples/mixture/plot_gmm_sin.rst:33
+msgid ""
+"**Total running time of the example:**  1.02 seconds ( 0 minutes  1.02 "
+"seconds)"
+msgstr ""
+

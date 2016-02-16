@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.orthogonal_mp_gram.rst:2
+msgid ":mod:`sklearn.linear_model`.orthogonal_mp_gram"
+msgstr ""
+
+#: :3
+msgid "Gram Orthogonal Matching Pursuit (OMP)"
+msgstr ""
+
+#: :5
+msgid ""
+"Solves n_targets Orthogonal Matching Pursuit problems using only the Gram"
+" matrix X.T * X and the product X.T * y."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <omp>`."
+msgstr ""
+
+#: :12
+msgid "**Gram** : array, shape (n_features, n_features)"
+msgstr ""
+
+#: :14
+msgid "Gram matrix of the input data: X.T * X"
+msgstr ""
+
+#: :16
+msgid "**Xy** : array, shape (n_features,) or (n_features, n_targets)"
+msgstr ""
+
+#: :18
+msgid "Input targets multiplied by X: X.T * y"
+msgstr ""
+
+#: :20
+msgid "**n_nonzero_coefs** : int"
+msgstr ""
+
+#: :22
+#, python-format
+msgid ""
+"Desired number of non-zero entries in the solution. If None (by default) "
+"this value is set to 10% of n_features."
+msgstr ""
+
+#: :25
+msgid "**tol** : float"
+msgstr ""
+
+#: :27
+msgid "Maximum norm of the residual. If not None, overrides n_nonzero_coefs."
+msgstr ""
+
+#: :29
+msgid "**norms_squared** : array-like, shape (n_targets,)"
+msgstr ""
+
+#: :31
+msgid "Squared L2 norms of the lines of y. Required if tol is not None."
+msgstr ""
+
+#: :33
+msgid "**copy_Gram** : bool, optional"
+msgstr ""
+
+#: :35
+msgid ""
+"Whether the gram matrix must be copied by the algorithm. A false value is"
+" only helpful if it is already Fortran-ordered, otherwise a copy is made "
+"anyway."
+msgstr ""
+
+#: :39
+msgid "**copy_Xy** : bool, optional"
+msgstr ""
+
+#: :41
+msgid ""
+"Whether the covariance vector Xy must be copied by the algorithm. If "
+"False, it may be overwritten."
+msgstr ""
+
+#: :44
+msgid "**return_path** : bool, optional. Default: False"
+msgstr ""
+
+#: :46
+msgid ""
+"Whether to return every value of the nonzero coefficients along the "
+"forward path. Useful for cross-validation."
+msgstr ""
+
+#: :49
+msgid "**return_n_iter** : bool, optional default False"
+msgstr ""
+
+#: :51
+msgid "Whether or not to return the number of iterations."
+msgstr ""
+
+#: :55
+msgid "**coef** : array, shape (n_features,) or (n_features, n_targets)"
+msgstr ""
+
+#: :57
+msgid ""
+"Coefficients of the OMP solution. If `return_path=True`, this contains "
+"the whole coefficient path. In this case its shape is (n_features, "
+"n_features) or (n_features, n_targets, n_features) and iterating over the"
+" last axis yields coefficients in increasing order of active features."
+msgstr ""
+
+#: :63
+msgid "**n_iters** : array-like or int"
+msgstr ""
+
+#: :65
+msgid ""
+"Number of active features across every target. Returned only if "
+"`return_n_iter` is set to True."
+msgstr ""
+
+#: :70
+msgid ""
+":obj:`OrthogonalMatchingPursuit`, :obj:`orthogonal_mp`, :obj:`lars_path`,"
+" :obj:`decomposition.sparse_encode`"
+msgstr ""
+
+#: :73
+msgid "Notes"
+msgstr ""
+
+#: :74
+msgid ""
+"Orthogonal matching pursuit was introduced in G. Mallat, Z. Zhang, "
+"Matching pursuits with time-frequency dictionaries, IEEE Transactions on "
+"Signal Processing, Vol. 41, No. 12. (December 1993), pp. 3397-3415. "
+"(http://blanche.polytechnique.fr/~mallat/papiers/MallatPursuit93.pdf)"
+msgstr ""
+
+#: :79
+msgid ""
+"This implementation is based on Rubinstein, R., Zibulevsky, M. and Elad, "
+"M., Efficient Implementation of the K-SVD Algorithm using Batch "
+"Orthogonal Matching Pursuit Technical Report - CS Technion, April 2008. "
+"http://www.cs.technion.ac.il/~ronrubin/Publications/KSVD-OMP-v2.pdf"
+msgstr ""
+

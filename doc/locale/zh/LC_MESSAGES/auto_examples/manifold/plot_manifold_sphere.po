@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/manifold/plot_manifold_sphere.rst:8
+msgid "Manifold Learning methods on a severed sphere"
+msgstr ""
+
+#: ../../auto_examples/manifold/plot_manifold_sphere.rst:10
+msgid ""
+"An application of the different :ref:`manifold` techniques on a spherical"
+" data-set. Here one can see the use of dimensionality reduction in order "
+"to gain some intuition regarding the manifold learning methods. Regarding"
+" the dataset, the poles are cut from the sphere, as well as a thin slice "
+"down its side. This enables the manifold learning techniques to 'spread "
+"it open' whilst projecting it onto two dimensions."
+msgstr ""
+
+#: ../../auto_examples/manifold/plot_manifold_sphere.rst:18
+msgid ""
+"For a similar example, where the methods are applied to the S-curve "
+"dataset, see :ref:`example_manifold_plot_compare_methods.py`"
+msgstr ""
+
+#: ../../auto_examples/manifold/plot_manifold_sphere.rst:21
+msgid ""
+"Note that the purpose of the :ref:`MDS <multidimensional_scaling>` is to "
+"find a low-dimensional representation of the data (here 2D) in which the "
+"distances respect well the distances in the original high-dimensional "
+"space, unlike other manifold-learning algorithms, it does not seeks an "
+"isotropic representation of the data in the low-dimensional space. Here "
+"the manifold problem matches fairly that of representing a flat map of "
+"the Earth, as with `map projection "
+"<http://en.wikipedia.org/wiki/Map_projection>`_"
+msgstr ""
+
+#: ../../auto_examples/manifold/plot_manifold_sphere.rst:36
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/manifold/plot_manifold_sphere.rst:49
+msgid ""
+"**Python source code:** :download:`plot_manifold_sphere.py "
+"<plot_manifold_sphere.py>`"
+msgstr ""
+
+#: ../../auto_examples/manifold/plot_manifold_sphere.rst:54
+msgid ""
+"**Total running time of the example:**  13.73 seconds ( 0 minutes  13.73 "
+"seconds)"
+msgstr ""
+

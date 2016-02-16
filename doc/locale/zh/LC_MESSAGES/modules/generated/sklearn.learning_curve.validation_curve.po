@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.learning_curve.validation_curve.rst:2
+msgid ":mod:`sklearn.learning_curve`.validation_curve"
+msgstr ""
+
+#: :3
+msgid "Validation curve."
+msgstr ""
+
+#: :5
+msgid "Determine training and test scores for varying parameter values."
+msgstr ""
+
+#: :7
+msgid ""
+"Compute scores for an estimator with different values of a specified "
+"parameter. This is similar to grid search with one parameter. However, "
+"this will also compute training scores and is merely a utility for "
+"plotting the results."
+msgstr ""
+
+#: :12
+msgid "Read more in the :ref:`User Guide <validation_curve>`."
+msgstr ""
+
+#: :16
+msgid ""
+"**estimator** : object type that implements the \"fit\" and \"predict\" "
+"methods"
+msgstr ""
+
+#: :18
+msgid "An object of that type which is cloned for each validation."
+msgstr ""
+
+#: :20
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :22
+msgid ""
+"Training vector, where n_samples is the number of samples and n_features "
+"is the number of features."
+msgstr ""
+
+#: :25
+msgid "**y** : array-like, shape (n_samples) or (n_samples, n_features), optional"
+msgstr ""
+
+#: :27
+msgid ""
+"Target relative to X for classification or regression; None for "
+"unsupervised learning."
+msgstr ""
+
+#: :30
+msgid "**param_name** : string"
+msgstr ""
+
+#: :32
+msgid "Name of the parameter that will be varied."
+msgstr ""
+
+#: :34
+msgid "**param_range** : array-like, shape (n_values,)"
+msgstr ""
+
+#: :36
+msgid "The values of the parameter that will be evaluated."
+msgstr ""
+
+#: :38
+msgid "**cv** : int, cross-validation generator or an iterable, optional"
+msgstr ""
+
+#: :40
+msgid ""
+"Determines the cross-validation splitting strategy. Possible inputs for "
+"cv are:"
+msgstr ""
+
+#: :43
+msgid "None, to use the default 3-fold cross-validation,"
+msgstr ""
+
+#: :44
+msgid "integer, to specify the number of folds."
+msgstr ""
+
+#: :45
+msgid "An object to be used as a cross-validation generator."
+msgstr ""
+
+#: :46
+msgid "An iterable yielding train/test splits."
+msgstr ""
+
+#: :48
+msgid ""
+"For integer/None inputs, if ``y`` is binary or multiclass, "
+":class:`StratifiedKFold` used. If the estimator is a classifier or if "
+"``y`` is neither binary nor multiclass, :class:`KFold` is used."
+msgstr ""
+
+#: :52
+msgid ""
+"Refer :ref:`User Guide <cross_validation>` for the various cross-"
+"validation strategies that can be used here."
+msgstr ""
+
+#: :55
+msgid "**scoring** : string, callable or None, optional, default: None"
+msgstr ""
+
+#: :57
+msgid ""
+"A string (see model evaluation documentation) or a scorer callable object"
+" / function with signature ``scorer(estimator, X, y)``."
+msgstr ""
+
+#: :61
+msgid "**n_jobs** : integer, optional"
+msgstr ""
+
+#: :63
+msgid "Number of jobs to run in parallel (default 1)."
+msgstr ""
+
+#: :65
+msgid "**pre_dispatch** : integer or string, optional"
+msgstr ""
+
+#: :67
+msgid ""
+"Number of predispatched jobs for parallel execution (default is all). The"
+" option can reduce the allocated memory. The string can be an expression "
+"like '2*n_jobs'."
+msgstr ""
+
+#: :71
+msgid "**verbose** : integer, optional"
+msgstr ""
+
+#: :73
+msgid "Controls the verbosity: the higher, the more messages."
+msgstr ""
+
+#: :77
+msgid "**train_scores** : array, shape (n_ticks, n_cv_folds)"
+msgstr ""
+
+#: :79
+msgid "Scores on training sets."
+msgstr ""
+
+#: :81
+msgid "**test_scores** : array, shape (n_ticks, n_cv_folds)"
+msgstr ""
+
+#: :83
+msgid "Scores on test set."
+msgstr ""
+
+#: :86
+msgid "Notes"
+msgstr ""
+
+#: :87
+msgid ""
+"See :ref:`examples/model_selection/plot_validation_curve.py "
+"<example_model_selection_plot_validation_curve.py>`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.learning_curve.validation_curve.examples:3
+msgid "Examples using ``sklearn.learning_curve.validation_curve``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.learning_curve.validation_curve.examples:25
+msgid ":ref:`example_model_selection_plot_validation_curve.py`"
+msgstr ""
+

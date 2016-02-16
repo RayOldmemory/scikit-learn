@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.rst:8
+msgid "Compare BIRCH and MiniBatchKMeans"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.rst:10
+msgid ""
+"This example compares the timing of Birch (with and without the global "
+"clustering step) and MiniBatchKMeans on a synthetic dataset having "
+"100,000 samples and 2 features generated using make_blobs."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.rst:14
+msgid ""
+"If ``n_clusters`` is set to None, the data is reduced from 100,000 "
+"samples to a set of 158 clusters. This can be viewed as a preprocessing "
+"step before the final (global) clustering step that further reduces these"
+" 158 clusters to 100 clusters."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.rst:25
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.rst:35
+msgid ""
+"**Python source code:** :download:`plot_birch_vs_minibatchkmeans.py "
+"<plot_birch_vs_minibatchkmeans.py>`"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.rst:40
+msgid ""
+"**Total running time of the example:**  48.90 seconds ( 0 minutes  48.90 "
+"seconds)"
+msgstr ""
+

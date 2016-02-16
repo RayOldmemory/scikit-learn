@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.load_mlcomp.rst:2
+msgid ":mod:`sklearn.datasets`.load_mlcomp"
+msgstr ""
+
+#: :3
+msgid "Load a datasets as downloaded from http://mlcomp.org"
+msgstr ""
+
+#: :7
+msgid "**name_or_id** : the integer id or the string name metadata of the MLComp"
+msgstr ""
+
+#: :9
+msgid "dataset to load"
+msgstr ""
+
+#: :11
+msgid "**set_** : select the portion to load: 'train', 'test' or 'raw'"
+msgstr ""
+
+#: :13
+msgid ""
+"**mlcomp_root** : the filesystem path to the root folder where MLComp "
+"datasets"
+msgstr ""
+
+#: :15
+msgid ""
+"are stored, if mlcomp_root is None, the MLCOMP_DATASETS_HOME environment "
+"variable is looked up instead."
+msgstr ""
+
+#: :18
+msgid "****kwargs** : domain specific kwargs to be passed to the dataset loader."
+msgstr ""
+
+#: :20
+msgid "**Read more in the :ref:`User Guide <datasets>`.** :"
+msgstr ""
+
+#: :24
+msgid "**data** : Bunch"
+msgstr ""
+
+#: :26
+msgid ""
+"Dictionary-like object, the interesting attributes are: 'filenames', the "
+"files holding the raw to learn, 'target', the classification labels "
+"(integer index), 'target_names', the meaning of the labels, and 'DESCR', "
+"the full description of the dataset."
+msgstr ""
+
+#: :32
+msgid "**Note on the lookup process: depending on the type of name_or_id,** :"
+msgstr ""
+
+#: :34
+msgid "**will choose between integer id lookup or metadata name lookup by** :"
+msgstr ""
+
+#: :36
+msgid "**looking at the unzipped archives and metadata file.** :"
+msgstr ""
+
+#: :38
+msgid "**TODO: implement zip dataset loading too** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_mlcomp.examples:3
+msgid "Examples using ``sklearn.datasets.load_mlcomp``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_mlcomp.examples:25
+msgid ":ref:`example_text_mlcomp_sparse_document_classification.py`"
+msgstr ""
+

@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.decomposition.dict_learning_online.rst:2
+msgid ":mod:`sklearn.decomposition`.dict_learning_online"
+msgstr ""
+
+#: :3
+msgid "Solves a dictionary learning matrix factorization problem online."
+msgstr ""
+
+#: :5
+msgid ""
+"Finds the best dictionary and the corresponding sparse code for "
+"approximating the data matrix X by solving::"
+msgstr ""
+
+#: :12
+msgid ""
+"where V is the dictionary and U is the sparse code. This is accomplished "
+"by repeatedly iterating over mini-batches by slicing the input data."
+msgstr ""
+
+#: :16
+msgid "Read more in the :ref:`User Guide <DictionaryLearning>`."
+msgstr ""
+
+#: :20
+msgid "**X: array of shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :22
+msgid "Data matrix."
+msgstr ""
+
+#: :24
+msgid "**n_components** : int,"
+msgstr ""
+
+#: :26
+msgid "Number of dictionary atoms to extract."
+msgstr ""
+
+#: :28
+msgid "**alpha** : float,"
+msgstr ""
+
+#: :30
+msgid "Sparsity controlling parameter."
+msgstr ""
+
+#: :32
+msgid "**n_iter** : int,"
+msgstr ""
+
+#: :34
+msgid "Number of iterations to perform."
+msgstr ""
+
+#: :36
+msgid "**return_code** : boolean,"
+msgstr ""
+
+#: :38
+msgid "Whether to also return the code U or just the dictionary V."
+msgstr ""
+
+#: :40
+msgid "**dict_init** : array of shape (n_components, n_features),"
+msgstr ""
+
+#: :42
+msgid "Initial value for the dictionary for warm restart scenarios."
+msgstr ""
+
+#: :44
+msgid "**callback :** :"
+msgstr ""
+
+#: :46
+msgid "Callable that gets invoked every five iterations."
+msgstr ""
+
+#: :48
+msgid "**batch_size** : int,"
+msgstr ""
+
+#: :50
+msgid "The number of samples to take in each batch."
+msgstr ""
+
+#: :52
+msgid "**verbose :** :"
+msgstr ""
+
+#: :54
+msgid "Degree of output the procedure will print."
+msgstr ""
+
+#: :56
+msgid "**shuffle** : boolean,"
+msgstr ""
+
+#: :58
+msgid "Whether to shuffle the data before splitting it in batches."
+msgstr ""
+
+#: :60
+msgid "**n_jobs** : int,"
+msgstr ""
+
+#: :62
+msgid "Number of parallel jobs to run, or -1 to autodetect."
+msgstr ""
+
+#: :64
+msgid "**method** : {'lars', 'cd'}"
+msgstr ""
+
+#: :66
+msgid ""
+"lars: uses the least angle regression method to solve the lasso problem "
+"(linear_model.lars_path) cd: uses the coordinate descent method to "
+"compute the Lasso solution (linear_model.Lasso). Lars will be faster if "
+"the estimated components are sparse."
+msgstr ""
+
+#: :72
+msgid "**iter_offset** : int, default 0"
+msgstr ""
+
+#: :74
+msgid ""
+"Number of previous iterations completed on the dictionary used for "
+"initialization."
+msgstr ""
+
+#: :77
+msgid "**random_state** : int or RandomState"
+msgstr ""
+
+#: :79
+msgid "Pseudo number generator state used for random sampling."
+msgstr ""
+
+#: :81
+msgid "**return_inner_stats** : boolean, optional"
+msgstr ""
+
+#: :83
+msgid ""
+"Return the inner statistics A (dictionary covariance) and B (data "
+"approximation). Useful to restart the algorithm in an online setting. If "
+"return_inner_stats is True, return_code is ignored"
+msgstr ""
+
+#: :88
+msgid "**inner_stats** : tuple of (A, B) ndarrays"
+msgstr ""
+
+#: :90
+msgid ""
+"Inner sufficient statistics that are kept by the algorithm. Passing them "
+"at initialization is useful in online settings, to avoid loosing the "
+"history of the evolution. A (n_components, n_components) is the "
+"dictionary covariance matrix. B (n_features, n_components) is the data "
+"approximation matrix"
+msgstr ""
+
+#: :96
+msgid "**return_n_iter** : bool"
+msgstr ""
+
+#: :98
+msgid "Whether or not to return the number of iterations."
+msgstr ""
+
+#: :102
+msgid "**code** : array of shape (n_samples, n_components),"
+msgstr ""
+
+#: :104
+msgid "the sparse code (only returned if `return_code=True`)"
+msgstr ""
+
+#: :106
+msgid "**dictionary** : array of shape (n_components, n_features),"
+msgstr ""
+
+#: :108
+msgid "the solutions to the dictionary learning problem"
+msgstr ""
+
+#: :110
+msgid "**n_iter** : int"
+msgstr ""
+
+#: :112
+msgid ""
+"Number of iterations run. Returned only if `return_n_iter` is set to "
+"`True`."
+msgstr ""
+
+#: :117
+msgid ""
+":obj:`dict_learning`, :obj:`DictionaryLearning`, "
+":obj:`MiniBatchDictionaryLearning`, :obj:`SparsePCA`, "
+":obj:`MiniBatchSparsePCA`"
+msgstr ""
+

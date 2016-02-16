@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/text/hashing_vs_dict_vectorizer.rst:8
+msgid "FeatureHasher and DictVectorizer Comparison"
+msgstr ""
+
+#: ../../auto_examples/text/hashing_vs_dict_vectorizer.rst:10
+msgid ""
+"Compares FeatureHasher and DictVectorizer by using both to vectorize text"
+" documents."
+msgstr ""
+
+#: ../../auto_examples/text/hashing_vs_dict_vectorizer.rst:13
+msgid ""
+"The example demonstrates syntax and speed only; it doesn't actually do "
+"anything useful with the extracted vectors. See the example scripts "
+"{document_classification_20newsgroups,clustering}.py for actual learning "
+"on text documents."
+msgstr ""
+
+#: ../../auto_examples/text/hashing_vs_dict_vectorizer.rst:18
+msgid ""
+"A discrepancy between the number of terms reported for DictVectorizer and"
+" for FeatureHasher is to be expected due to hash collisions."
+msgstr ""
+
+#: ../../auto_examples/text/hashing_vs_dict_vectorizer.rst:22
+msgid ""
+"**Python source code:** :download:`hashing_vs_dict_vectorizer.py "
+"<hashing_vs_dict_vectorizer.py>`"
+msgstr ""
+

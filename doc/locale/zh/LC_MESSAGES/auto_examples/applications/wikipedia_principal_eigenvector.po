@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:8
+msgid "Wikipedia principal eigenvector"
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:10
+msgid ""
+"A classical way to assert the relative importance of vertices in a graph "
+"is to compute the principal eigenvector of the adjacency matrix so as to "
+"assign to each vertex the values of the components of the first "
+"eigenvector as a centrality score:"
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:15
+msgid "http://en.wikipedia.org/wiki/Eigenvector_centrality"
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:17
+msgid ""
+"On the graph of webpages and links those values are called the PageRank "
+"scores by Google."
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:20
+msgid ""
+"The goal of this example is to analyze the graph of links inside "
+"wikipedia articles to rank articles by relative importance according to "
+"this eigenvector centrality."
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:24
+msgid ""
+"The traditional way to compute the principal eigenvector is to use the "
+"power iteration method:"
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:27
+msgid "http://en.wikipedia.org/wiki/Power_iteration"
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:29
+msgid ""
+"Here the computation is achieved thanks to Martinsson's Randomized SVD "
+"algorithm implemented in the scikit."
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:32
+msgid ""
+"The graph data is fetched from the DBpedia dumps. DBpedia is an "
+"extraction of the latent structured data of the Wikipedia content."
+msgstr ""
+
+#: ../../auto_examples/applications/wikipedia_principal_eigenvector.rst:36
+msgid ""
+"**Python source code:** :download:`wikipedia_principal_eigenvector.py "
+"<wikipedia_principal_eigenvector.py>`"
+msgstr ""
+

@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.random_projection.johnson_lindenstrauss_min_dim.rst:2
+msgid ":mod:`sklearn.random_projection`.johnson_lindenstrauss_min_dim"
+msgstr ""
+
+#: :3
+msgid "Find a 'safe' number of components to randomly project to"
+msgstr ""
+
+#: :5
+msgid ""
+"The distortion introduced by a random projection `p` only changes the "
+"distance between two points by a factor (1 +- eps) in an euclidean space "
+"with good probability. The projection `p` is an eps-embedding as defined "
+"by:"
+msgstr ""
+
+#: :10
+msgid "(1 - eps) ||u - v||^2 < ||p(u) - p(v)||^2 < (1 + eps) ||u - v||^2"
+msgstr ""
+
+#: :12
+msgid ""
+"Where u and v are any rows taken from a dataset of shape [n_samples, "
+"n_features], eps is in ]0, 1[ and p is a projection by a random Gaussian "
+"N(0, 1) matrix with shape [n_components, n_features] (or a sparse "
+"Achlioptas matrix)."
+msgstr ""
+
+#: :17
+msgid ""
+"The minimum number of components to guarantee the eps-embedding is given "
+"by:"
+msgstr ""
+
+#: :20
+msgid "n_components >= 4 log(n_samples) / (eps^2 / 2 - eps^3 / 3)"
+msgstr ""
+
+#: :22
+msgid ""
+"Note that the number of dimensions is independent of the original number "
+"of features but instead depends on the size of the dataset: the larger "
+"the dataset, the higher is the minimal dimensionality of an eps-"
+"embedding."
+msgstr ""
+
+#: :27
+msgid "Read more in the :ref:`User Guide <johnson_lindenstrauss>`."
+msgstr ""
+
+#: :31
+msgid "**n_samples** : int or numpy array of int greater than 0,"
+msgstr ""
+
+#: :33
+msgid ""
+"Number of samples. If an array is given, it will compute a safe number of"
+" components array-wise."
+msgstr ""
+
+#: :36
+msgid "**eps** : float or numpy array of float in ]0,1[, optional (default=0.1)"
+msgstr ""
+
+#: :38
+msgid ""
+"Maximum distortion rate as defined by the Johnson-Lindenstrauss lemma. If"
+" an array is given, it will compute a safe number of components array-"
+"wise."
+msgstr ""
+
+#: :44
+msgid "**n_components** : int or numpy array of int,"
+msgstr ""
+
+#: :46
+msgid ""
+"The minimal number of components to guarantee with good probability an "
+"eps-embedding with n_samples."
+msgstr ""
+
+#: :50
+msgid "References"
+msgstr ""
+
+#: :51
+#, python-format
+msgid "http://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma"
+msgstr ""
+
+#: :53
+msgid ""
+"Sanjoy Dasgupta and Anupam Gupta, 1999, \"An elementary proof of the "
+"Johnson-Lindenstrauss Lemma.\" "
+"http://citeseer.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.3654"
+msgstr ""
+
+#: :62
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.random_projection.johnson_lindenstrauss_min_dim.examples:3
+msgid "Examples using ``sklearn.random_projection.johnson_lindenstrauss_min_dim``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.random_projection.johnson_lindenstrauss_min_dim.examples:25
+msgid ":ref:`example_plot_johnson_lindenstrauss_bound.py`"
+msgstr ""
+

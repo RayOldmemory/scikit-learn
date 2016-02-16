@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../datasets/rcv1.rst:5
+msgid "RCV1 dataset"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:7
+msgid ""
+"Reuters Corpus Volume I (RCV1) is an archive of over 800,000 manually "
+"categorized newswire stories made available by Reuters, Ltd. for research"
+" purposes. The dataset is extensively described in [1]_."
+msgstr ""
+
+#: ../../datasets/rcv1.rst:9
+msgid ""
+":func:`sklearn.datasets.fetch_rcv1` will load the following version: "
+"RCV1-v2, vectors, full sets, topics multilabels::"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:14
+msgid "It returns a dictionary-like object, with the following attributes:"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:16
+#, python-format
+msgid ""
+"``data``: The feature matrix is a scipy CSR sparse matrix, with 804414 "
+"samples and 47236 features. Non-zero values contains cosine-normalized, "
+"log TF-IDF vectors. A nearly chronological split is proposed in [1]_: The"
+" first 23149 samples are the training set. The last 781265 samples are "
+"the testing set. This follows the official LYRL2004 chronological split. "
+"The array has 0.16% of non zero values::"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:25
+#, python-format
+msgid ""
+"``target``: The target values are stored in a scipy CSR sparse matrix, "
+"with 804414 samples and 103 categories. Each sample has a value of 1 in "
+"its categories, and 0 in others. The array has 3.15% of non zero values::"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:31
+msgid ""
+"``sample_id``: Each sample can be identified by its ID, ranging (with "
+"gaps) from 2286 to 810596::"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:37
+msgid ""
+"``target_names``: The target values are the topics of each sample. Each "
+"sample belongs to at least one topic, and to up to 17 topics. There are "
+"103 topics, each represented by a string. Their corpus frequencies span "
+"five orders of magnitude, from 5 occurrences for 'GMIL', to 381327 for "
+"'CCAT'::"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:44
+msgid ""
+"The dataset will be downloaded from the `rcv1 homepage`_ if necessary. "
+"The compressed size is about 656 MB."
+msgstr ""
+
+#: ../../datasets/rcv1.rst
+msgid "References"
+msgstr ""
+
+#: ../../datasets/rcv1.rst:52
+msgid ""
+"Lewis, D. D., Yang, Y., Rose, T. G., & Li, F. (2004). RCV1: A new "
+"benchmark collection for text categorization research. The Journal of "
+"Machine Learning Research, 5, 361-397."
+msgstr ""
+

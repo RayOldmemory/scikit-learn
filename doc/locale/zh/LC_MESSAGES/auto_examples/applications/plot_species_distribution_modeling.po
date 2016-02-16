@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:8
+msgid "Species distribution modeling"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:10
+msgid ""
+"Modeling species' geographic distributions is an important problem in "
+"conservation biology. In this example we model the geographic "
+"distribution of two south american mammals given past observations and 14"
+" environmental variables. Since we have only positive examples (there are"
+" no unsuccessful observations), we cast this problem as a density "
+"estimation problem and use the `OneClassSVM` provided by the package "
+"`sklearn.svm` as our modeling tool. The dataset is provided by Phillips "
+"et. al. (2006). If available, the example uses `basemap "
+"<http://matplotlib.sourceforge.net/basemap/doc/html/>`_ to plot the coast"
+" lines and national boundaries of South America."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:23
+msgid "The two species are:"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:25
+msgid ""
+"`\"Bradypus variegatus\" "
+"<http://www.iucnredlist.org/apps/redlist/details/3038/0>`_ , the Brown-"
+"throated Sloth."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:29
+msgid ""
+"`\"Microryzomys minutus\" "
+"<http://www.iucnredlist.org/apps/redlist/details/13408/0>`_ , also known "
+"as the Forest Small Rice Rat, a rodent that lives in Peru, Colombia, "
+"Ecuador, Peru, and Venezuela."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:35
+msgid "References"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:37
+msgid ""
+"`\"Maximum entropy modeling of species geographic distributions\" "
+"<http://www.cs.princeton.edu/~schapire/papers/ecolmod.pdf>`_ S. J. "
+"Phillips, R. P. Anderson, R. E. Schapire - Ecological Modelling, "
+"190:231-259, 2006."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:48
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:85
+msgid ""
+"**Python source code:** :download:`plot_species_distribution_modeling.py "
+"<plot_species_distribution_modeling.py>`"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_species_distribution_modeling.rst:90
+msgid ""
+"**Total running time of the example:**  433.27 seconds ( 7 minutes  13.27"
+" seconds)"
+msgstr ""
+

@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/text/document_clustering.rst:8
+msgid "Clustering text documents using k-means"
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:10
+msgid ""
+"This is an example showing how the scikit-learn can be used to cluster "
+"documents by topics using a bag-of-words approach. This example uses a "
+"scipy.sparse matrix to store the features instead of standard numpy "
+"arrays."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:14
+msgid "Two feature extraction methods can be used in this example:"
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:16
+msgid ""
+"TfidfVectorizer uses a in-memory vocabulary (a python dict) to map the "
+"most frequent words to features indices and hence compute a word "
+"occurrence frequency (sparse) matrix. The word frequencies are then "
+"reweighted using the Inverse Document Frequency (IDF) vector collected "
+"feature-wise over the corpus."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:22
+msgid ""
+"HashingVectorizer hashes word occurrences to a fixed dimensional space, "
+"possibly with collisions. The word count vectors are then normalized to "
+"each have l2-norm equal to one (projected to the euclidean unit-ball) "
+"which seems to be important for k-means to work in high dimensional "
+"space."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:27
+msgid ""
+"HashingVectorizer does not provide IDF weighting as this is a stateless "
+"model (the fit method does nothing). When IDF weighting is needed it can "
+"be added by pipelining its output to a TfidfTransformer instance."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:31
+msgid ""
+"Two algorithms are demoed: ordinary k-means and its more scalable cousin "
+"minibatch k-means."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:34
+msgid ""
+"Additionally, latent sematic analysis can also be used to reduce "
+"dimensionality and discover latent patterns in the data."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:37
+msgid ""
+"It can be noted that k-means (and minibatch k-means) are very sensitive "
+"to feature scaling and that in this case the IDF weighting helps improve "
+"the quality of the clustering by quite a lot as measured against the "
+"\"ground truth\" provided by the class label assignments of the 20 "
+"newsgroups dataset."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:42
+msgid ""
+"This improvement is not visible in the Silhouette Coefficient which is "
+"small for both as this measure seem to suffer from the phenomenon called "
+"\"Concentration of Measure\" or \"Curse of Dimensionality\" for high "
+"dimensional datasets such as text data. Other measures such as V-measure "
+"and Adjusted Rand Index are information theoretic based evaluation "
+"scores: as they are only based on cluster assignments rather than "
+"distances, hence not affected by the curse of dimensionality."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:50
+msgid ""
+"Note: as k-means is optimizing a non-convex objective function, it will "
+"likely end up in a local optimum. Several runs with independent random "
+"init might be necessary to get a good convergence."
+msgstr ""
+
+#: ../../auto_examples/text/document_clustering.rst:56
+msgid ""
+"**Python source code:** :download:`document_clustering.py "
+"<document_clustering.py>`"
+msgstr ""
+

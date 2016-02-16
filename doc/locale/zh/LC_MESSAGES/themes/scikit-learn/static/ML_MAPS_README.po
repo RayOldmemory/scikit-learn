@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:2
+msgid "Machine Learning Cheat Sheet (for scikit-learn)"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:4
+msgid ""
+"This document is intended to explain how to edit the machine learning "
+"cheat sheet, originally created by Andreas Mueller:"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:8
+msgid ""
+"(http://peekaboo-vision.blogspot.de/2013/01/machine-learning-cheat-sheet-"
+"for-scikit.html)"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:10
+msgid ""
+"The image is made interactive using an imagemap, and uses the jQuery Map "
+"Hilight plugin module by David Lynch "
+"(http://davidlynch.org/projects/maphilight/docs/) to highlight the "
+"different items on the image upon mouseover."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:14
+msgid ""
+"Modifying the map on the docs is currently a little bit tedious, so I'll "
+"try to make it as simple as possible."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:18
+msgid "1. Editing the layout of the map and it's paths."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:20
+msgid ""
+"Use a Graphics editor like Inkscape Vector Graphics Editor to open the "
+"ml_map.svg file, in this folder. From there you can move objects around, "
+"ect. as you need."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:24
+msgid ""
+"Save when done, and make sure to export a .PNG file to replace the old-"
+"outdated ml_map.png, as that file is used as a background image."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:29
+msgid "2. Accessing the paths of the SVG file and exporting them."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:31
+msgid ""
+"Use an image manipulation package like GIMP Image Editor to open the "
+"ml_map.svg file, in this folder. With GIMP, make sure to select 'Import "
+"paths'."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:35
+msgid ""
+"Once the image has been opened, you can see all imported paths on the "
+"paths tab. You can edit these or create new paths. In GIMP, right-"
+"clicking one of the paths and choosing: Path Tool will allow you to see "
+"the paths on the image. The paths will be exported later and will be used"
+" to make the click able regions on our image map."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:42
+msgid "3. Export paths as SVG files"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:44
+msgid ""
+"After you've edited a path or created a new one, right click it on the "
+"paths menu and choose 'Export Path..'. This way we extract just that path"
+" on its own as 'new_area.svg' for example."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:49
+msgid "4. Edit the SVG file"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:50
+msgid ""
+"Using a script made by David Lynch, we will convert the svg files into "
+"html maps. To do this, open the svg file in question in any text editor. "
+"Make sure that the 'width' and 'height' are not in 'in' or 'px', i.e "
+"\"100\" is OK, but \"100px\" or \"1.25in\" are not."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:55
+msgid ""
+"Then wrap the <path> tags in <g> and </g> tags. Then the file is ready "
+"for the script."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:59
+msgid "5. From SVG to HTML map"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:61
+msgid "Use the provided svg2imagemap.py script on your edited svg file:"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:63
+msgid "$ python svg2imagemap.py new_area.svg"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:65
+msgid "where new_area.svg is our file."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:68
+msgid "6. Add the new map to the main html file"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:70
+msgid ""
+"Copy the code from the newly created 'new_area.html' file. Open the "
+"ml_map.html file."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:73
+msgid ""
+"Add the <area href=....... ></area> that you copied after the last "
+"</area> tag in the ml_map.html file."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:76
+msgid ""
+"Add the link address to 'href' and a tooltip to 'title' within your <area"
+" ...> tag."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:79
+msgid ""
+"If you wish to add the green and blue hover effect to the area, add data-"
+"maphilight='{\"strokeColor\":\"0000ff\",\"strokeWidth\":5,\"fillColor\":\"66FF66\",\"fillOpacity\":0.4}'"
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:83
+msgid "to your  area tag, as done in the other <area..> tags above."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:85
+msgid "Save the file, and you're done."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:89
+msgid ""
+"I'll take some time to make some scripts to automate this process a bit "
+"more at some point, as it is not difficult to do, but tedious."
+msgstr ""
+
+#: ../../themes/scikit-learn/static/ML_MAPS_README.rst:93
+msgid "-Jaques Grobler"
+msgstr ""
+

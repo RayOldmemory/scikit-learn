@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:8
+msgid "Spectral clustering for image segmentation"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:10
+msgid ""
+"In this example, an image with connected circles is generated and "
+"spectral clustering is used to separate the circles."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:13
+msgid ""
+"In these settings, the :ref:`spectral_clustering` approach solves the "
+"problem know as 'normalized graph cuts': the image is seen as a graph of "
+"connected voxels, and the spectral clustering algorithm amounts to "
+"choosing graph cuts defining regions while minimizing the ratio of the "
+"gradient along the cut, and the volume of the region."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:19
+msgid ""
+"As the algorithm tries to balance the volume (ie balance the region "
+"sizes), if we take circles with different sizes, the segmentation fails."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:22
+msgid ""
+"In addition, as there is no useful information in the intensity of the "
+"image, or its gradient, we choose to perform the spectral clustering on a"
+" graph that is only weakly informed by the gradient. This is close to "
+"performing a Voronoi partition of the graph."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:27
+msgid ""
+"In addition, we use the mask of the objects to restrict the graph to the "
+"outline of the objects. In this example, we are interested in separating "
+"the objects one from the other, and not from the background."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:59
+msgid ""
+"**Python source code:** :download:`plot_segmentation_toy.py "
+"<plot_segmentation_toy.py>`"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_segmentation_toy.rst:64
+msgid ""
+"**Total running time of the example:**  3.37 seconds ( 0 minutes  3.37 "
+"seconds)"
+msgstr ""
+

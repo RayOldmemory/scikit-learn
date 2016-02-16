@@ -1,0 +1,431 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.feature_selection.RFE.rst:2
+msgid ":mod:`sklearn.feature_selection`.RFE"
+msgstr ""
+
+#: :3
+msgid "Feature ranking with recursive feature elimination."
+msgstr ""
+
+#: :5
+msgid ""
+"Given an external estimator that assigns weights to features (e.g., the "
+"coefficients of a linear model), the goal of recursive feature "
+"elimination (RFE) is to select features by recursively considering "
+"smaller and smaller sets of features. First, the estimator is trained on "
+"the initial set of features and weights are assigned to each one of them."
+" Then, features whose absolute weights are the smallest are pruned from "
+"the current set features. That procedure is recursively repeated on the "
+"pruned set until the desired number of features to select is eventually "
+"reached."
+msgstr ""
+
+#: :14
+msgid "Read more in the :ref:`User Guide <rfe>`."
+msgstr ""
+
+#: :18
+msgid "**estimator** : object"
+msgstr ""
+
+#: :20
+msgid ""
+"A supervised learning estimator with a `fit` method that updates a "
+"`coef_` attribute that holds the fitted parameters. Important features "
+"must correspond to high absolute values in the `coef_` array."
+msgstr ""
+
+#: :24
+msgid ""
+"For instance, this is the case for most supervised learning algorithms "
+"such as Support Vector Classifiers and Generalized Linear Models from the"
+" `svm` and `linear_model` modules."
+msgstr ""
+
+#: :28
+msgid "**n_features_to_select** : int or None (default=None)"
+msgstr ""
+
+#: :30
+msgid ""
+"The number of features to select. If `None`, half of the features are "
+"selected."
+msgstr ""
+
+#: :33
+msgid "**step** : int or float, optional (default=1)"
+msgstr ""
+
+#: :35
+msgid ""
+"If greater than or equal to 1, then `step` corresponds to the (integer) "
+"number of features to remove at each iteration. If within (0.0, 1.0), "
+"then `step` corresponds to the percentage (rounded down) of features to "
+"remove at each iteration."
+msgstr ""
+
+#: :40
+msgid "**estimator_params** : dict"
+msgstr ""
+
+#: :42
+msgid ""
+"Parameters for the external estimator. This attribute is deprecated as of"
+" version 0.16 and will be removed in 0.18. Use estimator initialisation "
+"or set_params method instead."
+msgstr ""
+
+#: :46
+msgid "**verbose** : int, default=0"
+msgstr ""
+
+#: :48
+msgid "Controls verbosity of output."
+msgstr ""
+
+#: :52
+msgid "**n_features_** : int"
+msgstr ""
+
+#: :54
+msgid "The number of selected features."
+msgstr ""
+
+#: :56
+msgid "**support_** : array of shape [n_features]"
+msgstr ""
+
+#: :58
+msgid "The mask of selected features."
+msgstr ""
+
+#: :60
+msgid "**ranking_** : array of shape [n_features]"
+msgstr ""
+
+#: :62
+msgid ""
+"The feature ranking, such that ``ranking_[i]`` corresponds to the ranking"
+" position of the i-th feature. Selected (i.e., estimated best) features "
+"are assigned rank 1."
+msgstr ""
+
+#: :66
+msgid "**estimator_** : object"
+msgstr ""
+
+#: :68
+msgid "The external estimator fit on the reduced dataset."
+msgstr ""
+
+#: :71
+msgid "References"
+msgstr ""
+
+#: :72
+msgid ""
+"Guyon, I., Weston, J., Barnhill, S., & Vapnik, V., \"Gene selection for "
+"cancer classification using support vector machines\", Mach. Learn., "
+"46(1-3), 389--422, 2002."
+msgstr ""
+
+#: :81
+msgid "Examples"
+msgstr ""
+
+#: :82
+msgid ""
+"The following example shows how to retrieve the 5 right informative "
+"features in the Friedman #1 dataset."
+msgstr ""
+
+#: :99
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.feature_selection.RFE.decision_function>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.feature_selection.RFE.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Fit the RFE model and then the underlying estimator on the selected    "
+"features."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.feature_selection.RFE.fit_transform>`\\ (X[,"
+" y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.feature_selection.RFE.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_support <sklearn.feature_selection.RFE.get_support>`\\ "
+"([indices])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get a mask, or integer index, of the features selected"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform "
+"<sklearn.feature_selection.RFE.inverse_transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Reverse the transformation operation"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.feature_selection.RFE.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Reduce X to the selected features and then predict using the    "
+"underlying estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict_log_proba "
+"<sklearn.feature_selection.RFE.predict_log_proba>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict_proba <sklearn.feature_selection.RFE.predict_proba>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.feature_selection.RFE.score>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Reduce X to the selected features and then return the score of the    "
+"underlying estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.feature_selection.RFE.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.feature_selection.RFE.transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Reduce X to the selected features."
+msgstr ""
+
+#: :4
+msgid "Fit the RFE model and then the underlying estimator on the selected"
+msgstr ""
+
+#: :4
+msgid "features."
+msgstr ""
+
+#: :8
+msgid "**X** : {array-like, sparse matrix}, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :10
+msgid "The training input samples."
+msgstr ""
+
+#: :12
+msgid "**y** : array-like, shape = [n_samples]"
+msgstr ""
+
+#: :14
+msgid "The target values."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**indices** : boolean (default False)"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, the return value will be an array of integers, rather than a "
+"boolean mask."
+msgstr ""
+
+#: :14
+msgid "**support** : array"
+msgstr ""
+
+#: :16
+msgid ""
+"An index that selects the retained features from a feature vector. If "
+"`indices` is False, this is a boolean array of shape [# input features], "
+"in which an element is True iff its corresponding feature is selected for"
+" retention. If `indices` is True, this is an integer array of shape [# "
+"output features] whose values are indices into the input feature vector."
+msgstr ""
+
+#: :7
+msgid "**X** : array of shape [n_samples, n_selected_features]"
+msgstr ""
+
+#: :9 :10
+msgid "The input samples."
+msgstr ""
+
+#: :13
+msgid "**X_r** : array of shape [n_samples, n_original_features]"
+msgstr ""
+
+#: :15
+msgid ""
+"`X` with columns of zeros inserted where features would have been removed"
+" by `transform`."
+msgstr ""
+
+#: :4
+msgid "Reduce X to the selected features and then predict using the"
+msgstr ""
+
+#: :4
+msgid "underlying estimator."
+msgstr ""
+
+#: :8 :7
+msgid "**X** : array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :14 :12
+msgid "**y** : array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "The predicted target values."
+msgstr ""
+
+#: :4
+msgid "Reduce X to the selected features and then return the score of the"
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :13
+msgid "**X_r** : array of shape [n_samples, n_selected_features]"
+msgstr ""
+
+#: :15
+msgid "The input samples with only the selected features."
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.RFE.examples:3
+msgid "Examples using ``sklearn.feature_selection.RFE``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.RFE.examples:25
+msgid ":ref:`example_feature_selection_plot_rfe_digits.py`"
+msgstr ""
+

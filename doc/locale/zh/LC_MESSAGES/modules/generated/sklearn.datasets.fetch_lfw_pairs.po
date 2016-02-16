@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.fetch_lfw_pairs.rst:2
+msgid ":mod:`sklearn.datasets`.fetch_lfw_pairs"
+msgstr ""
+
+#: :3
+msgid "Loader for the Labeled Faces in the Wild (LFW) pairs dataset"
+msgstr ""
+
+#: :5
+msgid ""
+"This dataset is a collection of JPEG pictures of famous people collected "
+"on the internet, all details are available on the official website:"
+msgstr ""
+
+#: :9
+msgid "http://vis-www.cs.umass.edu/lfw/"
+msgstr ""
+
+#: :11
+msgid ""
+"Each picture is centered on a single face. Each pixel of each channel "
+"(color in RGB) is encoded by a float in range 0.0 - 1.0."
+msgstr ""
+
+#: :14
+msgid ""
+"The task is called Face Verification: given a pair of two pictures, a "
+"binary classifier must predict whether the two images are from the same "
+"person."
+msgstr ""
+
+#: :18
+msgid ""
+"In the official `README.txt`_ this task is described as the "
+"\"Restricted\" task.  As I am not sure as to implement the "
+"\"Unrestricted\" variant correctly, I left it as unsupported for now."
+msgstr ""
+
+#: :24
+msgid ""
+"The original images are 250 x 250 pixels, but the default slice and "
+"resize arguments reduce them to 62 x 74."
+msgstr ""
+
+#: :27
+msgid "Read more in the :ref:`User Guide <labeled_faces_in_the_wild>`."
+msgstr ""
+
+#: :31
+msgid "**subset** : optional, default: 'train'"
+msgstr ""
+
+#: :33
+msgid ""
+"Select the dataset to load: 'train' for the development training set, "
+"'test' for the development test set, and '10_folds' for the official "
+"evaluation set that is meant to be used with a 10-folds cross validation."
+msgstr ""
+
+#: :38
+msgid "**data_home** : optional, default: None"
+msgstr ""
+
+#: :40
+msgid ""
+"Specify another download and cache folder for the datasets. By default "
+"all scikit learn data is stored in '~/scikit_learn_data' subfolders."
+msgstr ""
+
+#: :44
+msgid "**funneled** : boolean, optional, default: True"
+msgstr ""
+
+#: :46
+msgid "Download and use the funneled variant of the dataset."
+msgstr ""
+
+#: :48
+msgid "**resize** : float, optional, default 0.5"
+msgstr ""
+
+#: :50
+msgid "Ratio used to resize the each face picture."
+msgstr ""
+
+#: :52
+msgid "**color** : boolean, optional, default False"
+msgstr ""
+
+#: :54
+msgid ""
+"Keep the 3 RGB channels instead of averaging them to a single gray level "
+"channel. If color is True the shape of the data has one more dimension "
+"than than the shape with color = False."
+msgstr ""
+
+#: :58
+msgid "**slice_** : optional"
+msgstr ""
+
+#: :60
+msgid ""
+"Provide a custom 2D slice (height, width) to extract the 'interesting' "
+"part of the jpeg files and avoid use statistical correlation from the "
+"background"
+msgstr ""
+
+#: :64
+msgid "**download_if_missing** : optional, True by default"
+msgstr ""
+
+#: :66
+msgid ""
+"If False, raise a IOError if the data is not locally available instead of"
+" trying to download the data from the source site."
+msgstr ""
+
+#: :71
+msgid ""
+"**The data is returned as a Bunch object with the following attributes:**"
+" :"
+msgstr ""
+
+#: :73
+msgid "**data** : numpy array of shape (2200, 5828)"
+msgstr ""
+
+#: :75
+msgid ""
+"Each row corresponds to 2 ravel'd face images of original size 62 x 47 "
+"pixels. Changing the ``slice_`` or resize parameters will change the "
+"shape of the output."
+msgstr ""
+
+#: :79
+msgid "**pairs** : numpy array of shape (2200, 2, 62, 47)"
+msgstr ""
+
+#: :81
+msgid ""
+"Each row has 2 face images corresponding to same or different person from"
+" the dataset containing 5749 people. Changing the ``slice_`` or resize "
+"parameters will change the shape of the output."
+msgstr ""
+
+#: :85
+msgid "**target** : numpy array of shape (13233,)"
+msgstr ""
+
+#: :87
+msgid ""
+"Labels associated to each pair of images. The two label values being "
+"different persons or the same person."
+msgstr ""
+
+#: :90
+msgid "**DESCR** : string"
+msgstr ""
+
+#: :92
+msgid "Description of the Labeled Faces in the Wild (LFW) dataset."
+msgstr ""
+

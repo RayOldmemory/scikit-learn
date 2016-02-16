@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.pairwise.pairwise_kernels.rst:2
+msgid ":mod:`sklearn.metrics.pairwise`.pairwise_kernels"
+msgstr ""
+
+#: :3
+msgid "Compute the kernel between arrays X and optional array Y."
+msgstr ""
+
+#: :5
+msgid ""
+"This method takes either a vector array or a kernel matrix, and returns a"
+" kernel matrix. If the input is a vector array, the kernels are computed."
+" If the input is a kernel matrix, it is returned instead."
+msgstr ""
+
+#: :9
+msgid ""
+"This method provides a safe way to take a kernel matrix as input, while "
+"preserving compatibility with many other algorithms that take a vector "
+"array."
+msgstr ""
+
+#: :13
+msgid ""
+"If Y is given (default is None), then the returned matrix is the pairwise"
+" kernel between the arrays from both X and Y."
+msgstr ""
+
+#: :17
+msgid "Valid values for metric are::"
+msgstr ""
+
+#: :17
+msgid "['rbf', 'sigmoid', 'polynomial', 'poly', 'linear', 'cosine']"
+msgstr ""
+
+#: :19
+msgid "Read more in the :ref:`User Guide <metrics>`."
+msgstr ""
+
+#: :23
+msgid ""
+"**X** : array [n_samples_a, n_samples_a] if metric == \"precomputed\", "
+"or,              [n_samples_a, n_features] otherwise"
+msgstr ""
+
+#: :25
+msgid "Array of pairwise kernels between samples, or a feature array."
+msgstr ""
+
+#: :27
+msgid "**Y** : array [n_samples_b, n_features]"
+msgstr ""
+
+#: :29
+msgid "A second feature array only if X has shape [n_samples_a, n_features]."
+msgstr ""
+
+#: :31
+msgid "**metric** : string, or callable"
+msgstr ""
+
+#: :33
+msgid ""
+"The metric to use when calculating kernel between instances in a feature "
+"array. If metric is a string, it must be one of the metrics in "
+"pairwise.PAIRWISE_KERNEL_FUNCTIONS. If metric is \"precomputed\", X is "
+"assumed to be a kernel matrix. Alternatively, if metric is a callable "
+"function, it is called on each pair of instances (rows) and the resulting"
+" value recorded. The callable should take two arrays from X as input and "
+"return a value indicating the distance between them."
+msgstr ""
+
+#: :42
+msgid "**n_jobs** : int"
+msgstr ""
+
+#: :44
+msgid ""
+"The number of jobs to use for the computation. This works by breaking "
+"down the pairwise matrix into n_jobs even slices and computing them in "
+"parallel."
+msgstr ""
+
+#: :48
+msgid ""
+"If -1 all CPUs are used. If 1 is given, no parallel computing code is "
+"used at all, which is useful for debugging. For n_jobs below -1, (n_cpus "
+"+ 1 + n_jobs) are used. Thus for n_jobs = -2, all CPUs but one are used."
+msgstr ""
+
+#: :53
+msgid "**filter_params: boolean** :"
+msgstr ""
+
+#: :55
+msgid "Whether to filter invalid parameters or not."
+msgstr ""
+
+#: :57
+msgid "**`**kwds`** : optional keyword parameters"
+msgstr ""
+
+#: :59
+msgid "Any further parameters are passed directly to the kernel function."
+msgstr ""
+
+#: :63
+msgid "**K** : array [n_samples_a, n_samples_a] or [n_samples_a, n_samples_b]"
+msgstr ""
+
+#: :65
+msgid ""
+"A kernel matrix K such that K_{i, j} is the kernel between the ith and "
+"jth vectors of the given matrix X, if Y is None. If Y is not None, then "
+"K_{i, j} is the kernel between the ith array from X and the jth array "
+"from Y."
+msgstr ""
+
+#: :71
+msgid "Notes"
+msgstr ""
+
+#: :72
+msgid "If metric is 'precomputed', Y is ignored and X is returned."
+msgstr ""
+

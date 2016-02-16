@@ -1,0 +1,327 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cluster.bicluster.SpectralCoclustering.rst:2
+msgid ":mod:`sklearn.cluster.bicluster`.SpectralCoclustering"
+msgstr ""
+
+#: :3
+msgid "Spectral Co-Clustering algorithm (Dhillon, 2001)."
+msgstr ""
+
+#: :5
+msgid ""
+"Clusters rows and columns of an array `X` to solve the relaxed normalized"
+" cut of the bipartite graph created from `X` as follows: the edge between"
+" row vertex `i` and column vertex `j` has weight `X[i, j]`."
+msgstr ""
+
+#: :10
+msgid ""
+"The resulting bicluster structure is block-diagonal, since each row and "
+"each column belongs to exactly one bicluster."
+msgstr ""
+
+#: :13
+msgid "Supports sparse matrices, as long as they are nonnegative."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <spectral_coclustering>`."
+msgstr ""
+
+#: :19
+msgid "**n_clusters** : integer, optional, default: 3"
+msgstr ""
+
+#: :21
+msgid "The number of biclusters to find."
+msgstr ""
+
+#: :23
+msgid "**svd_method** : string, optional, default: 'randomized'"
+msgstr ""
+
+#: :25
+msgid ""
+"Selects the algorithm for finding singular vectors. May be 'randomized' "
+"or 'arpack'. If 'randomized', use "
+":func:`sklearn.utils.extmath.randomized_svd`, which may be faster for "
+"large matrices. If 'arpack', use :func:`sklearn.utils.arpack.svds`, which"
+" is more accurate, but possibly slower in some cases."
+msgstr ""
+
+#: :32
+msgid "**n_svd_vecs** : int, optional, default: None"
+msgstr ""
+
+#: :34
+msgid ""
+"Number of vectors to use in calculating the SVD. Corresponds to `ncv` "
+"when `svd_method=arpack` and `n_oversamples` when `svd_method` is "
+"'randomized`."
+msgstr ""
+
+#: :38
+msgid "**mini_batch** : bool, optional, default: False"
+msgstr ""
+
+#: :40
+msgid ""
+"Whether to use mini-batch k-means, which is faster but may get different "
+"results."
+msgstr ""
+
+#: :43
+msgid "**init** : {'k-means++', 'random' or an ndarray}"
+msgstr ""
+
+#: :45
+msgid "Method for initialization of k-means algorithm; defaults to 'k-means++'."
+msgstr ""
+
+#: :48
+msgid "**n_init** : int, optional, default: 10"
+msgstr ""
+
+#: :50
+msgid ""
+"Number of random initializations that are tried with the k-means "
+"algorithm."
+msgstr ""
+
+#: :53
+msgid ""
+"If mini-batch k-means is used, the best initialization is chosen and the "
+"algorithm runs once. Otherwise, the algorithm is run for each "
+"initialization and the best solution chosen."
+msgstr ""
+
+#: :57
+msgid "**n_jobs** : int, optional, default: 1"
+msgstr ""
+
+#: :59
+msgid ""
+"The number of jobs to use for the computation. This works by breaking "
+"down the pairwise matrix into n_jobs even slices and computing them in "
+"parallel."
+msgstr ""
+
+#: :63
+msgid ""
+"If -1 all CPUs are used. If 1 is given, no parallel computing code is "
+"used at all, which is useful for debugging. For n_jobs below -1, (n_cpus "
+"+ 1 + n_jobs) are used. Thus for n_jobs = -2, all CPUs but one are used."
+msgstr ""
+
+#: :68
+msgid "**random_state** : int seed, RandomState instance, or None (default)"
+msgstr ""
+
+#: :70
+msgid "A pseudo random number generator used by the K-Means initialization."
+msgstr ""
+
+#: :75
+msgid "**rows_** : array-like, shape (n_row_clusters, n_rows)"
+msgstr ""
+
+#: :77
+msgid ""
+"Results of the clustering. `rows[i, r]` is True if cluster `i` contains "
+"row `r`. Available only after calling ``fit``."
+msgstr ""
+
+#: :80
+msgid "**columns_** : array-like, shape (n_column_clusters, n_columns)"
+msgstr ""
+
+#: :82
+msgid "Results of the clustering, like `rows`."
+msgstr ""
+
+#: :84
+msgid "**row_labels_** : array-like, shape (n_rows,)"
+msgstr ""
+
+#: :86
+msgid "The bicluster label of each row."
+msgstr ""
+
+#: :88
+msgid "**column_labels_** : array-like, shape (n_cols,)"
+msgstr ""
+
+#: :90
+msgid "The bicluster label of each column."
+msgstr ""
+
+#: :93
+msgid "References"
+msgstr ""
+
+#: :94
+msgid ""
+"Dhillon, Inderjit S, 2001. `Co-clustering documents and words using "
+"bipartite spectral graph partitioning "
+"<http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.140.3011>`__."
+msgstr ""
+
+#: :101
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.cluster.bicluster.SpectralCoclustering.fit>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Creates a biclustering for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_indices "
+"<sklearn.cluster.bicluster.SpectralCoclustering.get_indices>`\\ (i)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Row and column indices of the i'th bicluster."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.cluster.bicluster.SpectralCoclustering.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_shape "
+"<sklearn.cluster.bicluster.SpectralCoclustering.get_shape>`\\ (i)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Shape of the i'th bicluster."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_submatrix "
+"<sklearn.cluster.bicluster.SpectralCoclustering.get_submatrix>`\\ (i, "
+"data)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the submatrix corresponding to bicluster `i`."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.cluster.bicluster.SpectralCoclustering.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :3
+msgid "Convenient way to get row and column indicators together."
+msgstr ""
+
+#: :5
+msgid "Returns the ``rows_`` and ``columns_`` members."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :5
+msgid "Only works if ``rows_`` and ``columns_`` attributes exist."
+msgstr ""
+
+#: :9
+msgid "**row_ind** : np.array, dtype=np.intp"
+msgstr ""
+
+#: :11
+msgid "Indices of rows in the dataset that belong to the bicluster."
+msgstr ""
+
+#: :13
+msgid "**col_ind** : np.array, dtype=np.intp"
+msgstr ""
+
+#: :15
+msgid "Indices of columns in the dataset that belong to the bicluster."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**shape** : (int, int)"
+msgstr ""
+
+#: :9
+msgid "Number of rows and columns (resp.) in the bicluster."
+msgstr ""
+
+#: :5
+msgid ""
+"Works with sparse matrices. Only works if ``rows_`` and ``columns_`` "
+"attributes exist."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+

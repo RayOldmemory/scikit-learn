@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.preprocessing.label_binarize.rst:2
+msgid ":mod:`sklearn.preprocessing`.label_binarize"
+msgstr ""
+
+#: :3
+msgid "Binarize labels in a one-vs-all fashion"
+msgstr ""
+
+#: :5
+msgid ""
+"Several regression and binary classification algorithms are available in "
+"the scikit. A simple way to extend these algorithms to the multi-class "
+"classification case is to use the so-called one-vs-all scheme."
+msgstr ""
+
+#: :10
+msgid ""
+"This function makes it possible to compute this transformation for a "
+"fixed set of class labels known ahead of time."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like"
+msgstr ""
+
+#: :17
+msgid "Sequence of integer labels or multilabel data to encode."
+msgstr ""
+
+#: :19
+msgid "**classes** : array-like of shape [n_classes]"
+msgstr ""
+
+#: :21
+msgid "Uniquely holds the label for each class."
+msgstr ""
+
+#: :23
+msgid "**neg_label** : int (default: 0)"
+msgstr ""
+
+#: :25
+msgid "Value with which negative labels must be encoded."
+msgstr ""
+
+#: :27
+msgid "**pos_label** : int (default: 1)"
+msgstr ""
+
+#: :29
+msgid "Value with which positive labels must be encoded."
+msgstr ""
+
+#: :31
+msgid "**sparse_output** : boolean (default: False),"
+msgstr ""
+
+#: :33
+msgid "Set to true if output binary array is desired in CSR sparse format"
+msgstr ""
+
+#: :37
+msgid "**Y** : numpy array or CSR matrix of shape [n_samples, n_classes]"
+msgstr ""
+
+#: :39
+msgid "Shape will be [n_samples, 1] for binary problems."
+msgstr ""
+
+#: :43
+msgid ":obj:`LabelBinarizer`"
+msgstr ""
+
+#: :44
+msgid ""
+"class used to wrap the functionality of label_binarize and allow for "
+"fitting to classes independently of the transform operation"
+msgstr ""
+
+#: :47
+msgid "Examples"
+msgstr ""
+
+#: :53
+msgid "The class ordering is preserved:"
+msgstr ""
+
+#: :59
+msgid "Binary targets transform to a column vector"
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.label_binarize.examples:3
+msgid "Examples using ``sklearn.preprocessing.label_binarize``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.label_binarize.examples:25
+msgid ":ref:`example_model_selection_plot_precision_recall.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.label_binarize.examples:45
+msgid ":ref:`example_model_selection_plot_roc.py`"
+msgstr ""
+

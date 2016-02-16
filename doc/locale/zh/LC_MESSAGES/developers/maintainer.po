@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../developers/maintainer.rst:2
+msgid "Maintainer / core-developer information"
+msgstr ""
+
+#: ../../developers/maintainer.rst:5
+msgid "Making a release"
+msgstr ""
+
+#: ../../developers/maintainer.rst:7
+msgid "Update docs:"
+msgstr ""
+
+#: ../../developers/maintainer.rst:9
+msgid ""
+"edit the doc/whats_new.rst file to add release title and commit "
+"statistics. You can retrieve commit statistics with::"
+msgstr ""
+
+#: ../../developers/maintainer.rst:14
+msgid "edit the doc/conf.py to increase the version number"
+msgstr ""
+
+#: ../../developers/maintainer.rst:16
+msgid ""
+"edit the doc/themes/scikit-learn/layout.html to change the 'News' entry "
+"of the front page."
+msgstr ""
+
+#: ../../developers/maintainer.rst:19
+msgid "Update the version number in sklearn/__init__.py, the __version__ variable"
+msgstr ""
+
+#: ../../developers/maintainer.rst:22
+msgid "Create the tag and push it::"
+msgstr ""
+
+#: ../../developers/maintainer.rst:28
+msgid "create tarballs:"
+msgstr ""
+
+#: ../../developers/maintainer.rst:30
+msgid "Wipe clean your repo::"
+msgstr ""
+
+#: ../../developers/maintainer.rst:34
+msgid "Register and upload on PyPI::"
+msgstr ""
+
+#: ../../developers/maintainer.rst:38
+msgid ""
+"Upload manually the tarball on SourceForge: "
+"https://sourceforge.net/projects/scikit-learn/files/"
+msgstr ""
+
+#: ../../developers/maintainer.rst:41
+msgid "Push the documentation to the website (see README in doc folder)"
+msgstr ""
+
+#: ../../developers/maintainer.rst:44
+msgid "Build binaries for windows and push them to PyPI::"
+msgstr ""
+
+#: ../../developers/maintainer.rst:48
+msgid "And upload them also to sourceforge"
+msgstr ""
+

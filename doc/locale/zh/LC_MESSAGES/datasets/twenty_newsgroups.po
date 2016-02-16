@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../datasets/twenty_newsgroups.rst:4
+msgid "The 20 newsgroups text dataset"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:6
+msgid ""
+"The 20 newsgroups dataset comprises around 18000 newsgroups posts on 20 "
+"topics split in two subsets: one for training (or development) and the "
+"other one for testing (or for performance evaluation). The split between "
+"the train and test set is based upon a messages posted before and after a"
+" specific date."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:12
+msgid ""
+"This module contains two loaders. The first one, "
+":func:`sklearn.datasets.fetch_20newsgroups`, returns a list of the raw "
+"texts that can be fed to text feature extractors such as "
+":class:`sklearn.feature_extraction.text.CountVectorizer` with custom "
+"parameters so as to extract feature vectors. The second one, "
+":func:`sklearn.datasets.fetch_20newsgroups_vectorized`, returns ready-to-"
+"use features, i.e., it is not necessary to use a feature extractor."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:22
+msgid "Usage"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:24
+msgid ""
+"The :func:`sklearn.datasets.fetch_20newsgroups` function is a data "
+"fetching / caching functions that downloads the data archive from the "
+"original `20 newsgroups website`_, extracts the archive contents in the "
+"``~/scikit_learn_data/20news_home`` folder and calls the "
+":func:`sklearn.datasets.load_files` on either the training or testing set"
+" folder, or both of them::"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:57
+msgid ""
+"The real data lies in the ``filenames`` and ``target`` attributes. The "
+"target attribute is the integer index of the category::"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:67
+msgid ""
+"It is possible to load only a sub-selection of the categories by passing "
+"the list of the categories to load to the "
+":func:`sklearn.datasets.fetch_20newsgroups` function::"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:84
+msgid "Converting text to vectors"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:86
+msgid ""
+"In order to feed predictive or clustering models with the text data, one "
+"first need to turn the text into vectors of numerical values suitable for"
+" statistical analysis. This can be achieved with the utilities of the "
+"``sklearn.feature_extraction.text`` as demonstrated in the following "
+"example that extract `TF-IDF`_ vectors of unigram tokens from a subset of"
+" 20news::"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:103
+msgid ""
+"The extracted TF-IDF vectors are very sparse, with an average of 159 non-"
+"zero components by sample in a more than 30000-dimensional space (less "
+"than .5% non-zero features)::"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:110
+msgid ""
+":func:`sklearn.datasets.fetch_20newsgroups_vectorized` is a function "
+"which returns ready-to-use tfidf features instead of file names."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:118
+msgid "Filtering text for more realistic training"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:119
+msgid ""
+"It is easy for a classifier to overfit on particular things that appear "
+"in the 20 Newsgroups data, such as newsgroup headers. Many classifiers "
+"achieve very high F-scores, but their results would not generalize to "
+"other documents that aren't from this window of time."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:124
+msgid ""
+"For example, let's look at the results of a multinomial Naive Bayes "
+"classifier, which is fast to train and achieves a decent F-score::"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:138
+msgid ""
+"(The example :ref:`example_text_document_classification_20newsgroups.py` "
+"shuffles the training and test data, instead of segmenting by time, and "
+"in that case multinomial Naive Bayes gets a much higher F-score of 0.88. "
+"Are you suspicious yet of what's going on inside this classifier?)"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:143
+msgid "Let's take a look at what the most informative features are:"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:158
+msgid "You can now see many things that these features have overfit to:"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:160
+msgid ""
+"Almost every group is distinguished by whether headers such as ``NNTP-"
+"Posting-Host:`` and ``Distribution:`` appear more or less often."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:162
+msgid ""
+"Another significant feature involves whether the sender is affiliated "
+"with a university, as indicated either by their headers or their "
+"signature."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:164
+msgid ""
+"The word \"article\" is a significant feature, based on how often people "
+"quote previous posts like this: \"In article [article ID], [name] "
+"<[e-mail address]> wrote:\""
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:167
+msgid ""
+"Other features match the names and e-mail addresses of particular people "
+"who were posting at the time."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:170
+msgid ""
+"With such an abundance of clues that distinguish newsgroups, the "
+"classifiers barely have to identify topics from text at all, and they all"
+" perform at the same high level."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:174
+msgid ""
+"For this reason, the functions that load 20 Newsgroups data provide a "
+"parameter called **remove**, telling it what kinds of information to "
+"strip out of each file. **remove** should be a tuple containing any "
+"subset of ``('headers', 'footers', 'quotes')``, telling it to remove "
+"headers, signature blocks, and quotation blocks respectively."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:188
+msgid ""
+"This classifier lost over a lot of its F-score, just because we removed "
+"metadata that has little to do with topic classification. It loses even "
+"more if we also strip this metadata from the training data:"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:203
+msgid ""
+"Some other classifiers cope better with this harder version of the task. "
+"Try running "
+":ref:`example_model_selection_grid_search_text_feature_extraction.py` "
+"with and without the ``--filter`` option to compare the results."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst
+msgid "Recommendation"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:209
+msgid ""
+"When evaluating text classifiers on the 20 Newsgroups data, you should "
+"strip newsgroup-related metadata. In scikit-learn, you can do this by "
+"setting ``remove=('headers', 'footers', 'quotes')``. The F-score will be "
+"lower because it is more realistic."
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst
+msgid "Examples"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:216
+msgid ":ref:`example_model_selection_grid_search_text_feature_extraction.py`"
+msgstr ""
+
+#: ../../datasets/twenty_newsgroups.rst:218
+msgid ":ref:`example_text_document_classification_20newsgroups.py`"
+msgstr ""
+

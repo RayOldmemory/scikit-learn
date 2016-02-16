@@ -1,0 +1,385 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.RANSACRegressor.rst:2
+msgid ":mod:`sklearn.linear_model`.RANSACRegressor"
+msgstr ""
+
+#: :3
+msgid "RANSAC (RANdom SAmple Consensus) algorithm."
+msgstr ""
+
+#: :5
+msgid ""
+"RANSAC is an iterative algorithm for the robust estimation of parameters "
+"from a subset of inliers from the complete data set. More information can"
+" be found in the general documentation of linear models."
+msgstr ""
+
+#: :9
+msgid ""
+"A detailed description of the algorithm can be found in the documentation"
+" of the ``linear_model`` sub-package."
+msgstr ""
+
+#: :12
+msgid "Read more in the :ref:`User Guide <ransac_regression>`."
+msgstr ""
+
+#: :16
+msgid "**base_estimator** : object, optional"
+msgstr ""
+
+#: :18
+msgid "Base estimator object which implements the following methods:"
+msgstr ""
+
+#: :20
+msgid "`fit(X, y)`: Fit model to given training data and target values."
+msgstr ""
+
+#: :21
+msgid ""
+"`score(X, y)`: Returns the mean accuracy on the given test data, which is"
+" used for the stop criterion defined by `stop_score`. Additionally, the "
+"score is used to decide which of two equally large consensus sets is "
+"chosen as the better one."
+msgstr ""
+
+#: :26
+msgid ""
+"If `base_estimator` is None, then "
+"``base_estimator=sklearn.linear_model.LinearRegression()`` is used for "
+"target values of dtype float."
+msgstr ""
+
+#: :30
+msgid "Note that the current implementation only supports regression estimators."
+msgstr ""
+
+#: :33
+msgid "**min_samples** : int (>= 1) or float ([0, 1]), optional"
+msgstr ""
+
+#: :35
+msgid ""
+"Minimum number of samples chosen randomly from original data. Treated as "
+"an absolute number of samples for `min_samples >= 1`, treated as a "
+"relative number `ceil(min_samples * X.shape[0]`) for `min_samples < 1`. "
+"This is typically chosen as the minimal number of samples necessary to "
+"estimate the given `base_estimator`. By default a "
+"``sklearn.linear_model.LinearRegression()`` estimator is assumed and "
+"`min_samples` is chosen as ``X.shape[1] + 1``."
+msgstr ""
+
+#: :43
+msgid "**residual_threshold** : float, optional"
+msgstr ""
+
+#: :45
+msgid ""
+"Maximum residual for a data sample to be classified as an inlier. By "
+"default the threshold is chosen as the MAD (median absolute deviation) of"
+" the target values `y`."
+msgstr ""
+
+#: :49
+msgid "**is_data_valid** : callable, optional"
+msgstr ""
+
+#: :51
+msgid ""
+"This function is called with the randomly selected data before the model "
+"is fitted to it: `is_data_valid(X, y)`. If its return value is False the "
+"current randomly chosen sub-sample is skipped."
+msgstr ""
+
+#: :55
+msgid "**is_model_valid** : callable, optional"
+msgstr ""
+
+#: :57
+msgid ""
+"This function is called with the estimated model and the randomly "
+"selected data: `is_model_valid(model, X, y)`. If its return value is "
+"False the current randomly chosen sub-sample is skipped. Rejecting "
+"samples with this function is computationally costlier than with "
+"`is_data_valid`. `is_model_valid` should therefore only be used if the "
+"estimated model is needed for making the rejection decision."
+msgstr ""
+
+#: :64
+msgid "**max_trials** : int, optional"
+msgstr ""
+
+#: :66
+msgid "Maximum number of iterations for random sample selection."
+msgstr ""
+
+#: :68
+msgid "**stop_n_inliers** : int, optional"
+msgstr ""
+
+#: :70
+msgid "Stop iteration if at least this number of inliers are found."
+msgstr ""
+
+#: :72
+msgid "**stop_score** : float, optional"
+msgstr ""
+
+#: :74
+msgid "Stop iteration if score is greater equal than this threshold."
+msgstr ""
+
+#: :76
+msgid "**stop_probability** : float in range [0, 1], optional"
+msgstr ""
+
+#: :78
+msgid ""
+"RANSAC iteration stops if at least one outlier-free set of the training "
+"data is sampled in RANSAC. This requires to generate at least N samples "
+"(iterations)::"
+msgstr ""
+
+#: :84
+msgid ""
+"where the probability (confidence) is typically set to high value such as"
+" 0.99 (the default) and e is the current fraction of inliers w.r.t. the "
+"total number of samples."
+msgstr ""
+
+#: :88
+msgid "**residual_metric** : callable, optional"
+msgstr ""
+
+#: :90
+msgid ""
+"Metric to reduce the dimensionality of the residuals to 1 for multi-"
+"dimensional target values ``y.shape[1] > 1``. By default the sum of "
+"absolute differences is used::"
+msgstr ""
+
+#: :96
+msgid "**random_state** : integer or numpy.RandomState, optional"
+msgstr ""
+
+#: :98
+msgid ""
+"The generator used to initialize the centers. If an integer is given, it "
+"fixes the seed. Defaults to the global numpy random number generator."
+msgstr ""
+
+#: :104
+msgid "**estimator_** : object"
+msgstr ""
+
+#: :106
+msgid "Best fitted model (copy of the `base_estimator` object)."
+msgstr ""
+
+#: :108
+msgid "**n_trials_** : int"
+msgstr ""
+
+#: :110
+msgid ""
+"Number of random selection trials until one of the stop criteria is met. "
+"It is always ``<= max_trials``."
+msgstr ""
+
+#: :113
+msgid "**inlier_mask_** : bool array of shape [n_samples]"
+msgstr ""
+
+#: :115
+msgid "Boolean mask of inliers classified as ``True``."
+msgstr ""
+
+#: :118
+msgid "References"
+msgstr ""
+
+#: :119
+msgid "http://en.wikipedia.org/wiki/RANSAC"
+msgstr ""
+
+#: :120
+msgid "http://www.cs.columbia.edu/~belhumeur/courses/compPhoto/ransac.pdf"
+msgstr ""
+
+#: :121
+msgid "http://www.bmva.org/bmvc/2009/Papers/Paper355/Paper355.pdf"
+msgstr ""
+
+#: :128
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.linear_model.RANSACRegressor.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit estimator using RANSAC algorithm."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.linear_model.RANSACRegressor.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.linear_model.RANSACRegressor.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict using the estimated model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.linear_model.RANSACRegressor.score>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the score of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.linear_model.RANSACRegressor.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like or sparse matrix, shape [n_samples, n_features]"
+msgstr ""
+
+#: :9 :11
+msgid "Training data."
+msgstr ""
+
+#: :11
+msgid "**y** : array-like, shape = [n_samples] or [n_samples, n_targets]"
+msgstr ""
+
+#: :13 :15
+msgid "Target values."
+msgstr ""
+
+#: :17
+msgid "**ValueError** :"
+msgstr ""
+
+#: :19
+msgid ""
+"If no valid consensus set could be found. This occurs if `is_data_valid` "
+"and `is_model_valid` return False for all `max_trials` randomly chosen "
+"sub-samples."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid "This is a wrapper for `estimator_.predict(X)`."
+msgstr ""
+
+#: :9
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :13
+msgid "**y** : array, shape = [n_samples] or [n_samples, n_targets]"
+msgstr ""
+
+#: :15
+msgid "Returns predicted values."
+msgstr ""
+
+#: :5
+msgid "This is a wrapper for `estimator_.score(X, y)`."
+msgstr ""
+
+#: :9
+msgid "**X** : numpy array or sparse matrix of shape [n_samples, n_features]"
+msgstr ""
+
+#: :19
+msgid "**z** : float"
+msgstr ""
+
+#: :21
+msgid "Score of the prediction."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.RANSACRegressor.examples:3
+msgid "Examples using ``sklearn.linear_model.RANSACRegressor``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.RANSACRegressor.examples:25
+msgid ":ref:`example_linear_model_plot_ransac.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.RANSACRegressor.examples:45
+msgid ":ref:`example_linear_model_plot_robust_fit.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.RANSACRegressor.examples:65
+msgid ":ref:`example_linear_model_plot_theilsen.py`"
+msgstr ""
+

@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/index.rst:17
+msgid "Examples"
+msgstr ""
+
+#: ../../auto_examples/index.rst:25
+msgid "General examples"
+msgstr ""
+
+#: ../../auto_examples/index.rst:27
+msgid "General-purpose and introductory examples for the scikit."
+msgstr ""
+
+#: ../../auto_examples/index.rst:316
+msgid "Examples based on real world datasets"
+msgstr ""
+
+#: ../../auto_examples/index.rst:318
+msgid ""
+"Applications to real world problems with some medium sized datasets or "
+"interactive user interface."
+msgstr ""
+
+#: ../../auto_examples/index.rst:608
+msgid "Biclustering"
+msgstr ""
+
+#: ../../auto_examples/index.rst:610
+msgid "Examples concerning the :mod:`sklearn.cluster.bicluster` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:699
+msgid "Calibration"
+msgstr ""
+
+#: ../../auto_examples/index.rst:701
+msgid ""
+"Examples illustrating the calibration of predicted probabilities of "
+"classifiers."
+msgstr ""
+
+#: ../../auto_examples/index.rst:815
+msgid "Classification"
+msgstr ""
+
+#: ../../auto_examples/index.rst:817
+msgid "General examples about classification algorithms."
+msgstr ""
+
+#: ../../auto_examples/index.rst:956
+msgid "Clustering"
+msgstr ""
+
+#: ../../auto_examples/index.rst:958
+msgid "Examples concerning the :mod:`sklearn.cluster` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:1572
+msgid "Covariance estimation"
+msgstr ""
+
+#: ../../auto_examples/index.rst:1574
+msgid "Examples concerning the :mod:`sklearn.covariance` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:1738
+msgid "Cross decomposition"
+msgstr ""
+
+#: ../../auto_examples/index.rst:1740
+msgid "Examples concerning the :mod:`sklearn.cross_decomposition` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:1780
+msgid "Dataset examples"
+msgstr ""
+
+#: ../../auto_examples/index.rst:1782
+msgid "Examples concerning the :mod:`sklearn.datasets` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:1896
+msgid "Decomposition"
+msgstr ""
+
+#: ../../auto_examples/index.rst:1898
+msgid "Examples concerning the :mod:`sklearn.decomposition` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:2188
+msgid "Ensemble methods"
+msgstr ""
+
+#: ../../auto_examples/index.rst:2190
+msgid "Examples concerning the :mod:`sklearn.ensemble` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:2652
+msgid "Tutorial exercises"
+msgstr ""
+
+#: ../../auto_examples/index.rst:2654
+msgid "Exercises for the tutorials"
+msgstr ""
+
+#: ../../auto_examples/index.rst:2768
+msgid "Feature Selection"
+msgstr ""
+
+#: ../../auto_examples/index.rst:2770
+msgid "Examples concerning the :mod:`sklearn.feature_selection` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:2934
+msgid "Gaussian Process for Machine Learning"
+msgstr ""
+
+#: ../../auto_examples/index.rst:2936
+msgid "Examples concerning the :mod:`sklearn.gaussian_process` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:3026
+msgid "Generalized Linear Models"
+msgstr ""
+
+#: ../../auto_examples/index.rst:3028
+msgid "Examples concerning the :mod:`sklearn.linear_model` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:3742
+msgid "Manifold learning"
+msgstr ""
+
+#: ../../auto_examples/index.rst:3744
+msgid "Examples concerning the :mod:`sklearn.manifold` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:3884
+msgid "Gaussian Mixture Models"
+msgstr ""
+
+#: ../../auto_examples/index.rst:3886
+msgid "Examples concerning the :mod:`sklearn.mixture` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:4025
+msgid "Model Selection"
+msgstr ""
+
+#: ../../auto_examples/index.rst:4027
+msgid ""
+"Examples concerning model selection, mostly contained in the "
+":mod:`sklearn.grid_search` and :mod:`sklearn.cross_validation` modules."
+msgstr ""
+
+#: ../../auto_examples/index.rst:4317
+msgid "Nearest Neighbors"
+msgstr ""
+
+#: ../../auto_examples/index.rst:4319
+msgid "Examples concerning the :mod:`sklearn.neighbors` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:4533
+msgid "Neural Networks"
+msgstr ""
+
+#: ../../auto_examples/index.rst:4535
+msgid "Examples concerning the :mod:`sklearn.neural_network` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:4574
+msgid "Preprocessing"
+msgstr ""
+
+#: ../../auto_examples/index.rst:4576
+msgid "Examples concerning the :mod:`sklearn.preprocessing` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:4640
+msgid "Semi Supervised Classification"
+msgstr ""
+
+#: ../../auto_examples/index.rst:4642
+msgid "Examples concerning the :mod:`sklearn.semi_supervised` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:4756
+msgid "Support Vector Machines"
+msgstr ""
+
+#: ../../auto_examples/index.rst:4758
+msgid "Examples concerning the :mod:`sklearn.svm` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:5097
+msgid "Working with text documents"
+msgstr ""
+
+#: ../../auto_examples/index.rst:5099
+msgid "Examples concerning the :mod:`sklearn.feature_extraction.text` module."
+msgstr ""
+
+#: ../../auto_examples/index.rst:5213
+msgid "Decision Trees"
+msgstr ""
+
+#: ../../auto_examples/index.rst:5215
+msgid "Examples concerning the :mod:`sklearn.tree` module."
+msgstr ""
+

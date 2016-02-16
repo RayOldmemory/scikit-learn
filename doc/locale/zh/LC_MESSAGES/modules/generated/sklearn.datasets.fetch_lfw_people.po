@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.fetch_lfw_people.rst:2
+msgid ":mod:`sklearn.datasets`.fetch_lfw_people"
+msgstr ""
+
+#: :3
+msgid "Loader for the Labeled Faces in the Wild (LFW) people dataset"
+msgstr ""
+
+#: :5
+msgid ""
+"This dataset is a collection of JPEG pictures of famous people collected "
+"on the internet, all details are available on the official website:"
+msgstr ""
+
+#: :9
+msgid "http://vis-www.cs.umass.edu/lfw/"
+msgstr ""
+
+#: :11
+msgid ""
+"Each picture is centered on a single face. Each pixel of each channel "
+"(color in RGB) is encoded by a float in range 0.0 - 1.0."
+msgstr ""
+
+#: :14
+msgid ""
+"The task is called Face Recognition (or Identification): given the "
+"picture of a face, find the name of the person given a training set "
+"(gallery)."
+msgstr ""
+
+#: :18
+msgid ""
+"The original images are 250 x 250 pixels, but the default slice and "
+"resize arguments reduce them to 62 x 74."
+msgstr ""
+
+#: :23
+msgid "**data_home** : optional, default: None"
+msgstr ""
+
+#: :25
+msgid ""
+"Specify another download and cache folder for the datasets. By default "
+"all scikit learn data is stored in '~/scikit_learn_data' subfolders."
+msgstr ""
+
+#: :28
+msgid "**funneled** : boolean, optional, default: True"
+msgstr ""
+
+#: :30
+msgid "Download and use the funneled variant of the dataset."
+msgstr ""
+
+#: :32
+msgid "**resize** : float, optional, default 0.5"
+msgstr ""
+
+#: :34
+msgid "Ratio used to resize the each face picture."
+msgstr ""
+
+#: :36
+msgid "**min_faces_per_person** : int, optional, default None"
+msgstr ""
+
+#: :38
+msgid ""
+"The extracted dataset will only retain pictures of people that have at "
+"least `min_faces_per_person` different pictures."
+msgstr ""
+
+#: :41
+msgid "**color** : boolean, optional, default False"
+msgstr ""
+
+#: :43
+msgid ""
+"Keep the 3 RGB channels instead of averaging them to a single gray level "
+"channel. If color is True the shape of the data has one more dimension "
+"than than the shape with color = False."
+msgstr ""
+
+#: :47
+msgid "**slice_** : optional"
+msgstr ""
+
+#: :49
+msgid ""
+"Provide a custom 2D slice (height, width) to extract the 'interesting' "
+"part of the jpeg files and avoid use statistical correlation from the "
+"background"
+msgstr ""
+
+#: :53
+msgid "**download_if_missing** : optional, True by default"
+msgstr ""
+
+#: :55
+msgid ""
+"If False, raise a IOError if the data is not locally available instead of"
+" trying to download the data from the source site."
+msgstr ""
+
+#: :60
+msgid "**dataset** : dict-like object with the following attributes:"
+msgstr ""
+
+#: :62
+msgid "**dataset.data** : numpy array of shape (13233, 2914)"
+msgstr ""
+
+#: :64
+msgid ""
+"Each row corresponds to a ravelled face image of original size 62 x 47 "
+"pixels. Changing the ``slice_`` or resize parameters will change the "
+"shape of the output."
+msgstr ""
+
+#: :68
+msgid "**dataset.images** : numpy array of shape (13233, 62, 47)"
+msgstr ""
+
+#: :70
+msgid ""
+"Each row is a face image corresponding to one of the 5749 people in the "
+"dataset. Changing the ``slice_`` or resize parameters will change the "
+"shape of the output."
+msgstr ""
+
+#: :74
+msgid "**dataset.target** : numpy array of shape (13233,)"
+msgstr ""
+
+#: :76
+msgid ""
+"Labels associated to each face image. Those labels range from 0-5748 and "
+"correspond to the person IDs."
+msgstr ""
+
+#: :79
+msgid "**dataset.DESCR** : string"
+msgstr ""
+
+#: :81
+msgid "Description of the Labeled Faces in the Wild (LFW) dataset."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_lfw_people.examples:3
+msgid "Examples using ``sklearn.datasets.fetch_lfw_people``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_lfw_people.examples:25
+msgid ":ref:`example_applications_face_recognition.py`"
+msgstr ""
+

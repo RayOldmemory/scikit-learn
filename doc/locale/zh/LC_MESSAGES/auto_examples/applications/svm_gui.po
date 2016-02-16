@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/svm_gui.rst:8
+msgid "Libsvm GUI"
+msgstr ""
+
+#: ../../auto_examples/applications/svm_gui.rst:10
+msgid ""
+"A simple graphical frontend for Libsvm mainly intended for didactic "
+"purposes. You can create data points by point and click and visualize the"
+" decision region induced by different kernels and parameter settings."
+msgstr ""
+
+#: ../../auto_examples/applications/svm_gui.rst:14
+msgid ""
+"To create positive examples click the left mouse button; to create "
+"negative examples click the right button."
+msgstr ""
+
+#: ../../auto_examples/applications/svm_gui.rst:17
+msgid "If all examples are from the same class, it uses a one-class SVM."
+msgstr ""
+
+#: ../../auto_examples/applications/svm_gui.rst:21
+msgid "**Python source code:** :download:`svm_gui.py <svm_gui.py>`"
+msgstr ""
+

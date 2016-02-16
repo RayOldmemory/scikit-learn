@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.preprocessing.maxabs_scale.rst:2
+msgid ":mod:`sklearn.preprocessing`.maxabs_scale"
+msgstr ""
+
+#: :3
+msgid "Scale each feature to the [-1, 1] range without breaking the sparsity."
+msgstr ""
+
+#: :5
+msgid ""
+"This estimator scales each feature individually such that the maximal "
+"absolute value of each feature in the training set will be 1.0."
+msgstr ""
+
+#: :9
+msgid "This scaler can also be applied to sparse CSR or CSC matrices."
+msgstr ""
+
+#: :13
+msgid "**axis** : int (0 by default)"
+msgstr ""
+
+#: :15
+msgid ""
+"axis used to scale along. If 0, independently scale each feature, "
+"otherwise (if 1) scale each sample."
+msgstr ""
+
+#: :18
+msgid "**copy** : boolean, optional, default is True"
+msgstr ""
+
+#: :20
+msgid ""
+"Set to False to perform inplace scaling and avoid a copy (if the input is"
+" already a numpy array)."
+msgstr ""
+

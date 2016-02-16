@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.homogeneity_completeness_v_measure.rst:2
+msgid ":mod:`sklearn.metrics`.homogeneity_completeness_v_measure"
+msgstr ""
+
+#: :3
+msgid "Compute the homogeneity and completeness and V-Measure scores at once"
+msgstr ""
+
+#: :5
+msgid ""
+"Those metrics are based on normalized conditional entropy measures of the"
+" clustering labeling to evaluate given the knowledge of a Ground Truth "
+"class labels of the same samples."
+msgstr ""
+
+#: :9
+msgid ""
+"A clustering result satisfies homogeneity if all of its clusters contain "
+"only data points which are members of a single class."
+msgstr ""
+
+#: :12
+msgid ""
+"A clustering result satisfies completeness if all the data points that "
+"are members of a given class are elements of the same cluster."
+msgstr ""
+
+#: :15
+msgid ""
+"Both scores have positive values between 0.0 and 1.0, larger values being"
+" desirable."
+msgstr ""
+
+#: :18
+msgid ""
+"Those 3 metrics are independent of the absolute values of the labels: a "
+"permutation of the class or cluster label values won't change the score "
+"values in any way."
+msgstr ""
+
+#: :22
+msgid ""
+"V-Measure is furthermore symmetric: swapping ``labels_true`` and "
+"``label_pred`` will give the same score. This does not hold for "
+"homogeneity and completeness."
+msgstr ""
+
+#: :26
+msgid "Read more in the :ref:`User Guide <homogeneity_completeness>`."
+msgstr ""
+
+#: :30
+msgid "**labels_true** : int array, shape = [n_samples]"
+msgstr ""
+
+#: :32
+msgid "ground truth class labels to be used as a reference"
+msgstr ""
+
+#: :34
+msgid "**labels_pred** : array, shape = [n_samples]"
+msgstr ""
+
+#: :36
+msgid "cluster labels to evaluate"
+msgstr ""
+
+#: :40
+msgid "**homogeneity: float** :"
+msgstr ""
+
+#: :42
+msgid "score between 0.0 and 1.0. 1.0 stands for perfectly homogeneous labeling"
+msgstr ""
+
+#: :44
+msgid "**completeness: float** :"
+msgstr ""
+
+#: :46
+msgid "score between 0.0 and 1.0. 1.0 stands for perfectly complete labeling"
+msgstr ""
+
+#: :48
+msgid "**v_measure: float** :"
+msgstr ""
+
+#: :50
+msgid "harmonic mean of the first two"
+msgstr ""
+
+#: :54
+msgid ""
+":obj:`homogeneity_score`, :obj:`completeness_score`, "
+":obj:`v_measure_score`"
+msgstr ""
+

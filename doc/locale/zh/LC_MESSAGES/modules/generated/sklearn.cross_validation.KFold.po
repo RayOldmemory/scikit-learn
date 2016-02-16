@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cross_validation.KFold.rst:2
+msgid ":mod:`sklearn.cross_validation`.KFold"
+msgstr ""
+
+#: :3
+msgid "K-Folds cross validation iterator."
+msgstr ""
+
+#: :5
+msgid ""
+"Provides train/test indices to split data in train test sets. Split "
+"dataset into k consecutive folds (without shuffling by default)."
+msgstr ""
+
+#: :8
+msgid ""
+"Each fold is then used a validation set once while the k - 1 remaining "
+"fold form the training set."
+msgstr ""
+
+#: :11
+msgid "Read more in the :ref:`User Guide <cross_validation>`."
+msgstr ""
+
+#: :15
+msgid "**n** : int"
+msgstr ""
+
+#: :17
+msgid "Total number of elements."
+msgstr ""
+
+#: :19
+msgid "**n_folds** : int, default=3"
+msgstr ""
+
+#: :21
+msgid "Number of folds. Must be at least 2."
+msgstr ""
+
+#: :23
+msgid "**shuffle** : boolean, optional"
+msgstr ""
+
+#: :25
+msgid "Whether to shuffle the data before splitting into batches."
+msgstr ""
+
+#: :27
+msgid "**random_state** : None, int or RandomState"
+msgstr ""
+
+#: :29
+msgid ""
+"When shuffle=True, pseudo-random number generator state used for "
+"shuffling. If None, use default numpy RNG for shuffling."
+msgstr ""
+
+#: :35
+msgid ":obj:`StratifiedKFold`"
+msgstr ""
+
+#: :35
+msgid "take label information into account to avoid building"
+msgstr ""
+
+#: :37
+msgid ":obj:`folds`, :obj:`classification`"
+msgstr ""
+
+#: :39
+msgid ":obj:`LabelKFold`"
+msgstr ""
+
+#: :40
+msgid "K-fold iterator variant with non-overlapping labels."
+msgstr ""
+
+#: :43
+msgid "Notes"
+msgstr ""
+
+#: :44
+msgid ""
+"The first n % n_folds folds have size n // n_folds + 1, other folds have "
+"size n // n_folds."
+msgstr ""
+
+#: :48
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.KFold.examples:3
+msgid "Examples using ``sklearn.cross_validation.KFold``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.KFold.examples:25
+msgid ":ref:`example_cluster_plot_feature_agglomeration_vs_univariate_selection.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.KFold.examples:45
+msgid ":ref:`example_ensemble_plot_gradient_boosting_oob.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.KFold.examples:65
+msgid ":ref:`example_exercises_plot_cv_diabetes.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.KFold.examples:85
+msgid ":ref:`example_gaussian_process_gp_diabetes_dataset.py`"
+msgstr ""
+

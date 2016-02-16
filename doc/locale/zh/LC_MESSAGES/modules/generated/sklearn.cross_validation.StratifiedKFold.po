@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cross_validation.StratifiedKFold.rst:2
+msgid ":mod:`sklearn.cross_validation`.StratifiedKFold"
+msgstr ""
+
+#: :3
+msgid "Stratified K-Folds cross validation iterator"
+msgstr ""
+
+#: :5
+msgid "Provides train/test indices to split data in train test sets."
+msgstr ""
+
+#: :7
+msgid ""
+"This cross-validation object is a variation of KFold that returns "
+"stratified folds. The folds are made by preserving the percentage of "
+"samples for each class."
+msgstr ""
+
+#: :11
+msgid "Read more in the :ref:`User Guide <cross_validation>`."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, [n_samples]"
+msgstr ""
+
+#: :17
+msgid "Samples to split in K folds."
+msgstr ""
+
+#: :19
+msgid "**n_folds** : int, default=3"
+msgstr ""
+
+#: :21
+msgid "Number of folds. Must be at least 2."
+msgstr ""
+
+#: :23
+msgid "**shuffle** : boolean, optional"
+msgstr ""
+
+#: :25
+msgid ""
+"Whether to shuffle each stratification of the data before splitting into "
+"batches."
+msgstr ""
+
+#: :28
+msgid "**random_state** : None, int or RandomState"
+msgstr ""
+
+#: :30
+msgid ""
+"When shuffle=True, pseudo-random number generator state used for "
+"shuffling. If None, use default numpy RNG for shuffling."
+msgstr ""
+
+#: :35
+msgid ":obj:`LabelKFold`"
+msgstr ""
+
+#: :36
+msgid "K-fold iterator variant with non-overlapping labels."
+msgstr ""
+
+#: :39
+msgid "Notes"
+msgstr ""
+
+#: :40
+msgid ""
+"All the folds have size trunc(n_samples / n_folds), the last one has the "
+"complementary."
+msgstr ""
+
+#: :44
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.StratifiedKFold.examples:3
+msgid "Examples using ``sklearn.cross_validation.StratifiedKFold``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.StratifiedKFold.examples:25
+msgid ":ref:`example_feature_selection_plot_rfe_with_cross_validation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.StratifiedKFold.examples:45
+msgid ":ref:`example_feature_selection_plot_permutation_test_for_classification.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.StratifiedKFold.examples:65
+msgid ":ref:`example_mixture_plot_gmm_classifier.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.StratifiedKFold.examples:85
+msgid ":ref:`example_model_selection_plot_roc_crossval.py`"
+msgstr ""
+

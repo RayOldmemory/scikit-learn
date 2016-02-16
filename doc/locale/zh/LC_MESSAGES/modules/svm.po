@@ -1,0 +1,847 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/svm.rst:5
+msgid "Support Vector Machines"
+msgstr ""
+
+#: ../../modules/svm.rst:9
+msgid ""
+"**Support vector machines (SVMs)** are a set of supervised learning "
+"methods used for :ref:`classification <svm_classification>`, "
+":ref:`regression <svm_regression>` and :ref:`outliers detection "
+"<svm_outlier_detection>`."
+msgstr ""
+
+#: ../../modules/svm.rst:14
+msgid "The advantages of support vector machines are:"
+msgstr ""
+
+#: ../../modules/svm.rst:16
+msgid "Effective in high dimensional spaces."
+msgstr ""
+
+#: ../../modules/svm.rst:18
+msgid ""
+"Still effective in cases where number of dimensions is greater than the "
+"number of samples."
+msgstr ""
+
+#: ../../modules/svm.rst:21
+msgid ""
+"Uses a subset of training points in the decision function (called support"
+" vectors), so it is also memory efficient."
+msgstr ""
+
+#: ../../modules/svm.rst:24
+msgid ""
+"Versatile: different :ref:`svm_kernels` can be specified for the decision"
+" function. Common kernels are provided, but it is also possible to "
+"specify custom kernels."
+msgstr ""
+
+#: ../../modules/svm.rst:28
+msgid "The disadvantages of support vector machines include:"
+msgstr ""
+
+#: ../../modules/svm.rst:30
+msgid ""
+"If the number of features is much greater than the number of samples, the"
+" method is likely to give poor performances."
+msgstr ""
+
+#: ../../modules/svm.rst:33
+msgid ""
+"SVMs do not directly provide probability estimates, these are calculated "
+"using an expensive five-fold cross-validation (see :ref:`Scores and "
+"probabilities <scores_probabilities>`, below)."
+msgstr ""
+
+#: ../../modules/svm.rst:37
+msgid ""
+"The support vector machines in scikit-learn support both dense "
+"(``numpy.ndarray`` and convertible to that by ``numpy.asarray``) and "
+"sparse (any ``scipy.sparse``) sample vectors as input. However, to use an"
+" SVM to make predictions for sparse data, it must have been fit on such "
+"data. For optimal performance, use C-ordered ``numpy.ndarray`` (dense) or"
+" ``scipy.sparse.csr_matrix`` (sparse) with ``dtype=float64``."
+msgstr ""
+
+#: ../../modules/svm.rst:48
+msgid "Classification"
+msgstr ""
+
+#: ../../modules/svm.rst:50
+msgid ""
+":class:`SVC`, :class:`NuSVC` and :class:`LinearSVC` are classes capable "
+"of performing multi-class classification on a dataset."
+msgstr ""
+
+#: ../../modules/svm.rst:59
+msgid ""
+":class:`SVC` and :class:`NuSVC` are similar methods, but accept slightly "
+"different sets of parameters and have different mathematical formulations"
+" (see section :ref:`svm_mathematical_formulation`). On the other hand, "
+":class:`LinearSVC` is another implementation of Support Vector "
+"Classification for the case of a linear kernel. Note that "
+":class:`LinearSVC` does not accept keyword ``kernel``, as this is assumed"
+" to be linear. It also lacks some of the members of :class:`SVC` and "
+":class:`NuSVC`, like ``support_``."
+msgstr ""
+
+#: ../../modules/svm.rst:68
+msgid ""
+"As other classifiers, :class:`SVC`, :class:`NuSVC` and :class:`LinearSVC`"
+" take as input two arrays: an array X of size ``[n_samples, n_features]``"
+" holding the training samples, and an array y of class labels (strings or"
+" integers), size ``[n_samples]``::"
+msgstr ""
+
+#: ../../modules/svm.rst:84
+msgid "After being fitted, the model can then be used to predict new values::"
+msgstr ""
+
+#: ../../modules/svm.rst:89
+msgid ""
+"SVMs decision function depends on some subset of the training data, "
+"called the support vectors. Some properties of these support vectors can "
+"be found in members ``support_vectors_``, ``support_`` and "
+"``n_support``::"
+msgstr ""
+
+#: ../../modules/svm.rst:108
+msgid "Multi-class classification"
+msgstr ""
+
+#: ../../modules/svm.rst:110
+msgid ""
+":class:`SVC` and :class:`NuSVC` implement the \"one-against-one\" "
+"approach (Knerr et al., 1990) for multi- class classification. If "
+"``n_class`` is the number of classes, then ``n_class * (n_class - 1) / "
+"2`` classifiers are constructed and each one trains data from two "
+"classes. To provide a consistent interface with other classifiers, the "
+"``decision_function_shape`` option allows to aggregate the results of the"
+" \"one-against-one\" classifiers to a decision function of shape "
+"``(n_samples, n_classes)``::"
+msgstr ""
+
+#: ../../modules/svm.rst:135
+msgid ""
+"On the other hand, :class:`LinearSVC` implements \"one-vs-the-rest\" "
+"multi-class strategy, thus training n_class models. If there are only two"
+" classes, only one model is trained::"
+msgstr ""
+
+#: ../../modules/svm.rst:149
+msgid ""
+"See :ref:`svm_mathematical_formulation` for a complete description of the"
+" decision function."
+msgstr ""
+
+#: ../../modules/svm.rst:152
+msgid ""
+"Note that the :class:`LinearSVC` also implements an alternative multi-"
+"class strategy, the so-called multi-class SVM formulated by Crammer and "
+"Singer, by using the option ``multi_class='crammer_singer'``. This method"
+" is consistent, which is not true for one-vs-rest classification. In "
+"practice, one-vs-rest classification is usually preferred, since the "
+"results are mostly similar, but the runtime is significantly less."
+msgstr ""
+
+#: ../../modules/svm.rst:159
+msgid ""
+"For \"one-vs-rest\" :class:`LinearSVC` the attributes ``coef_`` and "
+"``intercept_`` have the shape ``[n_class, n_features]`` and ``[n_class]``"
+" respectively. Each row of the coefficients corresponds to one of the "
+"``n_class`` many \"one-vs-rest\" classifiers and similar for the "
+"intercepts, in the order of the \"one\" class."
+msgstr ""
+
+#: ../../modules/svm.rst:165
+msgid ""
+"In the case of \"one-vs-one\" :class:`SVC`, the layout of the attributes "
+"is a little more involved. In the case of having a linear kernel, The "
+"layout of ``coef_`` and ``intercept_`` is similar to the one described "
+"for :class:`LinearSVC` described above, except that the shape of "
+"``coef_`` is ``[n_class * (n_class - 1) / 2, n_features]``, corresponding"
+" to as many binary classifiers. The order for classes 0 to n is \"0 vs "
+"1\", \"0 vs 2\" , ... \"0 vs n\", \"1 vs 2\", \"1 vs 3\", \"1 vs n\", . ."
+" . \"n-1 vs n\"."
+msgstr ""
+
+#: ../../modules/svm.rst:174
+msgid ""
+"The shape of ``dual_coef_`` is ``[n_class-1, n_SV]`` with a somewhat hard"
+" to grasp layout. The columns correspond to the support vectors involved "
+"in any of the ``n_class * (n_class - 1) / 2`` \"one-vs-one\" classifiers."
+" Each of the support vectors is used in ``n_class - 1`` classifiers. The "
+"``n_class - 1`` entries in each row correspond to the dual coefficients "
+"for these classifiers."
+msgstr ""
+
+#: ../../modules/svm.rst:182
+msgid "This might be made more clear by an example:"
+msgstr ""
+
+#: ../../modules/svm.rst:184
+msgid ""
+"Consider a three class problem with with class 0 having three support "
+"vectors :math:`v^{0}_0, v^{1}_0, v^{2}_0` and class 1 and 2 having two "
+"support vectors :math:`v^{0}_1, v^{1}_1` and :math:`v^{0}_2, v^{1}_2` "
+"respectively.  For each support vector :math:`v^{j}_i`, there are two "
+"dual coefficients.  Let's call the coefficient of support vector "
+":math:`v^{j}_i` in the classifier between classes :math:`i` and :math:`k`"
+" :math:`\\alpha^{j}_{i,k}`. Then ``dual_coef_`` looks like this:"
+msgstr ""
+
+#: ../../modules/svm.rst:193
+msgid ":math:`\\alpha^{0}_{0,1}`"
+msgstr ""
+
+#: ../../modules/svm.rst:193
+msgid ":math:`\\alpha^{0}_{0,2}`"
+msgstr ""
+
+#: ../../modules/svm.rst:193
+msgid "Coefficients for SVs of class 0"
+msgstr ""
+
+#: ../../modules/svm.rst:195
+msgid ":math:`\\alpha^{1}_{0,1}`"
+msgstr ""
+
+#: ../../modules/svm.rst:195
+msgid ":math:`\\alpha^{1}_{0,2}`"
+msgstr ""
+
+#: ../../modules/svm.rst:197
+msgid ":math:`\\alpha^{2}_{0,1}`"
+msgstr ""
+
+#: ../../modules/svm.rst:197
+msgid ":math:`\\alpha^{2}_{0,2}`"
+msgstr ""
+
+#: ../../modules/svm.rst:199
+msgid ":math:`\\alpha^{0}_{1,0}`"
+msgstr ""
+
+#: ../../modules/svm.rst:199
+msgid ":math:`\\alpha^{0}_{1,2}`"
+msgstr ""
+
+#: ../../modules/svm.rst:199
+msgid "Coefficients for SVs of class 1"
+msgstr ""
+
+#: ../../modules/svm.rst:201
+msgid ":math:`\\alpha^{1}_{1,0}`"
+msgstr ""
+
+#: ../../modules/svm.rst:201
+msgid ":math:`\\alpha^{1}_{1,2}`"
+msgstr ""
+
+#: ../../modules/svm.rst:203
+msgid ":math:`\\alpha^{0}_{2,0}`"
+msgstr ""
+
+#: ../../modules/svm.rst:203
+msgid ":math:`\\alpha^{0}_{2,1}`"
+msgstr ""
+
+#: ../../modules/svm.rst:203
+msgid "Coefficients for SVs of class 2"
+msgstr ""
+
+#: ../../modules/svm.rst:205
+msgid ":math:`\\alpha^{1}_{2,0}`"
+msgstr ""
+
+#: ../../modules/svm.rst:205
+msgid ":math:`\\alpha^{1}_{2,1}`"
+msgstr ""
+
+#: ../../modules/svm.rst:212
+msgid "Scores and probabilities"
+msgstr ""
+
+#: ../../modules/svm.rst:214
+msgid ""
+"The :class:`SVC` method ``decision_function`` gives per-class scores for "
+"each sample (or a single score per sample in the binary case). When the "
+"constructor option ``probability`` is set to ``True``, class membership "
+"probability estimates (from the methods ``predict_proba`` and "
+"``predict_log_proba``) are enabled. In the binary case, the probabilities"
+" are calibrated using Platt scaling: logistic regression on the SVM's "
+"scores, fit by an additional cross-validation on the training data. In "
+"the multiclass case, this is extended as per Wu et al. (2004)."
+msgstr ""
+
+#: ../../modules/svm.rst:224
+msgid ""
+"Needless to say, the cross-validation involved in Platt scaling is an "
+"expensive operation for large datasets. In addition, the probability "
+"estimates may be inconsistent with the scores, in the sense that the "
+"\"argmax\" of the scores may not be the argmax of the probabilities. "
+"(E.g., in binary classification, a sample may be labeled by ``predict`` "
+"as belonging to a class that has probability <½ according to "
+"``predict_proba``.) Platt's method is also known to have theoretical "
+"issues. If confidence scores are required, but these do not have to be "
+"probabilities, then it is advisable to set ``probability=False`` and use "
+"``decision_function`` instead of ``predict_proba``."
+msgstr ""
+
+#: ../../modules/svm.rst
+msgid "References:"
+msgstr ""
+
+#: ../../modules/svm.rst:239
+msgid ""
+"Wu, Lin and Weng, `\"Probability estimates for multi-class classification"
+" by pairwise coupling\" "
+"<http://www.csie.ntu.edu.tw/~cjlin/papers/svmprob/svmprob.pdf>`_. JMLR "
+"5:975-1005, 2004."
+msgstr ""
+
+#: ../../modules/svm.rst:246
+msgid "Unbalanced problems"
+msgstr ""
+
+#: ../../modules/svm.rst:248
+msgid ""
+"In problems where it is desired to give more importance to certain "
+"classes or certain individual samples keywords ``class_weight`` and "
+"``sample_weight`` can be used."
+msgstr ""
+
+#: ../../modules/svm.rst:252
+msgid ""
+":class:`SVC` (but not :class:`NuSVC`) implement a keyword "
+"``class_weight`` in the ``fit`` method. It's a dictionary of the form "
+"``{class_label : value}``, where value is a floating point number > 0 "
+"that sets the parameter ``C`` of class ``class_label`` to ``C * value``."
+msgstr ""
+
+#: ../../modules/svm.rst:263
+msgid ""
+":class:`SVC`, :class:`NuSVC`, :class:`SVR`, :class:`NuSVR` and "
+":class:`OneClassSVM` implement also weights for individual samples in "
+"method ``fit`` through keyword ``sample_weight``. Similar to "
+"``class_weight``, these set the parameter ``C`` for the i-th example to "
+"``C * sample_weight[i]``."
+msgstr ""
+
+#: ../../modules/svm.rst
+msgid "Examples:"
+msgstr ""
+
+#: ../../modules/svm.rst:277
+msgid ":ref:`example_svm_plot_iris.py`,"
+msgstr ""
+
+#: ../../modules/svm.rst:278
+msgid ":ref:`example_svm_plot_separating_hyperplane.py`,"
+msgstr ""
+
+#: ../../modules/svm.rst:279
+msgid ":ref:`example_svm_plot_separating_hyperplane_unbalanced.py`"
+msgstr ""
+
+#: ../../modules/svm.rst:280
+msgid ":ref:`example_svm_plot_svm_anova.py`,"
+msgstr ""
+
+#: ../../modules/svm.rst:281
+msgid ":ref:`example_svm_plot_svm_nonlinear.py`"
+msgstr ""
+
+#: ../../modules/svm.rst:282
+msgid ":ref:`example_svm_plot_weighted_samples.py`,"
+msgstr ""
+
+#: ../../modules/svm.rst:288
+msgid "Regression"
+msgstr ""
+
+#: ../../modules/svm.rst:290
+msgid ""
+"The method of Support Vector Classification can be extended to solve "
+"regression problems. This method is called Support Vector Regression."
+msgstr ""
+
+#: ../../modules/svm.rst:293
+msgid ""
+"The model produced by support vector classification (as described above) "
+"depends only on a subset of the training data, because the cost function "
+"for building the model does not care about training points that lie "
+"beyond the margin. Analogously, the model produced by Support Vector "
+"Regression depends only on a subset of the training data, because the "
+"cost function for building the model ignores any training data close to "
+"the model prediction."
+msgstr ""
+
+#: ../../modules/svm.rst:301
+msgid ""
+"There are three different implementations of Support Vector Regression: "
+":class:`SVR`, :class:`NuSVR` and :class:`LinearSVR`. :class:`LinearSVR` "
+"provides a faster implementation than :class:`SVR` but only considers "
+"linear kernels, while :class:`NuSVR` implements a slightly different "
+"formulation than :class:`SVR` and :class:`LinearSVR`. See "
+":ref:`svm_implementation_details` for further details."
+msgstr ""
+
+#: ../../modules/svm.rst:308
+msgid ""
+"As with classification classes, the fit method will take as argument "
+"vectors X, y, only that in this case y is expected to have floating point"
+" values instead of integer values::"
+msgstr ""
+
+#: ../../modules/svm.rst:325
+msgid ":ref:`example_svm_plot_svm_regression.py`"
+msgstr ""
+
+#: ../../modules/svm.rst:332
+msgid "Density estimation, novelty detection"
+msgstr ""
+
+#: ../../modules/svm.rst:334
+msgid ""
+"One-class SVM is used for novelty detection, that is, given a set of "
+"samples, it will detect the soft boundary of that set so as to classify "
+"new points as belonging to that set or not. The class that implements "
+"this is called :class:`OneClassSVM`."
+msgstr ""
+
+#: ../../modules/svm.rst:339
+msgid ""
+"In this case, as it is a type of unsupervised learning, the fit method "
+"will only take as input an array X, as there are no class labels."
+msgstr ""
+
+#: ../../modules/svm.rst:342
+msgid "See, section :ref:`outlier_detection` for more details on this usage."
+msgstr ""
+
+#: ../../modules/svm.rst:352
+msgid ":ref:`example_svm_plot_oneclass.py`"
+msgstr ""
+
+#: ../../modules/svm.rst:353
+msgid ":ref:`example_applications_plot_species_distribution_modeling.py`"
+msgstr ""
+
+#: ../../modules/svm.rst:357
+msgid "Complexity"
+msgstr ""
+
+#: ../../modules/svm.rst:359
+msgid ""
+"Support Vector Machines are powerful tools, but their compute and storage"
+" requirements increase rapidly with the number of training vectors. The "
+"core of an SVM is a quadratic programming problem (QP), separating "
+"support vectors from the rest of the training data. The QP solver used by"
+" this `libsvm`_-based implementation scales between :math:`O(n_{features}"
+" \\times n_{samples}^2)` and :math:`O(n_{features} \\times "
+"n_{samples}^3)` depending on how efficiently the `libsvm`_ cache is used "
+"in practice (dataset dependent). If the data is very sparse "
+":math:`n_{features}` should be replaced by the average number of non-zero"
+" features in a sample vector."
+msgstr ""
+
+#: ../../modules/svm.rst:370
+msgid ""
+"Also note that for the linear case, the algorithm used in "
+":class:`LinearSVC` by the `liblinear`_ implementation is much more "
+"efficient than its `libsvm`_-based :class:`SVC` counterpart and can scale"
+" almost linearly to millions of samples and/or features."
+msgstr ""
+
+#: ../../modules/svm.rst:377
+msgid "Tips on Practical Use"
+msgstr ""
+
+#: ../../modules/svm.rst:380
+msgid ""
+"**Avoiding data copy**: For :class:`SVC`, :class:`SVR`, :class:`NuSVC` "
+"and :class:`NuSVR`, if the data passed to certain methods is not "
+"C-ordered contiguous, and double precision, it will be copied before "
+"calling the underlying C implementation. You can check whether a give "
+"numpy array is C-contiguous by inspecting its ``flags`` attribute."
+msgstr ""
+
+#: ../../modules/svm.rst:386
+msgid ""
+"For :class:`LinearSVC` (and :class:`LogisticRegression "
+"<sklearn.linear_model.LogisticRegression>`) any input passed as a numpy "
+"array will be copied and converted to the liblinear internal sparse data "
+"representation (double precision floats and int32 indices of non-zero "
+"components). If you want to fit a large-scale linear classifier without "
+"copying a dense numpy C-contiguous double precision array as input we "
+"suggest to use the :class:`SGDClassifier "
+"<sklearn.linear_model.SGDClassifier>` class instead.  The objective "
+"function can be configured to be almost the same as the "
+":class:`LinearSVC` model."
+msgstr ""
+
+#: ../../modules/svm.rst:397
+msgid ""
+"**Kernel cache size**: For :class:`SVC`, :class:`SVR`, :class:`nuSVC` and"
+" :class:`NuSVR`, the size of the kernel cache has a strong impact on run "
+"times for larger problems.  If you have enough RAM available, it is "
+"recommended to set ``cache_size`` to a higher value than the default of "
+"200(MB), such as 500(MB) or 1000(MB)."
+msgstr ""
+
+#: ../../modules/svm.rst:403
+msgid ""
+"**Setting C**: ``C`` is ``1`` by default and it's a reasonable default "
+"choice.  If you have a lot of noisy observations you should decrease it. "
+"It corresponds to regularize more the estimation."
+msgstr ""
+
+#: ../../modules/svm.rst:407
+msgid ""
+"Support Vector Machine algorithms are not scale invariant, so **it is "
+"highly recommended to scale your data**. For example, scale each "
+"attribute on the input vector X to [0,1] or [-1,+1], or standardize it to"
+" have mean 0 and variance 1. Note that the *same* scaling must be applied"
+" to the test vector to obtain meaningful results. See section "
+":ref:`preprocessing` for more details on scaling and normalization."
+msgstr ""
+
+#: ../../modules/svm.rst:414
+msgid ""
+"Parameter ``nu`` in :class:`NuSVC`/:class:`OneClassSVM`/:class:`NuSVR` "
+"approximates the fraction of training errors and support vectors."
+msgstr ""
+
+#: ../../modules/svm.rst:417
+msgid ""
+"In :class:`SVC`, if data for classification are unbalanced (e.g. many "
+"positive and few negative), set ``class_weight='balanced'`` and/or try "
+"different penalty parameters ``C``."
+msgstr ""
+
+#: ../../modules/svm.rst:421
+msgid ""
+"The underlying :class:`LinearSVC` implementation uses a random number "
+"generator to select features when fitting the model. It is thus not "
+"uncommon, to have slightly different results for the same input data. If "
+"that happens, try with a smaller tol parameter."
+msgstr ""
+
+#: ../../modules/svm.rst:426
+msgid ""
+"Using L1 penalization as provided by ``LinearSVC(loss='l2', penalty='l1',"
+" dual=False)`` yields a sparse solution, i.e. only a subset of feature "
+"weights is different from zero and contribute to the decision function. "
+"Increasing ``C`` yields a more complex model (more feature are selected)."
+" The ``C`` value that yields a \"null\" model (all weights equal to zero)"
+" can be calculated using :func:`l1_min_c`."
+msgstr ""
+
+#: ../../modules/svm.rst:437
+msgid "Kernel functions"
+msgstr ""
+
+#: ../../modules/svm.rst:439
+msgid "The *kernel function* can be any of the following:"
+msgstr ""
+
+#: ../../modules/svm.rst:441
+msgid "linear: :math:`\\langle x, x'\\rangle`."
+msgstr ""
+
+#: ../../modules/svm.rst:443
+msgid ""
+"polynomial: :math:`(\\gamma \\langle x, x'\\rangle + r)^d`. :math:`d` is "
+"specified by keyword ``degree``, :math:`r` by ``coef0``."
+msgstr ""
+
+#: ../../modules/svm.rst:446
+msgid ""
+"rbf: :math:`\\exp(-\\gamma |x-x'|^2)`. :math:`\\gamma` is specified by "
+"keyword ``gamma``, must be greater than 0."
+msgstr ""
+
+#: ../../modules/svm.rst:449
+msgid ""
+"sigmoid (:math:`\\tanh(\\gamma \\langle x,x'\\rangle + r)`), where "
+":math:`r` is specified by ``coef0``."
+msgstr ""
+
+#: ../../modules/svm.rst:452
+msgid "Different kernels are specified by keyword kernel at initialization::"
+msgstr ""
+
+#: ../../modules/svm.rst:463
+msgid "Custom Kernels"
+msgstr ""
+
+#: ../../modules/svm.rst:465
+msgid ""
+"You can define your own kernels by either giving the kernel as a python "
+"function or by precomputing the Gram matrix."
+msgstr ""
+
+#: ../../modules/svm.rst:468
+msgid ""
+"Classifiers with custom kernels behave the same way as any other "
+"classifiers, except that:"
+msgstr ""
+
+#: ../../modules/svm.rst:471
+msgid ""
+"Field ``support_vectors_`` is now empty, only indices of support vectors "
+"are stored in ``support_``"
+msgstr ""
+
+#: ../../modules/svm.rst:474
+msgid ""
+"A reference (and not a copy) of the first argument in the ``fit()`` "
+"method is stored for future reference. If that array changes between the "
+"use of ``fit()`` and ``predict()`` you will have unexpected results."
+msgstr ""
+
+#: ../../modules/svm.rst:480
+msgid "Using Python functions as kernels"
+msgstr ""
+
+#: ../../modules/svm.rst:482
+msgid ""
+"You can also use your own defined kernels by passing a function to the "
+"keyword ``kernel`` in the constructor."
+msgstr ""
+
+#: ../../modules/svm.rst:485
+msgid ""
+"Your kernel must take as arguments two matrices of shape ``(n_samples_1, "
+"n_features)``, ``(n_samples_2, n_features)`` and return a kernel matrix "
+"of shape ``(n_samples_1, n_samples_2)``."
+msgstr ""
+
+#: ../../modules/svm.rst:489
+msgid ""
+"The following code defines a linear kernel and creates a classifier "
+"instance that will use that kernel::"
+msgstr ""
+
+#: ../../modules/svm.rst:501
+msgid ":ref:`example_svm_plot_custom_kernel.py`."
+msgstr ""
+
+#: ../../modules/svm.rst:504
+msgid "Using the Gram matrix"
+msgstr ""
+
+#: ../../modules/svm.rst:506
+msgid ""
+"Set ``kernel='precomputed'`` and pass the Gram matrix instead of X in the"
+" fit method. At the moment, the kernel values between *all* training "
+"vectors and the test vectors must be provided."
+msgstr ""
+
+#: ../../modules/svm.rst:527
+msgid "Parameters of the RBF Kernel"
+msgstr ""
+
+#: ../../modules/svm.rst:529
+msgid ""
+"When training an SVM with the *Radial Basis Function* (RBF) kernel, two "
+"parameters must be considered: ``C`` and ``gamma``.  The parameter ``C``,"
+" common to all SVM kernels, trades off misclassification of training "
+"examples against simplicity of the decision surface. A low ``C`` makes "
+"the decision surface smooth, while a high ``C`` aims at classifying all "
+"training examples correctly.  ``gamma`` defines how much influence a "
+"single training example has. The larger ``gamma`` is, the closer other "
+"examples must be to be affected."
+msgstr ""
+
+#: ../../modules/svm.rst:537
+msgid ""
+"Proper choice of ``C`` and ``gamma`` is critical to the SVM's "
+"performance.  One is advised to use "
+":class:`sklearn.grid_search.GridSearchCV` with ``C`` and ``gamma`` spaced"
+" exponentially far apart to choose good values."
+msgstr ""
+
+#: ../../modules/svm.rst:543
+msgid ":ref:`example_svm_plot_rbf_parameters.py`"
+msgstr ""
+
+#: ../../modules/svm.rst:548
+msgid "Mathematical formulation"
+msgstr ""
+
+#: ../../modules/svm.rst:550
+msgid ""
+"A support vector machine constructs a hyper-plane or set of hyper-planes "
+"in a high or infinite dimensional space, which can be used for "
+"classification, regression or other tasks. Intuitively, a good separation"
+" is achieved by the hyper-plane that has the largest distance to the "
+"nearest training data points of any class (so-called functional margin), "
+"since in general the larger the margin the lower the generalization error"
+" of the classifier."
+msgstr ""
+
+#: ../../modules/svm.rst:564
+msgid "SVC"
+msgstr ""
+
+#: ../../modules/svm.rst:566
+msgid ""
+"Given training vectors :math:`x_i \\in \\mathbb{R}^p`, i=1,..., n, in two"
+" classes, and a vector :math:`y \\in \\{1, -1\\}^n`, SVC solves the "
+"following primal problem:"
+msgstr ""
+
+#: ../../modules/svm.rst:579 ../../modules/svm.rst:656
+msgid "Its dual is"
+msgstr ""
+
+#: ../../modules/svm.rst:589
+msgid ""
+"where :math:`e` is the vector of all ones, :math:`C > 0` is the upper "
+"bound, :math:`Q` is an :math:`n` by :math:`n` positive semidefinite "
+"matrix, :math:`Q_{ij} \\equiv y_i y_j K(x_i, x_j)` Where :math:`K(x_i, "
+"x_j) = \\phi (x_i)^T \\phi (x_j)` is the kernel. Here training vectors "
+"are implicitly mapped into a higher (maybe infinite) dimensional space by"
+" the function :math:`\\phi`."
+msgstr ""
+
+#: ../../modules/svm.rst:596 ../../modules/svm.rst:672
+msgid "The decision function is:"
+msgstr ""
+
+#: ../../modules/svm.rst:602
+msgid ""
+"While SVM models derived from `libsvm`_ and `liblinear`_ use ``C`` as "
+"regularization parameter, most other estimators use ``alpha``. The "
+"relation between both is :math:`C = \\frac{n\\_samples}{alpha}`."
+msgstr ""
+
+#: ../../modules/svm.rst:608
+msgid ""
+"This parameters can be accessed through the members ``dual_coef_`` which "
+"holds the product :math:`y_i \\alpha_i`, ``support_vectors_`` which holds"
+" the support vectors, and ``intercept_`` which holds the independent term"
+" :math:`\\rho` :"
+msgstr ""
+
+#: ../../modules/svm.rst:615
+msgid ""
+"`\"Automatic Capacity Tuning of Very Large VC-dimension Classifiers\" "
+"<http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.17.7215>`_ I "
+"Guyon, B Boser, V Vapnik - Advances in neural information processing "
+"1993,"
+msgstr ""
+
+#: ../../modules/svm.rst:621
+msgid ""
+"`\"Support-vector networks\" "
+"<http://www.springerlink.com/content/k238jx04hm87j80g/>`_ C. Cortes, V. "
+"Vapnik, Machine Leaming, 20, 273-297 (1995)"
+msgstr ""
+
+#: ../../modules/svm.rst:628
+msgid "NuSVC"
+msgstr ""
+
+#: ../../modules/svm.rst:630
+msgid ""
+"We introduce a new parameter :math:`\\nu` which controls the number of "
+"support vectors and training errors. The parameter :math:`\\nu \\in (0, "
+"1]` is an upper bound on the fraction of training errors and a lower "
+"bound of the fraction of support vectors."
+msgstr ""
+
+#: ../../modules/svm.rst:635
+msgid ""
+"It can be shown that the :math:`\\nu`-SVC formulation is a "
+"reparametrization of the :math:`C`-SVC and therefore mathematically "
+"equivalent."
+msgstr ""
+
+#: ../../modules/svm.rst:640
+msgid "SVR"
+msgstr ""
+
+#: ../../modules/svm.rst:642
+msgid ""
+"Given training vectors :math:`x_i \\in \\mathbb{R}^p`, i=1,..., n, and a "
+"vector :math:`y \\in \\mathbb{R}^n` :math:`\\varepsilon`-SVR solves the "
+"following primal problem:"
+msgstr ""
+
+#: ../../modules/svm.rst:666
+msgid ""
+"where :math:`e` is the vector of all ones, :math:`C > 0` is the upper "
+"bound, :math:`Q` is an :math:`n` by :math:`n` positive semidefinite "
+"matrix, :math:`Q_{ij} \\equiv K(x_i, x_j) = \\phi (x_i)^T \\phi (x_j)` is"
+" the kernel. Here training vectors are implicitly mapped into a higher "
+"(maybe infinite) dimensional space by the function :math:`\\phi`."
+msgstr ""
+
+#: ../../modules/svm.rst:676
+msgid ""
+"These parameters can be accessed through the members ``dual_coef_`` which"
+" holds the difference :math:`\\alpha_i - \\alpha_i^*`, "
+"``support_vectors_`` which holds the support vectors, and ``intercept_`` "
+"which holds the independent term :math:`\\rho`"
+msgstr ""
+
+#: ../../modules/svm.rst:683
+msgid ""
+"`\"A Tutorial on Support Vector Regression\" "
+"<http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.114.4288>`_ Alex"
+" J. Smola, Bernhard Schölkopf -Statistics and Computing archive Volume 14"
+" Issue 3, August 2004, p. 199-222"
+msgstr ""
+
+#: ../../modules/svm.rst:692
+msgid "Implementation details"
+msgstr ""
+
+#: ../../modules/svm.rst:694
+msgid ""
+"Internally, we use `libsvm`_ and `liblinear`_ to handle all computations."
+" These libraries are wrapped using C and Cython."
+msgstr ""
+
+#: ../../modules/svm.rst:702
+msgid ""
+"For a description of the implementation and details of the algorithms "
+"used, please refer to"
+msgstr ""
+
+#: ../../modules/svm.rst:705
+msgid ""
+"`LIBSVM: a library for Support Vector Machines "
+"<http://www.csie.ntu.edu.tw/~cjlin/papers/libsvm.pdf>`_"
+msgstr ""
+
+#: ../../modules/svm.rst:708
+msgid ""
+"`LIBLINEAR -- A Library for Large Linear Classification "
+"<http://www.csie.ntu.edu.tw/~cjlin/liblinear/>`_"
+msgstr ""
+

@@ -1,0 +1,628 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.tree.DecisionTreeRegressor.rst:2
+msgid ":mod:`sklearn.tree`.DecisionTreeRegressor"
+msgstr ""
+
+#: :3
+msgid "A decision tree regressor."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <tree>`."
+msgstr ""
+
+#: :9
+msgid "**criterion** : string, optional (default=\"mse\")"
+msgstr ""
+
+#: :11
+msgid ""
+"The function to measure the quality of a split. The only supported "
+"criterion is \"mse\" for the mean squared error, which is equal to "
+"variance reduction as feature selection criterion."
+msgstr ""
+
+#: :15
+msgid "**splitter** : string, optional (default=\"best\")"
+msgstr ""
+
+#: :17
+msgid ""
+"The strategy used to choose the split at each node. Supported strategies "
+"are \"best\" to choose the best split and \"random\" to choose the best "
+"random split."
+msgstr ""
+
+#: :21
+msgid "**max_features** : int, float, string or None, optional (default=None)"
+msgstr ""
+
+#: :31
+msgid "The number of features to consider when looking for the best split:"
+msgstr ""
+
+#: :24
+msgid "If int, then consider `max_features` features at each split."
+msgstr ""
+
+#: :25
+msgid ""
+"If float, then `max_features` is a percentage and `int(max_features * "
+"n_features)` features are considered at each split."
+msgstr ""
+
+#: :28
+msgid "If \"auto\", then `max_features=n_features`."
+msgstr ""
+
+#: :29
+msgid "If \"sqrt\", then `max_features=sqrt(n_features)`."
+msgstr ""
+
+#: :30
+msgid "If \"log2\", then `max_features=log2(n_features)`."
+msgstr ""
+
+#: :31
+msgid "If None, then `max_features=n_features`."
+msgstr ""
+
+#: :33
+msgid ""
+"Note: the search for a split does not stop until at least one valid "
+"partition of the node samples is found, even if it requires to "
+"effectively inspect more than ``max_features`` features."
+msgstr ""
+
+#: :37
+msgid "**max_depth** : int or None, optional (default=None)"
+msgstr ""
+
+#: :39
+msgid ""
+"The maximum depth of the tree. If None, then nodes are expanded until all"
+" leaves are pure or until all leaves contain less than min_samples_split "
+"samples. Ignored if ``max_leaf_nodes`` is not None."
+msgstr ""
+
+#: :44
+msgid "**min_samples_split** : int, optional (default=2)"
+msgstr ""
+
+#: :46
+msgid "The minimum number of samples required to split an internal node."
+msgstr ""
+
+#: :48
+msgid "**min_samples_leaf** : int, optional (default=1)"
+msgstr ""
+
+#: :50
+msgid "The minimum number of samples required to be at a leaf node."
+msgstr ""
+
+#: :52
+msgid "**min_weight_fraction_leaf** : float, optional (default=0.)"
+msgstr ""
+
+#: :54
+msgid ""
+"The minimum weighted fraction of the input samples required to be at a "
+"leaf node."
+msgstr ""
+
+#: :57
+msgid "**max_leaf_nodes** : int or None, optional (default=None)"
+msgstr ""
+
+#: :59
+msgid ""
+"Grow a tree with ``max_leaf_nodes`` in best-first fashion. Best nodes are"
+" defined as relative reduction in impurity. If None then unlimited number"
+" of leaf nodes. If not None then ``max_depth`` will be ignored."
+msgstr ""
+
+#: :64
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :66
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :71
+msgid "**presort** : bool, optional (default=False)"
+msgstr ""
+
+#: :73
+msgid ""
+"Whether to presort the data to speed up the finding of best splits in "
+"fitting. For the default settings of a decision tree on large datasets, "
+"setting this to true may slow down the training process. When using "
+"either a smaller dataset or a restricted depth, this may speed up the "
+"training."
+msgstr ""
+
+#: :81
+msgid "**feature_importances_** : array of shape = [n_features]"
+msgstr ""
+
+#: :83
+msgid ""
+"The feature importances. The higher, the more important the feature. The "
+"importance of a feature is computed as the (normalized) total reduction "
+"of the criterion brought by that feature. It is also known as the Gini "
+"importance [R70]_."
+msgstr ""
+
+#: :89
+msgid "**max_features_** : int,"
+msgstr ""
+
+#: :91
+msgid "The inferred value of max_features."
+msgstr ""
+
+#: :93
+msgid "**n_features_** : int"
+msgstr ""
+
+#: :95
+msgid "The number of features when ``fit`` is performed."
+msgstr ""
+
+#: :97
+msgid "**n_outputs_** : int"
+msgstr ""
+
+#: :99
+msgid "The number of outputs when ``fit`` is performed."
+msgstr ""
+
+#: :101
+msgid "**tree_** : Tree object"
+msgstr ""
+
+#: :103
+msgid "The underlying Tree object."
+msgstr ""
+
+#: :107
+msgid ":obj:`DecisionTreeClassifier`"
+msgstr ""
+
+#: :110
+msgid "References"
+msgstr ""
+
+#: :111
+msgid "http://en.wikipedia.org/wiki/Decision_tree_learning"
+msgstr ""
+
+#: :113
+msgid ""
+"L. Breiman, J. Friedman, R. Olshen, and C. Stone, \"Classification and "
+"Regression Trees\", Wadsworth, Belmont, CA, 1984."
+msgstr ""
+
+#: :116
+msgid ""
+"T. Hastie, R. Tibshirani and J. Friedman. \"Elements of Statistical "
+"Learning\", Springer, 2009."
+msgstr ""
+
+#: :119
+msgid ""
+"L. Breiman, and A. Cutler, \"Random Forests\", "
+"http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm"
+msgstr ""
+
+#: :127
+msgid "Examples"
+msgstr ""
+
+#: :140
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`apply <sklearn.tree.DecisionTreeRegressor.apply>`\\ (X[, "
+"check_input])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the index of the leaf that each sample is predicted as."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.tree.DecisionTreeRegressor.fit>`\\ (X, y[, "
+"sample_weight, check_input, ...])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Build a decision tree from the training set (X, y)."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.tree.DecisionTreeRegressor.fit_transform>`\\"
+" (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.tree.DecisionTreeRegressor.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict <sklearn.tree.DecisionTreeRegressor.predict>`\\ (X[, "
+"check_input])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict class or regression value for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.tree.DecisionTreeRegressor.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.tree.DecisionTreeRegressor.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform <sklearn.tree.DecisionTreeRegressor.transform>`\\ "
+"(\\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19."
+msgstr ""
+
+#: :9
+msgid "**X** : array_like or sparse matrix, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :11 :13
+msgid ""
+"The input samples. Internally, it will be converted to "
+"``dtype=np.float32`` and if a sparse matrix is provided to a sparse "
+"``csr_matrix``."
+msgstr ""
+
+#: :15 :27 :17
+msgid "**check_input** : boolean, (default=True)"
+msgstr ""
+
+#: :17 :29 :19
+msgid ""
+"Allow to bypass several input checking. Don't use this parameter unless "
+"you know what you do."
+msgstr ""
+
+#: :22
+msgid "**X_leaves** : array_like, shape = [n_samples,]"
+msgstr ""
+
+#: :24
+msgid ""
+"For each datapoint x in X, return the index of the leaf x ends up in. "
+"Leaves are numbered within ``[0; self.tree_.node_count)``, possibly with "
+"gaps in the numbering."
+msgstr ""
+
+#: :3
+msgid "Return the feature importances."
+msgstr ""
+
+#: :5
+msgid ""
+"The importance of a feature is computed as the (normalized) total "
+"reduction of the criterion brought by that feature. It is also known as "
+"the Gini importance."
+msgstr ""
+
+#: :11
+msgid "**feature_importances_** : array, shape = [n_features]"
+msgstr ""
+
+#: :7
+msgid "**X** : array-like or sparse matrix, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid ""
+"The training input samples. Internally, it will be converted to "
+"``dtype=np.float32`` and if a sparse matrix is provided to a sparse "
+"``csc_matrix``."
+msgstr ""
+
+#: :13
+msgid "**y** : array-like, shape = [n_samples] or [n_samples, n_outputs]"
+msgstr ""
+
+#: :15
+msgid ""
+"The target values (class labels in classification, real numbers in "
+"regression). In the regression case, use ``dtype=np.float64`` and "
+"``order='C'`` for maximum efficiency."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples] or None"
+msgstr ""
+
+#: :21
+msgid ""
+"Sample weights. If None, then samples are equally weighted. Splits that "
+"would create child nodes with net zero or negative weight are ignored "
+"while searching for a split in each node. In the case of classification, "
+"splits are also ignored if they would result in any single class carrying"
+" a negative weight in either child node."
+msgstr ""
+
+#: :32
+msgid "**X_idx_sorted** : array-like, shape = [n_samples, n_features], optional"
+msgstr ""
+
+#: :34
+msgid ""
+"The indexes of the sorted training input samples. If many tree are grown "
+"on the same dataset, this allows the ordering to be cached between trees."
+" If None, the data will be sorted here. Don't use this parameter unless "
+"you know what to do."
+msgstr ""
+
+#: :41
+msgid "**self** : object"
+msgstr ""
+
+#: :43
+msgid "Returns self."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"For a classification model, the predicted class for each sample in X is "
+"returned. For a regression model, the predicted value based on X is "
+"returned."
+msgstr ""
+
+#: :11
+msgid "**X** : array-like or sparse matrix of shape = [n_samples, n_features]"
+msgstr ""
+
+#: :24
+msgid "**y** : array of shape = [n_samples] or [n_samples, n_outputs]"
+msgstr ""
+
+#: :26
+msgid "The predicted classes, or the predict values."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :3
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19. Use SelectFromModel instead."
+msgstr ""
+
+#: :5
+msgid "Reduce X to its most important features."
+msgstr ""
+
+#: :7
+msgid ""
+"Uses ``coef_`` or ``feature_importances_`` to determine the most "
+"important features.  For models with a ``coef_`` for each class, the "
+"absolute sum over the classes is used."
+msgstr ""
+
+#: :13
+msgid "**X** : array or scipy sparse matrix of shape [n_samples, n_features]"
+msgstr ""
+
+#: :15
+msgid "The input samples."
+msgstr ""
+
+#: :24
+msgid "threshold"
+msgstr ""
+
+#: :23
+msgid "string, float or None, optional (default=None)"
+msgstr ""
+
+#: :18
+msgid ""
+"The threshold value to use for feature selection. Features whose "
+"importance is greater or equal are kept while the others are discarded. "
+"If \"median\" (resp. \"mean\"), then the threshold value is the median "
+"(resp. the mean) of the feature importances. A scaling factor (e.g., "
+"\"1.25*mean\") may also be used. If None and if available, the object "
+"attribute ``threshold`` is used. Otherwise, \"mean\" is used by default."
+msgstr ""
+
+#: :28
+msgid "**X_r** : array of shape [n_samples, n_selected_features]"
+msgstr ""
+
+#: :30
+msgid "The input samples with only the selected features."
+msgstr ""
+
+#: ../../modules/generated/sklearn.tree.DecisionTreeRegressor.examples:3
+msgid "Examples using ``sklearn.tree.DecisionTreeRegressor``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.tree.DecisionTreeRegressor.examples:25
+msgid ":ref:`example_ensemble_plot_adaboost_regression.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.tree.DecisionTreeRegressor.examples:45
+msgid ":ref:`example_ensemble_plot_bias_variance.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.tree.DecisionTreeRegressor.examples:65
+msgid ":ref:`example_tree_plot_tree_regression.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.tree.DecisionTreeRegressor.examples:85
+msgid ":ref:`example_tree_plot_tree_regression_multioutput.py`"
+msgstr ""
+

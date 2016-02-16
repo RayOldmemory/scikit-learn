@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.make_hastie_10_2.rst:2
+msgid ":mod:`sklearn.datasets`.make_hastie_10_2"
+msgstr ""
+
+#: :3
+msgid ""
+"Generates data for binary classification used in Hastie et al. 2009, "
+"Example 10.2."
+msgstr ""
+
+#: :6
+msgid ""
+"The ten features are standard independent Gaussian and the target ``y`` "
+"is defined by::"
+msgstr ""
+
+#: :11
+msgid "Read more in the :ref:`User Guide <sample_generators>`."
+msgstr ""
+
+#: :15
+msgid "**n_samples** : int, optional (default=12000)"
+msgstr ""
+
+#: :17
+msgid "The number of samples."
+msgstr ""
+
+#: :19
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :21
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :28
+msgid "**X** : array of shape [n_samples, 10]"
+msgstr ""
+
+#: :30
+msgid "The input samples."
+msgstr ""
+
+#: :32
+msgid "**y** : array of shape [n_samples]"
+msgstr ""
+
+#: :34
+msgid "The output values."
+msgstr ""
+
+#: :38
+msgid ":obj:`make_gaussian_quantiles`"
+msgstr ""
+
+#: :39
+msgid "a generalization of this dataset approach"
+msgstr ""
+
+#: :42
+msgid "References"
+msgstr ""
+
+#: :43
+msgid ""
+"T. Hastie, R. Tibshirani and J. Friedman, \"Elements of Statistical "
+"Learning Ed. 2\", Springer, 2009."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_hastie_10_2.examples:3
+msgid "Examples using ``sklearn.datasets.make_hastie_10_2``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_hastie_10_2.examples:25
+msgid ":ref:`example_ensemble_plot_gradient_boosting_regularization.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_hastie_10_2.examples:45
+msgid ":ref:`example_ensemble_plot_adaboost_hastie_10_2.py`"
+msgstr ""
+

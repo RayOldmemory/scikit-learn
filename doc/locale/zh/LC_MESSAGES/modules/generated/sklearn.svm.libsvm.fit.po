@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.svm.libsvm.fit.rst:2
+msgid ":mod:`sklearn.svm.libsvm`.fit"
+msgstr ""
+
+#: :3
+msgid "Train the model using libsvm (low-level method)"
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, dtype=float64, size=[n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "**Y** : array, dtype=float64, size=[n_samples]"
+msgstr ""
+
+#: :11
+msgid "target vector"
+msgstr ""
+
+#: :13
+msgid "**svm_type** : {0, 1, 2, 3, 4}, optional"
+msgstr ""
+
+#: :15
+msgid ""
+"Type of SVM: C_SVC, NuSVC, OneClassSVM, EpsilonSVR or NuSVR respectively."
+" 0 by default."
+msgstr ""
+
+#: :18
+msgid "**kernel** : {'linear', 'rbf', 'poly', 'sigmoid', 'precomputed'}, optional"
+msgstr ""
+
+#: :20
+msgid ""
+"Kernel to use in the model: linear, polynomial, RBF, sigmoid or "
+"precomputed. 'rbf' by default."
+msgstr ""
+
+#: :23
+msgid "**degree** : int32, optional"
+msgstr ""
+
+#: :25
+msgid ""
+"Degree of the polynomial kernel (only relevant if kernel is set to "
+"polynomial), 3 by default."
+msgstr ""
+
+#: :28
+msgid "**gamma** : float64, optional"
+msgstr ""
+
+#: :30
+msgid ""
+"Gamma parameter in RBF kernel (only relevant if kernel is set to RBF). "
+"0.1 by default."
+msgstr ""
+
+#: :33
+msgid "**coef0** : float64, optional"
+msgstr ""
+
+#: :35
+msgid "Independent parameter in poly/sigmoid kernel. 0 by default."
+msgstr ""
+
+#: :37
+msgid "**tol** : float64, optional"
+msgstr ""
+
+#: :39
+msgid "Numeric stopping criterion (WRITEME). 1e-3 by default."
+msgstr ""
+
+#: :41
+msgid "**C** : float64, optional"
+msgstr ""
+
+#: :43
+msgid "C parameter in C-Support Vector Classification. 1 by default."
+msgstr ""
+
+#: :45
+msgid "**nu** : float64, optional"
+msgstr ""
+
+#: :47
+msgid "0.5 by default."
+msgstr ""
+
+#: :49
+msgid "**epsilon** : double, optional"
+msgstr ""
+
+#: :51
+msgid "0.1 by default."
+msgstr ""
+
+#: :53
+msgid "**class_weight** : array, dtype float64, shape (n_classes,), optional"
+msgstr ""
+
+#: :55 :59
+msgid "np.empty(0) by default."
+msgstr ""
+
+#: :57
+msgid "**sample_weight** : array, dtype float64, shape (n_samples,), optional"
+msgstr ""
+
+#: :61
+msgid "**shrinking** : int, optional"
+msgstr ""
+
+#: :63
+msgid "1 by default."
+msgstr ""
+
+#: :65
+msgid "**probability** : int, optional"
+msgstr ""
+
+#: :67
+msgid "0 by default."
+msgstr ""
+
+#: :69
+msgid "**cache_size** : float64, optional"
+msgstr ""
+
+#: :71
+msgid "Cache size for gram matrix columns (in megabytes). 100 by default."
+msgstr ""
+
+#: :73
+msgid "**max_iter** : int (-1 for no limit), optional."
+msgstr ""
+
+#: :75
+msgid ""
+"Stop solver after this many iterations regardless of accuracy (XXX "
+"Currently there is no API to know whether this kicked in.) -1 by default."
+msgstr ""
+
+#: :79
+msgid "**random_seed** : int, optional"
+msgstr ""
+
+#: :81
+msgid ""
+"Seed for the random number generator used for probability estimates. 0 by"
+" default."
+msgstr ""
+
+#: :86
+msgid "**support** : array, shape=[n_support]"
+msgstr ""
+
+#: :88
+msgid "index of support vectors"
+msgstr ""
+
+#: :90
+msgid "**support_vectors** : array, shape=[n_support, n_features]"
+msgstr ""
+
+#: :92
+msgid ""
+"support vectors (equivalent to X[support]). Will return an empty array in"
+" the case of precomputed kernel."
+msgstr ""
+
+#: :95
+msgid "**n_class_SV** : array"
+msgstr ""
+
+#: :97
+msgid "number of support vectors in each class."
+msgstr ""
+
+#: :99
+msgid "**sv_coef** : array"
+msgstr ""
+
+#: :101
+msgid "coefficients of support vectors in decision function."
+msgstr ""
+
+#: :103
+msgid "**intercept** : array"
+msgstr ""
+
+#: :105
+msgid "intercept in decision function"
+msgstr ""
+
+#: :107
+msgid "**probA, probB** : array"
+msgstr ""
+
+#: :109
+msgid "probability estimates, empty array for probability=False"
+msgstr ""
+

@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.make_classification.rst:2
+msgid ":mod:`sklearn.datasets`.make_classification"
+msgstr ""
+
+#: :3
+msgid "Generate a random n-class classification problem."
+msgstr ""
+
+#: :5
+msgid ""
+"This initially creates clusters of points normally distributed (std=1) "
+"about vertices of a `2 * class_sep`-sided hypercube, and assigns an equal"
+" number of clusters to each class. It introduces interdependence between "
+"these features and adds various types of further noise to the data."
+msgstr ""
+
+#: :10
+msgid ""
+"Prior to shuffling, `X` stacks a number of these primary \"informative\" "
+"features, \"redundant\" linear combinations of these, \"repeated\" "
+"duplicates of sampled features, and arbitrary noise for and remaining "
+"features."
+msgstr ""
+
+#: :14
+msgid "Read more in the :ref:`User Guide <sample_generators>`."
+msgstr ""
+
+#: :18
+msgid "**n_samples** : int, optional (default=100)"
+msgstr ""
+
+#: :20
+msgid "The number of samples."
+msgstr ""
+
+#: :22
+msgid "**n_features** : int, optional (default=20)"
+msgstr ""
+
+#: :24
+msgid ""
+"The total number of features. These comprise `n_informative` informative "
+"features, `n_redundant` redundant features, `n_repeated` duplicated "
+"features and `n_features-n_informative-n_redundant- n_repeated` useless "
+"features drawn at random."
+msgstr ""
+
+#: :29
+msgid "**n_informative** : int, optional (default=2)"
+msgstr ""
+
+#: :31
+msgid ""
+"The number of informative features. Each class is composed of a number of"
+" gaussian clusters each located around the vertices of a hypercube in a "
+"subspace of dimension `n_informative`. For each cluster, informative "
+"features are drawn independently from  N(0, 1) and then randomly linearly"
+" combined within each cluster in order to add covariance. The clusters "
+"are then placed on the vertices of the hypercube."
+msgstr ""
+
+#: :39
+msgid "**n_redundant** : int, optional (default=2)"
+msgstr ""
+
+#: :41
+msgid ""
+"The number of redundant features. These features are generated as random "
+"linear combinations of the informative features."
+msgstr ""
+
+#: :44
+msgid "**n_repeated** : int, optional (default=0)"
+msgstr ""
+
+#: :46
+msgid ""
+"The number of duplicated features, drawn randomly from the informative "
+"and the redundant features."
+msgstr ""
+
+#: :49
+msgid "**n_classes** : int, optional (default=2)"
+msgstr ""
+
+#: :51
+msgid "The number of classes (or labels) of the classification problem."
+msgstr ""
+
+#: :53
+msgid "**n_clusters_per_class** : int, optional (default=2)"
+msgstr ""
+
+#: :55
+msgid "The number of clusters per class."
+msgstr ""
+
+#: :57
+msgid "**weights** : list of floats or None (default=None)"
+msgstr ""
+
+#: :59
+msgid ""
+"The proportions of samples assigned to each class. If None, then classes "
+"are balanced. Note that if `len(weights) == n_classes - 1`, then the last"
+" class weight is automatically inferred. More than `n_samples` samples "
+"may be returned if the sum of `weights` exceeds 1."
+msgstr ""
+
+#: :65
+msgid "**flip_y** : float, optional (default=0.01)"
+msgstr ""
+
+#: :67
+msgid "The fraction of samples whose class are randomly exchanged."
+msgstr ""
+
+#: :69
+msgid "**class_sep** : float, optional (default=1.0)"
+msgstr ""
+
+#: :71
+msgid "The factor multiplying the hypercube dimension."
+msgstr ""
+
+#: :73
+msgid "**hypercube** : boolean, optional (default=True)"
+msgstr ""
+
+#: :75
+msgid ""
+"If True, the clusters are put on the vertices of a hypercube. If False, "
+"the clusters are put on the vertices of a random polytope."
+msgstr ""
+
+#: :78
+msgid ""
+"**shift** : float, array of shape [n_features] or None, optional "
+"(default=0.0)"
+msgstr ""
+
+#: :80
+msgid ""
+"Shift features by the specified value. If None, then features are shifted"
+" by a random value drawn in [-class_sep, class_sep]."
+msgstr ""
+
+#: :83
+msgid ""
+"**scale** : float, array of shape [n_features] or None, optional "
+"(default=1.0)"
+msgstr ""
+
+#: :85
+msgid ""
+"Multiply features by the specified value. If None, then features are "
+"scaled by a random value drawn in [1, 100]. Note that scaling happens "
+"after shifting."
+msgstr ""
+
+#: :89
+msgid "**shuffle** : boolean, optional (default=True)"
+msgstr ""
+
+#: :91
+msgid "Shuffle the samples and the features."
+msgstr ""
+
+#: :93
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :95
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :102
+msgid "**X** : array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :104
+msgid "The generated samples."
+msgstr ""
+
+#: :106
+msgid "**y** : array of shape [n_samples]"
+msgstr ""
+
+#: :108
+msgid "The integer labels for class membership of each sample."
+msgstr ""
+
+#: :113
+msgid ":obj:`make_blobs`"
+msgstr ""
+
+#: :113
+msgid "simplified variant"
+msgstr ""
+
+#: :115
+msgid ":obj:`make_multilabel_classification`"
+msgstr ""
+
+#: :116
+msgid "unrelated generator for multilabel tasks"
+msgstr ""
+
+#: :119
+msgid "Notes"
+msgstr ""
+
+#: :120
+msgid ""
+"The algorithm is adapted from Guyon [1] and was designed to generate the "
+"\"Madelon\" dataset."
+msgstr ""
+
+#: :124
+msgid "References"
+msgstr ""
+
+#: :125
+msgid ""
+"I. Guyon, \"Design of experiments for the NIPS 2003 variable selection "
+"benchmark\", 2003."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:3
+msgid "Examples using ``sklearn.datasets.make_classification``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:25
+msgid ":ref:`example_calibration_plot_compare_calibration.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:45
+msgid ":ref:`example_calibration_plot_calibration_curve.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:65
+msgid ":ref:`example_classification_plot_classifier_comparison.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:85
+msgid ":ref:`example_datasets_plot_random_dataset.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:105
+msgid ":ref:`example_ensemble_plot_forest_importances.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:125
+msgid ":ref:`example_ensemble_plot_ensemble_oob.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:145
+msgid ":ref:`example_ensemble_plot_feature_transformation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:165
+msgid ":ref:`example_feature_selection_feature_selection_pipeline.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:185
+msgid ":ref:`example_feature_selection_plot_rfe_with_cross_validation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_classification.examples:205
+msgid ":ref:`example_svm_plot_svm_scale_c.py`"
+msgstr ""
+

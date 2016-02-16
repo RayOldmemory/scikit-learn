@@ -1,0 +1,343 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.random_projection.SparseRandomProjection.rst:2
+msgid ":mod:`sklearn.random_projection`.SparseRandomProjection"
+msgstr ""
+
+#: :3
+msgid "Reduce dimensionality through sparse random projection"
+msgstr ""
+
+#: :5
+msgid ""
+"Sparse random matrix is an alternative to dense random projection matrix "
+"that guarantees similar embedding quality while being much more memory "
+"efficient and allowing faster computation of the projected data."
+msgstr ""
+
+#: :10
+msgid ""
+"If we note `s = 1 / density` the components of the random matrix are "
+"drawn from:"
+msgstr ""
+
+#: :13
+msgid "-sqrt(s) / sqrt(n_components)   with probability 1 / 2s"
+msgstr ""
+
+#: :14
+msgid "0                              with probability 1 - 1 / s"
+msgstr ""
+
+#: :15
+msgid "+sqrt(s) / sqrt(n_components)   with probability 1 / 2s"
+msgstr ""
+
+#: :17
+msgid "Read more in the :ref:`User Guide <sparse_random_matrix>`."
+msgstr ""
+
+#: :21
+msgid "**n_components** : int or 'auto', optional (default = 'auto')"
+msgstr ""
+
+#: :23
+msgid "Dimensionality of the target projection space."
+msgstr ""
+
+#: :25
+msgid ""
+"n_components can be automatically adjusted according to the number of "
+"samples in the dataset and the bound given by the Johnson-Lindenstrauss "
+"lemma. In that case the quality of the embedding is controlled by the "
+"``eps`` parameter."
+msgstr ""
+
+#: :30
+msgid ""
+"It should be noted that Johnson-Lindenstrauss lemma can yield very "
+"conservative estimated of the required number of components as it makes "
+"no assumption on the structure of the dataset."
+msgstr ""
+
+#: :34
+msgid "**density** : float in range ]0, 1], optional (default='auto')"
+msgstr ""
+
+#: :36
+msgid "Ratio of non-zero component in the random projection matrix."
+msgstr ""
+
+#: :38
+msgid ""
+"If density = 'auto', the value is set to the minimum density as "
+"recommended by Ping Li et al.: 1 / sqrt(n_features)."
+msgstr ""
+
+#: :41
+msgid ""
+"Use density = 1 / 3.0 if you want to reproduce the results from "
+"Achlioptas, 2001."
+msgstr ""
+
+#: :44
+msgid "**eps** : strictly positive float, optional, (default=0.1)"
+msgstr ""
+
+#: :46
+msgid ""
+"Parameter to control the quality of the embedding according to the "
+"Johnson-Lindenstrauss lemma when n_components is set to 'auto'."
+msgstr ""
+
+#: :50
+msgid ""
+"Smaller values lead to better embedding and higher number of dimensions "
+"(n_components) in the target projection space."
+msgstr ""
+
+#: :53
+msgid "**dense_output** : boolean, optional (default=False)"
+msgstr ""
+
+#: :55
+msgid ""
+"If True, ensure that the output of the random projection is a dense numpy"
+" array even if the input and random projection matrix are both sparse. In"
+" practice, if the number of components is small the number of zero "
+"components in the projected data will be very small and it will be more "
+"CPU and memory efficient to use a dense representation."
+msgstr ""
+
+#: :62
+msgid ""
+"If False, the projected data uses a sparse representation if the input is"
+" sparse."
+msgstr ""
+
+#: :65
+msgid "**random_state** : integer, RandomState instance or None (default=None)"
+msgstr ""
+
+#: :67
+msgid ""
+"Control the pseudo random number generator used to generate the matrix at"
+" fit time."
+msgstr ""
+
+#: :72
+msgid "**n_component_** : int"
+msgstr ""
+
+#: :74
+msgid "Concrete number of components computed when n_components=\"auto\"."
+msgstr ""
+
+#: :76
+msgid "**components_** : CSR matrix with shape [n_components, n_features]"
+msgstr ""
+
+#: :78
+msgid "Random matrix used for the projection."
+msgstr ""
+
+#: :80
+msgid "**density_** : float in range 0.0 - 1.0"
+msgstr ""
+
+#: :82
+msgid "Concrete density computed from when density = \"auto\"."
+msgstr ""
+
+#: :86
+msgid ":obj:`GaussianRandomProjection`"
+msgstr ""
+
+#: :89
+msgid "References"
+msgstr ""
+
+#: :90
+msgid ""
+"Ping Li, T. Hastie and K. W. Church, 2006, \"Very Sparse Random "
+"Projections\". http://www.stanford.edu/~hastie/Papers/Ping/KDD06_rp.pdf"
+msgstr ""
+
+#: :94
+msgid ""
+"D. Achlioptas, 2001, \"Database-friendly random projections\", "
+"http://www.cs.ucsc.edu/~optas/papers/jl.pdf"
+msgstr ""
+
+#: :102
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.random_projection.SparseRandomProjection.fit>`\\ (X[, "
+"y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Generate a sparse random projection matrix"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.random_projection.SparseRandomProjection.fit_transform>`\\ (X[, "
+"y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.random_projection.SparseRandomProjection.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.random_projection.SparseRandomProjection.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform "
+"<sklearn.random_projection.SparseRandomProjection.transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Project the data by using matrix product with the random matrix"
+msgstr ""
+
+#: :7
+msgid "**X** : numpy array or scipy.sparse of shape [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid ""
+"Training set: only the shape is used to find optimal random matrix "
+"dimensions based on the theory referenced in the afore mentioned papers."
+msgstr ""
+
+#: :13 :11
+msgid "**y** : is not used: placeholder to allow for usage in a Pipeline."
+msgstr ""
+
+#: :17 :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :9
+msgid "The input data to project into a smaller dimensional space."
+msgstr ""
+
+#: :15
+msgid "**X_new** : numpy array or scipy sparse of shape [n_samples, n_components]"
+msgstr ""
+
+#: :17
+msgid "Projected array."
+msgstr ""
+
+#: ../../modules/generated/sklearn.random_projection.SparseRandomProjection.examples:3
+msgid "Examples using ``sklearn.random_projection.SparseRandomProjection``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.random_projection.SparseRandomProjection.examples:25
+msgid ":ref:`example_plot_johnson_lindenstrauss_bound.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.random_projection.SparseRandomProjection.examples:45
+msgid ":ref:`example_manifold_plot_lle_digits.py`"
+msgstr ""
+

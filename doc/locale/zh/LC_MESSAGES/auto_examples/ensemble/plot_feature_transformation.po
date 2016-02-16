@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/ensemble/plot_feature_transformation.rst:8
+msgid "Feature transformations with ensembles of trees"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_feature_transformation.rst:10
+msgid ""
+"Transform your features into a higher dimensional, sparse space. Then "
+"train a linear model on these features."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_feature_transformation.rst:13
+msgid ""
+"First fit an ensemble of trees (totally random trees, a random forest, or"
+" gradient boosted trees) on the training set. Then each leaf of each tree"
+" in the ensemble is assigned a fixed arbitrary feature index in a new "
+"feature space. These leaf indices are then encoded in a one-hot fashion."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_feature_transformation.rst:19
+msgid ""
+"Each sample goes through the decisions of each tree of the ensemble and "
+"ends up in one leaf per tree. The sample is encoded by setting feature "
+"values for these leaves to 1 and the other feature values to 0."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_feature_transformation.rst:23
+msgid ""
+"The resulting transformer has then learned a supervised, sparse, high-"
+"dimensional categorical embedding of the data."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_feature_transformation.rst:45
+msgid ""
+"**Python source code:** :download:`plot_feature_transformation.py "
+"<plot_feature_transformation.py>`"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_feature_transformation.rst:50
+msgid ""
+"**Total running time of the example:**  5.30 seconds ( 0 minutes  5.30 "
+"seconds)"
+msgstr ""
+

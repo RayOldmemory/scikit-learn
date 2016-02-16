@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/model_selection/grid_search_digits.rst:8
+msgid "Parameter estimation using grid search with cross-validation"
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_digits.rst:10
+msgid ""
+"This examples shows how a classifier is optimized by cross-validation, "
+"which is done using the :class:`sklearn.grid_search.GridSearchCV` object "
+"on a development set that comprises only half of the available labeled "
+"data."
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_digits.rst:14
+msgid ""
+"The performance of the selected hyper-parameters and trained model is "
+"then measured on a dedicated evaluation set that was not used during the "
+"model selection step."
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_digits.rst:18
+msgid ""
+"More details on tools available for model selection can be found in the "
+"sections on :ref:`cross_validation` and :ref:`grid_search`."
+msgstr ""
+
+#: ../../auto_examples/model_selection/grid_search_digits.rst:23
+msgid ""
+"**Python source code:** :download:`grid_search_digits.py "
+"<grid_search_digits.py>`"
+msgstr ""
+

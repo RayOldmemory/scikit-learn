@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/decomposition/plot_incremental_pca.rst:9
+msgid "Incremental PCA"
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_incremental_pca.rst:11
+msgid ""
+"Incremental principal component analysis (IPCA) is typically used as a "
+"replacement for principal component analysis (PCA) when the dataset to be"
+" decomposed is too large to fit in memory. IPCA builds a low-rank "
+"approximation for the input data using an amount of memory which is "
+"independent of the number of input data samples. It is still dependent on"
+" the input data features, but changing the batch size allows for control "
+"of memory usage."
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_incremental_pca.rst:18
+msgid ""
+"This example serves as a visual check that IPCA is able to find a similar"
+" projection of the data to PCA (to a sign flip), while only processing a "
+"few samples at a time. This can be considered a \"toy example\", as IPCA "
+"is intended for large datasets which do not fit in main memory, requiring"
+" incremental approaches."
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_incremental_pca.rst:43
+msgid ""
+"**Python source code:** :download:`plot_incremental_pca.py "
+"<plot_incremental_pca.py>`"
+msgstr ""
+
+#: ../../auto_examples/decomposition/plot_incremental_pca.rst:48
+msgid ""
+"**Total running time of the example:**  0.27 seconds ( 0 minutes  0.27 "
+"seconds)"
+msgstr ""
+

@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.TheilSenRegressor.rst:2
+msgid ":mod:`sklearn.linear_model`.TheilSenRegressor"
+msgstr ""
+
+#: :3
+msgid "Theil-Sen Estimator: robust multivariate regression model."
+msgstr ""
+
+#: :5
+msgid ""
+"The algorithm calculates least square solutions on subsets with size "
+"n_subsamples of the samples in X. Any value of n_subsamples between the "
+"number of features and samples leads to an estimator with a compromise "
+"between robustness and efficiency. Since the number of least square "
+"solutions is \"n_samples choose n_subsamples\", it can be extremely large"
+" and can therefore be limited with max_subpopulation. If this limit is "
+"reached, the subsets are chosen randomly. In a final step, the spatial "
+"median (or L1 median) is calculated of all least square solutions."
+msgstr ""
+
+#: :14
+msgid "Read more in the :ref:`User Guide <theil_sen_regression>`."
+msgstr ""
+
+#: :18
+msgid "**fit_intercept** : boolean, optional, default True"
+msgstr ""
+
+#: :20
+msgid ""
+"Whether to calculate the intercept for this model. If set to false, no "
+"intercept will be used in calculations."
+msgstr ""
+
+#: :23
+msgid "**copy_X** : boolean, optional, default True"
+msgstr ""
+
+#: :25
+msgid "If True, X will be copied; else, it may be overwritten."
+msgstr ""
+
+#: :27
+msgid "**max_subpopulation** : int, optional, default 1e4"
+msgstr ""
+
+#: :29
+msgid ""
+"Instead of computing with a set of cardinality 'n choose k', where n is "
+"the number of samples and k is the number of subsamples (at least number "
+"of features), consider only a stochastic subpopulation of a given maximal"
+" size if 'n choose k' is larger than max_subpopulation. For other than "
+"small problem sizes this parameter will determine memory usage and "
+"runtime if n_subsamples is not changed."
+msgstr ""
+
+#: :36
+msgid "**n_subsamples** : int, optional, default None"
+msgstr ""
+
+#: :38
+msgid ""
+"Number of samples to calculate the parameters. This is at least the "
+"number of features (plus 1 if fit_intercept=True) and the number of "
+"samples as a maximum. A lower number leads to a higher breakdown point "
+"and a low efficiency while a high number leads to a low breakdown point "
+"and a high efficiency. If None, take the minimum number of subsamples "
+"leading to maximal robustness. If n_subsamples is set to n_samples, "
+"Theil-Sen is identical to least squares."
+msgstr ""
+
+#: :47
+msgid "**max_iter** : int, optional, default 300"
+msgstr ""
+
+#: :49
+msgid "Maximum number of iterations for the calculation of spatial median."
+msgstr ""
+
+#: :51
+msgid "**tol** : float, optional, default 1.e-3"
+msgstr ""
+
+#: :53
+msgid "Tolerance when calculating spatial median."
+msgstr ""
+
+#: :55
+msgid "**random_state** : RandomState or an int seed, optional, default None"
+msgstr ""
+
+#: :57
+msgid ""
+"A random number generator instance to define the state of the random "
+"permutations generator."
+msgstr ""
+
+#: :60
+msgid "**n_jobs** : integer, optional, default 1"
+msgstr ""
+
+#: :62
+msgid ""
+"Number of CPUs to use during the cross validation. If ``-1``, use all the"
+" CPUs."
+msgstr ""
+
+#: :65
+msgid "**verbose** : boolean, optional, default False"
+msgstr ""
+
+#: :67
+msgid "Verbose mode when fitting the model."
+msgstr ""
+
+#: :71
+msgid "**coef_** : array, shape = (n_features)"
+msgstr ""
+
+#: :73
+msgid "Coefficients of the regression model (median of distribution)."
+msgstr ""
+
+#: :75
+msgid "**intercept_** : float"
+msgstr ""
+
+#: :77
+msgid "Estimated intercept of regression model."
+msgstr ""
+
+#: :79
+msgid "**breakdown_** : float"
+msgstr ""
+
+#: :81
+msgid "Approximated breakdown point."
+msgstr ""
+
+#: :83
+msgid "**n_iter_** : int"
+msgstr ""
+
+#: :85
+msgid "Number of iterations needed for the spatial median."
+msgstr ""
+
+#: :87
+msgid "**n_subpopulation_** : int"
+msgstr ""
+
+#: :89
+msgid ""
+"Number of combinations taken into account from 'n choose k', where n is "
+"the number of samples and k is the number of subsamples."
+msgstr ""
+
+#: :93
+msgid "References"
+msgstr ""
+
+#: :94
+msgid ""
+"Theil-Sen Estimators in a Multiple Linear Regression Model, 2009 Xin "
+"Dang, Hanxiang Peng, Xueqin Wang and Heping Zhang "
+"http://www.math.iupui.edu/~hpeng/MTSE_0908.pdf"
+msgstr ""
+
+#: :101
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.linear_model.TheilSenRegressor.decision_function>`\\ (\\*args, "
+"\\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "DEPRECATED:  and will be removed in 0.19."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.linear_model.TheilSenRegressor.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit linear model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.linear_model.TheilSenRegressor.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.linear_model.TheilSenRegressor.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict using the linear model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.linear_model.TheilSenRegressor.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.linear_model.TheilSenRegressor.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid "Decision function of the linear model."
+msgstr ""
+
+#: :9 :7
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :11 :9
+msgid "Samples."
+msgstr ""
+
+#: :15 :13
+msgid "**C** : array, shape = (n_samples,)"
+msgstr ""
+
+#: :17 :15
+msgid "Returns predicted values."
+msgstr ""
+
+#: :7
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "Training data"
+msgstr ""
+
+#: :11
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :13
+msgid "Target values"
+msgstr ""
+
+#: :17
+msgid "**self** : returns an instance of self."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.TheilSenRegressor.examples:3
+msgid "Examples using ``sklearn.linear_model.TheilSenRegressor``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.TheilSenRegressor.examples:25
+msgid ":ref:`example_linear_model_plot_robust_fit.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.TheilSenRegressor.examples:45
+msgid ":ref:`example_linear_model_plot_theilsen.py`"
+msgstr ""
+

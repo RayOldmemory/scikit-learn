@@ -1,0 +1,793 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.LogisticRegressionCV.rst:2
+msgid ":mod:`sklearn.linear_model`.LogisticRegressionCV"
+msgstr ""
+
+#: :3
+msgid "Logistic Regression CV (aka logit, MaxEnt) classifier."
+msgstr ""
+
+#: :5
+msgid ""
+"This class implements logistic regression using liblinear, newton-cg, sag"
+" of lbfgs optimizer. The newton-cg, sag and lbfgs solvers support only L2"
+" regularization with primal formulation. The liblinear solver supports "
+"both L1 and L2 regularization, with a dual formulation only for the L2 "
+"penalty."
+msgstr ""
+
+#: :10
+msgid ""
+"For the grid of Cs values (that are set by default to be ten values in a "
+"logarithmic scale between 1e-4 and 1e4), the best hyperparameter is "
+"selected by the cross-validator StratifiedKFold, but it can be changed "
+"using the cv parameter. In the case of newton-cg and lbfgs solvers, we "
+"warm start along the path i.e guess the initial coefficients of the "
+"present fit to be the coefficients got after convergence in the previous "
+"fit, so it is supposed to be faster for high-dimensional dense data."
+msgstr ""
+
+#: :18
+msgid ""
+"For a multiclass problem, the hyperparameters for each class are computed"
+" using the best scores got by doing a one-vs-rest in parallel across all "
+"folds and classes. Hence this is not the true multinomial loss."
+msgstr ""
+
+#: :22
+msgid "Read more in the :ref:`User Guide <logistic_regression>`."
+msgstr ""
+
+#: :26
+msgid "**Cs** : list of floats | int"
+msgstr ""
+
+#: :28
+msgid ""
+"Each of the values in Cs describes the inverse of regularization "
+"strength. If Cs is as an int, then a grid of Cs values are chosen in a "
+"logarithmic scale between 1e-4 and 1e4. Like in support vector machines, "
+"smaller values specify stronger regularization."
+msgstr ""
+
+#: :34
+msgid "**fit_intercept** : bool, default: True"
+msgstr ""
+
+#: :36
+msgid ""
+"Specifies if a constant (a.k.a. bias or intercept) should be added to the"
+" decision function."
+msgstr ""
+
+#: :39
+msgid "**class_weight** : dict or 'balanced', optional"
+msgstr ""
+
+#: :41
+msgid ""
+"Weights associated with classes in the form ``{class_label: weight}``. If"
+" not given, all classes are supposed to have weight one."
+msgstr ""
+
+#: :44
+msgid ""
+"The \"balanced\" mode uses the values of y to automatically adjust "
+"weights inversely proportional to class frequencies in the input data as "
+"``n_samples / (n_classes * np.bincount(y))``"
+msgstr ""
+
+#: :48
+msgid ""
+"Note that these weights will be multiplied with sample_weight (passed "
+"through the fit method) if sample_weight is specified."
+msgstr ""
+
+#: :51
+msgid "class_weight == 'balanced'"
+msgstr ""
+
+#: :54
+msgid "**cv** : integer or cross-validation generator"
+msgstr ""
+
+#: :56
+msgid ""
+"The default cross-validation generator used is Stratified K-Folds. If an "
+"integer is provided, then it is the number of folds used. See the module "
+":mod:`sklearn.cross_validation` module for the list of possible cross-"
+"validation objects."
+msgstr ""
+
+#: :61
+msgid "**penalty** : str, 'l1' or 'l2'"
+msgstr ""
+
+#: :63
+msgid ""
+"Used to specify the norm used in the penalization. The newton-cg and "
+"lbfgs solvers support only l2 penalties."
+msgstr ""
+
+#: :66
+msgid "**dual** : bool"
+msgstr ""
+
+#: :68
+msgid ""
+"Dual or primal formulation. Dual formulation is only implemented for l2 "
+"penalty with liblinear solver. Prefer dual=False when n_samples > "
+"n_features."
+msgstr ""
+
+#: :72
+msgid "**scoring** : callabale"
+msgstr ""
+
+#: :74
+msgid ""
+"Scoring function to use as cross-validation criteria. For a list of "
+"scoring functions that can be used, look at :mod:`sklearn.metrics`. The "
+"default scoring option used is accuracy_score."
+msgstr ""
+
+#: :78
+msgid "**solver** : {'newton-cg', 'lbfgs', 'liblinear', 'sag'}"
+msgstr ""
+
+#: :80
+msgid "Algorithm to use in the optimization problem."
+msgstr ""
+
+#: :82
+msgid "For small datasets, 'liblinear' is a good choice, whereas 'sag' is"
+msgstr ""
+
+#: :83
+msgid "faster for large ones."
+msgstr ""
+
+#: :85
+msgid "For multiclass problems, only 'newton-cg' and 'lbfgs' handle"
+msgstr ""
+
+#: :85
+msgid ""
+"multinomial loss; 'sag' and 'liblinear' are limited to one-versus-rest "
+"schemes."
+msgstr ""
+
+#: :87
+msgid "'newton-cg', 'lbfgs' and 'sag' only handle L2 penalty."
+msgstr ""
+
+#: :89
+msgid "'liblinear' might be slower in LogisticRegressionCV because it does"
+msgstr ""
+
+#: :89
+msgid "not handle warm-starting."
+msgstr ""
+
+#: :91
+msgid "**tol** : float, optional"
+msgstr ""
+
+#: :93
+msgid "Tolerance for stopping criteria."
+msgstr ""
+
+#: :95
+msgid "**max_iter** : int, optional"
+msgstr ""
+
+#: :97
+msgid "Maximum number of iterations of the optimization algorithm."
+msgstr ""
+
+#: :99
+msgid "**n_jobs** : int, optional"
+msgstr ""
+
+#: :101
+msgid ""
+"Number of CPU cores used during the cross-validation loop. If given a "
+"value of -1, all cores are used."
+msgstr ""
+
+#: :104
+msgid "**verbose** : int"
+msgstr ""
+
+#: :106
+msgid ""
+"For the 'liblinear', 'sag' and 'lbfgs' solvers set verbose to any "
+"positive number for verbosity."
+msgstr ""
+
+#: :109
+msgid "**refit** : bool"
+msgstr ""
+
+#: :111
+msgid ""
+"If set to True, the scores are averaged across all folds, and the coefs "
+"and the C that corresponds to the best score is taken, and a final refit "
+"is done using these parameters. Otherwise the coefs, intercepts and C "
+"that correspond to the best scores across folds are averaged."
+msgstr ""
+
+#: :117
+msgid "**multi_class** : str, {'ovr', 'multinomial'}"
+msgstr ""
+
+#: :119
+msgid ""
+"Multiclass option can be either 'ovr' or 'multinomial'. If the option "
+"chosen is 'ovr', then a binary problem is fit for each label. Else the "
+"loss minimised is the multinomial loss fit across the entire probability "
+"distribution. Works only for 'lbfgs' and 'newton-cg' solvers."
+msgstr ""
+
+#: :125
+msgid "**intercept_scaling** : float, default 1."
+msgstr ""
+
+#: :127
+msgid ""
+"Useful only if solver is liblinear. This parameter is useful only when "
+"the solver 'liblinear' is used and self.fit_intercept is set to True. In "
+"this case, x becomes [x, self.intercept_scaling], i.e. a \"synthetic\" "
+"feature with constant value equals to intercept_scaling is appended to "
+"the instance vector. The intercept becomes intercept_scaling * synthetic "
+"feature weight Note! the synthetic feature weight is subject to l1/l2 "
+"regularization as all other features. To lessen the effect of "
+"regularization on synthetic feature weight (and therefore on the "
+"intercept) intercept_scaling has to be increased."
+msgstr ""
+
+#: :139
+msgid "**random_state** : int seed, RandomState instance, or None (default)"
+msgstr ""
+
+#: :141
+msgid ""
+"The seed of the pseudo random number generator to use when shuffling the "
+"data."
+msgstr ""
+
+#: :146
+msgid "**coef_** : array, shape (1, n_features) or (n_classes, n_features)"
+msgstr ""
+
+#: :148
+msgid "Coefficient of the features in the decision function."
+msgstr ""
+
+#: :150
+msgid ""
+"`coef_` is of shape (1, n_features) when the given problem is binary. "
+"`coef_` is readonly property derived from `raw_coef_` that follows the "
+"internal memory layout of liblinear."
+msgstr ""
+
+#: :155
+msgid "**intercept_** : array, shape (1,) or (n_classes,)"
+msgstr ""
+
+#: :157
+msgid ""
+"Intercept (a.k.a. bias) added to the decision function. It is available "
+"only when parameter intercept is set to True and is of shape(1,) when the"
+" problem is binary."
+msgstr ""
+
+#: :161
+msgid "**Cs_** : array"
+msgstr ""
+
+#: :163
+msgid ""
+"Array of C i.e. inverse of regularization parameter values used for "
+"cross-validation."
+msgstr ""
+
+#: :166
+msgid ""
+"**coefs_paths_** : array, shape ``(n_folds, len(Cs_), n_features)`` or"
+"                    ``(n_folds, len(Cs_), n_features + 1)``"
+msgstr ""
+
+#: :168
+msgid ""
+"dict with classes as the keys, and the path of coefficients obtained "
+"during cross-validating across each fold and then across each Cs after "
+"doing an OvR for the corresponding class as values. If the 'multi_class' "
+"option is set to 'multinomial', then the coefs_paths are the coefficients"
+" corresponding to each class. Each dict value has shape ``(n_folds, "
+"len(Cs_), n_features)`` or ``(n_folds, len(Cs_), n_features + 1)`` "
+"depending on whether the intercept is fit or not."
+msgstr ""
+
+#: :177
+msgid "**scores_** : dict"
+msgstr ""
+
+#: :179
+msgid ""
+"dict with classes as the keys, and the values as the grid of scores "
+"obtained during cross-validating each fold, after doing an OvR for the "
+"corresponding class. If the 'multi_class' option given is 'multinomial' "
+"then the same scores are repeated across all classes, since this is the "
+"multinomial class. Each dict value has shape (n_folds, len(Cs))"
+msgstr ""
+
+#: :186
+msgid "**C_** : array, shape (n_classes,) or (n_classes - 1,)"
+msgstr ""
+
+#: :188
+msgid ""
+"Array of C that maps to the best scores across every class. If refit is "
+"set to False, then for each class, the best C is the average of the C's "
+"that correspond to the best scores for each fold."
+msgstr ""
+
+#: :192
+msgid ""
+"**n_iter_** : array, shape (n_classes, n_folds, n_cs) or (1, n_folds, "
+"n_cs)"
+msgstr ""
+
+#: :194
+msgid ""
+"Actual number of iterations for all classes, folds and Cs. In the binary "
+"or multinomial cases, the first dimension is equal to 1."
+msgstr ""
+
+#: :199
+msgid ":obj:`LogisticRegression`"
+msgstr ""
+
+#: :202
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.linear_model.LogisticRegressionCV.decision_function>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict confidence scores for samples."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`densify <sklearn.linear_model.LogisticRegressionCV.densify>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Convert coefficient matrix to dense array format."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.linear_model.LogisticRegressionCV.fit>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model according to the given training data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.linear_model.LogisticRegressionCV.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.linear_model.LogisticRegressionCV.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.linear_model.LogisticRegressionCV.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict class labels for samples in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict_log_proba "
+"<sklearn.linear_model.LogisticRegressionCV.predict_log_proba>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Log of probability estimates."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict_proba "
+"<sklearn.linear_model.LogisticRegressionCV.predict_proba>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Probability estimates."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.linear_model.LogisticRegressionCV.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the mean accuracy on the given test data and labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.linear_model.LogisticRegressionCV.set_params>`\\ (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`sparsify <sklearn.linear_model.LogisticRegressionCV.sparsify>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Convert coefficient matrix to sparse format."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform <sklearn.linear_model.LogisticRegressionCV.transform>`\\ "
+"(\\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19."
+msgstr ""
+
+#: :5
+msgid ""
+"The confidence score for a sample is the signed distance of that sample "
+"to the hyperplane."
+msgstr ""
+
+#: :10
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :12 :9
+msgid "Samples."
+msgstr ""
+
+#: :16
+msgid ""
+"**array, shape=(n_samples,) if n_classes == 2 else (n_samples, "
+"n_classes)** :"
+msgstr ""
+
+#: :18
+msgid ""
+"Confidence scores per (sample, class) combination. In the binary case, "
+"confidence score for self.classes_[1] where >0 means this class would be "
+"predicted."
+msgstr ""
+
+#: :5
+msgid ""
+"Converts the ``coef_`` member (back) to a numpy.ndarray. This is the "
+"default format of ``coef_`` and is required for fitting, so calling this "
+"method is only required on models that have previously been sparsified; "
+"otherwise, it is a no-op."
+msgstr ""
+
+#: :12 :13
+msgid "**self: estimator** :"
+msgstr ""
+
+#: :7
+msgid "**X** : {array-like, sparse matrix}, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid ""
+"Training vector, where n_samples in the number of samples and n_features "
+"is the number of features."
+msgstr ""
+
+#: :12
+msgid "**y** : array-like, shape (n_samples,)"
+msgstr ""
+
+#: :14
+msgid "Target vector relative to X."
+msgstr ""
+
+#: :16
+msgid "**sample_weight** : array-like, shape (n_samples,) optional"
+msgstr ""
+
+#: :18
+msgid ""
+"Array of weights that are assigned to individual samples. If not "
+"provided, then each sample is given unit weight."
+msgstr ""
+
+#: :23
+msgid "**self** : object"
+msgstr ""
+
+#: :25
+msgid "Returns self."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**X** : {array-like, sparse matrix}, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :13
+msgid "**C** : array, shape = [n_samples]"
+msgstr ""
+
+#: :15
+msgid "Predicted class label per sample."
+msgstr ""
+
+#: :5
+msgid ""
+"The returned estimates for all classes are ordered by the label of "
+"classes."
+msgstr ""
+
+#: :10 :17
+msgid "**X** : array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :14 :21
+msgid "**T** : array-like, shape = [n_samples, n_classes]"
+msgstr ""
+
+#: :16
+msgid ""
+"Returns the log-probability of the sample for each class in the model, "
+"where classes are ordered as they are in ``self.classes_``."
+msgstr ""
+
+#: :8
+msgid ""
+"For a multi_class problem, if multi_class is set to be \"multinomial\" "
+"the softmax function is used to find the predicted probability of each "
+"class. Else use a one-vs-rest approach, i.e calculate the probability of "
+"each class assuming it to be positive using the logistic function. and "
+"normalize these values across all the classes."
+msgstr ""
+
+#: :23
+msgid ""
+"Returns the probability of the sample for each class in the model, where "
+"classes are ordered as they are in ``self.classes_``."
+msgstr ""
+
+#: :5
+msgid ""
+"In multi-label classification, this is the subset accuracy which is a "
+"harsh metric since you require for each sample that each label set be "
+"correctly predicted."
+msgstr ""
+
+#: :11
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :13
+msgid "Test samples."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :17
+msgid "True labels for X."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :21
+msgid "Sample weights."
+msgstr ""
+
+#: :25
+msgid "**score** : float"
+msgstr ""
+
+#: :27
+msgid "Mean accuracy of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"Converts the ``coef_`` member to a scipy.sparse matrix, which for "
+"L1-regularized models can be much more memory- and storage-efficient than"
+" the usual numpy.ndarray representation."
+msgstr ""
+
+#: :9
+msgid "The ``intercept_`` member is not converted."
+msgstr ""
+
+#: :16
+msgid "Notes"
+msgstr ""
+
+#: :17
+#, python-format
+msgid ""
+"For non-sparse models, i.e. when there are not many zeros in ``coef_``, "
+"this may actually *increase* memory usage, so use this method with care. "
+"A rule of thumb is that the number of zero elements, which can be "
+"computed with ``(coef_ == 0).sum()``, must be more than 50% for this to "
+"provide significant benefits."
+msgstr ""
+
+#: :23
+msgid ""
+"After calling this method, further fitting with the partial_fit method "
+"(if any) will not work until you call densify."
+msgstr ""
+
+#: :3
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19. Use SelectFromModel instead."
+msgstr ""
+
+#: :5
+msgid "Reduce X to its most important features."
+msgstr ""
+
+#: :7
+msgid ""
+"Uses ``coef_`` or ``feature_importances_`` to determine the most "
+"important features.  For models with a ``coef_`` for each class, the "
+"absolute sum over the classes is used."
+msgstr ""
+
+#: :13
+msgid "**X** : array or scipy sparse matrix of shape [n_samples, n_features]"
+msgstr ""
+
+#: :15
+msgid "The input samples."
+msgstr ""
+
+#: :24
+msgid "threshold"
+msgstr ""
+
+#: :23
+msgid "string, float or None, optional (default=None)"
+msgstr ""
+
+#: :18
+msgid ""
+"The threshold value to use for feature selection. Features whose "
+"importance is greater or equal are kept while the others are discarded. "
+"If \"median\" (resp. \"mean\"), then the threshold value is the median "
+"(resp. the mean) of the feature importances. A scaling factor (e.g., "
+"\"1.25*mean\") may also be used. If None and if available, the object "
+"attribute ``threshold`` is used. Otherwise, \"mean\" is used by default."
+msgstr ""
+
+#: :28
+msgid "**X_r** : array of shape [n_samples, n_selected_features]"
+msgstr ""
+
+#: :30
+msgid "The input samples with only the selected features."
+msgstr ""
+

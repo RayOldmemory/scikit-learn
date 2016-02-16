@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:8
+msgid "Partial Dependence Plots"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:10
+msgid ""
+"Partial dependence plots show the dependence between the target function "
+"[2]_ and a set of 'target' features, marginalizing over the values of all"
+" other features (the complement features). Due to the limits of human "
+"perception the size of the target feature set must be small (usually, one"
+" or two) thus the target features are usually chosen among the most "
+"important features (see "
+":attr:`~sklearn.ensemble.GradientBoostingRegressor.feature_importances_`)."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:18
+msgid ""
+"This example shows how to obtain partial dependence plots from a "
+":class:`~sklearn.ensemble.GradientBoostingRegressor` trained on the "
+"California housing dataset. The example is taken from [1]_."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:22
+msgid ""
+"The plot shows four one-way and one two-way partial dependence plots. The"
+" target variables for the one-way PDP are: median income (`MedInc`), avg."
+" occupants per household (`AvgOccup`), median house age (`HouseAge`), and"
+" avg. rooms per household (`AveRooms`)."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:27
+msgid ""
+"We can clearly see that the median house price shows a linear "
+"relationship with the median income (top left) and that the house price "
+"drops when the avg. occupants per household increases (top middle). The "
+"top right plot shows that the house age in a district does not have a "
+"strong influence on the (median) house price; so does the average rooms "
+"per household. The tick marks on the x-axis represent the deciles of the "
+"feature values in the training data."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:36
+msgid ""
+"Partial dependence plots with two target features enable us to visualize "
+"interactions among them. The two-way partial dependence plot shows the "
+"dependence of median house price on joint values of house age and avg. "
+"occupants per household. We can clearly see an interaction between the "
+"two features: For an avg. occupancy greater than two, the house price is "
+"nearly independent of the house age, whereas for values less than two "
+"there is a strong dependence on age."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:45
+msgid ""
+"T. Hastie, R. Tibshirani and J. Friedman, \"Elements of Statistical "
+"Learning Ed. 2\", Springer, 2009."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:48
+msgid ""
+"For classification you can think of it as the regression score before the"
+" link function."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:69
+msgid ""
+"**Python source code:** :download:`plot_partial_dependence.py "
+"<plot_partial_dependence.py>`"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_partial_dependence.rst:74
+msgid ""
+"**Total running time of the example:**  0.00 seconds ( 0 minutes  0.00 "
+"seconds)"
+msgstr ""
+

@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.mutual_info_score.rst:2
+msgid ":mod:`sklearn.metrics`.mutual_info_score"
+msgstr ""
+
+#: :3
+msgid "Mutual Information between two clusterings"
+msgstr ""
+
+#: :5
+msgid ""
+"The Mutual Information is a measure of the similarity between two labels "
+"of the same data. Where :math:`P(i)` is the probability of a random "
+"sample occurring in cluster :math:`U_i` and :math:`P'(j)` is the "
+"probability of a random sample occurring in cluster :math:`V_j`, the "
+"Mutual Information between clusterings :math:`U` and :math:`V` is given "
+"as:"
+msgstr ""
+
+#: :15
+msgid ""
+"This is equal to the Kullback-Leibler divergence of the joint "
+"distribution with the product distribution of the marginals."
+msgstr ""
+
+#: :18
+msgid ""
+"This metric is independent of the absolute values of the labels: a "
+"permutation of the class or cluster label values won't change the score "
+"value in any way."
+msgstr ""
+
+#: :22
+msgid ""
+"This metric is furthermore symmetric: switching ``label_true`` with "
+"``label_pred`` will return the same score value. This can be useful to "
+"measure the agreement of two independent label assignments strategies on "
+"the same dataset when the real ground truth is not known."
+msgstr ""
+
+#: :27
+msgid "Read more in the :ref:`User Guide <mutual_info_score>`."
+msgstr ""
+
+#: :31
+msgid "**labels_true** : int array, shape = [n_samples]"
+msgstr ""
+
+#: :33 :37
+msgid "A clustering of the data into disjoint subsets."
+msgstr ""
+
+#: :35
+msgid "**labels_pred** : array, shape = [n_samples]"
+msgstr ""
+
+#: :39
+msgid "**contingency: None or array, shape = [n_classes_true, n_classes_pred]** :"
+msgstr ""
+
+#: :41
+msgid ""
+"A contingency matrix given by the :func:`contingency_matrix` function. If"
+" value is ``None``, it will be computed, otherwise the given value is "
+"used, with ``labels_true`` and ``labels_pred`` ignored."
+msgstr ""
+
+#: :47
+msgid "**mi: float** :"
+msgstr ""
+
+#: :49
+msgid "Mutual information, a non-negative value"
+msgstr ""
+
+#: :54
+msgid ":obj:`adjusted_mutual_info_score`"
+msgstr ""
+
+#: :54
+msgid "Adjusted against chance Mutual Information"
+msgstr ""
+
+#: :56
+msgid ":obj:`normalized_mutual_info_score`"
+msgstr ""
+
+#: :57
+msgid "Normalized Mutual Information"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.mutual_info_score.examples:3
+msgid "Examples using ``sklearn.metrics.mutual_info_score``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.mutual_info_score.examples:25
+msgid ":ref:`example_cluster_plot_adjusted_for_chance_measures.py`"
+msgstr ""
+

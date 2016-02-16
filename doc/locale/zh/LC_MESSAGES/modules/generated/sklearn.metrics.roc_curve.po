@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.roc_curve.rst:2
+msgid ":mod:`sklearn.metrics`.roc_curve"
+msgstr ""
+
+#: :3
+msgid "Compute Receiver operating characteristic (ROC)"
+msgstr ""
+
+#: :5
+msgid "Note: this implementation is restricted to the binary classification task."
+msgstr ""
+
+#: :7
+msgid "Read more in the :ref:`User Guide <roc_metrics>`."
+msgstr ""
+
+#: :11
+msgid "**y_true** : array, shape = [n_samples]"
+msgstr ""
+
+#: :13
+msgid ""
+"True binary labels in range {0, 1} or {-1, 1}.  If labels are not binary,"
+" pos_label should be explicitly given."
+msgstr ""
+
+#: :16
+msgid "**y_score** : array, shape = [n_samples]"
+msgstr ""
+
+#: :18
+msgid ""
+"Target scores, can either be probability estimates of the positive class "
+"or confidence values."
+msgstr ""
+
+#: :21
+msgid "**pos_label** : int"
+msgstr ""
+
+#: :23
+msgid "Label considered as positive and others are considered negative."
+msgstr ""
+
+#: :25
+msgid "**sample_weight** : array-like of shape = [n_samples], optional"
+msgstr ""
+
+#: :27
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**drop_intermediate** : boolean, optional (default=True)"
+msgstr ""
+
+#: :31
+msgid ""
+"Whether to drop some suboptimal thresholds which would not appear on a "
+"plotted ROC curve. This is useful in order to create lighter ROC curves."
+msgstr ""
+
+#: :35
+msgid "parameter *drop_intermediate*."
+msgstr ""
+
+#: :40
+msgid "**fpr** : array, shape = [>2]"
+msgstr ""
+
+#: :42
+msgid ""
+"Increasing false positive rates such that element i is the false positive"
+" rate of predictions with score >= thresholds[i]."
+msgstr ""
+
+#: :45
+msgid "**tpr** : array, shape = [>2]"
+msgstr ""
+
+#: :47
+msgid ""
+"Increasing true positive rates such that element i is the true positive "
+"rate of predictions with score >= thresholds[i]."
+msgstr ""
+
+#: :50
+msgid "**thresholds** : array, shape = [n_thresholds]"
+msgstr ""
+
+#: :52
+msgid ""
+"Decreasing thresholds on the decision function used to compute fpr and "
+"tpr. `thresholds[0]` represents no instances being predicted and is "
+"arbitrarily set to `max(y_score) + 1`."
+msgstr ""
+
+#: :58
+msgid ":obj:`roc_auc_score`"
+msgstr ""
+
+#: :59
+msgid "Compute Area Under the Curve (AUC) from prediction scores"
+msgstr ""
+
+#: :62
+msgid "Notes"
+msgstr ""
+
+#: :63
+msgid ""
+"Since the thresholds are sorted from low to high values, they are "
+"reversed upon returning them to ensure they correspond to both ``fpr`` "
+"and ``tpr``, which are sorted in reversed order during their calculation."
+msgstr ""
+
+#: :68
+msgid "References"
+msgstr ""
+
+#: :69
+msgid ""
+"`Wikipedia entry for the Receiver operating characteristic "
+"<http://en.wikipedia.org/wiki/Receiver_operating_characteristic>`_"
+msgstr ""
+
+#: :77
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.roc_curve.examples:3
+msgid "Examples using ``sklearn.metrics.roc_curve``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.roc_curve.examples:25
+msgid ":ref:`example_applications_plot_species_distribution_modeling.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.roc_curve.examples:45
+msgid ":ref:`example_ensemble_plot_feature_transformation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.roc_curve.examples:65
+msgid ":ref:`example_model_selection_plot_roc_crossval.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.roc_curve.examples:85
+msgid ":ref:`example_model_selection_plot_roc.py`"
+msgstr ""
+

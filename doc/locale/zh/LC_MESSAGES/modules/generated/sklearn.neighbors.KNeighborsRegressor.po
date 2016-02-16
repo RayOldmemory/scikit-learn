@@ -1,0 +1,477 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.neighbors.KNeighborsRegressor.rst:2
+msgid ":mod:`sklearn.neighbors`.KNeighborsRegressor"
+msgstr ""
+
+#: :3
+msgid "Regression based on k-nearest neighbors."
+msgstr ""
+
+#: :5
+msgid ""
+"The target is predicted by local interpolation of the targets associated "
+"of the nearest neighbors in the training set."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <regression>`."
+msgstr ""
+
+#: :12
+msgid "**n_neighbors** : int, optional (default = 5)"
+msgstr ""
+
+#: :14
+msgid "Number of neighbors to use by default for :meth:`k_neighbors` queries."
+msgstr ""
+
+#: :16
+msgid "**weights** : str or callable"
+msgstr ""
+
+#: :18
+msgid "weight function used in prediction.  Possible values:"
+msgstr ""
+
+#: :20
+msgid ""
+"'uniform' : uniform weights.  All points in each neighborhood are "
+"weighted equally."
+msgstr ""
+
+#: :22
+msgid ""
+"'distance' : weight points by the inverse of their distance. in this "
+"case, closer neighbors of a query point will have a greater influence "
+"than neighbors which are further away."
+msgstr ""
+
+#: :25
+msgid ""
+"[callable] : a user-defined function which accepts an array of distances,"
+" and returns an array of the same shape containing the weights."
+msgstr ""
+
+#: :29
+msgid "Uniform weights are used by default."
+msgstr ""
+
+#: :31
+msgid "**algorithm** : {'auto', 'ball_tree', 'kd_tree', 'brute'}, optional"
+msgstr ""
+
+#: :33
+msgid "Algorithm used to compute the nearest neighbors:"
+msgstr ""
+
+#: :35
+msgid "'ball_tree' will use :class:`BallTree`"
+msgstr ""
+
+#: :36
+msgid "'kd_tree' will use :class:`KDtree`"
+msgstr ""
+
+#: :37
+msgid "'brute' will use a brute-force search."
+msgstr ""
+
+#: :38
+msgid ""
+"'auto' will attempt to decide the most appropriate algorithm based on the"
+" values passed to :meth:`fit` method."
+msgstr ""
+
+#: :41
+msgid ""
+"Note: fitting on sparse input will override the setting of this "
+"parameter, using brute force."
+msgstr ""
+
+#: :44
+msgid "**leaf_size** : int, optional (default = 30)"
+msgstr ""
+
+#: :46
+msgid ""
+"Leaf size passed to BallTree or KDTree.  This can affect the speed of the"
+" construction and query, as well as the memory required to store the "
+"tree.  The optimal value depends on the nature of the problem."
+msgstr ""
+
+#: :51
+msgid "**metric** : string or DistanceMetric object (default='minkowski')"
+msgstr ""
+
+#: :53
+msgid ""
+"the distance metric to use for the tree.  The default metric is "
+"minkowski, and with p=2 is equivalent to the standard Euclidean metric. "
+"See the documentation of the DistanceMetric class for a list of available"
+" metrics."
+msgstr ""
+
+#: :58
+msgid "**p** : integer, optional (default = 2)"
+msgstr ""
+
+#: :60
+msgid ""
+"Power parameter for the Minkowski metric. When p = 1, this is equivalent "
+"to using manhattan_distance (l1), and euclidean_distance (l2) for p = 2. "
+"For arbitrary p, minkowski_distance (l_p) is used."
+msgstr ""
+
+#: :64
+msgid "**metric_params** : dict, optional (default = None)"
+msgstr ""
+
+#: :66
+msgid "Additional keyword arguments for the metric function."
+msgstr ""
+
+#: :68
+msgid "**n_jobs** : int, optional (default = 1)"
+msgstr ""
+
+#: :70
+msgid ""
+"The number of parallel jobs to run for neighbors search. If ``-1``, then "
+"the number of jobs is set to the number of CPU cores. Doesn't affect "
+":meth:`fit` method."
+msgstr ""
+
+#: :76
+msgid ""
+":obj:`NearestNeighbors`, :obj:`RadiusNeighborsRegressor`, "
+":obj:`KNeighborsClassifier`, :obj:`RadiusNeighborsClassifier`"
+msgstr ""
+
+#: :79
+msgid "Notes"
+msgstr ""
+
+#: :80
+msgid ""
+"See :ref:`Nearest Neighbors <neighbors>` in the online documentation for "
+"a discussion of the choice of ``algorithm`` and ``leaf_size``."
+msgstr ""
+
+#: :85
+msgid ""
+"Regarding the Nearest Neighbors algorithms, if it is found that two "
+"neighbors, neighbor `k+1` and `k`, have identical distances but but "
+"different labels, the results will depend on the ordering of the training"
+" data."
+msgstr ""
+
+#: :90
+msgid "http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm"
+msgstr ""
+
+#: :93 :36
+msgid "Examples"
+msgstr ""
+
+#: :104
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.neighbors.KNeighborsRegressor.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model using X as training data and y as target values"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.neighbors.KNeighborsRegressor.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kneighbors <sklearn.neighbors.KNeighborsRegressor.kneighbors>`\\ "
+"([X, n_neighbors, return_distance])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Finds the K-neighbors of a point."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kneighbors_graph "
+"<sklearn.neighbors.KNeighborsRegressor.kneighbors_graph>`\\ ([X, "
+"n_neighbors, mode])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Computes the (weighted) graph of k-Neighbors for points in X"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.neighbors.KNeighborsRegressor.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict the target for the provided data"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.neighbors.KNeighborsRegressor.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.neighbors.KNeighborsRegressor.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7
+msgid "**X** : {array-like, sparse matrix, BallTree, KDTree}"
+msgstr ""
+
+#: :9
+msgid ""
+"Training data. If array or matrix, shape [n_samples, n_features], or "
+"[n_samples, n_samples] if metric='precomputed'."
+msgstr ""
+
+#: :12
+msgid "**y** : {array-like, sparse matrix}"
+msgstr ""
+
+#: :14
+msgid "Target values, array of float values, shape = [n_samples]"
+msgstr ""
+
+#: :15
+msgid "or [n_samples, n_outputs]"
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid "Returns indices of and distances to the neighbors of each point."
+msgstr ""
+
+#: :9 :7
+msgid ""
+"**X** : array-like, shape (n_query, n_features),                 or "
+"(n_query, n_indexed) if metric == 'precomputed'"
+msgstr ""
+
+#: :11 :9
+msgid ""
+"The query point or points. If not provided, neighbors of each indexed "
+"point are returned. In this case, the query point is not considered its "
+"own neighbor."
+msgstr ""
+
+#: :15 :13
+msgid "**n_neighbors** : int"
+msgstr ""
+
+#: :17
+msgid ""
+"Number of neighbors to get (default is the value passed to the "
+"constructor)."
+msgstr ""
+
+#: :20
+msgid "**return_distance** : boolean, optional. Defaults to True."
+msgstr ""
+
+#: :22
+msgid "If False, distances will not be returned"
+msgstr ""
+
+#: :26
+msgid "**dist** : array"
+msgstr ""
+
+#: :28
+msgid ""
+"Array representing the lengths to points, only present if "
+"return_distance=True"
+msgstr ""
+
+#: :31
+msgid "**ind** : array"
+msgstr ""
+
+#: :33
+msgid "Indices of the nearest points in the population matrix."
+msgstr ""
+
+#: :37
+msgid ""
+"In the following example, we construct a NeighborsClassifier class from "
+"an array representing our data set and ask who's the closest point to "
+"[1,1,1]"
+msgstr ""
+
+#: :49
+msgid ""
+"As you can see, it returns [[0.5]], and [[2]], which means that the "
+"element is at distance 0.5 and is the third element of samples (indexes "
+"start at 0). You can also query for multiple points:"
+msgstr ""
+
+#: :15
+msgid ""
+"Number of neighbors for each sample. (default is value passed to the "
+"constructor)."
+msgstr ""
+
+#: :18
+msgid "**mode** : {'connectivity', 'distance'}, optional"
+msgstr ""
+
+#: :20
+msgid ""
+"Type of returned matrix: 'connectivity' will return the connectivity "
+"matrix with ones and zeros, in 'distance' the edges are Euclidean "
+"distance between points."
+msgstr ""
+
+#: :26
+msgid "**A** : sparse matrix in CSR format, shape = [n_samples, n_samples_fit]"
+msgstr ""
+
+#: :28
+msgid ""
+"n_samples_fit is the number of samples in the fitted data A[i, j] is "
+"assigned the weight of edge that connects i to j."
+msgstr ""
+
+#: :33
+msgid ":obj:`NearestNeighbors.radius_neighbors_graph`"
+msgstr ""
+
+#: :9 :17
+msgid "Test samples."
+msgstr ""
+
+#: :13
+msgid "**y** : array of int, shape = [n_samples] or [n_samples, n_outputs]"
+msgstr ""
+
+#: :15
+msgid "Target values"
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.KNeighborsRegressor.examples:3
+msgid "Examples using ``sklearn.neighbors.KNeighborsRegressor``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.KNeighborsRegressor.examples:25
+msgid ":ref:`example_plot_multioutput_face_completion.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.KNeighborsRegressor.examples:45
+msgid ":ref:`example_neighbors_plot_regression.py`"
+msgstr ""
+

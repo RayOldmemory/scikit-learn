@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../datasets/labeled_faces.rst:4
+msgid "The Labeled Faces in the Wild face recognition dataset"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:6
+msgid ""
+"This dataset is a collection of JPEG pictures of famous people collected "
+"over the internet, all details are available on the official website:"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:9
+msgid "http://vis-www.cs.umass.edu/lfw/"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:11
+msgid ""
+"Each picture is centered on a single face. The typical task is called "
+"Face Verification: given a pair of two pictures, a binary classifier must"
+" predict whether the two images are from the same person."
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:15
+msgid ""
+"An alternative task, Face Recognition or Face Identification is: given "
+"the picture of the face of an unknown person, identify the name of the "
+"person by referring to a gallery of previously seen pictures of "
+"identified persons."
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:20
+msgid ""
+"Both Face Verification and Face Recognition are tasks that are typically "
+"performed on the output of a model trained to perform Face Detection. The"
+" most popular model for Face Detection is called Viola-Jones and is "
+"implemented in the OpenCV library. The LFW faces were extracted by this "
+"face detector from various online websites."
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:28
+msgid "Usage"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:30
+msgid ""
+"``scikit-learn`` provides two loaders that will automatically download, "
+"cache, parse the metadata files, decode the jpeg and convert the "
+"interesting slices into memmaped numpy arrays. This dataset size is more "
+"than 200 MB. The first load typically takes more than a couple of minutes"
+" to fully decode the relevant part of the JPEG files into numpy arrays. "
+"If the dataset has  been loaded once, the following times the loading "
+"times less than 200ms by using a memmaped version memoized on the disk in"
+" the ``~/scikit_learn_data/lfw_home/`` folder using ``joblib``."
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:39
+msgid ""
+"The first loader is used for the Face Identification task: a multi-class "
+"classification task (hence supervised learning)::"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:56
+msgid ""
+"The default slice is a rectangular shape around the face, removing most "
+"of the background::"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:68
+msgid ""
+"Each of the ``1140`` faces is assigned to a single person id in the "
+"``target`` array::"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:77
+msgid ""
+"The second loader is typically used for the face verification task: each "
+"sample is a pair of two picture belonging or not to the same person::"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:95
+msgid ""
+"Both for the :func:`sklearn.datasets.fetch_lfw_people` and "
+":func:`sklearn.datasets.fetch_lfw_pairs` function it is possible to get "
+"an additional dimension with the RGB color channels by passing "
+"``color=True``, in that case the shape will be ``(2200, 2, 62, 47, 3)``."
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:101
+msgid ""
+"The :func:`sklearn.datasets.fetch_lfw_pairs` datasets is subdivided into "
+"3 subsets: the development ``train`` set, the development ``test`` set "
+"and an evaluation ``10_folds`` set meant to compute performance metrics "
+"using a 10-folds cross validation scheme."
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst
+msgid "References:"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:108
+msgid ""
+"`Labeled Faces in the Wild: A Database for Studying Face Recognition in "
+"Unconstrained Environments. <http://vis-www.cs.umass.edu/lfw/lfw.pdf>`_ "
+"Gary B. Huang, Manu Ramesh, Tamara Berg, and Erik Learned-Miller. "
+"University of Massachusetts, Amherst, Technical Report 07-49, October, "
+"2007."
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:116
+msgid "Examples"
+msgstr ""
+
+#: ../../datasets/labeled_faces.rst:118
+msgid ":ref:`example_applications_face_recognition.py`"
+msgstr ""
+

@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cluster.k_means.rst:2
+msgid ":mod:`sklearn.cluster`.k_means"
+msgstr ""
+
+#: :3
+msgid "K-means clustering algorithm."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <k_means>`."
+msgstr ""
+
+#: :9
+msgid "**X** : array-like or sparse matrix, shape (n_samples, n_features)"
+msgstr ""
+
+#: :11
+msgid "The observations to cluster."
+msgstr ""
+
+#: :13
+msgid "**n_clusters** : int"
+msgstr ""
+
+#: :15
+msgid ""
+"The number of clusters to form as well as the number of centroids to "
+"generate."
+msgstr ""
+
+#: :18
+msgid "**max_iter** : int, optional, default 300"
+msgstr ""
+
+#: :20
+msgid "Maximum number of iterations of the k-means algorithm to run."
+msgstr ""
+
+#: :22
+msgid "**n_init** : int, optional, default: 10"
+msgstr ""
+
+#: :24
+msgid ""
+"Number of time the k-means algorithm will be run with different centroid "
+"seeds. The final results will be the best output of n_init consecutive "
+"runs in terms of inertia."
+msgstr ""
+
+#: :28
+msgid "**init** : {'k-means++', 'random', or ndarray, or a callable}, optional"
+msgstr ""
+
+#: :30
+msgid "Method for initialization, default to 'k-means++':"
+msgstr ""
+
+#: :32
+msgid ""
+"'k-means++' : selects initial cluster centers for k-mean clustering in a "
+"smart way to speed up convergence. See section Notes in k_init for more "
+"details."
+msgstr ""
+
+#: :36
+msgid ""
+"'random': generate k centroids from a Gaussian with mean and variance "
+"estimated from the data."
+msgstr ""
+
+#: :39
+msgid ""
+"If an ndarray is passed, it should be of shape (n_clusters, n_features) "
+"and gives the initial centers."
+msgstr ""
+
+#: :42
+msgid ""
+"If a callable is passed, it should take arguments X, k and and a random "
+"state and return an initialization."
+msgstr ""
+
+#: :45
+msgid "**precompute_distances** : {'auto', True, False}"
+msgstr ""
+
+#: :47
+msgid "Precompute distances (faster but takes more memory)."
+msgstr ""
+
+#: :49
+msgid ""
+"'auto' : do not precompute distances if n_samples * n_clusters > 12 "
+"million. This corresponds to about 100MB overhead per job using double "
+"precision."
+msgstr ""
+
+#: :53
+msgid "True : always precompute distances"
+msgstr ""
+
+#: :55
+msgid "False : never precompute distances"
+msgstr ""
+
+#: :57
+msgid "**tol** : float, optional"
+msgstr ""
+
+#: :59
+msgid "The relative increment in the results before declaring convergence."
+msgstr ""
+
+#: :61
+msgid "**verbose** : boolean, optional"
+msgstr ""
+
+#: :63
+msgid "Verbosity mode."
+msgstr ""
+
+#: :65
+msgid "**random_state** : integer or numpy.RandomState, optional"
+msgstr ""
+
+#: :67
+msgid ""
+"The generator used to initialize the centers. If an integer is given, it "
+"fixes the seed. Defaults to the global numpy random number generator."
+msgstr ""
+
+#: :71
+msgid "**copy_x** : boolean, optional"
+msgstr ""
+
+#: :73
+msgid ""
+"When pre-computing distances it is more numerically accurate to center "
+"the data first.  If copy_x is True, then the original data is not "
+"modified.  If False, the original data is modified, and put back before "
+"the function returns, but small numerical differences may be introduced "
+"by subtracting and then adding the data mean."
+msgstr ""
+
+#: :79
+msgid "**n_jobs** : int"
+msgstr ""
+
+#: :81
+msgid ""
+"The number of jobs to use for the computation. This works by computing "
+"each of the n_init runs in parallel."
+msgstr ""
+
+#: :84
+msgid ""
+"If -1 all CPUs are used. If 1 is given, no parallel computing code is "
+"used at all, which is useful for debugging. For n_jobs below -1, (n_cpus "
+"+ 1 + n_jobs) are used. Thus for n_jobs = -2, all CPUs but one are used."
+msgstr ""
+
+#: :89
+msgid "**return_n_iter** : bool, optional"
+msgstr ""
+
+#: :91
+msgid "Whether or not to return the number of iterations."
+msgstr ""
+
+#: :95
+msgid "**centroid** : float ndarray with shape (k, n_features)"
+msgstr ""
+
+#: :97
+msgid "Centroids found at the last iteration of k-means."
+msgstr ""
+
+#: :99
+msgid "**label** : integer ndarray with shape (n_samples,)"
+msgstr ""
+
+#: :101
+msgid ""
+"label[i] is the code or index of the centroid the i'th observation is "
+"closest to."
+msgstr ""
+
+#: :104
+msgid "**inertia** : float"
+msgstr ""
+
+#: :106
+msgid ""
+"The final value of the inertia criterion (sum of squared distances to the"
+" closest centroid for all observations in the training set)."
+msgstr ""
+
+#: :109
+msgid "**best_n_iter: int** :"
+msgstr ""
+
+#: :111
+msgid ""
+"Number of iterations corresponding to the best results. Returned only if "
+"`return_n_iter` is set to True."
+msgstr ""
+

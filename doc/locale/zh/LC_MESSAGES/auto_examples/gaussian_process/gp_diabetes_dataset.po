@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/gaussian_process/gp_diabetes_dataset.rst:8
+msgid "Gaussian Processes regression: goodness-of-fit on the 'diabetes' dataset"
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/gp_diabetes_dataset.rst:10
+msgid ""
+"In this example, we fit a Gaussian Process model onto the diabetes "
+"dataset."
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/gp_diabetes_dataset.rst:13
+msgid ""
+"We determine the correlation parameters with maximum likelihood "
+"estimation (MLE). We use an anisotropic squared exponential correlation "
+"model with a constant regression model. We also use a nugget of 1e-2 to "
+"account for the (strong) noise in the targets."
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/gp_diabetes_dataset.rst:18
+msgid ""
+"We compute a cross-validation estimate of the coefficient of "
+"determination (R2) without reperforming MLE, using the set of correlation"
+" parameters found on the whole dataset."
+msgstr ""
+
+#: ../../auto_examples/gaussian_process/gp_diabetes_dataset.rst:23
+msgid ""
+"**Python source code:** :download:`gp_diabetes_dataset.py "
+"<gp_diabetes_dataset.py>`"
+msgstr ""
+

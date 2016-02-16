@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.fetch_california_housing.rst:2
+msgid ":mod:`sklearn.datasets`.fetch_california_housing"
+msgstr ""
+
+#: :3
+msgid "Loader for the California housing dataset from StatLib."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <datasets>`."
+msgstr ""
+
+#: :9
+msgid "**data_home** : optional, default: None"
+msgstr ""
+
+#: :11
+msgid ""
+"Specify another download and cache folder for the datasets. By default "
+"all scikit learn data is stored in '~/scikit_learn_data' subfolders."
+msgstr ""
+
+#: :14
+msgid "**download_if_missing: optional, True by default** :"
+msgstr ""
+
+#: :16
+msgid ""
+"If False, raise a IOError if the data is not locally available instead of"
+" trying to download the data from the source site."
+msgstr ""
+
+#: :21
+msgid "**dataset** : dict-like object with the following attributes:"
+msgstr ""
+
+#: :23
+msgid "**dataset.data** : ndarray, shape [20640, 8]"
+msgstr ""
+
+#: :25
+msgid "Each row corresponding to the 8 feature values in order."
+msgstr ""
+
+#: :27
+msgid "**dataset.target** : numpy array of shape (20640,)"
+msgstr ""
+
+#: :29
+msgid "Each value corresponds to the average house value in units of 100,000."
+msgstr ""
+
+#: :31
+msgid "**dataset.feature_names** : array of length 8"
+msgstr ""
+
+#: :33
+msgid "Array of ordered feature names used in the dataset."
+msgstr ""
+
+#: :35
+msgid "**dataset.DESCR** : string"
+msgstr ""
+
+#: :37
+msgid "Description of the California housing dataset."
+msgstr ""
+
+#: :40
+msgid "Notes"
+msgstr ""
+
+#: :41
+msgid "This dataset consists of 20,640 samples and 9 features."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_california_housing.examples:3
+msgid "Examples using ``sklearn.datasets.fetch_california_housing``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.fetch_california_housing.examples:25
+msgid ":ref:`example_ensemble_plot_partial_dependence.py`"
+msgstr ""
+

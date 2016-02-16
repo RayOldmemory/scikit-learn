@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.multiclass.OneVsOneClassifier.rst:2
+msgid ":mod:`sklearn.multiclass`.OneVsOneClassifier"
+msgstr ""
+
+#: :3
+msgid "One-vs-one multiclass strategy"
+msgstr ""
+
+#: :5
+msgid ""
+"This strategy consists in fitting one classifier per class pair. At "
+"prediction time, the class which received the most votes is selected. "
+"Since it requires to fit `n_classes * (n_classes - 1) / 2` classifiers, "
+"this method is usually slower than one-vs-the-rest, due to its "
+"O(n_classes^2) complexity. However, this method may be advantageous for "
+"algorithms such as kernel algorithms which don't scale well with "
+"`n_samples`. This is because each individual learning problem only "
+"involves a small subset of the data whereas, with one-vs-the-rest, the "
+"complete dataset is used `n_classes` times."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <ovo_classification>`."
+msgstr ""
+
+#: :19
+msgid "**estimator** : estimator object"
+msgstr ""
+
+#: :21
+msgid ""
+"An estimator object implementing `fit` and one of `decision_function` or "
+"`predict_proba`."
+msgstr ""
+
+#: :24
+msgid "**n_jobs** : int, optional, default: 1"
+msgstr ""
+
+#: :26
+msgid ""
+"The number of jobs to use for the computation. If -1 all CPUs are used. "
+"If 1 is given, no parallel computing code is used at all, which is useful"
+" for debugging. For n_jobs below -1, (n_cpus + 1 + n_jobs) are used. Thus"
+" for n_jobs = -2, all CPUs but one are used."
+msgstr ""
+
+#: :33
+msgid "**estimators_** : list of `n_classes * (n_classes - 1) / 2` estimators"
+msgstr ""
+
+#: :35
+msgid "Estimators used for predictions."
+msgstr ""
+
+#: :37
+msgid "**classes_** : numpy array of shape [n_classes]"
+msgstr ""
+
+#: :39
+msgid "Array containing labels."
+msgstr ""
+
+#: :42
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.multiclass.OneVsOneClassifier.decision_function>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Decision function for the OneVsOneClassifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.multiclass.OneVsOneClassifier.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit underlying estimators."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.multiclass.OneVsOneClassifier.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.multiclass.OneVsOneClassifier.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Estimate the best class label for each sample in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.multiclass.OneVsOneClassifier.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the mean accuracy on the given test data and labels."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.multiclass.OneVsOneClassifier.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid ""
+"The decision values for the samples are computed by adding the normalized"
+" sum of pair-wise classification confidence levels to the votes in order "
+"to disambiguate between the decision values when the votes for all the "
+"classes are equal leading to a tie."
+msgstr ""
+
+#: :12
+msgid "**X** : array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :16
+msgid "**Y** : array-like, shape = [n_samples, n_classes]"
+msgstr ""
+
+#: :7 :11
+msgid "**X** : (sparse) array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9 :13
+msgid "Data."
+msgstr ""
+
+#: :11
+msgid "**y** : array-like, shape = [n_samples]"
+msgstr ""
+
+#: :13
+msgid "Multi-class targets."
+msgstr ""
+
+#: :17 :12
+msgid "**self** :"
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"This is implemented as ``argmax(decision_function(X), axis=1)`` which "
+"will return the label of the class with most votes by estimators "
+"predicting the outcome of a decision for each possible class pair."
+msgstr ""
+
+#: :17
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :19
+msgid "Predicted multi-class targets."
+msgstr ""
+
+#: :5
+msgid ""
+"In multi-label classification, this is the subset accuracy which is a "
+"harsh metric since you require for each sample that each label set be "
+"correctly predicted."
+msgstr ""
+
+#: :11
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :13
+msgid "Test samples."
+msgstr ""
+
+#: :15
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :17
+msgid "True labels for X."
+msgstr ""
+
+#: :19
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :21
+msgid "Sample weights."
+msgstr ""
+
+#: :25
+msgid "**score** : float"
+msgstr ""
+
+#: :27
+msgid "Mean accuracy of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+

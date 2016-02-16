@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/lda_qda.rst:5
+msgid "Linear and Quadratic Discriminant Analysis"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:9
+msgid ""
+"Linear Discriminant Analysis "
+"(:class:`discriminant_analysis.LinearDiscriminantAnalysis`) and Quadratic"
+" Discriminant Analysis "
+"(:class:`discriminant_analysis.QuadraticDiscriminantAnalysis`) are two "
+"classic classifiers, with, as their names suggest, a linear and a "
+"quadratic decision surface, respectively."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:16
+msgid ""
+"These classifiers are attractive because they have closed-form solutions "
+"that can be easily computed, are inherently multiclass, have proven to "
+"work well in practice and have no hyperparameters to tune."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:25
+msgid "ldaqda"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:26
+msgid ""
+"The plot shows decision boundaries for Linear Discriminant Analysis and "
+"Quadratic Discriminant Analysis. The bottom row demonstrates that Linear "
+"Discriminant Analysis can only learn linear boundaries, while Quadratic "
+"Discriminant Analysis can learn quadratic boundaries and is therefore "
+"more flexible."
+msgstr ""
+
+#: ../../modules/lda_qda.rst
+msgid "Examples:"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:34
+msgid ""
+":ref:`example_classification_plot_lda_qda.py`: Comparison of LDA and QDA "
+"on synthetic data."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:38
+msgid "Dimensionality reduction using Linear Discriminant Analysis"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:40
+msgid ""
+":class:`discriminant_analysis.LinearDiscriminantAnalysis` can be used to "
+"perform supervised dimensionality reduction, by projecting the input data"
+" to a linear subspace consisting of the directions which maximize the "
+"separation between classes (in a precise sense discussed in the "
+"mathematics section below). The dimension of the output is necessarily "
+"less that the number of classes, so this is a in general a rather strong "
+"dimensionality reduction, and only makes senses in a multiclass setting."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:48
+msgid ""
+"This is implemented in "
+":func:`discriminant_analysis.LinearDiscriminantAnalysis.transform`. The "
+"desired dimensionality can be set using the ``n_components`` constructor "
+"parameter. This parameter has no influence on "
+":func:`discriminant_analysis.LinearDiscriminantAnalysis.fit` or "
+":func:`discriminant_analysis.LinearDiscriminantAnalysis.predict`."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:57
+msgid ""
+":ref:`example_decomposition_plot_pca_vs_lda.py`: Comparison of LDA and "
+"PCA for dimensionality reduction of the Iris dataset"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:61
+msgid "Mathematical formulation of the LDA and QDA classifiers"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:63
+msgid ""
+"Both LDA and QDA can be derived from simple probabilistic models which "
+"model the class conditional distribution of the data :math:`P(X|y=k)` for"
+" each class :math:`k`. Predictions can then be obtained by using Bayes' "
+"rule:"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:70
+msgid ""
+"and we select the class :math:`k` which maximizes this conditional "
+"probability."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:72
+msgid ""
+"More specifically, for linear and quadratic discriminant analysis, "
+":math:`P(X|y)` is modelled as a multivariate Gaussian distribution with "
+"density:"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:78
+msgid ""
+"To use this model as a classifier, we just need to estimate from the "
+"training data the class priors :math:`P(y=k)` (by the proportion of "
+"instances of class :math:`k`), the class means :math:`\\mu_k` (by the "
+"empirical sample class means) and the covariance matrices (either by the "
+"empirical sample class covariance matrices, or by a regularized "
+"estimator: see the section on shrinkage below)."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:84
+msgid ""
+"In the case of LDA, the Gaussians for each class are assumed to share the"
+" same covariance matrix: :math:`\\Sigma_k = \\Sigma` for all :math:`k`. "
+"This leads to linear decision surfaces between, as can be seen by "
+"comparing the the log-probability ratios :math:`\\log[P(y=k | X) / P(y=l "
+"| X)]`:"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:92
+msgid ""
+"In the case of QDA, there are no assumptions on the covariance matrices "
+":math:`\\Sigma_k` of the Gaussians, leading to quadratic decision "
+"surfaces. See [#1]_ for more details."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:96
+msgid "**Relation with Gaussian Naive Bayes**"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:98
+msgid ""
+"If in the QDA model one assumes that the covariance matrices are "
+"diagonal, then this means that we assume the classes are conditionally "
+"independent, and the resulting classifier is equivalent to the Gaussian "
+"Naive Bayes classifier :class:`naive_bayes.GaussianNB`."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:104
+msgid "Mathematical formulation of LDA dimensionality reduction"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:106
+msgid ""
+"To understand the use of LDA in dimensionality reduction, it is useful to"
+" start with a geometric reformulation of the LDA classification rule "
+"explained above. We write :math:`K` for the total number of target "
+"classes. Since in LDA we assume that all classes have the same estimated "
+"covariance :math:`\\Sigma`, we can rescale the data so that this "
+"covariance is the identity:"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:114
+msgid ""
+"Then one can show that to classify a data point after scaling is "
+"equivalent to finding the estimated class mean :math:`\\mu^*_k` which is "
+"closest to the data point in the Euclidean distance. But this can be done"
+" just as well after projecting on the :math:`K-1` affine subspace "
+":math:`H_K` generated by all the :math:`\\mu^*_k` for all classes. This "
+"shows that, implicit in the LDA classifier, there is a dimensionality "
+"reduction by linear projection onto a :math:`K-1` dimensional space."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:122
+msgid ""
+"We can reduce the dimension even more, to a chosen :math:`L`, by "
+"projecting onto the linear subspace :math:`H_L` which maximize the "
+"variance of the :math:`\\mu^*_k` after projection (in effect, we are "
+"doing a form of PCA for the transformed class means :math:`\\mu^*_k`). "
+"This :math:`L` corresponds to the ``n_components`` parameter used in the "
+":func:`discriminant_analysis.LinearDiscriminantAnalysis.transform` "
+"method. See [#1]_ for more details."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:131
+msgid "Shrinkage"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:133
+msgid ""
+"Shrinkage is a tool to improve estimation of covariance matrices in "
+"situations where the number of training samples is small compared to the "
+"number of features. In this scenario, the empirical sample covariance is "
+"a poor estimator. Shrinkage LDA can be used by setting the ``shrinkage`` "
+"parameter of the "
+":class:`discriminant_analysis.LinearDiscriminantAnalysis` class to "
+"'auto'. This automatically determines the optimal shrinkage parameter in "
+"an analytic way following the lemma introduced by Ledoit and Wolf [#2]_. "
+"Note that currently shrinkage only works when setting the ``solver`` "
+"parameter to 'lsqr' or 'eigen'."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:143
+msgid ""
+"The ``shrinkage`` parameter can also be manually set between 0 and 1. In "
+"particular, a value of 0 corresponds to no shrinkage (which means the "
+"empirical covariance matrix will be used) and a value of 1 corresponds to"
+" complete shrinkage (which means that the diagonal matrix of variances "
+"will be used as an estimate for the covariance matrix). Setting this "
+"parameter to a value between these two extrema will estimate a shrunk "
+"version of the covariance matrix."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:157
+msgid "shrinkage"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:159
+msgid "Estimation algorithms"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:161
+msgid ""
+"The default solver is 'svd'. It can perform both classification and "
+"transform, and it does not rely on the calculation of the covariance "
+"matrix. This can be an advantage in situations where the number of "
+"features is large. However, the 'svd' solver cannot be used with "
+"shrinkage."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:166
+msgid ""
+"The 'lsqr' solver is an efficient algorithm that only works for "
+"classification. It supports shrinkage."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:169
+msgid ""
+"The 'eigen' solver is based on the optimization of the between class "
+"scatter to within class scatter ratio. It can be used for both "
+"classification and transform, and it supports shrinkage. However, the "
+"'eigen' solver needs to compute the covariance matrix, so it might not be"
+" suitable for situations with a high number of features."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:177
+msgid ""
+":ref:`example_classification_plot_lda.py`: Comparison of LDA classifiers "
+"with and without shrinkage."
+msgstr ""
+
+#: ../../modules/lda_qda.rst
+msgid "References:"
+msgstr ""
+
+#: ../../modules/lda_qda.rst:182
+msgid ""
+"\"The Elements of Statistical Learning\", Hastie T., Tibshirani R., "
+"Friedman J., Section 4.3, p.106-119, 2008."
+msgstr ""
+
+#: ../../modules/lda_qda.rst:185
+msgid ""
+"Ledoit O, Wolf M. Honey, I Shrunk the Sample Covariance Matrix. The "
+"Journal of Portfolio Management 30(4), 110-119, 2004."
+msgstr ""
+

@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:8
+msgid "Classification of text documents: using a MLComp dataset"
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:10
+msgid ""
+"This is an example showing how the scikit-learn can be used to classify "
+"documents by topics using a bag-of-words approach. This example uses a "
+"scipy.sparse matrix to store the features instead of standard numpy "
+"arrays."
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:14
+msgid ""
+"The dataset used in this example is the 20 newsgroups dataset and should "
+"be downloaded from the http://mlcomp.org (free registration required):"
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:17
+msgid "http://mlcomp.org/datasets/379"
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:19
+msgid ""
+"Once downloaded unzip the archive somewhere on your filesystem. For "
+"instance in::"
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:26
+msgid ""
+"You should get a folder ``~/data/mlcomp/379`` with a file named "
+"``metadata`` and subfolders ``raw``, ``train`` and ``test`` holding the "
+"text documents organized by newsgroups."
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:30
+msgid ""
+"Then set the ``MLCOMP_DATASETS_HOME`` environment variable pointing to "
+"the root folder holding the uncompressed archive::"
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:35
+msgid "Then you are ready to run this example using your favorite python shell::"
+msgstr ""
+
+#: ../../auto_examples/text/mlcomp_sparse_document_classification.rst:41
+msgid ""
+"**Python source code:** "
+":download:`mlcomp_sparse_document_classification.py "
+"<mlcomp_sparse_document_classification.py>`"
+msgstr ""
+

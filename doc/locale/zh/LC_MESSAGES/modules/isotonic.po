@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/isotonic.rst:5
+msgid "Isotonic regression"
+msgstr ""
+
+#: ../../modules/isotonic.rst:9
+msgid ""
+"The class :class:`IsotonicRegression` fits a non-decreasing function to "
+"data. It solves the following problem:"
+msgstr ""
+
+#: ../../modules/isotonic.rst:12
+msgid "minimize :math:`\\sum_i w_i (y_i - \\hat{y}_i)^2`"
+msgstr ""
+
+#: ../../modules/isotonic.rst:14
+msgid ""
+"subject to :math:`\\hat{y}_{min} = \\hat{y}_1 \\le \\hat{y}_2 ... \\le "
+"\\hat{y}_n = \\hat{y}_{max}`"
+msgstr ""
+
+#: ../../modules/isotonic.rst:16
+msgid ""
+"where each :math:`w_i` is strictly positive and each :math:`y_i` is an "
+"arbitrary real number. It yields the vector which is composed of non-"
+"decreasing elements the closest in terms of mean squared error. In "
+"practice this list of elements forms a function that is piecewise linear."
+msgstr ""
+

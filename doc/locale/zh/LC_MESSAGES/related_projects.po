@@ -1,0 +1,286 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../related_projects.rst:5
+msgid "Related Projects"
+msgstr ""
+
+#: ../../related_projects.rst:7
+msgid ""
+"Below is a list of sister-projects, extensions and domain specific "
+"packages."
+msgstr ""
+
+#: ../../related_projects.rst:10
+msgid "Interoperability and framework enhancements"
+msgstr ""
+
+#: ../../related_projects.rst:12
+msgid ""
+"These tools adapt scikit-learn for use with other technologies or "
+"otherwise enhance the functionality of scikit-learn's estimators."
+msgstr ""
+
+#: ../../related_projects.rst:15
+msgid ""
+"`sklearn_pandas <https://github.com/paulgb/sklearn-pandas/>`_ bridge for "
+"scikit-learn pipelines and pandas data frame with dedicated transformers."
+msgstr ""
+
+#: ../../related_projects.rst:18
+msgid ""
+"`Scikit-Learn Laboratory "
+"<https://skll.readthedocs.org/en/latest/index.html>`_  A command-line "
+"wrapper around scikit-learn that makes it easy to run machine learning "
+"experiments with multiple learners and large feature sets."
+msgstr ""
+
+#: ../../related_projects.rst:23
+msgid ""
+"`auto-sklearn <https://github.com/automl/auto-"
+"sklearn/blob/master/source/index.rst>`_ An automated machine learning "
+"toolkit and a drop-in replacement for a scikit-learn estimator"
+msgstr ""
+
+#: ../../related_projects.rst:27
+msgid ""
+"`sklearn-pmml <https://github.com/alex-pirozhenko/sklearn-pmml>`_ "
+"Serialization of (some) scikit-learn estimators into PMML."
+msgstr ""
+
+#: ../../related_projects.rst:31
+msgid "Other estimators and tasks"
+msgstr ""
+
+#: ../../related_projects.rst:33
+msgid ""
+"Not everything belongs or is mature enough for the central scikit-learn "
+"project. The following are projects providing interfaces similar to "
+"scikit-learn for additional learning algorithms, infrastructures and "
+"tasks."
+msgstr ""
+
+#: ../../related_projects.rst:38
+msgid ""
+"`pylearn2 <http://deeplearning.net/software/pylearn2/>`_ A deep learning "
+"and neural network library build on theano with scikit-learn like "
+"interface."
+msgstr ""
+
+#: ../../related_projects.rst:41
+msgid ""
+"`sklearn_theano <http://sklearn-theano.github.io/>`_ scikit-learn "
+"compatible estimators, transformers, and datasets which use Theano "
+"internally"
+msgstr ""
+
+#: ../../related_projects.rst:44
+msgid ""
+"`lightning <http://www.mblondel.org/lightning/>`_ Fast state-of-the-art "
+"linear model solvers (SDCA, AdaGrad, SVRG, SAG, etc...)."
+msgstr ""
+
+#: ../../related_projects.rst:47
+msgid ""
+"`Seqlearn <https://github.com/larsmans/seqlearn>`_  Sequence "
+"classification using HMMs or structured perceptron."
+msgstr ""
+
+#: ../../related_projects.rst:50
+msgid ""
+"`HMMLearn <https://github.com/hmmlearn/hmmlearn>`_ Implementation of "
+"hidden markov models that was previously part of scikit-learn."
+msgstr ""
+
+#: ../../related_projects.rst:53
+msgid ""
+"`PyStruct <https://pystruct.github.io>`_ General conditional random "
+"fields and structured prediction."
+msgstr ""
+
+#: ../../related_projects.rst:56
+msgid ""
+"`py-earth <https://github.com/jcrudy/py-earth>`_ Multivariate adaptive "
+"regression splines"
+msgstr ""
+
+#: ../../related_projects.rst:59
+msgid ""
+"`sklearn-compiledtrees <https://github.com/ajtulloch/sklearn-"
+"compiledtrees/>`_ Generate a C++ implementation of the predict function "
+"for decision trees (and ensembles) trained by sklearn. Useful for "
+"latency-sensitive production environments."
+msgstr ""
+
+#: ../../related_projects.rst:64
+msgid ""
+"`lda <https://github.com/ariddell/lda/>`_: Fast implementation of Latent "
+"Dirichlet Allocation in Cython."
+msgstr ""
+
+#: ../../related_projects.rst:67
+msgid ""
+"`Sparse Filtering <https://github.com/jmetzen/sparse-filtering>`_ "
+"Unsupervised feature learning based on sparse-filtering"
+msgstr ""
+
+#: ../../related_projects.rst:70
+msgid ""
+"`Kernel Regression <https://github.com/jmetzen/kernel_regression>`_ "
+"Implementation of Nadaraya-Watson kernel regression with automatic "
+"bandwidth selection"
+msgstr ""
+
+#: ../../related_projects.rst:74
+msgid ""
+"`gplearn <https://github.com/trevorstephens/gplearn>`_ Genetic "
+"Programming for symbolic regression tasks."
+msgstr ""
+
+#: ../../related_projects.rst:77
+msgid ""
+"`nolearn <https://github.com/dnouri/nolearn>`_ A number of wrappers and "
+"abstractions around existing neural network libraries"
+msgstr ""
+
+#: ../../related_projects.rst:80
+msgid ""
+"`sparkit-learn <https://github.com/lensacom/sparkit-learn>`_ Scikit-learn"
+" functionality and API on PySpark."
+msgstr ""
+
+#: ../../related_projects.rst:82
+msgid ""
+"`keras <https://github.com/fchollet/keras>`_ Theano-based Deep Learning "
+"library."
+msgstr ""
+
+#: ../../related_projects.rst:84
+msgid ""
+"`mlxtend <https://github.com/rasbt/mlxtend>`_ Includes a number of "
+"additional estimators as well as model visualization utilities."
+msgstr ""
+
+#: ../../related_projects.rst:88
+msgid "Statistical learning with Python"
+msgstr ""
+
+#: ../../related_projects.rst:89
+msgid "Other packages useful for data analysis and machine learning."
+msgstr ""
+
+#: ../../related_projects.rst:91
+msgid ""
+"`Pandas <http://pandas.pydata.org>`_ Tools for working with heterogeneous"
+" and columnar data, relational queries, time series and basic statistics."
+msgstr ""
+
+#: ../../related_projects.rst:94
+msgid ""
+"`theano <http://deeplearning.net/software/theano/>`_ A CPU/GPU array "
+"processing framework geared towards deep learning research."
+msgstr ""
+
+#: ../../related_projects.rst:97
+msgid ""
+"`Statsmodel <http://statsmodels.sourceforge.net/>`_ Estimating and "
+"analysing statistical models. More focused on statistical tests and less "
+"on prediction than scikit-learn."
+msgstr ""
+
+#: ../../related_projects.rst:101
+msgid ""
+"`PyMC <http://pymc-devs.github.io/pymc/>`_ Bayesian statistical models "
+"and fitting algorithms."
+msgstr ""
+
+#: ../../related_projects.rst:104
+msgid ""
+"`REP <https://github.com/yandex/REP>`_ Environment for conducting data-"
+"driven research in a consistent and reproducible way"
+msgstr ""
+
+#: ../../related_projects.rst:107
+msgid ""
+"`Sacred <https://github.com/IDSIA/Sacred>`_ Tool to help you configure, "
+"organize, log and reproduce experiments"
+msgstr ""
+
+#: ../../related_projects.rst:110
+msgid ""
+"`gensim <https://radimrehurek.com/gensim/>`_  A library for topic "
+"modelling, document indexing and similarity retrieval"
+msgstr ""
+
+#: ../../related_projects.rst:113
+msgid ""
+"`Seaborn <http://stanford.edu/~mwaskom/software/seaborn/>`_ Visualization"
+" library based on matplotlib. It provides a high-level interface for "
+"drawing attractive statistical graphics."
+msgstr ""
+
+#: ../../related_projects.rst:116
+msgid ""
+"`Deep Learning <http://deeplearning.net/software_links/>`_ A curated list"
+" of deep learning software libraries."
+msgstr ""
+
+#: ../../related_projects.rst:120
+msgid "Domain specific packages"
+msgstr ""
+
+#: ../../related_projects.rst:122
+msgid ""
+"`scikit-image <http://scikit-image.org/>`_ Image processing and computer "
+"vision in python."
+msgstr ""
+
+#: ../../related_projects.rst:125
+msgid ""
+"`Natural language toolkit (nltk) <http://www.nltk.org/>`_ Natural "
+"language processing and some machine learning."
+msgstr ""
+
+#: ../../related_projects.rst:128
+msgid ""
+"`NiLearn <https://nilearn.github.io/>`_ Machine learning for neuro-"
+"imaging."
+msgstr ""
+
+#: ../../related_projects.rst:130
+msgid "`AstroML <http://www.astroml.org/>`_  Machine learning for astronomy."
+msgstr ""
+
+#: ../../related_projects.rst:132
+msgid ""
+"`MSMBuilder <http://www.msmbuilder.org/>`_  Machine learning for protein "
+"conformational dynamics time series."
+msgstr ""
+
+#: ../../related_projects.rst:136
+msgid "Snippets and tidbits"
+msgstr ""
+
+#: ../../related_projects.rst:138
+msgid ""
+"The `wiki <https://github.com/scikit-learn/scikit-learn/wiki/Third-party-"
+"projects-and-code-snippets>`_ has more!"
+msgstr ""
+

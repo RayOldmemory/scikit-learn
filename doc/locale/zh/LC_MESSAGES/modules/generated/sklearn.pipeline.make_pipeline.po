@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.rst:2
+msgid ":mod:`sklearn.pipeline`.make_pipeline"
+msgstr ""
+
+#: :3
+msgid "Construct a Pipeline from the given estimators."
+msgstr ""
+
+#: :5
+msgid ""
+"This is a shorthand for the Pipeline constructor; it does not require, "
+"and does not permit, naming the estimators. Instead, they will be given "
+"names automatically based on their types."
+msgstr ""
+
+#: :11
+msgid "**p** : Pipeline"
+msgstr ""
+
+#: :14
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.examples:3
+msgid "Examples using ``sklearn.pipeline.make_pipeline``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.examples:25
+msgid ":ref:`example_ensemble_plot_feature_transformation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.examples:45
+msgid ":ref:`example_feature_selection_feature_selection_pipeline.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.examples:65
+msgid ":ref:`example_linear_model_plot_polynomial_interpolation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.examples:85
+msgid ":ref:`example_linear_model_plot_robust_fit.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.examples:105
+msgid ":ref:`example_preprocessing_plot_function_transformer.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.make_pipeline.examples:125
+msgid ":ref:`example_text_document_clustering.py`"
+msgstr ""
+

@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.matthews_corrcoef.rst:2
+msgid ":mod:`sklearn.metrics`.matthews_corrcoef"
+msgstr ""
+
+#: :3
+msgid "Compute the Matthews correlation coefficient (MCC) for binary classes"
+msgstr ""
+
+#: :5
+msgid ""
+"The Matthews correlation coefficient is used in machine learning as a "
+"measure of the quality of binary (two-class) classifications. It takes "
+"into account true and false positives and negatives and is generally "
+"regarded as a balanced measure which can be used even if the classes are "
+"of very different sizes. The MCC is in essence a correlation coefficient "
+"value between -1 and +1. A coefficient of +1 represents a perfect "
+"prediction, 0 an average random prediction and -1 an inverse prediction."
+"  The statistic is also known as the phi coefficient. [source: Wikipedia]"
+msgstr ""
+
+#: :14
+msgid ""
+"Only in the binary case does this relate to information about true and "
+"false positives and negatives. See references below."
+msgstr ""
+
+#: :17
+msgid "Read more in the :ref:`User Guide <matthews_corrcoef>`."
+msgstr ""
+
+#: :21
+msgid "**y_true** : array, shape = [n_samples]"
+msgstr ""
+
+#: :23
+msgid "Ground truth (correct) target values."
+msgstr ""
+
+#: :25
+msgid "**y_pred** : array, shape = [n_samples]"
+msgstr ""
+
+#: :27
+msgid "Estimated targets as returned by a classifier."
+msgstr ""
+
+#: :31
+msgid "**mcc** : float"
+msgstr ""
+
+#: :33
+msgid ""
+"The Matthews correlation coefficient (+1 represents a perfect prediction,"
+" 0 an average random prediction and -1 and inverse prediction)."
+msgstr ""
+
+#: :38
+msgid "References"
+msgstr ""
+
+#: :39
+msgid ""
+"`Baldi, Brunak, Chauvin, Andersen and Nielsen, (2000). Assessing the "
+"accuracy of prediction algorithms for classification: an overview "
+"<http://dx.doi.org/10.1093/bioinformatics/16.5.412>`_"
+msgstr ""
+
+#: :43
+msgid ""
+"`Wikipedia entry for the Matthews Correlation Coefficient "
+"<http://en.wikipedia.org/wiki/Matthews_correlation_coefficient>`_"
+msgstr ""
+
+#: :51
+msgid "Examples"
+msgstr ""
+

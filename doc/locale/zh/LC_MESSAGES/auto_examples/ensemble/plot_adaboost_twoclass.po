@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/ensemble/plot_adaboost_twoclass.rst:8
+msgid "Two-class AdaBoost"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_twoclass.rst:10
+msgid ""
+"This example fits an AdaBoosted decision stump on a non-linearly "
+"separable classification dataset composed of two \"Gaussian quantiles\" "
+"clusters (see :func:`sklearn.datasets.make_gaussian_quantiles`) and plots"
+" the decision boundary and decision scores. The distributions of decision"
+" scores are shown separately for samples of class A and B. The predicted "
+"class label for each sample is determined by the sign of the decision "
+"score. Samples with decision scores greater than zero are classified as "
+"B, and are otherwise classified as A. The magnitude of a decision score "
+"determines the degree of likeness with the predicted class label. "
+"Additionally, a new dataset could be constructed containing a desired "
+"purity of class B, for example, by only selecting samples with a decision"
+" score above some value."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_twoclass.rst:31
+msgid ""
+"**Python source code:** :download:`plot_adaboost_twoclass.py "
+"<plot_adaboost_twoclass.py>`"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_twoclass.rst:36
+msgid ""
+"**Total running time of the example:**  8.78 seconds ( 0 minutes  8.78 "
+"seconds)"
+msgstr ""
+

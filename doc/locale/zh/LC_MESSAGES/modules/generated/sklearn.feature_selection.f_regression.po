@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.feature_selection.f_regression.rst:2
+msgid ":mod:`sklearn.feature_selection`.f_regression"
+msgstr ""
+
+#: :3
+msgid "Univariate linear regression tests."
+msgstr ""
+
+#: :5
+msgid ""
+"Quick linear model for testing the effect of a single regressor, "
+"sequentially for many regressors."
+msgstr ""
+
+#: :8
+msgid "This is done in 3 steps:"
+msgstr ""
+
+#: :10
+msgid ""
+"The regressor of interest and the data are orthogonalized wrt constant "
+"regressors."
+msgstr ""
+
+#: :12
+msgid "The cross correlation between data and regressors is computed."
+msgstr ""
+
+#: :13
+msgid "It is converted to an F score then to a p-value."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <univariate_feature_selection>`."
+msgstr ""
+
+#: :19
+msgid "**X** : {array-like, sparse matrix}  shape = (n_samples, n_features)"
+msgstr ""
+
+#: :21
+msgid "The set of regressors that will tested sequentially."
+msgstr ""
+
+#: :23
+msgid "**y** : array of shape(n_samples)."
+msgstr ""
+
+#: :25
+msgid "The data matrix"
+msgstr ""
+
+#: :27
+msgid "**center** : True, bool,"
+msgstr ""
+
+#: :29
+msgid "If true, X and y will be centered."
+msgstr ""
+
+#: :33
+msgid "**F** : array, shape=(n_features,)"
+msgstr ""
+
+#: :35
+msgid "F values of features."
+msgstr ""
+
+#: :37
+msgid "**pval** : array, shape=(n_features,)"
+msgstr ""
+
+#: :39
+msgid "p-values of F-scores."
+msgstr ""
+
+#: :44
+msgid ":obj:`f_classif`"
+msgstr ""
+
+#: :44
+msgid "ANOVA F-value between labe/feature for classification tasks."
+msgstr ""
+
+#: :46
+msgid ":obj:`chi2`"
+msgstr ""
+
+#: :47
+msgid "Chi-squared stats of non-negative features for classification tasks."
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.f_regression.examples:3
+msgid "Examples using ``sklearn.feature_selection.f_regression``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.f_regression.examples:25
+msgid ":ref:`example_cluster_plot_feature_agglomeration_vs_univariate_selection.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.f_regression.examples:45
+msgid ":ref:`example_feature_selection_feature_selection_pipeline.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_selection.f_regression.examples:65
+msgid ":ref:`example_linear_model_plot_sparse_recovery.py`"
+msgstr ""
+

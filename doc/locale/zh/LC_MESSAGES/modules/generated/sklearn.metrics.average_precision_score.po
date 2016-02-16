@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.average_precision_score.rst:2
+msgid ":mod:`sklearn.metrics`.average_precision_score"
+msgstr ""
+
+#: :3
+msgid "Compute average precision (AP) from prediction scores"
+msgstr ""
+
+#: :5
+msgid "This score corresponds to the area under the precision-recall curve."
+msgstr ""
+
+#: :7
+msgid ""
+"Note: this implementation is restricted to the binary classification task"
+" or multilabel classification task."
+msgstr ""
+
+#: :10
+msgid "Read more in the :ref:`User Guide <precision_recall_f_measure_metrics>`."
+msgstr ""
+
+#: :14
+msgid "**y_true** : array, shape = [n_samples] or [n_samples, n_classes]"
+msgstr ""
+
+#: :16
+msgid "True binary labels in binary label indicators."
+msgstr ""
+
+#: :18
+msgid "**y_score** : array, shape = [n_samples] or [n_samples, n_classes]"
+msgstr ""
+
+#: :20
+msgid ""
+"Target scores, can either be probability estimates of the positive class,"
+" confidence values, or binary decisions."
+msgstr ""
+
+#: :23
+msgid ""
+"**average** : string, [None, 'micro', 'macro' (default), 'samples', "
+"'weighted']"
+msgstr ""
+
+#: :25
+msgid ""
+"If ``None``, the scores for each class are returned. Otherwise, this "
+"determines the type of averaging performed on the data:"
+msgstr ""
+
+#: :29
+msgid "``'micro'``:"
+msgstr ""
+
+#: :29
+msgid ""
+"Calculate metrics globally by considering each element of the label "
+"indicator matrix as a label."
+msgstr ""
+
+#: :32
+msgid "``'macro'``:"
+msgstr ""
+
+#: :32
+msgid ""
+"Calculate metrics for each label, and find their unweighted mean.  This "
+"does not take label imbalance into account."
+msgstr ""
+
+#: :35
+msgid "``'weighted'``:"
+msgstr ""
+
+#: :35
+msgid ""
+"Calculate metrics for each label, and find their average, weighted by "
+"support (the number of true instances for each label)."
+msgstr ""
+
+#: :38
+msgid "``'samples'``:"
+msgstr ""
+
+#: :38
+msgid "Calculate metrics for each instance, and find their average."
+msgstr ""
+
+#: :40
+msgid "**sample_weight** : array-like of shape = [n_samples], optional"
+msgstr ""
+
+#: :42
+msgid "Sample weights."
+msgstr ""
+
+#: :46
+msgid "**average_precision** : float"
+msgstr ""
+
+#: :51
+msgid ":obj:`roc_auc_score`"
+msgstr ""
+
+#: :51
+msgid "Area under the ROC curve"
+msgstr ""
+
+#: :53
+msgid ":obj:`precision_recall_curve`"
+msgstr ""
+
+#: :54
+msgid "Compute precision-recall pairs for different probability thresholds"
+msgstr ""
+
+#: :57
+msgid "References"
+msgstr ""
+
+#: :58
+msgid ""
+"`Wikipedia entry for the Average precision "
+"<http://en.wikipedia.org/wiki/Average_precision>`_"
+msgstr ""
+
+#: :66
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.average_precision_score.examples:3
+msgid "Examples using ``sklearn.metrics.average_precision_score``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.average_precision_score.examples:25
+msgid ":ref:`example_model_selection_plot_precision_recall.py`"
+msgstr ""
+

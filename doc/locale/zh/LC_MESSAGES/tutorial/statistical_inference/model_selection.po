@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../tutorial/statistical_inference/model_selection.rst:5
+msgid "Model selection: choosing estimators and their parameters"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:8
+msgid "Score, and cross-validated scores"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:10
+msgid ""
+"As we have seen, every estimator exposes a ``score`` method that can "
+"judge the quality of the fit (or the prediction) on new data. **Bigger is"
+" better**."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:24
+msgid ""
+"To get a better measure of prediction accuracy (which we can use as a "
+"proxy for goodness of fit of the model), we can successively split the "
+"data in *folds* that we use for training and testing::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:46
+msgid "This is called a :class:`KFold` cross validation"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:51
+msgid "Cross-validation generators"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:55
+msgid ""
+"The code above to split data in train and test sets is tedious to write. "
+"Scikit-learn exposes cross-validation generators to generate list of "
+"indices for this purpose::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:67
+msgid "The cross-validation can then be implemented easily::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:74
+msgid ""
+"To compute the ``score`` method of an estimator, the sklearn exposes a "
+"helper function::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:80
+msgid ""
+"`n_jobs=-1` means that the computation will be dispatched on all the CPUs"
+" of the computer."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:83
+msgid "**Cross-validation generators**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:90
+msgid ":class:`KFold` **(n, k)**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:92
+msgid ":class:`StratifiedKFold` **(y, k)**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:94
+msgid ":class:`LeaveOneOut` **(n)**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:96
+msgid ":class:`LeaveOneLabelOut` **(labels)**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:100
+msgid "Split it K folds, train on K-1 and then test on left-out"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:102
+msgid "It preserves the class ratios / label distribution within each fold."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:104
+msgid "Leave one observation out"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:106
+msgid "Takes a label array to group observations"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst
+msgid "**Exercise**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:118
+msgid ""
+"On the digits dataset, plot the cross-validation score of a :class:`SVC` "
+"estimator with an linear kernel as a function of parameter ``C`` (use a "
+"logarithmic grid of points, from 1 to 10)."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:125
+msgid "**Solution:** :ref:`example_exercises_plot_cv_digits.py`"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:130
+msgid "Grid-search and cross-validated estimators"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:133
+msgid "Grid-search"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:137
+msgid ""
+"The sklearn provides an object that, given data, computes the score "
+"during the fit of an estimator on a parameter grid and chooses the "
+"parameters to maximize the cross-validation score. This object takes an "
+"estimator during the construction and exposes an estimator API::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:158
+msgid ""
+"By default, the :class:`GridSearchCV` uses a 3-fold cross-validation. "
+"However, if it detects that a classifier is passed, rather than a "
+"regressor, it uses a stratified 3-fold."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst
+msgid "Nested cross-validation"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:170
+msgid ""
+"Two cross-validation loops are performed in parallel: one by the "
+":class:`GridSearchCV` estimator to set ``gamma`` and the other one by "
+"``cross_val_score`` to measure the prediction performance of the "
+"estimator. The resulting scores are unbiased estimates of the prediction "
+"score on new data."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:178
+msgid ""
+"You cannot nest objects with parallel computing (``n_jobs`` different "
+"than 1)."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:184
+msgid "Cross-validated estimators"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:186
+msgid ""
+"Cross-validation to set a parameter can be done more efficiently on an "
+"algorithm-by-algorithm basis. This is why for certain estimators the "
+"sklearn exposes :ref:`cross_validation` estimators that set their "
+"parameter automatically by cross-validation::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:205
+msgid ""
+"These estimators are called similarly to their counterparts, with 'CV' "
+"appended to their name."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:211
+msgid "On the diabetes dataset, find the optimal regularization parameter alpha."
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:214
+msgid "**Bonus**: How much can you trust the selection of alpha?"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/model_selection.rst:219
+msgid "**Solution:** :ref:`example_exercises_plot_cv_diabetes.py`"
+msgstr ""
+

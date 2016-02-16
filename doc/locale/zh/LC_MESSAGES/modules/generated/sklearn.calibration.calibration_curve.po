@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.calibration.calibration_curve.rst:2
+msgid ":mod:`sklearn.calibration`.calibration_curve"
+msgstr ""
+
+#: :3
+msgid "Compute true and predicted probabilities for a calibration curve."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <calibration>`."
+msgstr ""
+
+#: :9
+msgid "**y_true** : array, shape (n_samples,)"
+msgstr ""
+
+#: :11
+msgid "True targets."
+msgstr ""
+
+#: :13
+msgid "**y_prob** : array, shape (n_samples,)"
+msgstr ""
+
+#: :15
+msgid "Probabilities of the positive class."
+msgstr ""
+
+#: :17
+msgid "**normalize** : bool, optional, default=False"
+msgstr ""
+
+#: :19
+msgid ""
+"Whether y_prob needs to be normalized into the bin [0, 1], i.e. is not a "
+"proper probability. If True, the smallest value in y_prob is mapped onto "
+"0 and the largest one onto 1."
+msgstr ""
+
+#: :23
+msgid "**n_bins** : int"
+msgstr ""
+
+#: :25
+msgid "Number of bins. A bigger number requires more data."
+msgstr ""
+
+#: :29
+msgid "**prob_true** : array, shape (n_bins,)"
+msgstr ""
+
+#: :31
+msgid "The true probability in each bin (fraction of positives)."
+msgstr ""
+
+#: :33
+msgid "**prob_pred** : array, shape (n_bins,)"
+msgstr ""
+
+#: :35
+msgid "The mean predicted probability in each bin."
+msgstr ""
+
+#: :38
+msgid "References"
+msgstr ""
+
+#: :39
+msgid ""
+"Alexandru Niculescu-Mizil and Rich Caruana (2005) Predicting Good "
+"Probabilities With Supervised Learning, in Proceedings of the 22nd "
+"International Conference on Machine Learning (ICML). See section 4 "
+"(Qualitative Analysis of Predictions)."
+msgstr ""
+
+#: ../../modules/generated/sklearn.calibration.calibration_curve.examples:3
+msgid "Examples using ``sklearn.calibration.calibration_curve``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.calibration.calibration_curve.examples:25
+msgid ":ref:`example_calibration_plot_compare_calibration.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.calibration.calibration_curve.examples:45
+msgid ":ref:`example_calibration_plot_calibration_curve.py`"
+msgstr ""
+

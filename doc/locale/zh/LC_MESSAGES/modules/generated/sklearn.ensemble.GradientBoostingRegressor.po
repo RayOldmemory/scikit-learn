@@ -1,0 +1,762 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.rst:2
+msgid ":mod:`sklearn.ensemble`.GradientBoostingRegressor"
+msgstr ""
+
+#: :3
+msgid "Gradient Boosting for regression."
+msgstr ""
+
+#: :5
+msgid ""
+"GB builds an additive model in a forward stage-wise fashion; it allows "
+"for the optimization of arbitrary differentiable loss functions. In each "
+"stage a regression tree is fit on the negative gradient of the given loss"
+" function."
+msgstr ""
+
+#: :10
+msgid "Read more in the :ref:`User Guide <gradient_boosting>`."
+msgstr ""
+
+#: :14
+msgid "**loss** : {'ls', 'lad', 'huber', 'quantile'}, optional (default='ls')"
+msgstr ""
+
+#: :16
+msgid ""
+"loss function to be optimized. 'ls' refers to least squares regression. "
+"'lad' (least absolute deviation) is a highly robust loss function solely "
+"based on order information of the input variables. 'huber' is a "
+"combination of the two. 'quantile' allows quantile regression (use "
+"`alpha` to specify the quantile)."
+msgstr ""
+
+#: :22
+msgid "**learning_rate** : float, optional (default=0.1)"
+msgstr ""
+
+#: :24
+msgid ""
+"learning rate shrinks the contribution of each tree by `learning_rate`. "
+"There is a trade-off between learning_rate and n_estimators."
+msgstr ""
+
+#: :27
+msgid "**n_estimators** : int (default=100)"
+msgstr ""
+
+#: :29
+msgid ""
+"The number of boosting stages to perform. Gradient boosting is fairly "
+"robust to over-fitting so a large number usually results in better "
+"performance."
+msgstr ""
+
+#: :33
+msgid "**max_depth** : integer, optional (default=3)"
+msgstr ""
+
+#: :35
+msgid ""
+"maximum depth of the individual regression estimators. The maximum depth "
+"limits the number of nodes in the tree. Tune this parameter for best "
+"performance; the best value depends on the interaction of the input "
+"variables. Ignored if ``max_leaf_nodes`` is not None."
+msgstr ""
+
+#: :41
+msgid "**min_samples_split** : integer, optional (default=2)"
+msgstr ""
+
+#: :43
+msgid "The minimum number of samples required to split an internal node."
+msgstr ""
+
+#: :45
+msgid "**min_samples_leaf** : integer, optional (default=1)"
+msgstr ""
+
+#: :47
+msgid "The minimum number of samples required to be at a leaf node."
+msgstr ""
+
+#: :49
+msgid "**min_weight_fraction_leaf** : float, optional (default=0.)"
+msgstr ""
+
+#: :51
+msgid ""
+"The minimum weighted fraction of the input samples required to be at a "
+"leaf node."
+msgstr ""
+
+#: :54
+msgid "**subsample** : float, optional (default=1.0)"
+msgstr ""
+
+#: :56
+msgid ""
+"The fraction of samples to be used for fitting the individual base "
+"learners. If smaller than 1.0 this results in Stochastic Gradient "
+"Boosting. `subsample` interacts with the parameter `n_estimators`. "
+"Choosing `subsample < 1.0` leads to a reduction of variance and an "
+"increase in bias."
+msgstr ""
+
+#: :62
+msgid "**max_features** : int, float, string or None, optional (default=None)"
+msgstr ""
+
+#: :72
+msgid "The number of features to consider when looking for the best split:"
+msgstr ""
+
+#: :65
+msgid "If int, then consider `max_features` features at each split."
+msgstr ""
+
+#: :66
+msgid ""
+"If float, then `max_features` is a percentage and `int(max_features * "
+"n_features)` features are considered at each split."
+msgstr ""
+
+#: :69
+msgid "If \"auto\", then `max_features=n_features`."
+msgstr ""
+
+#: :70
+msgid "If \"sqrt\", then `max_features=sqrt(n_features)`."
+msgstr ""
+
+#: :71
+msgid "If \"log2\", then `max_features=log2(n_features)`."
+msgstr ""
+
+#: :72
+msgid "If None, then `max_features=n_features`."
+msgstr ""
+
+#: :74
+msgid ""
+"Choosing `max_features < n_features` leads to a reduction of variance and"
+" an increase in bias."
+msgstr ""
+
+#: :77
+msgid ""
+"Note: the search for a split does not stop until at least one valid "
+"partition of the node samples is found, even if it requires to "
+"effectively inspect more than ``max_features`` features."
+msgstr ""
+
+#: :81
+msgid "**max_leaf_nodes** : int or None, optional (default=None)"
+msgstr ""
+
+#: :83
+msgid ""
+"Grow trees with ``max_leaf_nodes`` in best-first fashion. Best nodes are "
+"defined as relative reduction in impurity. If None then unlimited number "
+"of leaf nodes."
+msgstr ""
+
+#: :87
+msgid "**alpha** : float (default=0.9)"
+msgstr ""
+
+#: :89
+msgid ""
+"The alpha-quantile of the huber loss function and the quantile loss "
+"function. Only if ``loss='huber'`` or ``loss='quantile'``."
+msgstr ""
+
+#: :92
+msgid "**init** : BaseEstimator, None, optional (default=None)"
+msgstr ""
+
+#: :94
+msgid ""
+"An estimator object that is used to compute the initial predictions. "
+"``init`` has to provide ``fit`` and ``predict``. If None it uses "
+"``loss.init_estimator``."
+msgstr ""
+
+#: :98
+msgid "**verbose** : int, default: 0"
+msgstr ""
+
+#: :100
+msgid ""
+"Enable verbose output. If 1 then it prints progress and performance once "
+"in a while (the more trees the lower the frequency). If greater than 1 "
+"then it prints progress and performance for every tree."
+msgstr ""
+
+#: :104
+msgid "**warm_start** : bool, default: False"
+msgstr ""
+
+#: :106
+msgid ""
+"When set to ``True``, reuse the solution of the previous call to fit and "
+"add more estimators to the ensemble, otherwise, just erase the previous "
+"solution."
+msgstr ""
+
+#: :110
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :112
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :117
+msgid "**presort** : bool or 'auto', optional (default='auto')"
+msgstr ""
+
+#: :119
+msgid ""
+"Whether to presort the data to speed up the finding of best splits in "
+"fitting. Auto mode by default will use presorting on dense data and "
+"default to normal sorting on sparse data. Setting presort to true on "
+"sparse data will raise an error."
+msgstr ""
+
+#: :124
+msgid "optional parameter *presort*."
+msgstr ""
+
+#: :129 :8
+msgid "**feature_importances_** : array, shape = [n_features]"
+msgstr ""
+
+#: :131
+msgid "The feature importances (the higher, the more important the feature)."
+msgstr ""
+
+#: :133
+msgid "**oob_improvement_** : array, shape = [n_estimators]"
+msgstr ""
+
+#: :135
+msgid ""
+"The improvement in loss (= deviance) on the out-of-bag samples relative "
+"to the previous iteration. ``oob_improvement_[0]`` is the improvement in "
+"loss of the first stage over the ``init`` estimator."
+msgstr ""
+
+#: :140
+msgid "**train_score_** : array, shape = [n_estimators]"
+msgstr ""
+
+#: :142
+msgid ""
+"The i-th score ``train_score_[i]`` is the deviance (= loss) of the model "
+"at iteration ``i`` on the in-bag sample. If ``subsample == 1`` this is "
+"the deviance on the training data."
+msgstr ""
+
+#: :146
+msgid "**loss_** : LossFunction"
+msgstr ""
+
+#: :148
+msgid "The concrete ``LossFunction`` object."
+msgstr ""
+
+#: :150
+msgid "**`init`** : BaseEstimator"
+msgstr ""
+
+#: :152
+msgid ""
+"The estimator that provides the initial predictions. Set via the ``init``"
+" argument or ``loss.init_estimator``."
+msgstr ""
+
+#: :155
+msgid ""
+"**estimators_** : ndarray of DecisionTreeRegressor, shape = "
+"[n_estimators, 1]"
+msgstr ""
+
+#: :157
+msgid "The collection of fitted sub-estimators."
+msgstr ""
+
+#: :161
+msgid ":obj:`DecisionTreeRegressor`, :obj:`RandomForestRegressor`"
+msgstr ""
+
+#: :164
+msgid "References"
+msgstr ""
+
+#: :165
+msgid ""
+"J. Friedman, Greedy Function Approximation: A Gradient Boosting Machine, "
+"The Annals of Statistics, Vol. 29, No. 5, 2001."
+msgstr ""
+
+#: :168
+msgid "Friedman, Stochastic Gradient Boosting, 1999"
+msgstr ""
+
+#: :170
+msgid ""
+"T. Hastie, R. Tibshirani and J. Friedman. Elements of Statistical "
+"Learning Ed. 2, Springer, 2009."
+msgstr ""
+
+#: :176
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`apply <sklearn.ensemble.GradientBoostingRegressor.apply>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Apply trees in the ensemble to X, return leaf indices."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.ensemble.GradientBoostingRegressor.decision_function>`\\ "
+"(\\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "DEPRECATED:  and will be removed in 0.19"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.ensemble.GradientBoostingRegressor.fit>`\\ (X, y[, "
+"sample_weight, monitor])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the gradient boosting model."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.ensemble.GradientBoostingRegressor.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.ensemble.GradientBoostingRegressor.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.ensemble.GradientBoostingRegressor.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict regression target for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.ensemble.GradientBoostingRegressor.score>`\\ (X, y[,"
+" sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.ensemble.GradientBoostingRegressor.set_params>`\\ (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`staged_decision_function "
+"<sklearn.ensemble.GradientBoostingRegressor.staged_decision_function>`\\ "
+"(\\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`staged_predict "
+"<sklearn.ensemble.GradientBoostingRegressor.staged_predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict regression target at each stage for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform <sklearn.ensemble.GradientBoostingRegressor.transform>`\\"
+" (\\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19."
+msgstr ""
+
+#: :9
+msgid "**X** : array-like or sparse matrix, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :11
+msgid ""
+"The input samples. Internally, it will be converted to "
+"``dtype=np.float32`` and if a sparse matrix is provided to a sparse "
+"``csr_matrix``."
+msgstr ""
+
+#: :17
+msgid "**X_leaves** : array_like, shape = [n_samples, n_estimators]"
+msgstr ""
+
+#: :19
+msgid ""
+"For each datapoint x in X and for each tree in the ensemble, return the "
+"index of the leaf x ends up in in each estimator."
+msgstr ""
+
+#: :5
+msgid "Compute the decision function of ``X``."
+msgstr ""
+
+#: :9 :7 :12 :10
+msgid "**X** : array-like of shape = [n_samples, n_features]"
+msgstr ""
+
+#: :11 :9 :14 :12 :15
+msgid "The input samples."
+msgstr ""
+
+#: :15
+msgid "**score** : array, shape = [n_samples, n_classes] or [n_samples]"
+msgstr ""
+
+#: :17
+msgid ""
+"The decision function of the input samples. The order of the classes "
+"corresponds to that in the attribute `classes_`. Regression and binary "
+"classification produce an array of shape [n_samples]."
+msgstr ""
+
+#: :4
+msgid "Return the feature importances (the higher, the more important the"
+msgstr ""
+
+#: :4
+msgid "feature)."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid ""
+"Training vectors, where n_samples is the number of samples and n_features"
+" is the number of features."
+msgstr ""
+
+#: :12
+msgid "**y** : array-like, shape = [n_samples]"
+msgstr ""
+
+#: :14
+msgid ""
+"Target values (integers in classification, real numbers in regression) "
+"For classification, labels must correspond to classes."
+msgstr ""
+
+#: :18
+msgid "**sample_weight** : array-like, shape = [n_samples] or None"
+msgstr ""
+
+#: :20
+msgid ""
+"Sample weights. If None, then samples are equally weighted. Splits that "
+"would create child nodes with net zero or negative weight are ignored "
+"while searching for a split in each node. In the case of classification, "
+"splits are also ignored if they would result in any single class carrying"
+" a negative weight in either child node."
+msgstr ""
+
+#: :26
+msgid "**monitor** : callable, optional"
+msgstr ""
+
+#: :28
+msgid ""
+"The monitor is called after each iteration with the current iteration, a "
+"reference to the estimator and the local variables of ``_fit_stages`` as "
+"keyword arguments ``callable(i, self, locals())``. If the callable "
+"returns ``True`` the fitting procedure is stopped. The monitor can be "
+"used for various things such as computing held-out estimates, early "
+"stopping, model introspect, and snapshoting."
+msgstr ""
+
+#: :38
+msgid "**self** : object"
+msgstr ""
+
+#: :40
+msgid "Returns self."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :13
+msgid "**y** : array of shape = [n_samples]"
+msgstr ""
+
+#: :15
+msgid "The predicted values."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid "Compute decision function of ``X`` for each iteration."
+msgstr ""
+
+#: :7 :5
+msgid ""
+"This method allows monitoring (i.e. determine error on testing set) after"
+" each stage."
+msgstr ""
+
+#: :18
+msgid "**score** : generator of array, shape = [n_samples, k]"
+msgstr ""
+
+#: :20
+msgid ""
+"The decision function of the input samples. The order of the classes "
+"corresponds to that in the attribute `classes_`. Regression and binary "
+"classification are special cases with ``k == 1``, otherwise "
+"``k==n_classes``."
+msgstr ""
+
+#: :16
+msgid "**y** : generator of array of shape = [n_samples]"
+msgstr ""
+
+#: :18
+msgid "The predicted value of the input samples."
+msgstr ""
+
+#: :3
+msgid ""
+"DEPRECATED: Support to use estimators as feature selectors will be "
+"removed in version 0.19. Use SelectFromModel instead."
+msgstr ""
+
+#: :5
+msgid "Reduce X to its most important features."
+msgstr ""
+
+#: :7
+msgid ""
+"Uses ``coef_`` or ``feature_importances_`` to determine the most "
+"important features.  For models with a ``coef_`` for each class, the "
+"absolute sum over the classes is used."
+msgstr ""
+
+#: :13
+msgid "**X** : array or scipy sparse matrix of shape [n_samples, n_features]"
+msgstr ""
+
+#: :24
+msgid "threshold"
+msgstr ""
+
+#: :23
+msgid "string, float or None, optional (default=None)"
+msgstr ""
+
+#: :18
+msgid ""
+"The threshold value to use for feature selection. Features whose "
+"importance is greater or equal are kept while the others are discarded. "
+"If \"median\" (resp. \"mean\"), then the threshold value is the median "
+"(resp. the mean) of the feature importances. A scaling factor (e.g., "
+"\"1.25*mean\") may also be used. If None and if available, the object "
+"attribute ``threshold`` is used. Otherwise, \"mean\" is used by default."
+msgstr ""
+
+#: :28
+msgid "**X_r** : array of shape [n_samples, n_selected_features]"
+msgstr ""
+
+#: :30
+msgid "The input samples with only the selected features."
+msgstr ""
+
+#: ../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.examples:3
+msgid "Examples using ``sklearn.ensemble.GradientBoostingRegressor``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.examples:25
+msgid ":ref:`example_applications_plot_model_complexity_influence.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.examples:45
+msgid ":ref:`example_ensemble_plot_partial_dependence.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.examples:65
+msgid ":ref:`example_ensemble_plot_gradient_boosting_regression.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.examples:85
+msgid ":ref:`example_ensemble_plot_gradient_boosting_quantile.py`"
+msgstr ""
+

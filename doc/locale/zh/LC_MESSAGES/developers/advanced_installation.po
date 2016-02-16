@@ -1,0 +1,539 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../developers/advanced_installation.rst:6
+msgid "Advanced installation instructions"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:8
+msgid "There are different ways to get scikit-learn installed:"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:10
+msgid ""
+"Install the version of scikit-learn provided by your :ref:`operating "
+"system or Python distribution <install_by_distribution>`. This is the "
+"quickest option for those who have operating systems that distribute "
+"scikit-learn."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:15
+msgid ""
+":ref:`Install an official release <install_official_release>`. This is "
+"the best approach for users who want a stable version number and aren't "
+"concerned about running a slightly older version of scikit-learn."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:20
+msgid ""
+":ref:`Install the latest development version <install_bleeding_edge>`. "
+"This is best for users who want the latest-and-greatest features and "
+"aren't afraid of running brand-new code."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:27
+msgid ""
+"If you wish to contribute to the project, you need to :ref:`install the "
+"latest development version<install_bleeding_edge>`."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:34
+msgid "Installing an official release"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:36
+msgid "Scikit-learn requires:"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:38
+msgid "Python (>= 2.6 or >= 3.3),"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:39
+msgid "NumPy (>= 1.6.1),"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:40
+msgid "SciPy (>= 0.9)."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:44
+msgid "Mac OSX"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:46
+msgid ""
+"Scikit-learn and its dependencies are all available as wheel packages for"
+" OSX::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:52
+msgid "Linux"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:54
+msgid ""
+"At this time scikit-learn does not provide official binary packages for "
+"Linux so you have to build from source if you want the lastest version. "
+"If you don't need the newest version, consider using your package manager"
+" to install scikit-learn. it is usually the easiest way, but might not "
+"provide the newest version."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:61
+msgid "installing build dependencies"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:63
+msgid ""
+"installing from source requires you to have installed the scikit-learn "
+"runtime dependencies, python development headers and a working c/c++ "
+"compiler. under debian-based operating systems, which include ubuntu, if "
+"you have python 2 you can install all these requirements by issuing::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:72
+msgid "if you have python 3::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:78
+msgid ""
+"on recent debian and ubuntu (e.g. ubuntu 13.04 or later) make sure that "
+"atlas is used to provide the implementation of the blas and lapack linear"
+" algebra routines::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:89
+msgid ""
+"in order to build the documentation and run the example code contains in "
+"this documentation you will need matplotlib::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:96
+msgid ""
+"the above installs the atlas implementation of blas (the basic linear "
+"algebra subprograms library). ubuntu 11.10 and later, and recent "
+"(testing) versions of debian, offer an alternative implementation called "
+"openblas."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:101
+msgid ""
+"using openblas can give speedups in some scikit-learn modules, but can "
+"freeze joblib/multiprocessing prior to openblas version 0.2.8-4, so using"
+" it is not recommended unless you know what you're doing."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:105
+msgid ""
+"if you do want to use openblas, then replacing atlas only requires a "
+"couple of commands. atlas has to be removed, otherwise numpy may not "
+"work::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:116
+msgid "on red hat and clones (e.g. centos), install the dependencies using::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:122
+msgid "building scikit-learn with pip"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:124
+msgid ""
+"this is usually the fastest way to install or upgrade to the latest "
+"stable release::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:129
+msgid ""
+"the ``--user`` flag asks pip to install scikit-learn in the "
+"``$home/.local`` folder therefore not requiring root permission. this "
+"flag should make pip ignore any old version of scikit-learn previously "
+"installed on the system while benefiting from system packages for numpy "
+"and scipy. those dependencies can be long and complex to build correctly "
+"from source."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:135
+msgid ""
+"the ``--install-option=\"--prefix=\"`` flag is only required if python "
+"has a ``distutils.cfg`` configuration with a predefined ``prefix=`` "
+"entry."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:140
+msgid "from source package"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:142
+msgid ""
+"download the source package from `pypi <http://pypi.python.org/pypi"
+"/scikit-learn/>`_, , unpack the sources and cd into the source directory."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:146
+msgid ""
+"this packages uses distutils, which is the default way of installing "
+"python modules. the install command is::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:151
+msgid "or alternatively (also from within the scikit-learn source folder)::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:157
+msgid ""
+"packages installed with the ``python setup.py install`` command cannot be"
+" uninstalled nor upgraded by ``pip`` later. to properly uninstall scikit-"
+"learn in that case it is necessary to delete the ``sklearn`` folder from "
+"your python ``site-packages`` directory."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:164
+msgid "windows"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:166
+msgid ""
+"first, you need to install `numpy <http://numpy.scipy.org/>`_ and `scipy "
+"<http://www.scipy.org/>`_ from their own official installers."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:169
+msgid ""
+"wheel packages (.whl files) for scikit-learn from `pypi "
+"<https://pypi.python.org/pypi/scikit-learn/>`_ can be installed with the "
+"`pip <http://pip.readthedocs.org/en/latest/installing.html>`_ utility. "
+"open a console and type the following to install or upgrade scikit-learn "
+"to the latest stable release::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:177
+msgid ""
+"if there are no binary packages matching your python, version you might "
+"to try to install scikit-learn and its dependencies from `christoph "
+"gohlke unofficial windows installers "
+"<http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-learn>`_ or from a "
+":ref:`python distribution <install_by_distribution>` instead."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:187
+msgid "third party distributions of scikit-learn"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:189
+msgid ""
+"some third-party distributions are now providing versions of scikit-learn"
+" integrated with their package-management systems."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:192
+msgid ""
+"these can make installation and upgrading much easier for users since the"
+" integration includes the ability to automatically install dependencies "
+"(numpy, scipy) that scikit-learn requires."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:196
+msgid ""
+"the following is an incomplete list of python and os distributions that "
+"provide their own version of scikit-learn."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:201
+msgid "macports for mac osx"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:203
+msgid ""
+"the macports package is named ``py<xy>-scikits-learn``, where ``xy`` "
+"denotes the python version. it can be installed by typing the following "
+"command::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:210
+#: ../../developers/advanced_installation.rst:252
+msgid "or::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:216
+msgid "arch linux"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:218
+msgid ""
+"arch linux's package is provided through the `official repositories "
+"<https://www.archlinux.org/packages/?q=scikit-learn>`_ as ``python-"
+"scikit-learn`` for python 3 and ``python2-scikit-learn`` for python 2. it"
+" can be installed by typing the following command:"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:227
+msgid "or:"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:233
+msgid "depending on the version of python you use."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:237
+msgid "netbsd"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:239
+msgid ""
+"scikit-learn is available via `pkgsrc-wip <http://pkgsrc-"
+"wip.sourceforge.net/>`_:"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:241
+msgid "http://pkgsrc.se/wip/py-scikit_learn"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:244
+msgid "fedora"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:246
+msgid ""
+"the fedora package is called ``python-scikit-learn`` for the python 2 "
+"version and ``python3-scikit-learn`` for the python 3 version. both "
+"versions can be installed using ``yum``::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:258
+msgid "building on windows"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:260
+msgid ""
+"to build scikit-learn on windows you need a working c/c++ compiler in "
+"addition to numpy, scipy and setuptools."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:263
+msgid ""
+"picking the right compiler depends on the version of python (2 or 3) and "
+"the architecture of the python interpreter, 32-bit or 64-bit. you can "
+"check the python version by running the following in ``cmd`` or "
+"``powershell`` console::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:270
+msgid "and the architecture with::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:274
+msgid ""
+"the above commands assume that you have the python installation folder in"
+" your path environment variable."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:279
+msgid "32-bit python"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:281
+msgid ""
+"for 32-bit python it is possible use the standalone installers for "
+"`microsoft visual c++ express 2008 "
+"<http://go.microsoft.com/?linkid=7729279>`_ for python 2 or `microsoft "
+"visual c++ express 2010 <http://go.microsoft.com/?linkid=9709949>`_ or "
+"python 3."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:287
+msgid ""
+"once installed you should be able to build scikit-learn without any "
+"particular configuration by running the following command in the scikit-"
+"learn folder::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:295
+msgid "64-bit python"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:297
+msgid ""
+"for the 64-bit architecture, you either need the full visual studio or "
+"the free windows sdks that can be downloaded from the links below."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:300
+msgid ""
+"the windows sdks include the msvc compilers both for 32 and 64-bit "
+"architectures. they come as a ``grmsdkx_en_dvd.iso`` file that can be "
+"mounted as a new drive with a ``setup.exe`` installer in it."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:304
+msgid ""
+"for python 2 you need sdk **v7.0**: `ms windows sdk for windows 7 and "
+".net framework 3.5 sp1 <http://www.microsoft.com/en-"
+"us/download/details.aspx?id=18950>`_"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:308
+msgid ""
+"for python 3 you need sdk **v7.1**: `ms windows sdk for windows 7 and "
+".net framework 4 <https://www.microsoft.com/en-"
+"us/download/details.aspx?id=8442>`_"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:312
+msgid ""
+"both sdks can be installed in parallel on the same host. to use the "
+"windows sdks, you need to setup the environment of a ``cmd`` console "
+"launched with the following flags (at least for sdk v7.0)::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:318
+msgid "then configure the build environment with::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:325
+msgid "finally you can build scikit-learn in the same ``cmd`` console::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:329
+msgid ""
+"replace ``v7.0`` by the ``v7.1`` in the above commands to do the same for"
+" python 3 instead of python 2."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:332
+msgid ""
+"replace ``/x64`` by ``/x86``  to build for 32-bit python instead of "
+"64-bit python."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:337
+msgid "building binary packages and installers"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:339
+msgid "the ``.whl`` package and ``.exe`` installers can be built with::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:344
+msgid "the resulting packages are generated in the ``dist/`` folder."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:348
+msgid "using an alternative compiler"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:350
+msgid ""
+"it is possible to use `mingw <http://www.mingw.org>`_ (a port of gcc to "
+"windows os) as an alternative to msvc for 32-bit python. not that "
+"extensions built with mingw32 can be redistributed as reusable packages "
+"as they depend on gcc runtime libraries typically not installed on end-"
+"users environment."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:355
+msgid ""
+"to force the use of a particular compiler, pass the ``--compiler`` flag "
+"to the build step::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:360
+msgid "where ``my_compiler`` should be one of ``mingw32`` or ``msvc``."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:366
+msgid "bleeding edge"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:368
+msgid ""
+"see section :ref:`git_repo` on how to get the development version. then "
+"follow the previous instructions to build from source depending on your "
+"platform."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:375
+msgid "testing"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:378
+msgid "testing scikit-learn once installed"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:380
+msgid ""
+"testing requires having the `nose "
+"<http://somethingaboutorange.com/mrl/projects/nose/>`_ library. after "
+"installation, the package can be tested by executing *from outside* the "
+"source directory::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:387
+msgid ""
+"under windows, it is recommended to use the following command (adjust the"
+" path to the ``python.exe`` program) as using the ``nosetests.exe`` "
+"program can badly interact with tests that use ``multiprocessing``::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:393
+msgid ""
+"this should give you a lot of output (and some warnings) but eventually "
+"should finish with a message similar to::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:399
+msgid ""
+"otherwise, please consider posting an issue into the `bug tracker "
+"<https://github.com/scikit-learn/scikit-learn/issues>`_ or to the "
+":ref:`mailing_lists` including the traceback of the individual failures "
+"and errors. please include your operation system, your version of numpy, "
+"scipy and scikit-learn, and how you installed scikit-learn."
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:407
+msgid "testing scikit-learn from within the source folder"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:409
+msgid ""
+"scikit-learn can also be tested without having the package installed. for"
+" this you must compile the sources inplace from the source directory::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:415
+msgid "test can now be run using nosetests::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:419
+msgid "this is automated by the commands::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:423
+msgid "and::"
+msgstr ""
+
+#: ../../developers/advanced_installation.rst:428
+msgid ""
+"you can also install a symlink named ``site-packages/scikit-learn.egg-"
+"link`` to the development folder of scikit-learn with::"
+msgstr ""
+

@@ -1,0 +1,502 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/computational_performance.rst:5
+msgid "Computational Performance"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:7
+msgid ""
+"For some applications the performance (mainly latency and throughput at "
+"prediction time) of estimators is crucial. It may also be of interest to "
+"consider the training throughput but this is often less important in a "
+"production setup (where it often takes place offline)."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:12
+msgid ""
+"We will review here the orders of magnitude you can expect from a number "
+"of scikit-learn estimators in different contexts and provide some tips "
+"and tricks for overcoming performance bottlenecks."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:16
+msgid ""
+"Prediction latency is measured as the elapsed time necessary to make a "
+"prediction (e.g. in micro-seconds). Latency is often viewed as a "
+"distribution and operations engineers often focus on the latency at a "
+"given percentile of this distribution (e.g. the 90 percentile)."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:21
+msgid ""
+"Prediction throughput is defined as the number of predictions the "
+"software can deliver in a given amount of time (e.g. in predictions per "
+"second)."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:24
+msgid ""
+"An important aspect of performance optimization is also that it can hurt "
+"prediction accuracy. Indeed, simpler models (e.g. linear instead of non-"
+"linear, or with fewer parameters) often run faster but are not always "
+"able to take into account the same exact properties of the data as more "
+"complex ones."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:30
+msgid "Prediction Latency"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:32
+msgid ""
+"One of the most straight-forward concerns one may have when "
+"using/choosing a machine learning toolkit is the latency at which "
+"predictions can be made in a production environment."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:40
+msgid "The main factors that influence the prediction latency are"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:37
+msgid "Number of features"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:38
+msgid "Input data representation and sparsity"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:39
+msgid "Model complexity"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:40
+msgid "Feature extraction"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:42
+msgid ""
+"A last major parameter is also the possibility to do predictions in bulk "
+"or one-at-a-time mode."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:46
+msgid "Bulk versus Atomic mode"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:48
+msgid ""
+"In general doing predictions in bulk (many instances at the same time) is"
+" more efficient for a number of reasons (branching predictability, CPU "
+"cache, linear algebra libraries optimizations etc.). Here we see on a "
+"setting with few features that independently of estimator choice the bulk"
+" mode is always faster, and for some of them by 1 to 2 orders of "
+"magnitude:"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:59
+msgid "atomic_prediction_latency"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:65
+msgid "bulk_prediction_latency"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:66
+msgid ""
+"To benchmark different estimators for your case you can simply change the"
+" ``n_features`` parameter in this example: "
+":ref:`example_applications_plot_prediction_latency.py`. This should give "
+"you an estimate of the order of magnitude of the prediction latency."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:72
+msgid "Influence of the Number of Features"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:74
+msgid ""
+"Obviously when the number of features increases so does the memory "
+"consumption of each example. Indeed, for a matrix of :math:`M` instances "
+"with :math:`N` features, the space complexity is in :math:`O(NM)`. From a"
+" computing perspective it also means that the number of basic operations "
+"(e.g., multiplications for vector-matrix products in linear models) "
+"increases too. Here is a graph of the evolution of the prediction latency"
+" with the number of features:"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:87
+msgid "influence_of_n_features_on_latency"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:88
+msgid ""
+"Overall you can expect the prediction time to increase at least linearly "
+"with the number of features (non-linear cases can happen depending on the"
+" global memory footprint and estimator)."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:93
+msgid "Influence of the Input Data Representation"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:95
+msgid ""
+"Scipy provides sparse matrix datastructures which are optimized for "
+"storing sparse data. The main feature of sparse formats is that you don't"
+" store zeros so if your data is sparse then you use much less memory. A "
+"non-zero value in a sparse (`CSR or CSC "
+"<http://docs.scipy.org/doc/scipy/reference/sparse.html>`_) representation"
+" will only take on average one 32bit integer position + the 64 bit "
+"floating point value + an additional 32bit per row or column in the "
+"matrix. Using sparse input on a dense (or sparse) linear model can "
+"speedup prediction by quite a bit as only the non zero valued features "
+"impact the dot product and thus the model predictions. Hence if you have "
+"100 non zeros in 1e6 dimensional space, you only need 100 multiply and "
+"add operation instead of 1e6."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:106
+msgid ""
+"Calculation over a dense representation, however, may leverage highly "
+"optimised vector operations and multithreading in BLAS, and tends to "
+"result in fewer CPU cache misses. So the sparsity should typically be "
+"quite high (10% non-zeros max, to be checked depending on the hardware) "
+"for the sparse input representation to be faster than the dense input "
+"representation on a machine with many CPUs and an optimized BLAS "
+"implementation."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:113
+msgid "Here is sample code to test the sparsity of your input::"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:119
+msgid ""
+"As a rule of thumb you can consider that if the sparsity ratio is greater"
+" than 90% you can probably benefit from sparse formats. Check Scipy's "
+"sparse matrix formats `documentation "
+"<http://docs.scipy.org/doc/scipy/reference/sparse.html>`_ for more "
+"information on how to build (or convert your data to) sparse matrix "
+"formats. Most of the time the ``CSR`` and ``CSC`` formats work best."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:126
+msgid "Influence of the Model Complexity"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:128
+msgid ""
+"Generally speaking, when model complexity increases, predictive power and"
+" latency are supposed to increase. Increasing predictive power is usually"
+" interesting, but for many applications we would better not increase "
+"prediction latency too much. We will now review this idea for different "
+"families of supervised models."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:134
+msgid ""
+"For :mod:`sklearn.linear_model` (e.g. Lasso, ElasticNet, "
+"SGDClassifier/Regressor, Ridge & RidgeClassifier, "
+"PassiveAgressiveClassifier/Regressor, LinearSVC, LogisticRegression...) "
+"the decision function that is applied at prediction time is the same (a "
+"dot product) , so latency should be equivalent."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:140
+msgid ""
+"Here is an example using "
+":class:`sklearn.linear_model.stochastic_gradient.SGDClassifier` with the "
+"``elasticnet`` penalty. The regularization strength is globally "
+"controlled by the ``alpha`` parameter. With a sufficiently high "
+"``alpha``, one can then increase the ``l1_ratio`` parameter of "
+"``elasticnet`` to enforce various levels of sparsity in the model "
+"coefficients. Higher sparsity here is interpreted as less model "
+"complexity as we need fewer coefficients to describe it fully. Of course "
+"sparsity influences in turn the prediction time as the sparse dot-product"
+" takes time roughly proportional to the number of non-zero coefficients."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:156
+msgid "en_model_complexity"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:157
+msgid ""
+"For the :mod:`sklearn.svm` family of algorithms with a non-linear kernel,"
+" the latency is tied to the number of support vectors (the fewer the "
+"faster). Latency and throughput should (asymptotically) grow linearly "
+"with the number of support vectors in a SVC or SVR model. The kernel will"
+" also influence the latency as it is used to compute the projection of "
+"the input vector once per support vector. In the following graph the "
+"``nu`` parameter of :class:`sklearn.svm.classes.NuSVR` was used to "
+"influence the number of support vectors."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:171
+msgid "nusvr_model_complexity"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:172
+msgid ""
+"For :mod:`sklearn.ensemble` of trees (e.g. RandomForest, GBT, ExtraTrees "
+"etc) the number of trees and their depth play the most important role. "
+"Latency and throughput should scale linearly with the number of trees. In"
+" this case we used directly the ``n_estimators`` parameter of "
+":class:`sklearn.ensemble.gradient_boosting.GradientBoostingRegressor`."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:183
+msgid "gbt_model_complexity"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:184
+msgid ""
+"In any case be warned that decreasing model complexity can hurt accuracy "
+"as mentioned above. For instance a non-linearly separable problem can be "
+"handled with a speedy linear model but prediction power will very likely "
+"suffer in the process."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:190
+msgid "Feature Extraction Latency"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:192
+msgid ""
+"Most scikit-learn models are usually pretty fast as they are implemented "
+"either with compiled Cython extensions or optimized computing libraries. "
+"On the other hand, in many real world applications the feature extraction"
+" process (i.e. turning raw data like database rows or network packets "
+"into numpy arrays) governs the overall prediction time. For example on "
+"the Reuters text classification task the whole preparation (reading and "
+"parsing SGML files, tokenizing the text and hashing it into a common "
+"vector space) is taking 100 to 500 times more time than the actual "
+"prediction code, depending on the chosen model."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:207
+msgid "prediction_time"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:208
+msgid ""
+"In many cases it is thus recommended to carefully time and profile your "
+"feature extraction code as it may be a good place to start optimizing "
+"when your overall latency is too slow for your application."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:213
+msgid "Prediction Throughput"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:215
+msgid ""
+"Another important metric to care about when sizing production systems is "
+"the throughput i.e. the number of predictions you can make in a given "
+"amount of time. Here is a benchmark from the "
+":ref:`example_applications_plot_prediction_latency.py` example that "
+"measures this quantity for a number of estimators on synthetic data:"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:226
+msgid "throughput_benchmark"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:227
+msgid ""
+"These throughputs are achieved on a single process. An obvious way to "
+"increase the throughput of your application is to spawn additional "
+"instances (usually processes in Python because of the `GIL "
+"<https://wiki.python.org/moin/GlobalInterpreterLock>`_) that share the "
+"same model. One might also add machines to spread the load. A detailed "
+"explanation on how to achieve this is beyond the scope of this "
+"documentation though."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:236
+msgid "Tips and Tricks"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:239
+msgid "Linear algebra libraries"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:241
+msgid ""
+"As scikit-learn relies heavily on Numpy/Scipy and linear algebra in "
+"general it makes sense to take explicit care of the versions of these "
+"libraries. Basically, you ought to make sure that Numpy is built using an"
+" optimized `BLAS "
+"<http://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms>`_ / "
+"`LAPACK <http://en.wikipedia.org/wiki/LAPACK>`_ library."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:247
+msgid ""
+"Not all models benefit from optimized BLAS and Lapack implementations. "
+"For instance models based on (randomized) decision trees typically do not"
+" rely on BLAS calls in their inner loops, nor do kernel SVMs (``SVC``, "
+"``SVR``, ``NuSVC``, ``NuSVR``).  On the other hand a linear model "
+"implemented with a BLAS DGEMM call (via ``numpy.dot``) will typically "
+"benefit hugely from a tuned BLAS implementation and lead to orders of "
+"magnitude speedup over a non-optimized BLAS."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:255
+msgid ""
+"You can display the BLAS / LAPACK implementation used by your NumPy / "
+"SciPy / scikit-learn install with the following commands::"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:266
+msgid "Optimized BLAS / LAPACK implementations include:"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:263
+msgid "Atlas (need hardware specific tuning by rebuilding on the target machine)"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:264
+msgid "OpenBLAS"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:265
+msgid "MKL"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:266
+msgid "Apple Accelerate and vecLib frameworks (OSX only)"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:268
+msgid ""
+"More information can be found on the `Scipy install page "
+"<http://docs.scipy.org/doc/numpy/user/install.html>`_ and in this `blog "
+"post <http://danielnouri.org/notes/2012/12/19/libblas-and-liblapack-"
+"issues-and-speed,-with-scipy-and-ubuntu/>`_ from Daniel Nouri which has "
+"some nice step by step install instructions for Debian / Ubuntu."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:276
+msgid ""
+"Multithreaded BLAS libraries sometimes conflict with Python's "
+"``multiprocessing`` module, which is used by e.g. ``GridSearchCV`` and "
+"most other estimators that take an ``n_jobs`` argument (with the "
+"exception of ``SGDClassifier``, ``SGDRegressor``, ``Perceptron``, "
+"``PassiveAggressiveClassifier`` and tree-based methods such as random "
+"forests). This is true of Apple's Accelerate and OpenBLAS when built with"
+" OpenMP support."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:284
+msgid ""
+"Besides scikit-learn, NumPy and SciPy also use BLAS internally, as "
+"explained earlier."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:287
+msgid ""
+"If you experience hanging subprocesses with ``n_jobs>1`` or "
+"``n_jobs=-1``, make sure you have a single-threaded BLAS library, or set "
+"``n_jobs=1``, or upgrade to Python 3.4 which has a new version of "
+"``multiprocessing`` that should be immune to this problem."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:293
+msgid "Model Compression"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:295
+msgid ""
+"Model compression in scikit-learn only concerns linear models for the "
+"moment. In this context it means that we want to control the model "
+"sparsity (i.e. the number of non-zero coordinates in the model vectors). "
+"It is generally a good idea to combine model sparsity with sparse input "
+"data representation."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:300
+msgid ""
+"Here is sample code that illustrates the use of the ``sparsify()`` "
+"method::"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:306
+msgid ""
+"In this example we prefer the ``elasticnet`` penalty as it is often a "
+"good compromise between model compactness and prediction power. One can "
+"also further tune the ``l1_ratio`` parameter (in combination with the "
+"regularization strength ``alpha``) to control this tradeoff."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:311
+#, python-format
+msgid ""
+"A typical `benchmark <https://github.com/scikit-learn/scikit-"
+"learn/tree/master/benchmarks/bench_sparsify.py>`_ on synthetic data "
+"yields a >30% decrease in latency when both the model and input are "
+"sparse (with 0.000024 and 0.027400 non-zero coefficients ratio "
+"respectively). Your mileage may vary depending on the sparsity and size "
+"of your data and model. Furthermore, sparsifying can be very useful to "
+"reduce the memory usage of predictive models deployed on production "
+"servers."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:320
+msgid "Model Reshaping"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:322
+msgid ""
+"Model reshaping consists in selecting only a portion of the available "
+"features to fit a model. In other words, if a model discards features "
+"during the learning phase we can then strip those from the input. This "
+"has several benefits. Firstly it reduces memory (and therefore time) "
+"overhead of the model itself. It also allows to discard explicit feature "
+"selection components in a pipeline once we know which features to keep "
+"from a previous run. Finally, it can help reduce processing time and I/O "
+"usage upstream in the data access and feature extraction layers by not "
+"collecting and building features that are discarded by the model. For "
+"instance if the raw data come from a database, it can make it possible to"
+" write simpler and faster queries or reduce I/O usage by making the "
+"queries return lighter records. At the moment, reshaping needs to be "
+"performed manually in scikit-learn. In the case of sparse input "
+"(particularly in ``CSR`` format), it is generally sufficient to not "
+"generate the relevant features, leaving their columns empty."
+msgstr ""
+
+#: ../../modules/computational_performance.rst:339
+msgid "Links"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:341
+msgid ""
+"`scikit-learn developer performance documentation "
+"<../developers/performance.html>`_"
+msgstr ""
+
+#: ../../modules/computational_performance.rst:342
+msgid ""
+"`Scipy sparse matrix formats documentation "
+"<http://docs.scipy.org/doc/scipy/reference/sparse.html>`_"
+msgstr ""
+

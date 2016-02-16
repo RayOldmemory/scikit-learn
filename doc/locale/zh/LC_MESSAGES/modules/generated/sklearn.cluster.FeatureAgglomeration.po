@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cluster.FeatureAgglomeration.rst:2
+msgid ":mod:`sklearn.cluster`.FeatureAgglomeration"
+msgstr ""
+
+#: :3
+msgid "Agglomerate features."
+msgstr ""
+
+#: :5
+msgid ""
+"Similar to AgglomerativeClustering, but recursively merges features "
+"instead of samples."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <hierarchical_clustering>`."
+msgstr ""
+
+#: :12
+msgid "**n_clusters** : int, default 2"
+msgstr ""
+
+#: :14
+msgid "The number of clusters to find."
+msgstr ""
+
+#: :16
+msgid "**connectivity** : array-like or callable, optional"
+msgstr ""
+
+#: :18
+msgid ""
+"Connectivity matrix. Defines for each feature the neighboring features "
+"following a given structure of the data. This can be a connectivity "
+"matrix itself or a callable that transforms the data into a connectivity "
+"matrix, such as derived from kneighbors_graph. Default is None, i.e, the "
+"hierarchical clustering algorithm is unstructured."
+msgstr ""
+
+#: :25
+msgid "**affinity** : string or callable, default \"euclidean\""
+msgstr ""
+
+#: :27
+msgid ""
+"Metric used to compute the linkage. Can be \"euclidean\", \"l1\", \"l2\","
+" \"manhattan\", \"cosine\", or 'precomputed'. If linkage is \"ward\", "
+"only \"euclidean\" is accepted."
+msgstr ""
+
+#: :31
+msgid "**memory** : Instance of joblib.Memory or string, optional"
+msgstr ""
+
+#: :33
+msgid ""
+"Used to cache the output of the computation of the tree. By default, no "
+"caching is done. If a string is given, it is the path to the caching "
+"directory."
+msgstr ""
+
+#: :37
+msgid "**n_components** : int (optional)"
+msgstr ""
+
+#: :39
+msgid ""
+"Number of connected components. If None the number of connected "
+"components is estimated from the connectivity matrix. NOTE: This "
+"parameter is now directly determined from the connectivity matrix and "
+"will be removed in 0.18"
+msgstr ""
+
+#: :44
+msgid "**compute_full_tree** : bool or 'auto', optional, default \"auto\""
+msgstr ""
+
+#: :46
+msgid ""
+"Stop early the construction of the tree at n_clusters. This is useful to "
+"decrease computation time if the number of clusters is not small compared"
+" to the number of features. This option is useful only when specifying a "
+"connectivity matrix. Note also that when varying the number of clusters "
+"and using caching, it may be advantageous to compute the full tree."
+msgstr ""
+
+#: :53
+msgid ""
+"**linkage** : {\"ward\", \"complete\", \"average\"}, optional, default "
+"\"ward\""
+msgstr ""
+
+#: :55
+msgid ""
+"Which linkage criterion to use. The linkage criterion determines which "
+"distance to use between sets of features. The algorithm will merge the "
+"pairs of cluster that minimize this criterion."
+msgstr ""
+
+#: :59
+msgid "ward minimizes the variance of the clusters being merged."
+msgstr ""
+
+#: :60
+msgid "average uses the average of the distances of each feature of the two sets."
+msgstr ""
+
+#: :62
+msgid ""
+"complete or maximum linkage uses the maximum distances between all "
+"features of the two sets."
+msgstr ""
+
+#: :65
+msgid "**pooling_func** : callable, default np.mean"
+msgstr ""
+
+#: :67 :14
+msgid ""
+"This combines the values of agglomerated features into a single value, "
+"and should accept an array of shape [M, N] and the keyword argument "
+"`axis=1`, and reduce it to an array of size [M]."
+msgstr ""
+
+#: :73
+msgid "**labels_** : array-like, (n_features,)"
+msgstr ""
+
+#: :75
+msgid "cluster labels for each feature."
+msgstr ""
+
+#: :77
+msgid "**n_leaves_** : int"
+msgstr ""
+
+#: :79
+msgid "Number of leaves in the hierarchical tree."
+msgstr ""
+
+#: :81
+msgid "**n_components_** : int"
+msgstr ""
+
+#: :83
+msgid "The estimated number of connected components in the graph."
+msgstr ""
+
+#: :85
+msgid "**children_** : array-like, shape (n_nodes-1, 2)"
+msgstr ""
+
+#: :87
+msgid ""
+"The children of each non-leaf node. Values less than `n_features` "
+"correspond to leaves of the tree which are the original samples. A node "
+"`i` greater than or equal to `n_features` is a non-leaf node and has "
+"children `children_[i - n_features]`. Alternatively at the i-th "
+"iteration, children[i][0] and children[i][1] are merged to form node "
+"`n_features + i`"
+msgstr ""
+
+#: :95
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.cluster.FeatureAgglomeration.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the hierarchical clustering on the data"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.cluster.FeatureAgglomeration.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.cluster.FeatureAgglomeration.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform "
+"<sklearn.cluster.FeatureAgglomeration.inverse_transform>`\\ (Xred)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Inverse the transformation."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`pooling_func <sklearn.cluster.FeatureAgglomeration.pooling_func>`\\"
+" (a[, axis, dtype, out, keepdims])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute the arithmetic mean along the specified axis."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.cluster.FeatureAgglomeration.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform <sklearn.cluster.FeatureAgglomeration.transform>`\\ (X[, "
+"pooling_func])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform a new matrix using the built clustering"
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "The data"
+msgstr ""
+
+#: :13 :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :3
+msgid ""
+"Inverse the transformation. Return a vector of size nb_features with the "
+"values of Xred assigned to each group of features"
+msgstr ""
+
+#: :9
+msgid "**Xred** : array-like, shape=[n_samples, n_clusters] or [n_clusters,]"
+msgstr ""
+
+#: :11
+msgid "The values to be assigned to each cluster of samples"
+msgstr ""
+
+#: :15
+msgid "**X** : array, shape=[n_samples, n_features] or [n_features]"
+msgstr ""
+
+#: :17
+msgid ""
+"A vector of size n_samples with the values of Xred assigned to each of "
+"the cluster of samples."
+msgstr ""
+
+#: :5
+msgid ""
+"Returns the average of the array elements.  The average is taken over the"
+" flattened array by default, otherwise over the specified axis. `float64`"
+" intermediate and return values are used for integer inputs."
+msgstr ""
+
+#: :11
+msgid "**a** : array_like"
+msgstr ""
+
+#: :13
+msgid ""
+"Array containing numbers whose mean is desired. If `a` is not an array, a"
+" conversion is attempted."
+msgstr ""
+
+#: :16
+msgid "**axis** : int, optional"
+msgstr ""
+
+#: :18
+msgid ""
+"Axis along which the means are computed. The default is to compute the "
+"mean of the flattened array."
+msgstr ""
+
+#: :21
+msgid "**dtype** : data-type, optional"
+msgstr ""
+
+#: :23
+msgid ""
+"Type to use in computing the mean.  For integer inputs, the default is "
+"`float64`; for floating point inputs, it is the same as the input dtype."
+msgstr ""
+
+#: :27
+msgid "**out** : ndarray, optional"
+msgstr ""
+
+#: :29
+msgid ""
+"Alternate output array in which to place the result.  The default is "
+"``None``; if provided, it must have the same shape as the expected "
+"output, but the type will be cast if necessary. See `doc.ufuncs` for "
+"details."
+msgstr ""
+
+#: :34
+msgid "**keepdims** : bool, optional"
+msgstr ""
+
+#: :36
+msgid ""
+"If this is set to True, the axes which are reduced are left in the result"
+" as dimensions with size one. With this option, the result will broadcast"
+" correctly against the original `arr`."
+msgstr ""
+
+#: :42
+msgid "**m** : ndarray, see dtype parameter above"
+msgstr ""
+
+#: :44
+msgid ""
+"If `out=None`, returns a new array containing the mean values, otherwise "
+"a reference to the output array is returned."
+msgstr ""
+
+#: :50
+msgid ":obj:`average`"
+msgstr ""
+
+#: :50
+msgid "Weighted average"
+msgstr ""
+
+#: :52
+msgid ":obj:`std`, :obj:`var`, :obj:`nanmean`, :obj:`nanstd`, :obj:`nanvar`"
+msgstr ""
+
+#: :55
+msgid "Notes"
+msgstr ""
+
+#: :56
+msgid ""
+"The arithmetic mean is the sum of the elements along the axis divided by "
+"the number of elements."
+msgstr ""
+
+#: :59
+msgid ""
+"Note that for floating-point input, the mean is computed using the same "
+"precision the input has.  Depending on the input data, this can cause the"
+" results to be inaccurate, especially for `float32` (see example below)."
+"  Specifying a higher-precision accumulator using the `dtype` keyword can"
+" alleviate this issue."
+msgstr ""
+
+#: :66
+msgid "Examples"
+msgstr ""
+
+#: :75
+msgid "In single precision, `mean` can be inaccurate:"
+msgstr ""
+
+#: :83
+msgid "Computing the mean in float64 is more accurate:"
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape = [n_samples, n_features] or [n_features]"
+msgstr ""
+
+#: :9
+msgid ""
+"A M by N array of M observations in N dimensions or a length M array of M"
+" one-dimensional observations."
+msgstr ""
+
+#: :12
+msgid "**pooling_func** : callable, default=np.mean"
+msgstr ""
+
+#: :20
+msgid "**Y** : array, shape = [n_samples, n_clusters] or [n_clusters]"
+msgstr ""
+
+#: :22
+msgid "The pooled values for each feature cluster."
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.FeatureAgglomeration.examples:3
+msgid "Examples using ``sklearn.cluster.FeatureAgglomeration``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.FeatureAgglomeration.examples:25
+msgid ":ref:`example_cluster_plot_digits_agglomeration.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.FeatureAgglomeration.examples:45
+msgid ":ref:`example_cluster_plot_feature_agglomeration_vs_univariate_selection.py`"
+msgstr ""
+

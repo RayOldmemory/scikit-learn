@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/model_persistence.rst:5
+msgid "Model persistence"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:7
+msgid ""
+"After training a scikit-learn model, it is desirable to have a way to "
+"persist the model for future use without having to retrain. The following"
+" section gives you an example of how to persist a model with pickle. "
+"We'll also review a few security and maintainability issues when working "
+"with pickle serialization."
+msgstr ""
+
+#: ../../modules/model_persistence.rst:14
+msgid "Persistence example"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:16
+msgid ""
+"It is possible to save a model in the scikit by using Python's built-in "
+"persistence model, namely `pickle "
+"<http://docs.python.org/library/pickle.html>`_::"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:38
+msgid ""
+"In the specific case of the scikit, it may be more interesting to use "
+"joblib's replacement of pickle (``joblib.dump`` & ``joblib.load``), which"
+" is more efficient on objects that carry large numpy arrays internally as"
+" is often the case for fitted scikit-learn estimators, but can only "
+"pickle to the disk and not to a string::"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:47
+msgid ""
+"Later you can load back the pickled model (possibly in another Python "
+"process) with::"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:54
+msgid ""
+"joblib.dump returns a list of filenames. Each individual numpy array "
+"contained in the ``clf`` object is serialized as a separate file on the "
+"filesystem. All files are required in the same folder when reloading the "
+"model with joblib.load."
+msgstr ""
+
+#: ../../modules/model_persistence.rst:61
+msgid "Security & maintainability limitations"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:63
+msgid ""
+"pickle (and joblib by extension), has some issues regarding "
+"maintainability and security. Because of this,"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:66
+msgid "Never unpickle untrusted data"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:67
+msgid ""
+"Models saved in one version of scikit-learn might not load in another "
+"version."
+msgstr ""
+
+#: ../../modules/model_persistence.rst:70
+msgid ""
+"In order to rebuild a similar model with future versions of scikit-learn,"
+" additional metadata should be saved along the pickled model:"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:73
+msgid "The training data, e.g. a reference to a immutable snapshot"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:74
+msgid "The python source code used to generate the model"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:75
+msgid "The versions of scikit-learn and its dependencies"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:76
+msgid "The cross validation score obtained on the training data"
+msgstr ""
+
+#: ../../modules/model_persistence.rst:78
+msgid ""
+"This should make it possible to check that the cross-validation score is "
+"in the same range as before."
+msgstr ""
+
+#: ../../modules/model_persistence.rst:81
+msgid ""
+"If you want to know more about these issues and explore other possible "
+"serialization methods, please refer to this `talk by Alex Gaynor "
+"<http://pyvideo.org/video/2566/pickles-are-for-delis-not-software>`_."
+msgstr ""
+

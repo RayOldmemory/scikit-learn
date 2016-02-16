@@ -1,0 +1,534 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.rst:2
+msgid ":mod:`sklearn.feature_extraction.text`.CountVectorizer"
+msgstr ""
+
+#: :3
+msgid "Convert a collection of text documents to a matrix of token counts"
+msgstr ""
+
+#: :5
+msgid ""
+"This implementation produces a sparse representation of the counts using "
+"scipy.sparse.coo_matrix."
+msgstr ""
+
+#: :8
+msgid ""
+"If you do not provide an a-priori dictionary and you do not use an "
+"analyzer that does some kind of feature selection then the number of "
+"features will be equal to the vocabulary size found by analyzing the "
+"data."
+msgstr ""
+
+#: :12
+msgid "Read more in the :ref:`User Guide <text_feature_extraction>`."
+msgstr ""
+
+#: :16
+msgid "**input** : string {'filename', 'file', 'content'}"
+msgstr ""
+
+#: :18
+msgid ""
+"If 'filename', the sequence passed as an argument to fit is expected to "
+"be a list of filenames that need reading to fetch the raw content to "
+"analyze."
+msgstr ""
+
+#: :22
+msgid ""
+"If 'file', the sequence items must have a 'read' method (file-like "
+"object) that is called to fetch the bytes in memory."
+msgstr ""
+
+#: :25
+msgid ""
+"Otherwise the input is expected to be the sequence strings or bytes items"
+" are expected to be analyzed directly."
+msgstr ""
+
+#: :28
+msgid "**encoding** : string, 'utf-8' by default."
+msgstr ""
+
+#: :30
+msgid "If bytes or files are given to analyze, this encoding is used to decode."
+msgstr ""
+
+#: :33
+msgid "**decode_error** : {'strict', 'ignore', 'replace'}"
+msgstr ""
+
+#: :35
+msgid ""
+"Instruction on what to do if a byte sequence is given to analyze that "
+"contains characters not of the given `encoding`. By default, it is "
+"'strict', meaning that a UnicodeDecodeError will be raised. Other values "
+"are 'ignore' and 'replace'."
+msgstr ""
+
+#: :40
+msgid "**strip_accents** : {'ascii', 'unicode', None}"
+msgstr ""
+
+#: :42
+msgid ""
+"Remove accents during the preprocessing step. 'ascii' is a fast method "
+"that only works on characters that have an direct ASCII mapping. "
+"'unicode' is a slightly slower method that works on any characters. None "
+"(default) does nothing."
+msgstr ""
+
+#: :48
+msgid "**analyzer** : string, {'word', 'char', 'char_wb'} or callable"
+msgstr ""
+
+#: :50
+msgid ""
+"Whether the feature should be made of word or character n-grams. Option "
+"'char_wb' creates character n-grams only from text inside word "
+"boundaries."
+msgstr ""
+
+#: :54
+msgid ""
+"If a callable is passed it is used to extract the sequence of features "
+"out of the raw, unprocessed input. Only applies if ``analyzer == "
+"'word'``."
+msgstr ""
+
+#: :58
+msgid "**preprocessor** : callable or None (default)"
+msgstr ""
+
+#: :60
+msgid ""
+"Override the preprocessing (string transformation) stage while preserving"
+" the tokenizing and n-grams generation steps."
+msgstr ""
+
+#: :63
+msgid "**tokenizer** : callable or None (default)"
+msgstr ""
+
+#: :65
+msgid ""
+"Override the string tokenization step while preserving the preprocessing "
+"and n-grams generation steps. Only applies if ``analyzer == 'word'``."
+msgstr ""
+
+#: :69
+msgid "**ngram_range** : tuple (min_n, max_n)"
+msgstr ""
+
+#: :71
+msgid ""
+"The lower and upper boundary of the range of n-values for different "
+"n-grams to be extracted. All values of n such that min_n <= n <= max_n "
+"will be used."
+msgstr ""
+
+#: :75
+msgid "**stop_words** : string {'english'}, list, or None (default)"
+msgstr ""
+
+#: :77
+msgid "If 'english', a built-in stop word list for English is used."
+msgstr ""
+
+#: :79
+msgid ""
+"If a list, that list is assumed to contain stop words, all of which will "
+"be removed from the resulting tokens. Only applies if ``analyzer == "
+"'word'``."
+msgstr ""
+
+#: :83
+msgid ""
+"If None, no stop words will be used. max_df can be set to a value in the "
+"range [0.7, 1.0) to automatically detect and filter stop words based on "
+"intra corpus document frequency of terms."
+msgstr ""
+
+#: :87
+msgid "**lowercase** : boolean, True by default"
+msgstr ""
+
+#: :89
+msgid "Convert all characters to lowercase before tokenizing."
+msgstr ""
+
+#: :91
+msgid "**token_pattern** : string"
+msgstr ""
+
+#: :93
+msgid ""
+"Regular expression denoting what constitutes a \"token\", only used if "
+"``analyzer == 'word'``. The default regexp select tokens of 2 or more "
+"alphanumeric characters (punctuation is completely ignored and always "
+"treated as a token separator)."
+msgstr ""
+
+#: :98
+msgid "**max_df** : float in range [0.0, 1.0] or int, default=1.0"
+msgstr ""
+
+#: :100
+msgid ""
+"When building the vocabulary ignore terms that have a document frequency "
+"strictly higher than the given threshold (corpus-specific stop words). If"
+" float, the parameter represents a proportion of documents, integer "
+"absolute counts. This parameter is ignored if vocabulary is not None."
+msgstr ""
+
+#: :107
+msgid "**min_df** : float in range [0.0, 1.0] or int, default=1"
+msgstr ""
+
+#: :109
+msgid ""
+"When building the vocabulary ignore terms that have a document frequency "
+"strictly lower than the given threshold. This value is also called cut-"
+"off in the literature. If float, the parameter represents a proportion of"
+" documents, integer absolute counts. This parameter is ignored if "
+"vocabulary is not None."
+msgstr ""
+
+#: :116
+msgid "**max_features** : int or None, default=None"
+msgstr ""
+
+#: :118
+msgid ""
+"If not None, build a vocabulary that only consider the top max_features "
+"ordered by term frequency across the corpus."
+msgstr ""
+
+#: :121
+msgid "This parameter is ignored if vocabulary is not None."
+msgstr ""
+
+#: :123
+msgid "**vocabulary** : Mapping or iterable, optional"
+msgstr ""
+
+#: :125
+msgid ""
+"Either a Mapping (e.g., a dict) where keys are terms and values are "
+"indices in the feature matrix, or an iterable over terms. If not given, a"
+" vocabulary is determined from the input documents. Indices in the "
+"mapping should not be repeated and should not have any gap between 0 and "
+"the largest index."
+msgstr ""
+
+#: :131
+msgid "**binary** : boolean, default=False"
+msgstr ""
+
+#: :133
+msgid ""
+"If True, all non zero counts are set to 1. This is useful for discrete "
+"probabilistic models that model binary events rather than integer counts."
+msgstr ""
+
+#: :137
+msgid "**dtype** : type, optional"
+msgstr ""
+
+#: :139
+msgid "Type of the matrix returned by fit_transform() or transform()."
+msgstr ""
+
+#: :143
+msgid "**vocabulary_** : dict"
+msgstr ""
+
+#: :145
+msgid "A mapping of terms to feature indices."
+msgstr ""
+
+#: :147
+msgid "**stop_words_** : set"
+msgstr ""
+
+#: :149
+msgid "Terms that were ignored because they either:"
+msgstr ""
+
+#: :151
+msgid "occurred in too many documents (`max_df`)"
+msgstr ""
+
+#: :152
+msgid "occurred in too few documents (`min_df`)"
+msgstr ""
+
+#: :153
+msgid "were cut off by feature selection (`max_features`)."
+msgstr ""
+
+#: :155
+msgid "This is only available if no vocabulary was given."
+msgstr ""
+
+#: :159
+msgid ":obj:`HashingVectorizer`, :obj:`TfidfVectorizer`"
+msgstr ""
+
+#: :162
+msgid "Notes"
+msgstr ""
+
+#: :163
+msgid ""
+"The ``stop_words_`` attribute can get large and increase the model size "
+"when pickling. This attribute is provided only for introspection and can "
+"be safely removed using delattr or set to None before pickling."
+msgstr ""
+
+#: :168
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`build_analyzer "
+"<sklearn.feature_extraction.text.CountVectorizer.build_analyzer>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Return a callable that handles preprocessing and tokenization"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`build_preprocessor "
+"<sklearn.feature_extraction.text.CountVectorizer.build_preprocessor>`\\ "
+"()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Return a function to preprocess the text before tokenization"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`build_tokenizer "
+"<sklearn.feature_extraction.text.CountVectorizer.build_tokenizer>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Return a function that splits a string into a sequence of tokens"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decode <sklearn.feature_extraction.text.CountVectorizer.decode>`\\ "
+"(doc)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Decode the input into a string of unicode symbols"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.feature_extraction.text.CountVectorizer.fit>`\\ "
+"(raw_documents[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Learn a vocabulary dictionary of all tokens in the raw documents."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.feature_extraction.text.CountVectorizer.fit_transform>`\\ "
+"(raw_documents[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Learn the vocabulary dictionary and return term-document matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_feature_names "
+"<sklearn.feature_extraction.text.CountVectorizer.get_feature_names>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Array mapping from feature integer indices to feature name"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.feature_extraction.text.CountVectorizer.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_stop_words "
+"<sklearn.feature_extraction.text.CountVectorizer.get_stop_words>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Build or fetch the effective stop words list"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform "
+"<sklearn.feature_extraction.text.CountVectorizer.inverse_transform>`\\ "
+"(X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Return terms per document with nonzero entries in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.feature_extraction.text.CountVectorizer.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform "
+"<sklearn.feature_extraction.text.CountVectorizer.transform>`\\ "
+"(raw_documents)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform documents to document-term matrix."
+msgstr ""
+
+#: :5
+msgid "The decoding strategy depends on the vectorizer parameters."
+msgstr ""
+
+#: :7 :10
+msgid "**raw_documents** : iterable"
+msgstr ""
+
+#: :9 :12
+msgid "An iterable which yields either str, unicode or file objects."
+msgstr ""
+
+#: :13 :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"This is equivalent to fit followed by transform, but more efficiently "
+"implemented."
+msgstr ""
+
+#: :16
+msgid "**X** : array, [n_samples, n_features]"
+msgstr ""
+
+#: :18
+msgid "Document-term matrix."
+msgstr ""
+
+#: :3
+msgid ""
+"DEPRECATED: The `fixed_vocabulary` attribute is deprecated and will be "
+"removed in 0.18.  Please use `fixed_vocabulary_` instead."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**X** : {array, sparse matrix}, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :11
+msgid "**X_inv** : list of arrays, len = n_samples"
+msgstr ""
+
+#: :13
+msgid "List of arrays of terms."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :5
+msgid ""
+"Extract token counts out of raw text documents using the vocabulary "
+"fitted with fit or the one provided to the constructor."
+msgstr ""
+
+#: :16
+msgid "**X** : sparse matrix, [n_samples, n_features]"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.examples:3
+msgid "Examples using ``sklearn.feature_extraction.text.CountVectorizer``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.examples:25
+msgid ":ref:`example_applications_topics_extraction_with_nmf_lda.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.examples:45
+msgid ":ref:`example_model_selection_grid_search_text_feature_extraction.py`"
+msgstr ""
+

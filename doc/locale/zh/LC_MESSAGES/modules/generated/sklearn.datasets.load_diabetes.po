@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.rst:2
+msgid ":mod:`sklearn.datasets`.load_diabetes"
+msgstr ""
+
+#: :3
+msgid "Load and return the diabetes dataset (regression)."
+msgstr ""
+
+#: :6
+msgid "Samples total"
+msgstr ""
+
+#: :6
+msgid "442"
+msgstr ""
+
+#: :7
+msgid "Dimensionality"
+msgstr ""
+
+#: :7
+msgid "10"
+msgstr ""
+
+#: :8
+msgid "Features"
+msgstr ""
+
+#: :8
+msgid "real, -.2 < x < .2"
+msgstr ""
+
+#: :9
+msgid "Targets"
+msgstr ""
+
+#: :9
+msgid "integer 25 - 346"
+msgstr ""
+
+#: :12
+msgid "Read more in the :ref:`User Guide <datasets>`."
+msgstr ""
+
+#: :16
+msgid "**data** : Bunch"
+msgstr ""
+
+#: :18
+msgid ""
+"Dictionary-like object, the interesting attributes are: 'data', the data "
+"to learn and 'target', the regression target for each sample."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:3
+msgid "Examples using ``sklearn.datasets.load_diabetes``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:25
+msgid ":ref:`example_exercises_plot_cv_diabetes.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:45
+msgid ":ref:`example_gaussian_process_gp_diabetes_dataset.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:65
+msgid ":ref:`example_linear_model_plot_lasso_lars.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:85
+msgid ":ref:`example_linear_model_plot_ols.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:105
+msgid ":ref:`example_linear_model_plot_ols_3d.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:125
+msgid ":ref:`example_linear_model_plot_lasso_coordinate_descent_path.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.load_diabetes.examples:145
+msgid ":ref:`example_linear_model_plot_lasso_model_selection.py`"
+msgstr ""
+

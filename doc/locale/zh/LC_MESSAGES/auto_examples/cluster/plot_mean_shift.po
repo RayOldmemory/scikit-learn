@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/cluster/plot_mean_shift.rst:8
+msgid "A demo of the mean-shift clustering algorithm"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_mean_shift.rst:10
+msgid "Reference:"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_mean_shift.rst:12
+msgid ""
+"Dorin Comaniciu and Peter Meer, \"Mean Shift: A robust approach toward "
+"feature space analysis\". IEEE Transactions on Pattern Analysis and "
+"Machine Intelligence. 2002. pp. 603-619."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_mean_shift.rst:23
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_mean_shift.rst:29
+msgid ""
+"**Python source code:** :download:`plot_mean_shift.py "
+"<plot_mean_shift.py>`"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_mean_shift.rst:34
+msgid ""
+"**Total running time of the example:**  1.00 seconds ( 0 minutes  1.00 "
+"seconds)"
+msgstr ""
+

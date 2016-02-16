@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/feature_selection/plot_rfe_with_cross_validation.rst:8
+msgid "Recursive feature elimination with cross-validation"
+msgstr ""
+
+#: ../../auto_examples/feature_selection/plot_rfe_with_cross_validation.rst:10
+msgid ""
+"A recursive feature elimination example with automatic tuning of the "
+"number of features selected with cross-validation."
+msgstr ""
+
+#: ../../auto_examples/feature_selection/plot_rfe_with_cross_validation.rst:19
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/feature_selection/plot_rfe_with_cross_validation.rst:25
+msgid ""
+"**Python source code:** :download:`plot_rfe_with_cross_validation.py "
+"<plot_rfe_with_cross_validation.py>`"
+msgstr ""
+
+#: ../../auto_examples/feature_selection/plot_rfe_with_cross_validation.rst:30
+msgid ""
+"**Total running time of the example:**  4.52 seconds ( 0 minutes  4.52 "
+"seconds)"
+msgstr ""
+

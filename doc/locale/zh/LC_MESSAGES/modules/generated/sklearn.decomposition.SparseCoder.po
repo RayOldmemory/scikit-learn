@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.decomposition.SparseCoder.rst:2
+msgid ":mod:`sklearn.decomposition`.SparseCoder"
+msgstr ""
+
+#: :3
+msgid "Sparse coding"
+msgstr ""
+
+#: :5
+msgid ""
+"Finds a sparse representation of data against a fixed, precomputed "
+"dictionary."
+msgstr ""
+
+#: :8
+msgid ""
+"Each row of the result is the solution to a sparse coding problem. The "
+"goal is to find a sparse array `code` such that::"
+msgstr ""
+
+#: :13
+msgid "Read more in the :ref:`User Guide <SparseCoder>`."
+msgstr ""
+
+#: :17
+msgid "**dictionary** : array, [n_components, n_features]"
+msgstr ""
+
+#: :19
+msgid ""
+"The dictionary atoms used for sparse coding. Lines are assumed to be "
+"normalized to unit norm."
+msgstr ""
+
+#: :22
+msgid ""
+"**transform_algorithm** : {'lasso_lars', 'lasso_cd', 'lars', 'omp',     "
+"'threshold'}"
+msgstr ""
+
+#: :24
+msgid ""
+"Algorithm used to transform the data: lars: uses the least angle "
+"regression method (linear_model.lars_path) lasso_lars: uses Lars to "
+"compute the Lasso solution lasso_cd: uses the coordinate descent method "
+"to compute the Lasso solution (linear_model.Lasso). lasso_lars will be "
+"faster if the estimated components are sparse. omp: uses orthogonal "
+"matching pursuit to estimate the sparse solution threshold: squashes to "
+"zero all coefficients less than alpha from the projection ``dictionary * "
+"X'``"
+msgstr ""
+
+#: :34
+msgid "**transform_n_nonzero_coefs** : int, ``0.1 * n_features`` by default"
+msgstr ""
+
+#: :36
+msgid ""
+"Number of nonzero coefficients to target in each column of the solution. "
+"This is only used by `algorithm='lars'` and `algorithm='omp'` and is "
+"overridden by `alpha` in the `omp` case."
+msgstr ""
+
+#: :40
+msgid "**transform_alpha** : float, 1. by default"
+msgstr ""
+
+#: :42
+msgid ""
+"If `algorithm='lasso_lars'` or `algorithm='lasso_cd'`, `alpha` is the "
+"penalty applied to the L1 norm. If `algorithm='threshold'`, `alpha` is "
+"the absolute value of the threshold below which coefficients will be "
+"squashed to zero. If `algorithm='omp'`, `alpha` is the tolerance "
+"parameter: the value of the reconstruction error targeted. In this case, "
+"it overrides `n_nonzero_coefs`."
+msgstr ""
+
+#: :50
+msgid "**split_sign** : bool, False by default"
+msgstr ""
+
+#: :52
+msgid ""
+"Whether to split the sparse feature vector into the concatenation of its "
+"negative part and its positive part. This can improve the performance of "
+"downstream classifiers."
+msgstr ""
+
+#: :56
+msgid "**n_jobs** : int,"
+msgstr ""
+
+#: :58
+msgid "number of parallel jobs to run"
+msgstr ""
+
+#: :62
+msgid "**components_** : array, [n_components, n_features]"
+msgstr ""
+
+#: :64
+msgid "The unchanged dictionary atoms"
+msgstr ""
+
+#: :68
+msgid ""
+":obj:`DictionaryLearning`, :obj:`MiniBatchDictionaryLearning`, "
+":obj:`SparsePCA`, :obj:`MiniBatchSparsePCA`, :obj:`sparse_encode`"
+msgstr ""
+
+#: :71
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.decomposition.SparseCoder.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Do nothing and return the estimator unchanged"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.decomposition.SparseCoder.fit_transform>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.decomposition.SparseCoder.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.decomposition.SparseCoder.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.decomposition.SparseCoder.transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Encode the data as a sparse combination of the dictionary atoms."
+msgstr ""
+
+#: :5
+msgid ""
+"This method is just there to implement the usual API and hence work in "
+"pipelines."
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid "Coding method is determined by the object parameter `transform_algorithm`."
+msgstr ""
+
+#: :10
+msgid "**X** : array of shape (n_samples, n_features)"
+msgstr ""
+
+#: :12
+msgid ""
+"Test data to be transformed, must have the same number of features as the"
+" data used to train the model."
+msgstr ""
+
+#: :17
+msgid "**X_new** : array, shape (n_samples, n_components)"
+msgstr ""
+
+#: :19
+msgid "Transformed data"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.SparseCoder.examples:3
+msgid "Examples using ``sklearn.decomposition.SparseCoder``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.SparseCoder.examples:25
+msgid ":ref:`example_decomposition_plot_sparse_coding.py`"
+msgstr ""
+

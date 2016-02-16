@@ -1,0 +1,436 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.rst:2
+msgid ":mod:`sklearn.cluster`.MiniBatchKMeans"
+msgstr ""
+
+#: :3
+msgid "Mini-Batch K-Means clustering"
+msgstr ""
+
+#: :7
+msgid "**n_clusters** : int, optional, default: 8"
+msgstr ""
+
+#: :9
+msgid ""
+"The number of clusters to form as well as the number of centroids to "
+"generate."
+msgstr ""
+
+#: :12
+msgid "**max_iter** : int, optional"
+msgstr ""
+
+#: :14
+msgid ""
+"Maximum number of iterations over the complete dataset before stopping "
+"independently of any early stopping criterion heuristics."
+msgstr ""
+
+#: :17
+msgid "**max_no_improvement** : int, default: 10"
+msgstr ""
+
+#: :19
+msgid ""
+"Control early stopping based on the consecutive number of mini batches "
+"that does not yield an improvement on the smoothed inertia."
+msgstr ""
+
+#: :22
+msgid ""
+"To disable convergence detection based on inertia, set max_no_improvement"
+" to None."
+msgstr ""
+
+#: :25
+msgid "**tol** : float, default: 0.0"
+msgstr ""
+
+#: :27
+msgid ""
+"Control early stopping based on the relative center changes as measured "
+"by a smoothed, variance-normalized of the mean center squared position "
+"changes. This early stopping heuristics is closer to the one used for the"
+" batch variant of the algorithms but induces a slight computational and "
+"memory overhead over the inertia heuristic."
+msgstr ""
+
+#: :34
+msgid ""
+"To disable convergence detection based on normalized center change, set "
+"tol to 0.0 (default)."
+msgstr ""
+
+#: :37
+msgid "**batch_size** : int, optional, default: 100"
+msgstr ""
+
+#: :39
+msgid "Size of the mini batches."
+msgstr ""
+
+#: :41
+msgid "**init_size** : int, optional, default: 3 * batch_size"
+msgstr ""
+
+#: :43
+msgid ""
+"Number of samples to randomly sample for speeding up the initialization "
+"(sometimes at the expense of accuracy): the only algorithm is initialized"
+" by running a batch KMeans on a random subset of the data. This needs to "
+"be larger than n_clusters."
+msgstr ""
+
+#: :48
+msgid "**init** : {'k-means++', 'random' or an ndarray}, default: 'k-means++'"
+msgstr ""
+
+#: :50
+msgid "Method for initialization, defaults to 'k-means++':"
+msgstr ""
+
+#: :52
+msgid ""
+"'k-means++' : selects initial cluster centers for k-mean clustering in a "
+"smart way to speed up convergence. See section Notes in k_init for more "
+"details."
+msgstr ""
+
+#: :56
+msgid ""
+"'random': choose k observations (rows) at random from data for the "
+"initial centroids."
+msgstr ""
+
+#: :59
+msgid ""
+"If an ndarray is passed, it should be of shape (n_clusters, n_features) "
+"and gives the initial centers."
+msgstr ""
+
+#: :62
+msgid "**n_init** : int, default=3"
+msgstr ""
+
+#: :64
+msgid ""
+"Number of random initializations that are tried. In contrast to KMeans, "
+"the algorithm is only run once, using the best of the ``n_init`` "
+"initializations as measured by inertia."
+msgstr ""
+
+#: :68
+msgid "**compute_labels** : boolean, default=True"
+msgstr ""
+
+#: :70
+msgid ""
+"Compute label assignment and inertia for the complete dataset once the "
+"minibatch optimization has converged in fit."
+msgstr ""
+
+#: :73
+msgid "**random_state** : integer or numpy.RandomState, optional"
+msgstr ""
+
+#: :75
+msgid ""
+"The generator used to initialize the centers. If an integer is given, it "
+"fixes the seed. Defaults to the global numpy random number generator."
+msgstr ""
+
+#: :79
+msgid "**reassignment_ratio** : float, default: 0.01"
+msgstr ""
+
+#: :81
+msgid ""
+"Control the fraction of the maximum number of counts for a center to be "
+"reassigned. A higher value means that low count centers are more easily "
+"reassigned, which means that the model will take longer to converge, but "
+"should converge in a better clustering."
+msgstr ""
+
+#: :87
+msgid "**verbose** : boolean, optional"
+msgstr ""
+
+#: :89
+msgid "Verbosity mode."
+msgstr ""
+
+#: :93
+msgid "**cluster_centers_** : array, [n_clusters, n_features]"
+msgstr ""
+
+#: :95
+msgid "Coordinates of cluster centers"
+msgstr ""
+
+#: :97
+msgid "**labels_ :** :"
+msgstr ""
+
+#: :99
+msgid "Labels of each point (if compute_labels is set to True)."
+msgstr ""
+
+#: :101
+msgid "**inertia_** : float"
+msgstr ""
+
+#: :103
+msgid ""
+"The value of the inertia criterion associated with the chosen partition "
+"(if compute_labels is set to True). The inertia is defined as the sum of "
+"square distances of samples to their nearest neighbor."
+msgstr ""
+
+#: :109
+msgid "Notes"
+msgstr ""
+
+#: :110
+msgid "See http://www.eecs.tufts.edu/~dsculley/papers/fastkmeans.pdf"
+msgstr ""
+
+#: :113
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.cluster.MiniBatchKMeans.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute the centroids on X by chunking it into mini-batches."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_predict <sklearn.cluster.MiniBatchKMeans.fit_predict>`\\ (X[, "
+"y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute cluster centers and predict cluster index for each sample."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform <sklearn.cluster.MiniBatchKMeans.fit_transform>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute clustering and transform X to cluster-distance space."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.cluster.MiniBatchKMeans.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`partial_fit <sklearn.cluster.MiniBatchKMeans.partial_fit>`\\ (X[, "
+"y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Update k means estimate on a single mini-batch X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.cluster.MiniBatchKMeans.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict the closest cluster each sample in X belongs to."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.cluster.MiniBatchKMeans.score>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3 :15
+msgid "Opposite of the value of X on the K-means objective."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.cluster.MiniBatchKMeans.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.cluster.MiniBatchKMeans.transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform X to a cluster-distance space."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "Coordinates of the data points to cluster"
+msgstr ""
+
+#: :5
+msgid "Convenience method; equivalent to calling fit(X) followed by predict(X)."
+msgstr ""
+
+#: :5
+msgid "Equivalent to fit(X).transform(X), but more efficiently implemented."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :9
+msgid "Coordinates of the data points to cluster."
+msgstr ""
+
+#: :5
+msgid ""
+"In the vector quantization literature, `cluster_centers_` is called the "
+"code book and each value returned by `predict` is the index of the "
+"closest code in the code book."
+msgstr ""
+
+#: :11 :7
+msgid "**X** : {array-like, sparse matrix}, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :13
+msgid "New data to predict."
+msgstr ""
+
+#: :17
+msgid "**labels** : array, shape [n_samples,]"
+msgstr ""
+
+#: :19
+msgid "Index of the cluster each sample belongs to."
+msgstr ""
+
+#: :9
+msgid "New data."
+msgstr ""
+
+#: :13
+msgid "**score** : float"
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"In the new space, each dimension is the distance to the cluster centers."
+"  Note that even if X is sparse, the array returned by `transform` will "
+"typically be dense."
+msgstr ""
+
+#: :13
+msgid "New data to transform."
+msgstr ""
+
+#: :17
+msgid "**X_new** : array, shape [n_samples, k]"
+msgstr ""
+
+#: :19
+msgid "X transformed in the new space."
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:3
+msgid "Examples using ``sklearn.cluster.MiniBatchKMeans``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:25
+msgid ":ref:`example_bicluster_bicluster_newsgroups.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:45
+msgid ":ref:`example_cluster_plot_dict_face_patches.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:65
+msgid ":ref:`example_cluster_plot_birch_vs_minibatchkmeans.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:85
+msgid ":ref:`example_cluster_plot_kmeans_stability_low_dim_dense.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:105
+msgid ":ref:`example_cluster_plot_cluster_comparison.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:125
+msgid ":ref:`example_cluster_plot_mini_batch_kmeans.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:145
+msgid ":ref:`example_decomposition_plot_faces_decomposition.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.MiniBatchKMeans.examples:165
+msgid ":ref:`example_text_document_clustering.py`"
+msgstr ""
+

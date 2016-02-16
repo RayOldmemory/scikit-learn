@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/svm/plot_iris.rst:8
+msgid "Plot different SVM classifiers in the iris dataset"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:10
+msgid ""
+"Comparison of different linear SVM classifiers on a 2D projection of the "
+"iris dataset. We only consider the first 2 features of this dataset:"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:13
+msgid "Sepal length"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:14
+msgid "Sepal width"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:16
+msgid ""
+"This example shows how to plot the decision surface for four SVM "
+"classifiers with different kernels."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:19
+msgid ""
+"The linear models ``LinearSVC()`` and ``SVC(kernel='linear')`` yield "
+"slightly different decision boundaries. This can be a consequence of the "
+"following differences:"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:23
+msgid ""
+"``LinearSVC`` minimizes the squared hinge loss while ``SVC`` minimizes "
+"the regular hinge loss."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:26
+msgid ""
+"``LinearSVC`` uses the One-vs-All (also known as One-vs-Rest) multiclass "
+"reduction while ``SVC`` uses the One-vs-One multiclass reduction."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:29
+msgid ""
+"Both linear models have linear decision boundaries (intersecting "
+"hyperplanes) while the non-linear kernel models (polynomial or Gaussian "
+"RBF) have more flexible non-linear decision boundaries with shapes that "
+"depend on the kind of kernel and its parameters."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:34
+msgid ""
+"while plotting the decision function of classifiers for toy 2D datasets "
+"can help get an intuitive understanding of their respective expressive "
+"power, be aware that those intuitions don't always generalize to more "
+"realistic high-dimensional problems."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:48
+msgid "**Python source code:** :download:`plot_iris.py <plot_iris.py>`"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_iris.rst:53
+msgid ""
+"**Total running time of the example:**  1.18 seconds ( 0 minutes  1.18 "
+"seconds)"
+msgstr ""
+

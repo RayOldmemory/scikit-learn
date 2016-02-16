@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../about.rst:4
+msgid "About us"
+msgstr ""
+
+#: ../../../AUTHORS.rst:4
+msgid ""
+"This is a community effort, and as such many people have contributed to "
+"it over the years."
+msgstr ""
+
+#: ../../../AUTHORS.rst:8
+msgid "History"
+msgstr ""
+
+#: ../../../AUTHORS.rst:10
+msgid ""
+"This project was started in 2007 as a Google Summer of Code project by "
+"David Cournapeau. Later that year, Matthieu Brucher started work on this "
+"project as part of his thesis."
+msgstr ""
+
+#: ../../../AUTHORS.rst:14
+msgid ""
+"In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent "
+"Michel of INRIA took leadership of the project and made the first public "
+"release, February the 1st 2010. Since then, several releases have "
+"appeared following a ~3 month cycle, and a thriving international "
+"community has been leading the development."
+msgstr ""
+
+#: ../../../AUTHORS.rst:21
+msgid "People"
+msgstr ""
+
+#: ../../../AUTHORS.rst:25
+msgid "David Cournapeau"
+msgstr ""
+
+#: ../../../AUTHORS.rst:27
+msgid "Jarrod Millman"
+msgstr ""
+
+#: ../../../AUTHORS.rst:29
+msgid "`Matthieu Brucher <http://matt.eifelle.com/>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:31
+msgid "`Fabian Pedregosa <http://fseoane.net/blog/>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:33
+msgid "`Gael Varoquaux <http://gael-varoquaux.info/blog/>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:35
+msgid "`Jake VanderPlas <http://www.astro.washington.edu/users/vanderplas/>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:37
+msgid "`Alexandre Gramfort <http://alexandre.gramfort.net>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:39
+msgid "`Olivier Grisel <http://twitter.com/ogrisel>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:41
+msgid "Bertrand Thirion"
+msgstr ""
+
+#: ../../../AUTHORS.rst:43
+msgid "Vincent Michel"
+msgstr ""
+
+#: ../../../AUTHORS.rst:45
+msgid "Chris Filo Gorgolewski"
+msgstr ""
+
+#: ../../../AUTHORS.rst:47
+msgid "`Angel Soler Gollonet <http://webylimonada.com>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:49
+msgid "`Yaroslav Halchenko <http://www.onerussian.com/>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:51
+msgid "Ron Weiss"
+msgstr ""
+
+#: ../../../AUTHORS.rst:53
+msgid ""
+"`Virgile Fritsch <http://parietal.saclay.inria.fr/Members/virgile-"
+"fritsch>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:56
+msgid "`Mathieu Blondel <http://mblondel.org>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:58
+msgid "`Peter Prettenhofer <http://sites.google.com/site/peterprettenhofer/>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:61
+msgid "Vincent Dubourg"
+msgstr ""
+
+#: ../../../AUTHORS.rst:63
+msgid "`Alexandre Passos <http://atpassos.posterous.com>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:65
+msgid "`Vlad Niculae <http://vene.ro>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:67
+msgid "Edouard Duchesnay"
+msgstr ""
+
+#: ../../../AUTHORS.rst:69
+msgid "Thouis (Ray) Jones"
+msgstr ""
+
+#: ../../../AUTHORS.rst:71
+msgid "Lars Buitinck"
+msgstr ""
+
+#: ../../../AUTHORS.rst:73
+msgid "Paolo Losi"
+msgstr ""
+
+#: ../../../AUTHORS.rst:75
+msgid "Nelle Varoquaux"
+msgstr ""
+
+#: ../../../AUTHORS.rst:77
+msgid "`Brian Holt <http://info.ee.surrey.ac.uk/Personal/B.Holt/>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:79
+msgid "Robert Layton"
+msgstr ""
+
+#: ../../../AUTHORS.rst:81
+msgid "`Gilles Louppe <http://www.montefiore.ulg.ac.be/~glouppe>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:83
+msgid "`Andreas Müller <http://peekaboo-vision.blogspot.com>`_ (release manager)"
+msgstr ""
+
+#: ../../../AUTHORS.rst:85
+msgid "`Satra Ghosh <http://www.mit.edu/~satra>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:87
+msgid "`Wei Li <http://kuantkid.github.com>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:89
+msgid "`Arnaud Joly <http://www.ajoly.org>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:91
+msgid "`Kemal Eren <http://www.kemaleren.com>`_"
+msgstr ""
+
+#: ../../../AUTHORS.rst:93
+msgid "`Michael Becker <http://beckerfuffle.com>`_"
+msgstr ""
+
+#: ../../about.rst:11
+msgid "Citing scikit-learn"
+msgstr ""
+
+#: ../../about.rst:13
+msgid ""
+"If you use scikit-learn in a scientific publication, we would appreciate "
+"citations to the following paper:"
+msgstr ""
+
+#: ../../about.rst:16
+msgid ""
+"`Scikit-learn: Machine Learning in Python "
+"<http://jmlr.csail.mit.edu/papers/v12/pedregosa11a.html>`_, Pedregosa *et"
+" al.*, JMLR 12, pp. 2825-2830, 2011."
+msgstr ""
+
+#: ../../about.rst:20 ../../about.rst:40
+msgid "Bibtex entry::"
+msgstr ""
+
+#: ../../about.rst:34
+msgid ""
+"If you want to cite scikit-learn for its API or design, you may also want"
+" to consider the following paper:"
+msgstr ""
+
+#: ../../about.rst:37
+msgid ""
+"`API design for machine learning software: experiences from the scikit-"
+"learn project <http://arxiv.org/abs/1309.0238>`_, Buitinck *et al.*, "
+"2013."
+msgstr ""
+
+#: ../../about.rst:56
+msgid "Artwork"
+msgstr ""
+
+#: ../../about.rst:58
+msgid ""
+"High quality PNG and SVG logos are available in the `doc/logos/ "
+"<https://github.com/scikit-learn/scikit-learn/tree/master/doc/logos>`_ "
+"source directory."
+msgstr ""
+
+#: ../../about.rst:64
+msgid "Funding"
+msgstr ""
+
+#: ../../about.rst:66
+msgid ""
+"`INRIA <http://inria.fr>`_ actively supports this project. It has "
+"provided funding for Fabian Pedregosa (2010-2012), Jaques Grobler "
+"(2012-2013) and Olivier Grisel (2013-2015) to work on this project full-"
+"time. It also hosts coding sprints and other events."
+msgstr ""
+
+#: ../../about.rst:75
+msgid ""
+"`Paris-Saclay Center for Data Science <http://www.datascience-paris-"
+"saclay.fr>`_ funded one year for a developer to work on the project full-"
+"time (2014-2015)."
+msgstr ""
+
+#: ../../about.rst:83
+msgid ""
+"The following students were sponsored by `Google "
+"<http://code.google.com/opensource/>`_ to work on scikit-learn through "
+"the `Google Summer of Code "
+"<http://en.wikipedia.org/wiki/Google_Summer_of_Code>`_ program."
+msgstr ""
+
+#: ../../about.rst:88
+msgid "2007 - David Cournapeau"
+msgstr ""
+
+#: ../../about.rst:89
+msgid "2011 - `Vlad Niculae`_"
+msgstr ""
+
+#: ../../about.rst:90
+msgid "2012 - `Vlad Niculae`_, Immanuel Bayer."
+msgstr ""
+
+#: ../../about.rst:91
+msgid "2013 - `Kemal Eren`_, Nicolas Trésegnie"
+msgstr ""
+
+#: ../../about.rst:92
+msgid "2014 - Hamzeh Alsalhi, Issam Laradji, Maheshakya Wijewardena, Manoj Kumar."
+msgstr ""
+
+#: ../../about.rst:94
+msgid ""
+"It also provided funding for sprints and events around scikit-learn. If "
+"you would like to participate in the next Google Summer of code program, "
+"please see `this page <http://github.com/scikit-learn/scikit-"
+"learn/wiki/SummerOfCode>`_"
+msgstr ""
+
+#: ../../about.rst:99
+msgid ""
+"The `NeuroDebian <http://neuro.debian.net>`_ project providing `Debian "
+"<http://www.debian.org>`_ packaging and contributions is supported by "
+"`Dr. James V. Haxby <http://haxbylab.dartmouth.edu/>`_ (`Dartmouth "
+"College <http://www.dartmouth.edu/~psych/>`_)."
+msgstr ""
+
+#: ../../about.rst:104
+msgid ""
+"The `PSF <http://www.python.org/psf/>`_ helped find and manage funding "
+"for our 2011 Granada sprint. More information can be found `here "
+"<https://github.com/scikit-learn/scikit-learn/wiki/Past-sprints#granada-"
+"19th-21th-dec-2011>`__"
+msgstr ""
+
+#: ../../about.rst:108
+msgid ""
+"`tinyclues <http://www.tinyclues.com/>`_ funded the 2011 international "
+"Granada sprint."
+msgstr ""
+
+#: ../../about.rst:113
+msgid "Donating to the project"
+msgstr ""
+
+#: ../../about.rst:115
+msgid ""
+"If you are interested in donating to the project or to one of our code-"
+"sprints, you can use the *Paypal* button below or the `NumFOCUS Donations"
+" Page <http://numfocus.org/donatejoin/>`_ (if you use the latter, please "
+"indicate that you are donating for the scikit-learn project)."
+msgstr ""
+
+#: ../../about.rst:118
+msgid ""
+"All donations will be handled by `NumFOCUS "
+"<http://numfocus.org/donations>`_, a non-profit-organization which is "
+"managed by a board of `Scipy community members "
+"<http://numfocus.org/board>`_. NumFOCUS's mission is to foster scientific"
+" computing software, in particular in Python. As a fiscal home of scikit-"
+"learn, it ensures that money is available when needed to keep the project"
+" funded and available while in compliance with tax regulations."
+msgstr ""
+
+#: ../../about.rst:126
+msgid ""
+"The received donations for the scikit-learn project mostly will go "
+"towards covering travel-expenses for code sprints, as well as towards the"
+" organization budget of the project [#f1]_."
+msgstr ""
+
+#: ../../about.rst:148
+msgid "Notes"
+msgstr ""
+
+#: ../../about.rst:149
+msgid ""
+"Regarding the organization budget in particular, we might use some of the"
+" donated funds to pay for other project expenses such as DNS, hosting or "
+"continuous integration services."
+msgstr ""
+
+#: ../../about.rst:153
+msgid "The 2013' Paris international sprint"
+msgstr ""
+
+#: ../../about.rst:155
+msgid "|center-div|   |telecom|   |tinyclues|   |afpy| |FNRS|"
+msgstr ""
+
+#: ../../about.rst:157
+msgid "|end-div|"
+msgstr ""
+
+#: ../../about.rst:193
+msgid "IAP VII/19 - DYSCO"
+msgstr ""
+
+#: ../../about.rst:199
+msgid ""
+"*For more information on this sprint, see* `here <https://github.com"
+"/scikit-"
+"learn/administrative/blob/master/sprint_paris_2013/proposal.rst>`__"
+msgstr ""
+
+#: ../../about.rst:204
+msgid "Infrastructure support"
+msgstr ""
+
+#: ../../about.rst:206
+msgid ""
+"We would like to thank `Rackspace <http://www.rackspace.com>`_ for "
+"providing us with a free `Rackspace Cloud "
+"<http://www.rackspace.com/cloud/>`_ account to automatically build the "
+"documentation and the example gallery from for the development version of"
+" scikit-learn using `this tool <https://github.com/scikit-learn/sklearn-"
+"docbuilder>`_."
+msgstr ""
+
+#: ../../about.rst:212
+msgid ""
+"We would also like to thank `Shining Panda <https://www.shiningpanda-"
+"ci.com/>`_ for free CPU time on their Continuous Integration server."
+msgstr ""
+

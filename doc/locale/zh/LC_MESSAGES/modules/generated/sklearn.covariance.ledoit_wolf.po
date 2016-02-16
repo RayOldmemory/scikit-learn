@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.covariance.ledoit_wolf.rst:2
+msgid ":mod:`sklearn.covariance`.ledoit_wolf"
+msgstr ""
+
+#: :3
+msgid "Estimates the shrunk Ledoit-Wolf covariance matrix."
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <shrunk_covariance>`."
+msgstr ""
+
+#: :9
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :11
+msgid "Data from which to compute the covariance estimate"
+msgstr ""
+
+#: :13
+msgid "**assume_centered** : boolean, default=False"
+msgstr ""
+
+#: :15
+msgid ""
+"If True, data are not centered before computation. Useful to work with "
+"data whose mean is significantly equal to zero but is not exactly zero. "
+"If False, data are centered before computation."
+msgstr ""
+
+#: :20
+msgid "**block_size** : int, default=1000"
+msgstr ""
+
+#: :22
+msgid ""
+"Size of the blocks into which the covariance matrix will be split. This "
+"is purely a memory optimization and does not affect results."
+msgstr ""
+
+#: :27
+msgid "**shrunk_cov** : array-like, shape (n_features, n_features)"
+msgstr ""
+
+#: :29
+msgid "Shrunk covariance."
+msgstr ""
+
+#: :31
+msgid "**shrinkage** : float"
+msgstr ""
+
+#: :33
+msgid ""
+"Coefficient in the convex combination used for the computation of the "
+"shrunk estimate."
+msgstr ""
+
+#: :37
+msgid "Notes"
+msgstr ""
+
+#: :38
+msgid "The regularized (shrunk) covariance is:"
+msgstr ""
+
+#: :41
+msgid "(1 - shrinkage)*cov"
+msgstr ""
+
+#: :41
+msgid "shrinkage * mu * np.identity(n_features)"
+msgstr ""
+
+#: :43
+msgid "where mu = trace(cov) / n_features"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.ledoit_wolf.examples:3
+msgid "Examples using ``sklearn.covariance.ledoit_wolf``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.ledoit_wolf.examples:25
+msgid ":ref:`example_covariance_plot_sparse_cov.py`"
+msgstr ""
+

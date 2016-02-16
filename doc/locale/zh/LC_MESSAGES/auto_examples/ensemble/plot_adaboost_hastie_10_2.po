@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/ensemble/plot_adaboost_hastie_10_2.rst:8
+msgid "Discrete versus Real AdaBoost"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_hastie_10_2.rst:10
+msgid ""
+"This example is based on Figure 10.2 from Hastie et al 2009 [1] and "
+"illustrates the difference in performance between the discrete SAMME [2] "
+"boosting algorithm and real SAMME.R boosting algorithm. Both algorithms "
+"are evaluated on a binary classification task where the target Y is a "
+"non-linear function of 10 input features."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_hastie_10_2.rst:16
+msgid ""
+"Discrete SAMME AdaBoost adapts based on errors in predicted class labels "
+"whereas real SAMME.R uses the predicted class probabilities."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_hastie_10_2.rst:19
+msgid ""
+"T. Hastie, R. Tibshirani and J. Friedman, \"Elements of Statistical "
+"Learning Ed. 2\", Springer, 2009."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_hastie_10_2.rst:22
+msgid "Zhu, H. Zou, S. Rosset, T. Hastie, \"Multi-class AdaBoost\", 2009."
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_hastie_10_2.rst:33
+msgid ""
+"**Python source code:** :download:`plot_adaboost_hastie_10_2.py "
+"<plot_adaboost_hastie_10_2.py>`"
+msgstr ""
+
+#: ../../auto_examples/ensemble/plot_adaboost_hastie_10_2.rst:38
+msgid ""
+"**Total running time of the example:**  9.89 seconds ( 0 minutes  9.89 "
+"seconds)"
+msgstr ""
+

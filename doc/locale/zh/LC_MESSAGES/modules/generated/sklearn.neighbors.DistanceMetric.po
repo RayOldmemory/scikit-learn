@@ -1,0 +1,508 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.neighbors.DistanceMetric.rst:2
+msgid ":mod:`sklearn.neighbors`.DistanceMetric"
+msgstr ""
+
+#: :3
+msgid "DistanceMetric class"
+msgstr ""
+
+#: :5
+msgid ""
+"This class provides a uniform interface to fast distance metric "
+"functions.  The various metrics can be accessed via the `get_metric` "
+"class method and the metric string identifier (see below). For example, "
+"to use the Euclidean distance:"
+msgstr ""
+
+#: :17
+msgid ""
+"Available Metrics The following lists the string metric identifiers and "
+"the associated distance metric classes:"
+msgstr ""
+
+#: :21
+msgid "**Metrics intended for real-valued vector spaces:**"
+msgstr ""
+
+#: :24 :38 :49 :69 :84
+msgid "identifier"
+msgstr ""
+
+#: :24 :38 :49 :69 :84
+msgid "class name"
+msgstr ""
+
+#: :24 :84
+msgid "args"
+msgstr ""
+
+#: :24 :38 :49 :69
+msgid "distance function"
+msgstr ""
+
+#: :26
+msgid "\"euclidean\""
+msgstr ""
+
+#: :26
+msgid "EuclideanDistance"
+msgstr ""
+
+#: :26
+msgid "``sqrt(sum((x - y)^2))``"
+msgstr ""
+
+#: :27
+msgid "\"manhattan\""
+msgstr ""
+
+#: :27
+msgid "ManhattanDistance"
+msgstr ""
+
+#: :27
+msgid "``sum(|x - y|)``"
+msgstr ""
+
+#: :28
+msgid "\"chebyshev\""
+msgstr ""
+
+#: :28
+msgid "ChebyshevDistance"
+msgstr ""
+
+#: :28
+msgid "``sum(max(|x - y|))``"
+msgstr ""
+
+#: :29
+msgid "\"minkowski\""
+msgstr ""
+
+#: :29
+msgid "MinkowskiDistance"
+msgstr ""
+
+#: :29
+msgid "p"
+msgstr ""
+
+#: :29
+msgid "``sum(|x - y|^p)^(1/p)``"
+msgstr ""
+
+#: :30
+msgid "\"wminkowski\""
+msgstr ""
+
+#: :30
+msgid "WMinkowskiDistance"
+msgstr ""
+
+#: :30
+msgid "p, w"
+msgstr ""
+
+#: :30
+msgid "``sum(w * |x - y|^p)^(1/p)``"
+msgstr ""
+
+#: :31
+msgid "\"seuclidean\""
+msgstr ""
+
+#: :31
+msgid "SEuclideanDistance"
+msgstr ""
+
+#: :31
+msgid "V"
+msgstr ""
+
+#: :31
+msgid "``sqrt(sum((x - y)^2 / V))``"
+msgstr ""
+
+#: :32
+msgid "\"mahalanobis\""
+msgstr ""
+
+#: :32
+msgid "MahalanobisDistance"
+msgstr ""
+
+#: :32
+msgid "V or VI"
+msgstr ""
+
+#: :32
+msgid "``sqrt((x - y)' V^-1 (x - y))``"
+msgstr ""
+
+#: :35
+msgid "**Metrics intended for two-dimensional vector spaces:**"
+msgstr ""
+
+#: :40
+msgid "\"haversine\""
+msgstr ""
+
+#: :40
+msgid "HaversineDistance"
+msgstr ""
+
+#: :40
+msgid "2 arcsin(sqrt(sin^2(0.5*dx)"
+msgstr ""
+
+#: :41
+msgid "cos(x1)cos(x2)sin^2(0.5*dy)))"
+msgstr ""
+
+#: :44
+msgid ""
+"**Metrics intended for integer-valued vector spaces:**  Though intended "
+"for integer-valued vectors, these are also valid metrics in the case of "
+"real-valued vectors."
+msgstr ""
+
+#: :51
+msgid "\"hamming\""
+msgstr ""
+
+#: :51
+msgid "HammingDistance"
+msgstr ""
+
+#: :51
+msgid "``N_unequal(x, y) / N_tot``"
+msgstr ""
+
+#: :52
+msgid "\"canberra\""
+msgstr ""
+
+#: :52
+msgid "CanberraDistance"
+msgstr ""
+
+#: :52
+msgid "``sum(|x - y| / (|x| + |y|))``"
+msgstr ""
+
+#: :53
+msgid "\"braycurtis\""
+msgstr ""
+
+#: :53
+msgid "BrayCurtisDistance"
+msgstr ""
+
+#: :53
+msgid "``sum(|x - y|) / (sum(|x|) + sum(|y|))``"
+msgstr ""
+
+#: :56
+msgid ""
+"**Metrics intended for boolean-valued vector spaces:**  Any nonzero entry"
+" is evaluated to \"True\".  In the listings below, the following "
+"abbreviations are used:"
+msgstr ""
+
+#: :60
+msgid "N  : number of dimensions"
+msgstr ""
+
+#: :61
+msgid "NTT : number of dims in which both values are True"
+msgstr ""
+
+#: :62
+msgid "NTF : number of dims in which the first value is True, second is False"
+msgstr ""
+
+#: :63
+msgid "NFT : number of dims in which the first value is False, second is True"
+msgstr ""
+
+#: :64
+msgid "NFF : number of dims in which both values are False"
+msgstr ""
+
+#: :65
+msgid "NNEQ : number of non-equal dimensions, NNEQ = NTF + NFT"
+msgstr ""
+
+#: :66
+msgid "NNZ : number of nonzero dimensions, NNZ = NTF + NFT + NTT"
+msgstr ""
+
+#: :71
+msgid "\"jaccard\""
+msgstr ""
+
+#: :71
+msgid "JaccardDistance"
+msgstr ""
+
+#: :71
+msgid "NNEQ / NNZ"
+msgstr ""
+
+#: :72
+msgid "\"maching\""
+msgstr ""
+
+#: :72
+msgid "MatchingDistance"
+msgstr ""
+
+#: :72
+msgid "NNEQ / N"
+msgstr ""
+
+#: :73
+msgid "\"dice\""
+msgstr ""
+
+#: :73
+msgid "DiceDistance"
+msgstr ""
+
+#: :73
+msgid "NNEQ / (NTT + NNZ)"
+msgstr ""
+
+#: :74
+msgid "\"kulsinski\""
+msgstr ""
+
+#: :74
+msgid "KulsinskiDistance"
+msgstr ""
+
+#: :74
+msgid "(NNEQ + N - NTT) / (NNEQ + N)"
+msgstr ""
+
+#: :75
+msgid "\"rogerstanimoto\""
+msgstr ""
+
+#: :75
+msgid "RogersTanimotoDistance"
+msgstr ""
+
+#: :75 :77
+msgid "2 * NNEQ / (N + NNEQ)"
+msgstr ""
+
+#: :76
+msgid "\"russellrao\""
+msgstr ""
+
+#: :76
+msgid "RussellRaoDistance"
+msgstr ""
+
+#: :76
+msgid "NNZ / N"
+msgstr ""
+
+#: :77
+msgid "\"sokalmichener\""
+msgstr ""
+
+#: :77
+msgid "SokalMichenerDistance"
+msgstr ""
+
+#: :78
+msgid "\"sokalsneath\""
+msgstr ""
+
+#: :78
+msgid "SokalSneathDistance"
+msgstr ""
+
+#: :78
+msgid "NNEQ / (NNEQ + 0.5 * NTT)"
+msgstr ""
+
+#: :81
+msgid "**User-defined distance:**"
+msgstr ""
+
+#: :86
+msgid "\"pyfunc\""
+msgstr ""
+
+#: :86
+msgid "PyFuncDistance"
+msgstr ""
+
+#: :86
+msgid "func"
+msgstr ""
+
+#: :89
+msgid ""
+"Here ``func`` is a function which takes two one-dimensional numpy arrays,"
+" and returns a distance.  Note that in order to be used within the "
+"BallTree, the distance must be a true metric: i.e. it must satisfy the "
+"following properties"
+msgstr ""
+
+#: :94
+msgid "Non-negativity: d(x, y) >= 0"
+msgstr ""
+
+#: :95
+msgid "Identity: d(x, y) = 0 if and only if x == y"
+msgstr ""
+
+#: :96
+msgid "Symmetry: d(x, y) = d(y, x)"
+msgstr ""
+
+#: :97
+msgid "Triangle Inequality: d(x, y) + d(y, z) >= d(x, z)"
+msgstr ""
+
+#: :99
+msgid ""
+"Because of the Python object overhead involved in calling the python "
+"function, this will be fairly slow, but it will have the same scaling as "
+"other distances."
+msgstr ""
+
+#: :104
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`dist_to_rdist <sklearn.neighbors.DistanceMetric.dist_to_rdist>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Convert the true distance to the reduced distance."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_metric <sklearn.neighbors.DistanceMetric.get_metric>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get the given distance metric from the string identifier."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`pairwise <sklearn.neighbors.DistanceMetric.pairwise>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Compute the pairwise distances between X and Y"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`rdist_to_dist <sklearn.neighbors.DistanceMetric.rdist_to_dist>`\\"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Convert the Reduced distance to the true distance."
+msgstr ""
+
+#: :3
+msgid "Initialize self.  See help(type(self)) for accurate signature."
+msgstr ""
+
+#: :5
+msgid ""
+"The reduced distance, defined for some metrics, is a computationally more"
+" efficent measure which preserves the rank of the true distance. For "
+"example, in the Euclidean distance metric, the reduced distance is the "
+"squared-euclidean distance."
+msgstr ""
+
+#: :5
+msgid "See the docstring of DistanceMetric for a list of available metrics."
+msgstr ""
+
+#: :9
+msgid "**metric** : string or class name"
+msgstr ""
+
+#: :11
+msgid "The distance metric to use"
+msgstr ""
+
+#: :13
+msgid "****kwargs** :"
+msgstr ""
+
+#: :15
+msgid "additional arguments will be passed to the requested metric"
+msgstr ""
+
+#: :5
+msgid ""
+"This is a convenience routine for the sake of testing.  For many metrics,"
+" the utilities in scipy.spatial.distance.cdist and "
+"scipy.spatial.distance.pdist will be faster."
+msgstr ""
+
+#: :11
+msgid "**X** : array_like"
+msgstr ""
+
+#: :13
+msgid "Array of shape (Nx, D), representing Nx points in D dimensions."
+msgstr ""
+
+#: :15
+msgid "**Y** : array_like (optional)"
+msgstr ""
+
+#: :17
+msgid ""
+"Array of shape (Ny, D), representing Ny points in D dimensions. If not "
+"specified, then Y=X."
+msgstr ""
+
+#: :20
+msgid "**Returns** :"
+msgstr ""
+
+#: :22
+msgid "**-------** :"
+msgstr ""
+
+#: :24
+msgid "**dist** : ndarray"
+msgstr ""
+
+#: :26
+msgid "The shape (Nx, Ny) array of pairwise distances between points in X and Y."
+msgstr ""
+

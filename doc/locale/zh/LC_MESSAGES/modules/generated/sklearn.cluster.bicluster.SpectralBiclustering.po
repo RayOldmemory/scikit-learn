@@ -1,0 +1,351 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cluster.bicluster.SpectralBiclustering.rst:2
+msgid ":mod:`sklearn.cluster.bicluster`.SpectralBiclustering"
+msgstr ""
+
+#: :3
+msgid "Spectral biclustering (Kluger, 2003)."
+msgstr ""
+
+#: :5
+msgid ""
+"Partitions rows and columns under the assumption that the data has an "
+"underlying checkerboard structure. For instance, if there are two row "
+"partitions and three column partitions, each row will belong to three "
+"biclusters, and each column will belong to two biclusters. The outer "
+"product of the corresponding row and column label vectors gives this "
+"checkerboard structure."
+msgstr ""
+
+#: :12
+msgid "Read more in the :ref:`User Guide <spectral_biclustering>`."
+msgstr ""
+
+#: :16
+msgid "**n_clusters** : integer or tuple (n_row_clusters, n_column_clusters)"
+msgstr ""
+
+#: :18
+msgid "The number of row and column clusters in the checkerboard structure."
+msgstr ""
+
+#: :21
+msgid "**method** : string, optional, default: 'bistochastic'"
+msgstr ""
+
+#: :23
+msgid ""
+"Method of normalizing and converting singular vectors into biclusters. "
+"May be one of 'scale', 'bistochastic', or 'log'. The authors recommend "
+"using 'log'. If the data is sparse, however, log normalization will not "
+"work, which is why the default is 'bistochastic'. CAUTION: if "
+"`method='log'`, the data must not be sparse."
+msgstr ""
+
+#: :30
+msgid "**n_components** : integer, optional, default: 6"
+msgstr ""
+
+#: :32
+msgid "Number of singular vectors to check."
+msgstr ""
+
+#: :34
+msgid "**n_best** : integer, optional, default: 3"
+msgstr ""
+
+#: :36
+msgid ""
+"Number of best singular vectors to which to project the data for "
+"clustering."
+msgstr ""
+
+#: :39
+msgid "**svd_method** : string, optional, default: 'randomized'"
+msgstr ""
+
+#: :41
+msgid ""
+"Selects the algorithm for finding singular vectors. May be 'randomized' "
+"or 'arpack'. If 'randomized', uses "
+"`sklearn.utils.extmath.randomized_svd`, which may be faster for large "
+"matrices. If 'arpack', uses `sklearn.utils.arpack.svds`, which is more "
+"accurate, but possibly slower in some cases."
+msgstr ""
+
+#: :48
+msgid "**n_svd_vecs** : int, optional, default: None"
+msgstr ""
+
+#: :50
+msgid ""
+"Number of vectors to use in calculating the SVD. Corresponds to `ncv` "
+"when `svd_method=arpack` and `n_oversamples` when `svd_method` is "
+"'randomized`."
+msgstr ""
+
+#: :54
+msgid "**mini_batch** : bool, optional, default: False"
+msgstr ""
+
+#: :56
+msgid ""
+"Whether to use mini-batch k-means, which is faster but may get different "
+"results."
+msgstr ""
+
+#: :59
+msgid "**init** : {'k-means++', 'random' or an ndarray}"
+msgstr ""
+
+#: :61
+msgid "Method for initialization of k-means algorithm; defaults to 'k-means++'."
+msgstr ""
+
+#: :64
+msgid "**n_init** : int, optional, default: 10"
+msgstr ""
+
+#: :66
+msgid ""
+"Number of random initializations that are tried with the k-means "
+"algorithm."
+msgstr ""
+
+#: :69
+msgid ""
+"If mini-batch k-means is used, the best initialization is chosen and the "
+"algorithm runs once. Otherwise, the algorithm is run for each "
+"initialization and the best solution chosen."
+msgstr ""
+
+#: :73
+msgid "**n_jobs** : int, optional, default: 1"
+msgstr ""
+
+#: :75
+msgid ""
+"The number of jobs to use for the computation. This works by breaking "
+"down the pairwise matrix into n_jobs even slices and computing them in "
+"parallel."
+msgstr ""
+
+#: :79
+msgid ""
+"If -1 all CPUs are used. If 1 is given, no parallel computing code is "
+"used at all, which is useful for debugging. For n_jobs below -1, (n_cpus "
+"+ 1 + n_jobs) are used. Thus for n_jobs = -2, all CPUs but one are used."
+msgstr ""
+
+#: :84
+msgid "**random_state** : int seed, RandomState instance, or None (default)"
+msgstr ""
+
+#: :86
+msgid "A pseudo random number generator used by the K-Means initialization."
+msgstr ""
+
+#: :91
+msgid "**rows_** : array-like, shape (n_row_clusters, n_rows)"
+msgstr ""
+
+#: :93
+msgid ""
+"Results of the clustering. `rows[i, r]` is True if cluster `i` contains "
+"row `r`. Available only after calling ``fit``."
+msgstr ""
+
+#: :96
+msgid "**columns_** : array-like, shape (n_column_clusters, n_columns)"
+msgstr ""
+
+#: :98
+msgid "Results of the clustering, like `rows`."
+msgstr ""
+
+#: :100
+msgid "**row_labels_** : array-like, shape (n_rows,)"
+msgstr ""
+
+#: :102
+msgid "Row partition labels."
+msgstr ""
+
+#: :104
+msgid "**column_labels_** : array-like, shape (n_cols,)"
+msgstr ""
+
+#: :106
+msgid "Column partition labels."
+msgstr ""
+
+#: :109
+msgid "References"
+msgstr ""
+
+#: :110
+msgid ""
+"Kluger, Yuval, et. al., 2003. `Spectral biclustering of microarray data: "
+"coclustering genes and conditions "
+"<http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.135.1608>`__."
+msgstr ""
+
+#: :117
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.cluster.bicluster.SpectralBiclustering.fit>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Creates a biclustering for X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_indices "
+"<sklearn.cluster.bicluster.SpectralBiclustering.get_indices>`\\ (i)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Row and column indices of the i'th bicluster."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.cluster.bicluster.SpectralBiclustering.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_shape "
+"<sklearn.cluster.bicluster.SpectralBiclustering.get_shape>`\\ (i)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Shape of the i'th bicluster."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_submatrix "
+"<sklearn.cluster.bicluster.SpectralBiclustering.get_submatrix>`\\ (i, "
+"data)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the submatrix corresponding to bicluster `i`."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.cluster.bicluster.SpectralBiclustering.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :3
+msgid "Convenient way to get row and column indicators together."
+msgstr ""
+
+#: :5
+msgid "Returns the ``rows_`` and ``columns_`` members."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :5
+msgid "Only works if ``rows_`` and ``columns_`` attributes exist."
+msgstr ""
+
+#: :9
+msgid "**row_ind** : np.array, dtype=np.intp"
+msgstr ""
+
+#: :11
+msgid "Indices of rows in the dataset that belong to the bicluster."
+msgstr ""
+
+#: :13
+msgid "**col_ind** : np.array, dtype=np.intp"
+msgstr ""
+
+#: :15
+msgid "Indices of columns in the dataset that belong to the bicluster."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**shape** : (int, int)"
+msgstr ""
+
+#: :9
+msgid "Number of rows and columns (resp.) in the bicluster."
+msgstr ""
+
+#: :5
+msgid ""
+"Works with sparse matrices. Only works if ``rows_`` and ``columns_`` "
+"attributes exist."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+

@@ -1,0 +1,457 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.covariance.GraphLassoCV.rst:2
+msgid ":mod:`sklearn.covariance`.GraphLassoCV"
+msgstr ""
+
+#: :3
+msgid "Sparse inverse covariance w/ cross-validated choice of the l1 penalty"
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <sparse_inverse_covariance>`."
+msgstr ""
+
+#: :9
+msgid "**alphas** : integer, or list positive float, optional"
+msgstr ""
+
+#: :11
+msgid ""
+"If an integer is given, it fixes the number of points on the grids of "
+"alpha to be used. If a list is given, it gives the grid to be used. See "
+"the notes in the class docstring for more details."
+msgstr ""
+
+#: :16
+msgid "**n_refinements: strictly positive integer** :"
+msgstr ""
+
+#: :18
+msgid ""
+"The number of times the grid is refined. Not used if explicit values of "
+"alphas are passed."
+msgstr ""
+
+#: :21
+msgid "**cv** : int, cross-validation generator or an iterable, optional"
+msgstr ""
+
+#: :23
+msgid ""
+"Determines the cross-validation splitting strategy. Possible inputs for "
+"cv are:"
+msgstr ""
+
+#: :26
+msgid "None, to use the default 3-fold cross-validation,"
+msgstr ""
+
+#: :27
+msgid "integer, to specify the number of folds."
+msgstr ""
+
+#: :28
+msgid "An object to be used as a cross-validation generator."
+msgstr ""
+
+#: :29
+msgid "An iterable yielding train/test splits."
+msgstr ""
+
+#: :31
+msgid "For integer/None inputs :class:`KFold` is used."
+msgstr ""
+
+#: :33
+msgid ""
+"Refer :ref:`User Guide <cross_validation>` for the various cross-"
+"validation strategies that can be used here."
+msgstr ""
+
+#: :36
+msgid "**tol: positive float, optional** :"
+msgstr ""
+
+#: :38
+msgid ""
+"The tolerance to declare convergence: if the dual gap goes below this "
+"value, iterations are stopped."
+msgstr ""
+
+#: :41
+msgid "**enet_tol** : positive float, optional"
+msgstr ""
+
+#: :43
+msgid ""
+"The tolerance for the elastic net solver used to calculate the descent "
+"direction. This parameter controls the accuracy of the search direction "
+"for a given column update, not of the overall parameter estimate. Only "
+"used for mode='cd'."
+msgstr ""
+
+#: :48
+msgid "**max_iter: integer, optional** :"
+msgstr ""
+
+#: :50
+msgid "Maximum number of iterations."
+msgstr ""
+
+#: :52
+msgid "**mode: {'cd', 'lars'}** :"
+msgstr ""
+
+#: :54
+msgid ""
+"The Lasso solver to use: coordinate descent or LARS. Use LARS for very "
+"sparse underlying graphs, where number of features is greater than number"
+" of samples. Elsewhere prefer cd which is more numerically stable."
+msgstr ""
+
+#: :59
+msgid "**n_jobs: int, optional** :"
+msgstr ""
+
+#: :61
+msgid "number of jobs to run in parallel (default 1)."
+msgstr ""
+
+#: :63
+msgid "**verbose: boolean, optional** :"
+msgstr ""
+
+#: :65
+msgid ""
+"If verbose is True, the objective function and duality gap are printed at"
+" each iteration."
+msgstr ""
+
+#: :68
+msgid "**assume_centered** : Boolean"
+msgstr ""
+
+#: :70
+msgid ""
+"If True, data are not centered before computation. Useful when working "
+"with data whose mean is almost, but not exactly zero. If False, data are "
+"centered before computation."
+msgstr ""
+
+#: :77
+msgid "**covariance_** : numpy.ndarray, shape (n_features, n_features)"
+msgstr ""
+
+#: :79
+msgid "Estimated covariance matrix."
+msgstr ""
+
+#: :81
+msgid "**precision_** : numpy.ndarray, shape (n_features, n_features)"
+msgstr ""
+
+#: :83
+msgid "Estimated precision matrix (inverse covariance)."
+msgstr ""
+
+#: :85
+msgid "**alpha_** : float"
+msgstr ""
+
+#: :87
+msgid "Penalization parameter selected."
+msgstr ""
+
+#: :89
+msgid "**cv_alphas_** : list of float"
+msgstr ""
+
+#: :91
+msgid "All penalization parameters explored."
+msgstr ""
+
+#: :93
+msgid "**`grid_scores`: 2D numpy.ndarray (n_alphas, n_folds)** :"
+msgstr ""
+
+#: :95
+msgid "Log-likelihood score on left-out data across folds."
+msgstr ""
+
+#: :97
+msgid "**n_iter_** : int"
+msgstr ""
+
+#: :99
+msgid "Number of iterations run for the optimal alpha."
+msgstr ""
+
+#: :103
+msgid ":obj:`graph_lasso`, :obj:`GraphLasso`"
+msgstr ""
+
+#: :106
+msgid "Notes"
+msgstr ""
+
+#: :107
+msgid ""
+"The search for the optimal penalization parameter (alpha) is done on an "
+"iteratively refined grid: first the cross-validated scores on a grid are "
+"computed, then a new refined grid is centered around the maximum, and so "
+"on."
+msgstr ""
+
+#: :112
+msgid ""
+"One of the challenges which is faced here is that the solvers can fail to"
+" converge to a well-conditioned estimate. The corresponding values of "
+"alpha then come out as missing values, but the optimum may be close to "
+"these missing values."
+msgstr ""
+
+#: :118
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`error_norm <sklearn.covariance.GraphLassoCV.error_norm>`\\ "
+"(comp_cov[, norm, scaling, squared])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Computes the Mean Squared Error between two covariance estimators."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.covariance.GraphLassoCV.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fits the GraphLasso covariance model to X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.covariance.GraphLassoCV.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_precision <sklearn.covariance.GraphLassoCV.get_precision>`\\ ()"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Getter for the precision matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`mahalanobis <sklearn.covariance.GraphLassoCV.mahalanobis>`\\ "
+"(observations)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Computes the squared Mahalanobis distances of given observations."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.covariance.GraphLassoCV.score>`\\ (X_test[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid ""
+"Computes the log-likelihood of a Gaussian data set with "
+"`self.covariance_` as an estimator of its covariance matrix."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.covariance.GraphLassoCV.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :3
+msgid ""
+"Computes the Mean Squared Error between two covariance estimators. (In "
+"the sense of the Frobenius norm)."
+msgstr ""
+
+#: :8
+msgid "**comp_cov** : array-like, shape = [n_features, n_features]"
+msgstr ""
+
+#: :10
+msgid "The covariance to compare with."
+msgstr ""
+
+#: :12
+msgid "**norm** : str"
+msgstr ""
+
+#: :14
+msgid ""
+"The type of norm used to compute the error. Available error types: - "
+"'frobenius' (default): sqrt(tr(A^t.A)) - 'spectral': "
+"sqrt(max(eigenvalues(A^t.A)) where A is the error ``(comp_cov - "
+"self.covariance_)``."
+msgstr ""
+
+#: :19
+msgid "**scaling** : bool"
+msgstr ""
+
+#: :21
+msgid ""
+"If True (default), the squared error norm is divided by n_features. If "
+"False, the squared error norm is not rescaled."
+msgstr ""
+
+#: :24
+msgid "**squared** : bool"
+msgstr ""
+
+#: :26
+msgid ""
+"Whether to compute the squared error norm or the error norm. If True "
+"(default), the squared error norm is returned. If False, the error norm "
+"is returned."
+msgstr ""
+
+#: :32
+msgid "**The Mean Squared Error (in the sense of the Frobenius norm) between** :"
+msgstr ""
+
+#: :34
+msgid "**`self` and `comp_cov` covariance estimators.** :"
+msgstr ""
+
+#: :7
+msgid "**X** : ndarray, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid "Data from which to compute the covariance estimate"
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :7
+msgid "**precision_** : array-like,"
+msgstr ""
+
+#: :9
+msgid "The precision matrix associated to the current covariance object."
+msgstr ""
+
+#: :7
+msgid "**observations** : array-like, shape = [n_observations, n_features]"
+msgstr ""
+
+#: :9
+msgid ""
+"The observations, the Mahalanobis distances of the which we compute. "
+"Observations are assumed to be drawn from the same distribution than the "
+"data used in fit."
+msgstr ""
+
+#: :15
+msgid "**mahalanobis_distance** : array, shape = [n_observations,]"
+msgstr ""
+
+#: :17
+msgid "Squared Mahalanobis distances of the observations."
+msgstr ""
+
+#: :8
+msgid "**X_test** : array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :10
+msgid ""
+"Test data of which we compute the likelihood, where n_samples is the "
+"number of samples and n_features is the number of features. X_test is "
+"assumed to be drawn from the same distribution than the data used in fit "
+"(including centering)."
+msgstr ""
+
+#: :15
+msgid "**y** : not used, present for API consistence purpose."
+msgstr ""
+
+#: :19
+msgid "**res** : float"
+msgstr ""
+
+#: :21
+msgid ""
+"The likelihood of the data set with `self.covariance_` as an estimator of"
+" its covariance matrix."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.GraphLassoCV.examples:3
+msgid "Examples using ``sklearn.covariance.GraphLassoCV``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.GraphLassoCV.examples:25
+msgid ":ref:`example_applications_plot_stock_market.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.covariance.GraphLassoCV.examples:45
+msgid ":ref:`example_covariance_plot_sparse_cov.py`"
+msgstr ""
+

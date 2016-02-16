@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.pairwise_distances_argmin.rst:2
+msgid ":mod:`sklearn.metrics`.pairwise_distances_argmin"
+msgstr ""
+
+#: :3
+msgid "Compute minimum distances between one point and a set of points."
+msgstr ""
+
+#: :5
+msgid ""
+"This function computes for each row in X, the index of the row of Y which"
+" is closest (according to the specified distance)."
+msgstr ""
+
+#: :8
+msgid "This is mostly equivalent to calling:"
+msgstr ""
+
+#: :10
+msgid "pairwise_distances(X, Y=Y, metric=metric).argmin(axis=axis)"
+msgstr ""
+
+#: :12
+msgid "but uses much less memory, and is faster for large arrays."
+msgstr ""
+
+#: :14
+msgid "This function works with dense 2D arrays only."
+msgstr ""
+
+#: :18
+msgid "**X** : array-like"
+msgstr ""
+
+#: :20 :25
+msgid ""
+"Arrays containing points. Respective shapes (n_samples1, n_features) and "
+"(n_samples2, n_features)"
+msgstr ""
+
+#: :23
+msgid "**Y** : array-like"
+msgstr ""
+
+#: :28
+msgid "**batch_size** : integer"
+msgstr ""
+
+#: :30
+msgid ""
+"To reduce memory consumption over the naive solution, data are processed "
+"in batches, comprising batch_size rows of X and batch_size rows of Y. The"
+" default value is quite conservative, but can be changed for fine-tuning."
+" The larger the number, the larger the memory usage."
+msgstr ""
+
+#: :36
+msgid "**metric** : string or callable"
+msgstr ""
+
+#: :38
+msgid ""
+"metric to use for distance computation. Any metric from scikit-learn or "
+"scipy.spatial.distance can be used."
+msgstr ""
+
+#: :41
+msgid ""
+"If metric is a callable function, it is called on each pair of instances "
+"(rows) and the resulting value recorded. The callable should take two "
+"arrays as input and return one value indicating the distance between "
+"them. This works for Scipy's metrics, but is less efficient than passing "
+"the metric name as a string."
+msgstr ""
+
+#: :47
+msgid "Distance matrices are not supported."
+msgstr ""
+
+#: :49
+msgid "Valid values for metric are:"
+msgstr ""
+
+#: :51
+msgid ""
+"from scikit-learn: ['cityblock', 'cosine', 'euclidean', 'l1', 'l2', "
+"'manhattan']"
+msgstr ""
+
+#: :54
+msgid ""
+"from scipy.spatial.distance: ['braycurtis', 'canberra', 'chebyshev', "
+"'correlation', 'dice', 'hamming', 'jaccard', 'kulsinski', 'mahalanobis', "
+"'matching', 'minkowski', 'rogerstanimoto', 'russellrao', 'seuclidean', "
+"'sokalmichener', 'sokalsneath', 'sqeuclidean', 'yule']"
+msgstr ""
+
+#: :60
+msgid ""
+"See the documentation for scipy.spatial.distance for details on these "
+"metrics."
+msgstr ""
+
+#: :63
+msgid "**metric_kwargs** : dict"
+msgstr ""
+
+#: :65
+msgid "keyword arguments to pass to specified metric function."
+msgstr ""
+
+#: :67
+msgid "**axis** : int, optional, default 1"
+msgstr ""
+
+#: :69
+msgid "Axis along which the argmin and distances are to be computed."
+msgstr ""
+
+#: :73
+msgid "**argmin** : numpy.ndarray"
+msgstr ""
+
+#: :75
+msgid "Y[argmin[i], :] is the row in Y that is closest to X[i, :]."
+msgstr ""
+
+#: :79
+msgid ""
+":obj:`sklearn.metrics.pairwise_distances`, "
+":obj:`sklearn.metrics.pairwise_distances_argmin_min`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.pairwise_distances_argmin.examples:3
+msgid "Examples using ``sklearn.metrics.pairwise_distances_argmin``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.pairwise_distances_argmin.examples:25
+msgid ":ref:`example_cluster_plot_color_quantization.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.pairwise_distances_argmin.examples:45
+msgid ":ref:`example_cluster_plot_mini_batch_kmeans.py`"
+msgstr ""
+

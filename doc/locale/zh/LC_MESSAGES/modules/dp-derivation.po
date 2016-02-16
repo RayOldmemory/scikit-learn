@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/dp-derivation.rst:7
+msgid "Variational Gaussian Mixture Models"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:9
+msgid ""
+"The API is identical to that of the :class:`GMM` class, the main "
+"difference being that it offers access to precision matrices as well as "
+"covariance matrices."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:13
+msgid "The inference algorithm is the one from the following paper:"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:15
+msgid ""
+"`Variational Inference for Dirichlet Process Mixtures "
+"<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.4467&rep=rep1&type=pdf>`_"
+" David Blei, Michael Jordan. Bayesian Analysis, 2006"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:19
+msgid ""
+"While this paper presents the parts of the inference algorithm that are "
+"concerned with the structure of the dirichlet process, it does not go "
+"into detail in the mixture modeling part, which can be just as complex, "
+"or even more. For this reason we present here a full derivation of the "
+"inference algorithm and all the update and lower-bound equations. If "
+"you're not interested in learning how to derive similar algorithms "
+"yourself and you're not interested in changing/debugging the "
+"implementation in the scikit this document is not for you."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:29
+msgid ""
+"The complexity of this implementation is linear in the number of mixture "
+"components and data points. With regards to the dimensionality, it is "
+"linear when using ``spherical`` or ``diag`` and quadratic/cubic when "
+"using ``tied`` or ``full``. For ``spherical`` or ``diag`` it is "
+"O(n_states * n_points * dimension) and for ``tied`` or ``full`` it is "
+"O(n_states * n_points * dimension^2 + n_states * dimension^3) (it is "
+"necessary to invert the covariance/precision matrices and compute its "
+"determinant, hence the cubic term)."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:38
+msgid ""
+"This implementation is expected to scale at least as well as EM for the "
+"mixture of Gaussians."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:42
+msgid "Update rules for VB inference"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:44
+msgid ""
+"Here the full mathematical derivation of the Variational Bayes update "
+"rules for Gaussian Mixture Models is given. The main parameters of the "
+"model, defined for any class :math:`k \\in [1..K]` are the class "
+"proportion :math:`\\phi_k`, the mean parameters :math:`\\mu_k`, the "
+"covariance parameters :math:`\\Sigma_k`, which is characterized by "
+"variational Wishart density, :math:`Wishart(a_k, \\mathbf{B_k})`, where "
+":math:`a` is the degrees of freedom, and :math:`B` is the scale matrix. "
+"Depending on the covariance parametrization, :math:`B_k` can be a "
+"positive scalar, a positive vector or a Symmetric Positive Definite "
+"matrix."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:57
+msgid "The spherical model"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:59 ../../modules/dp-derivation.rst:258
+#: ../../modules/dp-derivation.rst:349 ../../modules/dp-derivation.rst:450
+msgid "The model then is"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:71 ../../modules/dp-derivation.rst:463
+msgid "The variational distribution we'll use is"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:84
+msgid "The bound"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:86
+msgid "The variational bound is"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:104
+msgid "**The bound for** :math:`\\phi_k`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:123
+msgid "**The bound for** :math:`\\mu_k`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:138
+msgid "**The bound for** :math:`\\sigma_k`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:140
+msgid "Here I'll use the inverse scale parametrization of the gamma distribution."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:151
+msgid "**The bound for z**"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:165
+msgid "**The bound for** :math:`X`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:167
+msgid "Recall that there is no need for a :math:`Q(X)` so this bound is just"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:178
+msgid ""
+"For simplicity I'll later call the term inside the parenthesis "
+":math:`E_q[\\log P(X_i|z_i=k)]`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:181 ../../modules/dp-derivation.rst:310
+#: ../../modules/dp-derivation.rst:403 ../../modules/dp-derivation.rst:482
+msgid "The updates"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:183
+msgid "**Updating** :math:`\\gamma`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:193
+msgid "**Updating** :math:`\\mu`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:195
+msgid ""
+"The updates for mu essentially are just weighted expectations of "
+":math:`X` regularized by the prior. We can see this by taking the "
+"gradient of the bound with regards to :math:`\\nu_{\\mu}` and setting it "
+"to zero. The gradient is"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:205
+msgid "so the update is"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:213
+msgid "**Updating** :math:`a` **and** :math:`b`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:216
+msgid ""
+"For some odd reason it doesn't really work when you derive the updates "
+"for a and b using the gradients of the lower bound (terms involving the "
+":math:`\\Psi'` function show up and :math:`a` is hard to isolate). "
+"However, we can use the other formula,"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:226
+msgid ""
+"All the terms not involving :math:`\\sigma_k` get folded over into the "
+"constant and we get two terms: the prior and the probability of "
+":math:`X`. This gives us"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:235
+msgid ""
+"This is the log of a gamma distribution, with :math:`a_k = "
+"1+\\frac{D}{2}\\sum_i \\nu_{z_{i,k}}` and"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:242
+msgid "You can verify this by normalizing the previous term."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:244
+msgid "**Updating** :math:`z`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:255
+msgid "The diagonal model"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:270 ../../modules/dp-derivation.rst:361
+msgid "Tha variational distribution we'll use is"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:282 ../../modules/dp-derivation.rst:373
+#: ../../modules/dp-derivation.rst:475
+msgid "The lower bound"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:284
+msgid ""
+"The changes in this lower bound from the previous model are in the "
+"distributions of :math:`\\sigma` (as there are a lot more :math:`\\sigma`"
+" s now) and :math:`X`."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:288
+msgid ""
+"The bound for :math:`\\sigma_{k,d}` is the same bound for "
+":math:`\\sigma_k` and can be safely omitted."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:291
+msgid "**The bound for** :math:`X` :"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:293
+msgid ""
+"The main difference here is that the precision matrix "
+":math:`\\bm{\\sigma_k}` scales the norm, so we have an extra term after "
+"computing the expectation of :math:`\\mu_k^T\\bm{\\sigma_k}\\mu_k`, which"
+" is :math:`\\nu_{\\mu_k}^T\\bm{\\sigma_k}\\nu_{\\mu_k} + \\sum_d "
+"\\sigma_{k,d}`. We then have"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:312
+msgid ""
+"The updates only chance for :math:`\\mu` (to weight them with the new "
+":math:`\\sigma`), :math:`z` (but the change is all folded into the "
+":math:`E_q[P(X_i|z_i=k)]` term), and the :math:`a` and :math:`b` "
+"variables themselves."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:316 ../../modules/dp-derivation.rst:408
+msgid "**The update for** :math:`\\mu`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:323
+msgid "**The updates for a and b**"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:325
+msgid ""
+"Here we'll do something very similar to the spheric model. The main "
+"difference is that now each :math:`\\sigma_{k,d}` controls only one "
+"dimension of the bound:"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:335
+msgid "Hence"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:347
+msgid "The tied model"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:375
+msgid ""
+"There are two changes in the lower-bound: for :math:`\\Sigma` and for "
+":math:`X`."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:377
+msgid "**The bound for** :math:`\\Sigma`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:390
+msgid "**The bound for X**"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:405
+msgid ""
+"As in the last setting, what changes are the trivial update for "
+":math:`z`, the update for :math:`\\mu` and the update for :math:`a` and "
+":math:`\\mathbf{B}`."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:415
+msgid "**The update for** :math:`a` **and** :math:`B`"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:417
+msgid ""
+"As this distribution is far too complicated I'm not even going to try "
+"going at it the gradient way."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:425
+msgid ""
+"which non-trivially (seeing that the quadratic form with :math:`\\Sigma` "
+"in the middle can be expressed as the trace of something) reduces to"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:433
+msgid "hence this (with a bit of squinting) looks like a wishart with parameters"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:440 ../../modules/dp-derivation.rst:496
+msgid "and"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:448
+msgid "The full model"
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:477
+msgid ""
+"All that changes in this lower bound in comparison to the previous one is"
+" that there are K priors on different :math:`\\Sigma` precision matrices "
+"and there are the correct indices on the bound for X."
+msgstr ""
+
+#: ../../modules/dp-derivation.rst:484
+msgid ""
+"All that changes in the updates is that the update for mu uses only the "
+"proper sigma and the updates for a and B don't have a sum over K, so"
+msgstr ""
+

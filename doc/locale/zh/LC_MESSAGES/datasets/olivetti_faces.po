@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../datasets/olivetti_faces.rst:5
+msgid "The Olivetti faces dataset"
+msgstr ""
+
+#: ../../datasets/olivetti_faces.rst:8
+msgid ""
+"This dataset contains a set of face images taken between April 1992 and "
+"April 1994 at AT&T Laboratories Cambridge. The website describing the "
+"original dataset is now defunct, but archived copies can be accessed "
+"through `the Internet Archive's Wayback Machine`_. The "
+":func:`sklearn.datasets.fetch_olivetti_faces` function is the data "
+"fetching / caching function that downloads the data archive from AT&T."
+msgstr ""
+
+#: ../../datasets/olivetti_faces.rst:18
+msgid "As described on the original website:"
+msgstr ""
+
+#: ../../datasets/olivetti_faces.rst:20
+msgid ""
+"There are ten different images of each of 40 distinct subjects. For some "
+"subjects, the images were taken at different times, varying the lighting,"
+" facial expressions (open / closed eyes, smiling / not smiling) and "
+"facial details (glasses / no glasses). All the images were taken against "
+"a dark homogeneous background with the subjects in an upright, frontal "
+"position (with tolerance for some side movement)."
+msgstr ""
+
+#: ../../datasets/olivetti_faces.rst:27
+msgid ""
+"The image is quantized to 256 grey levels and stored as unsigned 8-bit "
+"integers; the loader will convert these to floating point values on the "
+"interval [0, 1], which are easier to work with for many algorithms."
+msgstr ""
+
+#: ../../datasets/olivetti_faces.rst:31
+msgid ""
+"The \"target\" for this database is an integer from 0 to 39 indicating "
+"the identity of the person pictured; however, with only 10 examples per "
+"class, this relatively small dataset is more interesting from an "
+"unsupervised or semi-supervised perspective."
+msgstr ""
+
+#: ../../datasets/olivetti_faces.rst:36
+msgid ""
+"The original dataset consisted of 92 x 112, while the version available "
+"here consists of 64x64 images."
+msgstr ""
+
+#: ../../datasets/olivetti_faces.rst:39
+msgid ""
+"When using these images, please give credit to AT&T Laboratories "
+"Cambridge."
+msgstr ""
+

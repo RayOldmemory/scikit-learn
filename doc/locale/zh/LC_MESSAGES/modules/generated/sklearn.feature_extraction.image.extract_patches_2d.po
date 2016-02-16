@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.feature_extraction.image.extract_patches_2d.rst:2
+msgid ":mod:`sklearn.feature_extraction.image`.extract_patches_2d"
+msgstr ""
+
+#: :3
+msgid "Reshape a 2D image into a collection of patches"
+msgstr ""
+
+#: :5
+msgid "The resulting patches are allocated in a dedicated array."
+msgstr ""
+
+#: :7
+msgid "Read more in the :ref:`User Guide <image_feature_extraction>`."
+msgstr ""
+
+#: :11
+msgid "**image** : array, shape = (image_height, image_width) or"
+msgstr ""
+
+#: :13
+msgid ""
+"(image_height, image_width, n_channels) The original image data. For "
+"color images, the last dimension specifies the channel: a RGB image would"
+" have `n_channels=3`."
+msgstr ""
+
+#: :17
+msgid "**patch_size** : tuple of ints (patch_height, patch_width)"
+msgstr ""
+
+#: :19
+msgid "the dimensions of one patch"
+msgstr ""
+
+#: :21
+msgid "**max_patches** : integer or float, optional default is None"
+msgstr ""
+
+#: :23
+msgid ""
+"The maximum number of patches to extract. If max_patches is a float "
+"between 0 and 1, it is taken to be a proportion of the total number of "
+"patches."
+msgstr ""
+
+#: :27
+msgid "**random_state** : int or RandomState"
+msgstr ""
+
+#: :29
+msgid ""
+"Pseudo number generator state used for random sampling to use if "
+"`max_patches` is not None."
+msgstr ""
+
+#: :34
+msgid "**patches** : array, shape = (n_patches, patch_height, patch_width) or"
+msgstr ""
+
+#: :36
+msgid ""
+"(n_patches, patch_height, patch_width, n_channels) The collection of "
+"patches extracted from the image, where `n_patches` is either "
+"`max_patches` or the total number of patches that can be extracted."
+msgstr ""
+
+#: :42
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.image.extract_patches_2d.examples:3
+msgid "Examples using ``sklearn.feature_extraction.image.extract_patches_2d``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.image.extract_patches_2d.examples:25
+msgid ":ref:`example_cluster_plot_dict_face_patches.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.feature_extraction.image.extract_patches_2d.examples:45
+msgid ":ref:`example_decomposition_plot_image_denoising.py`"
+msgstr ""
+

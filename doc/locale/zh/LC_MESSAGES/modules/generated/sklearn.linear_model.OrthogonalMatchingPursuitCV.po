@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.OrthogonalMatchingPursuitCV.rst:2
+msgid ":mod:`sklearn.linear_model`.OrthogonalMatchingPursuitCV"
+msgstr ""
+
+#: :3
+msgid "Cross-validated Orthogonal Matching Pursuit model (OMP)"
+msgstr ""
+
+#: :7
+msgid "**copy** : bool, optional"
+msgstr ""
+
+#: :9
+msgid ""
+"Whether the design matrix X must be copied by the algorithm. A false "
+"value is only helpful if X is already Fortran-ordered, otherwise a copy "
+"is made anyway."
+msgstr ""
+
+#: :13
+msgid "**fit_intercept** : boolean, optional"
+msgstr ""
+
+#: :15
+msgid ""
+"whether to calculate the intercept for this model. If set to false, no "
+"intercept will be used in calculations (e.g. data is expected to be "
+"already centered)."
+msgstr ""
+
+#: :19
+msgid "**normalize** : boolean, optional"
+msgstr ""
+
+#: :21
+msgid "If False, the regressors X are assumed to be already normalized."
+msgstr ""
+
+#: :23
+msgid "**max_iter** : integer, optional"
+msgstr ""
+
+#: :25
+#, python-format
+msgid ""
+"Maximum numbers of iterations to perform, therefore maximum features to "
+"include. 10% of ``n_features`` but at least 5 if available."
+msgstr ""
+
+#: :28
+msgid "**cv** : int, cross-validation generator or an iterable, optional"
+msgstr ""
+
+#: :30
+msgid ""
+"Determines the cross-validation splitting strategy. Possible inputs for "
+"cv are:"
+msgstr ""
+
+#: :33
+msgid "None, to use the default 3-fold cross-validation,"
+msgstr ""
+
+#: :34
+msgid "integer, to specify the number of folds."
+msgstr ""
+
+#: :35
+msgid "An object to be used as a cross-validation generator."
+msgstr ""
+
+#: :36
+msgid "An iterable yielding train/test splits."
+msgstr ""
+
+#: :38
+msgid "For integer/None inputs, :class:`KFold` is used."
+msgstr ""
+
+#: :40
+msgid ""
+"Refer :ref:`User Guide <cross_validation>` for the various cross-"
+"validation strategies that can be used here."
+msgstr ""
+
+#: :43
+msgid "**n_jobs** : integer, optional"
+msgstr ""
+
+#: :45
+msgid ""
+"Number of CPUs to use during the cross validation. If ``-1``, use all the"
+" CPUs"
+msgstr ""
+
+#: :48
+msgid "**verbose** : boolean or integer, optional"
+msgstr ""
+
+#: :50
+msgid "Sets the verbosity amount"
+msgstr ""
+
+#: :52
+msgid "**Read more in the :ref:`User Guide <omp>`.** :"
+msgstr ""
+
+#: :56
+msgid "**intercept_** : float or array, shape (n_targets,)"
+msgstr ""
+
+#: :58
+msgid "Independent term in decision function."
+msgstr ""
+
+#: :60
+msgid "**coef_** : array, shape (n_features,) or (n_features, n_targets)"
+msgstr ""
+
+#: :62
+msgid "Parameter vector (w in the problem formulation)."
+msgstr ""
+
+#: :64
+msgid "**n_nonzero_coefs_** : int"
+msgstr ""
+
+#: :66
+msgid ""
+"Estimated number of non-zero coefficients giving the best mean squared "
+"error over the cross-validation folds."
+msgstr ""
+
+#: :69
+msgid "**n_iter_** : int or array-like"
+msgstr ""
+
+#: :71
+msgid ""
+"Number of active features across every target for the model refit with "
+"the best hyperparameters got by cross-validating across all folds."
+msgstr ""
+
+#: :76
+msgid ""
+":obj:`orthogonal_mp`, :obj:`orthogonal_mp_gram`, :obj:`lars_path`, "
+":obj:`Lars`, :obj:`LassoLars`, :obj:`OrthogonalMatchingPursuit`, "
+":obj:`LarsCV`, :obj:`LassoLarsCV`, :obj:`decomposition.sparse_encode`"
+msgstr ""
+
+#: :79
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.linear_model.OrthogonalMatchingPursuitCV.decision_function>`\\ "
+"(\\*args, \\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "DEPRECATED:  and will be removed in 0.19."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.linear_model.OrthogonalMatchingPursuitCV.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model using X, y as training data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.linear_model.OrthogonalMatchingPursuitCV.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict "
+"<sklearn.linear_model.OrthogonalMatchingPursuitCV.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict using the linear model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.linear_model.OrthogonalMatchingPursuitCV.score>`\\ "
+"(X, y[, sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.linear_model.OrthogonalMatchingPursuitCV.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid "Decision function of the linear model."
+msgstr ""
+
+#: :9 :7
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :11 :9
+msgid "Samples."
+msgstr ""
+
+#: :15 :13
+msgid "**C** : array, shape = (n_samples,)"
+msgstr ""
+
+#: :17 :15
+msgid "Returns predicted values."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape [n_samples, n_features]"
+msgstr ""
+
+#: :9
+msgid "Training data."
+msgstr ""
+
+#: :11
+msgid "**y** : array-like, shape [n_samples]"
+msgstr ""
+
+#: :13
+msgid "Target values."
+msgstr ""
+
+#: :17
+msgid "**self** : object"
+msgstr ""
+
+#: :19
+msgid "returns an instance of self."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.OrthogonalMatchingPursuitCV.examples:3
+msgid "Examples using ``sklearn.linear_model.OrthogonalMatchingPursuitCV``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.OrthogonalMatchingPursuitCV.examples:25
+msgid ":ref:`example_linear_model_plot_omp.py`"
+msgstr ""
+

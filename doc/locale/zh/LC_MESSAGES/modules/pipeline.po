@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/pipeline.rst:5
+msgid "Pipeline and FeatureUnion: combining estimators"
+msgstr ""
+
+#: ../../modules/pipeline.rst:10
+msgid "Pipeline: chaining estimators"
+msgstr ""
+
+#: ../../modules/pipeline.rst:14
+msgid ""
+":class:`Pipeline` can be used to chain multiple estimators into one. This"
+" is useful as there is often a fixed sequence of steps in processing the "
+"data, for example feature selection, normalization and classification. "
+":class:`Pipeline` serves two purposes here:"
+msgstr ""
+
+#: ../../modules/pipeline.rst:19
+msgid ""
+"**Convenience**: You only have to call ``fit`` and ``predict`` once on "
+"your data to fit a whole sequence of estimators."
+msgstr ""
+
+#: ../../modules/pipeline.rst:22
+msgid ""
+"**Joint parameter selection**: You can :ref:`grid search <grid_search>` "
+"over parameters of all estimators in the pipeline at once."
+msgstr ""
+
+#: ../../modules/pipeline.rst:25
+msgid ""
+"All estimators in a pipeline, except the last one, must be transformers "
+"(i.e. must have a ``transform`` method). The last estimator may be any "
+"type (transformer, classifier, etc.)."
+msgstr ""
+
+#: ../../modules/pipeline.rst:31 ../../modules/pipeline.rst:142
+msgid "Usage"
+msgstr ""
+
+#: ../../modules/pipeline.rst:33
+msgid ""
+"The :class:`Pipeline` is build using a list of ``(key, value)`` pairs, "
+"where the ``key`` a string containing the name you want to give this step"
+" and ``value`` is an estimator object::"
+msgstr ""
+
+#: ../../modules/pipeline.rst:49
+msgid ""
+"The utility function :func:`make_pipeline` is a shorthand for "
+"constructing pipelines; it takes a variable number of estimators and "
+"returns a pipeline, filling in the names automatically::"
+msgstr ""
+
+#: ../../modules/pipeline.rst:63
+msgid ""
+"The estimators of a pipeline are stored as a list in the ``steps`` "
+"attribute::"
+msgstr ""
+
+#: ../../modules/pipeline.rst:68
+msgid "and as a ``dict`` in ``named_steps``::"
+msgstr ""
+
+#: ../../modules/pipeline.rst:73
+msgid ""
+"Parameters of the estimators in the pipeline can be accessed using the "
+"``<estimator>__<parameter>`` syntax::"
+msgstr ""
+
+#: ../../modules/pipeline.rst:83
+msgid "This is particularly important for doing grid searches::"
+msgstr ""
+
+#: ../../modules/pipeline.rst
+msgid "Examples:"
+msgstr ""
+
+#: ../../modules/pipeline.rst:93
+msgid ":ref:`example_feature_selection_feature_selection_pipeline.py`"
+msgstr ""
+
+#: ../../modules/pipeline.rst:94
+msgid ":ref:`example_model_selection_grid_search_text_feature_extraction.py`"
+msgstr ""
+
+#: ../../modules/pipeline.rst:95
+msgid ":ref:`example_plot_digits_pipe.py`"
+msgstr ""
+
+#: ../../modules/pipeline.rst:96
+msgid ":ref:`example_plot_kernel_approximation.py`"
+msgstr ""
+
+#: ../../modules/pipeline.rst:97
+msgid ":ref:`example_svm_plot_svm_anova.py`"
+msgstr ""
+
+#: ../../modules/pipeline.rst
+msgid "See also:"
+msgstr ""
+
+#: ../../modules/pipeline.rst:101
+msgid ":ref:`grid_search`"
+msgstr ""
+
+#: ../../modules/pipeline.rst:105
+msgid "Notes"
+msgstr ""
+
+#: ../../modules/pipeline.rst:107
+msgid ""
+"Calling ``fit`` on the pipeline is the same as calling ``fit`` on each "
+"estimator in turn, ``transform`` the input and pass it on to the next "
+"step. The pipeline has all the methods that the last estimator in the "
+"pipeline has, i.e. if the last estimator is a classifier, the "
+":class:`Pipeline` can be used as a classifier. If the last estimator is a"
+" transformer, again, so is the pipeline."
+msgstr ""
+
+#: ../../modules/pipeline.rst:118
+msgid "FeatureUnion: composite feature spaces"
+msgstr ""
+
+#: ../../modules/pipeline.rst:122
+msgid ""
+":class:`FeatureUnion` combines several transformer objects into a new "
+"transformer that combines their output. A :class:`FeatureUnion` takes a "
+"list of transformer objects. During fitting, each of these is fit to the "
+"data independently. For transforming data, the transformers are applied "
+"in parallel, and the sample vectors they output are concatenated end-to-"
+"end into larger vectors."
+msgstr ""
+
+#: ../../modules/pipeline.rst:129
+msgid ""
+":class:`FeatureUnion` serves the same purposes as :class:`Pipeline` - "
+"convenience and joint parameter estimation and validation."
+msgstr ""
+
+#: ../../modules/pipeline.rst:132
+msgid ""
+":class:`FeatureUnion` and :class:`Pipeline` can be combined to create "
+"complex models."
+msgstr ""
+
+#: ../../modules/pipeline.rst:135
+msgid ""
+"(A :class:`FeatureUnion` has no way of checking whether two transformers "
+"might produce identical features. It only produces a union when the "
+"feature sets are disjoint, and making sure they are is the caller's "
+"responsibility.)"
+msgstr ""
+
+#: ../../modules/pipeline.rst:144
+msgid ""
+"A :class:`FeatureUnion` is built using a list of ``(key, value)`` pairs, "
+"where the ``key`` is the name you want to give to a given transformation "
+"(an arbitrary string; it only serves as an identifier) and ``value`` is "
+"an estimator object::"
+msgstr ""
+
+#: ../../modules/pipeline.rst:162
+msgid ""
+"Like pipelines, feature unions have a shorthand constructor called "
+":func:`make_union` that does not require explicit naming of the "
+"components."
+msgstr ""
+
+#: ../../modules/pipeline.rst:168
+msgid ":ref:`example_feature_stacker.py`"
+msgstr ""
+
+#: ../../modules/pipeline.rst:169
+msgid ":ref:`example_hetero_feature_union.py`"
+msgstr ""
+

@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:8
+msgid "Scalability of Approximate Nearest Neighbors"
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:10
+msgid ""
+"This example studies the scalability profile of approximate 10-neighbors "
+"queries using the LSHForest with ``n_estimators=20`` and "
+"``n_candidates=200`` when varying the number of samples in the dataset."
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:14
+msgid ""
+"The first plot demonstrates the relationship between query time and index"
+" size of LSHForest. Query time is compared with the brute force method in"
+" exact nearest neighbor search for the same index sizes. The brute force "
+"queries have a very predictable linear scalability with the index (full "
+"scan). LSHForest index have sub-linear scalability profile but can be "
+"slower for small datasets."
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:20
+msgid ""
+"The second plot shows the speedup when using approximate queries vs brute"
+" force exact queries. The speedup tends to increase with the dataset size"
+" but should reach a plateau typically when doing queries on datasets with"
+" millions of samples and a few hundreds of dimensions. Higher dimensional"
+" datasets tends to benefit more from LSHForest indexing."
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:26
+msgid ""
+"The break even point (speedup = 1) depends on the dimensionality and "
+"structure of the indexed data and the parameters of the LSHForest index."
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:29
+msgid ""
+"The precision of approximate queries should decrease slowly with the "
+"dataset size. The speed of the decrease depends mostly on the LSHForest "
+"parameters and the dimensionality of the data."
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:55
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:66
+msgid ""
+"**Python source code:** "
+":download:`plot_approximate_nearest_neighbors_scalability.py "
+"<plot_approximate_nearest_neighbors_scalability.py>`"
+msgstr ""
+
+#: ../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.rst:71
+msgid ""
+"**Total running time of the example:**  14.62 seconds ( 0 minutes  14.62 "
+"seconds)"
+msgstr ""
+

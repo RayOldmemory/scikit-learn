@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.LassoLarsIC.rst:2
+msgid ":mod:`sklearn.linear_model`.LassoLarsIC"
+msgstr ""
+
+#: :3
+msgid "Lasso model fit with Lars using BIC or AIC for model selection"
+msgstr ""
+
+#: :5
+msgid "The optimization objective for Lasso is::"
+msgstr ""
+
+#: :9
+msgid ""
+"AIC is the Akaike information criterion and BIC is the Bayes Information "
+"criterion. Such criteria are useful to select the value of the "
+"regularization parameter by making a trade-off between the goodness of "
+"fit and the complexity of the model. A good model should explain well the"
+" data while being simple."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <least_angle_regression>`."
+msgstr ""
+
+#: :19
+msgid "**criterion** : 'bic' | 'aic'"
+msgstr ""
+
+#: :21
+msgid "The type of criterion to use."
+msgstr ""
+
+#: :23
+msgid "**fit_intercept** : boolean"
+msgstr ""
+
+#: :25
+msgid ""
+"whether to calculate the intercept for this model. If set to false, no "
+"intercept will be used in calculations (e.g. data is expected to be "
+"already centered)."
+msgstr ""
+
+#: :29
+msgid "**positive** : boolean (default=False)"
+msgstr ""
+
+#: :31
+msgid ""
+"Restrict coefficients to be >= 0. Be aware that you might want to remove "
+"fit_intercept which is set True by default. Under the positive "
+"restriction the model coefficients do not converge to the ordinary-least-"
+"squares solution for small values of alpha. Only coeffiencts up to the "
+"smallest alpha value (``alphas_[alphas_ > 0.].min()`` when fit_path=True)"
+" reached by the stepwise Lars-Lasso algorithm are typically in congruence"
+" with the solution of the coordinate descent Lasso estimator. As a "
+"consequence using LassoLarsIC only makes sense for problems where a "
+"sparse solution is expected and/or reached."
+msgstr ""
+
+#: :42
+msgid "**verbose** : boolean or integer, optional"
+msgstr ""
+
+#: :44
+msgid "Sets the verbosity amount"
+msgstr ""
+
+#: :46
+msgid "**normalize** : boolean, optional, default False"
+msgstr ""
+
+#: :48
+msgid "If True, the regressors X will be normalized before regression."
+msgstr ""
+
+#: :50 :15
+msgid "**copy_X** : boolean, optional, default True"
+msgstr ""
+
+#: :52
+msgid "If True, X will be copied; else, it may be overwritten."
+msgstr ""
+
+#: :54
+msgid "**precompute** : True | False | 'auto' | array-like"
+msgstr ""
+
+#: :56
+msgid ""
+"Whether to use a precomputed Gram matrix to speed up calculations. If set"
+" to ``'auto'`` let us decide. The Gram matrix can also be passed as "
+"argument."
+msgstr ""
+
+#: :60
+msgid "**max_iter** : integer, optional"
+msgstr ""
+
+#: :62
+msgid "Maximum number of iterations to perform. Can be used for early stopping."
+msgstr ""
+
+#: :65
+msgid "**eps** : float, optional"
+msgstr ""
+
+#: :67
+msgid ""
+"The machine-precision regularization in the computation of the Cholesky "
+"diagonal factors. Increase this for very ill-conditioned systems. Unlike "
+"the ``tol`` parameter in some iterative optimization-based algorithms, "
+"this parameter does not control the tolerance of the optimization."
+msgstr ""
+
+#: :75
+msgid "**coef_** : array, shape (n_features,)"
+msgstr ""
+
+#: :77
+msgid "parameter vector (w in the formulation formula)"
+msgstr ""
+
+#: :79
+msgid "**intercept_** : float"
+msgstr ""
+
+#: :81
+msgid "independent term in decision function."
+msgstr ""
+
+#: :83
+msgid "**alpha_** : float"
+msgstr ""
+
+#: :85
+msgid "the alpha parameter chosen by the information criterion"
+msgstr ""
+
+#: :87
+msgid "**n_iter_** : int"
+msgstr ""
+
+#: :89
+msgid "number of iterations run by lars_path to find the grid of alphas."
+msgstr ""
+
+#: :92
+msgid "**criterion_** : array, shape (n_alphas,)"
+msgstr ""
+
+#: :94
+msgid ""
+"The value of the information criteria ('aic', 'bic') across all alphas. "
+"The alpha which has the smallest information criteria is chosen."
+msgstr ""
+
+#: :100
+msgid ":obj:`lars_path`, :obj:`LassoLars`, :obj:`LassoLarsCV`"
+msgstr ""
+
+#: :103
+msgid "Notes"
+msgstr ""
+
+#: :104
+msgid "The estimation of the number of degrees of freedom is given by:"
+msgstr ""
+
+#: :106
+msgid ""
+"\"On the degrees of freedom of the lasso\" Hui Zou, Trevor Hastie, and "
+"Robert Tibshirani Ann. Statist. Volume 35, Number 5 (2007), 2173-2192."
+msgstr ""
+
+#: :110
+msgid ""
+"http://en.wikipedia.org/wiki/Akaike_information_criterion "
+"http://en.wikipedia.org/wiki/Bayesian_information_criterion"
+msgstr ""
+
+#: :114
+msgid "Examples"
+msgstr ""
+
+#: :126
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.linear_model.LassoLarsIC.decision_function>`\\ (\\*args, "
+"\\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "DEPRECATED:  and will be removed in 0.19."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.linear_model.LassoLarsIC.fit>`\\ (X, y[, copy_X])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model using X, y as training data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.linear_model.LassoLarsIC.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.linear_model.LassoLarsIC.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict using the linear model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.linear_model.LassoLarsIC.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.linear_model.LassoLarsIC.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid "Decision function of the linear model."
+msgstr ""
+
+#: :9 :7
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :11 :9
+msgid "Samples."
+msgstr ""
+
+#: :15 :13
+msgid "**C** : array, shape = (n_samples,)"
+msgstr ""
+
+#: :17 :15
+msgid "Returns predicted values."
+msgstr ""
+
+#: :7
+msgid "**X** : array-like, shape (n_samples, n_features)"
+msgstr ""
+
+#: :9
+msgid "training data."
+msgstr ""
+
+#: :11
+msgid "**y** : array-like, shape (n_samples,)"
+msgstr ""
+
+#: :13
+msgid "target values."
+msgstr ""
+
+#: :17
+msgid "If ``True``, X will be copied; else, it may be overwritten."
+msgstr ""
+
+#: :21
+msgid "**self** : object"
+msgstr ""
+
+#: :23
+msgid "returns an instance of self."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.LassoLarsIC.examples:3
+msgid "Examples using ``sklearn.linear_model.LassoLarsIC``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.LassoLarsIC.examples:25
+msgid ":ref:`example_linear_model_plot_lasso_model_selection.py`"
+msgstr ""
+

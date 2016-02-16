@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.roc_auc_score.rst:2
+msgid ":mod:`sklearn.metrics`.roc_auc_score"
+msgstr ""
+
+#: :3
+msgid "Compute Area Under the Curve (AUC) from prediction scores"
+msgstr ""
+
+#: :5
+msgid ""
+"Note: this implementation is restricted to the binary classification task"
+" or multilabel classification task in label indicator format."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <roc_metrics>`."
+msgstr ""
+
+#: :12
+msgid "**y_true** : array, shape = [n_samples] or [n_samples, n_classes]"
+msgstr ""
+
+#: :14
+msgid "True binary labels in binary label indicators."
+msgstr ""
+
+#: :16
+msgid "**y_score** : array, shape = [n_samples] or [n_samples, n_classes]"
+msgstr ""
+
+#: :18
+msgid ""
+"Target scores, can either be probability estimates of the positive class,"
+" confidence values, or binary decisions."
+msgstr ""
+
+#: :21
+msgid ""
+"**average** : string, [None, 'micro', 'macro' (default), 'samples', "
+"'weighted']"
+msgstr ""
+
+#: :23
+msgid ""
+"If ``None``, the scores for each class are returned. Otherwise, this "
+"determines the type of averaging performed on the data:"
+msgstr ""
+
+#: :27
+msgid "``'micro'``:"
+msgstr ""
+
+#: :27
+msgid ""
+"Calculate metrics globally by considering each element of the label "
+"indicator matrix as a label."
+msgstr ""
+
+#: :30
+msgid "``'macro'``:"
+msgstr ""
+
+#: :30
+msgid ""
+"Calculate metrics for each label, and find their unweighted mean.  This "
+"does not take label imbalance into account."
+msgstr ""
+
+#: :33
+msgid "``'weighted'``:"
+msgstr ""
+
+#: :33
+msgid ""
+"Calculate metrics for each label, and find their average, weighted by "
+"support (the number of true instances for each label)."
+msgstr ""
+
+#: :36
+msgid "``'samples'``:"
+msgstr ""
+
+#: :36
+msgid "Calculate metrics for each instance, and find their average."
+msgstr ""
+
+#: :38
+msgid "**sample_weight** : array-like of shape = [n_samples], optional"
+msgstr ""
+
+#: :40
+msgid "Sample weights."
+msgstr ""
+
+#: :44
+msgid "**auc** : float"
+msgstr ""
+
+#: :49
+msgid ":obj:`average_precision_score`"
+msgstr ""
+
+#: :49
+msgid "Area under the precision-recall curve"
+msgstr ""
+
+#: :51
+msgid ":obj:`roc_curve`"
+msgstr ""
+
+#: :52
+msgid "Compute Receiver operating characteristic (ROC)"
+msgstr ""
+
+#: :55
+msgid "References"
+msgstr ""
+
+#: :56
+msgid ""
+"`Wikipedia entry for the Receiver operating characteristic "
+"<http://en.wikipedia.org/wiki/Receiver_operating_characteristic>`_"
+msgstr ""
+
+#: :64
+msgid "Examples"
+msgstr ""
+

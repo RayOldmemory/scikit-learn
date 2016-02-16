@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/text/document_classification_20newsgroups.rst:8
+msgid "Classification of text documents using sparse features"
+msgstr ""
+
+#: ../../auto_examples/text/document_classification_20newsgroups.rst:10
+msgid ""
+"This is an example showing how scikit-learn can be used to classify "
+"documents by topics using a bag-of-words approach. This example uses a "
+"scipy.sparse matrix to store the features and demonstrates various "
+"classifiers that can efficiently handle sparse matrices."
+msgstr ""
+
+#: ../../auto_examples/text/document_classification_20newsgroups.rst:15
+msgid ""
+"The dataset used in this example is the 20 newsgroups dataset. It will be"
+" automatically downloaded, then cached."
+msgstr ""
+
+#: ../../auto_examples/text/document_classification_20newsgroups.rst:18
+msgid ""
+"The bar plot indicates the accuracy, training time (normalized) and test "
+"time (normalized) of each classifier."
+msgstr ""
+
+#: ../../auto_examples/text/document_classification_20newsgroups.rst:23
+msgid ""
+"**Python source code:** "
+":download:`document_classification_20newsgroups.py "
+"<document_classification_20newsgroups.py>`"
+msgstr ""
+

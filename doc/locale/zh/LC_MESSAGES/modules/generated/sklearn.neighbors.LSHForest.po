@@ -1,0 +1,496 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.neighbors.LSHForest.rst:2
+msgid ":mod:`sklearn.neighbors`.LSHForest"
+msgstr ""
+
+#: :3
+msgid "Performs approximate nearest neighbor search using LSH forest."
+msgstr ""
+
+#: :5
+msgid ""
+"LSH Forest: Locality Sensitive Hashing forest [1] is an alternative "
+"method for vanilla approximate nearest neighbor search methods. LSH "
+"forest data structure has been implemented using sorted arrays and binary"
+" search and 32 bit fixed-length hashes. Random projection is used as the "
+"hash family which approximates cosine distance."
+msgstr ""
+
+#: :12
+msgid ""
+"The cosine distance is defined as ``1 - cosine_similarity``: the lowest "
+"value is 0 (identical point) but it is bounded above by 2 for the "
+"farthest points. Its value does not depend on the norm of the vector "
+"points but only on their relative angles."
+msgstr ""
+
+#: :17
+msgid "Read more in the :ref:`User Guide <approximate_nearest_neighbors>`."
+msgstr ""
+
+#: :21
+msgid "**n_estimators** : int (default = 10)"
+msgstr ""
+
+#: :23
+msgid "Number of trees in the LSH Forest."
+msgstr ""
+
+#: :25
+msgid "**min_hash_match** : int (default = 4)"
+msgstr ""
+
+#: :27
+msgid ""
+"lowest hash length to be searched when candidate selection is performed "
+"for nearest neighbors."
+msgstr ""
+
+#: :30
+msgid "**n_candidates** : int (default = 10)"
+msgstr ""
+
+#: :32
+msgid ""
+"Minimum number of candidates evaluated per estimator, assuming enough "
+"items meet the `min_hash_match` constraint."
+msgstr ""
+
+#: :35
+msgid "**n_neighbors** : int (default = 5)"
+msgstr ""
+
+#: :37
+msgid ""
+"Number of neighbors to be returned from query function when it is not "
+"provided to the :meth:`kneighbors` method."
+msgstr ""
+
+#: :40
+msgid "**radius** : float, optinal (default = 1.0)"
+msgstr ""
+
+#: :42
+msgid ""
+"Radius from the data point to its neighbors. This is the parameter space "
+"to use by default for the :meth`radius_neighbors` queries."
+msgstr ""
+
+#: :45
+msgid "**radius_cutoff_ratio** : float, optional (default = 0.9)"
+msgstr ""
+
+#: :47
+msgid ""
+"A value ranges from 0 to 1. Radius neighbors will be searched until the "
+"ratio between total neighbors within the radius and the total candidates "
+"becomes less than this value unless it is terminated by hash length "
+"reaching `min_hash_match`."
+msgstr ""
+
+#: :52
+msgid ""
+"**random_state** : int, RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :54
+msgid ""
+"If int, random_state is the seed used by the random number generator; If "
+"RandomState instance, random_state is the random number generator; If "
+"None, the random number generator is the RandomState instance used by "
+"`np.random`."
+msgstr ""
+
+#: :61
+msgid "**hash_functions_** : list of GaussianRandomProjectionHash objects"
+msgstr ""
+
+#: :63
+msgid ""
+"Hash function g(p,x) for a tree is an array of 32 randomly generated "
+"float arrays with the same dimenstion as the data set. This array is "
+"stored in GaussianRandomProjectionHash object and can be obtained from "
+"``components_`` attribute."
+msgstr ""
+
+#: :68
+msgid "**trees_** : array, shape (n_estimators, n_samples)"
+msgstr ""
+
+#: :70
+msgid ""
+"Each tree (corresponding to a hash function) contains an array of sorted "
+"hashed values. The array representation may change in future versions."
+msgstr ""
+
+#: :74
+msgid "**original_indices_** : array, shape (n_estimators, n_samples)"
+msgstr ""
+
+#: :76
+msgid "Original indices of sorted hashed values in the fitted index."
+msgstr ""
+
+#: :79
+msgid "References"
+msgstr ""
+
+#: :80
+msgid ""
+"M. Bawa, T. Condie and P. Ganesan, \"LSH Forest: Self-Tuning Indexes for "
+"Similarity Search\", WWW '05 Proceedings of the 14th international "
+"conference on World Wide Web,  651-660, 2005."
+msgstr ""
+
+#: :90 :36 :38
+msgid "Examples"
+msgstr ""
+
+#: :111
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.neighbors.LSHForest.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the LSH forest on the data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.neighbors.LSHForest.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kneighbors <sklearn.neighbors.LSHForest.kneighbors>`\\ (X[, "
+"n_neighbors, return_distance])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns n_neighbors of approximate nearest neighbors."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`kneighbors_graph <sklearn.neighbors.LSHForest.kneighbors_graph>`\\ "
+"([X, n_neighbors, mode])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Computes the (weighted) graph of k-Neighbors for points in X"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`partial_fit <sklearn.neighbors.LSHForest.partial_fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Inserts new data into the already fitted LSH Forest."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`radius_neighbors <sklearn.neighbors.LSHForest.radius_neighbors>`\\ "
+"(X[, radius, return_distance])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Finds the neighbors within a given radius of a point or points."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`radius_neighbors_graph "
+"<sklearn.neighbors.LSHForest.radius_neighbors_graph>`\\ ([X, radius, "
+"mode])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Computes the (weighted) graph of Neighbors for points in X"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.neighbors.LSHForest.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid ""
+"This creates binary hashes of input data points by getting the dot "
+"product of input points and hash_function then transforming the "
+"projection into a binary string array based on the sign "
+"(positive/negative) of the projection. A sorted array of binary hashes is"
+" created."
+msgstr ""
+
+#: :13 :7 :9 :17
+msgid "**X** : array_like or sparse (CSR) matrix, shape (n_samples, n_features)"
+msgstr ""
+
+#: :15
+msgid ""
+"List of n_features-dimensional data points. Each row corresponds to a "
+"single data point."
+msgstr ""
+
+#: :20
+msgid "**self** : object"
+msgstr ""
+
+#: :22
+msgid "Returns self."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :9
+msgid ""
+"List of n_features-dimensional data points.  Each row corresponds to a "
+"single query."
+msgstr ""
+
+#: :12
+msgid "**n_neighbors** : int, opitonal (default = None)"
+msgstr ""
+
+#: :14
+msgid ""
+"Number of neighbors required. If not provided, this will return the "
+"number specified at the initialization."
+msgstr ""
+
+#: :17 :27
+msgid "**return_distance** : boolean, optional (default = False)"
+msgstr ""
+
+#: :19 :29
+msgid "Returns the distances of neighbors if set to True."
+msgstr ""
+
+#: :23
+msgid "**dist** : array, shape (n_samples, n_neighbors)"
+msgstr ""
+
+#: :25
+msgid ""
+"Array representing the cosine distances to each point, only present if "
+"return_distance=True."
+msgstr ""
+
+#: :28
+msgid "**ind** : array, shape (n_samples, n_neighbors)"
+msgstr ""
+
+#: :30
+msgid "Indices of the approximate nearest points in the population matrix."
+msgstr ""
+
+#: :7
+msgid ""
+"**X** : array-like, shape (n_query, n_features),                 or "
+"(n_query, n_indexed) if metric == 'precomputed'"
+msgstr ""
+
+#: :9 :12
+msgid ""
+"The query point or points. If not provided, neighbors of each indexed "
+"point are returned. In this case, the query point is not considered its "
+"own neighbor."
+msgstr ""
+
+#: :13
+msgid "**n_neighbors** : int"
+msgstr ""
+
+#: :15
+msgid ""
+"Number of neighbors for each sample. (default is value passed to the "
+"constructor)."
+msgstr ""
+
+#: :18 :21
+msgid "**mode** : {'connectivity', 'distance'}, optional"
+msgstr ""
+
+#: :20 :23
+msgid ""
+"Type of returned matrix: 'connectivity' will return the connectivity "
+"matrix with ones and zeros, in 'distance' the edges are Euclidean "
+"distance between points."
+msgstr ""
+
+#: :26
+msgid "**A** : sparse matrix in CSR format, shape = [n_samples, n_samples_fit]"
+msgstr ""
+
+#: :28
+msgid ""
+"n_samples_fit is the number of samples in the fitted data A[i, j] is "
+"assigned the weight of edge that connects i to j."
+msgstr ""
+
+#: :33
+msgid ":obj:`NearestNeighbors.radius_neighbors_graph`"
+msgstr ""
+
+#: :3
+msgid ""
+"Inserts new data into the already fitted LSH Forest. Cost is proportional"
+" to new total size, so additions should be batched."
+msgstr ""
+
+#: :11
+msgid "New data point to be inserted into the LSH Forest."
+msgstr ""
+
+#: :5
+msgid ""
+"Return the indices and distances of some points from the dataset lying in"
+" a ball with size ``radius`` around the points of the query array. Points"
+" lying on the boundary are included in the results."
+msgstr ""
+
+#: :9
+msgid ""
+"The result points are *not* necessarily sorted by distance to their query"
+" point."
+msgstr ""
+
+#: :12
+msgid ""
+"LSH Forest being an approximate method, some true neighbors from the "
+"indexed dataset might be missing from the results."
+msgstr ""
+
+#: :19
+msgid ""
+"List of n_features-dimensional data points. Each row corresponds to a "
+"single query."
+msgstr ""
+
+#: :22 :16
+msgid "**radius** : float"
+msgstr ""
+
+#: :24
+msgid ""
+"Limiting distance of neighbors to return. (default is the value passed to"
+" the constructor)."
+msgstr ""
+
+#: :33
+msgid "**dist** : array, shape (n_samples,) of arrays"
+msgstr ""
+
+#: :35
+msgid ""
+"Each element is an array representing the cosine distances to some points"
+" found within ``radius`` of the respective query. Only present if "
+"``return_distance=True``."
+msgstr ""
+
+#: :39
+msgid "**ind** : array, shape (n_samples,) of arrays"
+msgstr ""
+
+#: :41
+msgid ""
+"Each element is an array of indices for neighbors within ``radius`` of "
+"the respective query."
+msgstr ""
+
+#: :5
+msgid "Neighborhoods are restricted the points at a distance lower than radius."
+msgstr ""
+
+#: :10
+msgid "**X** : array-like, shape = [n_samples, n_features], optional"
+msgstr ""
+
+#: :18
+msgid "Radius of neighborhoods. (default is the value passed to the constructor)."
+msgstr ""
+
+#: :29
+msgid "**A** : sparse matrix in CSR format, shape = [n_samples, n_samples]"
+msgstr ""
+
+#: :31
+msgid "A[i, j] is assigned the weight of edge that connects i to j."
+msgstr ""
+
+#: :35
+msgid ":obj:`kneighbors_graph`"
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.LSHForest.examples:3
+msgid "Examples using ``sklearn.neighbors.LSHForest``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.LSHForest.examples:25
+msgid ":ref:`example_neighbors_plot_approximate_nearest_neighbors_hyperparameters.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.neighbors.LSHForest.examples:45
+msgid ":ref:`example_neighbors_plot_approximate_nearest_neighbors_scalability.py`"
+msgstr ""
+

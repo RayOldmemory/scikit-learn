@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.decomposition.DictionaryLearning.rst:2
+msgid ":mod:`sklearn.decomposition`.DictionaryLearning"
+msgstr ""
+
+#: :3
+msgid "Dictionary learning"
+msgstr ""
+
+#: :5
+msgid ""
+"Finds a dictionary (a set of atoms) that can best be used to represent "
+"data using a sparse code."
+msgstr ""
+
+#: :8
+msgid "Solves the optimization problem::"
+msgstr ""
+
+#: :14
+msgid "Read more in the :ref:`User Guide <DictionaryLearning>`."
+msgstr ""
+
+#: :18
+msgid "**n_components** : int,"
+msgstr ""
+
+#: :20
+msgid "number of dictionary elements to extract"
+msgstr ""
+
+#: :22
+msgid "**alpha** : float,"
+msgstr ""
+
+#: :24
+msgid "sparsity controlling parameter"
+msgstr ""
+
+#: :26
+msgid "**max_iter** : int,"
+msgstr ""
+
+#: :28
+msgid "maximum number of iterations to perform"
+msgstr ""
+
+#: :30
+msgid "**tol** : float,"
+msgstr ""
+
+#: :32
+msgid "tolerance for numerical error"
+msgstr ""
+
+#: :34
+msgid "**fit_algorithm** : {'lars', 'cd'}"
+msgstr ""
+
+#: :36
+msgid ""
+"lars: uses the least angle regression method to solve the lasso problem "
+"(linear_model.lars_path) cd: uses the coordinate descent method to "
+"compute the Lasso solution (linear_model.Lasso). Lars will be faster if "
+"the estimated components are sparse."
+msgstr ""
+
+#: :42
+msgid "*cd* coordinate descent method to improve speed."
+msgstr ""
+
+#: :45
+msgid ""
+"**transform_algorithm** : {'lasso_lars', 'lasso_cd', 'lars', 'omp',     "
+"'threshold'}"
+msgstr ""
+
+#: :47
+msgid ""
+"Algorithm used to transform the data lars: uses the least angle "
+"regression method (linear_model.lars_path) lasso_lars: uses Lars to "
+"compute the Lasso solution lasso_cd: uses the coordinate descent method "
+"to compute the Lasso solution (linear_model.Lasso). lasso_lars will be "
+"faster if the estimated components are sparse. omp: uses orthogonal "
+"matching pursuit to estimate the sparse solution threshold: squashes to "
+"zero all coefficients less than alpha from the projection ``dictionary * "
+"X'``"
+msgstr ""
+
+#: :57
+msgid "*lasso_cd* coordinate descent method to improve speed."
+msgstr ""
+
+#: :60
+msgid "**transform_n_nonzero_coefs** : int, ``0.1 * n_features`` by default"
+msgstr ""
+
+#: :62
+msgid ""
+"Number of nonzero coefficients to target in each column of the solution. "
+"This is only used by `algorithm='lars'` and `algorithm='omp'` and is "
+"overridden by `alpha` in the `omp` case."
+msgstr ""
+
+#: :66
+msgid "**transform_alpha** : float, 1. by default"
+msgstr ""
+
+#: :68
+msgid ""
+"If `algorithm='lasso_lars'` or `algorithm='lasso_cd'`, `alpha` is the "
+"penalty applied to the L1 norm. If `algorithm='threshold'`, `alpha` is "
+"the absolute value of the threshold below which coefficients will be "
+"squashed to zero. If `algorithm='omp'`, `alpha` is the tolerance "
+"parameter: the value of the reconstruction error targeted. In this case, "
+"it overrides `n_nonzero_coefs`."
+msgstr ""
+
+#: :76
+msgid "**split_sign** : bool, False by default"
+msgstr ""
+
+#: :78
+msgid ""
+"Whether to split the sparse feature vector into the concatenation of its "
+"negative part and its positive part. This can improve the performance of "
+"downstream classifiers."
+msgstr ""
+
+#: :82
+msgid "**n_jobs** : int,"
+msgstr ""
+
+#: :84
+msgid "number of parallel jobs to run"
+msgstr ""
+
+#: :86
+msgid "**code_init** : array of shape (n_samples, n_components),"
+msgstr ""
+
+#: :88
+msgid "initial value for the code, for warm restart"
+msgstr ""
+
+#: :90
+msgid "**dict_init** : array of shape (n_components, n_features),"
+msgstr ""
+
+#: :92
+msgid "initial values for the dictionary, for warm restart"
+msgstr ""
+
+#: :94
+msgid "**verbose :** :"
+msgstr ""
+
+#: :96
+msgid "degree of verbosity of the printed output"
+msgstr ""
+
+#: :98
+msgid "**random_state** : int or RandomState"
+msgstr ""
+
+#: :100
+msgid "Pseudo number generator state used for random sampling."
+msgstr ""
+
+#: :104
+msgid "**components_** : array, [n_components, n_features]"
+msgstr ""
+
+#: :106
+msgid "dictionary atoms extracted from the data"
+msgstr ""
+
+#: :108
+msgid "**error_** : array"
+msgstr ""
+
+#: :110
+msgid "vector of errors at each iteration"
+msgstr ""
+
+#: :112
+msgid "**n_iter_** : int"
+msgstr ""
+
+#: :114
+msgid "Number of iterations run."
+msgstr ""
+
+#: :118
+msgid ""
+":obj:`SparseCoder`, :obj:`MiniBatchDictionaryLearning`, :obj:`SparsePCA`,"
+" :obj:`MiniBatchSparsePCA`"
+msgstr ""
+
+#: :121
+msgid "Notes"
+msgstr ""
+
+#: :122
+msgid "**References:**"
+msgstr ""
+
+#: :124
+msgid ""
+"J. Mairal, F. Bach, J. Ponce, G. Sapiro, 2009: Online dictionary learning"
+" for sparse coding (http://www.di.ens.fr/sierra/pdfs/icml09.pdf)"
+msgstr ""
+
+#: :128
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.decomposition.DictionaryLearning.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model from data in X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.decomposition.DictionaryLearning.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.decomposition.DictionaryLearning.get_params>`\\"
+" ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.decomposition.DictionaryLearning.set_params>`\\"
+" (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform <sklearn.decomposition.DictionaryLearning.transform>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Encode the data as a sparse combination of the dictionary atoms."
+msgstr ""
+
+#: :7
+msgid "**X: array-like, shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :9
+msgid ""
+"Training vector, where n_samples in the number of samples and n_features "
+"is the number of features."
+msgstr ""
+
+#: :14
+msgid "**self: object** :"
+msgstr ""
+
+#: :16
+msgid "Returns the object itself"
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid "Coding method is determined by the object parameter `transform_algorithm`."
+msgstr ""
+
+#: :10
+msgid "**X** : array of shape (n_samples, n_features)"
+msgstr ""
+
+#: :12
+msgid ""
+"Test data to be transformed, must have the same number of features as the"
+" data used to train the model."
+msgstr ""
+
+#: :17
+msgid "**X_new** : array, shape (n_samples, n_components)"
+msgstr ""
+
+#: :19
+msgid "Transformed data"
+msgstr ""
+

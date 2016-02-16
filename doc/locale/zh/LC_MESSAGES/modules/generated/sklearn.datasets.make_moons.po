@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.make_moons.rst:2
+msgid ":mod:`sklearn.datasets`.make_moons"
+msgstr ""
+
+#: :3
+msgid "Make two interleaving half circles"
+msgstr ""
+
+#: :5
+msgid ""
+"A simple toy dataset to visualize clustering and classification "
+"algorithms."
+msgstr ""
+
+#: :10
+msgid "**n_samples** : int, optional (default=100)"
+msgstr ""
+
+#: :12
+msgid "The total number of points generated."
+msgstr ""
+
+#: :14
+msgid "**shuffle** : bool, optional (default=True)"
+msgstr ""
+
+#: :16
+msgid "Whether to shuffle the samples."
+msgstr ""
+
+#: :18
+msgid "**noise** : double or None (default=None)"
+msgstr ""
+
+#: :20
+msgid "Standard deviation of Gaussian noise added to the data."
+msgstr ""
+
+#: :22
+msgid "**Read more in the :ref:`User Guide <sample_generators>`.** :"
+msgstr ""
+
+#: :26
+msgid "**X** : array of shape [n_samples, 2]"
+msgstr ""
+
+#: :28
+msgid "The generated samples."
+msgstr ""
+
+#: :30
+msgid "**y** : array of shape [n_samples]"
+msgstr ""
+
+#: :32
+msgid "The integer labels (0 or 1) for class membership of each sample."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_moons.examples:3
+msgid "Examples using ``sklearn.datasets.make_moons``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_moons.examples:25
+msgid ":ref:`example_classification_plot_classifier_comparison.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_moons.examples:45
+msgid ":ref:`example_cluster_plot_cluster_comparison.py`"
+msgstr ""
+

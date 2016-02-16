@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/plot_stock_market.rst:8
+msgid "Visualizing the stock market structure"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:10
+msgid ""
+"This example employs several unsupervised learning techniques to extract "
+"the stock market structure from variations in historical quotes."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:13
+msgid ""
+"The quantity that we use is the daily variation in quote price: quotes "
+"that are linked tend to cofluctuate during a day."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:19
+msgid "Learning a graph structure"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:21
+msgid ""
+"We use sparse inverse covariance estimation to find which quotes are "
+"correlated conditionally on the others. Specifically, sparse inverse "
+"covariance gives us a graph, that is a list of connection. For each "
+"symbol, the symbols that it is connected too are those useful to explain "
+"its fluctuations."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:28
+msgid "Clustering"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:30
+msgid ""
+"We use clustering to group together quotes that behave similarly. Here, "
+"amongst the :ref:`various clustering techniques <clustering>` available "
+"in the scikit-learn, we use :ref:`affinity_propagation` as it does not "
+"enforce equal-size clusters, and it can choose automatically the number "
+"of clusters from the data."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:36
+msgid ""
+"Note that this gives us a different indication than the graph, as the "
+"graph reflects conditional relations between variables, while the "
+"clustering reflects marginal properties: variables clustered together can"
+" be considered as having a similar impact at the level of the full stock "
+"market."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:43
+msgid "Embedding in 2D space"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:45
+msgid ""
+"For visualization purposes, we need to lay out the different symbols on a"
+" 2D canvas. For this we use :ref:`manifold` techniques to retrieve 2D "
+"embedding."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:51
+msgid "Visualization"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:53
+msgid ""
+"The output of the 3 models are combined in a 2D graph where nodes "
+"represents the stocks and edges the:"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:56
+msgid "cluster labels are used to define the color of the nodes"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:57
+msgid "the sparse covariance model is used to display the strength of the edges"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:58
+msgid "the 2D embedding is used to position the nodes in the plan"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:60
+msgid ""
+"This example has a fair amount of visualization-related code, as "
+"visualization is crucial here to display the graph. One of the challenge "
+"is to position the labels minimizing overlap. For this we use an "
+"heuristic based on the direction of the nearest neighbor along each axis."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:72
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:89
+msgid ""
+"**Python source code:** :download:`plot_stock_market.py "
+"<plot_stock_market.py>`"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_stock_market.rst:94
+msgid ""
+"**Total running time of the example:**  26.12 seconds ( 0 minutes  26.12 "
+"seconds)"
+msgstr ""
+

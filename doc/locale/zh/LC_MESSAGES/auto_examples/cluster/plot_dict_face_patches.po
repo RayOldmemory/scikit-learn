@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/cluster/plot_dict_face_patches.rst:7
+msgid "Online learning of a dictionary of parts of faces"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_dict_face_patches.rst:9
+msgid ""
+"This example uses a large dataset of faces to learn a set of 20 x 20 "
+"images patches that constitute faces."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_dict_face_patches.rst:12
+msgid ""
+"From the programming standpoint, it is interesting because it shows how "
+"to use the online API of the scikit-learn to process a very large dataset"
+" by chunks. The way we proceed is that we load an image at a time and "
+"extract randomly 50 patches from this image. Once we have accumulated 500"
+" of these patches (using 10 images), we run the `partial_fit` method of "
+"the online KMeans object, MiniBatchKMeans."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_dict_face_patches.rst:19
+msgid ""
+"The verbose setting on the MiniBatchKMeans enables us to see that some "
+"clusters are reassigned during the successive calls to partial-fit. This "
+"is because the number of patches that they represent has become too low, "
+"and it is better to choose a random new cluster."
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_dict_face_patches.rst:31
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_dict_face_patches.rst:63
+msgid ""
+"**Python source code:** :download:`plot_dict_face_patches.py "
+"<plot_dict_face_patches.py>`"
+msgstr ""
+
+#: ../../auto_examples/cluster/plot_dict_face_patches.rst:68
+msgid ""
+"**Total running time of the example:**  19.87 seconds ( 0 minutes  19.87 "
+"seconds)"
+msgstr ""
+

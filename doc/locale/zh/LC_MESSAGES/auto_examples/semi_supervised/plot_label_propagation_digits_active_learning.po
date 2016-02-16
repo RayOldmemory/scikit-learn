@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/semi_supervised/plot_label_propagation_digits_active_learning.rst:8
+msgid "Label Propagation digits active learning"
+msgstr ""
+
+#: ../../auto_examples/semi_supervised/plot_label_propagation_digits_active_learning.rst:10
+msgid ""
+"Demonstrates an active learning technique to learn handwritten digits "
+"using label propagation."
+msgstr ""
+
+#: ../../auto_examples/semi_supervised/plot_label_propagation_digits_active_learning.rst:13
+msgid ""
+"We start by training a label propagation model with only 10 labeled "
+"points, then we select the top five most uncertain points to label. Next,"
+" we train with 15 labeled points (original 10 + 5 new ones). We repeat "
+"this process four times to have a model trained with 30 labeled examples."
+msgstr ""
+
+#: ../../auto_examples/semi_supervised/plot_label_propagation_digits_active_learning.rst:18
+msgid ""
+"A plot will appear showing the top 5 most uncertain digits for each "
+"iteration of training. These may or may not contain mistakes, but we will"
+" train the next model with their true labels."
+msgstr ""
+
+#: ../../auto_examples/semi_supervised/plot_label_propagation_digits_active_learning.rst:28
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/semi_supervised/plot_label_propagation_digits_active_learning.rst:170
+msgid ""
+"**Python source code:** "
+":download:`plot_label_propagation_digits_active_learning.py "
+"<plot_label_propagation_digits_active_learning.py>`"
+msgstr ""
+
+#: ../../auto_examples/semi_supervised/plot_label_propagation_digits_active_learning.rst:175
+msgid ""
+"**Total running time of the example:**  3.14 seconds ( 0 minutes  3.14 "
+"seconds)"
+msgstr ""
+

@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/svm/plot_svm_nonlinear.rst:8
+msgid "Non-linear SVM"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_svm_nonlinear.rst:10
+msgid ""
+"Perform binary classification using non-linear SVC with RBF kernel. The "
+"target to predict is a XOR of the inputs."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_svm_nonlinear.rst:14
+msgid "The color map illustrates the decision function learned by the SVC."
+msgstr ""
+
+#: ../../auto_examples/svm/plot_svm_nonlinear.rst:24
+msgid ""
+"**Python source code:** :download:`plot_svm_nonlinear.py "
+"<plot_svm_nonlinear.py>`"
+msgstr ""
+
+#: ../../auto_examples/svm/plot_svm_nonlinear.rst:29
+msgid ""
+"**Total running time of the example:**  1.93 seconds ( 0 minutes  1.93 "
+"seconds)"
+msgstr ""
+

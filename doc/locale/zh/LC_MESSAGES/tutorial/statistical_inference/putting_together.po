@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../tutorial/statistical_inference/putting_together.rst:3
+msgid "Putting it all together"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:9
+msgid "Pipelining"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:11
+msgid ""
+"We have seen that some estimators can transform data and that some "
+"estimators can predict variables. We can also create combined estimators:"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:26
+msgid "Face recognition with eigenfaces"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:28
+msgid ""
+"The dataset used in this example is a preprocessed excerpt of the "
+"\"Labeled Faces in the Wild\", also known as LFW_:"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:31
+msgid "http://vis-www.cs.umass.edu/lfw/lfw-funneled.tgz (233MB)"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:48
+msgid "|prediction|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:50
+msgid "|eigenfaces|"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:54
+msgid "**Prediction**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:56
+msgid "**Eigenfaces**"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:58
+msgid "Expected results for the top 5 most represented people in the dataset::"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:72
+msgid "Open problem: Stock Market Structure"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:74
+msgid ""
+"Can we predict the variation in stock prices for Google over a given time"
+" frame?"
+msgstr ""
+
+#: ../../tutorial/statistical_inference/putting_together.rst:76
+msgid ":ref:`stock_market`"
+msgstr ""
+

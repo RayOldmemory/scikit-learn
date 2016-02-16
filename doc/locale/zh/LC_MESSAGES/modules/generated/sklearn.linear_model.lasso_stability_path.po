@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.lasso_stability_path.rst:2
+msgid ":mod:`sklearn.linear_model`.lasso_stability_path"
+msgstr ""
+
+#: :3
+msgid "Stabiliy path based on randomized Lasso estimates"
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <randomized_l1>`."
+msgstr ""
+
+#: :9
+msgid "**X** : array-like, shape = [n_samples, n_features]"
+msgstr ""
+
+#: :11
+msgid "training data."
+msgstr ""
+
+#: :13
+msgid "**y** : array-like, shape = [n_samples]"
+msgstr ""
+
+#: :15
+msgid "target values."
+msgstr ""
+
+#: :17
+msgid "**scaling** : float, optional, default=0.5"
+msgstr ""
+
+#: :19
+msgid ""
+"The alpha parameter in the stability selection article used to randomly "
+"scale the features. Should be between 0 and 1."
+msgstr ""
+
+#: :22
+msgid "**random_state** : integer or numpy.random.RandomState, optional"
+msgstr ""
+
+#: :24
+msgid "The generator used to randomize the design."
+msgstr ""
+
+#: :26
+msgid "**n_resampling** : int, optional, default=200"
+msgstr ""
+
+#: :28
+msgid "Number of randomized models."
+msgstr ""
+
+#: :30
+msgid "**n_grid** : int, optional, default=100"
+msgstr ""
+
+#: :32
+msgid ""
+"Number of grid points. The path is linearly reinterpolated on a grid "
+"between 0 and 1 before computing the scores."
+msgstr ""
+
+#: :35
+msgid "**sample_fraction** : float, optional, default=0.75"
+msgstr ""
+
+#: :37
+msgid ""
+"The fraction of samples to be used in each randomized design. Should be "
+"between 0 and 1. If 1, all samples are used."
+msgstr ""
+
+#: :40
+msgid "**eps** : float, optional"
+msgstr ""
+
+#: :42
+msgid "Smallest value of alpha / alpha_max considered"
+msgstr ""
+
+#: :44
+msgid "**n_jobs** : integer, optional"
+msgstr ""
+
+#: :46
+msgid "Number of CPUs to use during the resampling. If '-1', use all the CPUs"
+msgstr ""
+
+#: :49
+msgid "**verbose** : boolean or integer, optional"
+msgstr ""
+
+#: :51
+msgid "Sets the verbosity amount"
+msgstr ""
+
+#: :55
+msgid "**alphas_grid** : array, shape ~ [n_grid]"
+msgstr ""
+
+#: :57
+msgid "The grid points between 0 and 1: alpha/alpha_max"
+msgstr ""
+
+#: :59
+msgid "**scores_path** : array, shape = [n_features, n_grid]"
+msgstr ""
+
+#: :61
+msgid "The scores for each feature along the path."
+msgstr ""
+
+#: :64
+msgid "Notes"
+msgstr ""
+
+#: :65
+msgid "See examples/linear_model/plot_sparse_recovery.py for an example."
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.lasso_stability_path.examples:3
+msgid "Examples using ``sklearn.linear_model.lasso_stability_path``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.lasso_stability_path.examples:25
+msgid ":ref:`example_linear_model_plot_sparse_recovery.py`"
+msgstr ""
+

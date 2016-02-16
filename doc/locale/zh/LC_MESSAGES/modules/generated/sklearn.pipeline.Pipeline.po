@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.rst:2
+msgid ":mod:`sklearn.pipeline`.Pipeline"
+msgstr ""
+
+#: :3
+msgid "Pipeline of transforms with a final estimator."
+msgstr ""
+
+#: :5
+msgid ""
+"Sequentially apply a list of transforms and a final estimator. "
+"Intermediate steps of the pipeline must be 'transforms', that is, they "
+"must implement fit and transform methods. The final estimator only needs "
+"to implement fit."
+msgstr ""
+
+#: :10
+msgid ""
+"The purpose of the pipeline is to assemble several steps that can be "
+"cross-validated together while setting different parameters. For this, it"
+" enables setting parameters of the various steps using their names and "
+"the parameter name separated by a '__', as in the example below."
+msgstr ""
+
+#: :15
+msgid "Read more in the :ref:`User Guide <pipeline>`."
+msgstr ""
+
+#: :19
+msgid "**steps** : list"
+msgstr ""
+
+#: :21
+msgid ""
+"List of (name, transform) tuples (implementing fit/transform) that are "
+"chained, in the order in which they are chained, with the last object an "
+"estimator."
+msgstr ""
+
+#: :27
+msgid "**named_steps** : dict"
+msgstr ""
+
+#: :29
+msgid ""
+"Read-only attribute to access any step parameter by user given name. Keys"
+" are step names and values are steps parameters."
+msgstr ""
+
+#: :33
+msgid "Examples"
+msgstr ""
+
+#: :63
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function <sklearn.pipeline.Pipeline.decision_function>`\\ "
+"(X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Applies transforms to the data, and the decision_function method of the "
+"final estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.pipeline.Pipeline.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid ""
+"Fit all the transforms one after the other and transform the data, then "
+"fit the transformed data using the final estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit_predict <sklearn.pipeline.Pipeline.fit_predict>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Applies fit_predict of last step in pipeline after transforms."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit_transform <sklearn.pipeline.Pipeline.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid ""
+"Fit all the transforms one after the other and transform the data, then "
+"use fit_transform on transformed data using the final estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.pipeline.Pipeline.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`inverse_transform <sklearn.pipeline.Pipeline.inverse_transform>`\\ "
+"(X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid "Applies inverse transform to the data."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.pipeline.Pipeline.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Applies transforms to the data, and the predict method of the final "
+"estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`predict_log_proba <sklearn.pipeline.Pipeline.predict_log_proba>`\\ "
+"(X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Applies transforms to the data, and the predict_log_proba method of the "
+"final estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict_proba <sklearn.pipeline.Pipeline.predict_proba>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Applies transforms to the data, and the predict_proba method of the final"
+" estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`score <sklearn.pipeline.Pipeline.score>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Applies transforms to the data, and the score method of the final "
+"estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`set_params <sklearn.pipeline.Pipeline.set_params>`\\ (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`transform <sklearn.pipeline.Pipeline.transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+"Applies transforms to the data, and the transform method of the final "
+"estimator."
+msgstr ""
+
+#: :3
+msgid ""
+"Applies transforms to the data, and the decision_function method of the "
+"final estimator. Valid only if the final estimator implements "
+"decision_function."
+msgstr ""
+
+#: :9 :8 :11 :10
+msgid "**X** : iterable"
+msgstr ""
+
+#: :11
+msgid ""
+"Data to predict on. Must fulfill input requirements of first step of the "
+"pipeline."
+msgstr ""
+
+#: :10 :13 :11
+msgid ""
+"Training data. Must fulfill input requirements of first step of the "
+"pipeline."
+msgstr ""
+
+#: :13 :16 :14
+msgid "**y** : iterable, default=None"
+msgstr ""
+
+#: :15 :18 :16
+msgid ""
+"Training targets. Must fulfill label requirements for all steps of the "
+"pipeline."
+msgstr ""
+
+#: :5
+msgid ""
+"Applies fit_transforms of a pipeline to the data, followed by the "
+"fit_predict method of the final estimator in the pipeline. Valid only if "
+"the final estimator implements fit_predict."
+msgstr ""
+
+#: :3
+msgid ""
+"Applies inverse transform to the data. Starts with the last step of the "
+"pipeline and applies ``inverse_transform`` in inverse order of the "
+"pipeline steps. Valid only if all steps of the pipeline implement "
+"inverse_transform."
+msgstr ""
+
+#: :12
+msgid ""
+"Data to inverse transform. Must fulfill output requirements of the last "
+"step of the pipeline."
+msgstr ""
+
+#: :3
+msgid ""
+"Applies transforms to the data, and the predict method of the final "
+"estimator. Valid only if the final estimator implements predict."
+msgstr ""
+
+#: :3
+msgid ""
+"Applies transforms to the data, and the predict_log_proba method of the "
+"final estimator. Valid only if the final estimator implements "
+"predict_log_proba."
+msgstr ""
+
+#: :3
+msgid ""
+"Applies transforms to the data, and the predict_proba method of the final"
+" estimator. Valid only if the final estimator implements predict_proba."
+msgstr ""
+
+#: :3
+msgid ""
+"Applies transforms to the data, and the score method of the final "
+"estimator. Valid only if the final estimator implements score."
+msgstr ""
+
+#: :11
+msgid ""
+"Data to score. Must fulfill input requirements of first step of the "
+"pipeline."
+msgstr ""
+
+#: :16
+msgid ""
+"Targets used for scoring. Must fulfill label requirements for all steps "
+"of the pipeline."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: :3
+msgid ""
+"Applies transforms to the data, and the transform method of the final "
+"estimator. Valid only if the final estimator implements transform."
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:3
+msgid "Examples using ``sklearn.pipeline.Pipeline``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:25
+msgid ":ref:`example_feature_stacker.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:45
+msgid ":ref:`example_missing_values.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:65
+msgid ":ref:`example_plot_digits_pipe.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:85
+msgid ":ref:`example_hetero_feature_union.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:105
+msgid ":ref:`example_plot_kernel_approximation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:125
+msgid ":ref:`example_cluster_plot_feature_agglomeration_vs_univariate_selection.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:145
+msgid ":ref:`example_model_selection_plot_underfitting_overfitting.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:165
+msgid ":ref:`example_model_selection_grid_search_text_feature_extraction.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:185
+msgid ":ref:`example_neural_networks_plot_rbm_logistic_classification.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:205
+msgid ":ref:`example_svm_plot_svm_anova.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.pipeline.Pipeline.examples:225
+msgid ":ref:`example_text_document_classification_20newsgroups.py`"
+msgstr ""
+

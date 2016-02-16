@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.datasets.make_sparse_coded_signal.rst:2
+msgid ":mod:`sklearn.datasets`.make_sparse_coded_signal"
+msgstr ""
+
+#: :3
+msgid "Generate a signal as a sparse combination of dictionary elements."
+msgstr ""
+
+#: :5
+msgid ""
+"Returns a matrix Y = DX, such as D is (n_features, n_components), X is "
+"(n_components, n_samples) and each column of X has exactly "
+"n_nonzero_coefs non-zero elements."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <sample_generators>`."
+msgstr ""
+
+#: :13
+msgid "**n_samples** : int"
+msgstr ""
+
+#: :15
+msgid "number of samples to generate"
+msgstr ""
+
+#: :17
+msgid "**n_components:  int,** :"
+msgstr ""
+
+#: :19
+msgid "number of components in the dictionary"
+msgstr ""
+
+#: :21
+msgid "**n_features** : int"
+msgstr ""
+
+#: :23
+msgid "number of features of the dataset to generate"
+msgstr ""
+
+#: :25
+msgid "**n_nonzero_coefs** : int"
+msgstr ""
+
+#: :27
+msgid "number of active (non-zero) coefficients in each sample"
+msgstr ""
+
+#: :29
+msgid "**random_state: int or RandomState instance, optional (default=None)** :"
+msgstr ""
+
+#: :31
+msgid "seed used by the pseudo random number generator"
+msgstr ""
+
+#: :35
+msgid "**data: array of shape [n_features, n_samples]** :"
+msgstr ""
+
+#: :37
+msgid "The encoded signal (Y)."
+msgstr ""
+
+#: :39
+msgid "**dictionary: array of shape [n_features, n_components]** :"
+msgstr ""
+
+#: :41
+msgid "The dictionary with normalized components (D)."
+msgstr ""
+
+#: :43
+msgid "**code: array of shape [n_components, n_samples]** :"
+msgstr ""
+
+#: :45
+msgid ""
+"The sparse code such that each column of this matrix has exactly "
+"n_nonzero_coefs non-zero items (X)."
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_sparse_coded_signal.examples:3
+msgid "Examples using ``sklearn.datasets.make_sparse_coded_signal``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.datasets.make_sparse_coded_signal.examples:25
+msgid ":ref:`example_linear_model_plot_omp.py`"
+msgstr ""
+

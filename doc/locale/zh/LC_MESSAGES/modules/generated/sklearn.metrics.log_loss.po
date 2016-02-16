@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.log_loss.rst:2
+msgid ":mod:`sklearn.metrics`.log_loss"
+msgstr ""
+
+#: :3
+msgid "Log loss, aka logistic loss or cross-entropy loss."
+msgstr ""
+
+#: :5
+msgid ""
+"This is the loss function used in (multinomial) logistic regression and "
+"extensions of it such as neural networks, defined as the negative log-"
+"likelihood of the true labels given a probabilistic classifier's "
+"predictions. For a single sample with true label yt in {0,1} and "
+"estimated probability yp that yt = 1, the log loss is"
+msgstr ""
+
+#: :11
+msgid "-log P(yt|yp) = -(yt log(yp) + (1 - yt) log(1 - yp))"
+msgstr ""
+
+#: :13
+msgid "Read more in the :ref:`User Guide <log_loss>`."
+msgstr ""
+
+#: :17
+msgid "**y_true** : array-like or label indicator matrix"
+msgstr ""
+
+#: :19
+msgid "Ground truth (correct) labels for n_samples samples."
+msgstr ""
+
+#: :21
+msgid "**y_pred** : array-like of float, shape = (n_samples, n_classes)"
+msgstr ""
+
+#: :23
+msgid ""
+"Predicted probabilities, as returned by a classifier's predict_proba "
+"method."
+msgstr ""
+
+#: :26
+msgid "**eps** : float"
+msgstr ""
+
+#: :28
+msgid ""
+"Log loss is undefined for p=0 or p=1, so probabilities are clipped to "
+"max(eps, min(1 - eps, p))."
+msgstr ""
+
+#: :31
+msgid "**normalize** : bool, optional (default=True)"
+msgstr ""
+
+#: :33
+msgid ""
+"If true, return the mean loss per sample. Otherwise, return the sum of "
+"the per-sample losses."
+msgstr ""
+
+#: :36
+msgid "**sample_weight** : array-like of shape = [n_samples], optional"
+msgstr ""
+
+#: :38
+msgid "Sample weights."
+msgstr ""
+
+#: :42
+msgid "**loss** : float"
+msgstr ""
+
+#: :45
+msgid "Notes"
+msgstr ""
+
+#: :46
+msgid "The logarithm used is the natural logarithm (base-e)."
+msgstr ""
+
+#: :49
+msgid "References"
+msgstr ""
+
+#: :50
+msgid ""
+"C.M. Bishop (2006). Pattern Recognition and Machine Learning. Springer, "
+"p. 209."
+msgstr ""
+
+#: :56
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.log_loss.examples:3
+msgid "Examples using ``sklearn.metrics.log_loss``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.log_loss.examples:25
+msgid ":ref:`example_calibration_plot_calibration_multiclass.py`"
+msgstr ""
+

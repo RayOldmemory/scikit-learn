@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cross_validation.permutation_test_score.rst:2
+msgid ":mod:`sklearn.cross_validation`.permutation_test_score"
+msgstr ""
+
+#: :3
+msgid "Evaluate the significance of a cross-validated score with permutations"
+msgstr ""
+
+#: :5
+msgid "Read more in the :ref:`User Guide <cross_validation>`."
+msgstr ""
+
+#: :9
+msgid "**estimator** : estimator object implementing 'fit'"
+msgstr ""
+
+#: :11
+msgid "The object to use to fit the data."
+msgstr ""
+
+#: :13
+msgid "**X** : array-like of shape at least 2D"
+msgstr ""
+
+#: :15
+msgid "The data to fit."
+msgstr ""
+
+#: :17
+msgid "**y** : array-like"
+msgstr ""
+
+#: :19
+msgid "The target variable to try to predict in the case of supervised learning."
+msgstr ""
+
+#: :22
+msgid "**scoring** : string, callable or None, optional, default: None"
+msgstr ""
+
+#: :24
+msgid ""
+"A string (see model evaluation documentation) or a scorer callable object"
+" / function with signature ``scorer(estimator, X, y)``."
+msgstr ""
+
+#: :28
+msgid "**cv** : int, cross-validation generator or an iterable, optional"
+msgstr ""
+
+#: :30
+msgid ""
+"Determines the cross-validation splitting strategy. Possible inputs for "
+"cv are:"
+msgstr ""
+
+#: :33
+msgid "None, to use the default 3-fold cross-validation,"
+msgstr ""
+
+#: :34
+msgid "integer, to specify the number of folds."
+msgstr ""
+
+#: :35
+msgid "An object to be used as a cross-validation generator."
+msgstr ""
+
+#: :36
+msgid "An iterable yielding train/test splits."
+msgstr ""
+
+#: :38
+msgid ""
+"For integer/None inputs, if ``y`` is binary or multiclass, "
+":class:`StratifiedKFold` used. If the estimator is a classifier or if "
+"``y`` is neither binary nor multiclass, :class:`KFold` is used."
+msgstr ""
+
+#: :42
+msgid ""
+"Refer :ref:`User Guide <cross_validation>` for the various cross-"
+"validation strategies that can be used here."
+msgstr ""
+
+#: :45
+msgid "**n_permutations** : integer, optional"
+msgstr ""
+
+#: :47
+msgid "Number of times to permute ``y``."
+msgstr ""
+
+#: :49
+msgid "**n_jobs** : integer, optional"
+msgstr ""
+
+#: :51
+msgid "The number of CPUs to use to do the computation. -1 means 'all CPUs'."
+msgstr ""
+
+#: :54
+msgid "**labels** : array-like of shape [n_samples] (optional)"
+msgstr ""
+
+#: :56
+msgid ""
+"Labels constrain the permutation among groups of samples with a same "
+"label."
+msgstr ""
+
+#: :59
+msgid "**random_state** : RandomState or an int seed (0 by default)"
+msgstr ""
+
+#: :61
+msgid ""
+"A random number generator instance to define the state of the random "
+"permutations generator."
+msgstr ""
+
+#: :64
+msgid "**verbose** : integer, optional"
+msgstr ""
+
+#: :66
+msgid "The verbosity level."
+msgstr ""
+
+#: :70
+msgid "**score** : float"
+msgstr ""
+
+#: :72
+msgid "The true score without permuting targets."
+msgstr ""
+
+#: :74
+msgid "**permutation_scores** : array, shape (n_permutations,)"
+msgstr ""
+
+#: :76
+msgid "The scores obtained for each permutations."
+msgstr ""
+
+#: :78
+msgid "**pvalue** : float"
+msgstr ""
+
+#: :80
+msgid ""
+"The returned value equals p-value if `scoring` returns bigger numbers for"
+" better scores (e.g., accuracy_score). If `scoring` is rather a loss "
+"function (i.e. when lower is better such as with `mean_squared_error`) "
+"then this is actually the complement of the p-value:  1 - p-value."
+msgstr ""
+
+#: :87
+msgid "Notes"
+msgstr ""
+
+#: :88
+msgid "This function implements Test 1 in:"
+msgstr ""
+
+#: :90
+msgid ""
+"Ojala and Garriga. Permutation Tests for Studying Classifier Performance."
+"  The Journal of Machine Learning Research (2010) vol. 11"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.permutation_test_score.examples:3
+msgid "Examples using ``sklearn.cross_validation.permutation_test_score``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cross_validation.permutation_test_score.examples:25
+msgid ":ref:`example_feature_selection_plot_permutation_test_for_classification.py`"
+msgstr ""
+

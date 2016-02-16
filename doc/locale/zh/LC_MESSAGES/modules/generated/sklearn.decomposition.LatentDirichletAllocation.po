@@ -1,0 +1,451 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.decomposition.LatentDirichletAllocation.rst:2
+msgid ":mod:`sklearn.decomposition`.LatentDirichletAllocation"
+msgstr ""
+
+#: :3
+msgid "Latent Dirichlet Allocation with online variational Bayes algorithm"
+msgstr ""
+
+#: :9
+msgid "**n_topics** : int, optional (default=10)"
+msgstr ""
+
+#: :11
+msgid "Number of topics."
+msgstr ""
+
+#: :13
+msgid "**doc_topic_prior** : float, optional (default=None)"
+msgstr ""
+
+#: :15
+msgid ""
+"Prior of document topic distribution `theta`. If the value is None, "
+"defaults to `1 / n_topics`. In the literature, this is called `alpha`."
+msgstr ""
+
+#: :19
+msgid "**topic_word_prior** : float, optional (default=None)"
+msgstr ""
+
+#: :21
+msgid ""
+"Prior of topic word distribution `beta`. If the value is None, defaults "
+"to `1 / n_topics`. In the literature, this is called `eta`."
+msgstr ""
+
+#: :25
+msgid "**learning_method** : 'batch' | 'online', default='online'"
+msgstr ""
+
+#: :27
+msgid ""
+"Method used to update `_component`. Only used in `fit` method. In "
+"general, if the data size is large, the online update will be much faster"
+" than the batch update. Valid options::"
+msgstr ""
+
+#: :40
+msgid "**learning_decay** : float, optional (default=0.7)"
+msgstr ""
+
+#: :42
+msgid ""
+"It is a parameter that control learning rate in the online learning "
+"method. The value should be set between (0.5, 1.0] to guarantee "
+"asymptotic convergence. When the value is 0.0 and batch_size is "
+"``n_samples``, the update method is same as batch learning. In the "
+"literature, this is called kappa."
+msgstr ""
+
+#: :48
+msgid "**learning_offset** : float, optional (default=10.)"
+msgstr ""
+
+#: :50
+msgid ""
+"A (positive) parameter that downweights early iterations in online "
+"learning.  It should be greater than 1.0. In the literature, this is "
+"called tau_0."
+msgstr ""
+
+#: :54
+msgid "**max_iter** : integer, optional (default=10)"
+msgstr ""
+
+#: :56
+msgid "The maximum number of iterations."
+msgstr ""
+
+#: :58
+msgid "**total_samples** : int, optional (default=1e6)"
+msgstr ""
+
+#: :60
+msgid "Total number of documents. Only used in the `partial_fit` method."
+msgstr ""
+
+#: :62
+msgid "**batch_size** : int, optional (default=128)"
+msgstr ""
+
+#: :64
+msgid ""
+"Number of documents to use in each EM iteration. Only used in online "
+"learning."
+msgstr ""
+
+#: :67
+msgid "**evaluate_every** : int optional (default=0)"
+msgstr ""
+
+#: :69
+msgid ""
+"How often to evaluate perplexity. Only used in `fit` method. set it to 0 "
+"or and negative number to not evalute perplexity in training at all. "
+"Evaluating perplexity can help you check convergence in training process,"
+" but it will also increase total training time. Evaluating perplexity in "
+"every iteration might increase training time up to two-fold."
+msgstr ""
+
+#: :76
+msgid "**perp_tol** : float, optional (default=1e-1)"
+msgstr ""
+
+#: :78
+msgid ""
+"Perplexity tolerance in batch learning. Only used when ``evaluate_every``"
+" is greater than 0."
+msgstr ""
+
+#: :81
+msgid "**mean_change_tol** : float, optional (default=1e-3)"
+msgstr ""
+
+#: :83
+msgid "Stopping tolerance for updating document topic distribution in E-step."
+msgstr ""
+
+#: :85
+msgid "**max_doc_update_iter** : int (default=100)"
+msgstr ""
+
+#: :87
+msgid ""
+"Max number of iterations for updating document topic distribution in the "
+"E-step."
+msgstr ""
+
+#: :90
+msgid "**n_jobs** : int, optional (default=1)"
+msgstr ""
+
+#: :92
+msgid ""
+"The number of jobs to use in the E-step. If -1, all CPUs are used. For "
+"``n_jobs`` below -1, (n_cpus + 1 + n_jobs) are used."
+msgstr ""
+
+#: :95
+msgid "**verbose** : int, optional (default=0)"
+msgstr ""
+
+#: :97
+msgid "Verbosity level."
+msgstr ""
+
+#: :99
+msgid ""
+"**random_state** : int or RandomState instance or None, optional "
+"(default=None)"
+msgstr ""
+
+#: :101
+msgid "Pseudo-random number generator seed control."
+msgstr ""
+
+#: :105
+msgid "**components_** : array, [n_topics, n_features]"
+msgstr ""
+
+#: :107
+msgid ""
+"Topic word distribution. ``components_[i, j]`` represents word j in topic"
+" `i`. In the literature, this is called lambda."
+msgstr ""
+
+#: :110
+msgid "**n_batch_iter_** : int"
+msgstr ""
+
+#: :112
+msgid "Number of iterations of the EM step."
+msgstr ""
+
+#: :114
+msgid "**n_iter_** : int"
+msgstr ""
+
+#: :116
+msgid "Number of passes over the dataset."
+msgstr ""
+
+#: :119
+msgid "References"
+msgstr ""
+
+#: :121
+msgid ""
+"[1] \"Online Learning for Latent Dirichlet Allocation\", Matthew D. "
+"Hoffman,"
+msgstr ""
+
+#: :121
+msgid "David M. Blei, Francis Bach, 2010"
+msgstr ""
+
+#: :124
+msgid ""
+"[2] \"Stochastic Variational Inference\", Matthew D. Hoffman, David M. "
+"Blei,"
+msgstr ""
+
+#: :124
+msgid "Chong Wang, John Paisley, 2013"
+msgstr ""
+
+#: :127
+msgid "[3] Matthew D. Hoffman's onlineldavb code. Link:"
+msgstr ""
+
+#: :127
+msgid "http://www.cs.princeton.edu/~mdhoffma/code/onlineldavb.tar"
+msgstr ""
+
+#: :132
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit <sklearn.decomposition.LatentDirichletAllocation.fit>`\\ (X[, "
+"y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Learn model for the data X with variational Bayes method."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`fit_transform "
+"<sklearn.decomposition.LatentDirichletAllocation.fit_transform>`\\ (X[, "
+"y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit to data, then transform it."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params "
+"<sklearn.decomposition.LatentDirichletAllocation.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`partial_fit "
+"<sklearn.decomposition.LatentDirichletAllocation.partial_fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Online VB with Mini-Batch update."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`perplexity "
+"<sklearn.decomposition.LatentDirichletAllocation.perplexity>`\\ (X[, "
+"doc_topic_distr, sub_sampling])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Calculate approximate perplexity for data X."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.decomposition.LatentDirichletAllocation.score>`\\ "
+"(X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Calculate approximate log-likelihood as score."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params "
+"<sklearn.decomposition.LatentDirichletAllocation.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`transform "
+"<sklearn.decomposition.LatentDirichletAllocation.transform>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Transform data X according to the fitted model."
+msgstr ""
+
+#: :5
+msgid ""
+"When `learning_method` is 'online', use mini-batch update. Otherwise, use"
+" batch update."
+msgstr ""
+
+#: :10 :7
+msgid "**X** : array-like or sparse matrix, shape=(n_samples, n_features)"
+msgstr ""
+
+#: :12 :9 :11
+msgid "Document word matrix."
+msgstr ""
+
+#: :16 :13 :12
+msgid "**self** :"
+msgstr ""
+
+#: :5
+msgid ""
+"Fits transformer to X and y with optional parameters fit_params and "
+"returns a transformed version of X."
+msgstr ""
+
+#: :10
+msgid "**X** : numpy array of shape [n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Training set."
+msgstr ""
+
+#: :14
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :16
+msgid "Target values."
+msgstr ""
+
+#: :20
+msgid "**X_new** : numpy array of shape [n_samples, n_features_new]"
+msgstr ""
+
+#: :22
+msgid "Transformed array."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid "Perplexity is defined as exp(-1. * log-likelihood per word)"
+msgstr ""
+
+#: :9
+msgid "**X** : array-like or sparse matrix, [n_samples, n_features]"
+msgstr ""
+
+#: :13
+msgid "**doc_topic_distr** : None or array, shape=(n_samples, n_topics)"
+msgstr ""
+
+#: :15
+msgid ""
+"Document topic distribution. If it is None, it will be generated by "
+"applying transform on X."
+msgstr ""
+
+#: :20 :13
+msgid "**score** : float"
+msgstr ""
+
+#: :22
+msgid "Perplexity score."
+msgstr ""
+
+#: :15
+msgid "Use approximate bound as score."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :13
+msgid "**doc_topic_distr** : shape=(n_samples, n_topics)"
+msgstr ""
+
+#: :15
+msgid "Document topic distribution for X."
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.LatentDirichletAllocation.examples:3
+msgid "Examples using ``sklearn.decomposition.LatentDirichletAllocation``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.decomposition.LatentDirichletAllocation.examples:25
+msgid ":ref:`example_applications_topics_extraction_with_nmf_lda.py`"
+msgstr ""
+

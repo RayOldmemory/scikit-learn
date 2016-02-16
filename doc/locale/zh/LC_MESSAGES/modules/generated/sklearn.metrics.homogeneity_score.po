@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.metrics.homogeneity_score.rst:2
+msgid ":mod:`sklearn.metrics`.homogeneity_score"
+msgstr ""
+
+#: :3
+msgid "Homogeneity metric of a cluster labeling given a ground truth"
+msgstr ""
+
+#: :5
+msgid ""
+"A clustering result satisfies homogeneity if all of its clusters contain "
+"only data points which are members of a single class."
+msgstr ""
+
+#: :8
+msgid ""
+"This metric is independent of the absolute values of the labels: a "
+"permutation of the class or cluster label values won't change the score "
+"value in any way."
+msgstr ""
+
+#: :12
+msgid ""
+"This metric is not symmetric: switching ``label_true`` with "
+"``label_pred`` will return the :func:`completeness_score` which will be "
+"different in general."
+msgstr ""
+
+#: :16
+msgid "Read more in the :ref:`User Guide <homogeneity_completeness>`."
+msgstr ""
+
+#: :20
+msgid "**labels_true** : int array, shape = [n_samples]"
+msgstr ""
+
+#: :22
+msgid "ground truth class labels to be used as a reference"
+msgstr ""
+
+#: :24
+msgid "**labels_pred** : array, shape = [n_samples]"
+msgstr ""
+
+#: :26
+msgid "cluster labels to evaluate"
+msgstr ""
+
+#: :30
+msgid "**homogeneity: float** :"
+msgstr ""
+
+#: :32
+msgid "score between 0.0 and 1.0. 1.0 stands for perfectly homogeneous labeling"
+msgstr ""
+
+#: :36
+msgid ":obj:`completeness_score`, :obj:`v_measure_score`"
+msgstr ""
+
+#: :39
+msgid "References"
+msgstr ""
+
+#: :40
+msgid ""
+"`Andrew Rosenberg and Julia Hirschberg, 2007. V-Measure: A conditional "
+"entropy-based external cluster evaluation measure "
+"<http://aclweb.org/anthology/D/D07/D07-1043.pdf>`_"
+msgstr ""
+
+#: :49
+msgid "Examples"
+msgstr ""
+
+#: :50
+msgid "Perfect labelings are homogeneous::"
+msgstr ""
+
+#: :56
+msgid ""
+"Non-perfect labelings that further split classes into more clusters can "
+"be perfectly homogeneous::"
+msgstr ""
+
+#: :66
+msgid ""
+"Clusters that include samples from different classes do not make for an "
+"homogeneous labeling::"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.homogeneity_score.examples:3
+msgid "Examples using ``sklearn.metrics.homogeneity_score``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.homogeneity_score.examples:25
+msgid ":ref:`example_cluster_plot_affinity_propagation.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.homogeneity_score.examples:45
+msgid ":ref:`example_cluster_plot_dbscan.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.homogeneity_score.examples:65
+msgid ":ref:`example_cluster_plot_kmeans_digits.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.metrics.homogeneity_score.examples:85
+msgid ":ref:`example_text_document_clustering.py`"
+msgstr ""
+

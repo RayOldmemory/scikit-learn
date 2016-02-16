@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../install.rst:5
+msgid "Installing scikit-learn"
+msgstr ""
+
+#: ../../install.rst:9
+msgid ""
+"If you wish to contribute to the project, it's recommended you "
+":ref:`install the latest development version<install_bleeding_edge>`."
+msgstr ""
+
+#: ../../install.rst:14
+msgid "Installing the latest release"
+msgstr ""
+
+#: ../../install.rst:16
+msgid "Scikit-learn requires:"
+msgstr ""
+
+#: ../../install.rst:18
+msgid "Python (>= 2.6 or >= 3.3),"
+msgstr ""
+
+#: ../../install.rst:19
+msgid "NumPy (>= 1.6.1),"
+msgstr ""
+
+#: ../../install.rst:20
+msgid "SciPy (>= 0.9)."
+msgstr ""
+
+#: ../../install.rst:22
+msgid ""
+"If you already have a working installation of numpy and scipy, the "
+"easiest way to install scikit-learn is using ``pip`` ::"
+msgstr ""
+
+#: ../../install.rst:27
+msgid "or ``conda``::"
+msgstr ""
+
+#: ../../install.rst:31
+msgid ""
+"**We don't recommend installing scipy or numpy using pip on linux**, as "
+"this will involve a lengthy build-process with many dependencies. Without"
+" careful configuration, building numpy yourself can lead to an "
+"installation that is much slower than it should be. If you are using "
+"Linux, consider using your package manager to install scikit-learn. It is"
+" usually the easiest way, but might not provide the newest version. If "
+"you haven't already installed numpy and scipy and can't install them via "
+"your operation system, it is recommended to use a third party "
+"distribution."
+msgstr ""
+
+#: ../../install.rst:42
+msgid "Third-party Distributions"
+msgstr ""
+
+#: ../../install.rst:43
+msgid ""
+"If you don't already have a python installation with numpy and scipy, we "
+"recommend to install either via your package manager or via a python "
+"bundle. These come with numpy, scipy, scikit-learn, matplotlib and many "
+"other helpful scientific and data processing libraries."
+msgstr ""
+
+#: ../../install.rst:48
+msgid "Available options are:"
+msgstr ""
+
+#: ../../install.rst:51
+msgid "Canopy and Anaconda for all supported platforms"
+msgstr ""
+
+#: ../../install.rst:53
+msgid ""
+"`Canopy <http://www.enthought.com/products/canopy>`_ and `Anaconda "
+"<https://store.continuum.io/cshop/anaconda/>`_ both ship a recent version"
+" of scikit-learn, in addition to a large set of scientific python library"
+" for Windows, Mac OSX and Linux."
+msgstr ""
+
+#: ../../install.rst:59
+msgid "Anaconda offers scikit-learn as part of its free distribution."
+msgstr ""
+
+#: ../../install.rst:64
+msgid ""
+"To upgrade or uninstall scikit-learn installed with Anaconda or ``conda``"
+" you **should not use the pip command**. Instead:"
+msgstr ""
+
+#: ../../install.rst:67
+msgid "To upgrade ``scikit-learn``::"
+msgstr ""
+
+#: ../../install.rst:71
+msgid "To uninstall ``scikit-learn``::"
+msgstr ""
+
+#: ../../install.rst:75
+msgid ""
+"Upgrading with ``pip install -U scikit-learn`` or uninstalling ``pip "
+"uninstall scikit-learn`` is likely fail to properly remove files "
+"installed by the ``conda`` command."
+msgstr ""
+
+#: ../../install.rst:79
+msgid ""
+"pip upgrade and uninstall operations only work on packages installed via "
+"``pip install``."
+msgstr ""
+
+#: ../../install.rst:84
+msgid "Python(x,y) for Windows"
+msgstr ""
+
+#: ../../install.rst:86
+msgid ""
+"The `Python(x,y) <https://code.google.com/p/pythonxy/>`_ project "
+"distributes scikit-learn as an additional plugin, which can be found in "
+"the `Additional plugins "
+"<http://code.google.com/p/pythonxy/wiki/AdditionalPlugins>`_ page."
+msgstr ""
+
+#: ../../install.rst:91
+msgid ""
+"For installation instructions for particular operating systems or for "
+"compiling the bleeding edge version, see the :ref:`advanced-"
+"installation`."
+msgstr ""
+

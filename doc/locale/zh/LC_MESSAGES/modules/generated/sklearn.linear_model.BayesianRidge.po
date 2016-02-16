@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.linear_model.BayesianRidge.rst:2
+msgid ":mod:`sklearn.linear_model`.BayesianRidge"
+msgstr ""
+
+#: :3
+msgid "Bayesian ridge regression"
+msgstr ""
+
+#: :5
+msgid ""
+"Fit a Bayesian ridge model and optimize the regularization parameters "
+"lambda (precision of the weights) and alpha (precision of the noise)."
+msgstr ""
+
+#: :8
+msgid "Read more in the :ref:`User Guide <bayesian_regression>`."
+msgstr ""
+
+#: :12
+msgid "**n_iter** : int, optional"
+msgstr ""
+
+#: :14
+msgid "Maximum number of iterations.  Default is 300."
+msgstr ""
+
+#: :16
+msgid "**tol** : float, optional"
+msgstr ""
+
+#: :18
+msgid "Stop the algorithm if w has converged. Default is 1.e-3."
+msgstr ""
+
+#: :20
+msgid "**alpha_1** : float, optional"
+msgstr ""
+
+#: :22
+msgid ""
+"Hyper-parameter : shape parameter for the Gamma distribution prior over "
+"the alpha parameter. Default is 1.e-6"
+msgstr ""
+
+#: :25
+msgid "**alpha_2** : float, optional"
+msgstr ""
+
+#: :27
+msgid ""
+"Hyper-parameter : inverse scale parameter (rate parameter) for the Gamma "
+"distribution prior over the alpha parameter. Default is 1.e-6."
+msgstr ""
+
+#: :31
+msgid "**lambda_1** : float, optional"
+msgstr ""
+
+#: :33
+msgid ""
+"Hyper-parameter : shape parameter for the Gamma distribution prior over "
+"the lambda parameter. Default is 1.e-6."
+msgstr ""
+
+#: :36
+msgid "**lambda_2** : float, optional"
+msgstr ""
+
+#: :38
+msgid ""
+"Hyper-parameter : inverse scale parameter (rate parameter) for the Gamma "
+"distribution prior over the lambda parameter. Default is 1.e-6"
+msgstr ""
+
+#: :42
+msgid "**compute_score** : boolean, optional"
+msgstr ""
+
+#: :44
+msgid ""
+"If True, compute the objective function at each step of the model. "
+"Default is False"
+msgstr ""
+
+#: :47
+msgid "**fit_intercept** : boolean, optional"
+msgstr ""
+
+#: :49
+msgid ""
+"whether to calculate the intercept for this model. If set to false, no "
+"intercept will be used in calculations (e.g. data is expected to be "
+"already centered). Default is True."
+msgstr ""
+
+#: :54
+msgid "**normalize** : boolean, optional, default False"
+msgstr ""
+
+#: :56
+msgid "If True, the regressors X will be normalized before regression."
+msgstr ""
+
+#: :58
+msgid "**copy_X** : boolean, optional, default True"
+msgstr ""
+
+#: :60
+msgid "If True, X will be copied; else, it may be overwritten."
+msgstr ""
+
+#: :62
+msgid "**verbose** : boolean, optional, default False"
+msgstr ""
+
+#: :64
+msgid "Verbose mode when fitting the model."
+msgstr ""
+
+#: :68
+msgid "**coef_** : array, shape = (n_features)"
+msgstr ""
+
+#: :70
+msgid "Coefficients of the regression model (mean of distribution)"
+msgstr ""
+
+#: :72
+msgid "**alpha_** : float"
+msgstr ""
+
+#: :74
+msgid "estimated precision of the noise."
+msgstr ""
+
+#: :76
+msgid "**lambda_** : array, shape = (n_features)"
+msgstr ""
+
+#: :78
+msgid "estimated precisions of the weights."
+msgstr ""
+
+#: :80
+msgid "**scores_** : float"
+msgstr ""
+
+#: :82
+msgid "if computed, value of the objective function (to be maximized)"
+msgstr ""
+
+#: :85
+msgid "Notes"
+msgstr ""
+
+#: :86
+msgid "See examples/linear_model/plot_bayesian_ridge.py for an example."
+msgstr ""
+
+#: :89
+msgid "Examples"
+msgstr ""
+
+#: :101
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`decision_function "
+"<sklearn.linear_model.BayesianRidge.decision_function>`\\ (\\*args, "
+"\\*\\*kwargs)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "DEPRECATED:  and will be removed in 0.19."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.linear_model.BayesianRidge.fit>`\\ (X, y)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit the model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`get_params <sklearn.linear_model.BayesianRidge.get_params>`\\ "
+"([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`predict <sklearn.linear_model.BayesianRidge.predict>`\\ (X)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Predict using the linear model"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`score <sklearn.linear_model.BayesianRidge.score>`\\ (X, y[, "
+"sample_weight])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Returns the coefficient of determination R^2 of the prediction."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ""
+":obj:`set_params <sklearn.linear_model.BayesianRidge.set_params>`\\ "
+"(\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :5
+msgid "Decision function of the linear model."
+msgstr ""
+
+#: :9 :7
+msgid "**X** : {array-like, sparse matrix}, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :11 :9
+msgid "Samples."
+msgstr ""
+
+#: :15 :13
+msgid "**C** : array, shape = (n_samples,)"
+msgstr ""
+
+#: :17 :15
+msgid "Returns predicted values."
+msgstr ""
+
+#: :7
+msgid "**X** : numpy array of shape [n_samples,n_features]"
+msgstr ""
+
+#: :9
+msgid "Training data"
+msgstr ""
+
+#: :11
+msgid "**y** : numpy array of shape [n_samples]"
+msgstr ""
+
+#: :13
+msgid "Target values"
+msgstr ""
+
+#: :17
+msgid "**self** : returns an instance of self."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The coefficient R^2 is defined as (1 - u/v), where u is the regression "
+"sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum "
+"of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is "
+"1.0 and it can be negative (because the model can be arbitrarily worse). "
+"A constant model that always predicts the expected value of y, "
+"disregarding the input features, would get a R^2 score of 0.0."
+msgstr ""
+
+#: :15
+msgid "**X** : array-like, shape = (n_samples, n_features)"
+msgstr ""
+
+#: :17
+msgid "Test samples."
+msgstr ""
+
+#: :19
+msgid "**y** : array-like, shape = (n_samples) or (n_samples, n_outputs)"
+msgstr ""
+
+#: :21
+msgid "True values for X."
+msgstr ""
+
+#: :23
+msgid "**sample_weight** : array-like, shape = [n_samples], optional"
+msgstr ""
+
+#: :25
+msgid "Sample weights."
+msgstr ""
+
+#: :29
+msgid "**score** : float"
+msgstr ""
+
+#: :31
+msgid "R^2 of self.predict(X) wrt. y."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.BayesianRidge.examples:3
+msgid "Examples using ``sklearn.linear_model.BayesianRidge``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.BayesianRidge.examples:25
+msgid ":ref:`example_cluster_plot_feature_agglomeration_vs_univariate_selection.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.linear_model.BayesianRidge.examples:45
+msgid ":ref:`example_linear_model_plot_bayesian_ridge.py`"
+msgstr ""
+

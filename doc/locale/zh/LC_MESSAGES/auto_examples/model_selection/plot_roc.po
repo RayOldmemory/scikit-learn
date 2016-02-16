@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/model_selection/plot_roc.rst:8
+msgid "Receiver Operating Characteristic (ROC)"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:10
+msgid ""
+"Example of Receiver Operating Characteristic (ROC) metric to evaluate "
+"classifier output quality."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:13
+msgid ""
+"ROC curves typically feature true positive rate on the Y axis, and false "
+"positive rate on the X axis. This means that the top left corner of the "
+"plot is the \"ideal\" point - a false positive rate of zero, and a true "
+"positive rate of one. This is not very realistic, but it does mean that a"
+" larger area under the curve (AUC) is usually better."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:19
+msgid ""
+"The \"steepness\" of ROC curves is also important, since it is ideal to "
+"maximize the true positive rate while minimizing the false positive rate."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:23
+msgid "Multiclass settings"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:25
+msgid ""
+"ROC curves are typically used in binary classification to study the "
+"output of a classifier. In order to extend ROC curve and ROC area to "
+"multi-class or multi-label classification, it is necessary to binarize "
+"the output. One ROC curve can be drawn per label, but one can also draw a"
+" ROC curve by considering each element of the label indicator matrix as a"
+" binary prediction (micro-averaging)."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:32
+msgid ""
+"Another evaluation measure for multi-class classification is macro-"
+"averaging, which gives equal weight to the classification of each label."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:38
+msgid "See also :func:`sklearn.metrics.roc_auc_score`,"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:39
+msgid ":ref:`example_model_selection_plot_roc_crossval.py`."
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:60
+msgid "**Python source code:** :download:`plot_roc.py <plot_roc.py>`"
+msgstr ""
+
+#: ../../auto_examples/model_selection/plot_roc.rst:65
+msgid ""
+"**Total running time of the example:**  0.44 seconds ( 0 minutes  0.44 "
+"seconds)"
+msgstr ""
+

@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:8
+msgid "Out-of-core classification of text documents"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:10
+msgid ""
+"This is an example showing how scikit-learn can be used for "
+"classification using an out-of-core approach: learning from data that "
+"doesn't fit into main memory. We make use of an online classifier, i.e., "
+"one that supports the partial_fit method, that will be fed with batches "
+"of examples. To guarantee that the features space remains the same over "
+"time we leverage a HashingVectorizer that will project each example into "
+"the same feature space. This is especially useful in the case of text "
+"classification where new features (words) may appear in each batch."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:19
+msgid ""
+"The dataset used in this example is Reuters-21578 as provided by the UCI "
+"ML repository. It will be automatically downloaded and uncompressed on "
+"first run."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:22
+msgid ""
+"The plot represents the learning curve of the classifier: the evolution "
+"of classification accuracy over the course of the mini-batches. Accuracy "
+"is measured on the first 1000 samples, held out as a validation set."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:26
+msgid ""
+"To limit the memory consumption, we queue examples up to a fixed amount "
+"before feeding them to the learner."
+msgstr ""
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:55
+msgid "**Script output**::"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:104
+msgid ""
+"**Python source code:** :download:`plot_out_of_core_classification.py "
+"<plot_out_of_core_classification.py>`"
+msgstr ""
+
+#: ../../auto_examples/applications/plot_out_of_core_classification.rst:109
+msgid ""
+"**Total running time of the example:**  157.69 seconds ( 2 minutes  37.69"
+" seconds)"
+msgstr ""
+

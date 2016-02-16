@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.cluster.estimate_bandwidth.rst:2
+msgid ":mod:`sklearn.cluster`.estimate_bandwidth"
+msgstr ""
+
+#: :3
+msgid "Estimate the bandwidth to use with the mean-shift algorithm."
+msgstr ""
+
+#: :5
+msgid ""
+"That this function takes time at least quadratic in n_samples. For large "
+"datasets, it's wise to set that parameter to a small value."
+msgstr ""
+
+#: :10
+msgid "**X** : array-like, shape=[n_samples, n_features]"
+msgstr ""
+
+#: :12
+msgid "Input points."
+msgstr ""
+
+#: :14
+msgid "**quantile** : float, default 0.3"
+msgstr ""
+
+#: :16
+msgid ""
+"should be between [0, 1] 0.5 means that the median of all pairwise "
+"distances is used."
+msgstr ""
+
+#: :19
+msgid "**n_samples** : int, optional"
+msgstr ""
+
+#: :21
+msgid "The number of samples to use. If not given, all samples are used."
+msgstr ""
+
+#: :23
+msgid "**random_state** : int or RandomState"
+msgstr ""
+
+#: :25
+msgid "Pseudo-random number generator state used for random sampling."
+msgstr ""
+
+#: :29
+msgid "**bandwidth** : float"
+msgstr ""
+
+#: :31
+msgid "The bandwidth parameter."
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.estimate_bandwidth.examples:3
+msgid "Examples using ``sklearn.cluster.estimate_bandwidth``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.estimate_bandwidth.examples:25
+msgid ":ref:`example_cluster_plot_mean_shift.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.cluster.estimate_bandwidth.examples:45
+msgid ":ref:`example_cluster_plot_cluster_comparison.py`"
+msgstr ""
+

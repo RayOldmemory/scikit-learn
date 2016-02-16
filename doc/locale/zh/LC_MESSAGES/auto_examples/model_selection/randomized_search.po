@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/model_selection/randomized_search.rst:8
+msgid "Comparing randomized search and grid search for hyperparameter estimation"
+msgstr ""
+
+#: ../../auto_examples/model_selection/randomized_search.rst:10
+msgid ""
+"Compare randomized search and grid search for optimizing hyperparameters "
+"of a random forest. All parameters that influence the learning are "
+"searched simultaneously (except for the number of estimators, which poses"
+" a time / quality tradeoff)."
+msgstr ""
+
+#: ../../auto_examples/model_selection/randomized_search.rst:15
+msgid ""
+"The randomized search and the grid search explore exactly the same space "
+"of parameters. The result in parameter settings is quite similar, while "
+"the run time for randomized search is drastically lower."
+msgstr ""
+
+#: ../../auto_examples/model_selection/randomized_search.rst:19
+msgid ""
+"The performance is slightly worse for the randomized search, though this "
+"is most likely a noise effect and would not carry over to a held-out test"
+" set."
+msgstr ""
+
+#: ../../auto_examples/model_selection/randomized_search.rst:22
+msgid ""
+"Note that in practice, one would not search over this many different "
+"parameters simultaneously using grid search, but pick only the ones "
+"deemed most important."
+msgstr ""
+
+#: ../../auto_examples/model_selection/randomized_search.rst:26
+msgid ""
+"**Python source code:** :download:`randomized_search.py "
+"<randomized_search.py>`"
+msgstr ""
+

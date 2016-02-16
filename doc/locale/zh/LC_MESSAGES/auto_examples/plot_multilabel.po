@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/plot_multilabel.rst:8
+msgid "Multilabel classification"
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:10
+msgid ""
+"This example simulates a multi-label document classification problem. The"
+" dataset is generated randomly based on the following process:"
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:13
+msgid "pick the number of labels: n ~ Poisson(n_labels)"
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:14
+msgid "n times, choose a class c: c ~ Multinomial(theta)"
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:15
+msgid "pick the document length: k ~ Poisson(length)"
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:16
+msgid "k times, choose a word: w ~ Multinomial(theta_c)"
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:18
+msgid ""
+"In the above process, rejection sampling is used to make sure that n is "
+"more than 2, and that the document length is never zero. Likewise, we "
+"reject classes which have already been chosen.  The documents that are "
+"assigned to both classes are plotted surrounded by two colored circles."
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:23
+msgid ""
+"The classification is performed by projecting to the first two principal "
+"components found by PCA and CCA for visualisation purposes, followed by "
+"using the :class:`sklearn.multiclass.OneVsRestClassifier` metaclassifier "
+"using two SVCs with linear kernels to learn a discriminative model for "
+"each class. Note that PCA is used to perform an unsupervised "
+"dimensionality reduction, while CCA is used to perform a supervised one."
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:30
+msgid ""
+"Note: in the plot, \"unlabeled samples\" does not mean that we don't know"
+" the labels (as in semi-supervised learning) but that the samples simply "
+"do *not* have a label."
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:42
+msgid ""
+"**Python source code:** :download:`plot_multilabel.py "
+"<plot_multilabel.py>`"
+msgstr ""
+
+#: ../../auto_examples/plot_multilabel.rst:47
+msgid ""
+"**Total running time of the example:**  0.53 seconds ( 0 minutes  0.53 "
+"seconds)"
+msgstr ""
+

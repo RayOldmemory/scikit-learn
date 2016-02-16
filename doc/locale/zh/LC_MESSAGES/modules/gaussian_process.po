@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/gaussian_process.rst:7
+msgid "Gaussian Processes"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:11
+msgid ""
+"**Gaussian Processes for Machine Learning (GPML)** is a generic "
+"supervised learning method primarily designed to solve *regression* "
+"problems. It has also been extended to *probabilistic classification*, "
+"but in the present implementation, this is only a post-processing of the "
+"*regression* exercise."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:16
+msgid "The advantages of Gaussian Processes for Machine Learning are:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:18
+msgid ""
+"The prediction interpolates the observations (at least for regular "
+"correlation models)."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:21
+msgid ""
+"The prediction is probabilistic (Gaussian) so that one can compute "
+"empirical confidence intervals and exceedance probabilities that might be"
+" used to refit (online fitting, adaptive fitting) the prediction in some "
+"region of interest."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:26
+msgid ""
+"Versatile: different :ref:`linear regression models <linear_model>` and "
+":ref:`correlation models <correlation_models>` can be specified. Common "
+"models are provided, but it is also possible to specify custom models "
+"provided they are stationary."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:32
+msgid "The disadvantages of Gaussian Processes for Machine Learning include:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:34
+msgid ""
+"It is not sparse. It uses the whole samples/features information to "
+"perform the prediction."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:37
+msgid ""
+"It loses efficiency in high dimensional spaces -- namely when the number "
+"of features exceeds a few dozens. It might indeed give poor performance "
+"and it loses computational efficiency."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:41
+msgid ""
+"Classification is only a post-processing, meaning that one first need to "
+"solve a regression problem by providing the complete scalar float "
+"precision output :math:`y` of the experiment one attempt to model."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:45
+msgid ""
+"Thanks to the Gaussian property of the prediction, it has been given "
+"varied applications: e.g. for global optimization, probabilistic "
+"classification."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:49
+msgid "Examples"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:52
+msgid "An introductory regression example"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:54
+msgid ""
+"Say we want to surrogate the function :math:`g(x) = x \\sin(x)`. To do "
+"so, the function is evaluated onto a design of experiments. Then, we "
+"define a GaussianProcess model whose regression and correlation models "
+"might be specified using additional kwargs, and ask for the model to be "
+"fitted to the data. Depending on the number of parameters provided at "
+"instantiation, the fitting procedure may recourse to maximum likelihood "
+"estimation for the parameters or alternatively it uses the given "
+"parameters."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:87
+msgid "Fitting Noisy Data"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:89
+msgid ""
+"When the data to be fit includes noise, the Gaussian process model can be"
+" used by specifying the variance of the noise for each point. "
+":class:`GaussianProcess` takes a parameter ``nugget`` which is added to "
+"the diagonal of the correlation matrix between training points: in "
+"general this is a type of Tikhonov regularization.  In the special case "
+"of a squared-exponential correlation function, this normalization is "
+"equivalent to specifying a fractional variance in the input.  That is"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:100
+msgid ""
+"With ``nugget`` and ``corr`` properly set, Gaussian Processes can be used"
+" to robustly recover an underlying function from noisy data:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst
+msgid "Other examples"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:109
+msgid ":ref:`example_gaussian_process_plot_gp_probabilistic_classification_after_regression.py`"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:114
+msgid "Mathematical formulation"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:118
+msgid "The initial assumption"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:120
+msgid ""
+"Suppose one wants to model the output of a computer experiment, say a "
+"mathematical function:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:128
+msgid ""
+"GPML starts with the assumption that this function is *a* conditional "
+"sample path of *a* Gaussian process :math:`G` which is additionally "
+"assumed to read as follows:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:136
+msgid ""
+"where :math:`f(X)^T \\beta` is a linear regression model and :math:`Z(X)`"
+" is a zero-mean Gaussian process with a fully stationary covariance "
+"function:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:143
+msgid ""
+":math:`\\sigma^2` being its variance and :math:`R` being the correlation "
+"function which solely depends on the absolute relative distance between "
+"each sample, possibly featurewise (this is the stationarity assumption)."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:147
+msgid ""
+"From this basic formulation, note that GPML is nothing but an extension "
+"of a basic least squares linear regression problem:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:154
+msgid ""
+"Except we additionally assume some spatial coherence (correlation) "
+"between the samples dictated by the correlation function. Indeed, "
+"ordinary least squares assumes the correlation model :math:`R(|X - X'|)` "
+"is one when :math:`X = X'` and zero otherwise : a *dirac* correlation "
+"model -- sometimes referred to as a *nugget* correlation model in the "
+"kriging literature."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:162
+msgid "The best linear unbiased prediction (BLUP)"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:164
+msgid ""
+"We now derive the *best linear unbiased prediction* of the sample path "
+":math:`g` conditioned on the observations:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:172
+msgid "It is derived from its *given properties*:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:174
+msgid "It is linear (a linear combination of the observations)"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:180
+msgid "It is unbiased"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:186
+msgid "It is the best (in the Mean Squared Error sense)"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:193
+msgid ""
+"So that the optimal weight vector :math:`a(X)` is solution of the "
+"following equality constrained optimization problem:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:201
+msgid ""
+"Rewriting this constrained optimization problem in the form of a "
+"Lagrangian and looking further for the first order optimality conditions "
+"to be satisfied, one ends up with a closed form expression for the sought"
+" predictor -- see references for the complete proof."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:206
+msgid "In the end, the BLUP is shown to be a Gaussian random variate with mean:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:212
+msgid "and variance:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:222
+msgid "where we have introduced:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:224
+msgid ""
+"the correlation matrix whose terms are defined wrt the autocorrelation "
+"function and its built-in parameters :math:`\\theta`:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:231
+msgid ""
+"the vector of cross-correlations between the point where the prediction "
+"is made and the points in the DOE:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:238
+msgid ""
+"the regression matrix (eg the Vandermonde matrix if :math:`f` is a "
+"polynomial basis):"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:245
+msgid "the generalized least square regression weights:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:251
+msgid "and the vectors:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:258
+msgid ""
+"It is important to notice that the probabilistic response of a Gaussian "
+"Process predictor is fully analytic and mostly relies on basic linear "
+"algebra operations. More precisely the mean prediction is the sum of two "
+"simple linear combinations (dot products), and the variance requires two "
+"matrix inversions, but the correlation matrix can be decomposed only once"
+" using a Cholesky decomposition algorithm."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:267
+msgid "The empirical best linear unbiased predictor (EBLUP)"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:269
+msgid ""
+"Until now, both the autocorrelation and regression models were assumed "
+"given. In practice however they are never known in advance so that one "
+"has to make (motivated) empirical choices for these models "
+":ref:`correlation_models`."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:273
+msgid ""
+"Provided these choices are made, one should estimate the remaining "
+"unknown parameters involved in the BLUP. To do so, one uses the set of "
+"provided observations in conjunction with some inference technique. The "
+"present implementation, which is based on the DACE's Matlab toolbox uses "
+"the *maximum likelihood estimation* technique -- see DACE manual in "
+"references for the complete equations. This maximum likelihood estimation"
+" problem is turned into a global optimization problem onto the "
+"autocorrelation parameters. In the present implementation, this global "
+"optimization is solved by means of the fmin_cobyla optimization function "
+"from scipy.optimize. In the case of anisotropy however, we provide an "
+"implementation of Welch's componentwise optimization algorithm -- see "
+"references."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:285
+msgid ""
+"For a more comprehensive description of the theoretical aspects of "
+"Gaussian Processes for Machine Learning, please refer to the references "
+"below:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst
+msgid "References:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:290
+msgid ""
+"`DACE, A Matlab Kriging Toolbox <http://www2.imm.dtu.dk/~hbn/dace/>`_ S "
+"Lophaven, HB Nielsen, J Sondergaard 2002"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:295
+msgid ""
+"`Screening, predicting, and computer experiments "
+"<http://www.jstor.org/pss/1269548>`_ WJ Welch, RJ Buck, J Sacks, HP Wynn,"
+" TJ Mitchell, and MD Morris Technometrics 34(1) 15--25, 1992"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:301
+msgid ""
+"`Gaussian Processes for Machine Learning "
+"<http://www.gaussianprocess.org/gpml/chapters/RW.pdf>`_ CE Rasmussen, CKI"
+" Williams MIT Press, 2006 (Ed. T Diettrich)"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:306
+msgid ""
+"`The design and analysis of computer experiments "
+"<http://www.stat.osu.edu/~comp_exp/book.html>`_ TJ Santner, BJ Williams, "
+"W Notz Springer, 2003"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:315
+msgid "Correlation Models"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:317
+msgid ""
+"Common correlation models matches some famous SVM's kernels because they "
+"are mostly built on equivalent assumptions. They must fulfill Mercer's "
+"conditions and should additionally remain stationary. Note however, that "
+"the choice of the correlation model should be made in agreement with the "
+"known properties of the original experiment from which the observations "
+"come. For instance:"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:323
+msgid ""
+"If the original experiment is known to be infinitely differentiable "
+"(smooth), then one should use the *squared-exponential correlation "
+"model*."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:325
+msgid ""
+"If it's not, then one should rather use the *exponential correlation "
+"model*."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:326
+msgid ""
+"Note also that there exists a correlation model that takes the degree of "
+"derivability as input: this is the Matern correlation model, but it's not"
+" implemented here (TODO)."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:330
+msgid ""
+"For a more detailed discussion on the selection of appropriate "
+"correlation models, see the book by Rasmussen & Williams in references."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:337
+msgid "Regression Models"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:339
+msgid ""
+"Common linear regression models involve zero- (constant), first- and "
+"second-order polynomials. But one may specify its own in the form of a "
+"Python function that takes the features X as input and that returns a "
+"vector containing the values of the functional set. The only constraint "
+"is that the number of functions must not exceed the number of available "
+"observations so that the underlying regression problem is not "
+"*underdetermined*."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:348
+msgid "Implementation details"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:350
+msgid ""
+"The present implementation is based on a translation of the DACE Matlab "
+"toolbox."
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:355
+msgid ""
+"`DACE, A Matlab Kriging Toolbox <http://www2.imm.dtu.dk/~hbn/dace/>`_ S "
+"Lophaven, HB Nielsen, J Sondergaard 2002,"
+msgstr ""
+
+#: ../../modules/gaussian_process.rst:359
+msgid ""
+"W.J. Welch, R.J. Buck, J. Sacks, H.P. Wynn, T.J. Mitchell, and M.D. "
+"Morris (1992). Screening, predicting, and computer experiments. "
+"Technometrics, 34(1) 15--25."
+msgstr ""
+

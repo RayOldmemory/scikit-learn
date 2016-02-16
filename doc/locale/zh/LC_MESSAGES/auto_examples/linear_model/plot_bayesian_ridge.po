@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:8
+msgid "Bayesian Ridge Regression"
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:10
+msgid "Computes a Bayesian Ridge Regression on a synthetic dataset."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:12
+msgid ""
+"See :ref:`bayesian_ridge_regression` for more information on the "
+"regressor."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:14
+msgid ""
+"Compared to the OLS (ordinary least squares) estimator, the coefficient "
+"weights are slightly shifted toward zeros, which stabilises them."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:17
+msgid ""
+"As the prior on the weights is a Gaussian prior, the histogram of the "
+"estimated weights is Gaussian."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:20
+msgid ""
+"The estimation of the model is done by iteratively maximizing the "
+"marginal log-likelihood of the observations."
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:46
+msgid ""
+"**Python source code:** :download:`plot_bayesian_ridge.py "
+"<plot_bayesian_ridge.py>`"
+msgstr ""
+
+#: ../../auto_examples/linear_model/plot_bayesian_ridge.rst:51
+msgid ""
+"**Total running time of the example:**  0.79 seconds ( 0 minutes  0.79 "
+"seconds)"
+msgstr ""
+

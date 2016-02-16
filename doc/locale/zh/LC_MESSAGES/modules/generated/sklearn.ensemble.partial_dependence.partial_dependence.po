@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.ensemble.partial_dependence.partial_dependence.rst:2
+msgid ":mod:`sklearn.ensemble.partial_dependence`.partial_dependence"
+msgstr ""
+
+#: :3
+msgid "Partial dependence of ``target_variables``."
+msgstr ""
+
+#: :5
+msgid ""
+"Partial dependence plots show the dependence between the joint values of "
+"the ``target_variables`` and the function represented by the ``gbrt``."
+msgstr ""
+
+#: :9
+msgid "Read more in the :ref:`User Guide <partial_dependence>`."
+msgstr ""
+
+#: :13
+msgid "**gbrt** : BaseGradientBoosting"
+msgstr ""
+
+#: :15
+msgid "A fitted gradient boosting model."
+msgstr ""
+
+#: :17
+msgid "**target_variables** : array-like, dtype=int"
+msgstr ""
+
+#: :19
+msgid ""
+"The target features for which the partial dependecy should be computed "
+"(size should be smaller than 3 for visual renderings)."
+msgstr ""
+
+#: :22
+msgid "**grid** : array-like, shape=(n_points, len(target_variables))"
+msgstr ""
+
+#: :24
+msgid ""
+"The grid of ``target_variables`` values for which the partial dependecy "
+"should be evaluated (either ``grid`` or ``X`` must be specified)."
+msgstr ""
+
+#: :28
+msgid "**X** : array-like, shape=(n_samples, n_features)"
+msgstr ""
+
+#: :30
+msgid ""
+"The data on which ``gbrt`` was trained. It is used to generate a ``grid``"
+" for the ``target_variables``. The ``grid`` comprises ``grid_resolution``"
+" equally spaced points between the two ``percentiles``."
+msgstr ""
+
+#: :35
+msgid "**percentiles** : (low, high), default=(0.05, 0.95)"
+msgstr ""
+
+#: :37
+msgid ""
+"The lower and upper percentile used create the extreme values for the "
+"``grid``. Only if ``X`` is not None."
+msgstr ""
+
+#: :40
+msgid "**grid_resolution** : int, default=100"
+msgstr ""
+
+#: :42
+msgid "The number of equally spaced points on the ``grid``."
+msgstr ""
+
+#: :46
+msgid "**pdp** : array, shape=(n_classes, n_points)"
+msgstr ""
+
+#: :48
+msgid ""
+"The partial dependence function evaluated on the ``grid``. For regression"
+" and binary classification ``n_classes==1``."
+msgstr ""
+
+#: :51
+msgid "**axes** : seq of ndarray or None"
+msgstr ""
+
+#: :53
+msgid ""
+"The axes with which the grid has been created or None if the grid has "
+"been given."
+msgstr ""
+
+#: :57
+msgid "Examples"
+msgstr ""
+

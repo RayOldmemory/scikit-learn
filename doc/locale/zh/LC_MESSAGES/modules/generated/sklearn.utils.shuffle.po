@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.utils.shuffle.rst:2
+msgid ":mod:`sklearn.utils`.shuffle"
+msgstr ""
+
+#: :3
+msgid "Shuffle arrays or sparse matrices in a consistent way"
+msgstr ""
+
+#: :5
+msgid ""
+"This is a convenience alias to ``resample(*arrays, replace=False)`` to do"
+" random permutations of the collections."
+msgstr ""
+
+#: :10
+msgid "***arrays** : sequence of indexable data-structures"
+msgstr ""
+
+#: :12
+msgid ""
+"Indexable data-structures can be arrays, lists, dataframes or scipy "
+"sparse matrices with consistent first dimension."
+msgstr ""
+
+#: :15
+msgid "**random_state** : int or RandomState instance"
+msgstr ""
+
+#: :17
+msgid "Control the shuffling for reproducible behavior."
+msgstr ""
+
+#: :19
+msgid "**n_samples** : int, None by default"
+msgstr ""
+
+#: :21
+msgid ""
+"Number of samples to generate. If left to None this is automatically set "
+"to the first dimension of the arrays."
+msgstr ""
+
+#: :26
+msgid "**shuffled_arrays** : sequence of indexable data-structures"
+msgstr ""
+
+#: :28
+msgid ""
+"Sequence of shuffled views of the collections. The original arrays are "
+"not impacted."
+msgstr ""
+
+#: :33
+msgid ":func:`sklearn.utils.resample`"
+msgstr ""
+
+#: :36
+msgid "Examples"
+msgstr ""
+
+#: :37
+msgid "It is possible to mix sparse and dense arrays in the same run::"
+msgstr ""
+
+#: ../../modules/generated/sklearn.utils.shuffle.examples:3
+msgid "Examples using ``sklearn.utils.shuffle``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.utils.shuffle.examples:25
+msgid ":ref:`example_applications_plot_model_complexity_influence.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.utils.shuffle.examples:45
+msgid ":ref:`example_cluster_plot_color_quantization.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.utils.shuffle.examples:65
+msgid ":ref:`example_cluster_plot_kmeans_stability_low_dim_dense.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.utils.shuffle.examples:85
+msgid ":ref:`example_ensemble_plot_gradient_boosting_regression.py`"
+msgstr ""
+

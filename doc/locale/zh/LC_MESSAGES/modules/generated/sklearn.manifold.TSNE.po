@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.manifold.TSNE.rst:2
+msgid ":mod:`sklearn.manifold`.TSNE"
+msgstr ""
+
+#: :3
+msgid "t-distributed Stochastic Neighbor Embedding."
+msgstr ""
+
+#: :5
+msgid ""
+"t-SNE [1] is a tool to visualize high-dimensional data. It converts "
+"similarities between data points to joint probabilities and tries to "
+"minimize the Kullback-Leibler divergence between the joint probabilities "
+"of the low-dimensional embedding and the high-dimensional data. t-SNE has"
+" a cost function that is not convex, i.e. with different initializations "
+"we can get different results."
+msgstr ""
+
+#: :12
+msgid ""
+"It is highly recommended to use another dimensionality reduction method "
+"(e.g. PCA for dense data or TruncatedSVD for sparse data) to reduce the "
+"number of dimensions to a reasonable amount (e.g. 50) if the number of "
+"features is very high. This will suppress some noise and speed up the "
+"computation of pairwise distances between samples. For more tips see "
+"Laurens van der Maaten's FAQ [2]."
+msgstr ""
+
+#: :19
+msgid "Read more in the :ref:`User Guide <t_sne>`."
+msgstr ""
+
+#: :23
+msgid "**n_components** : int, optional (default: 2)"
+msgstr ""
+
+#: :25
+msgid "Dimension of the embedded space."
+msgstr ""
+
+#: :27
+msgid "**perplexity** : float, optional (default: 30)"
+msgstr ""
+
+#: :29
+msgid ""
+"The perplexity is related to the number of nearest neighbors that is used"
+" in other manifold learning algorithms. Larger datasets usually require a"
+" larger perplexity. Consider selcting a value between 5 and 50. The "
+"choice is not extremely critical since t-SNE is quite insensitive to this"
+" parameter."
+msgstr ""
+
+#: :35
+msgid "**early_exaggeration** : float, optional (default: 4.0)"
+msgstr ""
+
+#: :37
+msgid ""
+"Controls how tight natural clusters in the original space are in the "
+"embedded space and how much space will be between them. For larger "
+"values, the space between natural clusters will be larger in the embedded"
+" space. Again, the choice of this parameter is not very critical. If the "
+"cost function increases during initial optimization, the early "
+"exaggeration factor or the learning rate might be too high."
+msgstr ""
+
+#: :45
+msgid "**learning_rate** : float, optional (default: 1000)"
+msgstr ""
+
+#: :47
+msgid ""
+"The learning rate can be a critical parameter. It should be between 100 "
+"and 1000. If the cost function increases during initial optimization, the"
+" early exaggeration factor or the learning rate might be too high. If the"
+" cost function gets stuck in a bad local minimum increasing the learning "
+"rate helps sometimes."
+msgstr ""
+
+#: :53
+msgid "**n_iter** : int, optional (default: 1000)"
+msgstr ""
+
+#: :55
+msgid "Maximum number of iterations for the optimization. Should be at least 200."
+msgstr ""
+
+#: :58
+msgid "**n_iter_without_progress** : int, optional (default: 30)"
+msgstr ""
+
+#: :60
+msgid ""
+"Maximum number of iterations without progress before we abort the "
+"optimization."
+msgstr ""
+
+#: :63
+msgid "parameter *n_iter_without_progress* to control stopping criteria."
+msgstr ""
+
+#: :66
+msgid "**min_grad_norm** : float, optional (default: 1E-7)"
+msgstr ""
+
+#: :68
+msgid ""
+"If the gradient norm is below this threshold, the optimization will be "
+"aborted."
+msgstr ""
+
+#: :71
+msgid "**metric** : string or callable, optional"
+msgstr ""
+
+#: :73
+msgid ""
+"The metric to use when calculating distance between instances in a "
+"feature array. If metric is a string, it must be one of the options "
+"allowed by scipy.spatial.distance.pdist for its metric parameter, or a "
+"metric listed in pairwise.PAIRWISE_DISTANCE_FUNCTIONS. If metric is "
+"\"precomputed\", X is assumed to be a distance matrix. Alternatively, if "
+"metric is a callable function, it is called on each pair of instances "
+"(rows) and the resulting value recorded. The callable should take two "
+"arrays from X as input and return a value indicating the distance between"
+" them. The default is \"euclidean\" which is interpreted as squared "
+"euclidean distance."
+msgstr ""
+
+#: :84
+msgid "**init** : string, optional (default: \"random\")"
+msgstr ""
+
+#: :86
+msgid ""
+"Initialization of embedding. Possible options are 'random' and 'pca'. PCA"
+" initialization cannot be used with precomputed distances and is usually "
+"more globally stable than random initialization."
+msgstr ""
+
+#: :90
+msgid "**verbose** : int, optional (default: 0)"
+msgstr ""
+
+#: :92
+msgid "Verbosity level."
+msgstr ""
+
+#: :94
+msgid "**random_state** : int or RandomState instance or None (default)"
+msgstr ""
+
+#: :96
+msgid ""
+"Pseudo Random Number generator seed control. If None, use the "
+"numpy.random singleton. Note that different initializations might result "
+"in different local minima of the cost function."
+msgstr ""
+
+#: :100
+msgid "**method** : string (default: 'barnes_hut')"
+msgstr ""
+
+#: :102
+msgid ""
+"By default the gradient calculation algorithm uses Barnes-Hut "
+"approximation running in O(NlogN) time. method='exact' will run on the "
+"slower, but exact, algorithm in O(N^2) time. The exact algorithm should "
+"be used when nearest-neighbor errors need to be better than 3%. However, "
+"the exact method cannot scale to millions of examples."
+msgstr ""
+
+#: :109
+msgid "Approximate optimization *method* via the Barnes-Hut."
+msgstr ""
+
+#: :112
+msgid "**angle** : float (default: 0.5)"
+msgstr ""
+
+#: :114
+msgid ""
+"Only used if method='barnes_hut' This is the trade-off between speed and "
+"accuracy for Barnes-Hut T-SNE. 'angle' is the angular size (referred to "
+"as theta in [3]) of a distant node as measured from a point. If this size"
+" is below 'angle' then it is used as a summary node of all points "
+"contained within it. This method is not very sensitive to changes in this"
+" parameter in the range of 0.2 - 0.8. Angle less than 0.2 has quickly "
+"increasing computation time and angle greater 0.8 has quickly increasing "
+"error."
+msgstr ""
+
+#: :125
+msgid "**embedding_** : array-like, shape (n_samples, n_components)"
+msgstr ""
+
+#: :127
+msgid "Stores the embedding vectors."
+msgstr ""
+
+#: :130
+msgid "References"
+msgstr ""
+
+#: :132
+msgid "[1] van der Maaten, L.J.P.; Hinton, G.E. Visualizing High-Dimensional Data"
+msgstr ""
+
+#: :132
+msgid "Using t-SNE. Journal of Machine Learning Research 9:2579-2605, 2008."
+msgstr ""
+
+#: :135
+msgid "[2] van der Maaten, L.J.P. t-Distributed Stochastic Neighbor Embedding"
+msgstr ""
+
+#: :135
+msgid "http://homepage.tudelft.nl/19j49/t-SNE.html"
+msgstr ""
+
+#: :139
+msgid "[3] L.J.P. van der Maaten. Accelerating t-SNE using Tree-Based Algorithms."
+msgstr ""
+
+#: :138
+msgid ""
+"Journal of Machine Learning Research 15(Oct):3221-3245, 2014. "
+"http://lvdmaaten.github.io/publications/papers/JMLR_2014.pdf"
+msgstr ""
+
+#: :144
+msgid "Examples"
+msgstr ""
+
+#: :157
+msgid "Methods"
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit <sklearn.manifold.TSNE.fit>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit X into an embedded space."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`fit_transform <sklearn.manifold.TSNE.fit_transform>`\\ (X[, y])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Fit X into an embedded space and return that transformed output."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`get_params <sklearn.manifold.TSNE.get_params>`\\ ([deep])"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Get parameters for this estimator."
+msgstr ""
+
+#: ../../<autosummary>:1
+msgid ":obj:`set_params <sklearn.manifold.TSNE.set_params>`\\ (\\*\\*params)"
+msgstr ""
+
+#: ../../<autosummary>:1 :3
+msgid "Set the parameters of this estimator."
+msgstr ""
+
+#: :7 :8
+msgid "**X** : array, shape (n_samples, n_features) or (n_samples, n_samples)"
+msgstr ""
+
+#: :9
+msgid ""
+"If the metric is 'precomputed' X must be a square distance matrix. "
+"Otherwise it contains a sample per row. If the method is 'exact', X may "
+"be a sparse matrix of type 'csr', 'csc' or 'coo'."
+msgstr ""
+
+#: :10
+msgid ""
+"If the metric is 'precomputed' X must be a square distance matrix. "
+"Otherwise it contains a sample per row."
+msgstr ""
+
+#: :15
+msgid "**X_new** : array, shape (n_samples, n_components)"
+msgstr ""
+
+#: :17
+msgid "Embedding of the training data in low-dimensional space."
+msgstr ""
+
+#: :7
+msgid "**deep: boolean, optional** :"
+msgstr ""
+
+#: :9
+msgid ""
+"If True, will return the parameters for this estimator and contained "
+"subobjects that are estimators."
+msgstr ""
+
+#: :14
+msgid "**params** : mapping of string to any"
+msgstr ""
+
+#: :16
+msgid "Parameter names mapped to their values."
+msgstr ""
+
+#: :5
+msgid ""
+"The method works on simple estimators as well as on nested objects (such "
+"as pipelines). The former have parameters of the form "
+"``<component>__<parameter>`` so that it's possible to update each "
+"component of a nested object."
+msgstr ""
+
+#: :12
+msgid "**self** :"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.TSNE.examples:3
+msgid "Examples using ``sklearn.manifold.TSNE``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.TSNE.examples:25
+msgid ":ref:`example_manifold_plot_compare_methods.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.TSNE.examples:45
+msgid ":ref:`example_manifold_plot_manifold_sphere.py`"
+msgstr ""
+
+#: ../../modules/generated/sklearn.manifold.TSNE.examples:65
+msgid ":ref:`example_manifold_plot_lle_digits.py`"
+msgstr ""
+

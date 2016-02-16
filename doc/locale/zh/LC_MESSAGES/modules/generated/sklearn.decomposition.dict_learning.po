@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.decomposition.dict_learning.rst:2
+msgid ":mod:`sklearn.decomposition`.dict_learning"
+msgstr ""
+
+#: :3
+msgid "Solves a dictionary learning matrix factorization problem."
+msgstr ""
+
+#: :5
+msgid ""
+"Finds the best dictionary and the corresponding sparse code for "
+"approximating the data matrix X by solving::"
+msgstr ""
+
+#: :12
+msgid "where V is the dictionary and U is the sparse code."
+msgstr ""
+
+#: :14
+msgid "Read more in the :ref:`User Guide <DictionaryLearning>`."
+msgstr ""
+
+#: :18
+msgid "**X: array of shape (n_samples, n_features)** :"
+msgstr ""
+
+#: :20
+msgid "Data matrix."
+msgstr ""
+
+#: :22
+msgid "**n_components: int,** :"
+msgstr ""
+
+#: :24
+msgid "Number of dictionary atoms to extract."
+msgstr ""
+
+#: :26
+msgid "**alpha: int,** :"
+msgstr ""
+
+#: :28
+msgid "Sparsity controlling parameter."
+msgstr ""
+
+#: :30
+msgid "**max_iter: int,** :"
+msgstr ""
+
+#: :32
+msgid "Maximum number of iterations to perform."
+msgstr ""
+
+#: :34
+msgid "**tol: float,** :"
+msgstr ""
+
+#: :36
+msgid "Tolerance for the stopping condition."
+msgstr ""
+
+#: :38
+msgid "**method: {'lars', 'cd'}** :"
+msgstr ""
+
+#: :40
+msgid ""
+"lars: uses the least angle regression method to solve the lasso problem "
+"(linear_model.lars_path) cd: uses the coordinate descent method to "
+"compute the Lasso solution (linear_model.Lasso). Lars will be faster if "
+"the estimated components are sparse."
+msgstr ""
+
+#: :46
+msgid "**n_jobs: int,** :"
+msgstr ""
+
+#: :48
+msgid "Number of parallel jobs to run, or -1 to autodetect."
+msgstr ""
+
+#: :50
+msgid "**dict_init: array of shape (n_components, n_features),** :"
+msgstr ""
+
+#: :52
+msgid "Initial value for the dictionary for warm restart scenarios."
+msgstr ""
+
+#: :54
+msgid "**code_init: array of shape (n_samples, n_components),** :"
+msgstr ""
+
+#: :56
+msgid "Initial value for the sparse code for warm restart scenarios."
+msgstr ""
+
+#: :58
+msgid "**callback:** :"
+msgstr ""
+
+#: :60
+msgid "Callable that gets invoked every five iterations."
+msgstr ""
+
+#: :62
+msgid "**verbose:** :"
+msgstr ""
+
+#: :64
+msgid "Degree of output the procedure will print."
+msgstr ""
+
+#: :66
+msgid "**random_state: int or RandomState** :"
+msgstr ""
+
+#: :68
+msgid "Pseudo number generator state used for random sampling."
+msgstr ""
+
+#: :70
+msgid "**return_n_iter** : bool"
+msgstr ""
+
+#: :72
+msgid "Whether or not to return the number of iterations."
+msgstr ""
+
+#: :76
+msgid "**code: array of shape (n_samples, n_components)** :"
+msgstr ""
+
+#: :78
+msgid "The sparse code factor in the matrix factorization."
+msgstr ""
+
+#: :80
+msgid "**dictionary: array of shape (n_components, n_features),** :"
+msgstr ""
+
+#: :82
+msgid "The dictionary factor in the matrix factorization."
+msgstr ""
+
+#: :84
+msgid "**errors: array** :"
+msgstr ""
+
+#: :86
+msgid "Vector of errors at each iteration."
+msgstr ""
+
+#: :88
+msgid "**n_iter** : int"
+msgstr ""
+
+#: :90
+msgid "Number of iterations run. Returned only if `return_n_iter` is set to True."
+msgstr ""
+
+#: :95
+msgid ""
+":obj:`dict_learning_online`, :obj:`DictionaryLearning`, "
+":obj:`MiniBatchDictionaryLearning`, :obj:`SparsePCA`, "
+":obj:`MiniBatchSparsePCA`"
+msgstr ""
+

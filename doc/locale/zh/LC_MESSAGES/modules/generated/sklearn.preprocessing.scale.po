@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010 - 2014, scikit-learn developers (BSD License)
+# This file is distributed under the same license as the scikit-learn
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: scikit-learn 0.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-16 21:59+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: ../../modules/generated/sklearn.preprocessing.scale.rst:2
+msgid ":mod:`sklearn.preprocessing`.scale"
+msgstr ""
+
+#: :3
+msgid "Standardize a dataset along any axis"
+msgstr ""
+
+#: :5
+msgid "Center to the mean and component wise scale to unit variance."
+msgstr ""
+
+#: :7
+msgid "Read more in the :ref:`User Guide <preprocessing_scaler>`."
+msgstr ""
+
+#: :11
+msgid "**X** : {array-like, sparse matrix}"
+msgstr ""
+
+#: :13
+msgid "The data to center and scale."
+msgstr ""
+
+#: :15
+msgid "**axis** : int (0 by default)"
+msgstr ""
+
+#: :17
+msgid ""
+"axis used to compute the means and standard deviations along. If 0, "
+"independently standardize each feature, otherwise (if 1) standardize each"
+" sample."
+msgstr ""
+
+#: :21
+msgid "**with_mean** : boolean, True by default"
+msgstr ""
+
+#: :23
+msgid "If True, center the data before scaling."
+msgstr ""
+
+#: :25
+msgid "**with_std** : boolean, True by default"
+msgstr ""
+
+#: :27
+msgid ""
+"If True, scale the data to unit variance (or equivalently, unit standard "
+"deviation)."
+msgstr ""
+
+#: :30
+msgid "**copy** : boolean, optional, default True"
+msgstr ""
+
+#: :32
+msgid ""
+"set to False to perform inplace row normalization and avoid a copy (if "
+"the input is already a numpy array or a scipy.sparse CSR matrix and if "
+"axis is 1)."
+msgstr ""
+
+#: :38
+msgid ""
+":class:`sklearn.preprocessing.StandardScaler`, :obj:`scaling`, "
+":class:`sklearn.pipeline.Pipeline`"
+msgstr ""
+
+#: :41
+msgid "Notes"
+msgstr ""
+
+#: :42
+msgid ""
+"This implementation will refuse to center scipy.sparse matrices since it "
+"would make them non-sparse and would potentially crash the program with "
+"memory exhaustion problems."
+msgstr ""
+
+#: :46
+msgid ""
+"Instead the caller is expected to either set explicitly `with_mean=False`"
+" (in that case, only variance scaling will be performed on the features "
+"of the CSR matrix) or to call `X.toarray()` if he/she expects the "
+"materialized dense array to fit in memory."
+msgstr ""
+
+#: :51
+msgid "To avoid memory copy the caller should pass a CSR matrix."
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.scale.examples:3
+msgid "Examples using ``sklearn.preprocessing.scale``"
+msgstr ""
+
+#: ../../modules/generated/sklearn.preprocessing.scale.examples:25
+msgid ":ref:`example_cluster_plot_kmeans_digits.py`"
+msgstr ""
+
