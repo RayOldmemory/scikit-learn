@@ -24,6 +24,8 @@ if "%1" == "help" (
 	echo.  changes   to make an overview over all changed/added/deprecated items
 	echo.  linkcheck to check all external links for integrity
 	echo.  doctest   to run all doctests embedded in the documentation if enabled
+	echo.  gettext   to make PO message catalogs
+	echo.  html-zh   to make standalone HTML files in Chinese
 	goto end
 )
 
@@ -107,6 +109,21 @@ if "%1" == "doctest" (
 	echo.
 	echo.Testing of doctests in the sources finished, look at the ^
 results in %BUILDDIR%/doctest/output.txt.
+	goto end
+)
+
+if "%1" == "gettext" (
+	%SPHINXBUILD% -b gettext %ALLSPHINXOPTS% %BUILDDIR%/locale
+	if errorlevel 1 exit /b 1
+	echo.
+	echo.Build finished. The message catalogs are in %BUILDDIR%/locale.
+	goto end
+)
+
+if "%1" == "html-zh" (
+	%SPHINXBUILD% -D language=zh -b html %ALLSPHINXOPTS% %BUILDDIR%/html-zh
+	echo.
+	echo.Build finished. The HTML pages are in %BUILDDIR%/html-zh.
 	goto end
 )
 

@@ -81,6 +81,9 @@ release = sklearn.__version__
 # for a list of supported languages.
 #language = None
 
+locale_dirs = ['locale/']
+gettext_compact = False
+
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
 #today = ''

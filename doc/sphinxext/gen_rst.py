@@ -109,7 +109,7 @@ def _get_data(url):
         else:
             raise RuntimeError('unknown encoding')
     else:
-        with open(url, 'r') as fid:
+        with open(url, 'r', encoding='utf-8') as fid:
             data = fid.read()
         fid.close()
 
