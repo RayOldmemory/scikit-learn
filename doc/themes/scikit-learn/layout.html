@@ -27,7 +27,7 @@
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="{{ pathto('_static/js/bootstrap.min.js', 1)}}" type="text/javascript"></script>
-  <link rel="canonical" href="http://scikit-learn.org/stable/{{pagename}}.html" />
+  <link rel="canonical" href="http://lijiancheng0614.github.io/scikit-learn/{{pagename}}.html" />
 
   <script type="text/javascript">
     $("div.buttonNext, div.buttonPrevious").hover(
@@ -42,11 +42,11 @@
 {% endblock %}
 
 {%- if pagename == 'index' %}
-    {% set title = 'scikit-learn: machine learning in Python' %}
+    {% set title = 'scikit-learn: Python语言的机器学习工具' %}
 {%- endif %}
 
 {%- if pagename == 'documentation' %}
-    {% set title = 'Documentation scikit-learn: machine learning in Python' %}
+    {% set title = 'scikit-learn文档: Python语言的机器学习工具' %}
 {%- endif %}
 
 {% block header %}
@@ -63,28 +63,28 @@
         {%- block navbar -%}
         <div class="navbar">
             <ul>
-                <li><a href="{{pathto('index')}}">Home</a></li>
-                <li><a href="{{pathto('install')}}">Installation</a></li>
+                <li><a href="{{pathto('index')}}">主页</a></li>
+                <li><a href="{{pathto('install')}}">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="{{pathto('documentation')}}">Documentation</a>
+              <a href="{{pathto('documentation')}}">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="{{ pathto('tutorial/index') }}">Tutorials</a></li>
-            <li><a href="{{ pathto('user_guide') }}">User guide</a></li>
+            <li><a href="{{ pathto('tutorial/index') }}">入门指南</a></li>
+            <li><a href="{{ pathto('user_guide') }}">使用手册</a></li>
             <li><a href="{{ pathto('modules/classes') }}">API</a></li>
-            <li><a href="{{ pathto('faq') }}">FAQ</a></li>
-            <li><a href="{{ pathto('developers/contributing') }}">Contributing</a></li>
+            <li><a href="{{ pathto('faq') }}">常见问题</a></li>
+            <li><a href="{{ pathto('developers/contributing') }}">贡献</a></li>
             <li class="divider"></li>
-                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
+                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 （开发中）</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="{{ pathto('_downloads/scikit-learn-docs.pdf', 1) }}">PDF documentation</a></li>
+				<li><a href="{{ pathto('_downloads/scikit-learn-docs.pdf', 1) }}">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="{{pathto('auto_examples/index')}}">Examples</a></li>
+            <li><a href="{{pathto('auto_examples/index')}}">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -174,12 +174,13 @@
     </div>
     <div id="intro_to_sklearn_p" class="span6">
       <h1>scikit-learn</h1>
-      <h2>Machine Learning in Python</h2>
+      <h2>Python语言的机器学习工具</h2>
       <ul>
-        <li>Simple and efficient tools for data mining and data analysis</li>
-        <li>Accessible to everybody, and reusable in various contexts</li>
-        <li>Built on NumPy, SciPy, and matplotlib</li>
-        <li>Open source, commercially usable - BSD license</li>
+        <li>简单高效的数据挖掘和数据分析工具
+        </li>
+        <li>所有人都适用，可在不同的上下文中重用</li>
+        <li>基于NumPy、SciPy和matplotlib构建</li>
+        <li>开源、商业可用 - BSD许可</li>
       </ul>
     </div>
   </div>
@@ -244,7 +245,7 @@
         </div>
         <div class="rellink">
         <a href="{{ parents[-1].link|e }}">
-        Up
+        向上
         <br/>
         <span class="smallrellink">
         {{ parents[-1].title|striptags|truncate(16, killwords=True) }}
@@ -261,9 +262,9 @@
     {% endif %}
 
     {%- if pagename != "install" %}
-      <p class="doc-version">This documentation is for {{project}} <strong>version {{ release|e }}</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
+      <p class="doc-version">这个文档适用于 {{project}} <strong>版本 {{ release|e }}</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">其它版本</a></p>
     {%- endif %}
-    <p class="citing">If you use the software, please consider <a href="{{pathto('about')}}#citing-scikit-learn">citing scikit-learn</a>.</p>
+    <p class="citing">如果你要使用软件，请考虑 <a href="{{pathto('about')}}#citing-scikit-learn">引用scikit-learn和Jiancheng Li</a>.</p>
     {{ toc }}
     </div>
 </div>
@@ -298,10 +299,10 @@
       {%- endif %}
      {%- endif %}
      {%- if last_updated %}
-      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+      {% trans last_updated=last_updated|e %}最后修订于{{ last_updated }}.{% endtrans %}
      {%- endif %}
      {%- if show_source and has_source and sourcename %}
-      <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow">{{ _('Show this page source') }}</a>
+      <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow">{{ _('查看本页源代码') }}</a>
      {%- endif %}
     {%- endif %}
     </div>
@@ -324,7 +325,7 @@
     {% if theme_google_analytics|tobool %}
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-22606712-2']);
+      _gaq.push(['_setAccount', 'UA-66414521-1']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -337,7 +338,7 @@
 
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript"> google.load('search', '1',
-        {language : 'en'}); google.setOnLoadCallback(function() {
+        {language : 'zh'}); google.setOnLoadCallback(function() {
             var customSearchControl = new
             google.search.CustomSearchControl('016639176250731907682:tjtqbvtvij0');
             customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
