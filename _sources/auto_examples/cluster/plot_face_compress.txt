@@ -45,6 +45,6 @@ used for vector quantization.
 .. literalinclude:: plot_face_compress.py
     :lines: 14-
 
-**Total running time of the example:**  22.58 seconds
-( 0 minutes  22.58 seconds)
+**Total running time of the example:**  24.44 seconds
+( 0 minutes  24.44 seconds)
     

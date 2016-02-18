@@ -29,6 +29,6 @@ detail.
 .. literalinclude:: plot_adaboost_regression.py
     :lines: 15-
 
-**Total running time of the example:**  0.66 seconds
-( 0 minutes  0.66 seconds)
+**Total running time of the example:**  0.65 seconds
+( 0 minutes  0.65 seconds)
     

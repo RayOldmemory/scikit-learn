@@ -24,6 +24,6 @@ matrices.
 .. literalinclude:: plot_gmm_pdf.py
     :lines: 10-
 
-**Total running time of the example:**  0.44 seconds
-( 0 minutes  0.44 seconds)
+**Total running time of the example:**  0.46 seconds
+( 0 minutes  0.46 seconds)
     

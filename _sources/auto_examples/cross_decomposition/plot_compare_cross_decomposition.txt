@@ -81,6 +81,6 @@ weak: the point cloud is very spherical.
 .. literalinclude:: plot_compare_cross_decomposition.py
     :lines: 21-
 
-**Total running time of the example:**  0.73 seconds
-( 0 minutes  0.73 seconds)
+**Total running time of the example:**  0.56 seconds
+( 0 minutes  0.56 seconds)
     

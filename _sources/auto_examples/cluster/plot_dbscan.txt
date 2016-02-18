@@ -33,6 +33,6 @@ Finds core samples of high density and expands clusters from them.
 .. literalinclude:: plot_dbscan.py
     :lines: 10-
 
-**Total running time of the example:**  0.53 seconds
-( 0 minutes  0.53 seconds)
+**Total running time of the example:**  0.71 seconds
+( 0 minutes  0.71 seconds)
     

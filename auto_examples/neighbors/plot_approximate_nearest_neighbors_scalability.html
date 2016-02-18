@@ -42,7 +42,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../../_static/js/bootstrap.min.js" type="text/javascript"></script>
-  <link rel="canonical" href="http://scikit-learn.org/stable/auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.html" />
+  <link rel="canonical" href="http://lijiancheng0614.github.io/scikit-learn/auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.html" />
 
   <script type="text/javascript">
     $("div.buttonNext, div.buttonPrevious").hover(
@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
-            <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers/contributing.html">Contributing</a></li>
+            <li><a href="../../faq.html">常见问题</a></li>
+            <li><a href="../../developers/contributing.html">贡献</a></li>
             <li class="divider"></li>
-                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
+                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 （开发中）</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -131,7 +131,7 @@
         </div>
         <div class="rellink">
         <a href="../index.html">
-        Up
+        向上
         <br/>
         <span class="smallrellink">
         Examples
@@ -144,8 +144,8 @@
         </div>
     </div>
     
-      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
-    <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
+      <p class="doc-version">这个文档适用于 scikit-learn <strong>版本 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">其它版本</a></p>
+    <p class="citing">如果你要使用软件，请考虑 <a href="../../about.html#citing-scikit-learn">引用scikit-learn和Jiancheng Li</a>.</p>
     <ul>
 <li><a class="reference internal" href="#">Scalability of Approximate Nearest Neighbors</a></li>
 </ul>
@@ -194,12 +194,12 @@ the dimensionality of the data.</p>
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Index size: 1000, exact: 0.003s, LSHF: 0.038s, speedup: 0.1, accuracy: 1.00 +/-0.00
-Index size: 2511, exact: 0.006s, LSHF: 0.038s, speedup: 0.2, accuracy: 1.00 +/-0.00
-Index size: 6309, exact: 0.019s, LSHF: 0.048s, speedup: 0.4, accuracy: 1.00 +/-0.00
-Index size: 15848, exact: 0.041s, LSHF: 0.059s, speedup: 0.7, accuracy: 1.00 +/-0.00
-Index size: 39810, exact: 0.116s, LSHF: 0.066s, speedup: 1.8, accuracy: 1.00 +/-0.00
-Index size: 100000, exact: 0.325s, LSHF: 0.117s, speedup: 2.9, accuracy: 0.94 +/-0.08
+<div class="highlight-python"><div class="highlight"><pre>Index size: 1000, exact: 0.002s, LSHF: 0.033s, speedup: 0.1, accuracy: 1.00 +/-0.00
+Index size: 2511, exact: 0.007s, LSHF: 0.035s, speedup: 0.2, accuracy: 1.00 +/-0.00
+Index size: 6309, exact: 0.018s, LSHF: 0.041s, speedup: 0.4, accuracy: 1.00 +/-0.00
+Index size: 15848, exact: 0.044s, LSHF: 0.045s, speedup: 1.0, accuracy: 1.00 +/-0.00
+Index size: 39810, exact: 0.117s, LSHF: 0.072s, speedup: 1.6, accuracy: 1.00 +/-0.00
+Index size: 100000, exact: 0.264s, LSHF: 0.092s, speedup: 3.0, accuracy: 0.94 +/-0.08
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_approximate_nearest_neighbors_scalability.py"><code class="xref download docutils literal"><span class="pre">plot_approximate_nearest_neighbors_scalability.py</span></code></a></p>
@@ -332,8 +332,8 @@ Index size: 100000, exact: 0.325s, LSHF: 0.117s, speedup: 2.9, accuracy: 0.94 +/
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  14.62 seconds
-( 0 minutes  14.62 seconds)</p>
+<p><strong>Total running time of the example:</strong>  13.36 seconds
+( 0 minutes  13.36 seconds)</p>
 </div>
 
 
@@ -345,8 +345,8 @@ Index size: 100000, exact: 0.325s, LSHF: 0.117s, speedup: 2.9, accuracy: 0.94 +/
     </div>
 
     <div class="footer">
-        &copy; 2010 - 2014, scikit-learn developers (BSD License).
-      <a href="../../_sources/auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.txt" rel="nofollow">Show this page source</a>
+        &copy; 2010 - 2016, scikit-learn developers, Jiancheng Li (BSD License).
+      <a href="../../_sources/auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.txt" rel="nofollow">查看本页源代码</a>
     </div>
      <div class="rel">
     
@@ -360,7 +360,7 @@ Index size: 100000, exact: 0.325s, LSHF: 0.117s, speedup: 2.9, accuracy: 0.94 +/
     
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-22606712-2']);
+      _gaq.push(['_setAccount', 'UA-66414521-1']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -373,7 +373,7 @@ Index size: 100000, exact: 0.325s, LSHF: 0.117s, speedup: 2.9, accuracy: 0.94 +/
 
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript"> google.load('search', '1',
-        {language : 'en'}); google.setOnLoadCallback(function() {
+        {language : 'zh'}); google.setOnLoadCallback(function() {
             var customSearchControl = new
             google.search.CustomSearchControl('016639176250731907682:tjtqbvtvij0');
             customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);

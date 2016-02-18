@@ -75,6 +75,6 @@ iteratively refined in the neighborhood of the maximum.
 .. literalinclude:: plot_sparse_cov.py
     :lines: 51-
 
-**Total running time of the example:**  2.57 seconds
-( 0 minutes  2.57 seconds)
+**Total running time of the example:**  3.13 seconds
+( 0 minutes  3.13 seconds)
     

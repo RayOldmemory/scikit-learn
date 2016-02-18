@@ -42,7 +42,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../../_static/js/bootstrap.min.js" type="text/javascript"></script>
-  <link rel="canonical" href="http://scikit-learn.org/stable/auto_examples/applications/plot_out_of_core_classification.html" />
+  <link rel="canonical" href="http://lijiancheng0614.github.io/scikit-learn/auto_examples/applications/plot_out_of_core_classification.html" />
 
   <script type="text/javascript">
     $("div.buttonNext, div.buttonPrevious").hover(
@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
-            <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers/contributing.html">Contributing</a></li>
+            <li><a href="../../faq.html">常见问题</a></li>
+            <li><a href="../../developers/contributing.html">贡献</a></li>
             <li class="divider"></li>
-                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
+                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 （开发中）</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -131,7 +131,7 @@
         </div>
         <div class="rellink">
         <a href="../index.html">
-        Up
+        向上
         <br/>
         <span class="smallrellink">
         Examples
@@ -144,8 +144,8 @@
         </div>
     </div>
     
-      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
-    <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
+      <p class="doc-version">这个文档适用于 scikit-learn <strong>版本 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">其它版本</a></p>
+    <p class="citing">如果你要使用软件，请考虑 <a href="../../about.html#citing-scikit-learn">引用scikit-learn和Jiancheng Li</a>.</p>
     <ul>
 <li><a class="reference internal" href="#">Out-of-core classification of text documents</a></li>
 </ul>
@@ -193,50 +193,47 @@ feeding them to the learner.</p>
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>downloading dataset (once and for all) into C:\Users\Jiancheng\scikit_learn_data\reuters
-untarring Reuters dataset...
-done.
-Test set is 878 documents (108 positive)
-                 SGD classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.911 in 4.48s (  214 docs/s)
-          Perceptron classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.921 in 4.48s (  214 docs/s)
-  Passive-Aggressive classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.908 in 4.49s (  214 docs/s)
-      NB Multinomial classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.877 in 4.53s (  212 docs/s)
+<div class="highlight-python"><div class="highlight"><pre>Test set is 878 documents (108 positive)
+                 SGD classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.911 in 4.54s (  211 docs/s)
+      NB Multinomial classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.877 in 4.58s (  210 docs/s)
+          Perceptron classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.921 in 4.59s (  209 docs/s)
+  Passive-Aggressive classifier :          962 train docs (   132 positive)    878 test docs (   108 positive) accuracy: 0.908 in 4.60s (  209 docs/s)
 
 
-                 SGD classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.918 in 12.92s (  302 docs/s)
-          Perceptron classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.926 in 12.93s (  302 docs/s)
-  Passive-Aggressive classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.958 in 12.94s (  302 docs/s)
-      NB Multinomial classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.885 in 13.00s (  300 docs/s)
+                 SGD classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.918 in 11.23s (  348 docs/s)
+      NB Multinomial classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.885 in 11.27s (  346 docs/s)
+          Perceptron classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.926 in 11.28s (  346 docs/s)
+  Passive-Aggressive classifier :         3911 train docs (   517 positive)    878 test docs (   108 positive) accuracy: 0.958 in 11.29s (  346 docs/s)
 
 
-                 SGD classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.956 in 20.93s (  325 docs/s)
-          Perceptron classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.949 in 20.94s (  325 docs/s)
-  Passive-Aggressive classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.960 in 20.96s (  325 docs/s)
-      NB Multinomial classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.899 in 21.02s (  324 docs/s)
+                 SGD classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.956 in 17.68s (  385 docs/s)
+      NB Multinomial classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.899 in 17.72s (  384 docs/s)
+          Perceptron classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.949 in 17.73s (  384 docs/s)
+  Passive-Aggressive classifier :         6821 train docs (   891 positive)    878 test docs (   108 positive) accuracy: 0.960 in 17.74s (  384 docs/s)
 
 
-                 SGD classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.964 in 29.03s (  336 docs/s)
-          Perceptron classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.950 in 29.04s (  336 docs/s)
-  Passive-Aggressive classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.954 in 29.05s (  335 docs/s)
-      NB Multinomial classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.909 in 29.11s (  335 docs/s)
+                 SGD classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.964 in 24.74s (  394 docs/s)
+      NB Multinomial classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.909 in 24.78s (  393 docs/s)
+          Perceptron classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.950 in 24.78s (  393 docs/s)
+  Passive-Aggressive classifier :         9759 train docs (  1276 positive)    878 test docs (   108 positive) accuracy: 0.954 in 24.79s (  393 docs/s)
 
 
-                 SGD classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.945 in 35.03s (  333 docs/s)
-          Perceptron classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.951 in 35.03s (  333 docs/s)
-  Passive-Aggressive classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.954 in 35.04s (  333 docs/s)
-      NB Multinomial classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.916 in 35.08s (  332 docs/s)
+                 SGD classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.945 in 30.42s (  383 docs/s)
+      NB Multinomial classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.916 in 30.46s (  383 docs/s)
+          Perceptron classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.951 in 30.47s (  383 docs/s)
+  Passive-Aggressive classifier :        11680 train docs (  1499 positive)    878 test docs (   108 positive) accuracy: 0.954 in 30.47s (  383 docs/s)
 
 
-                 SGD classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.965 in 41.25s (  354 docs/s)
-          Perceptron classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.956 in 41.25s (  354 docs/s)
-  Passive-Aggressive classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.967 in 41.26s (  354 docs/s)
-      NB Multinomial classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.926 in 41.30s (  354 docs/s)
+                 SGD classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.965 in 37.07s (  394 docs/s)
+      NB Multinomial classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.926 in 37.11s (  394 docs/s)
+          Perceptron classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.956 in 37.12s (  394 docs/s)
+  Passive-Aggressive classifier :        14625 train docs (  1865 positive)    878 test docs (   108 positive) accuracy: 0.967 in 37.13s (  393 docs/s)
 
 
-                 SGD classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.960 in 46.20s (  375 docs/s)
-          Perceptron classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.957 in 97.99s (  177 docs/s)
-  Passive-Aggressive classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.967 in 98.00s (  177 docs/s)
-      NB Multinomial classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.932 in 98.03s (  177 docs/s)
+                 SGD classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.960 in 43.48s (  399 docs/s)
+      NB Multinomial classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.932 in 43.54s (  398 docs/s)
+          Perceptron classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.957 in 43.56s (  398 docs/s)
+  Passive-Aggressive classifier :        17360 train docs (  2179 positive)    878 test docs (   108 positive) accuracy: 0.967 in 43.57s (  398 docs/s)
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_out_of_core_classification.py"><code class="xref download docutils literal"><span class="pre">plot_out_of_core_classification.py</span></code></a></p>
@@ -582,11 +579,11 @@ Test set is 878 documents (108 positive)
 <span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Vectorization&#39;</span><span class="p">)</span>
 <span class="n">bar_colors</span> <span class="o">=</span> <a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s1">&#39;axes.color_cycle&#39;</span><span class="p">][:</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)]</span>
 
-<span class="n">ax</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 <span class="n">rectangles</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar"><span class="n">plt</span><span class="o">.</span><span class="n">bar</span></a><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)),</span> <span class="n">cls_runtime</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
                      <span class="n">color</span><span class="o">=</span><span class="n">bar_colors</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.75</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.75</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">cls_names</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">cls_runtime</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.2</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">ymax</span><span class="p">))</span>
@@ -618,11 +615,11 @@ Test set is 878 documents (108 positive)
 <span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Hashing</span><span class="se">\n</span><span class="s1">+Vect.&#39;</span><span class="p">)</span>
 <span class="n">bar_colors</span> <span class="o">=</span> <a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s1">&#39;axes.color_cycle&#39;</span><span class="p">][:</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)]</span>
 
-<span class="n">ax</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 <span class="n">rectangles</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar"><span class="n">plt</span><span class="o">.</span><span class="n">bar</span></a><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)),</span> <span class="n">cls_runtime</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
                      <span class="n">color</span><span class="o">=</span><span class="n">bar_colors</span><span class="p">)</span>
 
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.75</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.75</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">cls_names</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.setp"><span class="n">plt</span><span class="o">.</span><span class="n">setp</span></a><span class="p">(</span><a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks"><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span></a><span class="p">()[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">cls_runtime</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.2</span>
@@ -633,8 +630,8 @@ Test set is 878 documents (108 positive)
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  157.69 seconds
-( 2 minutes  37.69 seconds)</p>
+<p><strong>Total running time of the example:</strong>  48.30 seconds
+( 0 minutes  48.30 seconds)</p>
 </div>
 
 
@@ -646,8 +643,8 @@ Test set is 878 documents (108 positive)
     </div>
 
     <div class="footer">
-        &copy; 2010 - 2014, scikit-learn developers (BSD License).
-      <a href="../../_sources/auto_examples/applications/plot_out_of_core_classification.txt" rel="nofollow">Show this page source</a>
+        &copy; 2010 - 2016, scikit-learn developers, Jiancheng Li (BSD License).
+      <a href="../../_sources/auto_examples/applications/plot_out_of_core_classification.txt" rel="nofollow">查看本页源代码</a>
     </div>
      <div class="rel">
     
@@ -661,7 +658,7 @@ Test set is 878 documents (108 positive)
     
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-22606712-2']);
+      _gaq.push(['_setAccount', 'UA-66414521-1']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -674,7 +671,7 @@ Test set is 878 documents (108 positive)
 
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript"> google.load('search', '1',
-        {language : 'en'}); google.setOnLoadCallback(function() {
+        {language : 'zh'}); google.setOnLoadCallback(function() {
             var customSearchControl = new
             google.search.CustomSearchControl('016639176250731907682:tjtqbvtvij0');
             customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);

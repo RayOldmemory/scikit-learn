@@ -23,10 +23,10 @@ a result it can identify only the first class.
 
 **Script output**::
 
-  classif_rate for Linear SVC : 82.000000 
   classif_rate for L1 logistic : 79.333333 
-  classif_rate for L2 logistic (OvR) : 76.666667 
-  classif_rate for L2 logistic (Multinomial) : 82.000000
+  classif_rate for L2 logistic (Multinomial) : 82.000000 
+  classif_rate for Linear SVC : 82.000000 
+  classif_rate for L2 logistic (OvR) : 76.666667
 
 
 
@@ -35,6 +35,6 @@ a result it can identify only the first class.
 .. literalinclude:: plot_classification_probability.py
     :lines: 14-
 
-**Total running time of the example:**  1.68 seconds
-( 0 minutes  1.68 seconds)
+**Total running time of the example:**  2.40 seconds
+( 0 minutes  2.40 seconds)
     

@@ -58,7 +58,7 @@ The plots represent the distribution of the prediction latency as a boxplot.
   benchmarking with 100 features
   benchmarking with 250 features
   benchmarking with 500 features
-  example run in 5.78s
+  example run in 6.54s
 
 
 
@@ -67,6 +67,6 @@ The plots represent the distribution of the prediction latency as a boxplot.
 .. literalinclude:: plot_prediction_latency.py
     :lines: 15-
 
-**Total running time of the example:**  5.79 seconds
-( 0 minutes  5.79 seconds)
+**Total running time of the example:**  6.54 seconds
+( 0 minutes  6.54 seconds)
     

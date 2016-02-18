@@ -58,6 +58,6 @@ feature distinguishes a particular class.
 .. literalinclude:: plot_random_multilabel_dataset.py
     :lines: 36-
 
-**Total running time of the example:**  0.39 seconds
-( 0 minutes  0.39 seconds)
+**Total running time of the example:**  0.42 seconds
+( 0 minutes  0.42 seconds)
     

@@ -44,6 +44,6 @@ identify the directions of largest non-Gaussianity (lower right).
 .. literalinclude:: plot_ica_vs_pca.py
     :lines: 30-
 
-**Total running time of the example:**  1.13 seconds
-( 0 minutes  1.13 seconds)
+**Total running time of the example:**  1.59 seconds
+( 0 minutes  1.59 seconds)
     

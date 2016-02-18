@@ -58,6 +58,6 @@ as well.
 .. literalinclude:: plot_kde_1d.py
     :lines: 29-
 
-**Total running time of the example:**  1.60 seconds
-( 0 minutes  1.60 seconds)
+**Total running time of the example:**  2.02 seconds
+( 0 minutes  2.02 seconds)
     

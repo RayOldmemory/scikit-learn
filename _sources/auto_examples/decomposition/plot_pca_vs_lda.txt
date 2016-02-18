@@ -47,6 +47,6 @@ LDA, in contrast to PCA, is a supervised method, using known class labels.
 .. literalinclude:: plot_pca_vs_lda.py
     :lines: 19-
 
-**Total running time of the example:**  0.24 seconds
-( 0 minutes  0.24 seconds)
+**Total running time of the example:**  0.37 seconds
+( 0 minutes  0.37 seconds)
     

@@ -37,6 +37,6 @@ Chen et al., IEEE Trans. on Sign. Proc., Volume 58, Issue 10, October 2010.
 .. literalinclude:: plot_lw_vs_oas.py
     :lines: 23-
 
-**Total running time of the example:**  14.31 seconds
-( 0 minutes  14.31 seconds)
+**Total running time of the example:**  6.24 seconds
+( 0 minutes  6.24 seconds)
     

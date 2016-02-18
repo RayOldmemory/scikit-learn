@@ -39,8 +39,8 @@ There are two options to assign labels:
 
 **Script output**::
 
-  Spectral clustering: kmeans, 13.45s
-  Spectral clustering: discretize, 16.62s
+  Spectral clustering: kmeans, 15.17s
+  Spectral clustering: discretize, 11.68s
 
 
 
@@ -49,6 +49,6 @@ There are two options to assign labels:
 .. literalinclude:: plot_face_segmentation.py
     :lines: 20-
 
-**Total running time of the example:**  32.75 seconds
-( 0 minutes  32.75 seconds)
+**Total running time of the example:**  29.08 seconds
+( 0 minutes  29.08 seconds)
     

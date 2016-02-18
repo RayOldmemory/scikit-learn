@@ -47,6 +47,6 @@ high-dimensional categorical embedding of the data.
 .. literalinclude:: plot_feature_transformation.py
     :lines: 23-
 
-**Total running time of the example:**  5.30 seconds
-( 0 minutes  5.30 seconds)
+**Total running time of the example:**  5.16 seconds
+( 0 minutes  5.16 seconds)
     

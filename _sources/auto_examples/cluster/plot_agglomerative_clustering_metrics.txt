@@ -84,6 +84,6 @@ thus the clustering puts them in the same cluster.
 .. literalinclude:: plot_agglomerative_clustering_metrics.py
     :lines: 35-
 
-**Total running time of the example:**  4.29 seconds
-( 0 minutes  4.29 seconds)
+**Total running time of the example:**  3.22 seconds
+( 0 minutes  3.22 seconds)
     

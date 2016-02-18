@@ -29,6 +29,6 @@ deformation of the decision boundary very visible.
 .. literalinclude:: plot_weighted_samples.py
     :lines: 15-
 
-**Total running time of the example:**  0.80 seconds
-( 0 minutes  0.80 seconds)
+**Total running time of the example:**  0.83 seconds
+( 0 minutes  0.83 seconds)
     

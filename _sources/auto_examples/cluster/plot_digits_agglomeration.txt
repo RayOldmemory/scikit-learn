@@ -23,6 +23,6 @@ feature agglomeration.
 .. literalinclude:: plot_digits_agglomeration.py
     :lines: 12-
 
-**Total running time of the example:**  1.36 seconds
-( 0 minutes  1.36 seconds)
+**Total running time of the example:**  1.56 seconds
+( 0 minutes  1.56 seconds)
     

@@ -30,6 +30,6 @@ non-Gaussian processes.
 .. literalinclude:: plot_ica_blind_source_separation.py
     :lines: 16-
 
-**Total running time of the example:**  1.85 seconds
-( 0 minutes  1.85 seconds)
+**Total running time of the example:**  1.17 seconds
+( 0 minutes  1.17 seconds)
     

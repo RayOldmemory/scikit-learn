@@ -30,24 +30,24 @@ a BayesianRidge as supervised estimator.
          ..., 
          [ 0.275706, ..., -1.085711]]), 
   <1600x1600 sparse matrix of type '<class 'numpy.int32'>'
-          with 7840 stored elements in COOrdinate format>, n_clusters=None, n_components=None)
-  ________________________________________________________ward_tree - 0.4s, 0.0min
+          with 7840 stored elements in COOrdinate format>, n_components=None, n_clusters=None)
+  ________________________________________________________ward_tree - 0.5s, 0.0min
   ________________________________________________________________________________
   [Memory] Calling sklearn.cluster.hierarchical.ward_tree...
   ward_tree(array([[ 0.905206, ...,  0.161245],
          ..., 
          [-0.849835, ..., -1.091621]]), 
   <1600x1600 sparse matrix of type '<class 'numpy.int32'>'
-          with 7840 stored elements in COOrdinate format>, n_clusters=None, n_components=None)
-  ________________________________________________________ward_tree - 0.5s, 0.0min
+          with 7840 stored elements in COOrdinate format>, n_components=None, n_clusters=None)
+  ________________________________________________________ward_tree - 0.3s, 0.0min
   ________________________________________________________________________________
   [Memory] Calling sklearn.cluster.hierarchical.ward_tree...
   ward_tree(array([[ 0.905206, ..., -0.675318],
          ..., 
          [-0.849835, ..., -1.085711]]), 
   <1600x1600 sparse matrix of type '<class 'numpy.int32'>'
-          with 7840 stored elements in COOrdinate format>, n_clusters=None, n_components=None)
-  ________________________________________________________ward_tree - 0.7s, 0.0min
+          with 7840 stored elements in COOrdinate format>, n_components=None, n_clusters=None)
+  ________________________________________________________ward_tree - 0.4s, 0.0min
   ________________________________________________________________________________
   [Memory] Calling sklearn.feature_selection.univariate_selection.f_regression...
   f_regression(array([[-0.451933, ...,  0.275706],
@@ -77,6 +77,6 @@ a BayesianRidge as supervised estimator.
 .. literalinclude:: plot_feature_agglomeration_vs_univariate_selection.py
     :lines: 15-
 
-**Total running time of the example:**  5.43 seconds
-( 0 minutes  5.43 seconds)
+**Total running time of the example:**  3.21 seconds
+( 0 minutes  3.21 seconds)
     

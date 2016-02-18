@@ -36,6 +36,6 @@ analogous to the random splits in Random Forests
 .. literalinclude:: plot_gradient_boosting_regularization.py
     :lines: 22-
 
-**Total running time of the example:**  31.08 seconds
-( 0 minutes  31.08 seconds)
+**Total running time of the example:**  29.06 seconds
+( 0 minutes  29.06 seconds)
     

@@ -50,6 +50,6 @@ and finally the ground truth.
 .. literalinclude:: plot_cluster_iris.py
     :lines: 19-
 
-**Total running time of the example:**  0.72 seconds
-( 0 minutes  0.72 seconds)
+**Total running time of the example:**  0.89 seconds
+( 0 minutes  0.89 seconds)
     

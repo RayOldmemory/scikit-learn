@@ -29,6 +29,6 @@ the RANSAC algorithm.
 .. literalinclude:: plot_ransac.py
     :lines: 10-
 
-**Total running time of the example:**  0.20 seconds
-( 0 minutes  0.20 seconds)
+**Total running time of the example:**  0.18 seconds
+( 0 minutes  0.18 seconds)
     

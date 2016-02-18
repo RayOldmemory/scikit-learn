@@ -118,6 +118,6 @@ but not where it is transposed-sigmoid (e.g., Gaussian naive Bayes).
 .. literalinclude:: plot_calibration_curve.py
     :lines: 44-
 
-**Total running time of the example:**  5.31 seconds
-( 0 minutes  5.31 seconds)
+**Total running time of the example:**  6.35 seconds
+( 0 minutes  6.35 seconds)
     

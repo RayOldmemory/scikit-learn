@@ -42,7 +42,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../../_static/js/bootstrap.min.js" type="text/javascript"></script>
-  <link rel="canonical" href="http://scikit-learn.org/stable/auto_examples/linear_model/plot_polynomial_interpolation.html" />
+  <link rel="canonical" href="http://lijiancheng0614.github.io/scikit-learn/auto_examples/linear_model/plot_polynomial_interpolation.html" />
 
   <script type="text/javascript">
     $("div.buttonNext, div.buttonPrevious").hover(
@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
-            <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers/contributing.html">Contributing</a></li>
+            <li><a href="../../faq.html">常见问题</a></li>
+            <li><a href="../../developers/contributing.html">贡献</a></li>
             <li class="divider"></li>
-                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
+                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 （开发中）</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -131,7 +131,7 @@
         </div>
         <div class="rellink">
         <a href="../index.html">
-        Up
+        向上
         <br/>
         <span class="smallrellink">
         Examples
@@ -144,8 +144,8 @@
         </div>
     </div>
     
-      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
-    <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
+      <p class="doc-version">这个文档适用于 scikit-learn <strong>版本 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">其它版本</a></p>
+    <p class="citing">如果你要使用软件，请考虑 <a href="../../about.html#citing-scikit-learn">引用scikit-learn和Jiancheng Li</a>.</p>
     <ul>
 <li><a class="reference internal" href="#">Polynomial interpolation</a></li>
 </ul>
@@ -204,10 +204,10 @@ and can induce very high (even infinite) dimensional feature spaces.</p>
 
 
 <span class="c1"># generate points used to plot</span>
-<span class="n">x_plot</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">x_plot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 
 <span class="c1"># generate points and keep a subset of them</span>
-<span class="n">x</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">rng</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.sort.html#numpy.sort"><span class="n">np</span><span class="o">.</span><span class="n">sort</span></a><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="mi">20</span><span class="p">])</span>
@@ -218,7 +218,7 @@ and can induce very high (even infinite) dimensional feature spaces.</p>
 <span class="n">X_plot</span> <span class="o">=</span> <span class="n">x_plot</span><span class="p">[:,</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/arrays.indexing.html#numpy.newaxis"><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span></a><span class="p">]</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">x_plot</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">x_plot</span><span class="p">),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;ground truth&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;training points&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;training points&quot;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">degree</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]:</span>
     <span class="n">model</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../../modules/generated/sklearn.preprocessing.PolynomialFeatures.html#sklearn.preprocessing.PolynomialFeatures"><span class="n">PolynomialFeatures</span></a><span class="p">(</span><span class="n">degree</span><span class="p">),</span> <a href="../../modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge"><span class="n">Ridge</span></a><span class="p">())</span>
@@ -244,8 +244,8 @@ and can induce very high (even infinite) dimensional feature spaces.</p>
     </div>
 
     <div class="footer">
-        &copy; 2010 - 2014, scikit-learn developers (BSD License).
-      <a href="../../_sources/auto_examples/linear_model/plot_polynomial_interpolation.txt" rel="nofollow">Show this page source</a>
+        &copy; 2010 - 2016, scikit-learn developers, Jiancheng Li (BSD License).
+      <a href="../../_sources/auto_examples/linear_model/plot_polynomial_interpolation.txt" rel="nofollow">查看本页源代码</a>
     </div>
      <div class="rel">
     
@@ -259,7 +259,7 @@ and can induce very high (even infinite) dimensional feature spaces.</p>
     
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-22606712-2']);
+      _gaq.push(['_setAccount', 'UA-66414521-1']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -272,7 +272,7 @@ and can induce very high (even infinite) dimensional feature spaces.</p>
 
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript"> google.load('search', '1',
-        {language : 'en'}); google.setOnLoadCallback(function() {
+        {language : 'zh'}); google.setOnLoadCallback(function() {
             var customSearchControl = new
             google.search.CustomSearchControl('016639176250731907682:tjtqbvtvij0');
             customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);

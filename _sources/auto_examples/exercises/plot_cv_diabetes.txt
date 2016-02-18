@@ -39,6 +39,6 @@ This exercise is used in the :ref:`cv_estimators_tut` part of the
 .. literalinclude:: plot_cv_diabetes.py
     :lines: 11-
 
-**Total running time of the example:**  0.75 seconds
-( 0 minutes  0.75 seconds)
+**Total running time of the example:**  0.63 seconds
+( 0 minutes  0.63 seconds)
     

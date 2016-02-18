@@ -40,6 +40,6 @@ This exercise is used in the :ref:`using_kernels_tut` part of the
 .. literalinclude:: plot_iris_exercise.py
     :lines: 11-
 
-**Total running time of the example:**  14.85 seconds
-( 0 minutes  14.85 seconds)
+**Total running time of the example:**  13.28 seconds
+( 0 minutes  13.28 seconds)
     

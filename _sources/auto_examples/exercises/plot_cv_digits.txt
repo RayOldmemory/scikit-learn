@@ -25,6 +25,6 @@ This exercise is used in the :ref:`cv_generators_tut` part of the
 .. literalinclude:: plot_cv_digits.py
     :lines: 11-
 
-**Total running time of the example:**  7.96 seconds
-( 0 minutes  7.96 seconds)
+**Total running time of the example:**  7.20 seconds
+( 0 minutes  7.20 seconds)
     

@@ -47,6 +47,6 @@ neighbors.
 .. literalinclude:: plot_approximate_nearest_neighbors_hyperparameters.py
     :lines: 23-
 
-**Total running time of the example:**  45.45 seconds
-( 0 minutes  45.45 seconds)
+**Total running time of the example:**  51.01 seconds
+( 0 minutes  51.01 seconds)
     

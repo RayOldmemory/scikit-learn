@@ -23,6 +23,6 @@ This example shows how to perform univariate feature before running a SVC
 .. literalinclude:: plot_svm_anova.py
     :lines: 9-
 
-**Total running time of the example:**  1.31 seconds
-( 0 minutes  1.31 seconds)
+**Total running time of the example:**  1.66 seconds
+( 0 minutes  1.66 seconds)
     

@@ -41,6 +41,6 @@ original data.
 .. literalinclude:: plot_random_forest_embedding.py
     :lines: 27-
 
-**Total running time of the example:**  1.10 seconds
-( 0 minutes  1.10 seconds)
+**Total running time of the example:**  1.15 seconds
+( 0 minutes  1.15 seconds)
     

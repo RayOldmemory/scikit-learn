@@ -24,6 +24,6 @@ plot the decision surface and the support vectors.
 .. literalinclude:: plot_custom_kernel.py
     :lines: 10-
 
-**Total running time of the example:**  1.03 seconds
-( 0 minutes  1.03 seconds)
+**Total running time of the example:**  0.60 seconds
+( 0 minutes  0.60 seconds)
     

@@ -34,6 +34,6 @@ is a large outlier.
 .. literalinclude:: plot_robust_scaling.py
     :lines: 18-
 
-**Total running time of the example:**  0.69 seconds
-( 0 minutes  0.69 seconds)
+**Total running time of the example:**  0.60 seconds
+( 0 minutes  0.60 seconds)
     

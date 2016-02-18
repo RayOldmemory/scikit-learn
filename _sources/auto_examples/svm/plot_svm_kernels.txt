@@ -41,6 +41,6 @@ data-points are not linearly separable.
 .. literalinclude:: plot_svm_kernels.py
     :lines: 15-
 
-**Total running time of the example:**  0.49 seconds
-( 0 minutes  0.49 seconds)
+**Total running time of the example:**  0.54 seconds
+( 0 minutes  0.54 seconds)
     

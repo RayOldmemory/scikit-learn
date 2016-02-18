@@ -27,6 +27,6 @@ even with a small amount of labeled data.
 .. literalinclude:: plot_label_propagation_versus_svm_iris.py
     :lines: 13-
 
-**Total running time of the example:**  3.07 seconds
-( 0 minutes  3.07 seconds)
+**Total running time of the example:**  3.02 seconds
+( 0 minutes  3.02 seconds)
     

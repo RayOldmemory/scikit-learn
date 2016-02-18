@@ -23,6 +23,6 @@ couple of features from the Boston dataset.
 .. literalinclude:: plot_select_from_model_boston.py
     :lines: 9-
 
-**Total running time of the example:**  0.26 seconds
-( 0 minutes  0.26 seconds)
+**Total running time of the example:**  0.22 seconds
+( 0 minutes  0.22 seconds)
     

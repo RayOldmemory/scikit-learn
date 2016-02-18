@@ -59,6 +59,6 @@ References
 .. literalinclude:: plot_species_kde.py
     :lines: 38-
 
-**Total running time of the example:**  11.29 seconds
-( 0 minutes  11.29 seconds)
+**Total running time of the example:**  9.91 seconds
+( 0 minutes  9.91 seconds)
     

@@ -19,7 +19,7 @@ Computes path on IRIS dataset.
 **Script output**::
 
   Computing regularization path ...
-  This took  0:00:00.080703
+  This took  0:00:00.084075
 
 
 
@@ -28,6 +28,6 @@ Computes path on IRIS dataset.
 .. literalinclude:: plot_logistic_path.py
     :lines: 10-
 
-**Total running time of the example:**  0.17 seconds
-( 0 minutes  0.17 seconds)
+**Total running time of the example:**  0.44 seconds
+( 0 minutes  0.44 seconds)
     

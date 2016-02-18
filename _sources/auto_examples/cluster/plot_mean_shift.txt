@@ -31,6 +31,6 @@ Machine Intelligence. 2002. pp. 603-619.
 .. literalinclude:: plot_mean_shift.py
     :lines: 13-
 
-**Total running time of the example:**  1.00 seconds
-( 0 minutes  1.00 seconds)
+**Total running time of the example:**  1.29 seconds
+( 0 minutes  1.29 seconds)
     

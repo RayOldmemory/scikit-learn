@@ -72,6 +72,6 @@ risk of over-fitting the data.
 .. literalinclude:: plot_outlier_detection_housing.py
     :lines: 48-
 
-**Total running time of the example:**  8.24 seconds
-( 0 minutes  8.24 seconds)
+**Total running time of the example:**  8.39 seconds
+( 0 minutes  8.39 seconds)
     

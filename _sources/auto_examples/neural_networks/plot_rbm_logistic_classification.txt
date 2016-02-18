@@ -36,26 +36,26 @@ classification accuracy.
 
 **Script output**::
 
-  [BernoulliRBM] Iteration 1, pseudo-likelihood = -25.39, time = 0.79s
-  [BernoulliRBM] Iteration 2, pseudo-likelihood = -23.77, time = 0.81s
-  [BernoulliRBM] Iteration 3, pseudo-likelihood = -22.94, time = 0.79s
-  [BernoulliRBM] Iteration 4, pseudo-likelihood = -21.91, time = 1.27s
-  [BernoulliRBM] Iteration 5, pseudo-likelihood = -21.69, time = 0.88s
-  [BernoulliRBM] Iteration 6, pseudo-likelihood = -21.06, time = 0.82s
-  [BernoulliRBM] Iteration 7, pseudo-likelihood = -20.89, time = 0.78s
-  [BernoulliRBM] Iteration 8, pseudo-likelihood = -20.64, time = 0.73s
-  [BernoulliRBM] Iteration 9, pseudo-likelihood = -20.36, time = 0.79s
-  [BernoulliRBM] Iteration 10, pseudo-likelihood = -20.09, time = 0.83s
-  [BernoulliRBM] Iteration 11, pseudo-likelihood = -20.08, time = 0.90s
-  [BernoulliRBM] Iteration 12, pseudo-likelihood = -19.82, time = 0.88s
-  [BernoulliRBM] Iteration 13, pseudo-likelihood = -19.64, time = 0.80s
-  [BernoulliRBM] Iteration 14, pseudo-likelihood = -19.61, time = 0.96s
-  [BernoulliRBM] Iteration 15, pseudo-likelihood = -19.57, time = 0.80s
-  [BernoulliRBM] Iteration 16, pseudo-likelihood = -19.41, time = 1.11s
-  [BernoulliRBM] Iteration 17, pseudo-likelihood = -19.30, time = 0.99s
-  [BernoulliRBM] Iteration 18, pseudo-likelihood = -19.25, time = 1.46s
-  [BernoulliRBM] Iteration 19, pseudo-likelihood = -19.27, time = 1.19s
-  [BernoulliRBM] Iteration 20, pseudo-likelihood = -19.01, time = 1.02s
+  [BernoulliRBM] Iteration 1, pseudo-likelihood = -25.39, time = 0.50s
+  [BernoulliRBM] Iteration 2, pseudo-likelihood = -23.77, time = 0.65s
+  [BernoulliRBM] Iteration 3, pseudo-likelihood = -22.94, time = 0.67s
+  [BernoulliRBM] Iteration 4, pseudo-likelihood = -21.91, time = 0.68s
+  [BernoulliRBM] Iteration 5, pseudo-likelihood = -21.69, time = 0.69s
+  [BernoulliRBM] Iteration 6, pseudo-likelihood = -21.06, time = 0.64s
+  [BernoulliRBM] Iteration 7, pseudo-likelihood = -20.89, time = 0.63s
+  [BernoulliRBM] Iteration 8, pseudo-likelihood = -20.64, time = 0.63s
+  [BernoulliRBM] Iteration 9, pseudo-likelihood = -20.36, time = 0.63s
+  [BernoulliRBM] Iteration 10, pseudo-likelihood = -20.09, time = 0.66s
+  [BernoulliRBM] Iteration 11, pseudo-likelihood = -20.08, time = 0.64s
+  [BernoulliRBM] Iteration 12, pseudo-likelihood = -19.82, time = 0.83s
+  [BernoulliRBM] Iteration 13, pseudo-likelihood = -19.64, time = 0.98s
+  [BernoulliRBM] Iteration 14, pseudo-likelihood = -19.61, time = 0.76s
+  [BernoulliRBM] Iteration 15, pseudo-likelihood = -19.57, time = 0.65s
+  [BernoulliRBM] Iteration 16, pseudo-likelihood = -19.41, time = 0.68s
+  [BernoulliRBM] Iteration 17, pseudo-likelihood = -19.30, time = 0.69s
+  [BernoulliRBM] Iteration 18, pseudo-likelihood = -19.25, time = 0.96s
+  [BernoulliRBM] Iteration 19, pseudo-likelihood = -19.27, time = 0.79s
+  [BernoulliRBM] Iteration 20, pseudo-likelihood = -19.01, time = 0.74s
   
   Logistic regression using RBM features:
                precision    recall  f1-score   support
@@ -97,6 +97,6 @@ classification accuracy.
 .. literalinclude:: plot_rbm_logistic_classification.py
     :lines: 27-
 
-**Total running time of the example:**  102.86 seconds
-( 1 minutes  42.86 seconds)
+**Total running time of the example:**  102.11 seconds
+( 1 minutes  42.11 seconds)
     

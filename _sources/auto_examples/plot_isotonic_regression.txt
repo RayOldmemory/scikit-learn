@@ -28,6 +28,6 @@ presented.
 .. literalinclude:: plot_isotonic_regression.py
     :lines: 14-
 
-**Total running time of the example:**  0.13 seconds
-( 0 minutes  0.13 seconds)
+**Total running time of the example:**  0.70 seconds
+( 0 minutes  0.70 seconds)
     

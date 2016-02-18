@@ -30,6 +30,6 @@ details of the training data and learn from the noise, i.e. they overfit.
 .. literalinclude:: plot_tree_regression.py
     :lines: 16-
 
-**Total running time of the example:**  0.15 seconds
-( 0 minutes  0.15 seconds)
+**Total running time of the example:**  0.14 seconds
+( 0 minutes  0.14 seconds)
     

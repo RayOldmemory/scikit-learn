@@ -42,7 +42,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../../_static/js/bootstrap.min.js" type="text/javascript"></script>
-  <link rel="canonical" href="http://scikit-learn.org/stable/auto_examples/cluster/plot_birch_vs_minibatchkmeans.html" />
+  <link rel="canonical" href="http://lijiancheng0614.github.io/scikit-learn/auto_examples/cluster/plot_birch_vs_minibatchkmeans.html" />
 
   <script type="text/javascript">
     $("div.buttonNext, div.buttonPrevious").hover(
@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
-            <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers/contributing.html">Contributing</a></li>
+            <li><a href="../../faq.html">常见问题</a></li>
+            <li><a href="../../developers/contributing.html">贡献</a></li>
             <li class="divider"></li>
-                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
+                <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 （开发中）</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/scikit-learn-docs.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -131,7 +131,7 @@
         </div>
         <div class="rellink">
         <a href="../index.html">
-        Up
+        向上
         <br/>
         <span class="smallrellink">
         Examples
@@ -144,8 +144,8 @@
         </div>
     </div>
     
-      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
-    <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
+      <p class="doc-version">这个文档适用于 scikit-learn <strong>版本 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">其它版本</a></p>
+    <p class="citing">如果你要使用软件，请考虑 <a href="../../about.html#citing-scikit-learn">引用scikit-learn和Jiancheng Li</a>.</p>
     <ul>
 <li><a class="reference internal" href="#">Compare BIRCH and MiniBatchKMeans</a></li>
 </ul>
@@ -176,11 +176,11 @@ step before the final (global) clustering step that further reduces these
 158 clusters to 100 clusters.</p>
 <img alt="../../_images/plot_birch_vs_minibatchkmeans_001.png" class="align-center" src="../../_images/plot_birch_vs_minibatchkmeans_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Birch without global clustering as the final step took 10.15 seconds
+<div class="highlight-python"><div class="highlight"><pre>Birch without global clustering as the final step took 12.56 seconds
 n_clusters : 158
-Birch with global clustering as the final step took 9.65 seconds
+Birch with global clustering as the final step took 11.20 seconds
 n_clusters : 100
-Time taken to run MiniBatchKMeans 23.77 seconds
+Time taken to run MiniBatchKMeans 13.17 seconds
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_birch_vs_minibatchkmeans.py"><code class="xref download docutils literal"><span class="pre">plot_birch_vs_minibatchkmeans.py</span></code></a></p>
@@ -203,9 +203,9 @@ Time taken to run MiniBatchKMeans 23.77 seconds
 
 
 <span class="c1"># Generate centers for the blobs so that it forms a 10 X 10 grid.</span>
-<span class="n">xx</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="o">-</span><span class="mi">22</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="n">yy</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="o">-</span><span class="mi">22</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="n">xx</span><span class="p">,</span> <span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">)</span>
+<span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">22</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">22</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">xx</span><span class="p">,</span> <span class="n">yy</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.meshgrid.html#numpy.meshgrid"><span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">)</span>
 <span class="n">n_centres</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.hstack.html#numpy.hstack"><span class="n">np</span><span class="o">.</span><span class="n">hstack</span></a><span class="p">((</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.ravel.html#numpy.ravel"><span class="n">np</span><span class="o">.</span><span class="n">ravel</span></a><span class="p">(</span><span class="n">xx</span><span class="p">)[:,</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/arrays.indexing.html#numpy.newaxis"><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span></a><span class="p">],</span>
                        <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.ravel.html#numpy.ravel"><span class="n">np</span><span class="o">.</span><span class="n">ravel</span></a><span class="p">(</span><span class="n">yy</span><span class="p">)[:,</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/arrays.indexing.html#numpy.newaxis"><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span></a><span class="p">]))</span>
 
@@ -275,8 +275,8 @@ Time taken to run MiniBatchKMeans 23.77 seconds
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  48.90 seconds
-( 0 minutes  48.90 seconds)</p>
+<p><strong>Total running time of the example:</strong>  41.44 seconds
+( 0 minutes  41.44 seconds)</p>
 </div>
 
 
@@ -288,8 +288,8 @@ Time taken to run MiniBatchKMeans 23.77 seconds
     </div>
 
     <div class="footer">
-        &copy; 2010 - 2014, scikit-learn developers (BSD License).
-      <a href="../../_sources/auto_examples/cluster/plot_birch_vs_minibatchkmeans.txt" rel="nofollow">Show this page source</a>
+        &copy; 2010 - 2016, scikit-learn developers, Jiancheng Li (BSD License).
+      <a href="../../_sources/auto_examples/cluster/plot_birch_vs_minibatchkmeans.txt" rel="nofollow">查看本页源代码</a>
     </div>
      <div class="rel">
     
@@ -303,7 +303,7 @@ Time taken to run MiniBatchKMeans 23.77 seconds
     
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-22606712-2']);
+      _gaq.push(['_setAccount', 'UA-66414521-1']);
       _gaq.push(['_trackPageview']);
 
       (function() {
@@ -316,7 +316,7 @@ Time taken to run MiniBatchKMeans 23.77 seconds
 
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script type="text/javascript"> google.load('search', '1',
-        {language : 'en'}); google.setOnLoadCallback(function() {
+        {language : 'zh'}); google.setOnLoadCallback(function() {
             var customSearchControl = new
             google.search.CustomSearchControl('016639176250731907682:tjtqbvtvij0');
             customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);

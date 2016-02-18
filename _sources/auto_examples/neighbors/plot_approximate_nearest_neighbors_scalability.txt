@@ -54,12 +54,12 @@ the dimensionality of the data.
 
 **Script output**::
 
-  Index size: 1000, exact: 0.003s, LSHF: 0.038s, speedup: 0.1, accuracy: 1.00 +/-0.00
-  Index size: 2511, exact: 0.006s, LSHF: 0.038s, speedup: 0.2, accuracy: 1.00 +/-0.00
-  Index size: 6309, exact: 0.019s, LSHF: 0.048s, speedup: 0.4, accuracy: 1.00 +/-0.00
-  Index size: 15848, exact: 0.041s, LSHF: 0.059s, speedup: 0.7, accuracy: 1.00 +/-0.00
-  Index size: 39810, exact: 0.116s, LSHF: 0.066s, speedup: 1.8, accuracy: 1.00 +/-0.00
-  Index size: 100000, exact: 0.325s, LSHF: 0.117s, speedup: 2.9, accuracy: 0.94 +/-0.08
+  Index size: 1000, exact: 0.002s, LSHF: 0.033s, speedup: 0.1, accuracy: 1.00 +/-0.00
+  Index size: 2511, exact: 0.007s, LSHF: 0.035s, speedup: 0.2, accuracy: 1.00 +/-0.00
+  Index size: 6309, exact: 0.018s, LSHF: 0.041s, speedup: 0.4, accuracy: 1.00 +/-0.00
+  Index size: 15848, exact: 0.044s, LSHF: 0.045s, speedup: 1.0, accuracy: 1.00 +/-0.00
+  Index size: 39810, exact: 0.117s, LSHF: 0.072s, speedup: 1.6, accuracy: 1.00 +/-0.00
+  Index size: 100000, exact: 0.264s, LSHF: 0.092s, speedup: 3.0, accuracy: 0.94 +/-0.08
 
 
 
@@ -68,6 +68,6 @@ the dimensionality of the data.
 .. literalinclude:: plot_approximate_nearest_neighbors_scalability.py
     :lines: 30-
 
-**Total running time of the example:**  14.62 seconds
-( 0 minutes  14.62 seconds)
+**Total running time of the example:**  13.36 seconds
+( 0 minutes  13.36 seconds)
     

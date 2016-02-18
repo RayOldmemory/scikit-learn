@@ -44,6 +44,6 @@ have a label.
 .. literalinclude:: plot_multilabel.py
     :lines: 32-
 
-**Total running time of the example:**  0.53 seconds
-( 0 minutes  0.53 seconds)
+**Total running time of the example:**  2.44 seconds
+( 0 minutes  2.44 seconds)
     

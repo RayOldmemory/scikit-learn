@@ -29,6 +29,6 @@ algorithms.
 .. literalinclude:: plot_mini_batch_kmeans.py
     :lines: 15-
 
-**Total running time of the example:**  1.43 seconds
-( 0 minutes  1.43 seconds)
+**Total running time of the example:**  0.77 seconds
+( 0 minutes  0.77 seconds)
     

@@ -38,6 +38,6 @@ It will plot the decision boundaries for each class.
 .. literalinclude:: plot_nearest_centroid.py
     :lines: 9-
 
-**Total running time of the example:**  0.28 seconds
-( 0 minutes  0.28 seconds)
+**Total running time of the example:**  0.36 seconds
+( 0 minutes  0.36 seconds)
     

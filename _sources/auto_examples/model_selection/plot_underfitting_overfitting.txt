@@ -36,6 +36,6 @@ training data.
 .. literalinclude:: plot_underfitting_overfitting.py
     :lines: 22-
 
-**Total running time of the example:**  0.52 seconds
-( 0 minutes  0.52 seconds)
+**Total running time of the example:**  0.50 seconds
+( 0 minutes  0.50 seconds)
     

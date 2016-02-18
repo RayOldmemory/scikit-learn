@@ -61,6 +61,6 @@ separating the objects one from the other, and not from the background.
 .. literalinclude:: plot_segmentation_toy.py
     :lines: 27-
 
-**Total running time of the example:**  3.37 seconds
-( 0 minutes  3.37 seconds)
+**Total running time of the example:**  4.32 seconds
+( 0 minutes  4.32 seconds)
     

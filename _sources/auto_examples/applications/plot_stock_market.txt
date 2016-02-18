@@ -71,18 +71,18 @@ axis.
 
 **Script output**::
 
-  Cluster 1: Sony, Toyota, Mitsubishi, Marriott, Caterpillar, Xerox, Honda, Canon, Navistar, Unilever
-  Cluster 2: Walgreen, CVS
-  Cluster 3: Pfizer, Wal-Mart, Ryder, JPMorgan Chase, Wells Fargo, Home Depot, General Electrics, American express, DuPont de Nemours, Bank of America, Mc Donalds, Ford, Goldman Sachs, AIG
-  Cluster 4: HP, 3M, Cisco, IBM, Microsoft, SAP, Dell, Texas instruments
-  Cluster 5: Total, Exxon, Valero Energy, Chevron, ConocoPhillips
-  Cluster 6: Amazon, Yahoo, Apple
-  Cluster 7: Coca Cola, Pepsi, Kellogg
-  Cluster 8: Cablevision, Time Warner, Comcast
-  Cluster 9: Boeing, General Dynamics, Raytheon, Lookheed Martin, Northrop Grumman
-  Cluster 10: GlaxoSmithKline, Novartis, Sanofi-Aventis
-  Cluster 11: Kraft Foods
-  Cluster 12: Kimberly-Clark, Colgate-Palmolive, Procter Gamble
+  Cluster 1: Cisco, Microsoft, 3M, Dell, HP, IBM, SAP, Texas instruments
+  Cluster 2: Boeing, General Dynamics, Lookheed Martin, Raytheon, Northrop Grumman
+  Cluster 3: Chevron, Exxon, Valero Energy, Total, ConocoPhillips
+  Cluster 4: Bank of America, DuPont de Nemours, Pfizer, Wal-Mart, Wells Fargo, JPMorgan Chase, Ryder, Home Depot, American express, Ford, Mc Donalds, General Electrics, Goldman Sachs, AIG
+  Cluster 5: Procter Gamble, Kimberly-Clark, Colgate-Palmolive
+  Cluster 6: Walgreen, CVS
+  Cluster 7: Pepsi, Kellogg, Coca Cola
+  Cluster 8: Kraft Foods
+  Cluster 9: Sanofi-Aventis, GlaxoSmithKline, Novartis
+  Cluster 10: Yahoo, Apple, Amazon
+  Cluster 11: Time Warner, Cablevision, Comcast
+  Cluster 12: Navistar, Marriott, Unilever, Xerox, Honda, Mitsubishi, Canon, Sony, Toyota, Caterpillar
 
 
 
@@ -91,6 +91,6 @@ axis.
 .. literalinclude:: plot_stock_market.py
     :lines: 62-
 
-**Total running time of the example:**  26.12 seconds
-( 0 minutes  26.12 seconds)
+**Total running time of the example:**  21.51 seconds
+( 0 minutes  21.51 seconds)
     

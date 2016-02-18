@@ -20,7 +20,7 @@ This example fits a Gradient Boosting model with least squares loss and
 
 **Script output**::
 
-  MSE: 6.7081
+  MSE: 6.8673
 
 
 
@@ -29,6 +29,6 @@ This example fits a Gradient Boosting model with least squares loss and
 .. literalinclude:: plot_gradient_boosting_regression.py
     :lines: 11-
 
-**Total running time of the example:**  1.35 seconds
-( 0 minutes  1.35 seconds)
+**Total running time of the example:**  1.24 seconds
+( 0 minutes  1.24 seconds)
     

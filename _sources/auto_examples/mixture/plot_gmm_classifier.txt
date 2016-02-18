@@ -38,6 +38,6 @@ dimensions.
 .. literalinclude:: plot_gmm_classifier.py
     :lines: 24-
 
-**Total running time of the example:**  0.86 seconds
-( 0 minutes  0.86 seconds)
+**Total running time of the example:**  1.17 seconds
+( 0 minutes  1.17 seconds)
     

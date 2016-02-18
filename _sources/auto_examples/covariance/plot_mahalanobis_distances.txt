@@ -69,6 +69,6 @@ are represented in the boxplot, as Wilson and Hilferty suggest [2]
 .. literalinclude:: plot_mahalanobis_distances.py
     :lines: 55-
 
-**Total running time of the example:**  0.95 seconds
-( 0 minutes  0.95 seconds)
+**Total running time of the example:**  0.80 seconds
+( 0 minutes  0.80 seconds)
     

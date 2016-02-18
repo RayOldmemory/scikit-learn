@@ -64,6 +64,6 @@ with different biases per method:
 .. literalinclude:: plot_compare_calibration.py
     :lines: 50-
 
-**Total running time of the example:**  2.70 seconds
-( 0 minutes  2.70 seconds)
+**Total running time of the example:**  3.28 seconds
+( 0 minutes  3.28 seconds)
     

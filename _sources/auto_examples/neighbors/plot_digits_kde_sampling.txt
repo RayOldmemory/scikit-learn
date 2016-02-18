@@ -30,6 +30,6 @@ of the data.
 .. literalinclude:: plot_digits_kde_sampling.py
     :lines: 12-
 
-**Total running time of the example:**  16.19 seconds
-( 0 minutes  16.19 seconds)
+**Total running time of the example:**  18.13 seconds
+( 0 minutes  18.13 seconds)
     

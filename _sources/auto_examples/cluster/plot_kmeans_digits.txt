@@ -40,9 +40,9 @@ silhouette   silhouette coefficient
   n_digits: 10,    n_samples 1797,         n_features 64
   _______________________________________________________________________________
   init    time  inertia    homo   compl  v-meas     ARI AMI  silhouette
-  k-means++   1.16s    69432   0.602   0.650   0.625   0.465   0.598    0.146
-     random   0.95s    69694   0.669   0.710   0.689   0.553   0.666    0.147
-  PCA-based   0.07s    71820   0.673   0.715   0.693   0.567   0.670    0.150
+  k-means++   0.78s    69432   0.602   0.650   0.625   0.465   0.598    0.146
+     random   0.73s    69694   0.669   0.710   0.689   0.553   0.666    0.147
+  PCA-based   0.06s    71820   0.673   0.715   0.693   0.567   0.670    0.150
   _______________________________________________________________________________
 
 
@@ -52,6 +52,6 @@ silhouette   silhouette coefficient
 .. literalinclude:: plot_kmeans_digits.py
     :lines: 28-
 
-**Total running time of the example:**  4.66 seconds
-( 0 minutes  4.66 seconds)
+**Total running time of the example:**  3.45 seconds
+( 0 minutes  3.45 seconds)
     

@@ -31,6 +31,6 @@ is performed in order to stay on the same order of magnitude.
 .. literalinclude:: plot_sparse_coding.py
     :lines: 17-
 
-**Total running time of the example:**  1.14 seconds
-( 0 minutes  1.14 seconds)
+**Total running time of the example:**  2.30 seconds
+( 0 minutes  2.30 seconds)
     
