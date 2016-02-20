@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.RANSACRegressor<a class="headerlink" href="#sklearn-linear-model-ransacregressor" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.RANSACRegressor">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">RANSACRegressor</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>min_samples=None</em>, <em>residual_threshold=None</em>, <em>is_data_valid=None</em>, <em>is_model_valid=None</em>, <em>max_trials=100</em>, <em>stop_n_inliers=inf</em>, <em>stop_score=inf</em>, <em>stop_probability=0.99</em>, <em>residual_metric=None</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/linear_model\ransac.py#L53"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">RANSACRegressor</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>min_samples=None</em>, <em>residual_threshold=None</em>, <em>is_data_valid=None</em>, <em>is_model_valid=None</em>, <em>max_trials=100</em>, <em>stop_n_inliers=inf</em>, <em>stop_score=inf</em>, <em>stop_probability=0.99</em>, <em>residual_metric=None</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/linear_model\ransac.py#L53"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor" title="永久链接至目标">¶</a></dt>
 <dd><p>RANSAC (RANdom SAmple Consensus) algorithm.</p>
 <p>RANSAC is an iterative algorithm for the robust estimation of parameters
 from a subset of inliers from the complete data set. More information can
@@ -336,12 +336,12 @@ met. It is always <code class="docutils literal"><span class="pre">&lt;=</span> 
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.RANSACRegressor.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>min_samples=None</em>, <em>residual_threshold=None</em>, <em>is_data_valid=None</em>, <em>is_model_valid=None</em>, <em>max_trials=100</em>, <em>stop_n_inliers=inf</em>, <em>stop_score=inf</em>, <em>stop_probability=0.99</em>, <em>residual_metric=None</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/linear_model\ransac.py#L161"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>min_samples=None</em>, <em>residual_threshold=None</em>, <em>is_data_valid=None</em>, <em>is_model_valid=None</em>, <em>max_trials=100</em>, <em>stop_n_inliers=inf</em>, <em>stop_score=inf</em>, <em>stop_probability=0.99</em>, <em>residual_metric=None</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/linear_model\ransac.py#L161"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RANSACRegressor.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/linear_model\ransac.py#L180"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/linear_model\ransac.py#L180"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit estimator using RANSAC algorithm.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -371,7 +371,7 @@ met. It is always <code class="docutils literal"><span class="pre">&lt;=</span> 
 
 <dl class="method">
 <dt id="sklearn.linear_model.RANSACRegressor.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -396,7 +396,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RANSACRegressor.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/linear_model\ransac.py#L345"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/linear_model\ransac.py#L345"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Predict using the estimated model.</p>
 <p>This is a wrapper for <cite>estimator_.predict(X)</cite>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -418,7 +418,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RANSACRegressor.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/linear_model\ransac.py#L363"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/linear_model\ransac.py#L363"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.score" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the score of the prediction.</p>
 <p>This is a wrapper for <cite>estimator_.score(X, y)</cite>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -447,7 +447,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RANSACRegressor.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.linear_model.RANSACRegressor.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

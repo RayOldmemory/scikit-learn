@@ -190,7 +190,7 @@ behavior.</p>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">cluster</span><span class="p">,</span> <a href="../../modules/generated/sklearn.datasets.load_sample_image.html#sklearn.datasets"><span class="n">datasets</span></a>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">cluster</span><span class="p">,</span> <a href="../../modules/generated/sklearn.datasets.make_biclusters.html#sklearn.datasets"><span class="n">datasets</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.neighbors.kneighbors_graph.html#sklearn.neighbors.kneighbors_graph"><span class="n">kneighbors_graph</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler"><span class="n">StandardScaler</span></a>
 
@@ -219,8 +219,8 @@ behavior.</p>
 
 <span class="n">plot_num</span> <span class="o">=</span> <span class="mi">1</span>
 
-<a href="../../modules/generated/sklearn.datasets.load_sample_image.html#sklearn.datasets"><span class="n">datasets</span></a> <span class="o">=</span> <span class="p">[</span><span class="n">noisy_circles</span><span class="p">,</span> <span class="n">noisy_moons</span><span class="p">,</span> <span class="n">blobs</span><span class="p">,</span> <span class="n">no_structure</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">i_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><a href="../../modules/generated/sklearn.datasets.load_sample_image.html#sklearn.datasets"><span class="n">datasets</span></a><span class="p">):</span>
+<a href="../../modules/generated/sklearn.datasets.make_biclusters.html#sklearn.datasets"><span class="n">datasets</span></a> <span class="o">=</span> <span class="p">[</span><span class="n">noisy_circles</span><span class="p">,</span> <span class="n">noisy_moons</span><span class="p">,</span> <span class="n">blobs</span><span class="p">,</span> <span class="n">no_structure</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i_dataset</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><a href="../../modules/generated/sklearn.datasets.make_biclusters.html#sklearn.datasets"><span class="n">datasets</span></a><span class="p">):</span>
     <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">dataset</span>
     <span class="c1"># normalize dataset for easier parameter selection</span>
     <span class="n">X</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler"><span class="n">StandardScaler</span></a><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>

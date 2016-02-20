@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></code></a>.RFECV<a class="headerlink" href="#sklearn-feature-selection-rfecv" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_selection.RFECV">
-<em class="property">class </em><code class="descclassname">sklearn.feature_selection.</code><code class="descname">RFECV</code><span class="sig-paren">(</span><em>estimator</em>, <em>step=1</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>estimator_params=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/feature_selection\rfe.py#L270"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.feature_selection.</code><code class="descname">RFECV</code><span class="sig-paren">(</span><em>estimator</em>, <em>step=1</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>estimator_params=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/feature_selection\rfe.py#L270"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV" title="永久链接至目标">¶</a></dt>
 <dd><p>Feature ranking with recursive feature elimination and cross-validated
 selection of the best number of features.</p>
 <p>Read more in the <a class="reference internal" href="../feature_selection.html#rfe"><span>User Guide</span></a>.</p>
@@ -336,12 +336,12 @@ informative features in the Friedman #1 dataset.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>step=1</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>estimator_params=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/feature_selection\rfe.py#L375"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>step=1</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>estimator_params=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/feature_selection\rfe.py#L375"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/feature_selection\rfe.py#L384"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/feature_selection\rfe.py#L384"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.fit" title="永久链接至目标">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Fit the RFE model and automatically tune the number of selected</dt>
 <dd>features.</dd>
@@ -368,7 +368,7 @@ regression).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -398,7 +398,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -423,7 +423,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.get_support">
-<code class="descname">get_support</code><span class="sig-paren">(</span><em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/feature_selection\base.py#L27"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.get_support" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_support</code><span class="sig-paren">(</span><em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/feature_selection\base.py#L27"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.get_support" title="永久链接至目标">¶</a></dt>
 <dd><p>Get a mask, or integer index, of the features selected</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -453,7 +453,7 @@ values are indices into the input feature vector.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/feature_selection\base.py#L86"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.inverse_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/feature_selection\base.py#L86"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.inverse_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Reverse the transformation operation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -478,7 +478,7 @@ been removed by <cite>transform</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.predict" title="永久链接至目标">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Reduce X to the selected features and then predict using the</dt>
 <dd>underlying estimator.</dd>
@@ -505,7 +505,7 @@ been removed by <cite>transform</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.score" title="永久链接至目标">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Reduce X to the selected features and then return the score of the</dt>
 <dd>underlying estimator.</dd>
@@ -530,7 +530,7 @@ been removed by <cite>transform</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -548,7 +548,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFECV.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/feature_selection\base.py#L62"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/feature_selection\base.py#L62"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFECV.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Reduce X to the selected features.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.MiniBatchSparsePCA<a class="headerlink" href="#sklearn-decomposition-minibatchsparsepca" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.MiniBatchSparsePCA">
-<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">MiniBatchSparsePCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>n_iter=100</em>, <em>callback=None</em>, <em>batch_size=3</em>, <em>verbose=False</em>, <em>shuffle=True</em>, <em>n_jobs=1</em>, <em>method='lars'</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\sparse_pca.py#L170"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">MiniBatchSparsePCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>n_iter=100</em>, <em>callback=None</em>, <em>batch_size=3</em>, <em>verbose=False</em>, <em>shuffle=True</em>, <em>n_jobs=1</em>, <em>method='lars'</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\sparse_pca.py#L170"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA" title="永久链接至目标">¶</a></dt>
 <dd><p>Mini-batch Sparse Principal Components Analysis</p>
 <p>Finds the set of sparse components that can optimally reconstruct
 the data.  The amount of sparseness is controllable by the coefficient
@@ -280,12 +280,12 @@ the estimated components are sparse.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchSparsePCA.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>n_iter=100</em>, <em>callback=None</em>, <em>batch_size=3</em>, <em>verbose=False</em>, <em>shuffle=True</em>, <em>n_jobs=1</em>, <em>method='lars'</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\sparse_pca.py#L237"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>n_iter=100</em>, <em>callback=None</em>, <em>batch_size=3</em>, <em>verbose=False</em>, <em>shuffle=True</em>, <em>n_jobs=1</em>, <em>method='lars'</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\sparse_pca.py#L237"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchSparsePCA.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\sparse_pca.py#L253"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\sparse_pca.py#L253"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the model from data in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -310,7 +310,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchSparsePCA.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -340,7 +340,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchSparsePCA.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -365,7 +365,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchSparsePCA.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -383,7 +383,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchSparsePCA.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>ridge_alpha=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\sparse_pca.py#L133"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>ridge_alpha=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\sparse_pca.py#L133"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchSparsePCA.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Least Squares projection of the data onto the sparse components.</p>
 <p>To avoid instability issues in case the system is under-determined,
 regularization can be applied (Ridge regression) via the

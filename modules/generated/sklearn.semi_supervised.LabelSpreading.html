@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.semi_supervised" title="sklearn.semi_supervised"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.semi_supervised</span></code></a>.LabelSpreading<a class="headerlink" href="#sklearn-semi-supervised-labelspreading" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.semi_supervised.LabelSpreading">
-<em class="property">class </em><code class="descclassname">sklearn.semi_supervised.</code><code class="descname">LabelSpreading</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>gamma=20</em>, <em>n_neighbors=7</em>, <em>alpha=0.2</em>, <em>max_iter=30</em>, <em>tol=0.001</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/semi_supervised\label_propagation.py#L353"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.semi_supervised.</code><code class="descname">LabelSpreading</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>gamma=20</em>, <em>n_neighbors=7</em>, <em>alpha=0.2</em>, <em>max_iter=30</em>, <em>tol=0.001</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/semi_supervised\label_propagation.py#L353"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading" title="永久链接至目标">¶</a></dt>
 <dd><p>LabelSpreading model for semi-supervised learning</p>
 <p>This model is similar to the basic Label Propgation algorithm,
 but uses affinity matrix based on the normalized graph Laplacian
@@ -288,12 +288,12 @@ Bernhard Schoelkopf. Learning with local and global consistency (2004)
 </table>
 <dl class="method">
 <dt id="sklearn.semi_supervised.LabelSpreading.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>gamma=20</em>, <em>n_neighbors=7</em>, <em>alpha=0.2</em>, <em>max_iter=30</em>, <em>tol=0.001</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/semi_supervised\label_propagation.py#L426"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>gamma=20</em>, <em>n_neighbors=7</em>, <em>alpha=0.2</em>, <em>max_iter=30</em>, <em>tol=0.001</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/semi_supervised\label_propagation.py#L426"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.semi_supervised.LabelSpreading.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/semi_supervised\label_propagation.py#L193"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/semi_supervised\label_propagation.py#L193"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit a semi-supervised label propagation model based</p>
 <p>All the input data is provided matrix X (labeled and unlabeled)
 and corresponding label matrix y with a dedicated marker value for
@@ -322,7 +322,7 @@ All unlabeled samples will be transductively assigned labels</p>
 
 <dl class="method">
 <dt id="sklearn.semi_supervised.LabelSpreading.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -347,7 +347,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.semi_supervised.LabelSpreading.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/semi_supervised\label_propagation.py#L143"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/semi_supervised\label_propagation.py#L143"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Performs inductive inference across the model.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -368,7 +368,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.semi_supervised.LabelSpreading.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/semi_supervised\label_propagation.py#L158"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.predict_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/semi_supervised\label_propagation.py#L158"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.predict_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Predict probability for each possible outcome.</p>
 <p>Compute the probability estimates for each single sample in X
 and each possible outcome seen during training (categorical
@@ -393,7 +393,7 @@ class labels</p>
 
 <dl class="method">
 <dt id="sklearn.semi_supervised.LabelSpreading.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.score" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -428,7 +428,7 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.semi_supervised.LabelSpreading.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.semi_supervised.LabelSpreading.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

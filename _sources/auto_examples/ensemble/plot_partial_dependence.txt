@@ -53,16 +53,6 @@ on age.
 .. rst-class:: horizontal
 
 
-    *
-
-      .. image:: images/\plot_partial_dependence_001.png
-            :scale: 47
-
-    *
-
-      .. image:: images/\plot_partial_dependence_002.png
-            :scale: 47
-
 
 
 

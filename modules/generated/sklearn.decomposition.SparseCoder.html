@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.SparseCoder<a class="headerlink" href="#sklearn-decomposition-sparsecoder" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.SparseCoder">
-<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">SparseCoder</code><span class="sig-paren">(</span><em>dictionary</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>split_sign=False</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\dict_learning.py#L831"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">SparseCoder</code><span class="sig-paren">(</span><em>dictionary</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>split_sign=False</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\dict_learning.py#L831"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder" title="永久链接至目标">¶</a></dt>
 <dd><p>Sparse coding</p>
 <p>Finds a sparse representation of data against a fixed, precomputed
 dictionary.</p>
@@ -269,12 +269,12 @@ performance of downstream classifiers.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.SparseCoder.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>dictionary</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>split_sign=False</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\dict_learning.py#L898"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>dictionary</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>split_sign=False</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\dict_learning.py#L898"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparseCoder.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\dict_learning.py#L907"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\dict_learning.py#L907"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Do nothing and return the estimator unchanged</p>
 <p>This method is just there to implement the usual API and hence
 work in pipelines.</p>
@@ -282,7 +282,7 @@ work in pipelines.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparseCoder.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -312,7 +312,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparseCoder.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -337,7 +337,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparseCoder.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -355,7 +355,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparseCoder.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\dict_learning.py#L791"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\dict_learning.py#L791"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.SparseCoder.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Encode the data as a sparse combination of the dictionary atoms.</p>
 <p>Coding method is determined by the object parameter
 <cite>transform_algorithm</cite>.</p>

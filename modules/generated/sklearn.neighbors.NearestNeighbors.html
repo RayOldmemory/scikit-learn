@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.neighbors" title="sklearn.neighbors"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.neighbors</span></code></a>.NearestNeighbors<a class="headerlink" href="#sklearn-neighbors-nearestneighbors" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.neighbors.NearestNeighbors">
-<em class="property">class </em><code class="descclassname">sklearn.neighbors.</code><code class="descname">NearestNeighbors</code><span class="sig-paren">(</span><em>n_neighbors=5</em>, <em>radius=1.0</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>metric='minkowski'</em>, <em>p=2</em>, <em>metric_params=None</em>, <em>n_jobs=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/neighbors\unsupervised.py#L9"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.neighbors.</code><code class="descname">NearestNeighbors</code><span class="sig-paren">(</span><em>n_neighbors=5</em>, <em>radius=1.0</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>metric='minkowski'</em>, <em>p=2</em>, <em>metric_params=None</em>, <em>n_jobs=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/neighbors\unsupervised.py#L9"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors" title="永久链接至目标">¶</a></dt>
 <dd><p>Unsupervised learner for implementing neighbor searches.</p>
 <p>Read more in the <a class="reference internal" href="../neighbors.html#unsupervised-neighbors"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -313,12 +313,12 @@ for a discussion of the choice of <code class="docutils literal"><span class="pr
 </table>
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_neighbors=5</em>, <em>radius=1.0</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>metric='minkowski'</em>, <em>p=2</em>, <em>metric_params=None</em>, <em>n_jobs=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/neighbors\unsupervised.py#L116"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_neighbors=5</em>, <em>radius=1.0</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>metric='minkowski'</em>, <em>p=2</em>, <em>metric_params=None</em>, <em>n_jobs=1</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/neighbors\unsupervised.py#L116"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/neighbors\base.py#L807"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/neighbors\base.py#L807"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the model using X as training data</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -337,7 +337,7 @@ or [n_samples, n_samples] if metric=&#8217;precomputed&#8217;.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -362,7 +362,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.kneighbors">
-<code class="descname">kneighbors</code><span class="sig-paren">(</span><em>X=None</em>, <em>n_neighbors=None</em>, <em>return_distance=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/neighbors\base.py#L287"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.kneighbors" title="永久链接至目标">¶</a></dt>
+<code class="descname">kneighbors</code><span class="sig-paren">(</span><em>X=None</em>, <em>n_neighbors=None</em>, <em>return_distance=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/neighbors\base.py#L287"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.kneighbors" title="永久链接至目标">¶</a></dt>
 <dd><p>Finds the K-neighbors of a point.</p>
 <p>Returns indices of and distances to the neighbors of each point.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -425,7 +425,7 @@ element is at distance 0.5 and is the third element of samples
 
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.kneighbors_graph">
-<code class="descname">kneighbors_graph</code><span class="sig-paren">(</span><em>X=None</em>, <em>n_neighbors=None</em>, <em>mode='connectivity'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/neighbors\base.py#L438"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.kneighbors_graph" title="永久链接至目标">¶</a></dt>
+<code class="descname">kneighbors_graph</code><span class="sig-paren">(</span><em>X=None</em>, <em>n_neighbors=None</em>, <em>mode='connectivity'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/neighbors\base.py#L438"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.kneighbors_graph" title="永久链接至目标">¶</a></dt>
 <dd><p>Computes the (weighted) graph of k-Neighbors for points in X</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -480,7 +480,7 @@ A[i, j] is assigned the weight of edge that connects i to j.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.radius_neighbors">
-<code class="descname">radius_neighbors</code><span class="sig-paren">(</span><em>X=None</em>, <em>radius=None</em>, <em>return_distance=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/neighbors\base.py#L520"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.radius_neighbors" title="永久链接至目标">¶</a></dt>
+<code class="descname">radius_neighbors</code><span class="sig-paren">(</span><em>X=None</em>, <em>radius=None</em>, <em>return_distance=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/neighbors\base.py#L520"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.radius_neighbors" title="永久链接至目标">¶</a></dt>
 <dd><p>Finds the neighbors within a given radius of a point or points.</p>
 <p>Return the indices and distances of each point from the dataset
 lying in a ball with size <code class="docutils literal"><span class="pre">radius</span></code> around the points of the query
@@ -554,7 +554,7 @@ indices.  In general, multiple points can be queried at the same time.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.radius_neighbors_graph">
-<code class="descname">radius_neighbors_graph</code><span class="sig-paren">(</span><em>X=None</em>, <em>radius=None</em>, <em>mode='connectivity'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/neighbors\base.py#L666"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.radius_neighbors_graph" title="永久链接至目标">¶</a></dt>
+<code class="descname">radius_neighbors_graph</code><span class="sig-paren">(</span><em>X=None</em>, <em>radius=None</em>, <em>mode='connectivity'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/neighbors\base.py#L666"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.radius_neighbors_graph" title="永久链接至目标">¶</a></dt>
 <dd><p>Computes the (weighted) graph of Neighbors for points in X</p>
 <p>Neighborhoods are restricted the points at a distance lower than
 radius.</p>
@@ -610,7 +610,7 @@ edges are Euclidean distance between points.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.NearestNeighbors.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.neighbors.NearestNeighbors.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></code></a>.OneVsRestClassifier<a class="headerlink" href="#sklearn-multiclass-onevsrestclassifier" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.multiclass.OneVsRestClassifier">
-<em class="property">class </em><code class="descclassname">sklearn.multiclass.</code><code class="descname">OneVsRestClassifier</code><span class="sig-paren">(</span><em>estimator</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/multiclass.py#L205"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.multiclass.</code><code class="descname">OneVsRestClassifier</code><span class="sig-paren">(</span><em>estimator</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/multiclass.py#L205"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier" title="永久链接至目标">¶</a></dt>
 <dd><p>One-vs-the-rest (OvR) multiclass/multilabel strategy</p>
 <p>Also known as one-vs-all, this strategy consists in fitting one classifier
 per class. For each classifier, the class is fitted against all the other
@@ -259,12 +259,12 @@ vice-versa.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/multiclass.py#L252"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/multiclass.py#L252"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/multiclass.py#L370"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.decision_function" title="永久链接至目标">¶</a></dt>
+<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/multiclass.py#L370"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.decision_function" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the distance of each sample from the decision boundary for
 each class. This can only be used with estimators which implement the
 decision_function method.</p>
@@ -282,7 +282,7 @@ decision_function method.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/multiclass.py#L256"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/multiclass.py#L256"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit underlying estimators.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -308,7 +308,7 @@ classification.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -339,7 +339,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/multiclass.py#L291"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/multiclass.py#L291"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Predict multi-class targets using underlying estimators.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -363,7 +363,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/multiclass.py#L332"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.predict_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/multiclass.py#L332"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.predict_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Probability estimates.</p>
 <p>The returned estimates for all classes are ordered by label of classes.</p>
 <p>Note that in the multilabel case, each sample can have any number of
@@ -392,7 +392,7 @@ where classes are ordered as they are in <cite>self.classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.score" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -427,7 +427,7 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OneVsRestClassifier.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.multiclass.OneVsRestClassifier.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

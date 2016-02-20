@@ -47,22 +47,6 @@ References
 
 **Script output**::
 
-  Downloading species data from http://www.cs.princeton.edu/~schapire/maxent/datasets/samples.zip to C:\Users\Jiancheng\scikit_learn_data
-  Downloading coverage data from http://www.cs.princeton.edu/~schapire/maxent/datasets/coverages.zip to C:\Users\Jiancheng\scikit_learn_data
-   - converting coverages/cld6190_ann.asc
-   - converting coverages/dtr6190_ann.asc
-   - converting coverages/ecoreg.asc
-   - converting coverages/frs6190_ann.asc
-   - converting coverages/h_dem.asc
-   - converting coverages/pre6190_ann.asc
-   - converting coverages/pre6190_l1.asc
-   - converting coverages/pre6190_l10.asc
-   - converting coverages/pre6190_l4.asc
-   - converting coverages/pre6190_l7.asc
-   - converting coverages/tmn6190_ann.asc
-   - converting coverages/tmp6190_ann.asc
-   - converting coverages/tmx6190_ann.asc
-   - converting coverages/vap6190_ann.asc
   ________________________________________________________________________________
   Modeling distribution of species 'bradypus variegatus'
    - fit OneClassSVM ... done.
@@ -78,7 +62,7 @@ References
   
    Area under the ROC curve : 0.993919
   
-  time elapsed: 433.25s
+  time elapsed: 14.00s
 
 
 
@@ -87,6 +71,6 @@ References
 .. literalinclude:: plot_species_distribution_modeling.py
     :lines: 38-
 
-**Total running time of the example:**  433.27 seconds
-( 7 minutes  13.27 seconds)
+**Total running time of the example:**  14.02 seconds
+( 0 minutes  14.02 seconds)
     

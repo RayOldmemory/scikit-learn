@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.pipeline" title="sklearn.pipeline"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.pipeline</span></code></a>.Pipeline<a class="headerlink" href="#sklearn-pipeline-pipeline" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.pipeline.Pipeline">
-<em class="property">class </em><code class="descclassname">sklearn.pipeline.</code><code class="descname">Pipeline</code><span class="sig-paren">(</span><em>steps</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/pipeline.py#L28"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.pipeline.</code><code class="descname">Pipeline</code><span class="sig-paren">(</span><em>steps</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/pipeline.py#L28"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline" title="永久链接至目标">¶</a></dt>
 <dd><p>Pipeline of transforms with a final estimator.</p>
 <p>Sequentially apply a list of transforms and a final estimator.
 Intermediate steps of the pipeline must be &#8216;transforms&#8217;, that is, they
@@ -281,12 +281,12 @@ Keys are step names and values are steps parameters.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>steps</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/pipeline.py#L89"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>steps</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/pipeline.py#L89"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.decision_function" title="永久链接至目标">¶</a></dt>
+<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.decision_function" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies transforms to the data, and the decision_function method of
 the final estimator. Valid only if the final estimator implements
 decision_function.</p>
@@ -307,7 +307,7 @@ the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/pipeline.py#L151"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/pipeline.py#L151"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit all the transforms one after the other and transform the
 data, then fit the transformed data using the final estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -332,7 +332,7 @@ the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.fit_predict">
-<code class="descname">fit_predict</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.fit_predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_predict</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.fit_predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies fit_predict of last step in pipeline after transforms.</p>
 <p>Applies fit_transforms of a pipeline to the data, followed by the
 fit_predict method of the final estimator in the pipeline. Valid
@@ -359,7 +359,7 @@ of the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/pipeline.py#L168"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/pipeline.py#L168"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit all the transforms one after the other and transform the
 data, then use fit_transform on transformed data using the final
 estimator.</p>
@@ -385,7 +385,7 @@ the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.inverse_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.inverse_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies inverse transform to the data.
 Starts with the last step of the pipeline and applies <code class="docutils literal"><span class="pre">inverse_transform</span></code> in
 inverse order of the pipeline steps.
@@ -407,7 +407,7 @@ last step of the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies transforms to the data, and the predict method of the
 final estimator. Valid only if the final estimator implements
 predict.</p>
@@ -428,7 +428,7 @@ the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.predict_log_proba">
-<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.predict_log_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.predict_log_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies transforms to the data, and the predict_log_proba method of
 the final estimator. Valid only if the final estimator implements
 predict_log_proba.</p>
@@ -449,7 +449,7 @@ the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.predict_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.predict_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies transforms to the data, and the predict_proba method of the
 final estimator. Valid only if the final estimator implements
 predict_proba.</p>
@@ -470,7 +470,7 @@ the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.score" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies transforms to the data, and the score method of the
 final estimator. Valid only if the final estimator implements
 score.</p>
@@ -496,7 +496,7 @@ the pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -514,7 +514,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.pipeline.Pipeline.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.pipeline.Pipeline.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Applies transforms to the data, and the transform method of the
 final estimator. Valid only if the final estimator implements
 transform.</p>

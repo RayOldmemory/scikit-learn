@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.IncrementalPCA<a class="headerlink" href="#sklearn-decomposition-incrementalpca" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.IncrementalPCA">
-<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">IncrementalPCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>whiten=False</em>, <em>copy=True</em>, <em>batch_size=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\incremental_pca.py#L15"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">IncrementalPCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>whiten=False</em>, <em>copy=True</em>, <em>batch_size=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\incremental_pca.py#L15"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA" title="永久链接至目标">¶</a></dt>
 <dd><p>Incremental principal components analysis (IPCA).</p>
 <p>Linear dimensionality reduction using Singular Value Decomposition of
 centered data, keeping only the most significant singular vectors to
@@ -345,12 +345,12 @@ Issue 1-3, pp. 125-141, May 2008.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>whiten=False</em>, <em>copy=True</em>, <em>batch_size=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\incremental_pca.py#L139"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>whiten=False</em>, <em>copy=True</em>, <em>batch_size=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\incremental_pca.py#L139"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\incremental_pca.py#L146"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\incremental_pca.py#L146"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the model with X, using minibatches of size batch_size.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -376,7 +376,7 @@ n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -406,7 +406,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.get_covariance">
-<code class="descname">get_covariance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\base.py#L28"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.get_covariance" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_covariance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\base.py#L28"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.get_covariance" title="永久链接至目标">¶</a></dt>
 <dd><p>Compute data covariance with the generative model.</p>
 <p><code class="docutils literal"><span class="pre">cov</span> <span class="pre">=</span> <span class="pre">components_.T</span> <span class="pre">*</span> <span class="pre">S**2</span> <span class="pre">*</span> <span class="pre">components_</span> <span class="pre">+</span> <span class="pre">sigma2</span> <span class="pre">*</span> <span class="pre">eye(n_features)</span></code>
 where  S**2 contains the explained variances, and sigma2 contains the
@@ -427,7 +427,7 @@ noise variances.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -452,7 +452,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.get_precision">
-<code class="descname">get_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\base.py#L49"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.get_precision" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\base.py#L49"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.get_precision" title="永久链接至目标">¶</a></dt>
 <dd><p>Compute data precision matrix with the generative model.</p>
 <p>Equals the inverse of the covariance but computed with
 the matrix inversion lemma for efficiency.</p>
@@ -472,7 +472,7 @@ the matrix inversion lemma for efficiency.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\base.py#L138"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.inverse_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\base.py#L138"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.inverse_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Transform data back to its original space.</p>
 <p>In other words, return an input X_original whose transform would be X.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -498,7 +498,7 @@ exact inverse operation, which includes reversing whitening.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.partial_fit">
-<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\incremental_pca.py#L184"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.partial_fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\incremental_pca.py#L184"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.partial_fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Incremental fit with X. All of X is processed as a single batch.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -523,7 +523,7 @@ n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -541,7 +541,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.IncrementalPCA.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\base.py#L101"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\base.py#L101"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.IncrementalPCA.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Apply dimensionality reduction to X.</p>
 <p>X is projected on the first principal components previously extracted
 from a training set.</p>

@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.RandomizedPCA<a class="headerlink" href="#sklearn-decomposition-randomizedpca" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.RandomizedPCA">
-<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">RandomizedPCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>copy=True</em>, <em>iterated_power=3</em>, <em>whiten=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\pca.py#L470"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">RandomizedPCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>copy=True</em>, <em>iterated_power=3</em>, <em>whiten=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\pca.py#L470"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA" title="永久链接至目标">¶</a></dt>
 <dd><p>Principal component analysis (PCA) using randomized SVD</p>
 <p>Linear dimensionality reduction using approximated Singular Value
 Decomposition of the data and keeping only the most significant
@@ -291,12 +291,12 @@ Per-Gunnar Martinsson, Vladimir Rokhlin and Mark Tygert</cite></td></tr>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.RandomizedPCA.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>copy=True</em>, <em>iterated_power=3</em>, <em>whiten=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\pca.py#L549"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>copy=True</em>, <em>iterated_power=3</em>, <em>whiten=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\pca.py#L549"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.RandomizedPCA.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\pca.py#L557"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\pca.py#L557"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the model with X by extracting the first principal components.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -321,7 +321,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.RandomizedPCA.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\pca.py#L642"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\pca.py#L642"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the model with X and apply the dimensionality reduction on X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -343,7 +343,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.RandomizedPCA.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -368,7 +368,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.RandomizedPCA.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\pca.py#L660"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.inverse_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\pca.py#L660"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.inverse_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Transform data back to its original space.</p>
 <p>Returns an array X_original whose transform would be X.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -394,7 +394,7 @@ exact inverse operation of transform.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.RandomizedPCA.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -412,7 +412,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.RandomizedPCA.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a5d4c61/sklearn/decomposition\pca.py#L616"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/decomposition\pca.py#L616"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.decomposition.RandomizedPCA.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Apply dimensionality reduction on X.</p>
 <p>X is projected on the first principal components previous extracted
 from a training set.</p>
