@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.grid_search" title="sklearn.grid_search"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.grid_search</span></code></a>.GridSearchCV<a class="headerlink" href="#sklearn-grid-search-gridsearchcv" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.grid_search.GridSearchCV">
-<em class="property">class </em><code class="descclassname">sklearn.grid_search.</code><code class="descname">GridSearchCV</code><span class="sig-paren">(</span><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/grid_search.py#L606"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.grid_search.</code><code class="descname">GridSearchCV</code><span class="sig-paren">(</span><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/grid_search.py#L606"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV" title="永久链接至目标">¶</a></dt>
 <dd><p>Exhaustive search over specified parameter values for an estimator.</p>
 <p>Important members are fit, predict.</p>
 <p>GridSearchCV implements a &#8220;fit&#8221; and a &#8220;score&#8221; method.
@@ -397,12 +397,12 @@ n_jobs</cite>.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/grid_search.py#L779"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/grid_search.py#L779"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.decision_function" title="永久链接至目标">¶</a></dt>
+<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.decision_function" title="永久链接至目标">¶</a></dt>
 <dd><p>Call decision_function on the estimator with the best found parameters.</p>
 <p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
 <code class="docutils literal"><span class="pre">decision_function</span></code>.</p>
@@ -423,7 +423,7 @@ underlying estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/grid_search.py#L789"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/grid_search.py#L789"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Run fit with all sets of parameters.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -447,7 +447,7 @@ None for unsupervised learning.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -472,7 +472,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>Xt</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.inverse_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>Xt</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.inverse_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Call inverse_transform on the estimator with the best found parameters.</p>
 <p>Only available if the underlying estimator implements <code class="docutils literal"><span class="pre">inverse_transform</span></code> and
 <code class="docutils literal"><span class="pre">refit=True</span></code>.</p>
@@ -493,7 +493,7 @@ underlying estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Call predict on the estimator with the best found parameters.</p>
 <p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
 <code class="docutils literal"><span class="pre">predict</span></code>.</p>
@@ -514,7 +514,7 @@ underlying estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.predict_log_proba">
-<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_log_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_log_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Call predict_log_proba on the estimator with the best found parameters.</p>
 <p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
 <code class="docutils literal"><span class="pre">predict_log_proba</span></code>.</p>
@@ -535,7 +535,7 @@ underlying estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Call predict_proba on the estimator with the best found parameters.</p>
 <p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
 <code class="docutils literal"><span class="pre">predict_proba</span></code>.</p>
@@ -556,7 +556,7 @@ underlying estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/grid_search.py#L382"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/grid_search.py#L382"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.score" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the score on the given data, if the estimator has been refit.</p>
 <p>This uses the score defined by <code class="docutils literal"><span class="pre">scoring</span></code> where provided, and the
 <code class="docutils literal"><span class="pre">best_estimator_.score</span></code> method otherwise.</p>
@@ -591,7 +591,7 @@ None for unsupervised learning.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -609,7 +609,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/utils\metaestimators.py#L37"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Call transform on the estimator with the best found parameters.</p>
 <p>Only available if the underlying estimator supports <code class="docutils literal"><span class="pre">transform</span></code> and
 <code class="docutils literal"><span class="pre">refit=True</span></code>.</p>

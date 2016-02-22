@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.manifold" title="sklearn.manifold"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.manifold</span></code></a>.MDS<a class="headerlink" href="#sklearn-manifold-mds" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.manifold.MDS">
-<em class="property">class </em><code class="descclassname">sklearn.manifold.</code><code class="descname">MDS</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\mds.py#L274"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.manifold.</code><code class="descname">MDS</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\mds.py#L274"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS" title="永久链接至目标">¶</a></dt>
 <dd><p>Multidimensional scaling</p>
 <p>Read more in the <a class="reference internal" href="../manifold.html#multidimensional-scaling"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -273,12 +273,12 @@ hypothesis&#8221; Kruskal, J. Psychometrika, 29, (1964)</p>
 </table>
 <dl class="method">
 <dt id="sklearn.manifold.MDS.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\mds.py#L345"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\mds.py#L345"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>init=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\mds.py#L362"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>init=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\mds.py#L362"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Computes the position of the points in the embedding space</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -301,7 +301,7 @@ if ndarray, initialize the SMACOF algorithm with this array.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>init=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\mds.py#L379"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>init=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\mds.py#L379"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the data from X, and returns the embedded coordinates</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -324,7 +324,7 @@ if ndarray, initialize the SMACOF algorithm with this array.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -349,7 +349,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></code></a>.SpectralClustering<a class="headerlink" href="#sklearn-cluster-spectralclustering" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.cluster.SpectralClustering">
-<em class="property">class </em><code class="descclassname">sklearn.cluster.</code><code class="descname">SpectralClustering</code><span class="sig-paren">(</span><em>n_clusters=8</em>, <em>eigen_solver=None</em>, <em>random_state=None</em>, <em>n_init=10</em>, <em>gamma=1.0</em>, <em>affinity='rbf'</em>, <em>n_neighbors=10</em>, <em>eigen_tol=0.0</em>, <em>assign_labels='kmeans'</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/cluster\spectral.py#L269"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.cluster.</code><code class="descname">SpectralClustering</code><span class="sig-paren">(</span><em>n_clusters=8</em>, <em>eigen_solver=None</em>, <em>random_state=None</em>, <em>n_init=10</em>, <em>gamma=1.0</em>, <em>affinity='rbf'</em>, <em>n_neighbors=10</em>, <em>eigen_tol=0.0</em>, <em>assign_labels='kmeans'</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/cluster\spectral.py#L269"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering" title="永久链接至目标">¶</a></dt>
 <dd><p>Apply clustering to a projection to the normalized laplacian.</p>
 <p>In practice Spectral Clustering is very useful when the structure of
 the individual clusters is highly non-convex or more generally when
@@ -327,12 +327,12 @@ Stella X. Yu, Jianbo Shi
 </table>
 <dl class="method">
 <dt id="sklearn.cluster.SpectralClustering.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_clusters=8</em>, <em>eigen_solver=None</em>, <em>random_state=None</em>, <em>n_init=10</em>, <em>gamma=1.0</em>, <em>affinity='rbf'</em>, <em>n_neighbors=10</em>, <em>eigen_tol=0.0</em>, <em>assign_labels='kmeans'</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/cluster\spectral.py#L395"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_clusters=8</em>, <em>eigen_solver=None</em>, <em>random_state=None</em>, <em>n_init=10</em>, <em>gamma=1.0</em>, <em>affinity='rbf'</em>, <em>n_neighbors=10</em>, <em>eigen_tol=0.0</em>, <em>assign_labels='kmeans'</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/cluster\spectral.py#L395"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.cluster.SpectralClustering.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/cluster\spectral.py#L412"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/cluster\spectral.py#L412"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Creates an affinity matrix for X using the selected affinity,
 then applies spectral clustering to this affinity matrix.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -352,7 +352,7 @@ matrix of shape (n_samples, n_samples)</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.SpectralClustering.fit_predict">
-<code class="descname">fit_predict</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L356"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.fit_predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_predict</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L356"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.fit_predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Performs clustering on X and returns cluster labels.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -376,7 +376,7 @@ matrix of shape (n_samples, n_samples)</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.SpectralClustering.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -401,7 +401,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.SpectralClustering.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.cluster.SpectralClustering.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

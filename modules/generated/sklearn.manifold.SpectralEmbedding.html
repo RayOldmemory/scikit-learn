@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.manifold" title="sklearn.manifold"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.manifold</span></code></a>.SpectralEmbedding<a class="headerlink" href="#sklearn-manifold-spectralembedding" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.manifold.SpectralEmbedding">
-<em class="property">class </em><code class="descclassname">sklearn.manifold.</code><code class="descname">SpectralEmbedding</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>affinity='nearest_neighbors'</em>, <em>gamma=None</em>, <em>random_state=None</em>, <em>eigen_solver=None</em>, <em>n_neighbors=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\spectral_embedding_.py#L313"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.manifold.</code><code class="descname">SpectralEmbedding</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>affinity='nearest_neighbors'</em>, <em>gamma=None</em>, <em>random_state=None</em>, <em>eigen_solver=None</em>, <em>n_neighbors=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\spectral_embedding_.py#L313"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding" title="永久链接至目标">¶</a></dt>
 <dd><p>Spectral embedding for non-linear dimensionality reduction.</p>
 <p>Forms an affinity matrix given by the specified function and
 applies spectral decomposition to the corresponding graph laplacian.
@@ -270,12 +270,12 @@ Jianbo Shi, Jitendra Malik
 </table>
 <dl class="method">
 <dt id="sklearn.manifold.SpectralEmbedding.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>affinity='nearest_neighbors'</em>, <em>gamma=None</em>, <em>random_state=None</em>, <em>eigen_solver=None</em>, <em>n_neighbors=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\spectral_embedding_.py#L377"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>affinity='nearest_neighbors'</em>, <em>gamma=None</em>, <em>random_state=None</em>, <em>eigen_solver=None</em>, <em>n_neighbors=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\spectral_embedding_.py#L377"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.manifold.SpectralEmbedding.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\spectral_embedding_.py#L435"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\spectral_embedding_.py#L435"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the model from data in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -304,7 +304,7 @@ samples.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.SpectralEmbedding.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/manifold\spectral_embedding_.py#L475"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/manifold\spectral_embedding_.py#L475"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the model from data in X and transform X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -330,7 +330,7 @@ samples.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.SpectralEmbedding.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -355,7 +355,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.SpectralEmbedding.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.manifold.SpectralEmbedding.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

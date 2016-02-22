@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.tree" title="sklearn.tree"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.tree</span></code></a>.DecisionTreeClassifier<a class="headerlink" href="#sklearn-tree-decisiontreeclassifier" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.tree.DecisionTreeClassifier">
-<em class="property">class </em><code class="descclassname">sklearn.tree.</code><code class="descname">DecisionTreeClassifier</code><span class="sig-paren">(</span><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/tree\tree.py#L482"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.tree.</code><code class="descname">DecisionTreeClassifier</code><span class="sig-paren">(</span><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/tree\tree.py#L482"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier" title="永久链接至目标">¶</a></dt>
 <dd><p>A decision tree classifier.</p>
 <p>Read more in the <a class="reference internal" href="../tree.html#tree"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -391,12 +391,12 @@ Learning&#8221;, Springer, 2009.</td></tr>
 </table>
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/tree\tree.py#L623"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/tree\tree.py#L623"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.apply">
-<code class="descname">apply</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/tree\tree.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.apply" title="永久链接至目标">¶</a></dt>
+<code class="descname">apply</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/tree\tree.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.apply" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the index of the leaf that each sample is predicted as.</p>
 <div class="versionadded">
 <p><span class="versionmodified">0.17 新版功能.</span></p>
@@ -450,7 +450,7 @@ It is also known as the Gini importance.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em>, <em>check_input=True</em>, <em>X_idx_sorted=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/tree\tree.py#L113"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em>, <em>check_input=True</em>, <em>X_idx_sorted=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/tree\tree.py#L113"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Build a decision tree from the training set (X, y).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -502,7 +502,7 @@ Don&#8217;t use this parameter unless you know what to do.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit_transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L431"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit_transform" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -532,7 +532,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -557,7 +557,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/tree\tree.py#L380"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/tree\tree.py#L380"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Predict class or regression value for X.</p>
 <p>For a classification model, the predicted class for each sample in X is
 returned. For a regression model, the predicted value based on X is
@@ -591,7 +591,7 @@ Don&#8217;t use this parameter unless you know what you do.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.predict_log_proba">
-<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/tree\tree.py#L695"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_log_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/tree\tree.py#L695"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_log_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Predict class log-probabilities of the input samples X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -619,7 +619,7 @@ classes corresponds to that in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/tree\tree.py#L648"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/tree\tree.py#L648"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Predict class probabilities of the input samples X.</p>
 <p>The predicted class probability is the fraction of samples of the same
 class in a leaf.</p>
@@ -654,7 +654,7 @@ classes corresponds to that in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.score" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -689,7 +689,7 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -707,7 +707,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/utils\__init__.py#L92"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.transform" title="永久链接至目标">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/utils\__init__.py#L92"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.transform" title="永久链接至目标">¶</a></dt>
 <dd><p>DEPRECATED: Support to use estimators as feature selectors will be removed in version 0.19. Use SelectFromModel instead.</p>
 <p>Reduce X to its most important features.</p>
 <blockquote>

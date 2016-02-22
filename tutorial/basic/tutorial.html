@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
   
-    <title>An introduction to machine learning with scikit-learn &mdash; scikit-learn 0.17 文档</title>
+    <title>使用scikit-learn进行机器学习的简介 &mdash; scikit-learn 0.17 文档</title>
   <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" media="screen" />
@@ -147,14 +147,14 @@
       <p class="doc-version">这个文档适用于 scikit-learn <strong>版本 0.17</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">其它版本</a></p>
     <p class="citing">如果你要使用软件，请考虑 <a href="../../about.html#citing-scikit-learn">引用scikit-learn和Jiancheng Li</a>.</p>
     <ul>
-<li><a class="reference internal" href="#">An introduction to machine learning with scikit-learn</a><ul>
-<li><a class="reference internal" href="#machine-learning-the-problem-setting">Machine learning: the problem setting</a></li>
-<li><a class="reference internal" href="#loading-an-example-dataset">Loading an example dataset</a></li>
-<li><a class="reference internal" href="#learning-and-predicting">Learning and predicting</a></li>
-<li><a class="reference internal" href="#model-persistence">Model persistence</a></li>
-<li><a class="reference internal" href="#conventions">Conventions</a><ul>
-<li><a class="reference internal" href="#type-casting">Type casting</a></li>
-<li><a class="reference internal" href="#refitting-and-updating-parameters">Refitting and updating parameters</a></li>
+<li><a class="reference internal" href="#">使用scikit-learn进行机器学习的简介</a><ul>
+<li><a class="reference internal" href="#machine-learning-the-problem-setting">机器学习：问题设置</a></li>
+<li><a class="reference internal" href="#loading-an-example-dataset">加载样例数据集</a></li>
+<li><a class="reference internal" href="#learning-and-predicting">学习和预测</a></li>
+<li><a class="reference internal" href="#model-persistence">模型持久化</a></li>
+<li><a class="reference internal" href="#conventions">惯例约定</a><ul>
+<li><a class="reference internal" href="#type-casting">类型转换</a></li>
+<li><a class="reference internal" href="#refitting-and-updating-parameters">重新拟合和更新参数</a></li>
 </ul>
 </li>
 </ul>
@@ -177,96 +177,48 @@
           <div class="body" role="main">
             
   <div class="section" id="an-introduction-to-machine-learning-with-scikit-learn">
-<span id="introduction"></span><h1>An introduction to machine learning with scikit-learn<a class="headerlink" href="#an-introduction-to-machine-learning-with-scikit-learn" title="永久链接至标题">¶</a></h1>
+<span id="introduction"></span><h1>使用scikit-learn进行机器学习的简介<a class="headerlink" href="#an-introduction-to-machine-learning-with-scikit-learn" title="永久链接至标题">¶</a></h1>
 <div class="topic">
-<p class="topic-title first">Section contents</p>
-<p>In this section, we introduce the <a class="reference external" href="http://en.wikipedia.org/wiki/Machine_learning">machine learning</a>
-vocabulary that we use throughout scikit-learn and give a
-simple learning example.</p>
+<p class="topic-title first">章节内容</p>
+<p>在本节中，我们介绍在scikit-learn中一直用到的 <a class="reference external" href="https://zh.wikipedia.org/wiki/机器学习">机器学习</a> 这个词汇，并给出一些简单的学习例子。</p>
 </div>
 <div class="section" id="machine-learning-the-problem-setting">
-<h2>Machine learning: the problem setting<a class="headerlink" href="#machine-learning-the-problem-setting" title="永久链接至标题">¶</a></h2>
-<p>In general, a learning problem considers a set of n
-<a class="reference external" href="http://en.wikipedia.org/wiki/Sample_(statistics)">samples</a> of
-data and then tries to predict properties of unknown data. If each sample is
-more than a single number and, for instance, a multi-dimensional entry
-(aka <a class="reference external" href="http://en.wikipedia.org/wiki/Multivariate_random_variable">multivariate</a>
-data), is it said to have several attributes or <strong>features</strong>.</p>
-<p>We can separate learning problems in a few large categories:</p>
+<h2>机器学习：问题设置<a class="headerlink" href="#machine-learning-the-problem-setting" title="永久链接至标题">¶</a></h2>
+<p>通常，一个学习问题考虑一组n个 <a class="reference external" href="https://zh.wikipedia.org/wiki/樣本_(統計學)">样本</a> 的数据，然后尝试预测未知数据的属性。如果每个样本都不仅仅是一个单独的数字，例如，一个多维实例（也称为 <a class="reference external" href="http://en.wikipedia.org/wiki/Multivariate_random_variable">多变量</a> 数据），则预测它有几个属性或特征。</p>
+<p>我们可以把学习问题分为几个大类：</p>
 <blockquote>
 <div><ul>
-<li><p class="first"><a class="reference external" href="http://en.wikipedia.org/wiki/Supervised_learning">supervised learning</a>,
-in which the data comes with additional attributes that we want to predict
-(<a class="reference internal" href="../../supervised_learning.html#supervised-learning"><span>Click here</span></a>
-to go to the scikit-learn supervised learning page).This problem
-can be either:</p>
+<li><p class="first"><a class="reference external" href="https://zh.wikipedia.org/wiki/監督式學習">监督学习</a> ，其中数据带有我们要预测的附加属性，（ <a class="reference internal" href="../../supervised_learning.html#supervised-learning"><span>点击这里</span></a> 去scikit-learn监督学习的页面）。这个问题可以是：</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference external" href="http://en.wikipedia.org/wiki/Classification_in_machine_learning">classification</a>:
-samples belong to two or more classes and we
-want to learn from already labeled data how to predict the class
-of unlabeled data. An example of classification problem would
-be the handwritten digit recognition example, in which the aim is
-to assign each input vector to one of a finite number of discrete
-categories.  Another way to think of classification is as a discrete
-(as opposed to continuous) form of supervised learning where one has a
-limited number of categories and for each of the n samples provided,
-one is to try to label them with the correct category or class.</li>
-<li><a class="reference external" href="http://en.wikipedia.org/wiki/Regression_analysis">regression</a>:
-if the desired output consists of one or more
-continuous variables, then the task is called <em>regression</em>. An
-example of a regression problem would be the prediction of the
-length of a salmon as a function of its age and weight.</li>
+<li><p class="first"><a class="reference external" href="https://zh.wikipedia.org/wiki/分类问题">分类</a> ：样本属于两个或多个类，我们想要从已标记的数据中学习如何预测未标记的数据类别。分类问题的一个例子是手写体数字识别，其中目标是将每个输入向量指派到一个有限数量的离散类。另一种方式去理解分类，其实分类问题是一种离散（相对于连续）形式的监督学习，每一个都有一个有限数量的类别，对每个提供的样本，我们要尝试用正确的类别来标注他们。</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://zh.wikipedia.org/wiki/迴歸分析">回归</a> ：如果期望的输出由一个或多个连续变量组成，那么这个任务被称为*回归*。回归问题的一个例子是，鲑鱼长度的预测——一个基于其年龄和体重的函数。</p>
+</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><a class="reference external" href="http://en.wikipedia.org/wiki/Unsupervised_learning">unsupervised learning</a>,
-in which the training data consists of a set of input vectors x
-without any corresponding target values. The goal in such problems
-may be to discover groups of similar examples within the data, where
-it is called <a class="reference external" href="http://en.wikipedia.org/wiki/Cluster_analysis">clustering</a>,
-or to determine the distribution of data within the input space, known as
-<a class="reference external" href="http://en.wikipedia.org/wiki/Density_estimation">density estimation</a>, or
-to project the data from a high-dimensional space down to two or three
-dimensions for the purpose of <em>visualization</em>
-(<a class="reference internal" href="../../unsupervised_learning.html#unsupervised-learning"><span>Click here</span></a>
-to go to the Scikit-Learn unsupervised learning page).</p>
+<li><p class="first"><a class="reference external" href="https://zh.wikipedia.org/wiki/非監督式學習">无监督学习</a> ，训练数据包含一组没有相应目标值的输入向量x。这类问题的目标可能是在数据中发现相似的样本组，也被称为 <a class="reference external" href="https://zh.wikipedia.org/wiki/聚类分析">聚类</a> ；或是在输入空间中确定数据的分布，也被称为 <a class="reference external" href="http://en.wikipedia.org/wiki/Density_estimation">密度估计</a> ；或是把数据从高维空间投影到两个或三个维度的空间来达到*可视化*的目的（ <a class="reference internal" href="../../unsupervised_learning.html#unsupervised-learning"><span>点击这里</span></a> 去scikit-learn无监督学习的页面）。</p>
 </li>
 </ul>
 </div></blockquote>
 <div class="topic">
-<p class="topic-title first">Training set and testing set</p>
-<p>Machine learning is about learning some properties of a data set
-and applying them to new data. This is why a common practice in
-machine learning to evaluate an algorithm is to split the data
-at hand into two sets, one that we call the <strong>training set</strong> on which
-we learn data properties and one that we call the <strong>testing set</strong>
-on which we test these properties.</p>
+<p class="topic-title first">训练集和测试集</p>
+<p>机器学习是学习一个数据集的一些特性，并将它们应用到新的数据。这就是为什么在机器学习中评估算法时一个普遍做法是把数据分成两组，一组称之为**训练集**，用于学习数据的属性；另一组称之为**测试集**，用于测试这些属性。</p>
 </div>
 </div>
 <div class="section" id="loading-an-example-dataset">
-<span id="loading-example-dataset"></span><h2>Loading an example dataset<a class="headerlink" href="#loading-an-example-dataset" title="永久链接至标题">¶</a></h2>
-<p><cite>scikit-learn</cite> comes with a few standard datasets, for instance the
-<a class="reference external" href="http://en.wikipedia.org/wiki/Iris_flower_data_set">iris</a> and <a class="reference external" href="http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits">digits</a>
-datasets for classification and the <a class="reference external" href="http://archive.ics.uci.edu/ml/datasets/Housing">boston house prices dataset</a> for regression.</p>
-<p>In the following, we start a Python interpreter from our shell and then
-load the <code class="docutils literal"><span class="pre">iris</span></code> and <code class="docutils literal"><span class="pre">digits</span></code> datasets.  Our notational convention is that
-<code class="docutils literal"><span class="pre">$</span></code> denotes the shell prompt while <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code> denotes the Python
-interpreter prompt:</p>
+<span id="loading-example-dataset"></span><h2>加载样例数据集<a class="headerlink" href="#loading-an-example-dataset" title="永久链接至标题">¶</a></h2>
+<p><cite>scikit-learn</cite> 有一些标准数据集，例如用于分类的 <a class="reference external" href="https://zh.wikipedia.org/wiki/安德森鸢尾花卉数据集">iris</a> 和 <a class="reference external" href="http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits">digits</a> 数据集，用于回归的 <a class="reference external" href="http://archive.ics.uci.edu/ml/datasets/Housing">boston house prices dataset</a> 数据集。</p>
+<p>接下来，我们开始从shell中开启一个Python解释器，然后加载 <code class="docutils literal"><span class="pre">iris</span></code> 和 <code class="docutils literal"><span class="pre">digits</span></code> 数据集。我们的符号惯例是， <code class="docutils literal"><span class="pre">$</span></code> 表示shell提示符， <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code> 表示Python解释器提示符：</p>
 <div class="highlight-python"><div class="highlight"><pre>$ python
 &gt;&gt;&gt; from sklearn import datasets
 &gt;&gt;&gt; iris = datasets.load_iris()
 &gt;&gt;&gt; digits = datasets.load_digits()
 </pre></div>
 </div>
-<p>A dataset is a dictionary-like object that holds all the data and some
-metadata about the data. This data is stored in the <code class="docutils literal"><span class="pre">.data</span></code> member,
-which is a <code class="docutils literal"><span class="pre">n_samples,</span> <span class="pre">n_features</span></code> array. In the case of supervised
-problem, one or more response variables are stored in the <code class="docutils literal"><span class="pre">.target</span></code> member. More
-details on the different datasets can be found in the <a class="reference internal" href="../../datasets/index.html#datasets"><span>dedicated
-section</span></a>.</p>
-<p>For instance, in the case of the digits dataset, <code class="docutils literal"><span class="pre">digits.data</span></code> gives
-access to the features that can be used to classify the digits samples:</p>
+<p>一个数据集是一个字典状的对象，拥有所有的数据和一些与数据相关的元数据。这些数据存储在 <code class="docutils literal"><span class="pre">.data</span></code> 成员变量中，这是一个 <code class="docutils literal"><span class="pre">n_samples,</span> <span class="pre">n_features</span></code> 的数组。在监督学习问题中，一个或多个响应变量被存储在 <code class="docutils literal"><span class="pre">.target</span></code> 成员变量中。不同数据集的更多细节可以在 <a class="reference internal" href="../../datasets/index.html#datasets"><span>数据集章节</span></a> 找到。</p>
+<p>例如，在digits数据集，<code class="docutils literal"><span class="pre">digits.data</span></code> 可以访问得到用于对数字样本分类的特征：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>  
 <span class="go">[[  0.   0.   5. ...,   0.   0.   0.]</span>
 <span class="go"> [  0.   0.   0. ...,  10.   0.   0.]</span>
@@ -277,19 +229,14 @@ access to the features that can be used to classify the digits samples:</p>
 <span class="go"> [  0.   0.  10. ...,  12.   1.   0.]]</span>
 </pre></div>
 </div>
-<p>and <code class="docutils literal"><span class="pre">digits.target</span></code> gives the ground truth for the digit dataset, that
-is the number corresponding to each digit image that we are trying to
-learn:</p>
+<p>而 <code class="docutils literal"><span class="pre">digits.target</span></code> 则是digits数据集的真实值，即我们尝试学习的每个数字图像对应的数字：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">digits</span><span class="o">.</span><span class="n">target</span>
 <span class="go">array([0, 1, 2, ..., 8, 9, 8])</span>
 </pre></div>
 </div>
 <div class="topic">
-<p class="topic-title first">Shape of the data arrays</p>
-<p>The data is always a 2D array, shape <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_features)</span></code>, although
-the original data may have had a different shape. In the case of the
-digits, each original sample is an image of shape <code class="docutils literal"><span class="pre">(8,</span> <span class="pre">8)</span></code> and can be
-accessed using:</p>
+<p class="topic-title first">数据数组的形状</p>
+<p>数据始终是一个二维数组，形状是 <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_features)</span></code> ，尽管原始数据可能有不同的形状。对digits数据集，每个原始样本都是一张形状为 <code class="docutils literal"><span class="pre">(8,</span> <span class="pre">8)</span></code> 的图像，可通过以下访问：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="go">array([[  0.,   0.,   5.,  13.,   9.,   1.,   0.,   0.],</span>
 <span class="go">       [  0.,   0.,  13.,  15.,  10.,  15.,   5.,   0.],</span>
@@ -301,42 +248,23 @@ accessed using:</p>
 <span class="go">       [  0.,   0.,   6.,  13.,  10.,   0.,   0.,   0.]])</span>
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>simple example on this dataset</span></a> illustrates how starting
-from the original problem one can shape the data for consumption in
-scikit-learn.</p>
+<p><a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>这个数据集的简单例子</span></a> 说明了如何从原问题开始构造在scikit-learn中使用的数据。</p>
 </div>
 </div>
 <div class="section" id="learning-and-predicting">
-<h2>Learning and predicting<a class="headerlink" href="#learning-and-predicting" title="永久链接至标题">¶</a></h2>
-<p>In the case of the digits dataset, the task is to predict, given an image,
-which digit it represents. We are given samples of each of the 10
-possible classes (the digits zero through nine) on which we <em>fit</em> an
-<a class="reference external" href="http://en.wikipedia.org/wiki/Estimator">estimator</a> to be able to <em>predict</em>
-the classes to which unseen samples belong.</p>
-<p>In scikit-learn, an estimator for classification is a Python object that
-implements the methods <code class="docutils literal"><span class="pre">fit(X,</span> <span class="pre">y)</span></code> and <code class="docutils literal"><span class="pre">predict(T)</span></code>.</p>
-<p>An example of an estimator is the class <code class="docutils literal"><span class="pre">sklearn.svm.SVC</span></code> that
-implements <a class="reference external" href="http://en.wikipedia.org/wiki/Support_vector_machine">support vector classification</a>. The
-constructor of an estimator takes as arguments the parameters of the
-model, but for the time being, we will consider the estimator as a black
-box:</p>
+<h2>学习和预测<a class="headerlink" href="#learning-and-predicting" title="永久链接至标题">¶</a></h2>
+<p>对digits数据集，任务是预测一张给定的图像所代表的数字。给定10个可能的类（数字0到9）每个类的一些样本，我们*拟合*一个 <a class="reference external" href="https://zh.wikipedia.org/wiki/估计量">估计量</a> 来*预测*未知样本所属的分类。</p>
+<p>在scikit-learn中，分类的估计量是一个实现 <code class="docutils literal"><span class="pre">fit(X,</span> <span class="pre">y)</span></code> 方法和 <code class="docutils literal"><span class="pre">predict(T)</span></code> 方法的Python对象。</p>
+<p>一个估计量的例子是实现了 <a class="reference external" href="https://zh.wikipedia.org/wiki/支持向量机">支持向量分类</a> 的 <code class="docutils literal"><span class="pre">sklearn.svm.SVC</span></code> 类。一个估计量的构造函数以模型的参数作为参数，但由于时间问题，我们把估计量作为一个黑盒来考虑：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mf">100.</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="topic">
-<p class="topic-title first">Choosing the parameters of the model</p>
-<p>In this example we set the value of <code class="docutils literal"><span class="pre">gamma</span></code> manually. It is possible
-to automatically find good values for the parameters by using tools
-such as <a class="reference internal" href="../../modules/grid_search.html#grid-search"><span>grid search</span></a> and <a class="reference internal" href="../../modules/cross_validation.html#cross-validation"><span>cross validation</span></a>.</p>
+<p class="topic-title first">选择模型参数</p>
+<p>在这个例子中，我们手动设置了 <code class="docutils literal"><span class="pre">gamma</span></code> 的值。利用 <a class="reference internal" href="../../modules/grid_search.html#grid-search"><span>网格搜索</span></a> 和 <a class="reference internal" href="../../modules/cross_validation.html#cross-validation"><span>交叉验证</span></a> 等工具，可以自动找到良好的参数值。</p>
 </div>
-<p>We call our estimator instance <code class="docutils literal"><span class="pre">clf</span></code>, as it is a classifier. It now must
-be fitted to the model, that is, it must <em>learn</em> from the model. This is
-done by passing our training set to the <code class="docutils literal"><span class="pre">fit</span></code> method. As a training
-set, let us use all the images of our dataset apart from the last
-one. We select this training set with the <code class="docutils literal"><span class="pre">[:-1]</span></code> Python syntax,
-which produces a new array that contains all but
-the last entry of <code class="docutils literal"><span class="pre">digits.data</span></code>:</p>
+<p>我们把我们的估计量实例称为 <code class="docutils literal"><span class="pre">clf</span></code> ，因为它是一个分类器。它现在必须要拟合模型，也就是说，它必须从模型中*学习*。这是通过把我们的训练集传递给 <code class="docutils literal"><span class="pre">fit</span></code> 方法来完成的。作为一个训练集，我们使用其中除了最后一组的所有图像。我们可以通过Python语法 <code class="docutils literal"><span class="pre">[:-1]</span></code> 来选择这个训练集，这个操作产生一个包含 <code class="docutils literal"><span class="pre">digits.data</span></code> 中除了最后一组数据的所有实例：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  
 <span class="go">SVC(C=100.0, cache_size=200, class_weight=None, coef0=0.0,</span>
 <span class="go">  decision_function_shape=None, degree=3, gamma=0.001, kernel=&#39;rbf&#39;,</span>
@@ -344,25 +272,19 @@ the last entry of <code class="docutils literal"><span class="pre">digits.data</
 <span class="go">  tol=0.001, verbose=False)</span>
 </pre></div>
 </div>
-<p>Now you can predict new values, in particular, we can ask to the
-classifier what is the digit of our last image in the <code class="docutils literal"><span class="pre">digits</span></code> dataset,
-which we have not used to train the classifier:</p>
+<p>现在，你可以预测新的值了，特别地，我们可以询问分类器 <code class="docutils literal"><span class="pre">digits</span></code> 数据集的最后一张图像的数字是什么，而我们没有使用这张图像来训练分类器：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:])</span>
 <span class="go">array([8])</span>
 </pre></div>
 </div>
-<p>The corresponding image is the following:</p>
+<p>相应的图像如下：</p>
 <a class="reference external image-reference" href="../../auto_examples/datasets/plot_digits_last_image.html"><img alt="../../_images/plot_digits_last_image_0011.png" class="align-center" src="../../_images/plot_digits_last_image_0011.png" style="width: 150.0px; height: 150.0px;" /></a>
-<p>As you can see, it is a challenging task: the images are of poor
-resolution. Do you agree with the classifier?</p>
-<p>A complete example of this classification problem is available as an
-example that you can run and study:
-<a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>Recognizing hand-written digits</span></a>.</p>
+<p>正如你所看到的，这是一个具有挑战性的任务：图像分辨率很低。你同意分类器的结果吗？</p>
+<p>这个分类问题的一个完整例子是可以运行和学习的：<a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>Recognizing hand-written digits</span></a>。</p>
 </div>
 <div class="section" id="model-persistence">
-<h2>Model persistence<a class="headerlink" href="#model-persistence" title="永久链接至标题">¶</a></h2>
-<p>It is possible to save a model in the scikit by using Python&#8217;s built-in
-persistence model, namely <a class="reference external" href="http://docs.python.org/library/pickle.html">pickle</a>:</p>
+<h2>模型持久化<a class="headerlink" href="#model-persistence" title="永久链接至标题">¶</a></h2>
+<p>可以用Python内置的持久模型 <a class="reference external" href="http://docs.python.org/library/pickle.html">pickle</a> 来保存scikit中的模型：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">()</span>
@@ -383,37 +305,27 @@ persistence model, namely <a class="reference external" href="http://docs.python
 <span class="go">0</span>
 </pre></div>
 </div>
-<p>In the specific case of the scikit, it may be more interesting to use
-joblib&#8217;s replacement of pickle (<code class="docutils literal"><span class="pre">joblib.dump</span></code> &amp; <code class="docutils literal"><span class="pre">joblib.load</span></code>),
-which is more efficient on big data, but can only pickle to the disk
-and not to a string:</p>
+<p>对scikit的具体情况，可能采用joblib来代替pickle会更有趣（ <code class="docutils literal"><span class="pre">joblib.dump</span></code> &amp; <code class="docutils literal"><span class="pre">joblib.load</span></code> ），因为它对大数据更有效，但只能pickle到磁盘而不是一个字符串：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.externals</span> <span class="kn">import</span> <span class="n">joblib</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">joblib</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="s1">&#39;filename.pkl&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
-<p>Later you can load back the pickled model (possibly in another Python process)
-with:</p>
+<p>之后你可以加载之前已经pickle的模型（可能在另一个Python程序中）：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">joblib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;filename.pkl&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
-<p class="last">joblib.dump returns a list of filenames. Each individual numpy array
-contained in the <code class="docutils literal"><span class="pre">clf</span></code> object is serialized as a separate file on the
-filesystem. All files are required in the same folder when reloading the
-model with joblib.load.</p>
+<p class="last">joblib.dump返回一个文件名列表。每一个被包含在 <code class="docutils literal"><span class="pre">clf</span></code> 对象中的numpy数组都被序列化为文件系统上的一个单独文件。用joblib.load重新加载模型时，所有文件都需要在同一个文件夹中。</p>
 </div>
-<p>Note that pickle has some security and maintainability issues. Please refer to
-section <a class="reference internal" href="../../modules/model_persistence.html#model-persistence"><span>Model persistence</span></a> for more detailed information about model
-persistence with scikit-learn.</p>
+<p>需要注意的是，pickle有一些安全性和可维护性的问题。请参阅 <a class="reference internal" href="../../modules/model_persistence.html#model-persistence"><span>Model persistence</span></a> 以获取有关scikit-learn模型持久化更详细的信息。</p>
 </div>
 <div class="section" id="conventions">
-<h2>Conventions<a class="headerlink" href="#conventions" title="永久链接至标题">¶</a></h2>
-<p>scikit-learn estimators follow certain rules to make their behavior more
-predictive.</p>
+<h2>惯例约定<a class="headerlink" href="#conventions" title="永久链接至标题">¶</a></h2>
+<p>scikit-learn估计量遵循一定的规则，使它们的行为更具有预测性。</p>
 <div class="section" id="type-casting">
-<h3>Type casting<a class="headerlink" href="#type-casting" title="永久链接至标题">¶</a></h3>
-<p>Unless otherwise specified, input will be cast to <code class="docutils literal"><span class="pre">float64</span></code>:</p>
+<h3>类型转换<a class="headerlink" href="#type-casting" title="永久链接至标题">¶</a></h3>
+<p>除非另有说明，输入将被转换为 <code class="docutils literal"><span class="pre">float64</span></code> ：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">random_projection</span>
 
@@ -429,10 +341,8 @@ predictive.</p>
 <span class="go">dtype(&#39;float64&#39;)</span>
 </pre></div>
 </div>
-<p>In this example, <code class="docutils literal"><span class="pre">X</span></code> is <code class="docutils literal"><span class="pre">float32</span></code>, which is cast to <code class="docutils literal"><span class="pre">float64</span></code> by
-<code class="docutils literal"><span class="pre">fit_transform(X)</span></code>.</p>
-<p>Regression targets are cast to <code class="docutils literal"><span class="pre">float64</span></code>, classification targets are
-maintained:</p>
+<p>在这个例子中， <code class="docutils literal"><span class="pre">X</span></code> 为 <code class="docutils literal"><span class="pre">float32</span></code> ，这是用 <code class="docutils literal"><span class="pre">fit_transform(X)</span></code> 转换为 <code class="docutils literal"><span class="pre">float64</span></code> 的。</p>
+<p>回归目标值被转换为 <code class="docutils literal"><span class="pre">float64</span></code> ，分类目标值则维持不变：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
@@ -456,15 +366,11 @@ maintained:</p>
 <span class="go">[&#39;setosa&#39;, &#39;setosa&#39;, &#39;setosa&#39;]</span>
 </pre></div>
 </div>
-<p>Here, the first <code class="docutils literal"><span class="pre">predict()</span></code> returns an integer array, since <code class="docutils literal"><span class="pre">iris.target</span></code>
-(an integer array) was used in <code class="docutils literal"><span class="pre">fit</span></code>. The second <code class="docutils literal"><span class="pre">predict</span></code> returns a string
-array, since <code class="docutils literal"><span class="pre">iris.target_names</span></code> was for fitting.</p>
+<p>在这里，第一个 <code class="docutils literal"><span class="pre">predict()</span></code> 返回一个整数数组，因为 <code class="docutils literal"><span class="pre">iris.target</span></code> （一个整数数组）被用于 <code class="docutils literal"><span class="pre">fit</span></code> 中。第二个 <code class="docutils literal"><span class="pre">predict()</span></code> 返回一个字符串数组，因为用 <code class="docutils literal"><span class="pre">iris.target_names</span></code> 来拟合。</p>
 </div>
 <div class="section" id="refitting-and-updating-parameters">
-<h3>Refitting and updating parameters<a class="headerlink" href="#refitting-and-updating-parameters" title="永久链接至标题">¶</a></h3>
-<p>Hyper-parameters of an estimator can be updated after it has been constructed
-via the <a class="reference internal" href="../../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.set_params" title="sklearn.pipeline.Pipeline.set_params"><code class="xref py py-func docutils literal"><span class="pre">sklearn.pipeline.Pipeline.set_params</span></code></a> method. Calling <code class="docutils literal"><span class="pre">fit()</span></code>
-more than once will overwrite what was learned by any previous <code class="docutils literal"><span class="pre">fit()</span></code>:</p>
+<h3>重新拟合和更新参数<a class="headerlink" href="#refitting-and-updating-parameters" title="永久链接至标题">¶</a></h3>
+<p>一个估计量的超参数可以在通过 <a class="reference internal" href="../../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.set_params" title="sklearn.pipeline.Pipeline.set_params"><code class="xref py py-func docutils literal"><span class="pre">sklearn.pipeline.Pipeline.set_params</span></code></a> 方法被构造之后再进行更新。不止一次调用 <code class="docutils literal"><span class="pre">fit()</span></code> 将覆盖以前 <code class="docutils literal"><span class="pre">fit()</span></code> 学习的内容：</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 
@@ -491,9 +397,7 @@ more than once will overwrite what was learned by any previous <code class="docu
 <span class="go">array([0, 0, 0, 1, 0])</span>
 </pre></div>
 </div>
-<p>Here, the default kernel <code class="docutils literal"><span class="pre">rbf</span></code> is first changed to <code class="docutils literal"><span class="pre">linear</span></code> after the
-estimator has been constructed via <code class="docutils literal"><span class="pre">SVC()</span></code>, and changed back to <code class="docutils literal"><span class="pre">rbf</span></code> to
-refit the estimator and to make a second prediction.</p>
+<p>在这里，默认内核 <code class="docutils literal"><span class="pre">rbf</span></code> 在估计量通过 <code class="docutils literal"><span class="pre">SVC()</span></code> 构造构造后变成 <code class="docutils literal"><span class="pre">linear</span></code> ，重新拟合估计量后又变回 <code class="docutils literal"><span class="pre">rbf</span></code> ，并进行第二次预测。</p>
 </div>
 </div>
 </div>

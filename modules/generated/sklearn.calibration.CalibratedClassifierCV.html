@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.calibration" title="sklearn.calibration"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.calibration</span></code></a>.CalibratedClassifierCV<a class="headerlink" href="#sklearn-calibration-calibratedclassifiercv" title="永久链接至标题">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.calibration.CalibratedClassifierCV">
-<em class="property">class </em><code class="descclassname">sklearn.calibration.</code><code class="descname">CalibratedClassifierCV</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>method='sigmoid'</em>, <em>cv=3</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/calibration.py#L29"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV" title="永久链接至目标">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.calibration.</code><code class="descname">CalibratedClassifierCV</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>method='sigmoid'</em>, <em>cv=3</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/calibration.py#L29"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV" title="永久链接至目标">¶</a></dt>
 <dd><p>Probability calibration with isotonic regression or sigmoid.</p>
 <p>With this class, the base_estimator is fit on the train set of the
 cross-validation generator and the test set is used for calibration.
@@ -292,12 +292,12 @@ A. Niculescu-Mizil &amp; R. Caruana, ICML 2005</td></tr>
 </table>
 <dl class="method">
 <dt id="sklearn.calibration.CalibratedClassifierCV.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>method='sigmoid'</em>, <em>cv=3</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/calibration.py#L99"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.__init__" title="永久链接至目标">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>method='sigmoid'</em>, <em>cv=3</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/calibration.py#L99"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.__init__" title="永久链接至目标">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.calibration.CalibratedClassifierCV.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/calibration.py#L104"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.fit" title="永久链接至目标">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/calibration.py#L104"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.fit" title="永久链接至目标">¶</a></dt>
 <dd><p>Fit the calibrated model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -329,7 +329,7 @@ A. Niculescu-Mizil &amp; R. Caruana, ICML 2005</td></tr>
 
 <dl class="method">
 <dt id="sklearn.calibration.CalibratedClassifierCV.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.get_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L199"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.get_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -354,7 +354,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.calibration.CalibratedClassifierCV.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/calibration.py#L217"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.predict" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/calibration.py#L217"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.predict" title="永久链接至目标">¶</a></dt>
 <dd><p>Predict the target of new samples. Can be different from the
 prediction of the uncalibrated classifier.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -379,7 +379,7 @@ prediction of the uncalibrated classifier.</p>
 
 <dl class="method">
 <dt id="sklearn.calibration.CalibratedClassifierCV.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/calibration.py#L187"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.predict_proba" title="永久链接至目标">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/calibration.py#L187"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.predict_proba" title="永久链接至目标">¶</a></dt>
 <dd><p>Posterior probabilities of classification</p>
 <p>This function returns posterior probabilities of classification
 according to each class on an array of test vectors X.</p>
@@ -405,7 +405,7 @@ according to each class on an array of test vectors X.</p>
 
 <dl class="method">
 <dt id="sklearn.calibration.CalibratedClassifierCV.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.score" title="永久链接至目标">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L285"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.score" title="永久链接至目标">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -440,7 +440,7 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.calibration.CalibratedClassifierCV.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/2320287/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.set_params" title="永久链接至目标">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/67cbaef/sklearn/base.py#L236"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#sklearn.calibration.CalibratedClassifierCV.set_params" title="永久链接至目标">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
