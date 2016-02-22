@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../tutorial/basic/tutorial.rst:4
 msgid "An introduction to machine learning with scikit-learn"
-msgstr ""
+msgstr "使用scikit-learn进行机器学习的简介"
 
 #: ../../tutorial/basic/tutorial.rst
 msgid "Section contents"
-msgstr ""
+msgstr "章节内容"
 
 #: ../../tutorial/basic/tutorial.rst:8
 msgid ""
@@ -32,10 +32,11 @@ msgid ""
 "<http://en.wikipedia.org/wiki/Machine_learning>`_ vocabulary that we use "
 "throughout scikit-learn and give a simple learning example."
 msgstr ""
+"在本节中，我们介绍在scikit-learn中一直用到的 `机器学习 <https://zh.wikipedia.org/wiki/机器学习>`_ 这个词汇，并给出一些简单的学习例子。"
 
 #: ../../tutorial/basic/tutorial.rst:15
 msgid "Machine learning: the problem setting"
-msgstr ""
+msgstr "机器学习：问题设置"
 
 #: ../../tutorial/basic/tutorial.rst:17
 msgid ""
@@ -47,10 +48,12 @@ msgid ""
 "<http://en.wikipedia.org/wiki/Multivariate_random_variable>`_ data), is "
 "it said to have several attributes or **features**."
 msgstr ""
+"通常，一个学习问题考虑一组n个 `样本 <https://zh.wikipedia.org/wiki/樣本_(統計學)>`_ 的数据，然后尝试预测未知数据的属性。"
+"如果每个样本都不仅仅是一个单独的数字，例如，一个多维实例（也称为 `多变量 <http://en.wikipedia.org/wiki/Multivariate_random_variable>`_ 数据），则预测它有几个属性或特征。"
 
 #: ../../tutorial/basic/tutorial.rst:24
 msgid "We can separate learning problems in a few large categories:"
-msgstr ""
+msgstr "我们可以把学习问题分为几个大类："
 
 #: ../../tutorial/basic/tutorial.rst:26
 msgid ""
@@ -60,6 +63,8 @@ msgid ""
 "here <supervised-learning>` to go to the scikit-learn supervised learning"
 " page).This problem can be either:"
 msgstr ""
+"`监督学习 <https://zh.wikipedia.org/wiki/監督式學習>`_ ，其中数据带有我们要预测的附加属性，"
+"（ :ref:`点击这里 <supervised-learning>` 去scikit-learn监督学习的页面）。这个问题可以是："
 
 #: ../../tutorial/basic/tutorial.rst:32
 msgid ""
@@ -75,6 +80,11 @@ msgid ""
 "each of the n samples provided, one is to try to label them with the "
 "correct category or class."
 msgstr ""
+"`分类 "
+"<https://zh.wikipedia.org/wiki/分类问题>`_ ："
+"样本属于两个或多个类，我们想要从已标记的数据中学习如何预测未标记的数据类别。"
+"分类问题的一个例子是手写体数字识别，其中目标是将每个输入向量指派到一个有限数量的离散类。"
+"另一种方式去理解分类，其实分类问题是一种离散（相对于连续）形式的监督学习，每一个都有一个有限数量的类别，对每个提供的样本，我们要尝试用正确的类别来标注他们。"
 
 #: ../../tutorial/basic/tutorial.rst:44
 msgid ""
@@ -84,6 +94,9 @@ msgid ""
 "the prediction of the length of a salmon as a function of its age and "
 "weight."
 msgstr ""
+"`回归 <https://zh.wikipedia.org/wiki/迴歸分析>`_ ："
+"如果期望的输出由一个或多个连续变量组成，那么这个任务被称为*回归*。"
+"回归问题的一个例子是，鲑鱼长度的预测——一个基于其年龄和体重的函数。"
 
 #: ../../tutorial/basic/tutorial.rst:50
 msgid ""
@@ -100,10 +113,17 @@ msgid ""
 "<unsupervised-learning>` to go to the Scikit-Learn unsupervised learning "
 "page)."
 msgstr ""
+"`无监督学习 <https://zh.wikipedia.org/wiki/非監督式學習>`_ ，"
+"训练数据包含一组没有相应目标值的输入向量x。"
+"这类问题的目标可能是在数据中发现相似的样本组，也被称为"
+" `聚类 <https://zh.wikipedia.org/wiki/聚类分析>`_ ；"
+"或是在输入空间中确定数据的分布，也被称为"
+" `密度估计 <http://en.wikipedia.org/wiki/Density_estimation>`_ ；"
+"或是把数据从高维空间投影到两个或三个维度的空间来达到*可视化*的目的（ :ref:`点击这里 <unsupervised-learning>` 去scikit-learn无监督学习的页面）。"
 
 #: ../../tutorial/basic/tutorial.rst
 msgid "Training set and testing set"
-msgstr ""
+msgstr "训练集和测试集"
 
 #: ../../tutorial/basic/tutorial.rst:64
 msgid ""
@@ -114,10 +134,14 @@ msgid ""
 "properties and one that we call the **testing set** on which we test "
 "these properties."
 msgstr ""
+"机器学习是学习一个数据集的一些特性，并将它们应用到新的数据。"
+"这就是为什么在机器学习中评估算法时一个普遍做法是把数据分成两组，"
+"一组称之为**训练集**，用于学习数据的属性；"
+"另一组称之为**测试集**，用于测试这些属性。"
 
 #: ../../tutorial/basic/tutorial.rst:74
 msgid "Loading an example dataset"
-msgstr ""
+msgstr "加载样例数据集"
 
 #: ../../tutorial/basic/tutorial.rst:76
 msgid ""
@@ -128,6 +152,9 @@ msgid ""
 "and the `boston house prices dataset "
 "<http://archive.ics.uci.edu/ml/datasets/Housing>`_ for regression."
 msgstr ""
+"`scikit-learn` 有一些标准数据集，"
+"例如用于分类的 `iris <https://zh.wikipedia.org/wiki/安德森鸢尾花卉数据集>`_ 和 `digits <http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits>`_ 数据集，"
+"用于回归的 `boston house prices dataset <http://archive.ics.uci.edu/ml/datasets/Housing>`_ 数据集。"
 
 #: ../../tutorial/basic/tutorial.rst:82
 msgid ""
@@ -136,6 +163,8 @@ msgid ""
 "that ``$`` denotes the shell prompt while ``>>>`` denotes the Python "
 "interpreter prompt::"
 msgstr ""
+"接下来，我们开始从shell中开启一个Python解释器，然后加载 ``iris`` 和 ``digits`` 数据集。"
+"我们的符号惯例是， ``$`` 表示shell提示符， ``>>>`` 表示Python解释器提示符："
 
 #: ../../tutorial/basic/tutorial.rst:92
 msgid ""
@@ -146,23 +175,28 @@ msgid ""
 "member. More details on the different datasets can be found in the "
 ":ref:`dedicated section <datasets>`."
 msgstr ""
+"一个数据集是一个字典状的对象，拥有所有的数据和一些与数据相关的元数据。"
+"这些数据存储在 ``.data`` 成员变量中，这是一个 ``n_samples, n_features`` 的数组。"
+"在监督学习问题中，一个或多个响应变量被存储在 ``.target`` 成员变量中。"
+"不同数据集的更多细节可以在 :ref:`数据集章节 <datasets>` 找到。"
 
 #: ../../tutorial/basic/tutorial.rst:99
 msgid ""
 "For instance, in the case of the digits dataset, ``digits.data`` gives "
 "access to the features that can be used to classify the digits samples::"
 msgstr ""
+"例如，在digits数据集，``digits.data`` 可以访问得到用于对数字样本分类的特征："
 
 #: ../../tutorial/basic/tutorial.rst:111
 msgid ""
 "and ``digits.target`` gives the ground truth for the digit dataset, that "
 "is the number corresponding to each digit image that we are trying to "
 "learn::"
-msgstr ""
+msgstr "而 ``digits.target`` 则是digits数据集的真实值，即我们尝试学习的每个数字图像对应的数字："
 
 #: ../../tutorial/basic/tutorial.rst
 msgid "Shape of the data arrays"
-msgstr ""
+msgstr "数据数组的形状"
 
 #: ../../tutorial/basic/tutorial.rst:120
 msgid ""
@@ -170,7 +204,9 @@ msgid ""
 "although the original data may have had a different shape. In the case of"
 " the digits, each original sample is an image of shape ``(8, 8)`` and can"
 " be accessed using::"
-msgstr ""
+msgstr "数据始终是一个二维数组，形状是 ``(n_samples, n_features)`` ，"
+"尽管原始数据可能有不同的形状。"
+"对digits数据集，每个原始样本都是一张形状为 ``(8, 8)`` 的图像，可通过以下访问："
 
 #: ../../tutorial/basic/tutorial.rst:135
 msgid ""
@@ -179,10 +215,11 @@ msgid ""
 "starting from the original problem one can shape the data for consumption"
 " in scikit-learn."
 msgstr ""
+":ref:`这个数据集的简单例子 <example_classification_plot_digits_classification.py>` 说明了如何从原问题开始构造在scikit-learn中使用的数据。"
 
 #: ../../tutorial/basic/tutorial.rst:142
 msgid "Learning and predicting"
-msgstr ""
+msgstr "学习和预测"
 
 #: ../../tutorial/basic/tutorial.rst:144
 msgid ""
@@ -192,12 +229,15 @@ msgid ""
 "`estimator <http://en.wikipedia.org/wiki/Estimator>`_ to be able to "
 "*predict* the classes to which unseen samples belong."
 msgstr ""
+"对digits数据集，任务是预测一张给定的图像所代表的数字。"
+"给定10个可能的类（数字0到9）每个类的一些样本，我们*拟合*一个 `估计量 <https://zh.wikipedia.org/wiki/估计量>`_ 来*预测*未知样本所属的分类。"
 
 #: ../../tutorial/basic/tutorial.rst:150
 msgid ""
 "In scikit-learn, an estimator for classification is a Python object that "
 "implements the methods ``fit(X, y)`` and ``predict(T)``."
 msgstr ""
+"在scikit-learn中，分类的估计量是一个实现 ``fit(X, y)`` 方法和 ``predict(T)`` 方法的Python对象。"
 
 #: ../../tutorial/basic/tutorial.rst:153
 msgid ""
@@ -207,10 +247,12 @@ msgid ""
 "of an estimator takes as arguments the parameters of the model, but for "
 "the time being, we will consider the estimator as a black box::"
 msgstr ""
+"一个估计量的例子是实现了 `支持向量分类 <https://zh.wikipedia.org/wiki/支持向量机>`_ 的 ``sklearn.svm.SVC`` 类。"
+"一个估计量的构造函数以模型的参数作为参数，但由于时间问题，我们把估计量作为一个黑盒来考虑："
 
 #: ../../tutorial/basic/tutorial.rst
 msgid "Choosing the parameters of the model"
-msgstr ""
+msgstr "选择模型参数"
 
 #: ../../tutorial/basic/tutorial.rst:165
 msgid ""
@@ -219,6 +261,8 @@ msgid ""
 " :ref:`grid search <grid_search>` and :ref:`cross validation "
 "<cross_validation>`."
 msgstr ""
+"在这个例子中，我们手动设置了 ``gamma`` 的值。"
+"利用 :ref:`网格搜索 <grid_search>` 和 :ref:`交叉验证 <cross_validation>` 等工具，可以自动找到良好的参数值。"
 
 #: ../../tutorial/basic/tutorial.rst:170
 msgid ""
@@ -230,6 +274,11 @@ msgid ""
 "which produces a new array that contains all but the last entry of "
 "``digits.data``::"
 msgstr ""
+"我们把我们的估计量实例称为 ``clf`` ，因为它是一个分类器。"
+"它现在必须要拟合模型，也就是说，它必须从模型中*学习*。"
+"这是通过把我们的训练集传递给 ``fit`` 方法来完成的。"
+"作为一个训练集，我们使用其中除了最后一组的所有图像。"
+"我们可以通过Python语法 ``[:-1]`` 来选择这个训练集，这个操作产生一个包含 ``digits.data`` 中除了最后一组数据的所有实例："
 
 #: ../../tutorial/basic/tutorial.rst:184
 msgid ""
@@ -237,16 +286,18 @@ msgid ""
 "classifier what is the digit of our last image in the ``digits`` dataset,"
 " which we have not used to train the classifier::"
 msgstr ""
+"现在，你可以预测新的值了，特别地，我们可以询问分类器 ``digits`` 数据集的最后一张图像的数字是什么，而我们没有使用这张图像来训练分类器："
 
 #: ../../tutorial/basic/tutorial.rst:191
 msgid "The corresponding image is the following:"
-msgstr ""
+msgstr "相应的图像如下："
 
 #: ../../tutorial/basic/tutorial.rst:198
 msgid ""
 "As you can see, it is a challenging task: the images are of poor "
 "resolution. Do you agree with the classifier?"
 msgstr ""
+"正如你所看到的，这是一个具有挑战性的任务：图像分辨率很低。你同意分类器的结果吗？"
 
 #: ../../tutorial/basic/tutorial.rst:201
 msgid ""
@@ -254,10 +305,11 @@ msgid ""
 "example that you can run and study: "
 ":ref:`example_classification_plot_digits_classification.py`."
 msgstr ""
+"这个分类问题的一个完整例子是可以运行和学习的：:ref:`example_classification_plot_digits_classification.py`。"
 
 #: ../../tutorial/basic/tutorial.rst:207
 msgid "Model persistence"
-msgstr ""
+msgstr "模型持久化"
 
 #: ../../tutorial/basic/tutorial.rst:209
 msgid ""
@@ -265,6 +317,7 @@ msgid ""
 "persistence model, namely `pickle "
 "<http://docs.python.org/library/pickle.html>`_::"
 msgstr ""
+"可以用Python内置的持久模型 `pickle <http://docs.python.org/library/pickle.html>`_ 来保存scikit中的模型："
 
 #: ../../tutorial/basic/tutorial.rst:231
 msgid ""
@@ -273,12 +326,15 @@ msgid ""
 " is more efficient on big data, but can only pickle to the disk and not "
 "to a string::"
 msgstr ""
+"对scikit的具体情况，可能采用joblib来代替pickle会更有趣（ ``joblib.dump`` & ``joblib.load`` ），"
+"因为它对大数据更有效，但只能pickle到磁盘而不是一个字符串："
 
 #: ../../tutorial/basic/tutorial.rst:239
 msgid ""
 "Later you can load back the pickled model (possibly in another Python "
 "process) with::"
 msgstr ""
+"之后你可以加载之前已经pickle的模型（可能在另一个Python程序中）："
 
 #: ../../tutorial/basic/tutorial.rst:246
 msgid ""
@@ -287,6 +343,8 @@ msgid ""
 "filesystem. All files are required in the same folder when reloading the "
 "model with joblib.load."
 msgstr ""
+"joblib.dump返回一个文件名列表。每一个被包含在 ``clf`` 对象中的numpy数组都被序列化为文件系统上的一个单独文件。"
+"用joblib.load重新加载模型时，所有文件都需要在同一个文件夹中。"
 
 #: ../../tutorial/basic/tutorial.rst:251
 msgid ""
@@ -294,36 +352,41 @@ msgid ""
 "refer to section :ref:`model_persistence` for more detailed information "
 "about model persistence with scikit-learn."
 msgstr ""
+"需要注意的是，pickle有一些安全性和可维护性的问题。"
+"请参阅 :ref:`model_persistence` 以获取有关scikit-learn模型持久化更详细的信息。"
 
 #: ../../tutorial/basic/tutorial.rst:257
 msgid "Conventions"
-msgstr ""
+msgstr "惯例约定"
 
 #: ../../tutorial/basic/tutorial.rst:259
 msgid ""
 "scikit-learn estimators follow certain rules to make their behavior more "
 "predictive."
 msgstr ""
+"scikit-learn估计量遵循一定的规则，使它们的行为更具有预测性。"
 
 #: ../../tutorial/basic/tutorial.rst:264
 msgid "Type casting"
-msgstr ""
+msgstr "类型转换"
 
 #: ../../tutorial/basic/tutorial.rst:266
 msgid "Unless otherwise specified, input will be cast to ``float64``::"
-msgstr ""
+msgstr "除非另有说明，输入将被转换为 ``float64`` ："
 
 #: ../../tutorial/basic/tutorial.rst:282
 msgid ""
 "In this example, ``X`` is ``float32``, which is cast to ``float64`` by "
 "``fit_transform(X)``."
 msgstr ""
+"在这个例子中， ``X`` 为 ``float32`` ，这是用 ``fit_transform(X)`` 转换为 ``float64`` 的。"
 
 #: ../../tutorial/basic/tutorial.rst:285
 msgid ""
 "Regression targets are cast to ``float64``, classification targets are "
 "maintained::"
 msgstr ""
+"回归目标值被转换为 ``float64`` ，分类目标值则维持不变："
 
 #: ../../tutorial/basic/tutorial.rst:310
 msgid ""
@@ -332,10 +395,12 @@ msgid ""
 "``predict`` returns a string array, since ``iris.target_names`` was for "
 "fitting."
 msgstr ""
+"在这里，第一个 ``predict()`` 返回一个整数数组，因为 ``iris.target`` （一个整数数组）被用于 ``fit`` 中。"
+"第二个 ``predict()`` 返回一个字符串数组，因为用 ``iris.target_names`` 来拟合。"
 
 #: ../../tutorial/basic/tutorial.rst:316
 msgid "Refitting and updating parameters"
-msgstr ""
+msgstr "重新拟合和更新参数"
 
 #: ../../tutorial/basic/tutorial.rst:318
 msgid ""
@@ -344,6 +409,8 @@ msgid ""
 "Calling ``fit()`` more than once will overwrite what was learned by any "
 "previous ``fit()``::"
 msgstr ""
+"一个估计量的超参数可以在通过 :func:`sklearn.pipeline.Pipeline.set_params` 方法被构造之后再进行更新。"
+"不止一次调用 ``fit()`` 将覆盖以前 ``fit()`` 学习的内容："
 
 #: ../../tutorial/basic/tutorial.rst:347
 msgid ""
@@ -351,4 +418,4 @@ msgid ""
 " estimator has been constructed via ``SVC()``, and changed back to "
 "``rbf`` to refit the estimator and to make a second prediction."
 msgstr ""
-
+"在这里，默认内核 ``rbf`` 在估计量通过 ``SVC()`` 构造构造后变成 ``linear`` ，重新拟合估计量后又变回 ``rbf`` ，并进行第二次预测。"

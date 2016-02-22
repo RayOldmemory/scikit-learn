@@ -111,7 +111,7 @@
 
         </h2>
         <blockquote>
-        <p>Reducing the number of random variables to consider.</p>
+        <p>减少考虑的随机变量的数量。</p>
         <div class="box-links">
         <strong>应用</strong>：可视化，提高效率。</br>
         <strong>算法</strong>：&nbsp;
@@ -235,14 +235,14 @@
                     <li><em>关于我们</em> 请看 <a href="about.html#people">作者</a></li>
                     <li><em>更多机器学习</em> 寻找<a href="related_projects.html">相关项目</a></li>
                     <li><em>疑问？</em> 请看 <a href="faq.html">常见问题</a> 和 <a href="http://stackoverflow.com/questions/tagged/scikit-learn">stackoverflow</a></li>
-                    <li><em>邮件列表：</em> <a href="https://lists.sourceforge.net/lists/listinfo/scikit-learn-general">scikit-learn-general@lists.sourceforge.net</a>
-                    中文翻译：lijiancheng0614@gmail.com</li>
+                    <li><em>邮件列表：</em> <a href="https://lists.sourceforge.net/lists/listinfo/scikit-learn-general">scikit-learn-general@lists.sourceforge.net</a></li>
+                    <li><em>中文翻译：</em>lijiancheng0614@gmail.com</li>
                     <li><em>IRC:</em> #scikit-learn @ <a href="http://webchat.freenode.net/">freenode</a></li>
                     </ul>
 
                     <form target="_top" id="paypal-form" method="post" action="https://www.paypal.com/cgi-bin/webscr">
                         <input type="hidden" value="_s-xclick" name="cmd">
-                        <input type="hidden" value="74EYUMF3FTSW8" name="hosted_button_id">
+                        <input type="hidden" value="K9ZT2KFY5JXUL" name="hosted_button_id">
                     </form>
 
                     <a class="btn btn-warning btn-big" onclick="document.getElementById('paypal-form').submit(); return false;">帮助我们，<strong>捐赠！</strong></a>
