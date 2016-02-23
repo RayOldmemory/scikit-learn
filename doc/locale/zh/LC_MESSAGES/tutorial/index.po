@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../tutorial/index.rst:10
 msgid "scikit-learn Tutorials"
-msgstr "scikit-learn 指南"
+msgstr "scikit-learn 教程"
 
 #: ../../tutorial/index.rst:25
 msgid "**Doctest Mode**"

@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../tutorial/statistical_inference/index.rst:5
 msgid "A tutorial on statistical-learning for scientific data processing"
-msgstr ""
+msgstr "统计学习科学数据处理的教程"
 
 #: ../../tutorial/statistical_inference/index.rst
 msgid "Statistical learning"
-msgstr ""
+msgstr "统计学习"
 
 #: ../../tutorial/statistical_inference/index.rst:9
 msgid ""
@@ -35,6 +35,8 @@ msgid ""
 " to classifying observations, or learning the structure in an unlabeled "
 "dataset."
 msgstr ""
+"`机器学习 <https://zh.wikipedia.org/wiki/机器学习>`_ 是一项日益重要的技术，因为实验科学正面临着数据集的大小迅速增长的情况。"
+"问题从构建预测函数将不同的观测数据连接起来，到对观测函数分类，或者从未标记的数据集中学习结构。"
 
 #: ../../tutorial/statistical_inference/index.rst:16
 msgid ""
@@ -43,6 +45,8 @@ msgid ""
 "<http://en.wikipedia.org/wiki/Statistical_inference>`_: drawing "
 "conclusions on the data at hand."
 msgstr ""
+"本教程将探讨 *统计学习* ——利用机器学习技术实现 `统计推断 <https://zh.wikipedia.org/wiki/推論統計學>`_ 的目标："
+"从手头的数据中得出结论。"
 
 #: ../../tutorial/statistical_inference/index.rst:21
 msgid ""
@@ -51,4 +55,4 @@ msgid ""
 "(`NumPy <http://www.scipy.org>`_, `SciPy <http://www.scipy.org>`_, "
 "`matplotlib <http://matplotlib.sourceforge.net/>`_)."
 msgstr ""
-
+"Scikit-learn是一个紧密结合Python科学计算库（ `NumPy <http://www.scipy.org>`_ 、 `SciPy <http://www.scipy.org>`_ 、 `matplotlib <http://matplotlib.sourceforge.net/>`_ ）并整合经典机器学习算法的Python模块。"

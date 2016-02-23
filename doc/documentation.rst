@@ -37,7 +37,7 @@ Documentation of scikit-learn 0.17
           <!-- row -->
             <div class="row-fluid">
                 <div class="span4 box">
-                    <h2><a href="tutorial/index.html">入门指南</a></h2>
+                    <h2><a href="tutorial/index.html">教程</a></h2>
                     <blockquote>开发机器学习中一些scikit-learn应用的有用教程。
                     </blockquote>
                 </div>
