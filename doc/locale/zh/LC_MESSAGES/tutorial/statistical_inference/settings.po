@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../tutorial/statistical_inference/settings.rst:4
 msgid "Statistical learning: the setting and the estimator object in scikit-learn"
-msgstr ""
+msgstr "统计学习：scikit-learn中的设置和估计量对象"
 
 #: ../../tutorial/statistical_inference/settings.rst:7
 msgid "Datasets"
-msgstr ""
+msgstr "数据集"
 
 #: ../../tutorial/statistical_inference/settings.rst:9
 msgid ""
@@ -34,40 +34,48 @@ msgid ""
 "arrays is the **samples** axis, while the second is the **features** "
 "axis."
 msgstr ""
+"Scikit-learn从被表示为二维数组的一个或多个数据集中学习信息。"
+"它们可以被理解为多维观测数据的列表。"
+"我们说这些数组的第一个轴是 **样本** 轴，而第二个轴是 **特征** 轴。"
 
 #: ../../tutorial/statistical_inference/settings.rst
 msgid "A simple example shipped with the scikit: iris dataset"
-msgstr ""
+msgstr "一个使用scikit的简单例子：iris数据集"
 
 #: ../../tutorial/statistical_inference/settings.rst:25
 msgid ""
 "It is made of 150 observations of irises, each described by 4 features: "
 "their sepal and petal length and width, as detailed in ``iris.DESCR``."
 msgstr ""
+"它是由150个iris的观测数据组成，每一个都被4个特征所描述："
+"它们的萼片和花瓣的长度和宽度，详情见 ``iris.DESCR`` 。"
 
 #: ../../tutorial/statistical_inference/settings.rst:29
 msgid ""
 "When the data is not initially in the ``(n_samples, n_features)`` shape, "
 "it needs to be preprocessed in order to be used by scikit-learn."
 msgstr ""
+"当数据初始不是 ``(n_samples, n_features)`` 的形状时，"
+"需要进行预处理以被scikit-learn使用。"
 
 #: ../../tutorial/statistical_inference/settings.rst
 msgid "An example of reshaping data would be the digits dataset"
-msgstr ""
+msgstr "数字数据集——一个重塑数据形状的例子"
 
 #: ../../tutorial/statistical_inference/settings.rst:39
 msgid "The digits dataset is made of 1797 8x8 images of hand-written digits ::"
-msgstr ""
+msgstr "数字数据集是由1797张8x8的手写数字图像组成："
 
 #: ../../tutorial/statistical_inference/settings.rst:49
 msgid ""
 "To use this dataset with the scikit, we transform each 8x8 image into a "
 "feature vector of length 64 ::"
 msgstr ""
+"为了在scikit中使用这个数据集，我们把每张8x8的图像转换成长度为64的特征向量："
 
 #: ../../tutorial/statistical_inference/settings.rst:56
 msgid "Estimators objects"
-msgstr ""
+msgstr "估计量对象"
 
 #: ../../tutorial/statistical_inference/settings.rst:69
 msgid ""
@@ -76,18 +84,23 @@ msgid ""
 " a classification, regression or clustering algorithm or a *transformer* "
 "that extracts/filters useful features from raw data."
 msgstr ""
+"**拟合数据** ：scikit-learn实现的主要API是 `估计量` 。"
+"一个估计量是从数据中学习的任何对象；"
+"它可能是分类、回归或聚类算法，或是一个从原始数据中提取/过滤有用特性的 *转换器* 。"
 
 #: ../../tutorial/statistical_inference/settings.rst:74
 msgid ""
 "All estimator objects expose a ``fit`` method that takes a dataset "
 "(usually a 2-d array):"
 msgstr ""
+"所有的估计量对象都带有一个 ``fit`` 方法，以数据集（通常是二维数组）为参数："
 
 #: ../../tutorial/statistical_inference/settings.rst:79
 msgid ""
 "**Estimator parameters**: All the parameters of an estimator can be set "
 "when it is instantiated or by modifying the corresponding attribute::"
 msgstr ""
+"**估计量参数** ：一个估计量的所有参数都可以在它被实例化或者修改相应的属性时进行设置："
 
 #: ../../tutorial/statistical_inference/settings.rst:86
 msgid ""
@@ -96,4 +109,5 @@ msgid ""
 "parameters are attributes of the estimator object ending by an "
 "underscore::"
 msgstr ""
-
+"**估计后的参数** ：当数据被一个估计量拟合时，参数通过数据被估计。"
+"所有估计后的参数都是估计量对象以下划线结尾的属性："
