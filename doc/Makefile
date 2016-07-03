@@ -27,6 +27,8 @@ help:
 	@echo "  changes   to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck to check all external links for integrity"
 	@echo "  doctest   to run all doctests embedded in the documentation (if enabled)"
+	@echo "  gettext   to make PO message catalogs"
+	@echo "  html-zh   to make standalone HTML files in Chinese"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -103,3 +105,13 @@ optipng:
 
 dist: html latexpdf
 	cp _build/latex/user_guide.pdf _build/html/stable/_downloads/scikit-learn-docs.pdf
+
+gettext:
+	$(SPHINXBUILD) -b gettext $(ALLSPHINXOPTS) $(BUILDDIR)/locale
+	@echo
+	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
+
+html-zh:
+	$(SPHINXBUILD) -D language=zh -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html-zh
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html-zh."

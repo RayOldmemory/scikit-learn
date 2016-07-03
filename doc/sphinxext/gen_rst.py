@@ -43,7 +43,7 @@ try:
     execfile
 except NameError:
     def execfile(filename, global_vars=None, local_vars=None):
-        with open(filename, encoding='utf-8') as f:
+        with open(filename) as f:
             code = compile(f.read(), filename, 'exec')
             exec(code, global_vars, local_vars)
 
@@ -109,7 +109,7 @@ def _get_data(url):
         else:
             raise RuntimeError('unknown encoding')
     else:
-        with open(url, 'r', encoding='utf-8') as fid:
+        with open(url, 'r') as fid:
             data = fid.read()
         fid.close()
 
