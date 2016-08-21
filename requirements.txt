@@ -1,0 +1,7 @@
+scikit-learn==0.17.1
+scipy==0.17.1
+Sphinx
+numpy
+matplotlib
+image
+nose
