@@ -22,6 +22,7 @@ make html-zh
 运行`./docker_remove.sh`则停止名为`scikit-learn-doc-zh`的docker实例并删除相应的docker image。
 
 也可以使用docker image：https://hub.docker.com/r/lijiancheng0614/scikit-learn/
+
 运行
 ```bash
 docker pull lijiancheng0614/scikit-learn
