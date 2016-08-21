@@ -1,6 +1,7 @@
 FROM python:2.7
-ADD . scikit_learn
+ADD doc doc
+WORKDIR doc
 RUN pip install -r requirements.txt
-WORKDIR scikit_learn/doc
 CMD make html-zh
 WORKDIR html-zh
+CMD python -m SimpleHTTPServer
